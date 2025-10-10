@@ -1,0 +1,2 @@
+Planet,Tierra,La madre de toda vida,1
+Planet,Marte,El planeta Rojo,1
