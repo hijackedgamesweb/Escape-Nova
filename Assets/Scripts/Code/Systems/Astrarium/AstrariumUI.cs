@@ -38,7 +38,7 @@ public class AstrariumUI : MonoBehaviour
         
         foreach(Transform child in entriesTab.transform)
         {
-            Destroy(child.GetComponent<GameObject>());
+            Destroy(child.gameObject);
         }
         
         List<string> names = ReadAstrarium(entryTypes[idx]);
