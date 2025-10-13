@@ -1,2 +1,3 @@
-Tierra,1
-Marte,1
+Planet,Tierra,1
+Planet,Marte,0
+Resource,Metal,1
