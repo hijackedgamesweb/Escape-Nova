@@ -48,9 +48,9 @@ public class AstrariumTxt : MonoBehaviour
             {
                 string[] div = line.Split(','); //Dividmos la cadena en base a las comas
                 
-                if (div[div.Length - 1] == "1") //Todos los elementos que tengan 1 en la ultima variable
+                if (div[1] == "1") //Todos los elementos que tengan 1 en la ultima variable
                 {
-                    Debug.Log("Nombre:" + div[1]);
+                    Debug.Log("Nombre:" + div[0]);
                 }
             }
         }
@@ -75,18 +75,9 @@ public class AstrariumTxt : MonoBehaviour
                 if (line.Contains(codeName))
                 {
                     string[] div = line.Split(','); //Dividmos la cadena en base a las comas
-
-                    string newLine = "";
-                    
-                    for (int i = 0; i < div.Length - 1; i++) //Ignoramos el ultimo elemento porque es el booleano a actualizar
-                    {
-                        newLine += div[i] + ",";
-                    }
-
-                    newLine += "1"; //Actualizamos el ultimo valor del elemento a 1
                     
                     arrLine = File.ReadAllLines(filePath);
-                    arrLine[idx] = newLine;
+                    arrLine[idx] = div[0] + ",1";
                 }
                 idx++;
             }
