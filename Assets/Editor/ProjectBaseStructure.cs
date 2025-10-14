@@ -11,26 +11,26 @@ namespace Editor
         {
             string[] folders = new string[]
             {
-                "Assets/Scripts/Code/Core/Managers",
-                "Assets/Scripts/Code/Core/Utilities",
-                "Assets/Scripts/Code/Core/Events",
-                "Assets/Scripts/Code/Core/SaveLoad",
-                "Assets/Scripts/Code/Core/SceneManagement",
+                "Assets/Code/Scripts/Core/Managers",
+                "Assets/Code/Scripts/Core/Utilities",
+                "Assets/Code/Scripts/Core/Events",
+                "Assets/Code/Scripts/Core/SaveLoad",
+                "Assets/Code/Scripts/Core/SceneManagement",
 
-                "Assets/Scripts/Code/Systems",
-                "Assets/Scripts/Code/Patterns",
+                "Assets/Code/Scripts/Systems",
+                "Assets/Code/Scripts/Patterns",
                 
-                "Assets/Scripts/Code/UI/Windows",
-                "Assets/Scripts/Code/UI/HUD",
-                "Assets/Scripts/Code/UI/Menus",
-                "Assets/Scripts/Code/UI/Common",
+                "Assets/Code/Scripts/UI/Windows",
+                "Assets/Code/Scripts/UI/HUD",
+                "Assets/Code/Scripts/UI/Menus",
+                "Assets/Code/Scripts/UI/Common",
 
-                "Assets/Scripts/Code/Player",
-                "Assets/Scripts/Code/Camera",
-                "Assets/Scripts/Code/Input",
+                "Assets/Code/Scripts/Player",
+                "Assets/Code/Scripts/Camera",
+                "Assets/Code/Scripts/Input",
                 
-                "Assets/Scripts/Shaders",
-                "Assets/Scripts/ScriptableObjects",
+                "Assets/Code/Shaders",
+                "Assets/Code/ScriptableObjects",
                 
                 "Assets/Level/Prefabs",
                 "Assets/Level/Scenes",
