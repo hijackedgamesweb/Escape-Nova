@@ -348,4 +348,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryPrefab: {fileID: 8584594523966056877, guid: d92c65b795dc27b49b3e8b16c9225194, type: 3}
   btn: {fileID: 479378494620550558}
+  btnTxt: {fileID: 6679333665077224927}
   entryName: 

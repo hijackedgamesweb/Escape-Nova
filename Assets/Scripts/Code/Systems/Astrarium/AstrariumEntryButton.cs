@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class AstrariumEntryButton : MonoBehaviour
     //VARIABLES
     [SerializeField] private GameObject entryPrefab;
     [SerializeField] private Button btn;
+    [SerializeField] private TMP_Text btnTxt;
     
     private GameObject AstrariumPanel;
     
@@ -20,12 +22,19 @@ public class AstrariumEntryButton : MonoBehaviour
         
         btn.onClick.AddListener(delegate{OpenEntry(entryName);});
     }
+
+    private void Start()
+    {
+        btnTxt.text = entryName;
+    }
     
     
     public void OpenEntry(string _name)
     {
-        GameObject go = Instantiate(entryPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        go.transform.SetParent(AstrariumPanel.transform);
+        if(GameObject.Find("AstrariumEntry(Clone)") != null) { Destroy(GameObject.Find("AstrariumEntry(Clone)")); }
+        
+        GameObject go = Instantiate(entryPrefab, new Vector3(250, 0, 0), Quaternion.identity);
+        go.transform.SetParent(AstrariumPanel.transform, false);
         go.GetComponent<AstrariumEntry>().entryName = _name;
     }
 }

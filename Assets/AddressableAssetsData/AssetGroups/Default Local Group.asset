@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 5ffec2312fdea32478392cb7529c3a12
   m_SerializeEntries:
+  - m_GUID: 55ae12ee6d2f3e948b4d2d6fa5033ddd
+    m_Address: Assets/Scripts/ScriptableObjects/Astrarium/Metal.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8e32e17e2af99884f882d03a11f4a19d
     m_Address: Assets/Scripts/ScriptableObjects/Astrarium/Tierra.asset
     m_ReadOnly: 0

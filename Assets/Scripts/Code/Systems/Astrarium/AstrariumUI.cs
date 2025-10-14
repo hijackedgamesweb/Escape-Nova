@@ -37,12 +37,14 @@ public class AstrariumUI : MonoBehaviour
     {
         foreach(Transform child in entriesTab.transform) { Destroy(child.gameObject); }
         
+        if(GameObject.Find("AstrariumEntry(Clone)") != null) { Destroy(GameObject.Find("AstrariumEntry(Clone)")); }
+        
         List<string> names = ReadAstrarium(entryTypes[idx]);
         
         foreach(string name in names)
         {
             GameObject go = Instantiate(entryButtonPrefab, new Vector3(0, 0, 0), Quaternion.identity); //Creamos el boton
-            go.transform.SetParent(entriesTab.transform); //Añadimos el boton como hijo de "entriesTab"
+            go.transform.SetParent(entriesTab.transform, false); //Añadimos el boton como hijo de "entriesTab"
             go.GetComponent<AstrariumEntryButton>().entryName = name; //Añadimos a la variable del boton el nombre de la entrada que abre
         }
     }
