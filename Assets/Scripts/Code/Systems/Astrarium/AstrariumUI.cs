@@ -23,7 +23,7 @@ public class AstrariumUI : MonoBehaviour
     {
         //Definicion del diccionario
         entryTypes[0] = "Planet";
-        entryTypes[1] = "Specie";
+        entryTypes[1] = "Species";
         entryTypes[2] = "Resource";
         entryTypes[3] = "Satelite";
         entryTypes[4] = "Constellation";

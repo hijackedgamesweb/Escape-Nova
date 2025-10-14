@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Astrarium
   m_GUID: 34eb96d0a735621409d43df57cab8062
-  m_SerializeEntries:
-  - m_GUID: 9d3b875da9713a141b664a69b0e2576b
-    m_Address: Assets/Scripts/ScriptableObjects/Astrarium/Marte.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 623848aee25f43d4692369092341c67f, type: 2}
   m_SchemaSet:
