@@ -15,7 +15,7 @@ public class AstrariumUI : MonoBehaviour
     private string filePath;
     
     [SerializeField] private GameObject entriesTab;
-    [SerializeField] private GameObject entrieButtonPrefab;
+    [SerializeField] private GameObject entryButtonPrefab;
     
     
     //METODOS
@@ -35,17 +35,15 @@ public class AstrariumUI : MonoBehaviour
     
     public void CategoryButtonPressed(int idx)
     {
-        
-        foreach(Transform child in entriesTab.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        foreach(Transform child in entriesTab.transform) { Destroy(child.gameObject); }
         
         List<string> names = ReadAstrarium(entryTypes[idx]);
         
         foreach(string name in names)
         {
-            Instantiate(entrieButtonPrefab, new Vector3(0, 0, 0), Quaternion.identity).transform.SetParent(entriesTab.transform);
+            GameObject go = Instantiate(entryButtonPrefab, new Vector3(0, 0, 0), Quaternion.identity); //Creamos el boton
+            go.transform.SetParent(entriesTab.transform); //Añadimos el boton como hijo de "entriesTab"
+            go.GetComponent<AstrariumEntryButton>().entryName = name; //Añadimos a la variable del boton el nombre de la entrada que abre
         }
     }
     
@@ -67,7 +65,7 @@ public class AstrariumUI : MonoBehaviour
                 
                 if (div[0] == type && div[2] == "1") //Todos los elementos que tengan 1 en la ultima variable y con el nombre correct
                 {
-                    names.Add(div[0]);
+                    names.Add(div[1]);
                 }
             }
         }

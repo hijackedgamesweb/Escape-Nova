@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78942816cae0789469cc971efc75ff45, type: 3}
-  m_Name: AstrariumEntryScriptableObject
+  m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
+  m_Name: Astrarium_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  entryType: 0
-  name: Earth
-  description: The mother of all planets
-  image: {fileID: 0}
+  m_Group: {fileID: 11400000, guid: c7b3855e54f1d4e4195b39f816509800, type: 2}
+  m_StaticContent: 0

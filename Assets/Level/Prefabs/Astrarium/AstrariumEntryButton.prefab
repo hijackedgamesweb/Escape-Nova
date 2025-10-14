@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 2962384675411466817}
   - component: {fileID: 1080260434057452852}
   - component: {fileID: 3343198110024643342}
+  - component: {fileID: 4925961302674121692}
   m_Layer: 5
   m_Name: AstrariumEntryButton
   m_TagString: Untagged
@@ -333,3 +334,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4925961302674121692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553116501274274578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefede54659912442beaca378083ace6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryPrefab: {fileID: 8584594523966056877, guid: d92c65b795dc27b49b3e8b16c9225194, type: 3}
+  btn: {fileID: 479378494620550558}
+  entryName: 

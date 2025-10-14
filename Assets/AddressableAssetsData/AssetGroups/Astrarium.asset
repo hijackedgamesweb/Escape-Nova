@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Astrarium
+  m_EditorClassIdentifier: 
+  m_GroupName: Astrarium
+  m_GUID: 34eb96d0a735621409d43df57cab8062
+  m_SerializeEntries:
+  - m_GUID: 9d3b875da9713a141b664a69b0e2576b
+    m_Address: Assets/Scripts/ScriptableObjects/Astrarium/Marte.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 623848aee25f43d4692369092341c67f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c8913c3803053434ca29dd8c0f560795, type: 2}
+    - {fileID: 11400000, guid: 083a72051637b8848bec65ce16ddbd27, type: 2}
