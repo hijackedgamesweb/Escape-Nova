@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="" />
+    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/ConstructionCanvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/ConstructionCanvas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/ConstructionCanvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/ConstructionCanvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/EntityConstructionButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/EntityConstructionButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ConstructionTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ConstructionTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Entities/EntityScriptableObjectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Entities/EntityScriptableObjectScript.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +21,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ReibaxL"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hijackedgamesweb/Escape-Nova.git",
+    "accountId": "383bcb43-1ccf-49f1-acc5-fe574cbe729b"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/EntityConstructionButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -25,7 +51,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "Construction-and-Expansion",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -36,7 +62,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\Unity\Editor\6000.0.58f2-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath P:\GitHub\Escape-Nova -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -44,7 +70,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\Unity\Editor\6000.0.58f2-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath P:\GitHub\Escape-Nova -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -88,6 +114,7 @@
       <updated>1760368413474</updated>
       <workItem from="1760368477629" duration="6172000" />
       <workItem from="1760448896849" duration="5570000" />
+      <workItem from="1760512677556" duration="1770000" />
     </task>
     <servers />
   </component>

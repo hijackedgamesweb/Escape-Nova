@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6177185016941096552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7318472106241500184}
+        m_TargetAssemblyTypeName: ConstructionUI, Assembly-CSharp
+        m_MethodName: TabPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1966325512358224798
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +283,7 @@ GameObject:
   - component: {fileID: 8789778124156806928}
   - component: {fileID: 7318472106241500184}
   m_Layer: 5
-  m_Name: ConstructionCanvas
+  m_Name: ConstructionUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,9 +386,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f798443376533240a4c7195b358becd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placingUI: {fileID: 0}
   PlanetsTab: {fileID: 6954583516115818649}
   SatelitesTab: {fileID: 2633245525901298228}
   buildBtn: {fileID: 9137813026849622317}
+  planetsLayoutGroup: {fileID: 6711505412389441385}
+  satelitesLayoutGroup: {fileID: 6391687538221785114}
 --- !u!1 &2519916944048077440
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7363042977626861280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1485794605224766101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7318472106241500184}
+        m_TargetAssemblyTypeName: ConstructionUI, Assembly-CSharp
+        m_MethodName: TabPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8787864317148676419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,8 +1211,20 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 8866219617258086206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7318472106241500184}
+        m_TargetAssemblyTypeName: ConstructionUI, Assembly-CSharp
+        m_MethodName: BuildButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

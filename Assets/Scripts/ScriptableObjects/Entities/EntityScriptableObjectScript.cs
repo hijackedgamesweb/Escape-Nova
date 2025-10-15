@@ -22,7 +22,8 @@ public class EntityScriptableObjectScript : ScriptableObject
     
     //VARIABLES
     public EntityType entityType;
-    
+
+    public string entityName;
     public int tier;
     public int size;
     public int timeToBuild;

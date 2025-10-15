@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 3507448369550365271}
   - component: {fileID: 1432715822156830487}
   - component: {fileID: 6659428054286777208}
+  - component: {fileID: 1698572708918684737}
   m_Layer: 0
   m_Name: EntityConstructionButton
   m_TagString: Untagged
@@ -394,3 +395,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1698572708918684737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589662571068322047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff8af0b09321ab448b0bd606c2ce496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
