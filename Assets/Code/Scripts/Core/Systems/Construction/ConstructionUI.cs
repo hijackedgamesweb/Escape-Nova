@@ -8,7 +8,10 @@ public class ConstructionUI : MonoBehaviour
     
     [SerializeField] private GameObject PlanetsTab;
     [SerializeField] private GameObject SatelitesTab;
+
     [SerializeField] private Button buildBtn;
+
+    [SerializeField] private GameObject errorMsg;
     
     [SerializeField] private GameObject planetsLayoutGroup;
     [SerializeField] private GameObject satelitesLayoutGroup;
@@ -39,7 +42,19 @@ public class ConstructionUI : MonoBehaviour
     
     public void BuildButtonPressed()
     {
-        placingUI.SetActive(true);
-        gameObject.SetActive(false);
+        if (CheckForReources())
+        {
+            placingUI.SetActive(true);
+            gameObject.SetActive(false);
+            if(errorMsg.activeSelf) { errorMsg.SetActive(false); }
+        }
+        else { errorMsg.SetActive(true); }
+    }
+    
+    
+    private bool CheckForReources()
+    {
+        //AQUI COMPROBAR SI EL JUGADOR TIENE SUFICIENTES RECURSOS PARA CONSTRUIR EL ELEMENTO SELECCIONADO
+        return true;
     }
 }
