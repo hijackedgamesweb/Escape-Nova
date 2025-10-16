@@ -1,0 +1,6 @@
+Planet,Earth,1
+Planet,Mars,1
+Resource,Iron,1
+Species,Akki,1
+Constellation,Artemis,1
+Satelite,Ares,1
