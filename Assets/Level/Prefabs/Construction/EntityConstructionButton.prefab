@@ -395,9 +395,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ConstructionUI, Assembly-CSharp
-        m_MethodName: EntityPressed
+      - m_Target: {fileID: 1698572708918684737}
+        m_TargetAssemblyTypeName: EntityConstructionButton, Assembly-CSharp
+        m_MethodName: EntityButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -419,3 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff8af0b09321ab448b0bd606c2ce496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entityType: 
+  entityName: 
+  entityNameTxt: {fileID: 6276054791980988644}
+  timeToBuildTxt: {fileID: 6964965708334605189}

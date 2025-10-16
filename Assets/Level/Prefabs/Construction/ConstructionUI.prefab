@@ -530,6 +530,7 @@ MonoBehaviour:
   errorMsg: {fileID: 295079130932837016}
   planetsLayoutGroup: {fileID: 6711505412389441385}
   satelitesLayoutGroup: {fileID: 6391687538221785114}
+  entitieConstructionButtonPrefab: {fileID: 8589662571068322047, guid: f845b63e1df983f439839467e39fcab9, type: 3}
 --- !u!1 &2519916944048077440
 GameObject:
   m_ObjectHideFlags: 0

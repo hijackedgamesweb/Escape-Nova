@@ -6,14 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetGroupSortSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetGroupSortSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/ConstructionUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/ConstructionUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/EntityConstructionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/EntityConstructionButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingLocation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Construction/PlacingUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/ConstructionUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/ConstructionUI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/EntityConstructionButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Construction/EntityConstructionButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Placing/PlacingLocation.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Placing/PlacingLocation.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/AstrariumTest.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/AstrariumTest.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ConstructionTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ConstructionTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Planets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Planets/Earth.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Planets/Earth.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Planets/Mars.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Planets/Mars.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Satelites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Satelites/Ares.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Satelites/Ares.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Satelites/Hera.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Entities/Satelites/Hera.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +130,7 @@
       <workItem from="1760448896849" duration="5570000" />
       <workItem from="1760512677556" duration="1770000" />
       <workItem from="1760550144917" duration="2408000" />
+      <workItem from="1760604508679" duration="3485000" />
     </task>
     <servers />
   </component>
