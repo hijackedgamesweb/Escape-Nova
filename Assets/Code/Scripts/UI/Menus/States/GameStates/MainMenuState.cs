@@ -1,42 +1,36 @@
-using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.State.Interfaces;
-using UnityEngine;
-using UnityEngine.InputSystem;
+using Code.Scripts.Patterns.State.States.GameStates;
+using Code.Scripts.UI.Windows;
 using UnityEngine.UI;
 
-namespace Code.Scripts.Patterns.State.States.GameStates
+namespace Code.Scripts.UI.Menus.States.GameStates
 {
     public class MainMenuState : AState
     {
 
-        private readonly GameObject _uiObject;
+        private readonly MainMenuScreen _uiObject;
         
-        public MainMenuState(IStateManager stateManager, GameObject uiObject) : base(stateManager)
+        public MainMenuState(IStateManager stateManager, BaseUIScreen uiObject) : base(stateManager)
         {
-            _uiObject = uiObject;
+            _uiObject = (MainMenuScreen) uiObject;
         }
 
         public override void Enter(IStateManager gameManager)
         {
-            _uiObject.SetActive(true);
-
-            var playBtn = _uiObject.GetComponentInChildren<Button>();
-            if (playBtn != null)
-            {
-                playBtn.onClick.AddListener(OnPlayClicked);
-            }
+            _uiObject.gameObject.SetActive(true);
+            _uiObject.playButton.onClick.AddListener(OnPlayClicked);
+            _uiObject.settingsButton.onClick.AddListener(OnSettingsClicked);
+            
         }
+
 
 
         public override void Exit(IStateManager gameManager)
         {
-            _uiObject.SetActive(false);
-
-            var playBtn = _uiObject.GetComponentInChildren<Button>();
-            if (playBtn != null)
-            {
-                playBtn.onClick.RemoveListener(OnPlayClicked);
-            }
+            _uiObject.gameObject.SetActive(false);
+            _uiObject.playButton.onClick.RemoveListener(OnPlayClicked);
+            _uiObject.settingsButton.onClick.RemoveListener(OnSettingsClicked);
+            
         }
 
         public override void Update()
@@ -48,5 +42,11 @@ namespace Code.Scripts.Patterns.State.States.GameStates
         {
             _stateManager.SetState<InGameState>();
         }
+        
+        private void OnSettingsClicked()
+        {
+            _stateManager.SetState<OptionsState>();
+        }
+        
     }
 }

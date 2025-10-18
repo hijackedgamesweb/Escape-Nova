@@ -1,18 +1,15 @@
-using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.UI.Menus.States.GameStates;
 using Code.Scripts.UI.Windows;
-using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace Code.Scripts.Patterns.State.States.GameStates
+namespace Code.Scripts.UI.Menus.States.GameStates
 {
-    public class InGameState : AState
+    public class OptionsState : AState
     {
-        private InGameScreen _uiObject;
-        public InGameState(IStateManager stateManager, BaseUIScreen uiObject) : base(stateManager)
+        OptionsScreen _uiObject;
+        
+        public OptionsState(IStateManager stateManager, BaseUIScreen uiObject) : base(stateManager)
         {
-            _uiObject = (InGameScreen) uiObject;
+            _uiObject = (OptionsScreen) uiObject;
         }
 
         public override void Enter(IStateManager gameManager)
@@ -27,13 +24,13 @@ namespace Code.Scripts.Patterns.State.States.GameStates
             _uiObject.returnBtn.onClick.RemoveListener(OnReturnButtonClicked);
         }
 
-        public override void Update()
-        {
-        }
-        
         private void OnReturnButtonClicked()
         {
             _stateManager.SetState<MainMenuState>();
+        }
+
+        public override void Update()
+        {
         }
     }
 }
