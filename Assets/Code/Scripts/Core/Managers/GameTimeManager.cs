@@ -15,6 +15,7 @@ namespace Code.Scripts.Core.Managers
 
         public void Awake()
         {
+            TimeScale = 0f;
             ServiceLocator.RegisterService<IGameTime>(this);
         }
 
@@ -32,6 +33,12 @@ namespace Code.Scripts.Core.Managers
             GameTime += deltaTime;
             
             OnTimeAdvanced?.Invoke(deltaTime);
+        }
+
+        public void StartTimer()
+        {
+            GameTime = 0f;
+            TimeScale = 1f;
         }
 
         public void SetSpeed(float timeScale) => TimeScale = Mathf.Max(0f, timeScale);

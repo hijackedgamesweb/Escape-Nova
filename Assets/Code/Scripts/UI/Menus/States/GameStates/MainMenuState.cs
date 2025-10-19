@@ -1,5 +1,4 @@
 using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.Patterns.State.States.GameStates;
 using Code.Scripts.UI.Windows;
 using UnityEngine.UI;
 

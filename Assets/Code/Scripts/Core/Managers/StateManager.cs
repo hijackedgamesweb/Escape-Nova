@@ -1,6 +1,5 @@
 using Code.Scripts.Patterns.Factory;
 using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.Patterns.State.States.GameStates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,16 +13,6 @@ namespace Code.Scripts.Core.Managers
         public StateManager(GameStateFactory factory)
         {
             _factory = factory;
-        }
-
-        public void StartGame()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void EndGame()
-        {
-            throw new System.NotImplementedException();
         }
 
         public IState GetCurrentState()

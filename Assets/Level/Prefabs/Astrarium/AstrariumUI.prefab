@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entriesTab: {fileID: 8229485290182410761}
-  entryButtonPrefab: {fileID: 0}
+  entryButtonPrefab: {fileID: 7553116501274274578, guid: 293cfffcb7bbd76419b14f9494f17ec6, type: 3}
 --- !u!1 &2789991308911120772
 GameObject:
   m_ObjectHideFlags: 0

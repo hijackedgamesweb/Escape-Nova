@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.Patterns.State.States.GameStates;
 using Code.Scripts.UI.Menus.States.GameStates;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
@@ -11,26 +10,28 @@ namespace Code.Scripts.Patterns.Factory
     public class GameStateFactory
     {
         private readonly Dictionary<Type, BaseUIScreen> _uiPrefabs = new();
+        private readonly Dictionary<Type, Func<IStateManager, IState>> _constructors = new();
         
         public GameStateFactory()
         {
         }
         
-        public void RegisterUI<T>(BaseUIScreen uiPrefab) where T : IState
+        
+        public void RegisterUI<T, TUI>(TUI ui, Func<IStateManager, TUI, T> constructor) where T : IState where TUI : BaseUIScreen
         {
-            _uiPrefabs[typeof(T)] = uiPrefab;
+            _uiPrefabs[typeof(T)] = ui;
+            _constructors[typeof(T)] = (manager) => constructor(manager, ui);
+        }
+        
+        public void Register<TState>(Func<IStateManager, TState> constructor)
+            where TState : AState
+        {
+            _constructors[typeof(TState)] = (manager) => constructor(manager);
         }
         
         public T Create<T>(IStateManager stateManager) where T : AState
         {
-            if (typeof(T) == typeof(MainMenuState))
-                return (T)(AState)new MainMenuState(stateManager, _uiPrefabs[typeof(MainMenuState)]);
-            if (typeof(T) == typeof(InGameState))
-                return (T)(AState)new InGameState(stateManager, _uiPrefabs[typeof(InGameState)]);
-            if (typeof(T) == typeof(OptionsState))
-                return (T)(AState)new OptionsState(stateManager, _uiPrefabs[typeof(OptionsState)]);
-
-            throw new Exception($"No factory for type {typeof(T)}");
+            return (T)_constructors[typeof(T)].Invoke(stateManager);
         }
         
     }

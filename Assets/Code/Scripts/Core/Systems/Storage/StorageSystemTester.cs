@@ -1,12 +1,13 @@
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Windows;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Code.Scripts.Core.Systems.Storage
 {
-    public class StorageSystemTester : MonoBehaviour
+    public class StorageSystemTester : BaseUIScreen
     {
         [Header("UI References")]
         public TMP_Text resourcesText;
@@ -16,6 +17,7 @@ namespace Code.Scripts.Core.Systems.Storage
         public Button consumeMetalButton;
         public Button consumeWoodButton;
         public Button consumeStoneButton;
+        public Button exitButton;
         
         [Header("Add Amounts")]
         public int addMetalAmount = 10;
@@ -41,12 +43,6 @@ namespace Code.Scripts.Core.Systems.Storage
             consumeMetalButton.onClick.AddListener(() => ConsumeMetal());
             consumeWoodButton.onClick.AddListener(() => ConsumeWood());
             consumeStoneButton.onClick.AddListener(() => ConsumeStone());
-            
-            // Suscribirse a eventos
-            _storage.OnStorageUpdated += UpdateUI;
-            
-            // Actualizar UI inicial
-            UpdateUI();
             
             Debug.Log("StorageSystem Tester inicializado!");
         }
@@ -87,28 +83,6 @@ namespace Code.Scripts.Core.Systems.Storage
             bool success = _storage.ConsumeResource(ResourceType.Piedra, consumeStoneAmount);
             Debug.Log(success ? $"Consumed {consumeStoneAmount} Stone" : "Not enough Stone");
         }
-
-        void UpdateUI()
-        {
-            if (_storage == null) return;
-
-            var allResources = _storage.GetAllResources();
-            string displayText = "RECURSOS ACTUALES:\n\n";
-            
-            foreach (var resource in allResources)
-            {
-                var resourceData = _storage.GetResourceData(resource.Key);
-                string resourceName = resourceData != null ? resourceData.DisplayName : resource.Key.ToString();
-                displayText += $"{resourceName}: {resource.Value}\n";
-            }
-
-            resourcesText.text = displayText;
-        }
-
-        void OnDestroy()
-        {
-            if (_storage != null)
-                _storage.OnStorageUpdated -= UpdateUI;
-        }
+        
     }
 }
