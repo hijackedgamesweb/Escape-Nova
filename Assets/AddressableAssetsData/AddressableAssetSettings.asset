@@ -15,7 +15,11 @@ MonoBehaviour:
   m_DefaultGroup: 5ffec2312fdea32478392cb7529c3a12
   m_currentHash:
     serializedVersion: 2
+<<<<<<< Updated upstream
     Hash: 6381c1b29b0cda4e1b641c9f26cd6f88
+=======
+    Hash: 658f53b9de3523ca13f2beb4b1e25112
+>>>>>>> Stashed changes
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
