@@ -56,6 +56,12 @@ namespace Code.Scripts.Core.Managers
             }
         }
 
+        public void StartTimer()
+        {
+            GameTime = 0f;
+            TimeScale = 1f;
+        }
+
         public void SetSpeed(float timeScale) => TimeScale = Mathf.Max(0f, timeScale);
         public void Pause() => TimeScale = 0f;
         public void Resume() => TimeScale = 1f;

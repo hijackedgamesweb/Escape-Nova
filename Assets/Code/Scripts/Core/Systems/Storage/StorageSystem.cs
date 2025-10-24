@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Mono.Cecil;
 
 
 namespace Code.Scripts.Core.Systems.Storage
