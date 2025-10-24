@@ -5,6 +5,7 @@ using System.IO;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
 using Mono.Cecil;
+using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 
 
 namespace Code.Scripts.Core.Systems.Storage

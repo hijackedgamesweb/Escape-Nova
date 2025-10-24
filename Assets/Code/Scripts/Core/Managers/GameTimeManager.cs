@@ -56,13 +56,6 @@ namespace Code.Scripts.Core.Managers
                 _nextCycleTime += timeConfig.secondsPerCycle;
             }
         }
-
-        public void StartTimer()
-        {
-            GameTime = 0f;
-            TimeScale = 1f;
-        }
-
         public void StartTimer()
         {
             GameTime = 0f;
