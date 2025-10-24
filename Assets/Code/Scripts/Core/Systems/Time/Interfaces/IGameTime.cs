@@ -12,6 +12,8 @@ namespace Code.Scripts.Core.Managers.Interfaces
         void SetSpeed(float timeScale);
         void Pause();
         void Resume();
+
+        void StartTimer();
         
         event Action<float> OnTimeAdvanced;
         event Action<int> OnCycleCompleted;

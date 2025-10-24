@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.IO;
+using Code.Scripts.UI.Windows;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Code.Scripts.Core.Systems.Astrarium
 {
-    public class AstrariumUI : MonoBehaviour
+    public class AstrariumUI : BaseUIScreen
     {
 
         //VARIABLES
@@ -14,6 +16,7 @@ namespace Code.Scripts.Core.Systems.Astrarium
     
         [SerializeField] private GameObject entriesTab;
         [SerializeField] private GameObject entryButtonPrefab;
+        [SerializeField] public Button exitButton;
     
     
         //METODOS

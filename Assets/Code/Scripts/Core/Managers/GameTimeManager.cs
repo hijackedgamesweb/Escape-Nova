@@ -22,6 +22,7 @@ namespace Code.Scripts.Core.Managers
 
         public void Awake()
         {
+            TimeScale = 0f;
             ServiceLocator.RegisterService<IGameTime>(this);
             
             if (timeConfig == null)
@@ -54,6 +55,12 @@ namespace Code.Scripts.Core.Managers
                 OnCycleCompleted?.Invoke(CurrentCycle);
                 _nextCycleTime += timeConfig.secondsPerCycle;
             }
+        }
+
+        public void StartTimer()
+        {
+            GameTime = 0f;
+            TimeScale = 1f;
         }
 
         public void StartTimer()
