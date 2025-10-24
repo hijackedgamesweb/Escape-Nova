@@ -25,7 +25,7 @@ namespace Code.Scripts.UI.HUD
                 Debug.LogError("GameTime service not found!");
                 return;
             }
-            _gameTime.OnTimeAdvanced += OnTimeAdvanced;
+            _gameTime.OnCycleCompleted += OnTimeAdvanced;
             UpdateLabel();
         }
         
@@ -33,13 +33,12 @@ namespace Code.Scripts.UI.HUD
         {
             if (_gameTime != null)
             {
-                _gameTime.OnTimeAdvanced -= OnTimeAdvanced;
+                _gameTime.OnCycleCompleted -= OnTimeAdvanced;
             }
         }
         
-        private void OnTimeAdvanced(float deltaTime)
+        private void OnTimeAdvanced(int currentCycle)
         {
-            int currentCycle = Mathf.FloorToInt(_gameTime.GameTime / _timeConfig.secondsPerCycle);
             if (currentCycle != _lastCycle)
             {
                 _lastCycle = currentCycle;
