@@ -14,18 +14,32 @@ public class StorageUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private TextMeshProUGUI descriptionItemName;
     [SerializeField] private Image descriptionItemSprite;
-
-    [Header("Item Data")]
-    [SerializeField] private List<ItemData> items;
-
+    
     private List<ItemView> itemViews = new List<ItemView>();
     private ItemView selectedItemView;
+    
+    private Dictionary<string, int> itemQuantities;
 
     private void Start()
     {
+        InitializeItemQuantities();
         InitializeStorageUI();
     }
 
+    private void InitializeItemQuantities()
+    {
+        //itemQuantities = GameManager.Instance.PlayerInventory;
+        //itemQuantities = InventorySystem.GetItemQuantities();
+        
+        // Ejemplo con numeros metidos a piñon:
+        itemQuantities = new Dictionary<string, int>()
+        {
+            {"Espada", 5},
+            {"Papiro", 10},
+            {"Sol", 1}
+        };
+    }  
+    
     private void InitializeStorageUI()
     {
         if (descriptionPanel != null)
@@ -49,8 +63,31 @@ public class StorageUIManager : MonoBehaviour
                 if (data != null)
                 {
                     itemView.Initialize(OnItemSelected);
+                    
+                    if (itemQuantities != null && itemQuantities.ContainsKey(data.itemName))
+                    {
+                        itemView.SetAmount(itemQuantities[data.itemName]);
+                    }
+                    else
+                    {
+                        itemView.SetAmount(0);
+                    }
                     itemViews.Add(itemView);
                 }
+            }
+        }
+    }
+    
+    public void RefreshQuantities(Dictionary<string, int> newQuantities)
+    {
+        itemQuantities = newQuantities;
+        
+        foreach (ItemView itemView in itemViews)
+        {
+            ItemData data = itemView.GetItemData();
+            if (itemQuantities.ContainsKey(data.itemName))
+            {
+                itemView.SetAmount(itemQuantities[data.itemName]);
             }
         }
     }

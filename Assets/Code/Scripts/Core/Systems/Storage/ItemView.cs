@@ -27,12 +27,16 @@ public class ItemView : MonoBehaviour, IPointerClickHandler
         SetSelected(false);
     }
 
+    public void SetAmount(int amount)
+    {
+        itemAmountText.text = amount.ToString();
+    }
+    
     private void UpdateUI()
     {
         if (itemData != null)
         {
             itemNameText.text = itemData.itemName;
-            itemAmountText.text = itemData.amount.ToString();
             
             if (itemPreviewImage != null && itemData.icon != null)
             {
