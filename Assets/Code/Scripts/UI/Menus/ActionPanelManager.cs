@@ -1,6 +1,8 @@
+using Code.Scripts.UI.Windows;
+
 namespace Code.Scripts.UI.Menus
 {
-    public class ActionPanelManager
+    public class ActionPanelUI : BaseUIScreen
     {
         
     }
