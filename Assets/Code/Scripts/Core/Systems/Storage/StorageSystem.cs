@@ -4,13 +4,15 @@ using System;
 using System.IO;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Mono.Cecil;
+using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 
 
 namespace Code.Scripts.Core.Systems.Storage
 {
-    public class StorageSystem : MonoBehaviour
+    public class StorageSystem
     {
-        [SerializeField] private List<ResourceData> _resourceDataList; // Lista de recursos que asignamos en el Inspector
+        private List<ResourceData> _resourceDataList; // Lista de recursos que asignamos en el Inspector
         
         private Dictionary<ResourceType, ResourceData> _resourceDatabase; // Diccionario para buscar datos de recursos rápido
         private Dictionary<ResourceType, int> _resources = new Dictionary<ResourceType, int>(); // Aquí guardamos cuánto tenemos de cada recurso
@@ -19,7 +21,13 @@ namespace Code.Scripts.Core.Systems.Storage
         public event Action<ResourceType, int> OnResourceChanged;
         public event Action OnStorageUpdated;
         
-        private void Awake()
+        public StorageSystem(List<ResourceData> resourceDataList)
+        {
+            _resourceDataList = resourceDataList;
+            Initialize();
+        }
+        
+        private void Initialize()
         {
             // Me registro en el ServiceLocator para que otros sistemas me encuentren
             ServiceLocator.RegisterService<StorageSystem>(this);
