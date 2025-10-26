@@ -26,7 +26,7 @@ namespace Code.Scripts.UI.Menus.States.GameStates
 
         private void OnReturnButtonClicked()
         {
-            _stateManager.SetState<MainMenuState>();
+            _stateManager.SetState(new MainMenuState(_stateManager));
         }
 
         public override void Update()

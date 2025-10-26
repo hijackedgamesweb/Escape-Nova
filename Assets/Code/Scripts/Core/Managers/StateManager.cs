@@ -7,12 +7,10 @@ namespace Code.Scripts.Core.Managers
 {
     public class StateManager :  IStateManager
     {
-        private readonly GameStateFactory _factory;
         private IState _currentState;
 
-        public StateManager(GameStateFactory factory)
+        public StateManager()
         {
-            _factory = factory;
         }
 
         public IState GetCurrentState()
@@ -25,16 +23,6 @@ namespace Code.Scripts.Core.Managers
             _currentState?.Exit(this);
             _currentState = state;
             _currentState.Enter(this);
-        }
-
-        public void SetState<T>(object parameter = null) where T : AState
-        {
-            IState newState = _factory.Create<T>(this);
-            if (newState is IParametrizedState parametrizedState)
-            {
-                parametrizedState.SetParameter(parameter);
-            }
-            SetState(newState);
         }
     }
 }

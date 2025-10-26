@@ -1636,7 +1636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958929759}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Code.Scripts.Core.Systems.Astrarium.AstrariumUI,
           Assembly-CSharp
         m_MethodName: CategoryButtonPressed
@@ -6200,7 +6200,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958929759}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Code.Scripts.Core.Systems.Astrarium.AstrariumUI,
           Assembly-CSharp
         m_MethodName: CategoryButtonPressed
@@ -6664,7 +6664,6 @@ GameObject:
   - component: {fileID: 932223185}
   - component: {fileID: 932223184}
   - component: {fileID: 932223188}
-  - component: {fileID: 932223189}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6767,22 +6766,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 932223183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658d1ebff04940948e91e10f01a51a92, type: 3}
+  m_Script: {fileID: 11500000, guid: de9768f260f443c0b9e475b3d4a04b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &932223189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932223183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4670865e423194f4cb9da7a6f7ff0f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentScreen: {fileID: 0}
+  screens: []
 --- !u!1 &947912982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6913,7 +6900,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 958929758}
-  - component: {fileID: 958929759}
   m_Layer: 0
   m_Name: AstrariumUI
   m_TagString: Untagged
@@ -6938,21 +6924,6 @@ Transform:
   - {fileID: 1237274439}
   m_Father: {fileID: 802596743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &958929759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958929757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f125a2649a9b04abcab76afb290197, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entriesTab: {fileID: 1144508475}
-  entryButtonPrefab: {fileID: 7553116501274274578, guid: 293cfffcb7bbd76419b14f9494f17ec6, type: 3}
-  exitButton: {fileID: 2094211917}
 --- !u!224 &981538684 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6889613720113401144, guid: 4880536b2bd02654f8e2298c5fdfad8d, type: 3}
@@ -7074,7 +7045,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020033735}
-  - component: {fileID: 1020033736}
   m_Layer: 5
   m_Name: MainPanelUI
   m_TagString: Untagged
@@ -7105,26 +7075,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1020033736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020033734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eae8dcd5d0c1443ea7b2ec19dcfbaf0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  returnBtn: {fileID: 1461095064}
-  astrariumBtn: {fileID: 1732009080}
-  diplomacyBtn: {fileID: 1995384604}
-  skillTreeBtn: {fileID: 1564295950}
-  constructionBtn: {fileID: 573119809}
-  storageBtn: {fileID: 573119809}
-  missionsBtn: {fileID: 1932860136}
-  researchBtn: {fileID: 1151796319}
 --- !u!1 &1039022934
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,7 +8667,6 @@ GameObject:
   - component: {fileID: 1191806794}
   - component: {fileID: 1191806793}
   - component: {fileID: 1191806792}
-  - component: {fileID: 1191806795}
   m_Layer: 5
   m_Name: StorageUI
   m_TagString: Untagged
@@ -8810,18 +8759,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1191806795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191806790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644d9248640b41408f28b019814c324a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1192357018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9026,7 +8963,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958929759}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Code.Scripts.Core.Systems.Astrarium.AstrariumUI,
           Assembly-CSharp
         m_MethodName: CategoryButtonPressed
@@ -9129,9 +9066,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c9d30338b34835a541c59612c190fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 1497851078}
-  settingsButton: {fileID: 373283690}
-  exitButton: {fileID: 947912984}
+  PlayButton: {fileID: 1497851078}
+  SettingsButton: {fileID: 373283690}
+  ExitButton: {fileID: 947912984}
 --- !u!1001 &1209115022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11741,7 +11678,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958929759}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Code.Scripts.Core.Systems.Astrarium.AstrariumUI,
           Assembly-CSharp
         m_MethodName: CategoryButtonPressed
@@ -12510,7 +12447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 958929759}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Code.Scripts.Core.Systems.Astrarium.AstrariumUI,
           Assembly-CSharp
         m_MethodName: CategoryButtonPressed
@@ -15285,7 +15222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29faf6a00db42bfb6d6f0b477c2d6a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiRepository: {fileID: 932223188}
 --- !u!4 &1992747924
 Transform:
   m_ObjectHideFlags: 0
