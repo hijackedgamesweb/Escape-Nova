@@ -5,8 +5,8 @@ namespace Code.Scripts.UI.Windows
 {
     public class MainMenuScreen : BaseUIScreen
     {
-        [SerializeField] public Button playButton;
-        [SerializeField] public Button settingsButton;
-        [SerializeField] public Button exitButton;
+        [SerializeField] public Button PlayButton;
+        [SerializeField] public Button SettingsButton;
+        [SerializeField] public Button ExitButton;
     }
 }
