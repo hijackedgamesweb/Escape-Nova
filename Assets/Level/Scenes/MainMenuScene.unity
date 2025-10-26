@@ -1488,6 +1488,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158962979}
   m_CullTransparentMesh: 1
+--- !u!1 &159051740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159051742}
+  - component: {fileID: 159051741}
+  m_Layer: 0
+  m_Name: InventoryTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159051741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159051740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8effefee3e0f21546a876ae745b5e067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableItems:
+  - {fileID: 11400000, guid: 05b8b1d0903ce174e9f1b3427846b91f, type: 2}
+  - {fileID: 11400000, guid: debcbb2e354a3534e82f9fbbd681402e, type: 2}
+  - {fileID: 11400000, guid: 667fef9697e613a488922b745d3ab0a8, type: 2}
+--- !u!4 &159051742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159051740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 549.7301, y: 314.1133, z: -0.5902485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190004321
 GameObject:
   m_ObjectHideFlags: 0
@@ -9207,7 +9255,6 @@ MonoBehaviour:
   descriptionText: {fileID: 1442289451}
   descriptionItemName: {fileID: 1238672809}
   descriptionItemSprite: {fileID: 2015830739}
-  items: []
 --- !u!1 &1192357018
 GameObject:
   m_ObjectHideFlags: 0
@@ -16397,7 +16444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 250, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015830738
@@ -17434,3 +17481,4 @@ SceneRoots:
   - {fileID: 1382856403}
   - {fileID: 1531899067}
   - {fileID: 1100611342}
+  - {fileID: 159051742}

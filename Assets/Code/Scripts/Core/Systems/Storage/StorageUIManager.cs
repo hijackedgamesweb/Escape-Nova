@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Patterns.ServiceLocator;
 
 public class StorageUIManager : MonoBehaviour
 {
@@ -28,17 +30,24 @@ public class StorageUIManager : MonoBehaviour
 
     private void InitializeItemQuantities()
     {
-        //itemQuantities = GameManager.Instance.PlayerInventory;
-        //itemQuantities = InventorySystem.GetItemQuantities();
+        StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+
+        storage.AddInventoryItem("Espada", 1);
+        storage.AddInventoryItem("Papiro", 5);
         
-        // Ejemplo con numeros metidos a piñon:
-        itemQuantities = new Dictionary<string, int>()
+        if (storage != null)
         {
-            {"Espada", 5},
-            {"Papiro", 10},
-            {"Sol", 1}
-        };
-    }  
+            // Obtener solo los items del inventario (no recursos)
+            itemQuantities = storage.GetInventoryItems();
+            
+            Debug.Log($"Inventario inicializado con {itemQuantities.Count} items");
+        }
+        else
+        {
+            Debug.LogError("StorageSystem no disponible");
+            itemQuantities = new Dictionary<string, int>();
+        }
+    }
     
     private void InitializeStorageUI()
     {
