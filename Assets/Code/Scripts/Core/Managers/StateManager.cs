@@ -27,10 +27,13 @@ namespace Code.Scripts.Core.Managers
             _currentState.Enter(this);
         }
 
-        // Método práctico para crear y cambiar estado usando la Factory
-        public void SetState<T>() where T : AState
+        public void SetState<T>(object parameter = null) where T : AState
         {
             IState newState = _factory.Create<T>(this);
+            if (newState is IParametrizedState parametrizedState)
+            {
+                parametrizedState.SetParameter(parameter);
+            }
             SetState(newState);
         }
     }

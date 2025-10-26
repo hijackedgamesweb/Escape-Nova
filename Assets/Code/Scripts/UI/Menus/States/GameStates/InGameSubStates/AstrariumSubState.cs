@@ -16,13 +16,11 @@ namespace Code.Scripts.UI.Menus.States.GameStates.InGameSubStates
 
         public override void Enter(IStateManager gameManager)
         {
-            _objectUI.exitButton.onClick.AddListener(() => gameManager.SetState<DefaultState>());
             _objectUI.Show();
         }
 
         public override void Exit(IStateManager gameManager)
         {
-            _objectUI.exitButton.onClick.RemoveAllListeners();
             _objectUI.Hide();
         }
 
