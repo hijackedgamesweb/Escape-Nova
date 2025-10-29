@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720e52ca6e61499099e5eb3e17f30089, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  civName: Anatoli
+  civLeaderName: Yo
+  baseHunger: 2
+  baseAnger: 3
+  baseMilitaryPower: 4
+  baseWood: 2
+  baseFood: 1

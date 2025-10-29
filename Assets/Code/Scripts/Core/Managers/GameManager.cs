@@ -15,7 +15,6 @@ namespace Code.Scripts.Core.Managers
     public class GameManager : MonoBehaviour
     {
         private IStateManager _stateManager;
-        private GameStateFactory _stateFactory;
         
         private void Awake()
         {
