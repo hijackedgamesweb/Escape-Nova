@@ -4,6 +4,7 @@ namespace Code.Scripts.Patterns.State.Interfaces
     {
         public IState GetCurrentState();
         public void SetState(IState state);
-        
+
+        public void SetState<T>() where T : AState;
     }
 }

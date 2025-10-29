@@ -1,7 +1,3 @@
-using System;
-using Code.Scripts.Core.Managers;
-using Code.Scripts.Core.Systems.Astrarium;
-using Code.Scripts.Core.Systems.Construction;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,16 +14,5 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public Button missionsBtn;
         [SerializeField] public Button researchBtn;
 
-        private void Awake()
-        {
-            astrariumBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Astrarium"));
-            diplomacyBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Diplomacy"));
-            skillTreeBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("SkillTree"));
-            constructionBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Construction"));
-        }
     }
 }

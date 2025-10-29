@@ -7,10 +7,12 @@ namespace Code.Scripts.Core.Managers
 {
     public class StateManager :  IStateManager
     {
+        private readonly GameStateFactory _factory;
         private IState _currentState;
 
-        public StateManager()
+        public StateManager(GameStateFactory factory)
         {
+            _factory = factory;
         }
 
         public IState GetCurrentState()
@@ -23,6 +25,13 @@ namespace Code.Scripts.Core.Managers
             _currentState?.Exit(this);
             _currentState = state;
             _currentState.Enter(this);
+        }
+
+        // Método práctico para crear y cambiar estado usando la Factory
+        public void SetState<T>() where T : AState
+        {
+            IState newState = _factory.Create<T>(this);
+            SetState(newState);
         }
     }
 }

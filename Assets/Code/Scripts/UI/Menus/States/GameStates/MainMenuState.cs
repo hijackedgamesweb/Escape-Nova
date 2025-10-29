@@ -1,4 +1,3 @@
-using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Windows;
 using UnityEngine.UI;
@@ -7,26 +6,29 @@ namespace Code.Scripts.UI.Menus.States.GameStates
 {
     public class MainMenuState : AState
     {
-        MainMenuScreen _mainMenuScreen;
-        private IStateManager _stateManager;
-        public MainMenuState(IStateManager stateManager) : base(stateManager)
+
+        private readonly MainMenuScreen _uiObject;
+        
+        public MainMenuState(IStateManager stateManager, BaseUIScreen uiObject) : base(stateManager)
         {
-            _mainMenuScreen = UIManager.Instance.ShowScreen<MainMenuScreen>();
-            _stateManager = stateManager;
+            _uiObject = (MainMenuScreen) uiObject;
         }
 
-        public override void Enter(IStateManager stateManager)
+        public override void Enter(IStateManager gameManager)
         {
-            _mainMenuScreen.PlayButton.onClick.AddListener(() =>
-            {
-                _stateManager.SetState(new InGameState(_stateManager));
-            });
+            _uiObject.gameObject.SetActive(true);
+            _uiObject.playButton.onClick.AddListener(OnPlayClicked);
+            _uiObject.settingsButton.onClick.AddListener(OnSettingsClicked);
+            
         }
 
 
 
         public override void Exit(IStateManager gameManager)
         {
+            _uiObject.gameObject.SetActive(false);
+            _uiObject.playButton.onClick.RemoveListener(OnPlayClicked);
+            _uiObject.settingsButton.onClick.RemoveListener(OnSettingsClicked);
             
         }
 
@@ -34,6 +36,16 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         {
         }
         
+        
+        private void OnPlayClicked()
+        {
+            _stateManager.SetState<InGameState>();
+        }
+        
+        private void OnSettingsClicked()
+        {
+            _stateManager.SetState<OptionsState>();
+        }
         
     }
 }
