@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Papiro
   m_EditorClassIdentifier: 
   itemName: Papiro
-  icon: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
+  amount: 1
+  icon: {fileID: -6927526756944930168, guid: 152ec16ce102a954589778aad052020b, type: 3}
   description: "En este papiro est\xE1n los escritos m\xE1s antiguos de las civilizaciones,
     esta informaci\xF3n vale oro, y en las manos err\xF3neas, puede acabar con la
     vida en la faz del unverso."

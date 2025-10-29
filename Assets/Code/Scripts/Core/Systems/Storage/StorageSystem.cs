@@ -16,8 +16,6 @@ namespace Code.Scripts.Core.Systems.Storage
         
         private Dictionary<ResourceType, ResourceData> _resourceDatabase; // Diccionario para buscar datos de recursos rápido
         private Dictionary<ResourceType, int> _resources = new Dictionary<ResourceType, int>(); // Aquí guardamos cuánto tenemos de cada recurso
-        private Dictionary<string, int> _inventoryItems = new Dictionary<string, int>();
-
         
         // Eventos para avisar cuando cambian los recursos
         public event Action<ResourceType, int> OnResourceChanged;
@@ -29,94 +27,12 @@ namespace Code.Scripts.Core.Systems.Storage
             Initialize();
         }
         
-        // En la clase StorageSystem, agrega este método:
-        public void InitializeInventoryItems(List<ItemData> availableItems)
-        {
-            _inventoryItems.Clear();
-    
-            if (availableItems != null && availableItems.Count > 0)
-            {
-                foreach (var item in availableItems)
-                {
-                    if (item != null && !string.IsNullOrEmpty(item.itemName))
-                    {
-                        _inventoryItems[item.itemName] = 0; // Inicializar en 0
-                        Debug.Log($"Item de inventario registrado: {item.itemName}");
-                    }
-                }
-                Debug.Log($"Inventario inicializado con {_inventoryItems.Count} items disponibles");
-            }
-            else
-            {
-                Debug.LogWarning("No se proporcionaron items disponibles para el inventario");
-            }
-        }
-        
-        public bool AddInventoryItem(string itemName, int quantity)
-        {
-            if (!_inventoryItems.ContainsKey(itemName))
-            {
-                Debug.LogWarning($"Item {itemName} no encontrado en inventario disponible");
-                return false;
-            }
-    
-            _inventoryItems[itemName] += quantity;
-            OnStorageUpdated?.Invoke();
-            return true;
-        }
-        
-        public bool HasInventoryItem(string itemName, int quantity)
-        {
-            return _inventoryItems.ContainsKey(itemName) && _inventoryItems[itemName] >= quantity;
-        }
-        
-        public bool ConsumeInventoryItem(string itemName, int quantity)
-        {
-            if (!HasInventoryItem(itemName, quantity))
-                return false;
-        
-            _inventoryItems[itemName] -= quantity;
-            OnStorageUpdated?.Invoke();
-            return true;
-        }
-        
         private void Initialize()
         {
             // Me registro en el ServiceLocator para que otros sistemas me encuentren
             ServiceLocator.RegisterService<StorageSystem>(this);
             // Inicializo la base de datos de recursos
             InitializeResourceDatabase();
-        }
-        
-        // Obtener cantidad de un item específico
-        public int GetInventoryItemQuantity(string itemName)
-        {
-            return _inventoryItems.GetValueOrDefault(itemName, 0);
-        }
-        
-        // Obtener todos los items del inventario
-        public Dictionary<string, int> GetInventoryItems()
-        {
-            return new Dictionary<string, int>(_inventoryItems);
-        }
-
-        public Dictionary<string, int> GetAllItemsCombined()
-        {
-            var allItems = new Dictionary<string, int>();
-    
-            // Agregar recursos del sistema de recursos
-            foreach (var resource in _resources)
-            {
-                allItems.Add($"Resource_{resource.Key}", resource.Value);
-            }
-    
-            // Agregar items del inventario
-            foreach (var item in _inventoryItems)
-            {
-                allItems.Add(item.Key, item.Value);
-            }
-    
-            return allItems;
         }
         
         private void InitializeResourceDatabase()
