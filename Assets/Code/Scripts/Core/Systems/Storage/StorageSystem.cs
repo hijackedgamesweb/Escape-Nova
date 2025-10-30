@@ -16,6 +16,7 @@ namespace Code.Scripts.Core.Systems.Storage
         
         private Dictionary<ResourceType, ResourceData> _resourceDatabase; // Diccionario para buscar datos de recursos rápido
         private Dictionary<ResourceType, int> _resources = new Dictionary<ResourceType, int>(); // Aquí guardamos cuánto tenemos de cada recurso
+        private Dictionary<string, int> _inventoryItems = new Dictionary<string, int>(); // Para items de inventario
         
         // Eventos para avisar cuando cambian los recursos
         public event Action<ResourceType, int> OnResourceChanged;
@@ -34,6 +35,67 @@ namespace Code.Scripts.Core.Systems.Storage
             // Inicializo la base de datos de recursos
             InitializeResourceDatabase();
         }
+        
+        public void InitializeInventoryItems(List<ItemData> availableItems)
+        {
+            _inventoryItems.Clear();
+
+            if (availableItems != null && availableItems.Count > 0)
+            {
+                foreach (var item in availableItems)
+                {
+                    if (item != null && !string.IsNullOrEmpty(item.itemName))
+                    {
+                        _inventoryItems[item.itemName] = 0; // Inicializar en 0
+                        Debug.Log($"Item de inventario registrado: {item.itemName}");
+                    }
+                }
+                Debug.Log($"Inventario inicializado con {_inventoryItems.Count} items disponibles");
+            }
+            else
+            {
+                Debug.LogWarning("No se proporcionaron items disponibles para el inventario");
+            }
+        }
+        
+        public bool HasInventoryItem(string itemName, int quantity)
+        {
+            return _inventoryItems.ContainsKey(itemName) && _inventoryItems[itemName] >= quantity;
+        }
+        
+        public bool ConsumeInventoryItem(string itemName, int quantity)
+        {
+            if (!HasInventoryItem(itemName, quantity))
+                return false;
+        
+            _inventoryItems[itemName] -= quantity;
+            OnStorageUpdated?.Invoke();
+            return true;
+        }
+        
+        public bool AddInventoryItem(string itemName, int quantity)
+        {
+            if (!_inventoryItems.ContainsKey(itemName))
+            {
+                Debug.LogWarning($"Item {itemName} no encontrado en inventario disponible");
+                return false;
+            }
+
+            _inventoryItems[itemName] += quantity;
+            OnStorageUpdated?.Invoke();
+            return true;
+        }
+        
+        public int GetInventoryItemQuantity(string itemName)
+        {
+            return _inventoryItems.GetValueOrDefault(itemName, 0);
+        }
+        
+        public Dictionary<string, int> GetInventoryItems()
+        {
+            return new Dictionary<string, int>(_inventoryItems);
+        }
+
         
         private void InitializeResourceDatabase()
         {

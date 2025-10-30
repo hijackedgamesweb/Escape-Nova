@@ -6769,7 +6769,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9768f260f443c0b9e475b3d4a04b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screens: []
+  screens:
+  - {fileID: 1197717911}
+  - {fileID: 2025006690}
+  - {fileID: 1197717911}
+  - {fileID: 1305930611}
 --- !u!1 &947912982
 GameObject:
   m_ObjectHideFlags: 0

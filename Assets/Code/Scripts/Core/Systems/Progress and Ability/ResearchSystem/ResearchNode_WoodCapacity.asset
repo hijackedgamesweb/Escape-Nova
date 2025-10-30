@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
+  m_Name: ResearchNode_WoodCapacity
+  m_EditorClassIdentifier: 
+  researchId: wood_capacity_1
+  displayName: "Expansi\xF3n de Almac\xE9n de Madera"
+  description: "Incrementa la capacidad m\xE1xima de madera en 900 unidades"
+  icon: {fileID: 0}
+  prerequisites: []
+  researchTimeInSeconds: 2
+  resourceCosts:
+  - resourceType: 4
+    amount: 100
+    itemName: 
+    useInventoryItem: 0
+  rewards:
+  - rewardType: 0
+    targetId: Wood
+    value: 900
+    displayName: +900 Capacidad de Madera
+  tier: 2
+  treePosition: {x: 5, y: 0}
+  unlocksResearchIds:
+  - wood_capacity_2
