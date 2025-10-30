@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6046ac679f3549c0ad7d9cba1114b543, type: 3}
-  m_Name: Akki
+  m_Name: Mippip
   m_EditorClassIdentifier: 
-  civName: Akki
-  civLeaderName: Akki No
-  baseHunger: 15
-  baseAnger: 23
-  baseMilitaryPower: 2
-  civilizationDescription: No hay quien viva
-  civilizationIcon: {fileID: 21300000, guid: afcc21aaa520e9743b7c6ddd2ee73409, type: 3}
+  civName: Mippip
+  civLeaderName: Mips32
+  baseHunger: 32
+  baseAnger: 32
+  baseMilitaryPower: 32
+  civilizationDescription: "no se que co\xF1o poner"
+  civilizationIcon: {fileID: 21300000, guid: 5e2805d1479227b499602a8f62f9a0e7, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 0
-  angerTolerance: 0
+  angerTolerance: 10
   leaderPortrait: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}

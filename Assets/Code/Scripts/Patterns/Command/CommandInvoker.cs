@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Code.Scripts.Patterns.Command.Interfaces;
 
@@ -6,10 +7,11 @@ namespace Code.Scripts.Patterns.Command
     public class CommandInvoker 
     {
         private Stack<ICommand> _commandHistory = new Stack<ICommand>();
-        
+        public Action<ICommand> OnCommandExecuted;
         public void ExecuteCommand(ICommand command)
         {
             command.Execute();
+            OnCommandExecuted?.Invoke(command);
             _commandHistory.Push(command);
         }
         

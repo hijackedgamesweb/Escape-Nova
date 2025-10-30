@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6046ac679f3549c0ad7d9cba1114b543, type: 3}
-  m_Name: Akki
+  m_Name: Handoull
   m_EditorClassIdentifier: 
-  civName: Akki
-  civLeaderName: Akki No
-  baseHunger: 15
-  baseAnger: 23
+  civName: Handoull
+  civLeaderName: 'Hand '
+  baseHunger: 1
+  baseAnger: 52
   baseMilitaryPower: 2
-  civilizationDescription: No hay quien viva
-  civilizationIcon: {fileID: 21300000, guid: afcc21aaa520e9743b7c6ddd2ee73409, type: 3}
+  civilizationDescription: texto de ejemplo 2
+  civilizationIcon: {fileID: 21300000, guid: 06823b49a1fcd154da0942a436195adb, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 0
-  angerTolerance: 0
+  angerTolerance: 32
   leaderPortrait: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
