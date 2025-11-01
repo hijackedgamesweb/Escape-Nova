@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Core.Systems.Time;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
 
@@ -60,7 +62,9 @@ namespace Code.Scripts.Core.Systems.Research
         private Dictionary<string, ResearchData> _researchProgress;
         
         private StorageSystem _storageSystem;
-        private Coroutine _currentResearchCoroutine;
+        private TimeScheduler _timeScheduler;
+        private ITimerHandle _currentResearchTimer;
+        private IGameTime _gameTime;
         private string _currentResearchId;
         
         // Eventos
@@ -72,8 +76,16 @@ namespace Code.Scripts.Core.Systems.Research
         public ResearchSystem(List<ResearchNode> availableResearch)
         {
             ServiceLocator.RegisterService<ResearchSystem>(this);
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
             InitializeResearchDatabase(availableResearch);
+        }
+        
+        public void InitializeDependencies()
+        {
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _timeScheduler = ServiceLocator.GetService<TimeScheduler>();
+            _gameTime = ServiceLocator.GetService<IGameTime>();
+        
+            RecalculateResearchAvailability(); 
         }
         
         private void InitializeResearchDatabase(List<ResearchNode> availableResearch)
@@ -131,7 +143,10 @@ namespace Code.Scripts.Core.Systems.Research
         
         public bool IsAnyResearchInProgress()
         {
-            return _currentResearchCoroutine != null && !string.IsNullOrEmpty(_currentResearchId);
+            //si el timer es nulo, significa que no hay investigacion en curso.
+            //Aunque el timer podria estar creado y cancelado, el StartResearch 
+            //y CancelCurrentResearch se encargaran de mantenerlo limpio
+            return _currentResearchTimer != null && !string.IsNullOrEmpty(_currentResearchId);
         }
         
         public string GetCurrentResearchId()
@@ -160,24 +175,60 @@ namespace Code.Scripts.Core.Systems.Research
         
             // Iniciar investigación
             _researchStatus[researchId] = ResearchStatus.InProgress;
-            _researchProgress[researchId].startTime = DateTime.Now;
+            _researchProgress[researchId].startTime = _gameTime.GameTime;
             _researchProgress[researchId].researchId = researchId;
         
             // AÑADIDO: Asignar como investigación actual
+            _researchStatus[researchId] = ResearchStatus.InProgress;
             _currentResearchId = researchId;
         
             // Iniciar corrutina para el tiempo de investigación
-            if (_currentResearchCoroutine != null)
+            if (_currentResearchTimer != null)
             {
-                StopCurrentResearch();
+                _currentResearchTimer.Cancel(); 
             }
         
-            _currentResearchCoroutine = ResearchCoroutineRunner.StartCoroutine(ResearchCoroutine(researchId));
+            const float UPDATE_INTERVAL = 1f;
+            
+            Action updateResearchAction = () => UpdateResearchProgress(researchId, UPDATE_INTERVAL);
+            _currentResearchTimer = _timeScheduler.ScheduleRepeating(UPDATE_INTERVAL, updateResearchAction);
         
             OnResearchStarted?.Invoke(researchId);
             Debug.Log($"Research started: {researchId}");
         
             return true;
+        }
+        
+        // ResearchSystem.cs
+
+        private void UpdateResearchProgress(string researchId, float deltaTime)
+        {
+            if (!_researchDatabase.ContainsKey(researchId) || _researchStatus[researchId] != ResearchStatus.InProgress)
+            {
+                CancelCurrentResearch();
+                return;
+            }
+    
+            var research = _researchDatabase[researchId];
+            var data = _researchProgress[researchId];
+            float researchTime = research.researchTimeInSeconds;
+    
+            float timeElapsedSinceStart = _gameTime.GameTime - data.startTime;
+
+            if (timeElapsedSinceStart >= researchTime)
+            {
+                float progress = 1f;
+                data.progress = progress;
+                OnResearchProgress?.Invoke(researchId, progress);
+        
+                CompleteResearch(researchId);
+            }
+            else
+            {
+                float progress = Mathf.Clamp01(timeElapsedSinceStart / researchTime);
+                data.progress = progress;
+                OnResearchProgress?.Invoke(researchId, progress);
+            }
         }
         
         private IEnumerator ResearchCoroutine(string researchId)
@@ -205,7 +256,7 @@ namespace Code.Scripts.Core.Systems.Research
         {
             _researchStatus[researchId] = ResearchStatus.Completed;
             _researchProgress[researchId].progress = 1f;
-            _researchProgress[researchId].completionTime = DateTime.Now;
+            _researchProgress[researchId].completionTime = _gameTime.GameTime;
         
             // AÑADIDO: Limpiar investigación actual
             _currentResearchId = null;
@@ -216,27 +267,42 @@ namespace Code.Scripts.Core.Systems.Research
             // Desbloquear nuevas investigaciones
             UnlockNewResearch(researchId);
         
-            _currentResearchCoroutine = null;
-        
             OnResearchCompleted?.Invoke(researchId);
             Debug.Log($"Research completed: {researchId}");
         }
         
+        // ResearchSystem.cs
+
         public bool CancelCurrentResearch()
         {
+            // 1. Verificación Inicial
             if (!IsAnyResearchInProgress()) return false;
-        
-            ResearchCoroutineRunner.StopCoroutine(_currentResearchCoroutine);
-            _currentResearchId = null;
-            _currentResearchCoroutine = null;
-        
-            // Revertir estado a Available
-            if (!string.IsNullOrEmpty(_currentResearchId))
+
+            // Guardamos el ID antes de limpiarlo para revertir el estado
+            string researchToCancelId = _currentResearchId; 
+    
+            // 2. Detener y Limpiar el Temporizador
+            if (_currentResearchTimer != null)
             {
-                _researchStatus[_currentResearchId] = ResearchStatus.Available;
+                _currentResearchTimer.Cancel(); // **CAMBIO CLAVE: Usar el TimeScheduler**
             }
+
+            _currentResearchTimer = null; // Limpiar el manejador
+            _currentResearchId = null;    // Limpiar el ID actual
+
+            if (!string.IsNullOrEmpty(researchToCancelId))
+            {
+                _researchStatus[researchToCancelId] = ResearchStatus.Available;
         
-            Debug.Log("Investigación cancelada");
+                if (_researchProgress.TryGetValue(researchToCancelId, out ResearchData data))
+                {
+                    data.progress = 0f;
+                    data.startTime = 0f;
+                }
+            //si por cualquier motivo queremos devolver los recursos, eso lo ponemos aqi
+            }
+
+            Debug.Log($"Investigación cancelada: {researchToCancelId}");
             return true;
         }
         
@@ -396,15 +462,6 @@ namespace Code.Scripts.Core.Systems.Research
         {
             return new Dictionary<string, ResearchStatus>(_researchStatus);
         }
-        
-        private void StopCurrentResearch()
-        {
-            if (_currentResearchCoroutine != null)
-            {
-                ResearchCoroutineRunner.StopCoroutine(_currentResearchCoroutine);
-                _currentResearchCoroutine = null;
-            }
-        }
     }
     
     // Clase auxiliar para datos de progreso
@@ -412,35 +469,11 @@ namespace Code.Scripts.Core.Systems.Research
     public class ResearchData
     {
         public string researchId;
-        public DateTime startTime;
-        public DateTime completionTime;
+        // Usaremos 'float' para almacenar el GameTime (tiempo total de juego)
+        // en lugar de 'DateTime'
+        public float startTime; // **Tipo cambiado de DateTime a float**
+        public float completionTime; // **Tipo cambiado de DateTime a float**
         public float progress;
+        // ELIMINADO: public float elapsedTime; 
     }
-}
-
-public static class ResearchCoroutineRunner
-{
-    private static ResearchCoroutineMonoBehaviour _runner;
-    
-    static ResearchCoroutineRunner()
-    {
-        var gameObject = new GameObject("ResearchCoroutineRunner");
-        _runner = gameObject.AddComponent<ResearchCoroutineMonoBehaviour>();
-        UnityEngine.Object.DontDestroyOnLoad(gameObject);
-    }
-    
-    public static Coroutine StartCoroutine(IEnumerator coroutine)
-    {
-        return _runner.StartCoroutine(coroutine);
-    }
-    
-    public static void StopCoroutine(Coroutine coroutine)
-    {
-        if (coroutine != null)
-        {
-            _runner.StopCoroutine(coroutine);
-        }
-    }
-    
-    private class ResearchCoroutineMonoBehaviour : MonoBehaviour { }
 }

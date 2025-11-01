@@ -26,26 +26,16 @@ public class ResearchInitializer : MonoBehaviour
         LogInitialState();
     }
 
+    // ResearchInitializer.cs (Modificaciones en InitializeSystems)
+
     private void InitializeSystems()
     {
-        // 1. Inicializar StorageSystem primero
         StorageSystem storageSystem = new StorageSystem(resourceDataList);
         Debug.Log($"StorageSystem creado con {resourceDataList?.Count ?? 0} recursos");
 
-        // 2. Verificar ResearchNodes antes de crear el sistema
-        Debug.Log($"AvailableResearchNodes count: {availableResearchNodes?.Count ?? 0}");
-        if (availableResearchNodes != null)
-        {
-            foreach (var node in availableResearchNodes)
-            {
-                Debug.Log($"ResearchNode: {node?.researchId ?? "NULL"}");
-            }
-        }
-
-        // 3. Inicializar ResearchSystem
         ResearchSystem researchSystem = new ResearchSystem(availableResearchNodes);
+        researchSystem.InitializeDependencies(); 
     
-        // 4. Verificar que el sistema se creó correctamente
         var testResearch = ServiceLocator.GetService<ResearchSystem>();
         if (testResearch != null)
         {
