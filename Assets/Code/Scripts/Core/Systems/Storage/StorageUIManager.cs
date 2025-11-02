@@ -2,12 +2,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
+using Code.Scripts.Core.Systems.Storage;
 
 public class StorageUIManager : MonoBehaviour
 {
     [Header("Prefab and Container")]
     [SerializeField] private GameObject itemViewPrefab;
     [SerializeField] private Transform itemsContainer;
+    
+    [Header("Item Database")]
+    [SerializeField] private InventoryData inventoryDataSource;
 
     [Header("Description Panel")]
     [SerializeField] private GameObject descriptionPanel;
@@ -28,17 +33,22 @@ public class StorageUIManager : MonoBehaviour
 
     private void InitializeItemQuantities()
     {
-        //itemQuantities = GameManager.Instance.PlayerInventory;
-        //itemQuantities = InventorySystem.GetItemQuantities();
-        
-        // Ejemplo con numeros metidos a piñon:
-        itemQuantities = new Dictionary<string, int>()
+        itemQuantities = new Dictionary<string, int>();
+
+        if (inventoryDataSource == null)
         {
-            {"Espada", 5},
-            {"Papiro", 10},
-            {"Sol", 1}
-        };
-    }  
+            Debug.LogError("No se ha asignado un 'Inventory Data Source' al StorageUIManager!");
+            return;
+        }
+
+        foreach (InventoryItem item in inventoryDataSource.items)
+        {
+            if (item.itemData != null && !itemQuantities.ContainsKey(item.itemData.itemName))
+            {
+                itemQuantities.Add(item.itemData.itemName, item.quantity);
+            }
+        }
+    } 
     
     private void InitializeStorageUI()
     {
@@ -47,47 +57,27 @@ public class StorageUIManager : MonoBehaviour
             descriptionPanel.SetActive(false);
         }
 
-        InitializeExistingItems();
-    }
-
-    private void InitializeExistingItems()
-    {
-        itemViews.Clear();
-        
         foreach (Transform child in itemsContainer)
         {
-            ItemView itemView = child.GetComponent<ItemView>();
-            if (itemView != null)
-            {
-                ItemData data = itemView.GetItemData();
-                if (data != null)
-                {
-                    itemView.Initialize(OnItemSelected);
-                    
-                    if (itemQuantities != null && itemQuantities.ContainsKey(data.itemName))
-                    {
-                        itemView.SetAmount(itemQuantities[data.itemName]);
-                    }
-                    else
-                    {
-                        itemView.SetAmount(0);
-                    }
-                    itemViews.Add(itemView);
-                }
-            }
+            Destroy(child.gameObject);
         }
-    }
-    
-    public void RefreshQuantities(Dictionary<string, int> newQuantities)
-    {
-        itemQuantities = newQuantities;
-        
-        foreach (ItemView itemView in itemViews)
+        itemViews.Clear();
+
+        if (inventoryDataSource == null) return;
+
+        foreach (InventoryItem item in inventoryDataSource.items)
         {
-            ItemData data = itemView.GetItemData();
-            if (itemQuantities.ContainsKey(data.itemName))
+            if (item.itemData != null)
             {
-                itemView.SetAmount(itemQuantities[data.itemName]);
+                GameObject newItemGO = Instantiate(itemViewPrefab, itemsContainer);
+                ItemView view = newItemGO.GetComponent<ItemView>();
+
+                if (view != null)
+                {
+                    view.Initialize(item.itemData, OnItemSelected);
+                    view.SetAmount(item.quantity);
+                    itemViews.Add(view);
+                }
             }
         }
     }

@@ -11,17 +11,12 @@ public class ItemView : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Image itemPreviewImage;
     [SerializeField] private GameObject selectionHighlight;
 
-    [Header("Item Data")]
-    [SerializeField] private ItemData itemData;
+    private ItemData itemData;
 
     private System.Action<ItemView> onSelectCallback;
-    private void Start()
+    public void Initialize(ItemData data, System.Action<ItemView> onSelect)
     {
-        UpdateUI();
-    }
-
-    public void Initialize(System.Action<ItemView> onSelect)
-    {
+        itemData = data;
         onSelectCallback = onSelect;
         UpdateUI();
         SetSelected(false);
@@ -43,10 +38,24 @@ public class ItemView : MonoBehaviour, IPointerClickHandler
                 itemPreviewImage.sprite = itemData.icon;
                 itemPreviewImage.color = Color.white;
             }
+            else
+            {
+                if (itemPreviewImage != null)
+                {
+                    itemPreviewImage.sprite = null;
+                    itemPreviewImage.color = new Color(0,0,0,0);
+                }
+            }
         }
         else
         {
-            Debug.LogWarning("No hay ItemData asignado en: " + gameObject.name);
+            Debug.LogWarning("Se intentó actualizar la UI sin ItemData asignado en: " + gameObject.name);
+            itemNameText.text = "Error Item";
+            if (itemPreviewImage != null)
+            {
+                itemPreviewImage.sprite = null;
+                itemPreviewImage.color = new Color(0,0,0,0);
+            }
         }
     }
 
