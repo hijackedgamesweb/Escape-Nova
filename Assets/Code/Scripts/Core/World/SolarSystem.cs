@@ -11,7 +11,7 @@ namespace Code.Scripts.Core.World
     public class SolarSystem : MonoBehaviour
     {
         [Header("Orbits Settings")]
-        [SerializeField] private int[] planetsPerOrbit;
+        [SerializeField] public int[] planetsPerOrbit;
         [SerializeField] private float orbitDistanceIncrement;
         [SerializeField] private float rotationSpeed = 20f;
 
@@ -19,37 +19,36 @@ namespace Code.Scripts.Core.World
         [SerializeField] private PlanetFactory planetFactory;
         [SerializeField] private PlanetDataSO[] planetDatas;
         
-        private List<List<Planet>> _planets = new();
+        public List<List<Planet>> Planets = new();
 
         private void Awake()
         {
             for (int i = 0; i < planetsPerOrbit.Length; i++)
             {
-                _planets.Add(new List<Planet>());
-            }
-            GeneratePlanets();
-        }
+                List<Planet> orbit = new List<Planet>();
 
-        private void GeneratePlanets()
-        {
-            int orbitIndex = 0;
-            foreach (int planetsInOrbit in planetsPerOrbit)
-            {
-                for (int i = 0; i < planetsInOrbit; i++)
+                for (int j = 0; j < planetsPerOrbit[i]; j++)
                 {
-                    // Seleccionamos un PlanetData (por ejemplo al azar o en orden)
-                    PlanetDataSO data = planetDatas[Random.Range(0, planetDatas.Length)];
-
-                    Planet planet = planetFactory.CreatePlanet(Vector3.zero, data, transform);
-
-                    // Añadir controlador de órbita
-                    OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
-                    orbitCtrl.Initialize(planet, (orbitIndex + 1) * orbitDistanceIncrement, i, planetsInOrbit, rotationSpeed);
-
-                    _planets[orbitIndex].Add(planet);
+                    orbit.Add(null); 
                 }
-                orbitIndex++;
+
+                Planets.Add(orbit);
             }
         }
+
+        public void AddPlanet(int orbit, int positionInOrbit, PlanetDataSO data)
+        {
+            if(Planets[orbit][positionInOrbit] != null && Planets[orbit][positionInOrbit].gameObject != null)
+            {
+                Debug.LogWarning($"There is already a planet at orbit {orbit} position {positionInOrbit}");
+                return;
+            }
+            Planet planet = planetFactory.CreatePlanet(Vector3.zero, data, transform);
+
+            OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
+            orbitCtrl.Initialize(planet, (orbit + 1) * orbitDistanceIncrement, positionInOrbit, planetsPerOrbit[orbit], rotationSpeed, orbit);
+            Planets[orbit][positionInOrbit] = planet;
+        }
+        
     }
 }

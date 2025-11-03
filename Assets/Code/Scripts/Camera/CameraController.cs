@@ -125,14 +125,11 @@ namespace Code.Scripts.Camera
         
         public void SetTarget(Transform target)
         {
-            // Cancelar tweens anteriores
             _zoomTween?.Kill();
             _moveTween?.Kill();
 
-            // Guardar target
             _target = target;
 
-            // Hacer zoom y mover la cámara con animación
             Vector3 targetPos = new Vector3(target.position.x, target.position.y, transform.position.z);
 
             _moveTween = transform.DOMove(targetPos, 0.8f)
@@ -150,7 +147,6 @@ namespace Code.Scripts.Camera
         {
             _target = null;
 
-            // También podrías hacer zoom out suave si quieres:
             _zoomTween?.Kill();
             _zoomTween = DOTween.To(
                 () => _mainCamera.orthographicSize,

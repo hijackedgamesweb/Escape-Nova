@@ -27,7 +27,7 @@ namespace Code.Scripts.UI.Windows
             skillTreeBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("SkillTree"));
             constructionBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Construction"));
+                UIManager.Instance.ShowScreen<PerfectViewScreen>());
         }
     }
 }

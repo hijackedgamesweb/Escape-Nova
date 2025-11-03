@@ -15,16 +15,6 @@ MonoBehaviour:
   m_GroupName: Entities
   m_GUID: 19ee2d08b061f4a44930eb5136a25a5d
   m_SerializeEntries:
-  - m_GUID: 407d5005bf131814ba109ff518ba268e
-    m_Address: Assets/Level/ScriptableObjects/Entities/Satelite/Hera.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 83baa6f08b2f0f1409ad02e81171af06
-    m_Address: Assets/Level/ScriptableObjects/Entities/Satelite/Ares.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c3f09be8a230f7c42861c815e8e2c764
     m_Address: Assets/Level/ScriptableObjects/Entities/Planet/Mars.asset
     m_ReadOnly: 0

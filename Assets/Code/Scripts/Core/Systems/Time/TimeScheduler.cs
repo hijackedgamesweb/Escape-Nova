@@ -79,6 +79,17 @@ namespace Code.Scripts.Core.Systems.Time
         
         public ITimerHandle ScheduleRepeating(float interval, Action callback)
             => CreateTimer(interval, interval, callback, true);
-        
+
+        public void CancelAllForTarget(Action callback)
+        {
+            foreach (var timer in _timers)
+            {
+                if (timer.Callback == callback)
+                {
+                    timer.Cancelled = true;
+                }
+            }
+        }
+
     }
 }
