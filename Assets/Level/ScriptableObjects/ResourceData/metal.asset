@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   DisplayName: Metal
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: c9f0cc0739579d541a08ac2c78d3e605, type: 3}
   Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
-  MaxStack: 1000
+  MaxStack: 9999
   VisualPrefab: {fileID: 0}

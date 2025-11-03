@@ -56,7 +56,7 @@ namespace Code.Scripts.Core.Systems.Storage
 
         void AddWood()
         {
-            bool success = _storage.AddResource(ResourceType.Madera, addWoodAmount);
+            bool success = _storage.AddResource(ResourceType.Arena, addWoodAmount);
             Debug.Log(success ? $"Added {addWoodAmount} Wood" : "Failed to add Wood");
         }
 
@@ -74,7 +74,7 @@ namespace Code.Scripts.Core.Systems.Storage
 
         void ConsumeWood()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Madera, consumeWoodAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Arena, consumeWoodAmount);
             Debug.Log(success ? $"Consumed {consumeWoodAmount} Wood" : "Not enough Wood");
         }
 

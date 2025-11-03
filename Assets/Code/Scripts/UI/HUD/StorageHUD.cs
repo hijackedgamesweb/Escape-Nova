@@ -23,7 +23,7 @@ namespace Code.Scripts.UI.HUD
 
         private void UpdateUI()
         {
-            _woodText.text = _storageSystem.GetResourceAmount(ResourceType.Madera).ToString();
+            _woodText.text = _storageSystem.GetResourceAmount(ResourceType.Arena).ToString();
             _stoneText.text = _storageSystem.GetResourceAmount(ResourceType.Piedra).ToString();
             _metalText.text = _storageSystem.GetResourceAmount(ResourceType.Metal).ToString();
         }

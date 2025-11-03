@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: piedra
   m_EditorClassIdentifier: 
   Type: 5
-  DisplayName: Piedra
-  Icon: {fileID: 0}
+  DisplayName: Stone
+  Icon: {fileID: 21300000, guid: 6de84b3b23aed7c44bbf4fa283ffb05e, type: 3}
   Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
-  MaxStack: 150
+  MaxStack: 9999
   VisualPrefab: {fileID: 0}

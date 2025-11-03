@@ -4,11 +4,9 @@ namespace Code.Scripts.Core.Systems.Resources
     public enum ResourceType
     {
         Metal,
-        Cristal,
-        Energia,
-        Comida,
-        Madera,
+        Hielo,
+        Fuego,
+        Arena,
         Piedra,
-        // Podemos agregar más si hace falta
     }
 }

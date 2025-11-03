@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8fc7482a414e1d8fdb07f14c7286f4, type: 3}
   m_Name: Gelido
   m_EditorClassIdentifier: 
-  planetName: Gelido
-  sprite: {fileID: -4530950513320135678, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  constructibleName: Kados
+  sprite: {fileID: 21300000, guid: bdbbd192cba22224396018366d28f41e, type: 3}
+  timeToBuild: 5
+  buildCostResources:
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  buildCostAmounts: 64000000
   size: 1
-  primaryResource: 1
+  producibleResources:
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  resourcePerCycle: 64000000

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e8b49d4bd134512be8cf55d367f7685, type: 3}
-  m_Name: madera
+  m_Name: arena
   m_EditorClassIdentifier: 
-  Type: 4
-  DisplayName: Madera
-  Icon: {fileID: 0}
-  Color: {r: 0.3018868, g: 0.13299333, b: 0, a: 0}
-  MaxStack: 200
+  Type: 3
+  DisplayName: Sand
+  Icon: {fileID: 21300000, guid: c50ecf4cb0747f64487b52e59758d9a7, type: 3}
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  MaxStack: 9999
   VisualPrefab: {fileID: 0}
