@@ -12,7 +12,7 @@ namespace Code.Scripts.UI.HUD
         [SerializeField] private TimeConfig _timeConfig;
         
         private IGameTime _gameTime;
-        private int _lastCycle = -1;
+        private int _lastCycle = 0;
         void Start()
         {
             if (_timeConfig == null)
@@ -48,7 +48,7 @@ namespace Code.Scripts.UI.HUD
         
         private void UpdateLabel()
         {
-            _timeText.text = $"{_timeConfig.timeUnitName} {_lastCycle}";
+            _timeText.text = $"{_lastCycle}";
         }
     }
 }
