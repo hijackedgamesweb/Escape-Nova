@@ -6,6 +6,7 @@ using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Civilization;
 using Code.Scripts.Core.Systems.Civilization.ScriptableObjects;
 using Code.Scripts.Core.Systems.Resources;
+using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
@@ -19,6 +20,7 @@ namespace Code.Scripts.Core.Managers
     {
         //STORAGE SYSTEM
         [SerializeField] List<ResourceData> _worldResources = new();
+        [SerializeField] private InventoryData _startingInventory;
         
         //PLAYER DATA
         [SerializeField] PlayerSO _playerData;
@@ -34,7 +36,8 @@ namespace Code.Scripts.Core.Managers
         private void Awake()
         {
             _invoker = new CommandInvoker();
-            _player = new Entity.Player.Player(_invoker, _playerData, _worldResources);
+            
+            _player = new Entity.Player.Player(_invoker, _playerData, _worldResources, _startingInventory);
         }
 
         private void Start()
