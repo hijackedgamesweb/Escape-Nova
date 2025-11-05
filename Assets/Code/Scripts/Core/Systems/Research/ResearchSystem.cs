@@ -73,7 +73,7 @@ namespace Code.Scripts.Core.Systems.Research
         // Eventos
         public event Action<string> OnResearchStarted;          // researchId
         public event Action<string> OnResearchCompleted;        // researchId
-        public event Action<string, float> OnResearchProgress;  // researchId, progress (0-1)
+        public event Action<string, float> OnResearchProgress;  // researchId, progreso (0-1)
         public event Action<string> OnResearchUnlocked;         // researchId
         
         public ResearchSystem(List<ResearchNode> availableResearch)
@@ -118,7 +118,6 @@ namespace Code.Scripts.Core.Systems.Research
             if (!_researchDatabase.ContainsKey(researchId)) return false;
             if (_researchStatus[researchId] != ResearchStatus.Available) return false;
         
-            // AÑADIDO: Verificar que no hay otra investigación en curso
             if (IsAnyResearchInProgress())
             {
                 Debug.Log($"Ya hay una investigación en curso: {_currentResearchId}");
@@ -201,9 +200,6 @@ namespace Code.Scripts.Core.Systems.Research
         
             return true;
         }
-        
-        // ResearchSystem.cs
-
         private void UpdateResearchProgress(string researchId, float deltaTime)
         {
             if (!_researchDatabase.ContainsKey(researchId) || _researchStatus[researchId] != ResearchStatus.InProgress)
@@ -261,37 +257,30 @@ namespace Code.Scripts.Core.Systems.Research
             _researchProgress[researchId].progress = 1f;
             _researchProgress[researchId].completionTime = _gameTime.GameTime;
         
-            // AÑADIDO: Limpiar investigación actual
             _currentResearchId = null;
         
-            // Aplicar recompensas
             ApplyResearchRewards(researchId);
         
-            // Desbloquear nuevas investigaciones
             UnlockNewResearch(researchId);
         
             OnResearchCompleted?.Invoke(researchId);
             Debug.Log($"Research completed: {researchId}");
         }
         
-        // ResearchSystem.cs
 
         public bool CancelCurrentResearch()
         {
-            // 1. Verificación Inicial
             if (!IsAnyResearchInProgress()) return false;
 
-            // Guardamos el ID antes de limpiarlo para revertir el estado
             string researchToCancelId = _currentResearchId; 
     
-            // 2. Detener y Limpiar el Temporizador
             if (_currentResearchTimer != null)
             {
-                _currentResearchTimer.Cancel(); // **CAMBIO CLAVE: Usar el TimeScheduler**
+                _currentResearchTimer.Cancel();
             }
 
-            _currentResearchTimer = null; // Limpiar el manejador
-            _currentResearchId = null;    // Limpiar el ID actual
+            _currentResearchTimer = null;
+            _currentResearchId = null; 
 
             if (!string.IsNullOrEmpty(researchToCancelId))
             {
@@ -302,7 +291,7 @@ namespace Code.Scripts.Core.Systems.Research
                     data.progress = 0f;
                     data.startTime = 0f;
                 }
-            //si por cualquier motivo queremos devolver los recursos, eso lo ponemos aqi
+                //si por cualquier motivo queremos devolver los recursos, eso lo ponemos aqi
             }
 
             Debug.Log($"Investigación cancelada: {researchToCancelId}");
@@ -482,7 +471,6 @@ namespace Code.Scripts.Core.Systems.Research
             return true;
         }
         
-        // Métodos de consulta
         public ResearchStatus GetResearchStatus(string researchId)
         {
             return _researchStatus.GetValueOrDefault(researchId, ResearchStatus.Locked);
@@ -519,11 +507,8 @@ namespace Code.Scripts.Core.Systems.Research
     public class ResearchData
     {
         public string researchId;
-        // Usaremos 'float' para almacenar el GameTime (tiempo total de juego)
-        // en lugar de 'DateTime'
-        public float startTime; // **Tipo cambiado de DateTime a float**
-        public float completionTime; // **Tipo cambiado de DateTime a float**
+        public float startTime;
+        public float completionTime;
         public float progress;
-        // ELIMINADO: public float elapsedTime; 
     }
 }
