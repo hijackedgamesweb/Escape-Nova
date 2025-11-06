@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingPanelUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingPanelUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Progress and Ability/ResearchSystem/Research.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Progress and Ability/ResearchSystem/Research.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/ResearchInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/ResearchInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/StorageSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/StorageSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1761293493591" duration="1381000" />
       <workItem from="1761391004763" duration="1404000" />
       <workItem from="1762443028912" duration="1248000" />
-      <workItem from="1762444978274" duration="10341000" />
+      <workItem from="1762444978274" duration="11881000" />
     </task>
     <servers />
   </component>

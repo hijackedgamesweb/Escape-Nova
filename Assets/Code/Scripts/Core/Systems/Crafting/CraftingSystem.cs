@@ -114,34 +114,61 @@ namespace Code.Scripts.Core.Systems.Crafting
 
         public bool CanCraft(string recipeId, int amount = 1)
         {
-            if (!IsRecipeUnlocked(recipeId) || !_recipeDatabase.ContainsKey(recipeId))
-            {
-                return false;
-            }
+            if (!IsRecipeUnlocked(recipeId)) return false;
             if (IsAnyCraftingInProgress())
             {
-                // Ya hay algo crafteándose, no puedes empezar otro.
+                Debug.Log("CanCraft es 'false' porque ya hay un crafteo en progreso.");
                 return false;
             }
             if (_storageSystem == null) return false;
 
             var recipe = _recipeDatabase[recipeId];
-
+            if (recipe == null) return false;
+    
+            // --- DEBUG DE INGREDIENTES ---
             foreach (var ingredient in recipe.ingredients)
             {
                 int requiredAmount = ingredient.amount * amount;
-                
                 if (ingredient.useInventoryItem)
                 {
                     if (!_storageSystem.HasInventoryItem(ingredient.itemName, requiredAmount))
+                    {
+                        Debug.Log($"CanCraft es 'false' por falta de item-ingrediente: {ingredient.itemName}");
                         return false;
+                    }
                 }
                 else
                 {
                     if (!_storageSystem.HasResource(ingredient.resourceType, requiredAmount))
+                    {
+                        Debug.Log($"CanCraft es 'false' por falta de recurso-ingrediente: {ingredient.resourceType}");
                         return false;
+                    }
                 }
             }
+            // ----------------------------
+
+            var output = recipe.output;
+            int outputAmount = output.amount * amount;
+
+            if (!_itemDataLookup.TryGetValue(output.itemName, out ItemData itemData))
+            {
+                Debug.LogError($"CanCraft falló: No se encontró ItemData para {output.itemName} en _itemDataLookup"); 
+                return false; 
+            }
+    
+            int maxStack = itemData.maxStack;
+            int currentAmount = _storageSystem.GetInventoryItemQuantity(output.itemName);
+
+            // --- DEBUG DE MAXSTACK ---
+            if (currentAmount + outputAmount > maxStack)
+            {
+                Debug.Log($"CanCraft es 'false' por MAXSTACK. current({currentAmount}) + output({outputAmount}) > max({maxStack})");
+                return false; 
+            }
+            // -------------------------
+
+            Debug.Log("CanCraft es 'true'. ¡Todo en orden!");
             return true;
         }
 
