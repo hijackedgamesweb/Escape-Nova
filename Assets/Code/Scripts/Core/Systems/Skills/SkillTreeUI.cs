@@ -274,27 +274,33 @@ namespace Code.Scripts.UI.Skills
 
         private void CreateConnectionLine(GameObject fromNode, GameObject toNode, Transform parent)
         {
-            GameObject line = Instantiate(connectionLinePrefab, parent);
-            UILineRenderer lineRenderer = line.GetComponent<UILineRenderer>();
+            if (fromNode == null || toNode == null || connectionLinePrefab == null) return;
 
-            if (lineRenderer != null)
+            try
             {
-                RectTransform fromRect = fromNode.GetComponent<RectTransform>();
-                RectTransform toRect = toNode.GetComponent<RectTransform>();
+                GameObject line = Instantiate(connectionLinePrefab, parent);
+                UILineRenderer lineRenderer = line.GetComponent<UILineRenderer>();
 
-                Vector2 fromPos = fromRect.anchoredPosition;
-                Vector2 toPos = toRect.anchoredPosition;
-
-                lineRenderer.Points = new Vector2[] { fromPos, toPos };
-                lineRenderer.LineWidth = connectionLineWidth;
-                lineRenderer.color = new Color(1f, 1f, 1f, 0.5f); // Línea semitransparente
-
-                // Asegurar que la línea esté detrás de todo
-                CanvasRenderer canvasRenderer = line.GetComponent<CanvasRenderer>();
-                if (canvasRenderer != null)
+                if (lineRenderer != null)
                 {
-                    line.transform.SetAsFirstSibling();
+                    RectTransform fromRect = fromNode.GetComponent<RectTransform>();
+                    RectTransform toRect = toNode.GetComponent<RectTransform>();
+
+                    if (fromRect != null && toRect != null)
+                    {
+                        Vector2 fromPos = fromRect.anchoredPosition;
+                        Vector2 toPos = toRect.anchoredPosition;
+
+                        lineRenderer.Points = new Vector2[] { fromPos, toPos };
+                        lineRenderer.LineWidth = connectionLineWidth;
+                        lineRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+                        line.transform.SetAsFirstSibling();
+                    }
                 }
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError($"Error creating connection line: {e.Message}");
             }
         }
 

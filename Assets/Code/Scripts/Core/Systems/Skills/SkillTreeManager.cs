@@ -173,43 +173,37 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void InitializeNodeStates()
         {
-            if (constellations == null)
-            {
-                Debug.LogError("SkillTreeManager: Constellations list is null!");
-                return;
-            }
-
-            Debug.Log("SkillTreeManager: Initializing " + constellations.Count + " constellations");
+            if (constellations == null) return;
 
             foreach (var constellation in constellations)
             {
-                if (constellation == null)
-                {
-                    Debug.LogError("SkillTreeManager: Found null constellation in list!");
-                    continue;
-                }
-
-                if (constellation.nodes == null)
-                {
-                    Debug.LogError("SkillTreeManager: Constellation " + constellation.constellationName + " has null nodes list!");
-                    continue;
-                }
+                if (constellation?.nodes == null) continue;
 
                 foreach (var node in constellation.nodes)
                 {
-                    if (node == null)
-                    {
-                        Debug.LogError("SkillTreeManager: Found null node in constellation!");
-                        continue;
-                    }
+                    if (node == null) continue;
 
                     if (!nodeStates.ContainsKey(node.name))
                     {
-                        bool startsUnlocked = node.prerequisiteNodes == null || node.prerequisiteNodes.Count == 0;
+                        // Verificar si los prerequisites están comprados
+                        bool allPrerequisitesMet = true;
+                        if (node.prerequisiteNodes != null && node.prerequisiteNodes.Count > 0)
+                        {
+                            foreach (var prereq in node.prerequisiteNodes)
+                            {
+                                if (prereq != null && nodeStates.ContainsKey(prereq.name) &&
+                                    !nodeStates[prereq.name].isPurchased)
+                                {
+                                    allPrerequisitesMet = false;
+                                    break;
+                                }
+                            }
+                        }
+
                         nodeStates[node.name] = new SkillNodeState
                         {
                             isPurchased = false,
-                            isUnlocked = startsUnlocked
+                            isUnlocked = allPrerequisitesMet
                         };
                     }
                 }
