@@ -2,7 +2,6 @@ using Code.Scripts.Core.Systems.Resources;
 
 namespace Code.Scripts.Core.Systems.Research
 {
-    // ResearchInitializer.cs
 using System.Collections.Generic;
 using UnityEngine;
 using Code.Scripts.Core.Systems.Research;
@@ -22,23 +21,31 @@ public class ResearchInitializer : MonoBehaviour
     [Header("Test Resources")]
     [SerializeField] private int initialWood = 100;
     [SerializeField] private int initialStone = 100;
+    
+    private ResearchSystem _researchSystem;
+    private StorageSystem _storageSystem;
 
-    private void Start()
+    private void Awake()
     {
         InitializeSystems();
+    }
+    
+    private void Start()
+    {
+        if (_researchSystem != null)
+        {
+            _researchSystem.InitializeDependencies(); 
+        }
         SetupTestEnvironment();
         LogInitialState();
     }
 
-    // ResearchInitializer.cs (Modificaciones en InitializeSystems)
-
     private void InitializeSystems()
     {
-        StorageSystem storageSystem = new StorageSystem(resourceDataList, startingInventory);
-        Debug.Log($"StorageSystem creado con {resourceDataList?.Count ?? 0} recursos");
+        _storageSystem = new StorageSystem(resourceDataList, startingInventory);
         
-        ResearchSystem researchSystem = new ResearchSystem(availableResearchNodes);
-        researchSystem.InitializeDependencies(); 
+        _researchSystem = new ResearchSystem(availableResearchNodes);
+        
     
         var testResearch = ServiceLocator.GetService<ResearchSystem>();
         if (testResearch != null)
@@ -52,9 +59,8 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        // Añadir recursos iniciales para testear
-        storage.AddResource(ResourceType.Arena, 200);
-        storage.AddResource(ResourceType.Piedra, 100); 
+        storage.AddResource(ResourceType.Arena, 2000);
+        storage.AddResource(ResourceType.Piedra, 5000); 
     
         storage.AddInventoryItem("Lanza", 20);
         
@@ -62,17 +68,17 @@ public class ResearchInitializer : MonoBehaviour
     }
     private void LogInitialState()
     {
+        if (_researchSystem == null) _researchSystem = ServiceLocator.GetService<ResearchSystem>();
         try
         {
-            ResearchSystem research = ServiceLocator.GetService<ResearchSystem>();
-            var allResearch = research.GetAllResearchStatus();
+            var allResearch = _researchSystem.GetAllResearchStatus();
         
             Debug.Log("ESTADO DE INVESTIGACIONES");
             Debug.Log($"Total de investigaciones: {allResearch.Count}");
         
             foreach (var researchStatus in allResearch)
             {
-                var researchNode = research.GetResearch(researchStatus.Key);
+                var researchNode = _researchSystem.GetResearch(researchStatus.Key);
                 Debug.Log($"- {researchStatus.Key}: {researchStatus.Value} (Node: {researchNode != null})");
             }
 
@@ -91,7 +97,6 @@ public class ResearchInitializer : MonoBehaviour
         }
     }
 
-    // Metodos para testing desde el inspector
     [ContextMenu("Test Wood Capacity Research")]
     public void TestWoodCapacityResearch()
     {

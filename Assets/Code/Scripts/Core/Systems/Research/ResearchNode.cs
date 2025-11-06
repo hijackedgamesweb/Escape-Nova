@@ -15,7 +15,7 @@ namespace Code.Scripts.Core.Systems.Research
         
         [Header("Requirements")]
         public List<ResearchPrerequisite> prerequisites;
-        public int researchTimeInSeconds = 60; // Tiempo en segundos
+        public int researchTimeInSeconds = 60;
         
         [Header("Cost")]
         public List<ResearchCost> resourceCosts;
@@ -24,10 +24,10 @@ namespace Code.Scripts.Core.Systems.Research
         public List<ResearchReward> rewards;
         
         [Header("UI Settings")]
-        public int tier = 1; // Para organizar en árbol tecnológico
-        public Vector2 treePosition; // Posición en el árbol tecnológico
+        public int tier = 1;
+        public Vector2 treePosition;
         
         [Header("Unlocks")]
-        public List<string> unlocksResearchIds; // Qué investigaciones desbloquea
+        public List<string> unlocksResearchIds;
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
@@ -109,7 +110,6 @@ namespace Code.Scripts.Core.Systems.Research
                 }
             }
             
-            // Recalcular disponibilidad después de inicializar todo
             RecalculateResearchAvailability();
         }
         
@@ -238,7 +238,6 @@ namespace Code.Scripts.Core.Systems.Research
 
             while (elapsedTime < researchTime)
             {
-                // Esperar exactamente 1 segundo y actualizar
                 yield return new WaitForSeconds(1f);
                 elapsedTime += 1f;
 
@@ -360,10 +359,15 @@ namespace Code.Scripts.Core.Systems.Research
         private void ApplyCraftingUnlock(ResearchReward reward)
         {
             Debug.Log($"Recompensa: Desbloqueando receta de crafteo - ID: {reward.targetId}");
+    
+            var craftingSystem = ServiceLocator.GetService<CraftingSystem>();
+    
+            if (craftingSystem == null)
+            {
+                Debug.LogError("¡ERROR FATAL en ResearchSystem! No se pudo encontrar el CraftingSystem en el ServiceLocator.");
+                return;
+            }
             
-            //ALGO asi
-            /*
-            CraftingSystem craftingSystem = ServiceLocator.GetService<CraftingSystem>();
             if (craftingSystem != null)
             {
                 craftingSystem.UnlockRecipe(reward.targetId);
@@ -372,7 +376,6 @@ namespace Code.Scripts.Core.Systems.Research
             {
                 Debug.LogError($"No se pudo encontrar el CraftingSystem para desbloquear la receta: {reward.targetId}");
             }
-            */
         }
         
         private void ApplyMaxStackIncrease(ResearchReward reward)
@@ -383,31 +386,31 @@ namespace Code.Scripts.Core.Systems.Research
         
         private void ApplyBuildingUnlock(ResearchReward reward)
         {
-            // Conectar con sistema de construcción
+            // Hay que conectarlo con el sistema de construcción
             Debug.Log($"Building unlocked: {reward.targetId}");
         }
         
         private void ApplySpeciesUnlock(ResearchReward reward)
         {
-            // Conectar con sistema de especies
+            // Hay que conectarlo con el sistema de especies
             Debug.Log($"Species unlocked: {reward.targetId}");
         }
         
         private void ApplyMissionUnlock(ResearchReward reward)
         {
-            // Conectar con sistema de misiones
+            // Hay que conectarlo con el sistema de misiones
             Debug.Log($"Mission unlocked: {reward.targetId}");
         }
         
         private void ApplyTechnologyUnlock(ResearchReward reward)
         {
-            // Desbloquear otra tecnología
+            // desbloqueaa otra tecnología
             UnlockResearch(reward.targetId);
         }
         
         private void ApplyStatModification(ResearchReward reward)
         {
-            // Modificar estadísticas del jugador
+            // Modifica estadísticas del jugador
             Debug.Log($"Stat modified: {reward.targetId} by {reward.value}");
         }
         

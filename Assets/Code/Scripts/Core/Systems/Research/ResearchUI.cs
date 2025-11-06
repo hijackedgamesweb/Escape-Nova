@@ -8,9 +8,6 @@ using Code.Scripts.Patterns.ServiceLocator;
 
 namespace Code.Scripts.Core.Systems.Research
 {
-        // ResearchUI.cs
-    
-    
     public class ResearchUI : MonoBehaviour
     {
         [Header("UI References")]
@@ -19,6 +16,8 @@ namespace Code.Scripts.Core.Systems.Research
         [SerializeField] private TextMeshProUGUI currentResearchText;
         [SerializeField] private Slider researchProgressSlider;
         [SerializeField] private TextMeshProUGUI resourcesText;
+        
+        private StorageSystem _storageSystem;
     
         private ResearchSystem _researchSystem;
         private Dictionary<string, GameObject> _researchUIItems = new Dictionary<string, GameObject>();
@@ -26,8 +25,15 @@ namespace Code.Scripts.Core.Systems.Research
         private void Start()
         {
             _researchSystem = ServiceLocator.GetService<ResearchSystem>();
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
             
-            // Suscripcion de eventos
+            if (_storageSystem != null)
+            {
+                _storageSystem.OnStorageUpdated += HandleStorageUpdated;
+            }
+            
+            _researchSystem.OnResearchStarted += OnResearchStarted;
+            
             _researchSystem.OnResearchStarted += OnResearchStarted;
             _researchSystem.OnResearchProgress += OnResearchProgress;
             _researchSystem.OnResearchCompleted += OnResearchCompleted;
@@ -37,6 +43,13 @@ namespace Code.Scripts.Core.Systems.Research
             UpdateResourcesUI();
         }
     
+        private void HandleStorageUpdated()
+        {
+            Debug.Log("¡ResearchUI se ha enterado de que el inventario cambió! Refrescando...");
+            UpdateResourcesUI();
+            UpdateAllResearchButtons();
+        }
+        
         private void InitializeUI()
         {
             Debug.Log("INICIALIZANDO UI - Limpiando items previos");
@@ -47,7 +60,6 @@ namespace Code.Scripts.Core.Systems.Research
                 return;
             }
     
-            // Destruir todos los hijos del panel
             foreach (Transform child in researchPanel)
             {
                 Debug.Log($"Destruyendo hijo: {child.name}");
@@ -57,7 +69,6 @@ namespace Code.Scripts.Core.Systems.Research
             _researchUIItems.Clear();
             Debug.Log($"Panel limpio. Hijos restantes: {researchPanel.childCount}");
 
-            // VERIFICAR SISTEMA
             if (_researchSystem == null)
             {
                 Debug.LogError("ResearchSystem es NULL!");
@@ -67,7 +78,6 @@ namespace Code.Scripts.Core.Systems.Research
             var allResearch = _researchSystem.GetAllResearchStatus();
             Debug.Log($"Investigaciones a crear: {allResearch.Count}");
 
-            // CREAR NUEVOS ITEMS
             foreach (var researchStatus in allResearch)
             {
                 CreateResearchUIItem(researchStatus.Key);
@@ -81,10 +91,8 @@ namespace Code.Scripts.Core.Systems.Research
         
         private void UpdateUILayout()
         {
-            // Forzar actualización del layout
             LayoutRebuilder.ForceRebuildLayoutImmediate(researchPanel as RectTransform);
     
-            // Si tiene scroll, ajustarlo
             ScrollRect scrollRect = researchPanel.GetComponent<ScrollRect>();
             if (scrollRect != null)
             {
@@ -120,7 +128,6 @@ namespace Code.Scripts.Core.Systems.Research
             researchProgressSlider.value = progress;
             currentResearchText.text = $"Investigando: {_researchSystem.GetResearch(researchId)?.displayName} - {(progress * 100):F1}%";
     
-            // AÑADIDO: Actualizar el botón específico que está en progreso
             if (_researchUIItems.ContainsKey(researchId))
             {
                 var researchItem = _researchUIItems[researchId].GetComponent<ResearchUIItem>();
@@ -147,7 +154,6 @@ namespace Code.Scripts.Core.Systems.Research
     
         private void UpdateCurrentResearchDisplay()
         {
-            // Encontrar investigación en progreso
             foreach (var research in _researchSystem.GetAllResearchStatus())
             {
                 if (research.Value == ResearchStatus.InProgress)
@@ -158,8 +164,6 @@ namespace Code.Scripts.Core.Systems.Research
                     return;
                 }
             }
-            
-            // No hay investigación en progreso
             currentResearchText.text = "No hay investigación en curso";
             researchProgressSlider.gameObject.SetActive(false);
         }
@@ -201,6 +205,22 @@ namespace Code.Scripts.Core.Systems.Research
     
             resourcesText.text = resourcesInfo;
             Debug.Log($"UI Actualizada: {resourcesInfo}");
+        }
+        
+        private void OnDestroy()
+        {
+            if (_researchSystem != null)
+            {
+                _researchSystem.OnResearchStarted -= OnResearchStarted;
+                _researchSystem.OnResearchProgress -= OnResearchProgress;
+                _researchSystem.OnResearchCompleted -= OnResearchCompleted;
+                _researchSystem.OnResearchUnlocked -= OnResearchUnlocked;
+            }
+            
+            if (_storageSystem != null)
+            {
+                _storageSystem.OnStorageUpdated -= HandleStorageUpdated;
+            }
         }
     }
 }
