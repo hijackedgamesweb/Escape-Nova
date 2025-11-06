@@ -155,7 +155,6 @@ namespace Code.Scripts.Core.Systems.Crafting
 
             var recipe = _recipeDatabase[recipeId];
 
-            // 1. Consumir Ingredientes
             foreach (var ingredient in recipe.ingredients)
             {
                 int requiredAmount = ingredient.amount * amount;
@@ -169,12 +168,11 @@ namespace Code.Scripts.Core.Systems.Crafting
                 }
             }
 
-            // 2. Preparar el temporizador
             _currentCraftingData = new CraftingData
             {
                 recipeId = recipeId,
                 startTime = _gameTime.GameTime,
-                amount = amount // Guardamos la cantidad a craftear
+                amount = amount
             };
             
             if (_currentCraftingTimer != null)
@@ -182,7 +180,6 @@ namespace Code.Scripts.Core.Systems.Crafting
                 _currentCraftingTimer.Cancel();
             }
 
-            // 3. Iniciar el temporizador
             const float UPDATE_INTERVAL = 0.5f; 
             Action updateAction = () => UpdateCraftingProgress(UPDATE_INTERVAL);
             _currentCraftingTimer = _timeScheduler.ScheduleRepeating(UPDATE_INTERVAL, updateAction);
@@ -221,25 +218,20 @@ namespace Code.Scripts.Core.Systems.Crafting
         private void CompleteCrafting()
         {
             string recipeId = _currentCraftingData.recipeId;
-            int amount = _currentCraftingData.amount; // Obtenemos la cantidad guardada
+            int amount = _currentCraftingData.amount;
             var recipe = _recipeDatabase[recipeId];
 
-            // 1. Añadir Resultado al inventario
             var output = recipe.output;
             _storageSystem.AddInventoryItem(output.itemName, output.amount * amount); 
 
-            // 2. Limpiar el temporizador
             _currentCraftingTimer?.Cancel();
             _currentCraftingTimer = null;
             _currentCraftingData = null;
 
-            // 3. Avisar a los sistemas
             Debug.Log($"Se ha completado el crafteo de: {recipe.displayName}!");
             OnItemCrafted?.Invoke(recipeId, output.amount * amount);
             OnCraftingCompleted?.Invoke(recipeId);
         }
-        
-        // --- Métodos de consulta para la UI ---
         
         public CraftingRecipe GetRecipe(string recipeId)
         {
@@ -259,6 +251,38 @@ namespace Code.Scripts.Core.Systems.Crafting
                 unlockedList.Add(_recipeDatabase[id]);
             }
             return unlockedList;
+        }
+        
+        public string GetCurrentCraftingRecipeId()
+        {
+            if (!IsAnyCraftingInProgress())
+            {
+                return null;
+            }
+            return _currentCraftingData.recipeId;
+        }
+
+        public float GetCurrentCraftingProgress()
+        {
+            if (!IsAnyCraftingInProgress())
+            {
+                return 0f;
+            }
+
+            var recipe = _recipeDatabase[_currentCraftingData.recipeId];
+            float timeElapsed = _gameTime.GameTime - _currentCraftingData.startTime;
+            float craftTime = recipe.craftingTimeInSeconds * _currentCraftingData.amount;
+
+            return Mathf.Clamp01(timeElapsed / craftTime);
+        }
+
+        public int GetCurrentCraftingAmount()
+        {
+            if (!IsAnyCraftingInProgress())
+            {
+                return 0;
+            }
+            return _currentCraftingData.amount;
         }
     }
 }

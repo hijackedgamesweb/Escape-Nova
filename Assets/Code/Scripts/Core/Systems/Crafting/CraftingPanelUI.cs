@@ -26,6 +26,7 @@ public class CraftingPanelUI : MonoBehaviour
     [SerializeField] private Image detailIcon;
     [SerializeField] private TextMeshProUGUI detailName;
     [SerializeField] private TextMeshProUGUI detailDescription;
+    [SerializeField] private TextMeshProUGUI detailTimeText;
     [SerializeField] private Button craftButton;
     [SerializeField] private TMP_InputField craftAmountInput;
     
@@ -55,10 +56,8 @@ public class CraftingPanelUI : MonoBehaviour
         _craftingSystem.OnCraftingCompleted += OnCraftingCompleted;
         
         craftButton.onClick.AddListener(OnCraftButtonClicked);
-
         detailsPanel.SetActive(false);
         
-        // ¡NUEVO! Ocultar la barra de progreso al inicio
         if (craftingProgressBar != null)
         {
             craftingProgressBar.gameObject.SetActive(false);
@@ -73,7 +72,6 @@ public class CraftingPanelUI : MonoBehaviour
         {
             _craftingSystem.OnRecipeUnlocked -= OnRecipeUnlocked;
             _craftingSystem.OnItemCrafted -= OnItemCrafted;
-            
             _craftingSystem.OnCraftingStarted -= OnCraftingStarted;
             _craftingSystem.OnCraftingProgress -= OnCraftingProgress;
             _craftingSystem.OnCraftingCompleted -= OnCraftingCompleted;
@@ -83,7 +81,7 @@ public class CraftingPanelUI : MonoBehaviour
             _storageSystem.OnStorageUpdated -= OnStorageUpdated;
         }
     }
-    
+
     private void OnRecipeUnlocked(string recipeId)
     {
         RefreshRecipeList();
@@ -102,7 +100,7 @@ public class CraftingPanelUI : MonoBehaviour
     {
         if (_selectedRecipe != null)
         {
-            SelectRecipe(_selectedRecipe);
+            SelectRecipe(_selectedRecipe); 
         }
         UpdateAllButtonCraftableStatus();
     }
@@ -110,36 +108,47 @@ public class CraftingPanelUI : MonoBehaviour
     
     private void OnCraftingStarted(string recipeId)
     {
-        if (craftingProgressBar != null)
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
         {
-            craftingProgressBar.gameObject.SetActive(true);
-            craftingProgressBar.value = 0;
+            if (craftingProgressBar != null)
+            {
+                craftingProgressBar.gameObject.SetActive(true);
+                craftingProgressBar.value = 0;
+            }
         }
         UpdateCraftButtonState();
+        UpdateAllButtonCraftableStatus();
     }
 
     private void OnCraftingProgress(string recipeId, float progress)
     {
-        if (craftingProgressBar != null)
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
         {
-            craftingProgressBar.value = progress;
+            if (craftingProgressBar != null)
+            {
+                craftingProgressBar.value = progress;
+            }
         }
     }
 
     private void OnCraftingCompleted(string recipeId)
     {
-        if (craftingProgressBar != null)
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
         {
-            craftingProgressBar.gameObject.SetActive(false);
+            if (craftingProgressBar != null)
+            {
+                craftingProgressBar.gameObject.SetActive(false);
+            }
         }
         UpdateCraftButtonState();
+        UpdateAllButtonCraftableStatus();
     }
+
 
     private void RefreshRecipeList()
     {
         foreach (Transform child in recipeListContainer) Destroy(child.gameObject);
         _recipeButtons.Clear();
-
         var unlockedRecipes = _craftingSystem.GetAllUnlockedRecipes();
         
         foreach (var recipe in unlockedRecipes)
@@ -171,6 +180,11 @@ public class CraftingPanelUI : MonoBehaviour
             detailName.text = outputItemData.displayName;
             detailDescription.text = outputItemData.description;
         }
+        
+        if (detailTimeText != null)
+        {
+            detailTimeText.text = $"{recipe.craftingTimeInSeconds} s";
+        }
 
         foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
 
@@ -186,34 +200,33 @@ public class CraftingPanelUI : MonoBehaviour
             if (ingredient.useInventoryItem)
             {
                 var itemData = _craftingSystem.GetItemData(ingredient.itemName);
-                if (itemData != null)
-                {
-                    ingredientIcon = itemData.icon;
-                    ingredientName = itemData.displayName;
-                }
+                if (itemData != null) { ingredientIcon = itemData.icon; ingredientName = itemData.displayName; }
                 amountOwned = _storageSystem.GetInventoryItemQuantity(ingredient.itemName);
             }
             else
             {
                 var resourceData = _storageSystem.GetResourceData(ingredient.resourceType);
-                if (resourceData != null)
-                {
-                    ingredientIcon = resourceData.Icon;
-                    ingredientName = resourceData.DisplayName;
-                }
+                if (resourceData != null) { ingredientIcon = resourceData.Icon; ingredientName = resourceData.DisplayName; }
                 amountOwned = _storageSystem.GetResourceAmount(ingredient.resourceType);
             }
             
             slotUI.SetData(ingredientIcon, ingredientName, amountOwned, ingredient.amount);
         }
         
-        UpdateCraftButtonState();
-        
-        if (!_craftingSystem.IsAnyCraftingInProgress())
+        if (craftingProgressBar != null)
         {
-            if (craftingProgressBar != null)
+            if (_craftingSystem.IsAnyCraftingInProgress() && _craftingSystem.GetCurrentCraftingRecipeId() == recipe.recipeId)
+            {
+                craftingProgressBar.gameObject.SetActive(true);
+                craftingProgressBar.value = _craftingSystem.GetCurrentCraftingProgress();
+            }
+            else
+            {
                 craftingProgressBar.gameObject.SetActive(false);
+            }
         }
+        
+        UpdateCraftButtonState();
     }
     
     private int GetCraftAmount()
@@ -254,7 +267,7 @@ public class CraftingPanelUI : MonoBehaviour
 
         if (didCraftStart)
         {
-            UpdateCraftButtonState();
+            UpdateCraftButtonState(); 
         }
     }
 }
