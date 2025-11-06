@@ -9,12 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7bd636bb6e54843bf7253b43569f48, type: 3}
-  m_Name: ORION
+  m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
+  m_Name: hefesto2
   m_EditorClassIdentifier: 
-  constellationName: ORION
-  nodes:
+  nodeName: HEFESTO 2
+  description: bbbbbbbbbbbbbb
+  skillPointCost: 1
+  prerequisiteNodes:
   - {fileID: 11400000, guid: 4c9dca761efbddc4693582980b4090a1, type: 2}
-  - {fileID: 11400000, guid: cca7332f298bc554d8ffe021e26684d5, type: 2}
-  - {fileID: 11400000, guid: 9512e773107ffe14289882a66e5dbe78, type: 2}
-  - {fileID: 11400000, guid: 65539a35599abdc4992461898159cf2f, type: 2}
+  positionInConstellation: {x: 1, y: 7}
+  improvements:
+  - improvementType: 0
+    targetResource: 
+    value: 0
+    customEffectId: 

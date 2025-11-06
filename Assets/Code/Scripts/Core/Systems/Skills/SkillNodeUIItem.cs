@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using Code.Scripts.Core.Systems.Skills;
 
 namespace Code.Scripts.UI.Skills
 {
     public class SkillNodeUIItem : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI nodeNameText;
         [SerializeField] private Button nodeButton;
         [SerializeField] private Image backgroundImage;
 
@@ -26,7 +24,6 @@ namespace Code.Scripts.UI.Skills
             skillTreeManager = manager;
             skillTreeUI = ui;
 
-            nodeNameText.text = data.nodeName;
             nodeButton.onClick.AddListener(OnNodeClicked);
             UpdateVisualState();
         }

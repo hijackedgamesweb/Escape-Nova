@@ -11,10 +11,11 @@ namespace Code.Scripts.UI.Skills
     {
         [Header("UI References")]
         [SerializeField] private Transform constellationsContainer;
-        [SerializeField] private GameObject constellationColumnPrefab;
+        [SerializeField] private GameObject constellationAreaPrefab;
         [SerializeField] private GameObject skillNodePrefab;
         [SerializeField] private GameObject nodeModal;
         [SerializeField] private TextMeshProUGUI skillPointsText;
+        [SerializeField] private GameObject connectionLinePrefab;
 
         [Header("Modal References")]
         [SerializeField] private TextMeshProUGUI modalNodeName;
@@ -23,9 +24,15 @@ namespace Code.Scripts.UI.Skills
         [SerializeField] private Button modalPurchaseButton;
         [SerializeField] private Button modalCloseButton;
 
+        [Header("UI Settings")]
+        [SerializeField] private Vector2 baseNodeSpacing = new Vector2(120f, 120f);
+        [SerializeField] private float connectionLineWidth = 3f;
+
         private SkillTreeManager skillTreeManager;
         private SkillNodeData selectedNode;
-        private Dictionary<string, GameObject> constellationColumns = new Dictionary<string, GameObject>();
+        private Dictionary<string, GameObject> constellationAreas = new Dictionary<string, GameObject>();
+        private Dictionary<string, GameObject> nodeUIElements = new Dictionary<string, GameObject>();
+        private Dictionary<string, GameObject> linesContainers = new Dictionary<string, GameObject>();
         private bool isInitialized = false;
 
         private void Start()
@@ -111,9 +118,11 @@ namespace Code.Scripts.UI.Skills
                     Destroy(child.gameObject);
                 }
             }
-            constellationColumns.Clear();
+            constellationAreas.Clear();
+            nodeUIElements.Clear();
+            linesContainers.Clear();
 
-            // Crear columnas para cada constelación
+            // Crear áreas para cada constelación
             var constellations = skillTreeManager.GetConstellations();
             if (constellations == null)
             {
@@ -131,7 +140,7 @@ namespace Code.Scripts.UI.Skills
                     continue;
                 }
 
-                CreateConstellationColumn(constellation);
+                CreateConstellationArea(constellation);
             }
 
             UpdateSkillPointsDisplay();
@@ -147,9 +156,9 @@ namespace Code.Scripts.UI.Skills
                 allValid = false;
             }
 
-            if (constellationColumnPrefab == null)
+            if (constellationAreaPrefab == null)
             {
-                Debug.LogError("SkillTreeUI: ConstellationColumnPrefab is not assigned!");
+                Debug.LogError("SkillTreeUI: ConstellationAreaPrefab is not assigned!");
                 allValid = false;
             }
 
@@ -174,13 +183,13 @@ namespace Code.Scripts.UI.Skills
             return allValid;
         }
 
-        private void CreateConstellationColumn(SkillConstellation constellation)
+        private void CreateConstellationArea(SkillConstellation constellation)
         {
-            GameObject column = Instantiate(constellationColumnPrefab, constellationsContainer);
-            constellationColumns[constellation.constellationName] = column;
+            GameObject area = Instantiate(constellationAreaPrefab, constellationsContainer);
+            constellationAreas[constellation.constellationName] = area;
 
             // Configurar el header de la constelación
-            TextMeshProUGUI headerText = column.GetComponentInChildren<TextMeshProUGUI>();
+            TextMeshProUGUI headerText = area.GetComponentInChildren<TextMeshProUGUI>();
             if (headerText != null)
             {
                 headerText.text = constellation.constellationName;
@@ -190,30 +199,102 @@ namespace Code.Scripts.UI.Skills
                 Debug.LogWarning($"SkillTreeUI: Could not find header text for constellation {constellation.constellationName}");
             }
 
-            // Crear nodos en la columna
+            // Crear contenedor específico para líneas (se renderizará primero - detrás de los nodos)
+            GameObject linesContainer = new GameObject("LinesContainer");
+            linesContainer.transform.SetParent(area.transform);
+            linesContainer.transform.SetAsFirstSibling(); // Asegurar que esté detrás de los nodos
+
+            // Añadir RectTransform al contenedor de líneas
+            RectTransform linesRect = linesContainer.AddComponent<RectTransform>();
+            linesRect.anchorMin = Vector2.zero;
+            linesRect.anchorMax = Vector2.one;
+            linesRect.offsetMin = Vector2.zero;
+            linesRect.offsetMax = Vector2.zero;
+
+            linesContainers[constellation.constellationName] = linesContainer;
+
+            // Crear nodos en la constelación con posicionamiento libre
             if (constellation.nodes != null)
             {
                 foreach (var node in constellation.nodes)
                 {
                     if (node != null)
                     {
-                        CreateNodeUI(node, column.transform);
+                        CreateNodeUI(node, area.transform);
                     }
                 }
+
+                // Crear conexiones después de que todos los nodos estén colocados
+                CreateConnections(constellation, linesContainer.transform);
             }
         }
 
         private void CreateNodeUI(SkillNodeData nodeData, Transform parent)
         {
             GameObject nodeUI = Instantiate(skillNodePrefab, parent);
+
+            // Posicionar el nodo según positionInConstellation
+            RectTransform nodeRect = nodeUI.GetComponent<RectTransform>();
+            if (nodeRect != null)
+            {
+                // Usar positionInConstellation como coordenadas relativas
+                Vector2 position = nodeData.positionInConstellation * baseNodeSpacing;
+                nodeRect.anchoredPosition = position;
+            }
+
             SkillNodeUIItem nodeItem = nodeUI.GetComponent<SkillNodeUIItem>();
             if (nodeItem != null)
             {
                 nodeItem.Initialize(nodeData, skillTreeManager, this);
+                nodeUIElements[nodeData.name] = nodeUI;
             }
             else
             {
                 Debug.LogError("SkillTreeUI: SkillNodePrefab is missing SkillNodeUIItem component!");
+            }
+        }
+
+        private void CreateConnections(SkillConstellation constellation, Transform parent)
+        {
+            if (connectionLinePrefab == null) return;
+
+            foreach (var node in constellation.nodes)
+            {
+                if (node == null || node.prerequisiteNodes == null) continue;
+
+                foreach (var prerequisite in node.prerequisiteNodes)
+                {
+                    if (prerequisite != null && nodeUIElements.ContainsKey(node.name) && nodeUIElements.ContainsKey(prerequisite.name))
+                    {
+                        CreateConnectionLine(nodeUIElements[prerequisite.name], nodeUIElements[node.name], parent);
+                    }
+                }
+            }
+        }
+
+        private void CreateConnectionLine(GameObject fromNode, GameObject toNode, Transform parent)
+        {
+            GameObject line = Instantiate(connectionLinePrefab, parent);
+            UILineRenderer lineRenderer = line.GetComponent<UILineRenderer>();
+
+            if (lineRenderer != null)
+            {
+                RectTransform fromRect = fromNode.GetComponent<RectTransform>();
+                RectTransform toRect = toNode.GetComponent<RectTransform>();
+
+                Vector2 fromPos = fromRect.anchoredPosition;
+                Vector2 toPos = toRect.anchoredPosition;
+
+                lineRenderer.Points = new Vector2[] { fromPos, toPos };
+                lineRenderer.LineWidth = connectionLineWidth;
+                lineRenderer.color = new Color(1f, 1f, 1f, 0.5f); // Línea semitransparente
+
+                // Asegurar que la línea esté detrás de todo
+                CanvasRenderer canvasRenderer = line.GetComponent<CanvasRenderer>();
+                if (canvasRenderer != null)
+                {
+                    line.transform.SetAsFirstSibling();
+                }
             }
         }
 
@@ -234,10 +315,14 @@ namespace Code.Scripts.UI.Skills
                 modalPurchaseButton.interactable = skillTreeManager.CanPurchaseSkill(nodeData);
 
             if (nodeModal != null)
+            {
                 nodeModal.SetActive(true);
+                // Asegurar que el modal esté al frente
+                nodeModal.transform.SetAsLastSibling();
+            }
         }
 
-        private void HideModal()
+        public void HideModal()
         {
             if (nodeModal != null)
                 nodeModal.SetActive(false);
@@ -279,6 +364,12 @@ namespace Code.Scripts.UI.Skills
             }
         }
 
+        // Método público para que SkillTreeWindow pueda cerrar el modal
+        public void ForceCloseModal()
+        {
+            HideModal();
+        }
+
         private void OnDestroy()
         {
             if (skillTreeManager != null)
@@ -286,6 +377,20 @@ namespace Code.Scripts.UI.Skills
                 skillTreeManager.OnSkillPurchased -= OnSkillPurchased;
                 skillTreeManager.OnSkillPointsChanged -= OnSkillPointsChanged;
             }
+        }
+
+        // Método para debug
+        [ContextMenu("Debug UI State")]
+        public void DebugUIState()
+        {
+            Debug.Log($"=== SKILL TREE UI DEBUG ===");
+            Debug.Log($"Initialized: {isInitialized}");
+            Debug.Log($"SkillTreeManager: {skillTreeManager != null}");
+            Debug.Log($"Constellation Areas: {constellationAreas.Count}");
+            Debug.Log($"Node UI Elements: {nodeUIElements.Count}");
+            Debug.Log($"Lines Containers: {linesContainers.Count}");
+            Debug.Log($"Modal Active: {nodeModal != null && nodeModal.activeSelf}");
+            Debug.Log($"Selected Node: {selectedNode?.nodeName ?? "None"}");
         }
     }
 }

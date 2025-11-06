@@ -1,5 +1,6 @@
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.Core.Systems.Skills;
 
 namespace Code.Scripts.UI.Skills
 {
@@ -7,6 +8,7 @@ namespace Code.Scripts.UI.Skills
     {
         [SerializeField] private GameObject skillTreePanel;
         private bool isVisible = false;
+        private SkillTreeUI skillTreeUI;
 
         private void Start()
         {
@@ -14,6 +16,7 @@ namespace Code.Scripts.UI.Skills
             if (skillTreePanel != null)
             {
                 skillTreePanel.SetActive(false);
+                skillTreeUI = skillTreePanel.GetComponent<SkillTreeUI>();
             }
         }
 
@@ -37,10 +40,17 @@ namespace Code.Scripts.UI.Skills
                 // Si se muestra, actualizar la UI
                 if (isVisible)
                 {
-                    var skillTreeUI = skillTreePanel.GetComponent<SkillTreeUI>();
                     if (skillTreeUI != null)
                     {
                         skillTreeUI.RefreshUI();
+                    }
+                }
+                else
+                {
+                    // Si se cierra el menú, cerrar también el modal
+                    if (skillTreeUI != null)
+                    {
+                        skillTreeUI.HideModal();
                     }
                 }
             }
@@ -51,7 +61,6 @@ namespace Code.Scripts.UI.Skills
         {
             isVisible = true;
             skillTreePanel.SetActive(true);
-            var skillTreeUI = skillTreePanel.GetComponent<SkillTreeUI>();
             if (skillTreeUI != null)
             {
                 skillTreeUI.RefreshUI();
@@ -62,6 +71,12 @@ namespace Code.Scripts.UI.Skills
         {
             isVisible = false;
             skillTreePanel.SetActive(false);
+
+            // Cerrar también el modal al ocultar el árbol
+            if (skillTreeUI != null)
+            {
+                skillTreeUI.HideModal();
+            }
         }
     }
 }

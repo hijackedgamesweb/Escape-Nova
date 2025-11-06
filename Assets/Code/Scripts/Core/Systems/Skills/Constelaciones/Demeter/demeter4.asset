@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: orion3
+  m_Name: demeter4
   m_EditorClassIdentifier: 
-  nodeName: o3
-  description: ccccccccccccc
-  skillPointCost: 1
+  nodeName: DEMETER 4
+  description: "Los planetas combinados producen un 30% m\xE1s."
+  skillPointCost: 2
   prerequisiteNodes:
-  - {fileID: 11400000, guid: cca7332f298bc554d8ffe021e26684d5, type: 2}
-  positionInConstellation: {x: 1, y: 1}
+  - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
+  - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
+  positionInConstellation: {x: -5, y: 5.5}
   improvements:
   - improvementType: 0
     targetResource: 
-    value: 0
+    value: 100
     customEffectId: 

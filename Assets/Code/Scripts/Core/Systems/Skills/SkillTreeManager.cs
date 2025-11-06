@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
+using Code.Scripts.Core.Systems.Skills;
 using Code.Scripts.Patterns.ServiceLocator;
+using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Skills
@@ -26,6 +28,8 @@ namespace Code.Scripts.Core.Systems.Skills
         private bool isInitialized = false;
         private int lastCycleCounted = 0;
 
+        private Dictionary<ResourceType, List<StorageModifier>> storageModifiers = new Dictionary<ResourceType, List<StorageModifier>>();
+
         public event Action<SkillNodeData> OnSkillPurchased;
         public event Action<int> OnSkillPointsChanged;
 
@@ -36,9 +40,17 @@ namespace Code.Scripts.Core.Systems.Skills
             public bool isUnlocked;
         }
 
+        [System.Serializable]
+        private class StorageModifier
+        {
+            public string sourceNode;
+            public float increaseAmount;
+        }
+
         private void Awake()
         {
             ServiceLocator.RegisterService<SkillTreeManager>(this);
+            InitializeStorageModifiers();
         }
 
         private void OnDestroy()
@@ -55,29 +67,32 @@ namespace Code.Scripts.Core.Systems.Skills
             StartCoroutine(InitializeWhenReady());
         }
 
+        private void InitializeStorageModifiers()
+        {
+            var allResources = Enum.GetValues(typeof(ResourceType));
+            foreach (ResourceType resource in allResources)
+            {
+                storageModifiers[resource] = new List<StorageModifier>();
+            }
+        }
+
         private IEnumerator InitializeWhenReady()
         {
             Debug.Log("SkillTreeManager: Starting initialization...");
 
-            // Esperar a que GameTime esté disponible
             yield return WaitForService<IGameTime>((service) => gameTime = service, "IGameTime");
-
-            // Esperar a que StorageSystem esté disponible (opcional)
             yield return WaitForService<StorageSystem>((service) => storageSystem = service, "StorageSystem", false);
 
             InitializeNodeStates();
 
-            // Suscribirse al evento de ciclos completados
             if (gameTime != null)
             {
                 gameTime.OnCycleCompleted += OnCycleCompleted;
                 lastCycleCounted = gameTime.CurrentCycle;
-                Debug.Log($"SkillTreeManager: Subscribed to cycle events. Current cycle: {lastCycleCounted}");
+                Debug.Log("SkillTreeManager: Subscribed to cycle events. Current cycle: " + lastCycleCounted);
             }
 
-            // Puntos iniciales
             AddSkillPoints(initialSkillPoints);
-
             isInitialized = true;
             Debug.Log("SkillTreeManager: Initialization completed successfully");
         }
@@ -97,7 +112,7 @@ namespace Code.Scripts.Core.Systems.Skills
                 }
                 catch (Exception e)
                 {
-                    Debug.Log($"SkillTreeManager: Attempt {attempts + 1} - {serviceName} not ready: {e.Message}");
+                    Debug.Log("SkillTreeManager: Attempt " + (attempts + 1) + " - " + serviceName + " not ready: " + e.Message);
                 }
 
                 if (service == null)
@@ -110,15 +125,15 @@ namespace Code.Scripts.Core.Systems.Skills
             if (service != null)
             {
                 setService(service);
-                Debug.Log($"SkillTreeManager: {serviceName} service acquired");
+                Debug.Log("SkillTreeManager: " + serviceName + " service acquired");
             }
             else if (isRequired)
             {
-                Debug.LogError($"SkillTreeManager: Failed to get {serviceName} service after {maxAttempts} attempts");
+                Debug.LogError("SkillTreeManager: Failed to get " + serviceName + " service after " + maxAttempts + " attempts");
             }
             else
             {
-                Debug.LogWarning($"SkillTreeManager: {serviceName} service not available, but continuing without it");
+                Debug.LogWarning("SkillTreeManager: " + serviceName + " service not available, but continuing without it");
             }
         }
 
@@ -126,14 +141,12 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (!isInitialized) return;
 
-            Debug.Log($"SkillTreeManager: Cycle completed - Current: {currentCycle}, Last counted: {lastCycleCounted}");
+            Debug.Log("SkillTreeManager: Cycle completed - Current: " + currentCycle + ", Last counted: " + lastCycleCounted);
 
-            // Calcular cuántos ciclos han pasado desde la última vez
             int cyclesPassed = currentCycle - lastCycleCounted;
 
             if (cyclesPassed > 0)
             {
-                // Calcular cuántos puntos ganar
                 int pointsToAdd = 0;
                 for (int i = 0; i < cyclesPassed; i++)
                 {
@@ -146,12 +159,12 @@ namespace Code.Scripts.Core.Systems.Skills
                 if (pointsToAdd > 0)
                 {
                     AddSkillPoints(pointsToAdd);
-                    Debug.Log($"SkillTreeManager: Gained {pointsToAdd} skill points after {cyclesPassed} cycles (from cycle {lastCycleCounted} to {currentCycle})");
+                    Debug.Log("SkillTreeManager: Gained " + pointsToAdd + " skill points after " + cyclesPassed + " cycles (from cycle " + lastCycleCounted + " to " + currentCycle + ")");
                 }
                 else
                 {
                     int cyclesUntilNextPoint = cyclesPerPoint - (currentCycle % cyclesPerPoint);
-                    Debug.Log($"SkillTreeManager: {cyclesUntilNextPoint} cycles until next point");
+                    Debug.Log("SkillTreeManager: " + cyclesUntilNextPoint + " cycles until next point");
                 }
 
                 lastCycleCounted = currentCycle;
@@ -166,7 +179,7 @@ namespace Code.Scripts.Core.Systems.Skills
                 return;
             }
 
-            Debug.Log($"SkillTreeManager: Initializing {constellations.Count} constellations");
+            Debug.Log("SkillTreeManager: Initializing " + constellations.Count + " constellations");
 
             foreach (var constellation in constellations)
             {
@@ -178,7 +191,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
                 if (constellation.nodes == null)
                 {
-                    Debug.LogError($"SkillTreeManager: Constellation {constellation.constellationName} has null nodes list!");
+                    Debug.LogError("SkillTreeManager: Constellation " + constellation.constellationName + " has null nodes list!");
                     continue;
                 }
 
@@ -209,7 +222,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
             availableSkillPoints += points;
             OnSkillPointsChanged?.Invoke(availableSkillPoints);
-            Debug.Log($"SkillTreeManager: Skill points updated: {availableSkillPoints}");
+            Debug.Log("SkillTreeManager: Skill points updated: " + availableSkillPoints);
         }
 
         public bool CanPurchaseSkill(SkillNodeData nodeData)
@@ -242,8 +255,97 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             foreach (var improvement in nodeData.improvements)
             {
-                Debug.Log($"Applied improvement: {improvement.improvementType} - {improvement.value}");
+                switch (improvement.improvementType)
+                {
+                    case SkillImprovement.ImprovementType.StorageCapacity:
+                        ApplyStorageCapacityImprovement(improvement, nodeData.name);
+                        break;
+                    case SkillImprovement.ImprovementType.ProductionSpeed:
+                        ApplyProductionSpeedImprovement(improvement);
+                        break;
+                    case SkillImprovement.ImprovementType.ResourceEfficiency:
+                        ApplyResourceEfficiencyImprovement(improvement);
+                        break;
+                    case SkillImprovement.ImprovementType.UnlockFeature:
+                        ApplyFeatureUnlock(improvement);
+                        break;
+                    case SkillImprovement.ImprovementType.CustomEffect:
+                        ApplyCustomEffect(improvement);
+                        break;
+                }
             }
+        }
+
+        private void ApplyStorageCapacityImprovement(SkillImprovement improvement, string sourceNode)
+        {
+            if (improvement.applyToAllResources)
+            {
+                var allResources = Enum.GetValues(typeof(ResourceType));
+                foreach (ResourceType resource in allResources)
+                {
+                    ApplyStorageIncreaseToResource(resource, improvement.value, sourceNode);
+                }
+                Debug.Log("Mejora aplicada: +" + improvement.value + " capacidad a TODOS los recursos");
+            }
+            else
+            {
+                ApplyStorageIncreaseToResource(improvement.targetResource, improvement.value, sourceNode);
+                Debug.Log("Mejora aplicada: +" + improvement.value + " capacidad a " + improvement.targetResource);
+            }
+        }
+
+        private void ApplyStorageIncreaseToResource(ResourceType resourceType, float increaseAmount, string sourceNode)
+        {
+            if (!storageModifiers.ContainsKey(resourceType))
+            {
+                storageModifiers[resourceType] = new List<StorageModifier>();
+            }
+
+            storageModifiers[resourceType].Add(new StorageModifier
+            {
+                sourceNode = sourceNode,
+                increaseAmount = increaseAmount
+            });
+
+            Debug.Log("Modificador aplicado: " + resourceType + " +" + increaseAmount + " desde nodo " + sourceNode);
+
+            UpdateStorageSystemCapacity(resourceType);
+        }
+
+        private void UpdateStorageSystemCapacity(ResourceType resourceType)
+        {
+            if (storageSystem == null) return;
+
+            float totalIncrease = 0f;
+            if (storageModifiers.ContainsKey(resourceType))
+            {
+                foreach (var modifier in storageModifiers[resourceType])
+                {
+                    totalIncrease += modifier.increaseAmount;
+                }
+            }
+
+            Debug.Log("Capacidad total modificada para " + resourceType + ": +" + totalIncrease);
+        }
+
+        private void ApplyProductionSpeedImprovement(SkillImprovement improvement)
+        {
+            Debug.Log("Velocidad de produccion mejorada para " + (improvement.applyToAllResources ? "TODOS los recursos" : improvement.targetResource.ToString()) + ": " + improvement.value);
+        }
+
+        private void ApplyResourceEfficiencyImprovement(SkillImprovement improvement)
+        {
+            Debug.Log("Eficiencia de recursos mejorada para " + (improvement.applyToAllResources ? "TODOS los recursos" : improvement.targetResource.ToString()) + ": " + improvement.value);
+        }
+
+        private void ApplyFeatureUnlock(SkillImprovement improvement)
+        {
+            Debug.Log("Caracteristica desbloqueada: " + improvement.customEffectId);
+        }
+
+        private void ApplyCustomEffect(SkillImprovement improvement)
+        {
+            Debug.Log("Efecto personalizado aplicado: " + improvement.customEffectId);
         }
 
         private void UnlockNextNodes(SkillNodeData purchasedNode)
@@ -257,13 +359,13 @@ namespace Code.Scripts.Core.Systems.Skills
                         if (nodeStates.ContainsKey(node.name))
                         {
                             nodeStates[node.name].isUnlocked = true;
+                            Debug.Log("Nodo " + node.nodeName + " desbloqueado despues de comprar " + purchasedNode.nodeName);
                         }
                     }
                 }
             }
         }
 
-        // Métodos de consulta
         public bool IsSkillPurchased(SkillNodeData nodeData)
         {
             return isInitialized && nodeStates.ContainsKey(nodeData.name) && nodeStates[nodeData.name].isPurchased;
@@ -277,7 +379,18 @@ namespace Code.Scripts.Core.Systems.Skills
         public int GetAvailableSkillPoints() => isInitialized ? availableSkillPoints : 0;
         public List<SkillConstellation> GetConstellations() => constellations;
 
-        // MÉTODOS DE CONTEXT MENU - ESTOS DEBERÍAN APARECER EN EL INSPECTOR
+        public float GetTotalStorageIncrease(ResourceType resourceType)
+        {
+            if (!storageModifiers.ContainsKey(resourceType)) return 0f;
+
+            float total = 0f;
+            foreach (var modifier in storageModifiers[resourceType])
+            {
+                total += modifier.increaseAmount;
+            }
+            return total;
+        }
+
         [ContextMenu("Add 5 Test Points")]
         public void AddTestPoints()
         {
@@ -295,13 +408,22 @@ namespace Code.Scripts.Core.Systems.Skills
         [ContextMenu("Debug Skill Tree State")]
         public void DebugSkillTreeState()
         {
-            Debug.Log($"=== SKILL TREE DEBUG ===");
-            Debug.Log($"Initialized: {isInitialized}");
-            Debug.Log($"Available points: {availableSkillPoints}");
-            Debug.Log($"Last cycle counted: {lastCycleCounted}");
-            Debug.Log($"Current cycle (if available): {(gameTime != null ? gameTime.CurrentCycle.ToString() : "N/A")}");
-            Debug.Log($"Constellations: {constellations?.Count ?? 0}");
-            Debug.Log($"Node states: {nodeStates.Count}");
+            Debug.Log("=== SKILL TREE DEBUG ===");
+            Debug.Log("Initialized: " + isInitialized);
+            Debug.Log("Available points: " + availableSkillPoints);
+            Debug.Log("Last cycle counted: " + lastCycleCounted);
+            Debug.Log("Current cycle (if available): " + (gameTime != null ? gameTime.CurrentCycle.ToString() : "N/A"));
+            Debug.Log("Constellations: " + (constellations?.Count ?? 0));
+            Debug.Log("Node states: " + nodeStates.Count);
+
+            Debug.Log("=== STORAGE MODIFIERS ===");
+            foreach (var kvp in storageModifiers)
+            {
+                if (kvp.Value.Count > 0)
+                {
+                    Debug.Log(kvp.Key + ": " + GetTotalStorageIncrease(kvp.Key) + " aumento total");
+                }
+            }
         }
 
         [ContextMenu("Reset Skill Points")]
@@ -310,6 +432,28 @@ namespace Code.Scripts.Core.Systems.Skills
             availableSkillPoints = 0;
             AddSkillPoints(initialSkillPoints);
             Debug.Log("Reset skill points to initial value");
+        }
+
+        [ContextMenu("Clear All Modifiers")]
+        public void ClearAllModifiers()
+        {
+            foreach (var resource in storageModifiers.Keys)
+            {
+                storageModifiers[resource].Clear();
+            }
+            Debug.Log("All storage modifiers cleared");
+        }
+
+        [ContextMenu("Test Storage Improvement")]
+        public void TestStorageImprovement()
+        {
+            var testImprovement = new SkillImprovement();
+            testImprovement.improvementType = SkillImprovement.ImprovementType.StorageCapacity;
+            testImprovement.targetResource = ResourceType.Metal;
+            testImprovement.value = 50f;
+            testImprovement.applyToAllResources = false;
+
+            ApplyStorageCapacityImprovement(testImprovement, "TestNode");
         }
     }
 }

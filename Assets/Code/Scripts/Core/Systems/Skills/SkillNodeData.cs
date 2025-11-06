@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 
 [CreateAssetMenu(fileName = "New Skill Node", menuName = "NOVA/Skill Node")]
 public class SkillNodeData : ScriptableObject
@@ -32,8 +33,20 @@ public class SkillImprovement
         CustomEffect
     }
 
+    [Header("Improvement Type")]
     public ImprovementType improvementType;
-    public string targetResource; // Para específico, vacío para todos
-    public float value; // Valor de mejora
-    public string customEffectId; // Para efectos personalizados
+
+    [Header("Target Settings")]
+    [Tooltip("Select which resource this improvement affects")]
+    public ResourceType targetResource;
+
+    [Tooltip("Apply this improvement to all resources?")]
+    public bool applyToAllResources = false;
+
+    [Header("Improvement Value")]
+    public float value;
+
+    [Header("Custom Effect")]
+    [Tooltip("Only used for UnlockFeature and CustomEffect types")]
+    public string customEffectId;
 }
