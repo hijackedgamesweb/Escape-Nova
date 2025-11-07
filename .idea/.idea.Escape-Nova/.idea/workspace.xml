@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/ActionPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/ActionPanelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/ResearchInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/ResearchInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/StorageSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/StorageSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +27,11 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/hijackedgamesweb/Escape-Nova.git&quot;,
-    &quot;accountId&quot;: &quot;383bcb43-1ccf-49f1-acc5-fe574cbe729b&quot;
+    &quot;accountId&quot;: &quot;8ac2b77f-b91f-4cf6-8c0e-79503f3128be&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/152439c387994a8da523328132967f8d46ae00/53/3ceb7752/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/152439c387994a8da523328132967f8d46ae00/c7/308d82e7/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/25ce29052dfe4e49a635a42f7798806b1e0000/39/0c7896a4/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83446681e0b345598f3a16cf9a5936fb31a00/5e/f1c7e9c2/Event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingRecipe.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@38fa2290d5f2/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -51,25 +48,18 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;refactor/UIManager&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Research-system-2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\TheFr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\TheFr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\TheFr\\AppData\\Local\\Symbols\\src&quot;
-    ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath P:\GitHub\Escape-Nova -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -77,7 +67,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath P:\GitHub\Escape-Nova -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -89,6 +79,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -99,6 +92,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -123,6 +119,8 @@
       <workItem from="1761259966246" duration="3036000" />
       <workItem from="1761293493591" duration="1381000" />
       <workItem from="1761391004763" duration="1404000" />
+      <workItem from="1762443028912" duration="1248000" />
+      <workItem from="1762444978274" duration="11881000" />
     </task>
     <servers />
   </component>

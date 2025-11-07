@@ -13,17 +13,22 @@ namespace Code.Scripts.Core.Systems.Storage
     public class StorageSystem
     {
         private List<ResourceData> _resourceDataList; // Lista de recursos que asignamos en el Inspector
+        private InventoryData _inventoryData;
         
         private Dictionary<ResourceType, ResourceData> _resourceDatabase; // Diccionario para buscar datos de recursos rápido
         private Dictionary<ResourceType, int> _resources = new Dictionary<ResourceType, int>(); // Aquí guardamos cuánto tenemos de cada recurso
+        private Dictionary<string, int> _inventoryItems = new Dictionary<string, int>(); // Para items de inventario
+        
+        private Dictionary<string, ItemData> _itemDatabase;
         
         // Eventos para avisar cuando cambian los recursos
         public event Action<ResourceType, int> OnResourceChanged;
         public event Action OnStorageUpdated;
         
-        public StorageSystem(List<ResourceData> resourceDataList)
+        public StorageSystem(List<ResourceData> resourceDataList, InventoryData inventoryData)
         {
             _resourceDataList = resourceDataList;
+            _inventoryData = inventoryData;
             Initialize();
         }
         
@@ -33,7 +38,92 @@ namespace Code.Scripts.Core.Systems.Storage
             ServiceLocator.RegisterService<StorageSystem>(this);
             // Inicializo la base de datos de recursos
             InitializeResourceDatabase();
+            InitializeInventoryItems();
         }
+        
+        public void InitializeInventoryItems()
+        {
+            _inventoryItems.Clear();
+
+            _itemDatabase = new Dictionary<string, ItemData>();
+            
+            if (_inventoryData == null || _inventoryData.items == null)
+            {
+                Debug.LogWarning("No se proporcionó un InventoryData al StorageSystem.");
+                return;
+            }
+
+            foreach (var item in _inventoryData.items)
+            {
+                if (item.itemData != null && !string.IsNullOrEmpty(item.itemData.itemName))
+                {
+                    // ¡Clave! Añadimos el item al diccionario con su CANTIDAD INICIAL
+                    _inventoryItems[item.itemData.itemName] = item.quantity;
+                    if (!_itemDatabase.ContainsKey(item.itemData.itemName))
+                    {
+                        _itemDatabase.Add(item.itemData.itemName, item.itemData);
+                    }
+                    Debug.Log($"Item de inventario registrado: {item.itemData.itemName} (Cantidad: {item.quantity})");
+                }
+            }
+            Debug.Log($"Inventario inicializado con {_inventoryItems.Count} items.");
+        }
+        
+        public bool HasInventoryItem(string itemName, int quantity)
+        {
+            return _inventoryItems.ContainsKey(itemName) && _inventoryItems[itemName] >= quantity;
+        }
+        
+        public bool ConsumeInventoryItem(string itemName, int quantity)
+        {
+            if (!HasInventoryItem(itemName, quantity))
+                return false;
+        
+            _inventoryItems[itemName] -= quantity;
+            OnStorageUpdated?.Invoke();
+            return true;
+        }
+        
+        public bool AddInventoryItem(string itemName, int quantity)
+        {
+            if (!_inventoryItems.ContainsKey(itemName))
+            {
+                Debug.LogWarning($"Item {itemName} no encontrado en inventario disponible");
+                return false;
+            }
+            if (!_itemDatabase.TryGetValue(itemName, out ItemData data))
+            {
+                Debug.LogError($"¡Error crítico! El item {itemName} existe en el inventario pero no en la base de datos de items.");
+                return false;
+            }
+            int maxStack = data.maxStack; 
+            int currentAmount = _inventoryItems[itemName];
+            int newAmount = currentAmount + quantity;
+
+            if (newAmount >= maxStack)
+            {
+                _inventoryItems[itemName] = maxStack;
+                Debug.LogWarning($"El item {itemName} ha llegado a su máximo ({maxStack})");
+            }
+            else
+            {
+                _inventoryItems[itemName] = newAmount;
+            }
+
+            OnStorageUpdated?.Invoke();
+            return true;
+        }
+        
+        public int GetInventoryItemQuantity(string itemName)
+        {
+            return _inventoryItems.GetValueOrDefault(itemName, 0);
+        }
+        
+        public Dictionary<string, int> GetInventoryItems()
+        {
+            return new Dictionary<string, int>(_inventoryItems);
+        }
+
         
         private void InitializeResourceDatabase()
         {
