@@ -18,7 +18,7 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: 64000000
-  size: 1
+  size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
-  resourcePerCycle: 64000000
+  resourcePerCycle: 0a000000
