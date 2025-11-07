@@ -78,8 +78,6 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private IEnumerator InitializeWhenReady()
         {
-            Debug.Log("SkillTreeManager: Starting initialization...");
-
             yield return WaitForService<IGameTime>((service) => gameTime = service, "IGameTime");
             yield return WaitForService<StorageSystem>((service) => storageSystem = service, "StorageSystem", false);
 
@@ -89,12 +87,10 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 gameTime.OnCycleCompleted += OnCycleCompleted;
                 lastCycleCounted = gameTime.CurrentCycle;
-                Debug.Log("SkillTreeManager: Subscribed to cycle events. Current cycle: " + lastCycleCounted);
             }
 
             AddSkillPoints(initialSkillPoints);
             isInitialized = true;
-            Debug.Log("SkillTreeManager: Initialization completed successfully");
         }
 
         private IEnumerator WaitForService<T>(Action<T> setService, string serviceName, bool isRequired = true)
@@ -125,15 +121,6 @@ namespace Code.Scripts.Core.Systems.Skills
             if (service != null)
             {
                 setService(service);
-                Debug.Log("SkillTreeManager: " + serviceName + " service acquired");
-            }
-            else if (isRequired)
-            {
-                Debug.LogError("SkillTreeManager: Failed to get " + serviceName + " service after " + maxAttempts + " attempts");
-            }
-            else
-            {
-                Debug.LogWarning("SkillTreeManager: " + serviceName + " service not available, but continuing without it");
             }
         }
 
@@ -185,7 +172,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
                     if (!nodeStates.ContainsKey(node.name))
                     {
-                        // Verificar si los prerequisites están comprados
+                        // Verificar si los prerequisites estï¿½n comprados
                         bool allPrerequisitesMet = true;
                         if (node.prerequisiteNodes != null && node.prerequisiteNodes.Count > 0)
                         {
@@ -247,101 +234,13 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void ApplySkillImprovements(SkillNodeData nodeData)
         {
+            
             foreach (var improvement in nodeData.improvements)
             {
-                switch (improvement.improvementType)
-                {
-                    case SkillImprovement.ImprovementType.StorageCapacity:
-                        ApplyStorageCapacityImprovement(improvement, nodeData.name);
-                        break;
-                    case SkillImprovement.ImprovementType.ProductionSpeed:
-                        ApplyProductionSpeedImprovement(improvement);
-                        break;
-                    case SkillImprovement.ImprovementType.ResourceEfficiency:
-                        ApplyResourceEfficiencyImprovement(improvement);
-                        break;
-                    case SkillImprovement.ImprovementType.UnlockFeature:
-                        ApplyFeatureUnlock(improvement);
-                        break;
-                    case SkillImprovement.ImprovementType.CustomEffect:
-                        ApplyCustomEffect(improvement);
-                        break;
-                }
+                improvement.ApplyImprovement();
             }
         }
-
-        private void ApplyStorageCapacityImprovement(SkillImprovement improvement, string sourceNode)
-        {
-            if (improvement.applyToAllResources)
-            {
-                var allResources = Enum.GetValues(typeof(ResourceType));
-                foreach (ResourceType resource in allResources)
-                {
-                    ApplyStorageIncreaseToResource(resource, improvement.value, sourceNode);
-                }
-                Debug.Log("Mejora aplicada: +" + improvement.value + " capacidad a TODOS los recursos");
-            }
-            else
-            {
-                ApplyStorageIncreaseToResource(improvement.targetResource, improvement.value, sourceNode);
-                Debug.Log("Mejora aplicada: +" + improvement.value + " capacidad a " + improvement.targetResource);
-            }
-        }
-
-        private void ApplyStorageIncreaseToResource(ResourceType resourceType, float increaseAmount, string sourceNode)
-        {
-            if (!storageModifiers.ContainsKey(resourceType))
-            {
-                storageModifiers[resourceType] = new List<StorageModifier>();
-            }
-
-            storageModifiers[resourceType].Add(new StorageModifier
-            {
-                sourceNode = sourceNode,
-                increaseAmount = increaseAmount
-            });
-
-            Debug.Log("Modificador aplicado: " + resourceType + " +" + increaseAmount + " desde nodo " + sourceNode);
-
-            UpdateStorageSystemCapacity(resourceType);
-        }
-
-        private void UpdateStorageSystemCapacity(ResourceType resourceType)
-        {
-            if (storageSystem == null) return;
-
-            float totalIncrease = 0f;
-            if (storageModifiers.ContainsKey(resourceType))
-            {
-                foreach (var modifier in storageModifiers[resourceType])
-                {
-                    totalIncrease += modifier.increaseAmount;
-                }
-            }
-
-            Debug.Log("Capacidad total modificada para " + resourceType + ": +" + totalIncrease);
-        }
-
-        private void ApplyProductionSpeedImprovement(SkillImprovement improvement)
-        {
-            Debug.Log("Velocidad de produccion mejorada para " + (improvement.applyToAllResources ? "TODOS los recursos" : improvement.targetResource.ToString()) + ": " + improvement.value);
-        }
-
-        private void ApplyResourceEfficiencyImprovement(SkillImprovement improvement)
-        {
-            Debug.Log("Eficiencia de recursos mejorada para " + (improvement.applyToAllResources ? "TODOS los recursos" : improvement.targetResource.ToString()) + ": " + improvement.value);
-        }
-
-        private void ApplyFeatureUnlock(SkillImprovement improvement)
-        {
-            Debug.Log("Caracteristica desbloqueada: " + improvement.customEffectId);
-        }
-
-        private void ApplyCustomEffect(SkillImprovement improvement)
-        {
-            Debug.Log("Efecto personalizado aplicado: " + improvement.customEffectId);
-        }
-
+        
         private void UnlockNextNodes(SkillNodeData purchasedNode)
         {
             foreach (var constellation in constellations)
@@ -438,16 +337,5 @@ namespace Code.Scripts.Core.Systems.Skills
             Debug.Log("All storage modifiers cleared");
         }
 
-        [ContextMenu("Test Storage Improvement")]
-        public void TestStorageImprovement()
-        {
-            var testImprovement = new SkillImprovement();
-            testImprovement.improvementType = SkillImprovement.ImprovementType.StorageCapacity;
-            testImprovement.targetResource = ResourceType.Metal;
-            testImprovement.value = 50f;
-            testImprovement.applyToAllResources = false;
-
-            ApplyStorageCapacityImprovement(testImprovement, "TestNode");
-        }
     }
 }
