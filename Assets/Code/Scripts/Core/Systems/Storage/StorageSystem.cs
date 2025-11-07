@@ -40,6 +40,19 @@ namespace Code.Scripts.Core.Systems.Storage
             InitializeResourceDatabase();
             InitializeInventoryItems();
         }
+
+        public void AddMaxCapacity(ResourceType type, int additionalCapacity)
+        {
+            if (_resourceDatabase.TryGetValue(type, out ResourceData data))
+            {
+                data.MaxStack += additionalCapacity;
+                Debug.Log($"Capacidad máxima del recurso {type} aumentada en {additionalCapacity}. Nuevo máximo: {data.MaxStack}");
+            }
+            else
+            {
+                Debug.LogError($"No se encontró el recurso {type} para aumentar su capacidad máxima.");
+            }
+        }
         
         public void InitializeInventoryItems()
         {
