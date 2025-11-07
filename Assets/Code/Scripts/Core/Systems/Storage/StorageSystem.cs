@@ -140,7 +140,6 @@ namespace Code.Scripts.Core.Systems.Storage
                         _resourceDatabase[resource.Type] = resource;
                         // Inicializo la cantidad en 0
                         _resources[resource.Type] = 0;
-                        Debug.Log($"Registered resource: {resource.Type} - {resource.DisplayName}");
                     }
                 }
             }
@@ -149,7 +148,6 @@ namespace Code.Scripts.Core.Systems.Storage
                 Debug.LogError("No se han asignado recursos en el Sistema de Almacenamiento!");
             }
             
-            Debug.Log($"Base de datos de recursos inicializada con {_resourceDatabase.Count} recursos");
         }
         
         // Método para AGREGAR recursos

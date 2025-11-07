@@ -10,7 +10,9 @@ namespace Code.Scripts.UI.HUD
     public class StorageHUD : MonoBehaviour
     {
         private StorageSystem _storageSystem;
-        [SerializeField] private TMP_Text _woodText;
+        [SerializeField] private TMP_Text _sandText;
+        [SerializeField] private TMP_Text _iceText;
+        [SerializeField] private TMP_Text _lavavagiText;
         [SerializeField] private TMP_Text _stoneText;
         [SerializeField] private TMP_Text _metalText;
         private void Start()
@@ -23,9 +25,11 @@ namespace Code.Scripts.UI.HUD
 
         private void UpdateUI()
         {
-            _woodText.text = _storageSystem.GetResourceAmount(ResourceType.Arena).ToString();
+            _sandText.text = _storageSystem.GetResourceAmount(ResourceType.Arena).ToString();
             _stoneText.text = _storageSystem.GetResourceAmount(ResourceType.Piedra).ToString();
             _metalText.text = _storageSystem.GetResourceAmount(ResourceType.Metal).ToString();
+            _iceText.text = _storageSystem.GetResourceAmount(ResourceType.Hielo).ToString();
+            _lavavagiText.text = _storageSystem.GetResourceAmount(ResourceType.Fuego).ToString();
         }
     }
 }
