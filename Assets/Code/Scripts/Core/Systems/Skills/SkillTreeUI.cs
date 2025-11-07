@@ -1,13 +1,14 @@
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using System.Collections.Generic;
 using Code.Scripts.Patterns.ServiceLocator;
-using Code.Scripts.Core.Systems.Skills;
+using Code.Scripts.UI.Skills;
+using Code.Scripts.UI.Windows;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
-namespace Code.Scripts.UI.Skills
+namespace Code.Scripts.Core.Systems.Skills
 {
-    public class SkillTreeUI : MonoBehaviour
+    public class SkillTreeUI : BaseUIScreen
     {
         [Header("UI References")]
         [SerializeField] private Transform constellationsContainer;
@@ -56,7 +57,7 @@ namespace Code.Scripts.UI.Skills
         {
             Debug.Log("SkillTreeUI: Starting initialization...");
 
-            // Esperar a que SkillTreeManager esté disponible
+            // Esperar a que SkillTreeManager estï¿½ disponible
             int attempts = 0;
             int maxAttempts = 50;
 
@@ -122,7 +123,7 @@ namespace Code.Scripts.UI.Skills
             nodeUIElements.Clear();
             linesContainers.Clear();
 
-            // Crear áreas para cada constelación
+            // Crear ï¿½reas para cada constelaciï¿½n
             var constellations = skillTreeManager.GetConstellations();
             if (constellations == null)
             {
@@ -188,7 +189,7 @@ namespace Code.Scripts.UI.Skills
             GameObject area = Instantiate(constellationAreaPrefab, constellationsContainer);
             constellationAreas[constellation.constellationName] = area;
 
-            // Configurar el header de la constelación
+            // Configurar el header de la constelaciï¿½n
             TextMeshProUGUI headerText = area.GetComponentInChildren<TextMeshProUGUI>();
             if (headerText != null)
             {
@@ -199,12 +200,12 @@ namespace Code.Scripts.UI.Skills
                 Debug.LogWarning($"SkillTreeUI: Could not find header text for constellation {constellation.constellationName}");
             }
 
-            // Crear contenedor específico para líneas (se renderizará primero - detrás de los nodos)
+            // Crear contenedor especï¿½fico para lï¿½neas (se renderizarï¿½ primero - detrï¿½s de los nodos)
             GameObject linesContainer = new GameObject("LinesContainer");
             linesContainer.transform.SetParent(area.transform);
-            linesContainer.transform.SetAsFirstSibling(); // Asegurar que esté detrás de los nodos
+            linesContainer.transform.SetAsFirstSibling(); // Asegurar que estï¿½ detrï¿½s de los nodos
 
-            // Añadir RectTransform al contenedor de líneas
+            // Aï¿½adir RectTransform al contenedor de lï¿½neas
             RectTransform linesRect = linesContainer.AddComponent<RectTransform>();
             linesRect.anchorMin = Vector2.zero;
             linesRect.anchorMax = Vector2.one;
@@ -213,7 +214,7 @@ namespace Code.Scripts.UI.Skills
 
             linesContainers[constellation.constellationName] = linesContainer;
 
-            // Crear nodos en la constelación con posicionamiento libre
+            // Crear nodos en la constelaciï¿½n con posicionamiento libre
             if (constellation.nodes != null)
             {
                 foreach (var node in constellation.nodes)
@@ -224,7 +225,7 @@ namespace Code.Scripts.UI.Skills
                     }
                 }
 
-                // Crear conexiones después de que todos los nodos estén colocados
+                // Crear conexiones despuï¿½s de que todos los nodos estï¿½n colocados
                 CreateConnections(constellation, linesContainer.transform);
             }
         }
@@ -233,7 +234,7 @@ namespace Code.Scripts.UI.Skills
         {
             GameObject nodeUI = Instantiate(skillNodePrefab, parent);
 
-            // Posicionar el nodo según positionInConstellation
+            // Posicionar el nodo segï¿½n positionInConstellation
             RectTransform nodeRect = nodeUI.GetComponent<RectTransform>();
             if (nodeRect != null)
             {
@@ -323,7 +324,7 @@ namespace Code.Scripts.UI.Skills
             if (nodeModal != null)
             {
                 nodeModal.SetActive(true);
-                // Asegurar que el modal esté al frente
+                // Asegurar que el modal estï¿½ al frente
                 nodeModal.transform.SetAsLastSibling();
             }
         }
@@ -370,7 +371,7 @@ namespace Code.Scripts.UI.Skills
             }
         }
 
-        // Método público para que SkillTreeWindow pueda cerrar el modal
+        // Mï¿½todo pï¿½blico para que SkillTreeWindow pueda cerrar el modal
         public void ForceCloseModal()
         {
             HideModal();
@@ -385,7 +386,7 @@ namespace Code.Scripts.UI.Skills
             }
         }
 
-        // Método para debug
+        // Mï¿½todo para debug
         [ContextMenu("Debug UI State")]
         public void DebugUIState()
         {
