@@ -1,4 +1,5 @@
 using System.Resources;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
@@ -23,12 +24,20 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         }
         public void Enter(IStateManager gameManager)
         {
+            for (int i = 0; i < _planetData.producibleResources.Count; i++)
+            {
+                ConstructionEvents.OnResourceProductionAdded?.Invoke(_planetData.resourcePerCycle[i], _planetData.producibleResources[i].Type);
+            }
             _timeScheduler = ServiceLocator.GetService<TimeScheduler>();
             _timeScheduler.ScheduleRepeating(1, ProduceResources);
         }
 
         public void Exit(IStateManager gameManager)
         {
+            for (int i = 0; i < _planetData.producibleResources.Count; i++)
+            {
+                ConstructionEvents.OnResourceProductionAdded?.Invoke(-_planetData.resourcePerCycle[i], _planetData.producibleResources[i].Type);
+            }
             _timeScheduler.CancelAllForTarget(ProduceResources);
         }
 

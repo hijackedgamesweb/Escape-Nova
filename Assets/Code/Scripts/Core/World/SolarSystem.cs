@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -50,6 +51,7 @@ namespace Code.Scripts.Core.World
             orbitCtrl.Initialize(planet, (orbit + 1) * orbitDistanceIncrement, positionInOrbit, planetsPerOrbit[orbit], rotationSpeed, orbit);
             NotificationManager.Instance.CreateNotification($"Se ha añadido un planeta: {data.constructibleName} en la órbita {orbit + 1}", NotificationType.Info);
             Planets[orbit][positionInOrbit] = planet;
+            ConstructionEvents.OnConstructibleCreated?.Invoke(data);
         }
         
     }
