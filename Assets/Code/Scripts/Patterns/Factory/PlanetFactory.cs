@@ -8,11 +8,11 @@ namespace Code.Scripts.Patterns.Factory
     {
         [SerializeField] private GameObject _planetPrefab;
         
-        public Planet CreatePlanet(Vector3 position, PlanetDataSO data, Transform parent)
+        public Planet CreatePlanet(Vector3 position, PlanetDataSO data, Transform parent, int orbitIndex, int positionInOrbit)
         {
             GameObject planetObject = Object.Instantiate(_planetPrefab, position, Quaternion.identity, parent);
             Planet planet = planetObject.GetComponent<Planet>();
-            planet.InitializePlanet(data);
+            planet.InitializePlanet(data, orbitIndex, positionInOrbit);
             return planet;
         }
     }

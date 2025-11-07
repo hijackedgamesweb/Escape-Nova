@@ -5,6 +5,7 @@ using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.Factory;
+using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -36,6 +37,7 @@ namespace Code.Scripts.Core.World
 
                 Planets.Add(orbit);
             }
+            ServiceLocator.RegisterService(this);
         }
 
         public void AddPlanet(int orbit, int positionInOrbit, PlanetDataSO data)
@@ -45,13 +47,14 @@ namespace Code.Scripts.Core.World
                 Debug.LogWarning($"There is already a planet at orbit {orbit} position {positionInOrbit}");
                 return;
             }
-            Planet planet = planetFactory.CreatePlanet(Vector3.zero, data, transform);
+            Planet planet = planetFactory.CreatePlanet(Vector3.zero, data, transform, orbit, positionInOrbit);
 
             OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
             orbitCtrl.Initialize(planet, (orbit + 1) * orbitDistanceIncrement, positionInOrbit, planetsPerOrbit[orbit], rotationSpeed, orbit);
             NotificationManager.Instance.CreateNotification($"Se ha añadido un planeta: {data.constructibleName} en la órbita {orbit + 1}", NotificationType.Info);
             Planets[orbit][positionInOrbit] = planet;
             ConstructionEvents.OnConstructibleCreated?.Invoke(data);
+            ConstructionEvents.OnPlanetAdded?.Invoke(planet);
         }
         
     }

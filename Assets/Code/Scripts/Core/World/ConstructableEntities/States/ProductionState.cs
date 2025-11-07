@@ -14,19 +14,19 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         IStateManager gameManager;
         IGameTime _gameTime;
         int _cycleCount = 0;
-        PlanetDataSO _planetData;
+        Planet _planetData;
         TimeScheduler _timeScheduler;
         StorageSystem _storageSystem;
-        public ProductionState(PlanetDataSO planetData, IGameTime gameTime)
+        public ProductionState(Planet planetData, IGameTime gameTime)
         {
             _gameTime = gameTime;
             _planetData = planetData;
         }
         public void Enter(IStateManager gameManager)
         {
-            for (int i = 0; i < _planetData.producibleResources.Count; i++)
+            for (int i = 0; i < _planetData.ProducibleResources.Count; i++)
             {
-                ConstructionEvents.OnResourceProductionAdded?.Invoke(_planetData.resourcePerCycle[i], _planetData.producibleResources[i].Type);
+                ConstructionEvents.OnResourceProductionAdded?.Invoke(_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
             }
             _timeScheduler = ServiceLocator.GetService<TimeScheduler>();
             _timeScheduler.ScheduleRepeating(1, ProduceResources);
@@ -34,19 +34,19 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
 
         public void Exit(IStateManager gameManager)
         {
-            for (int i = 0; i < _planetData.producibleResources.Count; i++)
+            for (int i = 0; i < _planetData.ProducibleResources.Count; i++)
             {
-                ConstructionEvents.OnResourceProductionAdded?.Invoke(-_planetData.resourcePerCycle[i], _planetData.producibleResources[i].Type);
+                ConstructionEvents.OnResourceProductionAdded?.Invoke(-_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
             }
             _timeScheduler.CancelAllForTarget(ProduceResources);
         }
 
         private void ProduceResources()
         {
-            for (int i = 0; i < _planetData.producibleResources.Count; i++)
+            for (int i = 0; i < _planetData.ProducibleResources.Count; i++)
             {
                 _storageSystem = ServiceLocator.GetService<StorageSystem>();
-                _storageSystem.AddResource(_planetData.producibleResources[i].Type, _planetData.resourcePerCycle[i]);
+                _storageSystem.AddResource(_planetData.ProducibleResources[i], _planetData.ResourcePerCycle[i]);
             }
         }
 

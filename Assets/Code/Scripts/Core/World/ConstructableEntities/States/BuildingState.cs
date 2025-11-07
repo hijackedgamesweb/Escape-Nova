@@ -10,8 +10,8 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         IStateManager gameManager;
         IGameTime _gameTime;
         int _cycleCount = 0;
-        PlanetDataSO _planetData;
-        public BuildingState(PlanetDataSO planetData, IGameTime gameTime)
+        Planet _planetData;
+        public BuildingState(Planet planetData, IGameTime gameTime)
         {
             _gameTime = gameTime;
             _planetData = planetData;
@@ -31,7 +31,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         public void UpdateCycle(int currentCycle)
         {
             _cycleCount++;
-            if (_cycleCount >= _planetData.timeToBuild)
+            if (_cycleCount >= _planetData.TimeToBuild)
             {
                 gameManager.SetState(new ProductionState(_planetData, _gameTime));
             }
