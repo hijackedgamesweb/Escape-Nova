@@ -42,7 +42,9 @@ namespace Code.Scripts.UI.Windows
             researchBtn.onClick.AddListener(() => 
                 Show("Research"));
             returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
+            
         }
+
 
         public override void Show(object parameter = null)
         {

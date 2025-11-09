@@ -1,3 +1,8 @@
+using Code.Scripts.Core.Managers;
+using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.Patterns.State.Interfaces;
+using Code.Scripts.UI.Menus.States.GameStates;
+using Code.Scripts.UI.Windows;
 using DG.Tweening;
 using UnityEngine;
 
@@ -34,6 +39,7 @@ namespace Code.Scripts.Camera
 
         void Update()
         {
+            if(UIManager.Instance.GetCurrentScreen() is not InGameScreen) return;
             HandleZoom();
             HandleMovement();
             HandleFollowTarget();

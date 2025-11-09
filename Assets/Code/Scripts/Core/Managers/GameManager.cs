@@ -4,6 +4,7 @@ using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.Factory;
+using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Menus.States.GameStates;
 using Code.Scripts.UI.Windows;
@@ -19,8 +20,14 @@ namespace Code.Scripts.Core.Managers
         private void Awake()
         {
             InitializeStates();
+            ServiceLocator.RegisterService(this);
         }
-
+        
+        public IStateManager GetStateManager()
+        {
+            return _stateManager;
+        }
+        
         private void InitializeStates()
         {
             _stateManager = new StateManager();
