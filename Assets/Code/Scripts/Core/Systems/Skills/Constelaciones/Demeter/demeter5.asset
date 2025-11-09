@@ -17,9 +17,11 @@ MonoBehaviour:
   skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
-  positionInConstellation: {x: -3, y: 3}
+  positionInConstellation: {x: -3, y: 2}
   improvements:
-  - improvementType: 0
-    targetResource: 
-    value: 100
-    customEffectId: 
+  - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

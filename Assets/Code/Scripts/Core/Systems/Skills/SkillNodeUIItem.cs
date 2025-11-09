@@ -24,29 +24,56 @@ namespace Code.Scripts.UI.Skills
             skillTreeManager = manager;
             skillTreeUI = ui;
 
-            nodeButton.onClick.AddListener(OnNodeClicked);
+            if (nodeButton != null)
+            {
+                nodeButton.onClick.RemoveAllListeners();
+                nodeButton.onClick.AddListener(OnNodeClicked);
+            }
+            else
+            {
+                Debug.LogError("SkillNodeUIItem: NodeButton is not assigned!");
+            }
+
             UpdateVisualState();
         }
 
         private void OnNodeClicked()
         {
-            skillTreeUI.ShowNodeModal(nodeData);
+            if (skillTreeUI != null && nodeData != null)
+            {
+                skillTreeUI.ShowNodeModal(nodeData);
+            }
         }
 
         public void UpdateVisualState()
         {
-            if (skillTreeManager.IsSkillPurchased(nodeData))
+            if (nodeData == null || skillTreeManager == null || backgroundImage == null || nodeButton == null)
             {
-                backgroundImage.color = purchasedColor;
-                nodeButton.interactable = false;
+                Debug.LogWarning("SkillNodeUIItem: Missing references for visual state update");
+                return;
             }
-            else if (skillTreeManager.IsSkillUnlocked(nodeData))
+
+            try
             {
-                backgroundImage.color = availableColor;
-                nodeButton.interactable = true;
+                if (skillTreeManager.IsSkillPurchased(nodeData))
+                {
+                    backgroundImage.color = purchasedColor;
+                    nodeButton.interactable = false;
+                }
+                else if (skillTreeManager.IsSkillUnlocked(nodeData))
+                {
+                    backgroundImage.color = availableColor;
+                    nodeButton.interactable = true;
+                }
+                else
+                {
+                    backgroundImage.color = lockedColor;
+                    nodeButton.interactable = false;
+                }
             }
-            else
+            catch (System.Exception e)
             {
+                Debug.LogError($"Error updating visual state for node {nodeData.nodeName}: {e.Message}");
                 backgroundImage.color = lockedColor;
                 nodeButton.interactable = false;
             }

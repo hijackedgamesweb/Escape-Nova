@@ -23,8 +23,17 @@ MonoBehaviour:
     amount: 10
     itemName: 
     useInventoryItem: 0
-  rewards: []
+  rewards:
+  - rid: 5265271135974457458
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds:
   - mamposteria
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271135974457458
+      type: {class: Reward_AddItemToInventory, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        itemName: Lanza
+        amount: 1

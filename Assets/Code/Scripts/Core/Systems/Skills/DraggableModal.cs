@@ -17,8 +17,9 @@ public class DraggableModal : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        // Opcional: llevar al frente cuando se hace clic
-        dragRectTransform.SetAsLastSibling();
+        // Llevar al frente cuando se hace clic
+        if (dragRectTransform != null)
+            dragRectTransform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
