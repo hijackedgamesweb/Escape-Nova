@@ -1,5 +1,6 @@
 // ResearchNode.cs
 using System.Collections.Generic;
+using Code.Scripts.Core.Systems.Research.Rewards;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Research
@@ -21,7 +22,8 @@ namespace Code.Scripts.Core.Systems.Research
         public List<ResearchCost> resourceCosts;
         
         [Header("Rewards")]
-        public List<ResearchReward> rewards;
+        [SerializeReference, SubclassSelector]
+        public List<AbstractResearchReward> rewards = new List<AbstractResearchReward>();
         
         [Header("UI Settings")]
         public int tier = 1;

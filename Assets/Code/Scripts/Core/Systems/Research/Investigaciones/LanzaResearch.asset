@@ -24,14 +24,20 @@ MonoBehaviour:
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rewardType: 7
-    targetId: Lanza
-    value: 1
-    displayName: 
-  - rewardType: 6
-    targetId: recipe_lanza
-    value: 1
-    displayName: 
+  - rid: 5265271135974457460
+  - rid: 5265271135974457461
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271135974457460
+      type: {class: Reward_UnlockCraftingRecipe, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        recipeId: recipe_lanza
+    - rid: 5265271135974457461
+      type: {class: Reward_AddItemToInventory, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        itemName: Lanza
+        amount: 1
