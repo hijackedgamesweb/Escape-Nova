@@ -12,20 +12,6 @@ using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Research
 {
-    public enum ResearchRewardType
-    {
-        IncreaseMaxStack,    // Aumentar capacidad máxima de un recurso
-        UnlockBuilding,      // Desbloquear nueva construcción
-        UnlockSpecies,       // Desbloquear nueva especie
-        UnlockMission,       // Desbloquear nueva misión
-        UnlockTechnology,    // Desbloquear otra tecnología
-        ModifyStat,           // Modificar estadísticas del jugador
-        UnlockCraftingRecipe,
-        AddItemToInventory
-        
-    }
-
-    // Estados de una investigación
     public enum ResearchStatus
     {
         Locked,     // No disponible (requisitos no cumplidos)
@@ -34,16 +20,7 @@ namespace Code.Scripts.Core.Systems.Research
         Completed   // Completada
     }
 
-    [System.Serializable]
-    public class ResearchReward
-    {
-        public ResearchRewardType rewardType;
-        public string targetId;      // ID del recurso, construcción, especie, etc.
-        public int value;           // Valor del bonus (ej: +900 de maxStack)
-        public string displayName;  // Nombre para UI
-    }
-
-    [System.Serializable]
+    [Serializable]
     public class ResearchCost
     {
         public ResourceType resourceType;
@@ -52,7 +29,7 @@ namespace Code.Scripts.Core.Systems.Research
         public bool useInventoryItem; // Si usa recurso o item de inventario
     }
 
-    [System.Serializable]
+    [Serializable]
     public class ResearchPrerequisite
     {
         public string researchId;   // ID de investigación requerida
@@ -175,16 +152,13 @@ namespace Code.Scripts.Core.Systems.Research
                 }
             }
         
-            // Iniciar investigación
             _researchStatus[researchId] = ResearchStatus.InProgress;
             _researchProgress[researchId].startTime = _gameTime.GameTime;
             _researchProgress[researchId].researchId = researchId;
         
-            // AÑADIDO: Asignar como investigación actual
             _researchStatus[researchId] = ResearchStatus.InProgress;
             _currentResearchId = researchId;
         
-            // Iniciar corrutina para el tiempo de investigación
             if (_currentResearchTimer != null)
             {
                 _currentResearchTimer.Cancel(); 
@@ -300,118 +274,10 @@ namespace Code.Scripts.Core.Systems.Research
         private void ApplyResearchRewards(string researchId)
         {
             var research = _researchDatabase[researchId];
-            
             foreach (var reward in research.rewards)
             {
-                switch (reward.rewardType)
-                {
-                    case ResearchRewardType.IncreaseMaxStack:
-                        ApplyMaxStackIncrease(reward);
-                        break;
-                    case ResearchRewardType.UnlockBuilding:
-                        ApplyBuildingUnlock(reward);
-                        break;
-                    case ResearchRewardType.UnlockSpecies:
-                        ApplySpeciesUnlock(reward);
-                        break;
-                    case ResearchRewardType.UnlockMission:
-                        ApplyMissionUnlock(reward);
-                        break;
-                    case ResearchRewardType.UnlockTechnology:
-                        ApplyTechnologyUnlock(reward);
-                        break;
-                    case ResearchRewardType.ModifyStat:
-                        ApplyStatModification(reward);
-                        break;
-                    case ResearchRewardType.UnlockCraftingRecipe:
-                        ApplyCraftingUnlock(reward);
-                        break;
-                    case ResearchRewardType.AddItemToInventory:
-                        ApplyAddItemToInventory(reward);
-                        break;
-                }
+                reward.ApplyReward();
             }
-        }
-        
-        private void ApplyAddItemToInventory(ResearchReward reward)
-        {
-            StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
-            if (storage == null)
-            {
-                Debug.LogError("StorageSystem no encontrado al intentar dar recompensa de item.");
-                return;
-            }
-            string itemName = reward.targetId;
-            int amountToAdd = reward.value;
-
-            if (amountToAdd <= 0) amountToAdd = 1;
-
-            if (storage.AddInventoryItem(itemName, amountToAdd))
-            {
-                Debug.Log($"Recompensa: Añadido {amountToAdd}x {itemName} al inventario.");
-            }
-            else
-            {
-                Debug.LogWarning($"Recompensa: Se intentó añadir {itemName} pero el item no existe en el StorageSystem.");
-            }
-        }
-        
-        private void ApplyCraftingUnlock(ResearchReward reward)
-        {
-            Debug.Log($"Recompensa: Desbloqueando receta de crafteo - ID: {reward.targetId}");
-    
-            var craftingSystem = ServiceLocator.GetService<CraftingSystem>();
-    
-            if (craftingSystem == null)
-            {
-                Debug.LogError("¡ERROR FATAL en ResearchSystem! No se pudo encontrar el CraftingSystem en el ServiceLocator.");
-                return;
-            }
-            
-            if (craftingSystem != null)
-            {
-                craftingSystem.UnlockRecipe(reward.targetId);
-            }
-            else
-            {
-                Debug.LogError($"No se pudo encontrar el CraftingSystem para desbloquear la receta: {reward.targetId}");
-            }
-        }
-        
-        private void ApplyMaxStackIncrease(ResearchReward reward)
-        {
-            Debug.Log($"Max stack increased for {reward.targetId} by {reward.value}");
-            // _storageSystem.IncreaseMaxStack(reward.targetId, reward.value);
-        }
-        
-        private void ApplyBuildingUnlock(ResearchReward reward)
-        {
-            // Hay que conectarlo con el sistema de construcción
-            Debug.Log($"Building unlocked: {reward.targetId}");
-        }
-        
-        private void ApplySpeciesUnlock(ResearchReward reward)
-        {
-            // Hay que conectarlo con el sistema de especies
-            Debug.Log($"Species unlocked: {reward.targetId}");
-        }
-        
-        private void ApplyMissionUnlock(ResearchReward reward)
-        {
-            // Hay que conectarlo con el sistema de misiones
-            Debug.Log($"Mission unlocked: {reward.targetId}");
-        }
-        
-        private void ApplyTechnologyUnlock(ResearchReward reward)
-        {
-            // desbloqueaa otra tecnología
-            UnlockResearch(reward.targetId);
-        }
-        
-        private void ApplyStatModification(ResearchReward reward)
-        {
-            // Modifica estadísticas del jugador
-            Debug.Log($"Stat modified: {reward.targetId} by {reward.value}");
         }
         
         private void UnlockNewResearch(string completedResearchId)
@@ -424,7 +290,7 @@ namespace Code.Scripts.Core.Systems.Research
             }
         }
         
-        private void UnlockResearch(string researchId)
+        public void UnlockResearch(string researchId)
         {
             if (_researchDatabase.ContainsKey(researchId) && 
                 _researchStatus[researchId] == ResearchStatus.Locked)
