@@ -18,14 +18,9 @@ namespace Code.Scripts.UI.Skills
                 skillTreePanel.SetActive(false);
                 skillTreeUI = skillTreePanel.GetComponent<SkillTreeUI>();
             }
-        }
-
-        private void Update()
-        {
-            // Detectar tecla C para abrir/cerrar
-            if (Input.GetKeyDown(KeyCode.C))
+            else
             {
-                ToggleSkillTree();
+                Debug.LogError("SkillTreeWindow: SkillTreePanel is not assigned!");
             }
         }
 
@@ -50,32 +45,35 @@ namespace Code.Scripts.UI.Skills
                     // Si se cierra el menú, cerrar también el modal
                     if (skillTreeUI != null)
                     {
-                        skillTreeUI.HideModal();
+                        skillTreeUI.ForceCloseModal();
                     }
                 }
             }
         }
 
-        // Métodos públicos para botones de UI si los necesitas
         public void ShowSkillTree()
         {
             isVisible = true;
-            skillTreePanel.SetActive(true);
-            if (skillTreeUI != null)
+            if (skillTreePanel != null)
             {
-                skillTreeUI.RefreshUI();
+                skillTreePanel.SetActive(true);
+                if (skillTreeUI != null)
+                {
+                    skillTreeUI.RefreshUI();
+                }
             }
         }
 
         public void HideSkillTree()
         {
             isVisible = false;
-            skillTreePanel.SetActive(false);
-
-            // Cerrar también el modal al ocultar el árbol
-            if (skillTreeUI != null)
+            if (skillTreePanel != null)
             {
-                skillTreeUI.HideModal();
+                skillTreePanel.SetActive(false);
+                if (skillTreeUI != null)
+                {
+                    skillTreeUI.ForceCloseModal();
+                }
             }
         }
     }

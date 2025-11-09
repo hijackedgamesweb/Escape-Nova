@@ -57,7 +57,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             Debug.Log("SkillTreeUI: Starting initialization...");
 
-            // Esperar a que SkillTreeManager est� disponible
+            // Esperar a que SkillTreeManager esté disponible
             int attempts = 0;
             int maxAttempts = 50;
 
@@ -86,6 +86,12 @@ namespace Code.Scripts.Core.Systems.Skills
             }
 
             Debug.Log("SkillTreeUI: SkillTreeManager acquired");
+
+            // Esperar a que SkillTreeManager esté completamente inicializado (CORREGIDO)
+            while (!skillTreeManager.IsInitialized)
+            {
+                yield return new WaitForSeconds(0.1f);
+            }
 
             // Suscribirse a eventos
             skillTreeManager.OnSkillPurchased += OnSkillPurchased;
@@ -123,7 +129,7 @@ namespace Code.Scripts.Core.Systems.Skills
             nodeUIElements.Clear();
             linesContainers.Clear();
 
-            // Crear �reas para cada constelaci�n
+            // Crear áreas para cada constelación
             var constellations = skillTreeManager.GetConstellations();
             if (constellations == null)
             {
@@ -189,7 +195,7 @@ namespace Code.Scripts.Core.Systems.Skills
             GameObject area = Instantiate(constellationAreaPrefab, constellationsContainer);
             constellationAreas[constellation.constellationName] = area;
 
-            // Configurar el header de la constelaci�n
+            // Configurar el header de la constelación
             TextMeshProUGUI headerText = area.GetComponentInChildren<TextMeshProUGUI>();
             if (headerText != null)
             {
@@ -200,12 +206,12 @@ namespace Code.Scripts.Core.Systems.Skills
                 Debug.LogWarning($"SkillTreeUI: Could not find header text for constellation {constellation.constellationName}");
             }
 
-            // Crear contenedor espec�fico para l�neas (se renderizar� primero - detr�s de los nodos)
+            // Crear contenedor específico para líneas (se renderizará primero - detrás de los nodos)
             GameObject linesContainer = new GameObject("LinesContainer");
             linesContainer.transform.SetParent(area.transform);
-            linesContainer.transform.SetAsFirstSibling(); // Asegurar que est� detr�s de los nodos
+            linesContainer.transform.SetAsFirstSibling(); // Asegurar que está detrás de los nodos
 
-            // A�adir RectTransform al contenedor de l�neas
+            // Añadir RectTransform al contenedor de líneas
             RectTransform linesRect = linesContainer.AddComponent<RectTransform>();
             linesRect.anchorMin = Vector2.zero;
             linesRect.anchorMax = Vector2.one;
@@ -214,7 +220,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
             linesContainers[constellation.constellationName] = linesContainer;
 
-            // Crear nodos en la constelaci�n con posicionamiento libre
+            // Crear nodos en la constelación con posicionamiento libre
             if (constellation.nodes != null)
             {
                 foreach (var node in constellation.nodes)
@@ -225,7 +231,7 @@ namespace Code.Scripts.Core.Systems.Skills
                     }
                 }
 
-                // Crear conexiones despu�s de que todos los nodos est�n colocados
+                // Crear conexiones después de que todos los nodos estén colocados
                 CreateConnections(constellation, linesContainer.transform);
             }
         }
@@ -234,7 +240,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             GameObject nodeUI = Instantiate(skillNodePrefab, parent);
 
-            // Posicionar el nodo seg�n positionInConstellation
+            // Posicionar el nodo según positionInConstellation
             RectTransform nodeRect = nodeUI.GetComponent<RectTransform>();
             if (nodeRect != null)
             {
@@ -319,12 +325,16 @@ namespace Code.Scripts.Core.Systems.Skills
                 modalCost.text = $"Coste: {nodeData.skillPointCost} puntos";
 
             if (modalPurchaseButton != null)
-                modalPurchaseButton.interactable = skillTreeManager.CanPurchaseSkill(nodeData);
+            {
+                bool canPurchase = skillTreeManager.CanPurchaseSkill(nodeData);
+                modalPurchaseButton.interactable = canPurchase;
+                Debug.Log($"Modal purchase button interactable: {canPurchase} for node {nodeData.nodeName}");
+            }
 
             if (nodeModal != null)
             {
                 nodeModal.SetActive(true);
-                // Asegurar que el modal est� al frente
+                // Asegurar que el modal esté al frente
                 nodeModal.transform.SetAsLastSibling();
             }
         }
@@ -340,6 +350,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (selectedNode != null && skillTreeManager != null)
             {
+                Debug.Log($"Attempting to purchase node: {selectedNode.nodeName}");
                 skillTreeManager.PurchaseSkill(selectedNode);
                 HideModal();
             }
@@ -347,6 +358,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void OnSkillPurchased(SkillNodeData nodeData)
         {
+            Debug.Log($"SkillTreeUI: Skill purchased event received for {nodeData.nodeName}");
             RefreshUI();
         }
 
@@ -367,11 +379,12 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (isInitialized)
             {
+                Debug.Log("SkillTreeUI: Refreshing UI");
                 InitializeUI();
             }
         }
 
-        // M�todo p�blico para que SkillTreeWindow pueda cerrar el modal
+        // Método público para que SkillTreeWindow pueda cerrar el modal
         public void ForceCloseModal()
         {
             HideModal();
@@ -386,7 +399,6 @@ namespace Code.Scripts.Core.Systems.Skills
             }
         }
 
-        // M�todo para debug
         [ContextMenu("Debug UI State")]
         public void DebugUIState()
         {

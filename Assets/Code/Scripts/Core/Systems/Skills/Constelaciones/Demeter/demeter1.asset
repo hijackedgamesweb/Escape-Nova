@@ -16,7 +16,7 @@ MonoBehaviour:
   description: "Aumenta en un 10% la producci\xF3n de todos tus planetas."
   skillPointCost: 1
   prerequisiteNodes: []
-  positionInConstellation: {x: -7, y: 8}
+  positionInConstellation: {x: -7, y: 7}
   improvements:
   - rid: 967674854401114197
   references:

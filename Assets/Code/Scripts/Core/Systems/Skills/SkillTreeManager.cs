@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
-using Code.Scripts.Core.Systems.Skills;
 using Code.Scripts.Patterns.ServiceLocator;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 using UnityEngine;
@@ -32,6 +31,9 @@ namespace Code.Scripts.Core.Systems.Skills
 
         public event Action<SkillNodeData> OnSkillPurchased;
         public event Action<int> OnSkillPointsChanged;
+
+        // Propiedad pública para verificar si está inicializado
+        public bool IsInitialized => isInitialized;
 
         [System.Serializable]
         private class SkillNodeState
@@ -91,6 +93,8 @@ namespace Code.Scripts.Core.Systems.Skills
 
             AddSkillPoints(initialSkillPoints);
             isInitialized = true;
+
+            Debug.Log("SkillTreeManager: Initialization completed successfully");
         }
 
         private IEnumerator WaitForService<T>(Action<T> setService, string serviceName, bool isRequired = true)
@@ -121,6 +125,11 @@ namespace Code.Scripts.Core.Systems.Skills
             if (service != null)
             {
                 setService(service);
+                Debug.Log($"SkillTreeManager: Successfully acquired {serviceName}");
+            }
+            else if (isRequired)
+            {
+                Debug.LogError($"SkillTreeManager: Failed to get required service {serviceName} after {maxAttempts} attempts");
             }
         }
 
@@ -162,6 +171,9 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (constellations == null) return;
 
+            nodeStates.Clear();
+
+            // Primera pasada: crear todos los estados
             foreach (var constellation in constellations)
             {
                 if (constellation?.nodes == null) continue;
@@ -170,31 +182,29 @@ namespace Code.Scripts.Core.Systems.Skills
                 {
                     if (node == null) continue;
 
-                    if (!nodeStates.ContainsKey(node.name))
+                    nodeStates[node.name] = new SkillNodeState
                     {
-                        // Verificar si los prerequisites est�n comprados
-                        bool allPrerequisitesMet = true;
-                        if (node.prerequisiteNodes != null && node.prerequisiteNodes.Count > 0)
-                        {
-                            foreach (var prereq in node.prerequisiteNodes)
-                            {
-                                if (prereq != null && nodeStates.ContainsKey(prereq.name) &&
-                                    !nodeStates[prereq.name].isPurchased)
-                                {
-                                    allPrerequisitesMet = false;
-                                    break;
-                                }
-                            }
-                        }
-
-                        nodeStates[node.name] = new SkillNodeState
-                        {
-                            isPurchased = false,
-                            isUnlocked = allPrerequisitesMet
-                        };
-                    }
+                        isPurchased = false,
+                        isUnlocked = ArePrerequisitesMet(node)
+                    };
                 }
             }
+        }
+
+        private bool ArePrerequisitesMet(SkillNodeData node)
+        {
+            if (node.prerequisiteNodes == null || node.prerequisiteNodes.Count == 0)
+                return true; // Sin prerrequisitos = siempre desbloqueado
+
+            foreach (var prereq in node.prerequisiteNodes)
+            {
+                if (prereq == null) continue;
+
+                if (!nodeStates.ContainsKey(prereq.name) || !nodeStates[prereq.name].isPurchased)
+                    return false;
+            }
+
+            return true;
         }
 
         public void AddSkillPoints(int points)
@@ -208,68 +218,129 @@ namespace Code.Scripts.Core.Systems.Skills
 
         public bool CanPurchaseSkill(SkillNodeData nodeData)
         {
-            if (!isInitialized) return false;
-            if (nodeData == null) return false;
-            if (!nodeStates.ContainsKey(nodeData.name)) return false;
+            if (!isInitialized)
+            {
+                Debug.LogWarning("SkillTreeManager not initialized");
+                return false;
+            }
+            if (nodeData == null)
+            {
+                Debug.LogWarning("NodeData is null");
+                return false;
+            }
+            if (!nodeStates.ContainsKey(nodeData.name))
+            {
+                Debug.LogWarning($"Node state not found for: {nodeData.name}");
+                return false;
+            }
 
             var state = nodeStates[nodeData.name];
-            return state.isUnlocked && !state.isPurchased && availableSkillPoints >= nodeData.skillPointCost;
+            bool canPurchase = state.isUnlocked && !state.isPurchased && availableSkillPoints >= nodeData.skillPointCost;
+
+            Debug.Log($"CanPurchase {nodeData.nodeName}: Unlocked={state.isUnlocked}, Purchased={state.isPurchased}, Points={availableSkillPoints}, Cost={nodeData.skillPointCost}, Result={canPurchase}");
+
+            return canPurchase;
         }
 
         public bool PurchaseSkill(SkillNodeData nodeData)
         {
-            if (!CanPurchaseSkill(nodeData)) return false;
+            if (!CanPurchaseSkill(nodeData))
+            {
+                Debug.LogWarning($"Cannot purchase node: {nodeData.nodeName}");
+                return false;
+            }
 
             availableSkillPoints -= nodeData.skillPointCost;
             nodeStates[nodeData.name].isPurchased = true;
 
             ApplySkillImprovements(nodeData);
-            UnlockNextNodes(nodeData);
+            UnlockNextNodes();
 
             OnSkillPurchased?.Invoke(nodeData);
             OnSkillPointsChanged?.Invoke(availableSkillPoints);
+
+            Debug.Log($"Successfully purchased node: {nodeData.nodeName}. Remaining points: {availableSkillPoints}");
 
             return true;
         }
 
         private void ApplySkillImprovements(SkillNodeData nodeData)
         {
-            
+            if (nodeData.improvements == null) return;
+
             foreach (var improvement in nodeData.improvements)
             {
-                improvement.ApplyImprovement();
+                try
+                {
+                    improvement.ApplyImprovement();
+                    Debug.Log($"Applied improvement from node: {nodeData.nodeName}");
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError($"Error applying improvement for node {nodeData.nodeName}: {e.Message}");
+                }
             }
         }
-        
-        private void UnlockNextNodes(SkillNodeData purchasedNode)
+
+        private void UnlockNextNodes()
         {
+            bool anyUnlocked = false;
+
             foreach (var constellation in constellations)
             {
+                if (constellation?.nodes == null) continue;
+
                 foreach (var node in constellation.nodes)
                 {
-                    if (node.prerequisiteNodes.Contains(purchasedNode))
+                    if (node == null || nodeStates.ContainsKey(node.name) == false)
+                        continue;
+
+                    var state = nodeStates[node.name];
+
+                    // Si ya está comprado o desbloqueado, saltar
+                    if (state.isPurchased || state.isUnlocked)
+                        continue;
+
+                    // Verificar si ahora cumple los prerrequisitos
+                    if (ArePrerequisitesMet(node))
                     {
-                        if (nodeStates.ContainsKey(node.name))
-                        {
-                            nodeStates[node.name].isUnlocked = true;
-                            Debug.Log("Nodo " + node.nodeName + " desbloqueado despues de comprar " + purchasedNode.nodeName);
-                        }
+                        state.isUnlocked = true;
+                        anyUnlocked = true;
+                        Debug.Log($"Node {node.nodeName} unlocked");
                     }
+                }
+            }
+
+            if (anyUnlocked)
+            {
+                RefreshAllNodeUI();
+            }
+        }
+
+        private void RefreshAllNodeUI()
+        {
+            var skillTreeUIs = FindObjectsOfType<SkillTreeUI>();
+            foreach (var skillTreeUI in skillTreeUIs)
+            {
+                if (skillTreeUI != null && skillTreeUI.isActiveAndEnabled)
+                {
+                    skillTreeUI.RefreshUI();
                 }
             }
         }
 
         public bool IsSkillPurchased(SkillNodeData nodeData)
         {
-            return isInitialized && nodeStates.ContainsKey(nodeData.name) && nodeStates[nodeData.name].isPurchased;
+            return isInitialized && nodeData != null && nodeStates.ContainsKey(nodeData.name) && nodeStates[nodeData.name].isPurchased;
         }
 
         public bool IsSkillUnlocked(SkillNodeData nodeData)
         {
-            return isInitialized && nodeStates.ContainsKey(nodeData.name) && nodeStates[nodeData.name].isUnlocked;
+            return isInitialized && nodeData != null && nodeStates.ContainsKey(nodeData.name) && nodeStates[nodeData.name].isUnlocked;
         }
 
         public int GetAvailableSkillPoints() => isInitialized ? availableSkillPoints : 0;
+
         public List<SkillConstellation> GetConstellations() => constellations;
 
         public float GetTotalStorageIncrease(ResourceType resourceType)
@@ -284,58 +355,39 @@ namespace Code.Scripts.Core.Systems.Skills
             return total;
         }
 
-        [ContextMenu("Add 5 Test Points")]
-        public void AddTestPoints()
+        [ContextMenu("Debug Node States")]
+        public void DebugNodeStates()
         {
-            AddSkillPoints(5);
-            Debug.Log("Added 5 test points via context menu");
-        }
+            Debug.Log($"=== SKILL TREE MANAGER DEBUG ===");
+            Debug.Log($"Initialized: {isInitialized}");
+            Debug.Log($"Available Skill Points: {availableSkillPoints}");
+            Debug.Log($"Total Nodes: {nodeStates.Count}");
+            Debug.Log($"Constellations: {constellations?.Count ?? 0}");
 
-        [ContextMenu("Add 1 Skill Point")]
-        public void AddOnePoint()
-        {
-            AddSkillPoints(1);
-            Debug.Log("Added 1 skill point via context menu");
-        }
-
-        [ContextMenu("Debug Skill Tree State")]
-        public void DebugSkillTreeState()
-        {
-            Debug.Log("=== SKILL TREE DEBUG ===");
-            Debug.Log("Initialized: " + isInitialized);
-            Debug.Log("Available points: " + availableSkillPoints);
-            Debug.Log("Last cycle counted: " + lastCycleCounted);
-            Debug.Log("Current cycle (if available): " + (gameTime != null ? gameTime.CurrentCycle.ToString() : "N/A"));
-            Debug.Log("Constellations: " + (constellations?.Count ?? 0));
-            Debug.Log("Node states: " + nodeStates.Count);
-
-            Debug.Log("=== STORAGE MODIFIERS ===");
-            foreach (var kvp in storageModifiers)
+            if (constellations != null)
             {
-                if (kvp.Value.Count > 0)
+                foreach (var constellation in constellations)
                 {
-                    Debug.Log(kvp.Key + ": " + GetTotalStorageIncrease(kvp.Key) + " aumento total");
+                    if (constellation?.nodes == null) continue;
+
+                    Debug.Log($"Constellation: {constellation.constellationName} - Nodes: {constellation.nodes.Count}");
+
+                    foreach (var node in constellation.nodes)
+                    {
+                        if (node == null) continue;
+
+                        if (nodeStates.ContainsKey(node.name))
+                        {
+                            var state = nodeStates[node.name];
+                            Debug.Log($"  Node: {node.nodeName} - Purchased: {state.isPurchased} - Unlocked: {state.isUnlocked}");
+                        }
+                        else
+                        {
+                            Debug.Log($"  Node: {node.nodeName} - NO STATE FOUND");
+                        }
+                    }
                 }
             }
         }
-
-        [ContextMenu("Reset Skill Points")]
-        public void ResetSkillPoints()
-        {
-            availableSkillPoints = 0;
-            AddSkillPoints(initialSkillPoints);
-            Debug.Log("Reset skill points to initial value");
-        }
-
-        [ContextMenu("Clear All Modifiers")]
-        public void ClearAllModifiers()
-        {
-            foreach (var resource in storageModifiers.Keys)
-            {
-                storageModifiers[resource].Clear();
-            }
-            Debug.Log("All storage modifiers cleared");
-        }
-
     }
 }

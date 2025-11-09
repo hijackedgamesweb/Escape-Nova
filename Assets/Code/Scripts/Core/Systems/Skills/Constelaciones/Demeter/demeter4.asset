@@ -18,9 +18,11 @@ MonoBehaviour:
   prerequisiteNodes:
   - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
   - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
-  positionInConstellation: {x: -5, y: 5.5}
+  positionInConstellation: {x: -5, y: 4.5}
   improvements:
-  - improvementType: 0
-    targetResource: 
-    value: 100
-    customEffectId: 
+  - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

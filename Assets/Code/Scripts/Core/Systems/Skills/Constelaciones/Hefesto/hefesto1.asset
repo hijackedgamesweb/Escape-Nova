@@ -16,9 +16,11 @@ MonoBehaviour:
   description: Recibe el doble de objetos construidos.
   skillPointCost: 3
   prerequisiteNodes: []
-  positionInConstellation: {x: 0, y: 7.3}
+  positionInConstellation: {x: 0, y: 6.3}
   improvements:
-  - improvementType: 0
-    targetResource: 
-    value: 0
-    customEffectId: 
+  - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
