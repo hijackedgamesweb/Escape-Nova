@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: LanzaResearch
   m_EditorClassIdentifier: 
   researchId: descubrir_lanza
+  category: 1
   displayName: Puntos de lanza
   description: "Investigar c\xF3mo afilar piedras para crear puntas de lanza."
   icon: {fileID: 0}

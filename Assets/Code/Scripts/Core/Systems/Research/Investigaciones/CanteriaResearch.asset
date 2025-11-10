@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: CanteriaResearch
   m_EditorClassIdentifier: 
   researchId: canteria_basica
+  category: 1
   displayName: Canteria
   description: 
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 5
+  researchTimeInSeconds: 20
   resourceCosts:
   - resourceType: 4
     amount: 10

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EspadaResearch
   m_EditorClassIdentifier: 
   researchId: research_espada
+  category: 1
   displayName: Espada
   description: Es una puta espada, lo digo en serio...
   icon: {fileID: 0}
@@ -24,10 +25,15 @@ MonoBehaviour:
     itemName: Piedra
     useInventoryItem: 0
   rewards:
-  - rewardType: 6
-    targetId: receta_espada
-    value: 0
-    displayName: 
+  - rid: 5265271151281045656
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271151281045656
+      type: {class: Reward_AddItemToInventory, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        itemName: Espada
+        amount: 1

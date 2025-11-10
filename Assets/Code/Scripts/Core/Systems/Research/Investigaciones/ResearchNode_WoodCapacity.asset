@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ResearchNode_WoodCapacity
   m_EditorClassIdentifier: 
   researchId: wood_capacity_1
+  category: 0
   displayName: "Expansi\xF3n de Almac\xE9n de Madera"
   description: "Incrementa la capacidad m\xE1xima de madera en 900 unidades"
   icon: {fileID: 0}
@@ -24,11 +25,16 @@ MonoBehaviour:
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rewardType: 0
-    targetId: Wood
-    value: 900
-    displayName: +900 Capacidad de Madera
+  - rid: 5265271151281045715
   tier: 2
   treePosition: {x: 5, y: 0}
   unlocksResearchIds:
   - wood_capacity_2
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271151281045715
+      type: {class: Reward_AddItemToInventory, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        itemName: Arena
+        amount: 1
