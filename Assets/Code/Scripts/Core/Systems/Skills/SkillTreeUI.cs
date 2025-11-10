@@ -35,11 +35,49 @@ namespace Code.Scripts.Core.Systems.Skills
         private Dictionary<string, GameObject> nodeUIElements = new Dictionary<string, GameObject>();
         private Dictionary<string, GameObject> linesContainers = new Dictionary<string, GameObject>();
         private bool isInitialized = false;
+        private bool initializationAttempted = false;
+
+        public override void Show(object parameter = null)
+        {
+            base.Show(parameter);
+
+            Debug.Log($"SkillTreeUI: Show called. Initialized: {isInitialized}, Attempted: {initializationAttempted}");
+
+            if (!isInitialized && !initializationAttempted)
+            {
+                Debug.Log("SkillTreeUI: First time showing, starting initialization...");
+                StartInitialization();
+            }
+            else if (isInitialized)
+            {
+                Debug.Log("SkillTreeUI: Already initialized, refreshing UI...");
+                RefreshUI();
+            }
+            else if (initializationAttempted && !isInitialized)
+            {
+                Debug.Log("SkillTreeUI: Initialization in progress, waiting...");
+                // Si la inicialización está en progreso, intentar acelerarla
+                TryCompleteInitialization();
+            }
+        }
+
+        public override void Hide()
+        {
+            base.Hide();
+            HideModal();
+        }
 
         private void Start()
         {
-            StartCoroutine(InitializeWhenReady());
+            Debug.Log("SkillTreeUI: Start method called");
 
+            // Configurar botones del modal
+            SetupModalButtons();
+            HideModal();
+        }
+
+        private void SetupModalButtons()
+        {
             if (modalCloseButton != null)
                 modalCloseButton.onClick.AddListener(HideModal);
             else
@@ -49,48 +87,72 @@ namespace Code.Scripts.Core.Systems.Skills
                 modalPurchaseButton.onClick.AddListener(PurchaseSelectedNode);
             else
                 Debug.LogError("SkillTreeUI: ModalPurchaseButton is not assigned!");
-
-            HideModal();
         }
 
-        private System.Collections.IEnumerator InitializeWhenReady()
+        private void StartInitialization()
         {
-            Debug.Log("SkillTreeUI: Starting initialization...");
+            if (initializationAttempted) return;
 
-            // Esperar a que SkillTreeManager esté disponible
-            int attempts = 0;
-            int maxAttempts = 50;
+            initializationAttempted = true;
+            Debug.Log("SkillTreeUI: Starting initialization process...");
 
-            while (skillTreeManager == null && attempts < maxAttempts)
+            // Intentar obtener SkillTreeManager inmediatamente
+            if (TryGetSkillTreeManagerImmediate())
             {
-                try
-                {
-                    skillTreeManager = ServiceLocator.GetService<SkillTreeManager>();
-                }
-                catch (System.Exception e)
-                {
-                    Debug.Log($"SkillTreeUI: Attempt {attempts + 1} - SkillTreeManager not ready: {e.Message}");
-                }
+                CompleteInitialization();
+            }
+            else
+            {
+                Debug.Log("SkillTreeUI: SkillTreeManager not ready, starting rapid retry...");
+                // Reintentar rápidamente
+                InvokeRepeating(nameof(TryCompleteInitialization), 0.05f, 0.05f);
+            }
+        }
 
-                if (skillTreeManager == null)
-                {
-                    attempts++;
-                    yield return new WaitForSeconds(0.1f);
-                }
+        private void TryCompleteInitialization()
+        {
+            if (isInitialized)
+            {
+                CancelInvoke(nameof(TryCompleteInitialization));
+                return;
             }
 
+            if (TryGetSkillTreeManagerImmediate())
+            {
+                CancelInvoke(nameof(TryCompleteInitialization));
+                CompleteInitialization();
+            }
+        }
+
+        private bool TryGetSkillTreeManagerImmediate()
+        {
+            if (skillTreeManager != null && skillTreeManager.IsInitialized)
+                return true;
+
+            try
+            {
+                var manager = ServiceLocator.GetService<SkillTreeManager>();
+                if (manager != null && manager.IsInitialized)
+                {
+                    skillTreeManager = manager;
+                    Debug.Log("SkillTreeUI: Successfully acquired initialized SkillTreeManager");
+                    return true;
+                }
+            }
+            catch (System.Exception e)
+            {
+                Debug.Log($"SkillTreeUI: SkillTreeManager not available: {e.Message}");
+            }
+
+            return false;
+        }
+
+        private void CompleteInitialization()
+        {
             if (skillTreeManager == null)
             {
-                Debug.LogError("SkillTreeUI: Failed to get SkillTreeManager after " + maxAttempts + " attempts");
-                yield break;
-            }
-
-            Debug.Log("SkillTreeUI: SkillTreeManager acquired");
-
-            // Esperar a que SkillTreeManager esté completamente inicializado (CORREGIDO)
-            while (!skillTreeManager.IsInitialized)
-            {
-                yield return new WaitForSeconds(0.1f);
+                Debug.LogError("SkillTreeUI: Cannot complete initialization - SkillTreeManager is null!");
+                return;
             }
 
             // Suscribirse a eventos
@@ -100,7 +162,10 @@ namespace Code.Scripts.Core.Systems.Skills
             InitializeUI();
             isInitialized = true;
 
-            Debug.Log("SkillTreeUI: Initialization completed");
+            Debug.Log("SkillTreeUI: Initialization completed successfully");
+
+            // Forzar una actualización visual
+            RefreshUI();
         }
 
         private void InitializeUI()
@@ -118,16 +183,7 @@ namespace Code.Scripts.Core.Systems.Skills
             }
 
             // Limpiar contenedor
-            if (constellationsContainer != null)
-            {
-                foreach (Transform child in constellationsContainer)
-                {
-                    Destroy(child.gameObject);
-                }
-            }
-            constellationAreas.Clear();
-            nodeUIElements.Clear();
-            linesContainers.Clear();
+            ClearUI();
 
             // Crear áreas para cada constelación
             var constellations = skillTreeManager.GetConstellations();
@@ -151,6 +207,20 @@ namespace Code.Scripts.Core.Systems.Skills
             }
 
             UpdateSkillPointsDisplay();
+        }
+
+        private void ClearUI()
+        {
+            if (constellationsContainer != null)
+            {
+                foreach (Transform child in constellationsContainer)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            constellationAreas.Clear();
+            nodeUIElements.Clear();
+            linesContainers.Clear();
         }
 
         private bool CheckUIReferences()
@@ -206,12 +276,11 @@ namespace Code.Scripts.Core.Systems.Skills
                 Debug.LogWarning($"SkillTreeUI: Could not find header text for constellation {constellation.constellationName}");
             }
 
-            // Crear contenedor específico para líneas (se renderizará primero - detrás de los nodos)
+            // Crear contenedor específico para líneas
             GameObject linesContainer = new GameObject("LinesContainer");
             linesContainer.transform.SetParent(area.transform);
-            linesContainer.transform.SetAsFirstSibling(); // Asegurar que está detrás de los nodos
+            linesContainer.transform.SetAsFirstSibling();
 
-            // Añadir RectTransform al contenedor de líneas
             RectTransform linesRect = linesContainer.AddComponent<RectTransform>();
             linesRect.anchorMin = Vector2.zero;
             linesRect.anchorMax = Vector2.one;
@@ -220,7 +289,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
             linesContainers[constellation.constellationName] = linesContainer;
 
-            // Crear nodos en la constelación con posicionamiento libre
+            // Crear nodos
             if (constellation.nodes != null)
             {
                 foreach (var node in constellation.nodes)
@@ -231,7 +300,7 @@ namespace Code.Scripts.Core.Systems.Skills
                     }
                 }
 
-                // Crear conexiones después de que todos los nodos estén colocados
+                // Crear conexiones
                 CreateConnections(constellation, linesContainer.transform);
             }
         }
@@ -240,11 +309,9 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             GameObject nodeUI = Instantiate(skillNodePrefab, parent);
 
-            // Posicionar el nodo según positionInConstellation
             RectTransform nodeRect = nodeUI.GetComponent<RectTransform>();
             if (nodeRect != null)
             {
-                // Usar positionInConstellation como coordenadas relativas
                 Vector2 position = nodeData.positionInConstellation * baseNodeSpacing;
                 nodeRect.anchoredPosition = position;
             }
@@ -328,13 +395,11 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 bool canPurchase = skillTreeManager.CanPurchaseSkill(nodeData);
                 modalPurchaseButton.interactable = canPurchase;
-                Debug.Log($"Modal purchase button interactable: {canPurchase} for node {nodeData.nodeName}");
             }
 
             if (nodeModal != null)
             {
                 nodeModal.SetActive(true);
-                // Asegurar que el modal esté al frente
                 nodeModal.transform.SetAsLastSibling();
             }
         }
@@ -350,7 +415,6 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (selectedNode != null && skillTreeManager != null)
             {
-                Debug.Log($"Attempting to purchase node: {selectedNode.nodeName}");
                 skillTreeManager.PurchaseSkill(selectedNode);
                 HideModal();
             }
@@ -358,7 +422,6 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void OnSkillPurchased(SkillNodeData nodeData)
         {
-            Debug.Log($"SkillTreeUI: Skill purchased event received for {nodeData.nodeName}");
             RefreshUI();
         }
 
@@ -377,14 +440,12 @@ namespace Code.Scripts.Core.Systems.Skills
 
         public void RefreshUI()
         {
-            if (isInitialized)
+            if (isInitialized && gameObject.activeInHierarchy)
             {
-                Debug.Log("SkillTreeUI: Refreshing UI");
                 InitializeUI();
             }
         }
 
-        // Método público para que SkillTreeWindow pueda cerrar el modal
         public void ForceCloseModal()
         {
             HideModal();
@@ -397,6 +458,8 @@ namespace Code.Scripts.Core.Systems.Skills
                 skillTreeManager.OnSkillPurchased -= OnSkillPurchased;
                 skillTreeManager.OnSkillPointsChanged -= OnSkillPointsChanged;
             }
+
+            CancelInvoke(nameof(TryCompleteInitialization));
         }
 
         [ContextMenu("Debug UI State")]
@@ -404,12 +467,9 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             Debug.Log($"=== SKILL TREE UI DEBUG ===");
             Debug.Log($"Initialized: {isInitialized}");
+            Debug.Log($"Initialization Attempted: {initializationAttempted}");
             Debug.Log($"SkillTreeManager: {skillTreeManager != null}");
-            Debug.Log($"Constellation Areas: {constellationAreas.Count}");
-            Debug.Log($"Node UI Elements: {nodeUIElements.Count}");
-            Debug.Log($"Lines Containers: {linesContainers.Count}");
-            Debug.Log($"Modal Active: {nodeModal != null && nodeModal.activeSelf}");
-            Debug.Log($"Selected Node: {selectedNode?.nodeName ?? "None"}");
+            Debug.Log($"Active in hierarchy: {gameObject.activeInHierarchy}");
         }
     }
 }
