@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
@@ -258,6 +259,7 @@ namespace Code.Scripts.Core.Systems.Crafting
             Debug.Log($"Se ha completado el crafteo de: {recipe.displayName}!");
             OnItemCrafted?.Invoke(recipeId, output.amount * amount);
             OnCraftingCompleted?.Invoke(recipeId);
+            CraftingEvents.OnItemCrafted?.Invoke(GetItemData(output.itemName));
         }
         
         public CraftingRecipe GetRecipe(string recipeId)

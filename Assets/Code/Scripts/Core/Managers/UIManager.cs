@@ -26,6 +26,10 @@ namespace Code.Scripts.Core.Managers
             _currentScreen.Show(parameter);
             return _currentScreen as T;
         }
-        
+
+        public BaseUIScreen GetCurrentScreen()
+        {
+            return _currentScreen;
+        }
     }
 }

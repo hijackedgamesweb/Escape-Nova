@@ -26,6 +26,10 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Diplomacy"));
             skillTreeBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("SkillTree"));
+            missionsBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Missions"));
+            storageBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
             constructionBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
         }
