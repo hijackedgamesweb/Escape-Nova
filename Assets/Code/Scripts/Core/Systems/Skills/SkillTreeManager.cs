@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
@@ -53,6 +52,9 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             ServiceLocator.RegisterService<SkillTreeManager>(this);
             InitializeStorageModifiers();
+
+            // Inicializar inmediatamente en Awake en lugar de Start
+            InitializeImmediate();
         }
 
         private void OnDestroy()
@@ -64,25 +66,81 @@ namespace Code.Scripts.Core.Systems.Skills
             ServiceLocator.UnregisterService<SkillTreeManager>();
         }
 
-        private void Start()
+        private void InitializeImmediate()
         {
-            StartCoroutine(InitializeWhenReady());
-        }
+            Debug.Log("SkillTreeManager: Starting immediate initialization...");
 
-        private void InitializeStorageModifiers()
-        {
-            var allResources = Enum.GetValues(typeof(ResourceType));
-            foreach (ResourceType resource in allResources)
+            // Intentar obtener servicios inmediatamente
+            TryGetServices();
+
+            if (AreServicesReady())
             {
-                storageModifiers[resource] = new List<StorageModifier>();
+                CompleteInitialization();
+            }
+            else
+            {
+                Debug.Log("SkillTreeManager: Services not ready, starting rapid retry...");
+                InvokeRepeating(nameof(TryCompleteInitialization), 0.05f, 0.05f);
             }
         }
 
-        private IEnumerator InitializeWhenReady()
+        private void TryCompleteInitialization()
         {
-            yield return WaitForService<IGameTime>((service) => gameTime = service, "IGameTime");
-            yield return WaitForService<StorageSystem>((service) => storageSystem = service, "StorageSystem", false);
+            if (isInitialized)
+            {
+                CancelInvoke(nameof(TryCompleteInitialization));
+                return;
+            }
 
+            TryGetServices();
+
+            if (AreServicesReady())
+            {
+                CancelInvoke(nameof(TryCompleteInitialization));
+                CompleteInitialization();
+            }
+        }
+
+        private void TryGetServices()
+        {
+            // Intentar obtener IGameTime
+            if (gameTime == null)
+            {
+                try
+                {
+                    gameTime = ServiceLocator.GetService<IGameTime>();
+                    if (gameTime != null)
+                        Debug.Log("SkillTreeManager: Successfully acquired IGameTime");
+                }
+                catch (Exception e)
+                {
+                    Debug.Log($"SkillTreeManager: IGameTime not available: {e.Message}");
+                }
+            }
+
+            // Intentar obtener StorageSystem (no crítico)
+            if (storageSystem == null)
+            {
+                try
+                {
+                    storageSystem = ServiceLocator.GetService<StorageSystem>();
+                    if (storageSystem != null)
+                        Debug.Log("SkillTreeManager: Successfully acquired StorageSystem");
+                }
+                catch (Exception e)
+                {
+                    // StorageSystem no es crítico, solo log si es necesario
+                }
+            }
+        }
+
+        private bool AreServicesReady()
+        {
+            return gameTime != null; // Solo IGameTime es crítico
+        }
+
+        private void CompleteInitialization()
+        {
             InitializeNodeStates();
 
             if (gameTime != null)
@@ -97,39 +155,12 @@ namespace Code.Scripts.Core.Systems.Skills
             Debug.Log("SkillTreeManager: Initialization completed successfully");
         }
 
-        private IEnumerator WaitForService<T>(Action<T> setService, string serviceName, bool isRequired = true)
+        private void InitializeStorageModifiers()
         {
-            int attempts = 0;
-            int maxAttempts = 50;
-
-            T service = default(T);
-
-            while (service == null && attempts < maxAttempts)
+            var allResources = Enum.GetValues(typeof(ResourceType));
+            foreach (ResourceType resource in allResources)
             {
-                try
-                {
-                    service = ServiceLocator.GetService<T>();
-                }
-                catch (Exception e)
-                {
-                    Debug.Log("SkillTreeManager: Attempt " + (attempts + 1) + " - " + serviceName + " not ready: " + e.Message);
-                }
-
-                if (service == null)
-                {
-                    attempts++;
-                    yield return new WaitForSeconds(0.1f);
-                }
-            }
-
-            if (service != null)
-            {
-                setService(service);
-                Debug.Log($"SkillTreeManager: Successfully acquired {serviceName}");
-            }
-            else if (isRequired)
-            {
-                Debug.LogError($"SkillTreeManager: Failed to get required service {serviceName} after {maxAttempts} attempts");
+                storageModifiers[resource] = new List<StorageModifier>();
             }
         }
 
