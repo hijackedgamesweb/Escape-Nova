@@ -137,6 +137,15 @@ namespace Code.Scripts.Core.Systems.Storage
             return new Dictionary<string, int>(_inventoryItems);
         }
 
+        public ItemData GetItemData(string itemName)
+        {
+            if (_itemDatabase.TryGetValue(itemName, out ItemData data))
+            {
+                return data;
+            }
+            Debug.LogWarning($"Se pidió ItemData para '{itemName}', pero no se encontró.");
+            return null;
+        }
         
         private void InitializeResourceDatabase()
         {
