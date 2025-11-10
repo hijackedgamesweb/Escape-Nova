@@ -12165,7 +12165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633427bb682c4f2e936fca03141e65ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetsPerOrbit: 03000000070000000a000000
+  planetsPerOrbit: 05000000080000000c0000000f00000012000000
   orbitDistanceIncrement: 4
   rotationSpeed: 2
   planetFactory: {fileID: 1100611344}
@@ -15818,8 +15818,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 4.5, y: 4.5, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18092,7 +18092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1531899065
 Animator:
   serializedVersion: 7
