@@ -6,8 +6,7 @@ using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
-// ¡Asegúrate de que este 'using' existe!
-using Code.Scripts.UI.Crafting; // <-- ¡CAMBIO! (O el namespace donde pongas el script nuevo)
+using Code.Scripts.UI.Crafting;
 
 public class CraftingPanelUI : MonoBehaviour
 {
@@ -34,14 +33,12 @@ public class CraftingPanelUI : MonoBehaviour
     
     [Header("Progreso de Crafteo")]
     [SerializeField] private Slider craftingProgressBar;
+    
+    [Header("Estado Vacío")]
+    [SerializeField] private GameObject placeholderTextObject;
 
-    // --- ¡CAMBIO 1! ---
     private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
     private CraftingRecipe _selectedRecipe;
-
-    // ... (Start, OnDestroy, OnRecipeUnlocked, OnItemCrafted, OnStorageUpdated, 
-    // ...  OnCraftingStarted, OnCraftingProgress, OnCraftingCompleted se quedan IGUAL) ...
-    // ... (Tu método Start() y OnDestroy() están perfectos como están) ...
     
     void Start()
     {
@@ -69,6 +66,12 @@ public class CraftingPanelUI : MonoBehaviour
         {
             craftingProgressBar.gameObject.SetActive(false);
         }
+
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(false);
+        }
+            
         
         RefreshRecipeList();
     }
@@ -156,37 +159,43 @@ public class CraftingPanelUI : MonoBehaviour
     {
         foreach (Transform child in recipeListContainer) Destroy(child.gameObject);
         _recipeButtons.Clear();
+        if (_craftingSystem == null) return;
         var unlockedRecipes = _craftingSystem.GetAllUnlockedRecipes();
+        
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(unlockedRecipes.Count == 0);
+        }
         
         foreach (var recipe in unlockedRecipes)
         {
             var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
             
-            // --- ¡CAMBIO 2! ---
             var buttonUI = buttonGO.GetComponent<CraftingRecipeUIItem>();
             
-            // --- ¡CAMBIO 3! ---
-            buttonUI.Initialize(recipe, this, _craftingSystem); // Le pasamos los 3 parámetros
+            buttonUI.Initialize(recipe, this, _craftingSystem);
             _recipeButtons.Add(buttonUI);
         }
     }
     
     private void UpdateAllButtonCraftableStatus()
     {
-        // --- ¡CAMBIO 4! ---
         foreach(var button in _recipeButtons)
         {
-            button.UpdateCraftableStatus(); // El script nuevo tendrá este método
+            button.UpdateCraftableStatus();
         }
     }
 
-    // ... (El resto de tu script: SelectRecipe, GetCraftAmount, 
-    // ...  UpdateCraftButtonState, OnCraftButtonClicked... se quedan IGUAL) ...
     
     public void SelectRecipe(CraftingRecipe recipe)
     {
         _selectedRecipe = recipe;
         detailsPanel.SetActive(true);
+        
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(false);
+        }
 
         var outputItemData = _craftingSystem.GetItemData(recipe.output.itemName);
         if (outputItemData != null)
