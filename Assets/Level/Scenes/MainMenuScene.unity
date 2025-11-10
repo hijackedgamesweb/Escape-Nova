@@ -15822,6 +15822,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: cyclesPerPoint
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: initialSkillPoints
       value: 0
       objectReference: {fileID: 0}
@@ -17677,7 +17681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1531899065
 Animator:
   serializedVersion: 7

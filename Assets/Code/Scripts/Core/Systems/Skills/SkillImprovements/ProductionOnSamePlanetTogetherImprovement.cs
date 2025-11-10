@@ -2,9 +2,8 @@ using System.Linq;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.World;
 using Code.Scripts.Core.World.ConstructableEntities;
-using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.ServiceLocator;
-using Fungus;
+using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Skills.SkillImprovements
 {
@@ -13,47 +12,52 @@ namespace Code.Scripts.Core.Systems.Skills.SkillImprovements
     {
         public float productionBonusPercent;
         private SolarSystem _solarSystem;
+
         public override void ApplyImprovement()
         {
             _solarSystem = ServiceLocator.GetService<SolarSystem>();
+
+            // Aplicar la mejora específica de adyacencia
             ImproveProductionOnSamePlanetTogether();
+
+            // Suscribirse a eventos para nuevos planetas
             ConstructionEvents.OnPlanetAdded += OnPlanetAdded;
             ConstructionEvents.OnPlanetRemoved += OnPlanetRemoved;
+
+            Debug.Log($"Applied adjacent production improvement: {productionBonusPercent}%");
         }
 
         private void OnPlanetAdded(Planet planet)
         {
-            UpdateOrbit(planet, 1);
+            UpdateAdjacentPlanets(planet, 1);
         }
 
         private void OnPlanetRemoved(Planet planet)
         {
-            UpdateOrbit(planet, -1);
+            UpdateAdjacentPlanets(planet, -1);
         }
 
-        private void UpdateOrbit(Planet planet, int modifier)
+        private void UpdateAdjacentPlanets(Planet planet, int modifier)
         {
             int orbitIndex = planet.OrbitIndex;
             int positionInOrbit = planet.PlanetIndex;
-            
-            var orbit = _solarSystem.Planets[orbitIndex];
-            Planet previousPlanet = orbit[positionInOrbit == 0 ? orbit.Count - 1 : positionInOrbit - 1];
-            Planet nextPlanet = orbit[positionInOrbit + 1 < orbit.Count ? positionInOrbit + 1 : 0];
 
-            if (previousPlanet != null)
+            var orbit = _solarSystem.Planets[orbitIndex];
+
+            // Planeta anterior
+            Planet previousPlanet = orbit[positionInOrbit == 0 ? orbit.Count - 1 : positionInOrbit - 1];
+            if (previousPlanet != null && planet.Name == previousPlanet.Name)
             {
-                if (planet.Name == previousPlanet.Name)
-                {
-                    previousPlanet.IncreaseProductionPerCycleOfAllResources(productionBonusPercent * modifier);
-                }
+                float improvementAmount = productionBonusPercent * modifier;
+                previousPlanet.AddImprovement("AdjacentProduction", improvementAmount);
             }
 
-            if (nextPlanet != null)
+            // Planeta siguiente
+            Planet nextPlanet = orbit[positionInOrbit + 1 < orbit.Count ? positionInOrbit + 1 : 0];
+            if (nextPlanet != null && planet.Name == nextPlanet.Name)
             {
-                if (planet.Name == nextPlanet.Name && nextPlanet != null)
-                {
-                    nextPlanet.IncreaseProductionPerCycleOfAllResources(productionBonusPercent * modifier);
-                }
+                float improvementAmount = productionBonusPercent * modifier;
+                nextPlanet.AddImprovement("AdjacentProduction", improvementAmount);
             }
         }
 
@@ -69,11 +73,14 @@ namespace Code.Scripts.Core.Systems.Skills.SkillImprovements
                         previousPlanet = planet;
                         continue;
                     }
+
                     if (planet.Name == previousPlanet.Name)
                     {
-                        planet.IncreaseProductionPerCycleOfAllResources(productionBonusPercent);
-                        previousPlanet.IncreaseProductionPerCycleOfAllResources(productionBonusPercent);
+                        // Aplicar la mejora de adyacencia a ambos planetas
+                        planet.AddImprovement("AdjacentProduction", productionBonusPercent);
+                        previousPlanet.AddImprovement("AdjacentProduction", productionBonusPercent);
                     }
+
                     previousPlanet = planet;
                 }
             }
