@@ -6,6 +6,8 @@ using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+// ¡Asegúrate de que este 'using' existe!
+using Code.Scripts.UI.Crafting; // <-- ¡CAMBIO! (O el namespace donde pongas el script nuevo)
 
 public class CraftingPanelUI : MonoBehaviour
 {
@@ -33,9 +35,14 @@ public class CraftingPanelUI : MonoBehaviour
     [Header("Progreso de Crafteo")]
     [SerializeField] private Slider craftingProgressBar;
 
-    private List<RecipeButtonUI> _recipeButtons = new List<RecipeButtonUI>();
+    // --- ¡CAMBIO 1! ---
+    private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
     private CraftingRecipe _selectedRecipe;
 
+    // ... (Start, OnDestroy, OnRecipeUnlocked, OnItemCrafted, OnStorageUpdated, 
+    // ...  OnCraftingStarted, OnCraftingProgress, OnCraftingCompleted se quedan IGUAL) ...
+    // ... (Tu método Start() y OnDestroy() están perfectos como están) ...
+    
     void Start()
     {
         _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
@@ -81,7 +88,7 @@ public class CraftingPanelUI : MonoBehaviour
             _storageSystem.OnStorageUpdated -= OnStorageUpdated;
         }
     }
-
+    
     private void OnRecipeUnlocked(string recipeId)
     {
         RefreshRecipeList();
@@ -154,20 +161,28 @@ public class CraftingPanelUI : MonoBehaviour
         foreach (var recipe in unlockedRecipes)
         {
             var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
-            var buttonUI = buttonGO.GetComponent<RecipeButtonUI>();
-            buttonUI.Initialize(recipe, this, _craftingSystem);
+            
+            // --- ¡CAMBIO 2! ---
+            var buttonUI = buttonGO.GetComponent<CraftingRecipeUIItem>();
+            
+            // --- ¡CAMBIO 3! ---
+            buttonUI.Initialize(recipe, this, _craftingSystem); // Le pasamos los 3 parámetros
             _recipeButtons.Add(buttonUI);
         }
     }
     
     private void UpdateAllButtonCraftableStatus()
     {
+        // --- ¡CAMBIO 4! ---
         foreach(var button in _recipeButtons)
         {
-            button.UpdateCraftableStatus();
+            button.UpdateCraftableStatus(); // El script nuevo tendrá este método
         }
     }
 
+    // ... (El resto de tu script: SelectRecipe, GetCraftAmount, 
+    // ...  UpdateCraftButtonState, OnCraftButtonClicked... se quedan IGUAL) ...
+    
     public void SelectRecipe(CraftingRecipe recipe)
     {
         _selectedRecipe = recipe;

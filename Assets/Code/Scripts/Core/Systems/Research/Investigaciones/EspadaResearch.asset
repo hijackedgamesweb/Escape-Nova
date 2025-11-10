@@ -26,6 +26,7 @@ MonoBehaviour:
     useInventoryItem: 0
   rewards:
   - rid: 5265271151281045656
+  - rid: 5265271151281045762
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
@@ -37,3 +38,7 @@ MonoBehaviour:
       data:
         itemName: Espada
         amount: 1
+    - rid: 5265271151281045762
+      type: {class: Reward_UnlockCraftingRecipe, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        recipeId: receta_espada
