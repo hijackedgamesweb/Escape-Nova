@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MamposteriaResearch
   m_EditorClassIdentifier: 
   researchId: mamposteria
+  category: 1
   displayName: "Mamposter\xEDa"
   description: 
   icon: {fileID: 0}
@@ -34,3 +35,6 @@ MonoBehaviour:
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds: []

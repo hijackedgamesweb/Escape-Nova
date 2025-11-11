@@ -1,4 +1,3 @@
-using Code.Scripts.Core.Systems.Civilization.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 

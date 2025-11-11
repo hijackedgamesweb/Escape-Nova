@@ -9,8 +9,9 @@ namespace Code.Scripts.Core.Entity
         public string civLeaderName;
         
         [Header("Entity Base Attributes")]
-        public float baseHunger;
-        public float baseAnger;
-        public float baseMilitaryPower;
+        public float baseFriendship;
+        public float baseDependency;
+        public float baseInterest;
+        public float baseTrust;
     }
 }

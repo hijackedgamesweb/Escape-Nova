@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 
@@ -18,8 +19,17 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 PlanetListPrefab planetItem = Instantiate(_planetListPrefab, transform);
                 planetItem.Initialize(planetData, this);
             }
+            
+            ResearchEvents.OnNewPlanetResearched += AddNewPlanet;
         }
-        
+
+        private void AddNewPlanet(PlanetDataSO obj)
+        {
+            PlanetListPrefab planetItem = Instantiate(_planetListPrefab, transform);
+            planetItem.Initialize(obj, this);
+            _planetDataSOs.Add(obj);
+        }
+
         public void SetCurrentPlanetItem(PlanetListPrefab planetItem)
         {
             if (_currentPlanetItem != null)

@@ -15,7 +15,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.Actions
         public void Execute()
         {
             float tol = _toCivilization.EntityData.AngerTolerance;
-            _toCivilization.EntityState.AngerLevel += tol * 0.1f;
+            _toCivilization.EntityState.FriendlinessLevel += tol * 0.1f;
         }
 
         public void Undo()

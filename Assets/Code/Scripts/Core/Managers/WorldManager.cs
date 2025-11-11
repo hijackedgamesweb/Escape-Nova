@@ -4,7 +4,6 @@ using Code.Scripts.Core.Entity.Civilization;
 using Code.Scripts.Core.Entity.Player;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Civilization;
-using Code.Scripts.Core.Systems.Civilization.ScriptableObjects;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World;
