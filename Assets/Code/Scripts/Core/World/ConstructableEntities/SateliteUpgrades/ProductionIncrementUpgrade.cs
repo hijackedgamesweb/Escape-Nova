@@ -11,12 +11,10 @@ namespace Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades
         
         public override void ApplyUpgrade(Planet planet)
         {
-            for (int i = 0; i < planet.ResourcePerCycle.Length; i++)
-            {
-                planet.ResourcePerCycle[i] += (int) (planet.ResourcePerCycle[i] * productionIncrement);
-            }
+            planet.AddImprovement("Satelite", productionIncrement);
+            
             NotificationManager.Instance.CreateNotification(
-                $"La producción de recursos del planeta {planet.Name} ha aumentado en un {productionIncrement * 100}%", 
+                $"La producción de recursos del planeta {planet.Name} ha aumentado en un {productionIncrement}%", 
                 NotificationType.Info);
         }
     }

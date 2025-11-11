@@ -82,12 +82,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         {
             foreach (var improvement in _globalImprovements)
             {
-                AddImprovement(improvement.Key, improvement.Value, false);
+                AddImprovement(improvement.Key, improvement.Value);
             }
         }
 
         // M�todo para aplicar mejoras espec�ficas a este planeta
-        public void AddImprovement(string improvementType, float percentage, bool showLog = true)
+        public void AddImprovement(string improvementType, float percentage)
         {
             if (!_improvementPercentages.ContainsKey(improvementType))
             {
@@ -96,12 +96,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
             float oldValue = _improvementPercentages[improvementType];
             _improvementPercentages[improvementType] += percentage;
-
-            if (showLog)
-            {
-                Debug.Log($"Planet {Name}: {improvementType} changed from {oldValue}% to {_improvementPercentages[improvementType]}%");
-            }
-
+            
             RecalculateProduction();
         }
 
@@ -172,7 +167,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         // Manejar mejora global a�adida
         private void HandleGlobalImprovementAdded(string improvementType, float percentage)
         {
-            AddImprovement(improvementType, percentage, false);
+            AddImprovement(improvementType, percentage);
         }
 
         public void OnMouseDown()

@@ -28,4 +28,4 @@ MonoBehaviour:
     - rid: 967674922329964625
       type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        productionIncrement: 0.25
+        productionIncrement: 25

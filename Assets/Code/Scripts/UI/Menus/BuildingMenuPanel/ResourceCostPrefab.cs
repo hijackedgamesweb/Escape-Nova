@@ -14,5 +14,10 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
             _resourceIcon.sprite = resourceSprite;
             _resourceAmount.text = amount.ToString();
         }
+        
+        public void UpdateCosts(int newAmount)
+        {
+            _resourceAmount.text = newAmount.ToString();
+        }
     }
 }

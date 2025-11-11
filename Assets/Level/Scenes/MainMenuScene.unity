@@ -26109,6 +26109,9 @@ MonoBehaviour:
   resourceDataList:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   startingInventory: {fileID: 11400000, guid: 6bf8d265001747840856e4a5af0ae6a9, type: 2}
   initialWood: 100
   initialStone: 100

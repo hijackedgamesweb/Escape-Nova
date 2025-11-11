@@ -35,10 +35,10 @@ namespace Code.Scripts.Core.Systems.Storage
         private void Initialize()
         {
             // Me registro en el ServiceLocator para que otros sistemas me encuentren
-            ServiceLocator.RegisterService<StorageSystem>(this);
             // Inicializo la base de datos de recursos
             InitializeResourceDatabase();
             InitializeInventoryItems();
+            ServiceLocator.RegisterService<StorageSystem>(this);
         }
 
         public void AddMaxCapacity(ResourceType type, int additionalCapacity)
