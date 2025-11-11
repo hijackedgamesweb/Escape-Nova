@@ -6,6 +6,7 @@ using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Crafting;
 
 public class CraftingPanelUI : MonoBehaviour
 {
@@ -32,10 +33,13 @@ public class CraftingPanelUI : MonoBehaviour
     
     [Header("Progreso de Crafteo")]
     [SerializeField] private Slider craftingProgressBar;
+    
+    [Header("Estado Vacío")]
+    [SerializeField] private GameObject placeholderTextObject;
 
-    private List<RecipeButtonUI> _recipeButtons = new List<RecipeButtonUI>();
+    private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
     private CraftingRecipe _selectedRecipe;
-
+    
     void Start()
     {
         _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
@@ -62,6 +66,12 @@ public class CraftingPanelUI : MonoBehaviour
         {
             craftingProgressBar.gameObject.SetActive(false);
         }
+
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(false);
+        }
+            
         
         RefreshRecipeList();
     }
@@ -81,7 +91,7 @@ public class CraftingPanelUI : MonoBehaviour
             _storageSystem.OnStorageUpdated -= OnStorageUpdated;
         }
     }
-
+    
     private void OnRecipeUnlocked(string recipeId)
     {
         RefreshRecipeList();
@@ -149,12 +159,20 @@ public class CraftingPanelUI : MonoBehaviour
     {
         foreach (Transform child in recipeListContainer) Destroy(child.gameObject);
         _recipeButtons.Clear();
+        if (_craftingSystem == null) return;
         var unlockedRecipes = _craftingSystem.GetAllUnlockedRecipes();
+        
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(unlockedRecipes.Count == 0);
+        }
         
         foreach (var recipe in unlockedRecipes)
         {
             var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
-            var buttonUI = buttonGO.GetComponent<RecipeButtonUI>();
+            
+            var buttonUI = buttonGO.GetComponent<CraftingRecipeUIItem>();
+            
             buttonUI.Initialize(recipe, this, _craftingSystem);
             _recipeButtons.Add(buttonUI);
         }
@@ -168,10 +186,16 @@ public class CraftingPanelUI : MonoBehaviour
         }
     }
 
+    
     public void SelectRecipe(CraftingRecipe recipe)
     {
         _selectedRecipe = recipe;
         detailsPanel.SetActive(true);
+        
+        if (placeholderTextObject != null)
+        {
+            placeholderTextObject.SetActive(false);
+        }
 
         var outputItemData = _craftingSystem.GetItemData(recipe.output.itemName);
         if (outputItemData != null)

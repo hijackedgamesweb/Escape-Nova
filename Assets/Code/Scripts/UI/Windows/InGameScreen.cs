@@ -32,6 +32,8 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
             constructionBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
+            researchBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
         }
     }
 }

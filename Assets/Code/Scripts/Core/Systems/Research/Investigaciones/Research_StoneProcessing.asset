@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Research_StoneProcessing
   m_EditorClassIdentifier: 
   researchId: stone_processing
+  category: 1
   displayName: Procesamiento de Piedra
   description: 
   icon: {fileID: 0}
@@ -28,10 +29,15 @@ MonoBehaviour:
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rewardType: 0
-    targetId: Stone
-    value: 350
-    displayName: +350 capacidad de piedra
+  - rid: 5265271151281045659
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271151281045659
+      type: {class: Reward_IncreaseMaxStack, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        resourceType: 4
+        increaseAmount: 500

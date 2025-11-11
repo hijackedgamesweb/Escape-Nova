@@ -5,11 +5,20 @@ using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Research
 {
+    public enum ResearchCategory
+    {
+        Planetas,
+        Objetos,
+        Satelites,
+        Especial
+    }
+    
     [CreateAssetMenu(fileName = "New Research", menuName = "Game/Research/Research Node")]
     public class ResearchNode : ScriptableObject
     {
         [Header("Basic Info")]
         public string researchId;
+        public ResearchCategory category;
         public string displayName;
         [TextArea] public string description;
         public Sprite icon;

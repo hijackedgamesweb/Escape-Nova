@@ -12,7 +12,7 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public Button diplomacyBtn;
         [SerializeField] public Button skillTreeBtn;
         [SerializeField] public Button constructionBtn;
-        [SerializeField] public Button storageBtn;
+        [SerializeField] public Button storageCraftingBtn;
         [SerializeField] public Button missionsBtn;
         [SerializeField] public Button researchBtn;
         
@@ -20,7 +20,7 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public BaseUIScreen diplomacyPanel;
         [SerializeField] public BaseUIScreen skillTreePanel;
         [SerializeField] public BaseUIScreen constructionPanel;
-        [SerializeField] public BaseUIScreen storagePanel;
+        [SerializeField] public BaseUIScreen storageCraftingPanel;
         [SerializeField] public BaseUIScreen missionsPanel;
         [SerializeField] public BaseUIScreen researchPanel;
 
@@ -35,7 +35,7 @@ namespace Code.Scripts.UI.Windows
                 Show("SkillTree"));
           //  constructionBtn.onClick.AddListener(() => 
           //      Show("Construction"));
-            storageBtn.onClick.AddListener(() => 
+            storageCraftingBtn.onClick.AddListener(() => 
                 Show("Storage"));
             missionsBtn.onClick.AddListener(() => 
                 Show("Missions"));
@@ -72,8 +72,8 @@ namespace Code.Scripts.UI.Windows
                     _currentPanel = constructionPanel;
                     break;
                 case "Storage":
-                    storagePanel.Show();
-                    _currentPanel = storagePanel;
+                    storageCraftingPanel.Show();
+                    _currentPanel = storageCraftingPanel;
                     break;
                 case "Missions":
                     missionsPanel.Show();
