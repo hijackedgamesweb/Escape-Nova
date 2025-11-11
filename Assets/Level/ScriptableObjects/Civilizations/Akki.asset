@@ -16,7 +16,7 @@ MonoBehaviour:
   civLeaderName: Akki No
   baseFriendship: 0.5
   baseDependency: 0.5
-  baseInterest: 1
+  baseInterest: 0.5
   baseTrust: 0.5
   civilizationDescription: No hay quien viva
   civilizationIcon: {fileID: 21300000, guid: afcc21aaa520e9743b7c6ddd2ee73409, type: 3}

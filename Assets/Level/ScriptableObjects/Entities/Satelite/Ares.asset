@@ -20,3 +20,12 @@ MonoBehaviour:
   buildCostAmounts: 64000000
   size: 0
   desc: Tu potencia de guerra aumenta un 10%
+  upgrades:
+  - rid: 967674922329964625
+  references:
+    version: 2
+    RefIds:
+    - rid: 967674922329964625
+      type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+      data:
+        productionIncrement: 0.25

@@ -56,6 +56,18 @@ namespace Code.Scripts.Core.World
             ConstructionEvents.OnConstructibleCreated?.Invoke(data);
             ConstructionEvents.OnPlanetAdded?.Invoke(planet);
         }
-        
+
+        public void AddSateliteToPlanet(int orbitIndex, int positionInOrbit, SateliteDataSO sateliteDataSo)
+        {
+            Planet planet = Planets[orbitIndex][positionInOrbit];
+            if (planet == null)
+            {
+                Debug.LogWarning($"No planet found at orbit {orbitIndex} position {positionInOrbit} to add a satellite.");
+                return;
+            }
+
+            planet.AddSatelite(sateliteDataSo);
+            ConstructionEvents.OnConstructibleCreated?.Invoke(sateliteDataSo);
+        }
     }
 }

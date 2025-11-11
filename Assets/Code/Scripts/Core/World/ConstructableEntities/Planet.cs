@@ -17,6 +17,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         private SpriteRenderer _spriteRenderer;
         public int[] ResourcePerCycle { get; private set; }
         public List<ResourceType> ProducibleResources { get; private set; }
+        public List<Satelite> Satelites { get; private set; } = new List<Satelite>();
         public int TimeToBuild { get; private set; }
         public int OrbitIndex { get; set; }
         public int PlanetIndex { get; set; }
@@ -65,5 +66,15 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             UnityEngine.Camera.main.GetComponent<CameraController2D>().SetTarget(this.transform);
         }
 
+        public void AddSatelite(SateliteDataSO sateliteDataSo)
+        {
+            Satelite satelite = new Satelite();
+            satelite.InitializeSatelite(sateliteDataSo, this);
+            Satelites.Add(satelite);
+            foreach (var upgrade in sateliteDataSo.upgrades)
+            {
+                upgrade.ApplyUpgrade(this);
+            }
+        }
     }
 }
