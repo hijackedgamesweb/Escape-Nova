@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: demeter4
+  m_Name: demeter0
   m_EditorClassIdentifier: 
-  nodeName: DEMETER 4
-  description: "Los sat\xE9lites de producci\xF3n aumentan un 50% los elementos otorgados."
-  skillPointCost: 2
-  prerequisiteNodes:
-  - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
-  positionInConstellation: {x: 1, y: 1}
-  improvements: []
+  nodeName: SALAS
+  description: "Desbloquea el sat\xE9lite Salas"
+  skillPointCost: 1
+  prerequisiteNodes: []
+  positionInConstellation: {x: 0, y: 1}
+  improvements:
+  - rid: -2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

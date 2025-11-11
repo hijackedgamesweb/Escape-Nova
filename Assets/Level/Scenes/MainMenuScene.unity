@@ -22037,6 +22037,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: cyclesPerPoint
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: initialSkillPoints
       value: 0
       objectReference: {fileID: 0}

@@ -20,6 +20,6 @@ public class SkillNodeData : ScriptableObject
     public Vector2 positionInConstellation;
 
     [Header("Improvement Effects")]
-    [SerializeReference]
+    [SerializeReference, SubclassSelector]
     public List<SkillImprovement> improvements = new List<SkillImprovement>();
 }

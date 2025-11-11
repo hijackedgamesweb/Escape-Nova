@@ -49,5 +49,3 @@ MonoBehaviour:
   cyclesPerPoint: 10
   constellations:
   - {fileID: 11400000, guid: cda2a043251392e4588fa88b7e309858, type: 2}
-  - {fileID: 11400000, guid: 8485dfa0547a5a6449cd8369fc014963, type: 2}
-  - {fileID: 11400000, guid: 19338c8ec053bf749832b9e7103a60c9, type: 2}
