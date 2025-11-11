@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: ec4049cffa4792649bae3988d698145b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4382546669981004773
+    second: Krista_0
+  - first:
+      213: 8340507033163787822
+    second: Krista_1
+  - first:
+      213: 7108137721225076193
+    second: Krista_2
+  - first:
+      213: 7753814259654806016
+    second: Krista_3
+  - first:
+      213: 3768923123129405520
+    second: Krista_4
+  - first:
+      213: 4011503793145529516
+    second: Krista_5
+  - first:
+      213: -8911458441239923207
+    second: Krista_6
+  - first:
+      213: -6589382675900456885
+    second: Krista_7
+  - first:
+      213: 5435240442986665982
+    second: Krista_8
+  - first:
+      213: 8520957825976749035
+    second: Krista_9
+  - first:
+      213: -3927539142850282018
+    second: Krista_10
+  - first:
+      213: -7259251394359875996
+    second: Krista_11
+  - first:
+      213: -3979540262802731650
+    second: Krista_12
+  - first:
+      213: -3062134947651634091
+    second: Krista_13
+  - first:
+      213: -3332027655067305977
+    second: Krista_14
+  - first:
+      213: 7696355843478225476
+    second: Krista_15
+  - first:
+      213: 4825009426888798948
+    second: Krista_16
+  - first:
+      213: -4994410255975884258
+    second: Krista_17
+  - first:
+      213: -894556648974085112
+    second: Krista_18
+  - first:
+      213: -5563941376607566297
+    second: Krista_19
+  - first:
+      213: -5239994327751874700
+    second: Krista_20
+  - first:
+      213: 2086595798105145940
+    second: Krista_21
+  - first:
+      213: -4459839282569017153
+    second: Krista_22
+  - first:
+      213: 79268466962411475
+    second: Krista_23
+  - first:
+      213: 9172263726265732898
+    second: Krista_24
+  - first:
+      213: -6739078295586401713
+    second: Krista_25
+  - first:
+      213: -3756213273680713097
+    second: Krista_26
+  - first:
+      213: 714935009590125063
+    second: Krista_27
+  - first:
+      213: 4920363708198853117
+    second: Krista_28
+  - first:
+      213: -1855995633189555371
+    second: Krista_29
+  - first:
+      213: -8744735800633010091
+    second: Krista_30
+  - first:
+      213: 7533697357533051849
+    second: Krista_31
+  - first:
+      213: -5495414576681898143
+    second: Krista_32
+  - first:
+      213: 7301099642751303477
+    second: Krista_33
+  - first:
+      213: -8604741916304103223
+    second: Krista_34
+  - first:
+      213: 2779281589790842529
+    second: Krista_35
+  - first:
+      213: 3766158608796139247
+    second: Krista_36
+  - first:
+      213: 134778851859811964
+    second: Krista_37
+  - first:
+      213: 897487375123652696
+    second: Krista_38
+  - first:
+      213: -792659289117692346
+    second: Krista_39
+  - first:
+      213: 5747250848691986504
+    second: Krista_40
+  - first:
+      213: -8028771950692815759
+    second: Krista_41
+  - first:
+      213: -8454494772942977820
+    second: Krista_42
+  - first:
+      213: -1233618837138597206
+    second: Krista_43
+  - first:
+      213: 4963235560661931327
+    second: Krista_44
+  - first:
+      213: -3370786673827403600
+    second: Krista_45
+  - first:
+      213: 7801500394216989389
+    second: Krista_46
+  - first:
+      213: -6479625517326745119
+    second: Krista_47
+  - first:
+      213: 3076897590010930056
+    second: Krista_48
+  - first:
+      213: 3161334357236743737
+    second: Krista_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Krista_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c063cf5011e23c0800000000000000
+      internalID: -4382546669981004773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eef5ee4fe6fb370800000000000000
+      internalID: 8340507033163787822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eddc20d89d25a260800000000000000
+      internalID: 7108137721225076193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a4519dcf41b9b60800000000000000
+      internalID: 7753814259654806016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05052e3ac97ed4430800000000000000
+      internalID: 3768923123129405520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4429d2279bba730800000000000000
+      internalID: 4011503793145529516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5fc3b33c3245480800000000000000
+      internalID: -8911458441239923207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_7
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4027d94e5fcd84a0800000000000000
+      internalID: -6589382675900456885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef79e01c26add6b40800000000000000
+      internalID: 5435240442986665982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebcd6b2ff5804670800000000000000
+      internalID: 8520957825976749035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd77f465f39e79c0800000000000000
+      internalID: -3927539142850282018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466abe76155f14b90800000000000000
+      internalID: -7259251394359875996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d474a2735d5c8c0800000000000000
+      internalID: -3979540262802731650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c3aee2d7c1185d0800000000000000
+      internalID: -3062134947651634091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7087fe5608242c1d0800000000000000
+      internalID: -3332027655067305977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_15
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4428583dcd2feca60800000000000000
+      internalID: 7696355843478225476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_16
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e23e9f7280e5f240800000000000000
+      internalID: 4825009426888798948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a5dfd655a40bab0800000000000000
+      internalID: -4994410255975884258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_18
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8049f62a775e593f0800000000000000
+      internalID: -894556648974085112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_19
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72645380cc8e8c2b0800000000000000
+      internalID: -5563941376607566297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477a94debecc747b0800000000000000
+      internalID: -5239994327751874700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45241e7b2d315fc10800000000000000
+      internalID: 2086595798105145940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8042f3dc77b12c0800000000000000
+      internalID: -4459839282569017153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df2f2f204e991100800000000000000
+      internalID: 79268466962411475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_24
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f0546234d6a4f70800000000000000
+      internalID: 9172263726265732898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_25
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42170ecefbf972a0800000000000000
+      internalID: -6739078295586401713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a67a9cdef3fdbc0800000000000000
+      internalID: -3756213273680713097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_27
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7022c147a95fbe900800000000000000
+      internalID: 714935009590125063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df99ae039b4a84440800000000000000
+      internalID: 4920363708198853117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_29
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5537f0b1ecd2e36e0800000000000000
+      internalID: -1855995633189555371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558d0a4fe1574a680800000000000000
+      internalID: -8744735800633010091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_31
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb7e09d4d11d8860800000000000000
+      internalID: 7533697357533051849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f2f57fe8d5cb3b0800000000000000
+      internalID: -5495414576681898143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_33
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f3ce33177b25560800000000000000
+      internalID: 7301099642751303477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_34
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8a7c621d0d59880800000000000000
+      internalID: -8604741916304103223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae144271edf19620800000000000000
+      internalID: 2779281589790842529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_36
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeb21dfc45144430800000000000000
+      internalID: 3766158608796139247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_37
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ec654d6a4ded100800000000000000
+      internalID: 134778851859811964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_38
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850a4a83304847c00800000000000000
+      internalID: 897487375123652696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_39
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ee9348398eff4f0800000000000000
+      internalID: -792659289117692346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8402957523652cf40800000000000000
+      internalID: 5747250848691986504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_41
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ca558f272149090800000000000000
+      internalID: -8028771950692815759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4465f3cc99baa80800000000000000
+      internalID: -8454494772942977820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa9f10243e41eee0800000000000000
+      internalID: -1233618837138597206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_44
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3557d13274f0e440800000000000000
+      internalID: 4963235560661931327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_45
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8a5ec116f8831d0800000000000000
+      internalID: -3370786673827403600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_46
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2af50464f744c60800000000000000
+      internalID: 7801500394216989389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_47
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1ce2a2ceeb316a0800000000000000
+      internalID: -6479625517326745119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_48
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8836bd65e0653ba20800000000000000
+      internalID: 3076897590010930056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Krista_49
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e755339d05fdb20800000000000000
+      internalID: 3161334357236743737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Krista_0: -4382546669981004773
+      Krista_1: 8340507033163787822
+      Krista_10: -3927539142850282018
+      Krista_11: -7259251394359875996
+      Krista_12: -3979540262802731650
+      Krista_13: -3062134947651634091
+      Krista_14: -3332027655067305977
+      Krista_15: 7696355843478225476
+      Krista_16: 4825009426888798948
+      Krista_17: -4994410255975884258
+      Krista_18: -894556648974085112
+      Krista_19: -5563941376607566297
+      Krista_2: 7108137721225076193
+      Krista_20: -5239994327751874700
+      Krista_21: 2086595798105145940
+      Krista_22: -4459839282569017153
+      Krista_23: 79268466962411475
+      Krista_24: 9172263726265732898
+      Krista_25: -6739078295586401713
+      Krista_26: -3756213273680713097
+      Krista_27: 714935009590125063
+      Krista_28: 4920363708198853117
+      Krista_29: -1855995633189555371
+      Krista_3: 7753814259654806016
+      Krista_30: -8744735800633010091
+      Krista_31: 7533697357533051849
+      Krista_32: -5495414576681898143
+      Krista_33: 7301099642751303477
+      Krista_34: -8604741916304103223
+      Krista_35: 2779281589790842529
+      Krista_36: 3766158608796139247
+      Krista_37: 134778851859811964
+      Krista_38: 897487375123652696
+      Krista_39: -792659289117692346
+      Krista_4: 3768923123129405520
+      Krista_40: 5747250848691986504
+      Krista_41: -8028771950692815759
+      Krista_42: -8454494772942977820
+      Krista_43: -1233618837138597206
+      Krista_44: 4963235560661931327
+      Krista_45: -3370786673827403600
+      Krista_46: 7801500394216989389
+      Krista_47: -6479625517326745119
+      Krista_48: 3076897590010930056
+      Krista_49: 3161334357236743737
+      Krista_5: 4011503793145529516
+      Krista_6: -8911458441239923207
+      Krista_7: -6589382675900456885
+      Krista_8: 5435240442986665982
+      Krista_9: 8520957825976749035
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

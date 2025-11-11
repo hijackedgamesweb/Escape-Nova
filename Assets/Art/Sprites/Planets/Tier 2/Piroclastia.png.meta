@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: b6c0ff26a3b87d540b066194f8cdd19e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7981415299240727443
+    second: Piroclastia_0
+  - first:
+      213: -8519538024910706050
+    second: Piroclastia_1
+  - first:
+      213: -5129154992564004624
+    second: Piroclastia_2
+  - first:
+      213: 4178594341798802683
+    second: Piroclastia_3
+  - first:
+      213: 4783035568390204419
+    second: Piroclastia_4
+  - first:
+      213: 5622435631086139174
+    second: Piroclastia_5
+  - first:
+      213: 8465783516824664081
+    second: Piroclastia_6
+  - first:
+      213: -7765064396500200305
+    second: Piroclastia_7
+  - first:
+      213: 7126212975195313788
+    second: Piroclastia_8
+  - first:
+      213: -6262148004768571554
+    second: Piroclastia_9
+  - first:
+      213: -2272862525008337376
+    second: Piroclastia_10
+  - first:
+      213: 5801039858318721834
+    second: Piroclastia_11
+  - first:
+      213: 8417563761260642470
+    second: Piroclastia_12
+  - first:
+      213: 7407979476160907288
+    second: Piroclastia_13
+  - first:
+      213: 982858254732612828
+    second: Piroclastia_14
+  - first:
+      213: 5272120414104491831
+    second: Piroclastia_15
+  - first:
+      213: -4175838327828375988
+    second: Piroclastia_16
+  - first:
+      213: -4539529653804532579
+    second: Piroclastia_17
+  - first:
+      213: 8688092528063726458
+    second: Piroclastia_18
+  - first:
+      213: 7722434955671602409
+    second: Piroclastia_19
+  - first:
+      213: 4966878447727774896
+    second: Piroclastia_20
+  - first:
+      213: -7927072636833526773
+    second: Piroclastia_21
+  - first:
+      213: 7634926031879284349
+    second: Piroclastia_22
+  - first:
+      213: 2384130514745661360
+    second: Piroclastia_23
+  - first:
+      213: 7629778167505549228
+    second: Piroclastia_24
+  - first:
+      213: -3496888733172852591
+    second: Piroclastia_25
+  - first:
+      213: 6842851337246041304
+    second: Piroclastia_26
+  - first:
+      213: 8698807706883438520
+    second: Piroclastia_27
+  - first:
+      213: -2015141031576611390
+    second: Piroclastia_28
+  - first:
+      213: -3923852974683679792
+    second: Piroclastia_29
+  - first:
+      213: -3492691405748361662
+    second: Piroclastia_30
+  - first:
+      213: -6142429146337082773
+    second: Piroclastia_31
+  - first:
+      213: 3031450472632229349
+    second: Piroclastia_32
+  - first:
+      213: -3453183819982937421
+    second: Piroclastia_33
+  - first:
+      213: 8845446864576881732
+    second: Piroclastia_34
+  - first:
+      213: 8705784647297355227
+    second: Piroclastia_35
+  - first:
+      213: -7966921526948175954
+    second: Piroclastia_36
+  - first:
+      213: 2782689961758232559
+    second: Piroclastia_37
+  - first:
+      213: -5654031360000021720
+    second: Piroclastia_38
+  - first:
+      213: 4526884297090072463
+    second: Piroclastia_39
+  - first:
+      213: -5948051397880532247
+    second: Piroclastia_40
+  - first:
+      213: -2901759073798719487
+    second: Piroclastia_41
+  - first:
+      213: -7224023346362742477
+    second: Piroclastia_42
+  - first:
+      213: 1652689374812059905
+    second: Piroclastia_43
+  - first:
+      213: 8359430422972272398
+    second: Piroclastia_44
+  - first:
+      213: 705096513123621423
+    second: Piroclastia_45
+  - first:
+      213: -3261146991368963594
+    second: Piroclastia_46
+  - first:
+      213: 830275502163102533
+    second: Piroclastia_47
+  - first:
+      213: 356595072898820225
+    second: Piroclastia_48
+  - first:
+      213: -6746939930206148264
+    second: Piroclastia_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Piroclastia_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c63eb92115c3190800000000000000
+      internalID: -7981415299240727443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7aa3c60e4584c980800000000000000
+      internalID: -8519538024910706050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f81d4ea5b491d8b0800000000000000
+      internalID: -5129154992564004624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4ff5b2a695df930800000000000000
+      internalID: 4178594341798802683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ce4f10281c06240800000000000000
+      internalID: 4783035568390204419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6277363ea67e60e40800000000000000
+      internalID: 5622435631086139174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118f0b141418c7570800000000000000
+      internalID: 8465783516824664081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_7
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84929c8213fc3490800000000000000
+      internalID: -7765064396500200305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76db44d1f465e260800000000000000
+      internalID: 7126212975195313788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f19d461916819a0800000000000000
+      internalID: -6262148004768571554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026a49d539b2570e0800000000000000
+      internalID: -2272862525008337376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2348f2140f618050800000000000000
+      internalID: 5801039858318721834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0442884a131d470800000000000000
+      internalID: 8417563761260642470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81884fb951e6ec660800000000000000
+      internalID: 7407979476160907288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4d5e11060d3ad00800000000000000
+      internalID: 982858254732612828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_15
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73798cf65955a2940800000000000000
+      internalID: 5272120414104491831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_16
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4614565a217c06c0800000000000000
+      internalID: -4175838327828375988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cf0a1d4d95001c0800000000000000
+      internalID: -4539529653804532579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_18
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73c6fe6f1e429870800000000000000
+      internalID: 8688092528063726458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_19
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e48ddd4da99b2b60800000000000000
+      internalID: 7722434955671602409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc8b5fe1a5ede440800000000000000
+      internalID: 4966878447727774896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c81dcaf616df190800000000000000
+      internalID: -7927072636833526773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d762c8046c4b4f960800000000000000
+      internalID: 7634926031879284349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7959d4212261120800000000000000
+      internalID: 2384130514745661360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_24
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7f23da1da62e960800000000000000
+      internalID: 7629778167505549228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_25
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1989a28793e887fc0800000000000000
+      internalID: -3496888733172852591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d46b574901b6fe50800000000000000
+      internalID: 6842851337246041304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_27
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7b73a658f58b870800000000000000
+      internalID: 8698807706883438520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5df8098e7c804e0800000000000000
+      internalID: -2015141031576611390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_29
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d39e1d428cab89c0800000000000000
+      internalID: -3923852974683679792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2462f4aeba7778fc0800000000000000
+      internalID: -3492691405748361662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_31
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6282924c35b1caa0800000000000000
+      internalID: -6142429146337082773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed1f6fb420e11a20800000000000000
+      internalID: 3031450472632229349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_33
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b26ac98c93d310d0800000000000000
+      internalID: -3453183819982937421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_34
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444a2b2ee0751ca70800000000000000
+      internalID: 8845446864576881732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd4531f20921d870800000000000000
+      internalID: 8705784647297355227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_36
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf57d0f41fcf6190800000000000000
+      internalID: -7966921526948175954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_37
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef05a2e6c91e9620800000000000000
+      internalID: 2782689961758232559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_38
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ba7463f68d881b0800000000000000
+      internalID: -5654031360000021720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_39
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ff853a849b2de30800000000000000
+      internalID: 4526884297090072463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2b09b84c6447da0800000000000000
+      internalID: -5948051397880532247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_41
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108f57e1f71eab7d0800000000000000
+      internalID: -2901759073798719487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3398bee7a0d1fbb90800000000000000
+      internalID: -7224023346362742477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1093cb5ea388fe610800000000000000
+      internalID: 1652689374812059905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_44
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f0bd5fda9a20470800000000000000
+      internalID: 8359430422972272398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_45
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a991dfa8109c900800000000000000
+      internalID: 705096513123621423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_46
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f97e13f6141eb2d0800000000000000
+      internalID: -3261146991368963594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_47
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b04249b2bb58b00800000000000000
+      internalID: 830275502163102533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_48
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188e9c85451e2f400800000000000000
+      internalID: 356595072898820225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piroclastia_49
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859e92b51ed0e52a0800000000000000
+      internalID: -6746939930206148264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Piroclastia_0: -7981415299240727443
+      Piroclastia_1: -8519538024910706050
+      Piroclastia_10: -2272862525008337376
+      Piroclastia_11: 5801039858318721834
+      Piroclastia_12: 8417563761260642470
+      Piroclastia_13: 7407979476160907288
+      Piroclastia_14: 982858254732612828
+      Piroclastia_15: 5272120414104491831
+      Piroclastia_16: -4175838327828375988
+      Piroclastia_17: -4539529653804532579
+      Piroclastia_18: 8688092528063726458
+      Piroclastia_19: 7722434955671602409
+      Piroclastia_2: -5129154992564004624
+      Piroclastia_20: 4966878447727774896
+      Piroclastia_21: -7927072636833526773
+      Piroclastia_22: 7634926031879284349
+      Piroclastia_23: 2384130514745661360
+      Piroclastia_24: 7629778167505549228
+      Piroclastia_25: -3496888733172852591
+      Piroclastia_26: 6842851337246041304
+      Piroclastia_27: 8698807706883438520
+      Piroclastia_28: -2015141031576611390
+      Piroclastia_29: -3923852974683679792
+      Piroclastia_3: 4178594341798802683
+      Piroclastia_30: -3492691405748361662
+      Piroclastia_31: -6142429146337082773
+      Piroclastia_32: 3031450472632229349
+      Piroclastia_33: -3453183819982937421
+      Piroclastia_34: 8845446864576881732
+      Piroclastia_35: 8705784647297355227
+      Piroclastia_36: -7966921526948175954
+      Piroclastia_37: 2782689961758232559
+      Piroclastia_38: -5654031360000021720
+      Piroclastia_39: 4526884297090072463
+      Piroclastia_4: 4783035568390204419
+      Piroclastia_40: -5948051397880532247
+      Piroclastia_41: -2901759073798719487
+      Piroclastia_42: -7224023346362742477
+      Piroclastia_43: 1652689374812059905
+      Piroclastia_44: 8359430422972272398
+      Piroclastia_45: 705096513123621423
+      Piroclastia_46: -3261146991368963594
+      Piroclastia_47: 830275502163102533
+      Piroclastia_48: 356595072898820225
+      Piroclastia_49: -6746939930206148264
+      Piroclastia_5: 5622435631086139174
+      Piroclastia_6: 8465783516824664081
+      Piroclastia_7: -7765064396500200305
+      Piroclastia_8: 7126212975195313788
+      Piroclastia_9: -6262148004768571554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

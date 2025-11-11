@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 8abd4e1bb79b3e644a2fedbd142eda02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3948998494920026277
+    second: Istoovii_0
+  - first:
+      213: -6831224075218031278
+    second: Istoovii_1
+  - first:
+      213: 4752689447185821511
+    second: Istoovii_2
+  - first:
+      213: 5413516794855370470
+    second: Istoovii_3
+  - first:
+      213: 4176141785104428606
+    second: Istoovii_4
+  - first:
+      213: 665313275949337463
+    second: Istoovii_5
+  - first:
+      213: -8720322000545910410
+    second: Istoovii_6
+  - first:
+      213: -5942399620624900017
+    second: Istoovii_7
+  - first:
+      213: 7140229177721718796
+    second: Istoovii_8
+  - first:
+      213: -8893427235335495960
+    second: Istoovii_9
+  - first:
+      213: 4720889461434517793
+    second: Istoovii_10
+  - first:
+      213: -1575078184258159187
+    second: Istoovii_11
+  - first:
+      213: -1207446025010083563
+    second: Istoovii_12
+  - first:
+      213: -4847979056676973268
+    second: Istoovii_13
+  - first:
+      213: 7492319624461657428
+    second: Istoovii_14
+  - first:
+      213: -8208867132677726391
+    second: Istoovii_15
+  - first:
+      213: 3346095118350504730
+    second: Istoovii_16
+  - first:
+      213: -5670887499838241534
+    second: Istoovii_17
+  - first:
+      213: -6784232171750798751
+    second: Istoovii_18
+  - first:
+      213: 7520378685318714225
+    second: Istoovii_19
+  - first:
+      213: 595799147978511951
+    second: Istoovii_20
+  - first:
+      213: -2441028445340439134
+    second: Istoovii_21
+  - first:
+      213: -4111972470513240271
+    second: Istoovii_22
+  - first:
+      213: -7215451100815862495
+    second: Istoovii_23
+  - first:
+      213: -8726446412971894607
+    second: Istoovii_24
+  - first:
+      213: -2673265217237977948
+    second: Istoovii_25
+  - first:
+      213: -4854030563009076877
+    second: Istoovii_26
+  - first:
+      213: -473586505181307752
+    second: Istoovii_27
+  - first:
+      213: 5884073733047559114
+    second: Istoovii_28
+  - first:
+      213: -1940877301096270804
+    second: Istoovii_29
+  - first:
+      213: 4719492095799171017
+    second: Istoovii_30
+  - first:
+      213: -3962299409793643370
+    second: Istoovii_31
+  - first:
+      213: -6636498317931813179
+    second: Istoovii_32
+  - first:
+      213: 968408379327545833
+    second: Istoovii_33
+  - first:
+      213: 1614591327645095279
+    second: Istoovii_34
+  - first:
+      213: -5863116837669810446
+    second: Istoovii_35
+  - first:
+      213: -5717392999060925572
+    second: Istoovii_36
+  - first:
+      213: 6434519366490978871
+    second: Istoovii_37
+  - first:
+      213: 8204442624104828996
+    second: Istoovii_38
+  - first:
+      213: 8546177710787834357
+    second: Istoovii_39
+  - first:
+      213: 4444621001803104380
+    second: Istoovii_40
+  - first:
+      213: 6556908029836308117
+    second: Istoovii_41
+  - first:
+      213: 3356438929931394545
+    second: Istoovii_42
+  - first:
+      213: -1362729051950062486
+    second: Istoovii_43
+  - first:
+      213: -7310912549923752779
+    second: Istoovii_44
+  - first:
+      213: 8338767637115206440
+    second: Istoovii_45
+  - first:
+      213: 4916227761195356709
+    second: Istoovii_46
+  - first:
+      213: 4376758362834002714
+    second: Istoovii_47
+  - first:
+      213: -8358992061656713089
+    second: Istoovii_48
+  - first:
+      213: 6265028406426525811
+    second: Istoovii_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Istoovii_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8a24c5539adc630800000000000000
+      internalID: 3948998494920026277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d688f95ed9231a0800000000000000
+      internalID: -6831224075218031278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f22431fd1f4f140800000000000000
+      internalID: 4752689447185821511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee27f6c7dca02b40800000000000000
+      internalID: 5413516794855370470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ea0d0d3d2a4f930800000000000000
+      internalID: 4176141785104428606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bcf4546eaab3900800000000000000
+      internalID: 665313275949337463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671ff6eb7513bf680800000000000000
+      internalID: -8720322000545910410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40ac3b770b588da0800000000000000
+      internalID: -5942399620624900017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c088bf84b90371360800000000000000
+      internalID: 7140229177721718796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_9
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee1b028c03349480800000000000000
+      internalID: -8893427235335495960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12980bce3f7f38140800000000000000
+      internalID: 4720889461434517793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad33dd8cb2342ae0800000000000000
+      internalID: -1575078184258159187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51901d1dc3a4e3fe0800000000000000
+      internalID: -1207446025010083563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c255c30dbb488bcb0800000000000000
+      internalID: -4847979056676973268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455a9bf90011af760800000000000000
+      internalID: 7492319624461657428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f5d54d5de341e80800000000000000
+      internalID: -8208867132677726391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1353f128c7bf6e20800000000000000
+      internalID: 3346095118350504730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20540f25dd5fc41b0800000000000000
+      internalID: -5670887499838241534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a4401c8c099d1a0800000000000000
+      internalID: -6784232171750798751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17357d2d190cd5860800000000000000
+      internalID: 7520378685318714225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f465dbc1b24b44800800000000000000
+      internalID: 595799147978511951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2adebd4ef89bf1ed0800000000000000
+      internalID: -2441028445340439134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1377fd003d65fe6c0800000000000000
+      internalID: -4111972470513240271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1255ba1f3719ddb90800000000000000
+      internalID: -7215451100815862495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_24
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8145bd83f65e680800000000000000
+      internalID: -8726446412971894607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a47f10d277a6ead0800000000000000
+      internalID: -2673265217237977948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_26
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37164f2bbe403acb0800000000000000
+      internalID: -4854030563009076877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_27
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cdf3c259b7d69f0800000000000000
+      internalID: -473586505181307752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_28
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3a18292ed68a150800000000000000
+      internalID: 5884073733047559114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_29
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24b98bb06e9015e0800000000000000
+      internalID: -1940877301096270804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c79f526e010f7140800000000000000
+      internalID: 4719492095799171017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c82811ea51309c0800000000000000
+      internalID: -3962299409793643370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6623701fb66e3a0800000000000000
+      internalID: -6636498317931813179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_33
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e184574a4a707d00800000000000000
+      internalID: 968408379327545833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_34
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6556bd024e286610800000000000000
+      internalID: 1614591327645095279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_35
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe441edc4602aea0800000000000000
+      internalID: -5863116837669810446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_36
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c731ba10c5db7a0b0800000000000000
+      internalID: -5717392999060925572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_37
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73af014b5410c4950800000000000000
+      internalID: 6434519366490978871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_38
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44097ddf8190cd170800000000000000
+      internalID: 8204442624104828996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_39
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1bede295f1a9670800000000000000
+      internalID: 8546177710787834357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7007b5a0477ead30800000000000000
+      internalID: 4444621001803104380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eac47fc11defa50800000000000000
+      internalID: 6556908029836308117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_42
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd5ad07c67749e20800000000000000
+      internalID: 3356438929931394545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_43
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a646965b52d961de0800000000000000
+      internalID: -1362729051950062486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_44
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b479dd45cb6a8a90800000000000000
+      internalID: -7310912549923752779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_45
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b76ca3cf049b370800000000000000
+      internalID: 8338767637115206440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_46
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52296fcf913f93440800000000000000
+      internalID: 4916227761195356709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_47
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13e07cba8e5dbc30800000000000000
+      internalID: 4376758362834002714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_48
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7834acf105eefb80800000000000000
+      internalID: -8358992061656713089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Istoovii_49
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370e8c0642ad1f650800000000000000
+      internalID: 6265028406426525811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Istoovii_0: 3948998494920026277
+      Istoovii_1: -6831224075218031278
+      Istoovii_10: 4720889461434517793
+      Istoovii_11: -1575078184258159187
+      Istoovii_12: -1207446025010083563
+      Istoovii_13: -4847979056676973268
+      Istoovii_14: 7492319624461657428
+      Istoovii_15: -8208867132677726391
+      Istoovii_16: 3346095118350504730
+      Istoovii_17: -5670887499838241534
+      Istoovii_18: -6784232171750798751
+      Istoovii_19: 7520378685318714225
+      Istoovii_2: 4752689447185821511
+      Istoovii_20: 595799147978511951
+      Istoovii_21: -2441028445340439134
+      Istoovii_22: -4111972470513240271
+      Istoovii_23: -7215451100815862495
+      Istoovii_24: -8726446412971894607
+      Istoovii_25: -2673265217237977948
+      Istoovii_26: -4854030563009076877
+      Istoovii_27: -473586505181307752
+      Istoovii_28: 5884073733047559114
+      Istoovii_29: -1940877301096270804
+      Istoovii_3: 5413516794855370470
+      Istoovii_30: 4719492095799171017
+      Istoovii_31: -3962299409793643370
+      Istoovii_32: -6636498317931813179
+      Istoovii_33: 968408379327545833
+      Istoovii_34: 1614591327645095279
+      Istoovii_35: -5863116837669810446
+      Istoovii_36: -5717392999060925572
+      Istoovii_37: 6434519366490978871
+      Istoovii_38: 8204442624104828996
+      Istoovii_39: 8546177710787834357
+      Istoovii_4: 4176141785104428606
+      Istoovii_40: 4444621001803104380
+      Istoovii_41: 6556908029836308117
+      Istoovii_42: 3356438929931394545
+      Istoovii_43: -1362729051950062486
+      Istoovii_44: -7310912549923752779
+      Istoovii_45: 8338767637115206440
+      Istoovii_46: 4916227761195356709
+      Istoovii_47: 4376758362834002714
+      Istoovii_48: -8358992061656713089
+      Istoovii_49: 6265028406426525811
+      Istoovii_5: 665313275949337463
+      Istoovii_6: -8720322000545910410
+      Istoovii_7: -5942399620624900017
+      Istoovii_8: 7140229177721718796
+      Istoovii_9: -8893427235335495960
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 12f970e8d59067841ac0f0a4528ddee7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1765669588405716114
+    second: Lahar_0
+  - first:
+      213: -1484142180189220494
+    second: Lahar_1
+  - first:
+      213: 3319660376225575798
+    second: Lahar_2
+  - first:
+      213: -5132590415703453017
+    second: Lahar_3
+  - first:
+      213: 6781425709823522902
+    second: Lahar_4
+  - first:
+      213: -5183253129790559954
+    second: Lahar_5
+  - first:
+      213: 3523301359487638717
+    second: Lahar_6
+  - first:
+      213: -3766040005390572725
+    second: Lahar_7
+  - first:
+      213: -6216806623497611882
+    second: Lahar_8
+  - first:
+      213: 2876916796824455298
+    second: Lahar_9
+  - first:
+      213: 1005411105208842731
+    second: Lahar_10
+  - first:
+      213: 7077997585983625138
+    second: Lahar_11
+  - first:
+      213: -4064663277647139915
+    second: Lahar_12
+  - first:
+      213: -2916025676866478133
+    second: Lahar_13
+  - first:
+      213: -2341155791909957105
+    second: Lahar_14
+  - first:
+      213: -1476337572626157025
+    second: Lahar_15
+  - first:
+      213: -5957686099982605403
+    second: Lahar_16
+  - first:
+      213: -3714133867421406449
+    second: Lahar_17
+  - first:
+      213: 2993206640239927894
+    second: Lahar_18
+  - first:
+      213: -44774280446482093
+    second: Lahar_19
+  - first:
+      213: -3122772473843067572
+    second: Lahar_20
+  - first:
+      213: 4887474860575892920
+    second: Lahar_21
+  - first:
+      213: -1957480574780462814
+    second: Lahar_22
+  - first:
+      213: 8556194511326198517
+    second: Lahar_23
+  - first:
+      213: -8523501660651181069
+    second: Lahar_24
+  - first:
+      213: -5301180773128554575
+    second: Lahar_25
+  - first:
+      213: -8985228746159755898
+    second: Lahar_26
+  - first:
+      213: -1630123345892014988
+    second: Lahar_27
+  - first:
+      213: -3516391504798395288
+    second: Lahar_28
+  - first:
+      213: -8333920008539498102
+    second: Lahar_29
+  - first:
+      213: 6004045900396923293
+    second: Lahar_30
+  - first:
+      213: 443298030496474438
+    second: Lahar_31
+  - first:
+      213: -6677348515737954123
+    second: Lahar_32
+  - first:
+      213: 3654583097941361420
+    second: Lahar_33
+  - first:
+      213: 4248565750120865072
+    second: Lahar_34
+  - first:
+      213: -8879481421939164131
+    second: Lahar_35
+  - first:
+      213: -4365203544029256490
+    second: Lahar_36
+  - first:
+      213: 4301896203495630192
+    second: Lahar_37
+  - first:
+      213: -8286487909362413424
+    second: Lahar_38
+  - first:
+      213: 4074291635674730296
+    second: Lahar_39
+  - first:
+      213: -4563259737096163770
+    second: Lahar_40
+  - first:
+      213: 5553440847152400928
+    second: Lahar_41
+  - first:
+      213: -6863096712183618313
+    second: Lahar_42
+  - first:
+      213: 971934667363526149
+    second: Lahar_43
+  - first:
+      213: -6421748680408901930
+    second: Lahar_44
+  - first:
+      213: -2816178619933828896
+    second: Lahar_45
+  - first:
+      213: -9129714043491124201
+    second: Lahar_46
+  - first:
+      213: 8721326395173025873
+    second: Lahar_47
+  - first:
+      213: -1262406552569947506
+    second: Lahar_48
+  - first:
+      213: -1200048115718334455
+    second: Lahar_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lahar_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29402afb22be08810800000000000000
+      internalID: 1765669588405716114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271d5a9ec84476be0800000000000000
+      internalID: -1484142180189220494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6737ddb168dc11e20800000000000000
+      internalID: 3319660376225575798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_3
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2db66e53065c8b0800000000000000
+      internalID: -5132590415703453017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6587bb8e0c67c1e50800000000000000
+      internalID: 6781425709823522902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29e6e19db26118b0800000000000000
+      internalID: -5183253129790559954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_6
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc59e05be745e030800000000000000
+      internalID: 3523301359487638717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_7
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43e8c481965cbbc0800000000000000
+      internalID: -3766040005390572725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6951121605779b9a0800000000000000
+      internalID: -6216806623497611882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_9
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288831b859cdce720800000000000000
+      internalID: 2876916796824455298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9b433c210f3fd00800000000000000
+      internalID: 1005411105208842731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b750a9bd491a3260800000000000000
+      internalID: 7077997585983625138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb6444d84a6797c0800000000000000
+      internalID: -4064663277647139915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf947eb8123887d0800000000000000
+      internalID: -2916025676866478133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02db53163b828fd0800000000000000
+      internalID: -2341155791909957105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_15
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f123e07bccef28be0800000000000000
+      internalID: -1476337572626157025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_16
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a32147ae0c025da0800000000000000
+      internalID: -5957686099982605403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b69180deeb47cc0800000000000000
+      internalID: -3714133867421406449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65267d2a4910a8920800000000000000
+      internalID: 2993206640239927894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_19
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359e9e6770ee06ff0800000000000000
+      internalID: -44774280446482093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45573eeafea9a4d0800000000000000
+      internalID: -3122772473843067572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_21
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b52741ad7cc3d340800000000000000
+      internalID: 4887474860575892920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229ab75d9c1a5d4e0800000000000000
+      internalID: -1957480574780462814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fabebc4395bdb670800000000000000
+      internalID: 8556194511326198517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb2f6a266076b980800000000000000
+      internalID: -8523501660651181069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_25
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7ba877c2c6e66b0800000000000000
+      internalID: -5301180773128554575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_26
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68de487af0e0e4380800000000000000
+      internalID: -8985228746159755898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_27
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47409042473a069e0800000000000000
+      internalID: -1630123345892014988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_28
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8645a499e84433fc0800000000000000
+      internalID: -3516391504798395288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a899b7048e7f75c80800000000000000
+      internalID: -8333920008539498102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d998c448fe7a25350800000000000000
+      internalID: 6004045900396923293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6456f55c539e62600800000000000000
+      internalID: 443298030496474438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_32
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b815fd27ea4553a0800000000000000
+      internalID: -6677348515737954123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0301faf6ffa7b230800000000000000
+      internalID: 3654583097941361420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_34
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d58d43a00f5fa30800000000000000
+      internalID: 4248565750120865072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_35
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cb2a731beb5c480800000000000000
+      internalID: -8879481421939164131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_36
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d42cd9218eab63c0800000000000000
+      internalID: -4365203544029256490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_37
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07565fdfdc763bb30800000000000000
+      internalID: 4301896203495630192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_38
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09052ee662b700d80800000000000000
+      internalID: -8286487909362413424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_39
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fccb7f7aaca8830800000000000000
+      internalID: 4074291635674730296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e6a80427b0ca0c0800000000000000
+      internalID: -4563259737096163770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_41
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ac9afe609c11d40800000000000000
+      internalID: 5553440847152400928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_42
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4e42b07e161c0a0800000000000000
+      internalID: -6863096712183618313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_43
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50627113e610d7d00800000000000000
+      internalID: 971934667363526149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_44
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6d46b599d51e6a0800000000000000
+      internalID: -6421748680408901930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_45
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e85bc6477ceae8d0800000000000000
+      internalID: -2816178619933828896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_46
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cf0d0e27dbc4180800000000000000
+      internalID: -9129714043491124201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_47
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158b68a1620680970800000000000000
+      internalID: 8721326395173025873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_48
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a51ffcde70b7ee0800000000000000
+      internalID: -1262406552569947506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lahar_49
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9085b3dc892985fe0800000000000000
+      internalID: -1200048115718334455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lahar_0: 1765669588405716114
+      Lahar_1: -1484142180189220494
+      Lahar_10: 1005411105208842731
+      Lahar_11: 7077997585983625138
+      Lahar_12: -4064663277647139915
+      Lahar_13: -2916025676866478133
+      Lahar_14: -2341155791909957105
+      Lahar_15: -1476337572626157025
+      Lahar_16: -5957686099982605403
+      Lahar_17: -3714133867421406449
+      Lahar_18: 2993206640239927894
+      Lahar_19: -44774280446482093
+      Lahar_2: 3319660376225575798
+      Lahar_20: -3122772473843067572
+      Lahar_21: 4887474860575892920
+      Lahar_22: -1957480574780462814
+      Lahar_23: 8556194511326198517
+      Lahar_24: -8523501660651181069
+      Lahar_25: -5301180773128554575
+      Lahar_26: -8985228746159755898
+      Lahar_27: -1630123345892014988
+      Lahar_28: -3516391504798395288
+      Lahar_29: -8333920008539498102
+      Lahar_3: -5132590415703453017
+      Lahar_30: 6004045900396923293
+      Lahar_31: 443298030496474438
+      Lahar_32: -6677348515737954123
+      Lahar_33: 3654583097941361420
+      Lahar_34: 4248565750120865072
+      Lahar_35: -8879481421939164131
+      Lahar_36: -4365203544029256490
+      Lahar_37: 4301896203495630192
+      Lahar_38: -8286487909362413424
+      Lahar_39: 4074291635674730296
+      Lahar_4: 6781425709823522902
+      Lahar_40: -4563259737096163770
+      Lahar_41: 5553440847152400928
+      Lahar_42: -6863096712183618313
+      Lahar_43: 971934667363526149
+      Lahar_44: -6421748680408901930
+      Lahar_45: -2816178619933828896
+      Lahar_46: -9129714043491124201
+      Lahar_47: 8721326395173025873
+      Lahar_48: -1262406552569947506
+      Lahar_49: -1200048115718334455
+      Lahar_5: -5183253129790559954
+      Lahar_6: 3523301359487638717
+      Lahar_7: -3766040005390572725
+      Lahar_8: -6216806623497611882
+      Lahar_9: 2876916796824455298
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

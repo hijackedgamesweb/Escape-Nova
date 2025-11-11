@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: c4f4d3b324eae084bb62807cf59e57fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6087812442637709819
+    second: Teide_0
+  - first:
+      213: -4039297776187341227
+    second: Teide_1
+  - first:
+      213: -3228092092464923888
+    second: Teide_2
+  - first:
+      213: -1373708641436247380
+    second: Teide_3
+  - first:
+      213: 7418846715646854237
+    second: Teide_4
+  - first:
+      213: 7217562859717249910
+    second: Teide_5
+  - first:
+      213: -2484053089319564349
+    second: Teide_6
+  - first:
+      213: 6732212171893541549
+    second: Teide_7
+  - first:
+      213: 6099053097221861411
+    second: Teide_8
+  - first:
+      213: -4123492361773452240
+    second: Teide_9
+  - first:
+      213: -1271899472071081541
+    second: Teide_10
+  - first:
+      213: 7591993829432467751
+    second: Teide_11
+  - first:
+      213: -439606296743200964
+    second: Teide_12
+  - first:
+      213: 4797157836032821795
+    second: Teide_13
+  - first:
+      213: 1645707916926216322
+    second: Teide_14
+  - first:
+      213: -2903421833047759257
+    second: Teide_15
+  - first:
+      213: -6961254283347613919
+    second: Teide_16
+  - first:
+      213: -6740747690181943155
+    second: Teide_17
+  - first:
+      213: 4893909725678969824
+    second: Teide_18
+  - first:
+      213: 9123306369782679532
+    second: Teide_19
+  - first:
+      213: -2077203134990411988
+    second: Teide_20
+  - first:
+      213: -6976992962183580341
+    second: Teide_21
+  - first:
+      213: -5071898430919448001
+    second: Teide_22
+  - first:
+      213: -1828853415850283679
+    second: Teide_23
+  - first:
+      213: -6420395932033437893
+    second: Teide_24
+  - first:
+      213: 6022448364927262905
+    second: Teide_25
+  - first:
+      213: 2346706523900820976
+    second: Teide_26
+  - first:
+      213: -1848426929455855882
+    second: Teide_27
+  - first:
+      213: 5069860797271085659
+    second: Teide_28
+  - first:
+      213: -1487426242837395279
+    second: Teide_29
+  - first:
+      213: -6031564269915050891
+    second: Teide_30
+  - first:
+      213: 2773109421925273893
+    second: Teide_31
+  - first:
+      213: -810614943368436132
+    second: Teide_32
+  - first:
+      213: -134839057308071544
+    second: Teide_33
+  - first:
+      213: -513647896906998894
+    second: Teide_34
+  - first:
+      213: 8671496280587729913
+    second: Teide_35
+  - first:
+      213: -4367364467938716099
+    second: Teide_36
+  - first:
+      213: 8543878164038694152
+    second: Teide_37
+  - first:
+      213: 5577032702789852303
+    second: Teide_38
+  - first:
+      213: 2458728303540455102
+    second: Teide_39
+  - first:
+      213: -7943860592187307700
+    second: Teide_40
+  - first:
+      213: 8932681443034966869
+    second: Teide_41
+  - first:
+      213: -3831500093554708230
+    second: Teide_42
+  - first:
+      213: -3386749869542203917
+    second: Teide_43
+  - first:
+      213: -4589927718943173600
+    second: Teide_44
+  - first:
+      213: -3119278944117552036
+    second: Teide_45
+  - first:
+      213: -1801561887185006582
+    second: Teide_46
+  - first:
+      213: -7922747508804775458
+    second: Teide_47
+  - first:
+      213: 2689106404551973263
+    second: Teide_48
+  - first:
+      213: -5320031557185598780
+    second: Teide_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Teide_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e406986deb38ba0800000000000000
+      internalID: -6087812442637709819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556045cd21881f7c0800000000000000
+      internalID: -4039297776187341227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b716658538333d0800000000000000
+      internalID: -3228092092464923888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caade42d44b9fece0800000000000000
+      internalID: -1373708641436247380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d544439f7c905f660800000000000000
+      internalID: 7418846715646854237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bcf7d3e2fe92460800000000000000
+      internalID: 7217562859717249910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_6
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb45e750eed68dd0800000000000000
+      internalID: -2484053089319564349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa86423d4f9d6d50800000000000000
+      internalID: 6732212171893541549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320b72e4a7034a450800000000000000
+      internalID: 6099053097221861411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034f47e4b8966c6c0800000000000000
+      internalID: -4123492361773452240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb142314b2e495ee0800000000000000
+      internalID: -1271899472071081541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721a74ce92e2c5960800000000000000
+      internalID: 7591993829432467751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37b899f66436e9f0800000000000000
+      internalID: -439606296743200964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ac73ca2ade29240800000000000000
+      internalID: 4797157836032821795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2886f6091aab6d610800000000000000
+      internalID: 1645707916926216322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7662310d939f4b7d0800000000000000
+      internalID: -2903421833047759257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12726e19c18a46f90800000000000000
+      internalID: -6961254283347613919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80ab2690bd0472a0800000000000000
+      internalID: -6740747690181943155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_18
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3ace967f8aae340800000000000000
+      internalID: 4893909725678969824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce784f35ece7c9e70800000000000000
+      internalID: 9123306369782679532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27919411ca4c23e0800000000000000
+      internalID: -2077203134990411988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45b5a8ddddbc2f90800000000000000
+      internalID: -6976992962183580341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a6f28cf3ffc99b0800000000000000
+      internalID: -5071898430919448001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16debf9028b9e96e0800000000000000
+      internalID: -1828853415850283679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_24
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fa8c1aaeb26e6a0800000000000000
+      internalID: -6420395932033437893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b02f9d21e8049350800000000000000
+      internalID: 6022448364927262905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_26
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd333d662d219020800000000000000
+      internalID: 2346706523900820976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6848440811956e0800000000000000
+      internalID: -1848426929455855882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_28
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52950aa883cb5640800000000000000
+      internalID: 5069860797271085659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8451e76b99b5be0800000000000000
+      internalID: -1487426242837395279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c66cbc0449b4ca0800000000000000
+      internalID: -6031564269915050891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5211521a3501c7620800000000000000
+      internalID: 2773109421925273893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56a6eaf00e10c4f0800000000000000
+      internalID: -810614943368436132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889cd4f7794f02ef0800000000000000
+      internalID: -134839057308071544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_34
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b5b3d85f72fd8f0800000000000000
+      internalID: -513647896906998894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb7d837ce7575870800000000000000
+      internalID: 8671496280587729913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_36
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3699dbd7210463c0800000000000000
+      internalID: -4367364467938716099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8053ebb3ce3f19670800000000000000
+      internalID: 8543878164038694152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c968ed1b9956d40800000000000000
+      internalID: 5577032702789852303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb64abb7d582f1220800000000000000
+      internalID: 2458728303540455102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49837931ecb1c190800000000000000
+      internalID: -7943860592187307700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ba2dfe17247fb70800000000000000
+      internalID: 8932681443034966869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_42
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0bbce07f6c3dac0800000000000000
+      internalID: -3831500093554708230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd16daffe8dff0d0800000000000000
+      internalID: -3386749869542203917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_44
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0245cafde0d4d40c0800000000000000
+      internalID: -4589927718943173600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c8484b35816b4d0800000000000000
+      internalID: -3119278944117552036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_46
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00947932019ff6e0800000000000000
+      internalID: -1801561887185006582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_47
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed194940e1fbc0290800000000000000
+      internalID: -7922747508804775458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_48
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f895c860700a15520800000000000000
+      internalID: 2689106404551973263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teide_49
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca85184c737b26b0800000000000000
+      internalID: -5320031557185598780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Teide_0: -6087812442637709819
+      Teide_1: -4039297776187341227
+      Teide_10: -1271899472071081541
+      Teide_11: 7591993829432467751
+      Teide_12: -439606296743200964
+      Teide_13: 4797157836032821795
+      Teide_14: 1645707916926216322
+      Teide_15: -2903421833047759257
+      Teide_16: -6961254283347613919
+      Teide_17: -6740747690181943155
+      Teide_18: 4893909725678969824
+      Teide_19: 9123306369782679532
+      Teide_2: -3228092092464923888
+      Teide_20: -2077203134990411988
+      Teide_21: -6976992962183580341
+      Teide_22: -5071898430919448001
+      Teide_23: -1828853415850283679
+      Teide_24: -6420395932033437893
+      Teide_25: 6022448364927262905
+      Teide_26: 2346706523900820976
+      Teide_27: -1848426929455855882
+      Teide_28: 5069860797271085659
+      Teide_29: -1487426242837395279
+      Teide_3: -1373708641436247380
+      Teide_30: -6031564269915050891
+      Teide_31: 2773109421925273893
+      Teide_32: -810614943368436132
+      Teide_33: -134839057308071544
+      Teide_34: -513647896906998894
+      Teide_35: 8671496280587729913
+      Teide_36: -4367364467938716099
+      Teide_37: 8543878164038694152
+      Teide_38: 5577032702789852303
+      Teide_39: 2458728303540455102
+      Teide_4: 7418846715646854237
+      Teide_40: -7943860592187307700
+      Teide_41: 8932681443034966869
+      Teide_42: -3831500093554708230
+      Teide_43: -3386749869542203917
+      Teide_44: -4589927718943173600
+      Teide_45: -3119278944117552036
+      Teide_46: -1801561887185006582
+      Teide_47: -7922747508804775458
+      Teide_48: 2689106404551973263
+      Teide_49: -5320031557185598780
+      Teide_5: 7217562859717249910
+      Teide_6: -2484053089319564349
+      Teide_7: 6732212171893541549
+      Teide_8: 6099053097221861411
+      Teide_9: -4123492361773452240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

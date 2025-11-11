@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 6032bbd763bab3a4e94866392205cd05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1121215930053453493
+    second: Litosidera_0
+  - first:
+      213: 1502169266522099562
+    second: Litosidera_1
+  - first:
+      213: -6904269255386697848
+    second: Litosidera_2
+  - first:
+      213: -2499496263093085336
+    second: Litosidera_3
+  - first:
+      213: 4418314644879799521
+    second: Litosidera_4
+  - first:
+      213: -1927292232676311355
+    second: Litosidera_5
+  - first:
+      213: -8754381471854383988
+    second: Litosidera_6
+  - first:
+      213: -9032012603461799133
+    second: Litosidera_7
+  - first:
+      213: 73033959538231814
+    second: Litosidera_8
+  - first:
+      213: 2454541516864904840
+    second: Litosidera_9
+  - first:
+      213: 9140501492071247715
+    second: Litosidera_10
+  - first:
+      213: -3703170816841835115
+    second: Litosidera_11
+  - first:
+      213: 2534692447233708097
+    second: Litosidera_12
+  - first:
+      213: 4867507290030018579
+    second: Litosidera_13
+  - first:
+      213: -4281218457916355159
+    second: Litosidera_14
+  - first:
+      213: 45060529770208066
+    second: Litosidera_15
+  - first:
+      213: -4895140639780332456
+    second: Litosidera_16
+  - first:
+      213: 7870045865710227082
+    second: Litosidera_17
+  - first:
+      213: -3202451613830357144
+    second: Litosidera_18
+  - first:
+      213: 931492200019973002
+    second: Litosidera_19
+  - first:
+      213: 2935971965234278109
+    second: Litosidera_20
+  - first:
+      213: 8268001304229100675
+    second: Litosidera_21
+  - first:
+      213: 2508803323968290800
+    second: Litosidera_22
+  - first:
+      213: -5395110555827541543
+    second: Litosidera_23
+  - first:
+      213: 5485900160768788186
+    second: Litosidera_24
+  - first:
+      213: 3114724120072918203
+    second: Litosidera_25
+  - first:
+      213: -8723530241365649410
+    second: Litosidera_26
+  - first:
+      213: -2831734180607215367
+    second: Litosidera_27
+  - first:
+      213: 4526731615265045746
+    second: Litosidera_28
+  - first:
+      213: 4165239354661821254
+    second: Litosidera_29
+  - first:
+      213: -8298412768868742036
+    second: Litosidera_30
+  - first:
+      213: 5140608210103677994
+    second: Litosidera_31
+  - first:
+      213: 6086402821997072664
+    second: Litosidera_32
+  - first:
+      213: -3168306631380071044
+    second: Litosidera_33
+  - first:
+      213: 1892013316916492370
+    second: Litosidera_34
+  - first:
+      213: 1888818763008509377
+    second: Litosidera_35
+  - first:
+      213: -296925038281243623
+    second: Litosidera_36
+  - first:
+      213: 5463827622025753373
+    second: Litosidera_37
+  - first:
+      213: 5785878251312821015
+    second: Litosidera_38
+  - first:
+      213: 1213200210343374061
+    second: Litosidera_39
+  - first:
+      213: -8306079348172139810
+    second: Litosidera_40
+  - first:
+      213: 490019949769561702
+    second: Litosidera_41
+  - first:
+      213: 3200183529022057794
+    second: Litosidera_42
+  - first:
+      213: -7134376791450921732
+    second: Litosidera_43
+  - first:
+      213: -1135558135330766391
+    second: Litosidera_44
+  - first:
+      213: 3667508076038662766
+    second: Litosidera_45
+  - first:
+      213: 3184466768141683548
+    second: Litosidera_46
+  - first:
+      213: -1409736434107308774
+    second: Litosidera_47
+  - first:
+      213: 4228935298862252496
+    second: Litosidera_48
+  - first:
+      213: 8894295601517079398
+    second: Litosidera_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Litosidera_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6685ba2fb5f8f00800000000000000
+      internalID: 1121215930053453493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f0f833df6c8d410800000000000000
+      internalID: 1502169266522099562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f660f41bb1f20a0800000000000000
+      internalID: -6904269255386697848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b9be04461005dd0800000000000000
+      internalID: -2499496263093085336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_4
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e477f1a2c1015d30800000000000000
+      internalID: 4418314644879799521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce75f4fce1e045e0800000000000000
+      internalID: -1927292232676311355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_6
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cabdd1f60328680800000000000000
+      internalID: -8754381471854383988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323fecb0468d7a280800000000000000
+      internalID: -9032012603461799133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_8
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a01decff7730100800000000000000
+      internalID: 73033959538231814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_9
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e5e2f3188401220800000000000000
+      internalID: 2454541516864904840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fa5d7bda599de70800000000000000
+      internalID: 9140501492071247715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d9c8723c1bb9cc0800000000000000
+      internalID: -3703170816841835115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_12
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1401b34f9590d2320800000000000000
+      internalID: 2534692447233708097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3101dd3571cdc8340800000000000000
+      internalID: 4867507290030018579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9adcc02de7e0694c0800000000000000
+      internalID: -4281218457916355159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b1856205610a000800000000000000
+      internalID: 45060529770208066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_16
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c90501687f01cb0800000000000000
+      internalID: -4895140639780332456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e80bf7405083d60800000000000000
+      internalID: 7870045865710227082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_18
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fd34b793b9e83d0800000000000000
+      internalID: -3202451613830357144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_19
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83dc3d78335dec00800000000000000
+      internalID: 931492200019973002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde6b4a62faaeb820800000000000000
+      internalID: 2935971965234278109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cba056167ddb270800000000000000
+      internalID: 8268001304229100675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_22
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fff278b45f01d220800000000000000
+      internalID: 2508803323968290800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d960f3b887b025b0800000000000000
+      internalID: -5395110555827541543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_24
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6c1e37125d12c40800000000000000
+      internalID: 5485900160768788186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_25
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4994ea519b93b20800000000000000
+      internalID: 3114724120072918203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_26
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7d508f67bcfe680800000000000000
+      internalID: -8723530241365649410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8339214c8a3b8d0800000000000000
+      internalID: -2831734180607215367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_28
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc3761ab6e22de30800000000000000
+      internalID: 4526731615265045746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_29
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b581bef17edc930800000000000000
+      internalID: 4165239354661821254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c4308bd8d16dc80800000000000000
+      internalID: -8298412768868742036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24bfa45eeb175740800000000000000
+      internalID: 5140608210103677994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_32
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81112159e1f377450800000000000000
+      internalID: 6086402821997072664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d8319b7e9e704d0800000000000000
+      internalID: -3168306631380071044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_34
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258bd116618c14a10800000000000000
+      internalID: 1892013316916492370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_35
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5073658ae663a10800000000000000
+      internalID: 1888818763008509377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_36
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914c358304c11ebf0800000000000000
+      internalID: -296925038281243623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13ffcc064a63db40800000000000000
+      internalID: 5463827622025753373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_38
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713b82b5d919b4050800000000000000
+      internalID: 5785878251312821015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_39
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec22fad92726d010800000000000000
+      internalID: 1213200210343374061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2ddff17d0eabc80800000000000000
+      internalID: -8306079348172139810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_41
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6669ede4c86ecc600800000000000000
+      internalID: 490019949769561702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_42
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d6a6fd6f5596c20800000000000000
+      internalID: 3200183529022057794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_43
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4d6c39b1a9dfc90800000000000000
+      internalID: -7134376791450921732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_44
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c10ec174efad30f0800000000000000
+      internalID: -1135558135330766391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_45
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a2923f92b95e230800000000000000
+      internalID: 3667508076038662766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_46
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b0f1257af713c20800000000000000
+      internalID: 3184466768141683548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15ab1aae2c9f6ce0800000000000000
+      internalID: -1409736434107308774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_48
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d18bca9f3230ba30800000000000000
+      internalID: 4228935298862252496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Litosidera_49
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66baebfb9b2ee6b70800000000000000
+      internalID: 8894295601517079398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Litosidera_0: 1121215930053453493
+      Litosidera_1: 1502169266522099562
+      Litosidera_10: 9140501492071247715
+      Litosidera_11: -3703170816841835115
+      Litosidera_12: 2534692447233708097
+      Litosidera_13: 4867507290030018579
+      Litosidera_14: -4281218457916355159
+      Litosidera_15: 45060529770208066
+      Litosidera_16: -4895140639780332456
+      Litosidera_17: 7870045865710227082
+      Litosidera_18: -3202451613830357144
+      Litosidera_19: 931492200019973002
+      Litosidera_2: -6904269255386697848
+      Litosidera_20: 2935971965234278109
+      Litosidera_21: 8268001304229100675
+      Litosidera_22: 2508803323968290800
+      Litosidera_23: -5395110555827541543
+      Litosidera_24: 5485900160768788186
+      Litosidera_25: 3114724120072918203
+      Litosidera_26: -8723530241365649410
+      Litosidera_27: -2831734180607215367
+      Litosidera_28: 4526731615265045746
+      Litosidera_29: 4165239354661821254
+      Litosidera_3: -2499496263093085336
+      Litosidera_30: -8298412768868742036
+      Litosidera_31: 5140608210103677994
+      Litosidera_32: 6086402821997072664
+      Litosidera_33: -3168306631380071044
+      Litosidera_34: 1892013316916492370
+      Litosidera_35: 1888818763008509377
+      Litosidera_36: -296925038281243623
+      Litosidera_37: 5463827622025753373
+      Litosidera_38: 5785878251312821015
+      Litosidera_39: 1213200210343374061
+      Litosidera_4: 4418314644879799521
+      Litosidera_40: -8306079348172139810
+      Litosidera_41: 490019949769561702
+      Litosidera_42: 3200183529022057794
+      Litosidera_43: -7134376791450921732
+      Litosidera_44: -1135558135330766391
+      Litosidera_45: 3667508076038662766
+      Litosidera_46: 3184466768141683548
+      Litosidera_47: -1409736434107308774
+      Litosidera_48: 4228935298862252496
+      Litosidera_49: 8894295601517079398
+      Litosidera_5: -1927292232676311355
+      Litosidera_6: -8754381471854383988
+      Litosidera_7: -9032012603461799133
+      Litosidera_8: 73033959538231814
+      Litosidera_9: 2454541516864904840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

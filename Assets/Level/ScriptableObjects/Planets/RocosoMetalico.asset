@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RocosoMetalico
   m_EditorClassIdentifier: 
   constructibleName: Litosidera
-  sprite: {fileID: 21300000, guid: 6886db5fac1305b4d82a95ca744de0c7, type: 3}
+  sprite: {fileID: 1892013316916492370, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
   timeToBuild: 15
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gelido
   m_EditorClassIdentifier: 
   constructibleName: Kados
-  sprite: {fileID: 21300000, guid: bdbbd192cba22224396018366d28f41e, type: 3}
+  sprite: {fileID: 5952062814256451239, guid: 3008f88173d7fae42a6a68a5c9332908, type: 3}
   timeToBuild: 5
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

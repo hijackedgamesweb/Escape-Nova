@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 5a02eccae3fe4ab4e8909edf6afeed36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2915556048162738929
+    second: Permafrost_0
+  - first:
+      213: 4391627193259832310
+    second: Permafrost_1
+  - first:
+      213: 6908906807985130821
+    second: Permafrost_2
+  - first:
+      213: 5200502971864859764
+    second: Permafrost_3
+  - first:
+      213: -444507531291557235
+    second: Permafrost_4
+  - first:
+      213: -8122047682339877451
+    second: Permafrost_5
+  - first:
+      213: -7987540907408660120
+    second: Permafrost_6
+  - first:
+      213: -13854221613868961
+    second: Permafrost_7
+  - first:
+      213: -4733331197504948042
+    second: Permafrost_8
+  - first:
+      213: -1950468845552950196
+    second: Permafrost_9
+  - first:
+      213: -5611718826102292219
+    second: Permafrost_10
+  - first:
+      213: 6788059654000330486
+    second: Permafrost_11
+  - first:
+      213: -8314144417893660034
+    second: Permafrost_12
+  - first:
+      213: 3033308530183923709
+    second: Permafrost_13
+  - first:
+      213: 5500549360284498865
+    second: Permafrost_14
+  - first:
+      213: 885368154877136735
+    second: Permafrost_15
+  - first:
+      213: -3515546631126180050
+    second: Permafrost_16
+  - first:
+      213: 3920551121699100594
+    second: Permafrost_17
+  - first:
+      213: 4891475601050660896
+    second: Permafrost_18
+  - first:
+      213: 8132190940807168510
+    second: Permafrost_19
+  - first:
+      213: -2801771385497706037
+    second: Permafrost_20
+  - first:
+      213: 1164472055433125958
+    second: Permafrost_21
+  - first:
+      213: 962089371508643305
+    second: Permafrost_22
+  - first:
+      213: -8850791957219748927
+    second: Permafrost_23
+  - first:
+      213: 5137043471091168043
+    second: Permafrost_24
+  - first:
+      213: -9141202109038217597
+    second: Permafrost_25
+  - first:
+      213: 4901285852221172016
+    second: Permafrost_26
+  - first:
+      213: -5575321547746901357
+    second: Permafrost_27
+  - first:
+      213: -6854234960610683311
+    second: Permafrost_28
+  - first:
+      213: 3808156806853335816
+    second: Permafrost_29
+  - first:
+      213: -2127040113453450096
+    second: Permafrost_30
+  - first:
+      213: 6544539484203250852
+    second: Permafrost_31
+  - first:
+      213: 2563786388084127867
+    second: Permafrost_32
+  - first:
+      213: 8305746299639502948
+    second: Permafrost_33
+  - first:
+      213: -6429672638148732133
+    second: Permafrost_34
+  - first:
+      213: -4440479788419807117
+    second: Permafrost_35
+  - first:
+      213: 668703654601293420
+    second: Permafrost_36
+  - first:
+      213: 8506394887018502874
+    second: Permafrost_37
+  - first:
+      213: -1202595330711607206
+    second: Permafrost_38
+  - first:
+      213: 1598921947781793113
+    second: Permafrost_39
+  - first:
+      213: 8028716412420445000
+    second: Permafrost_40
+  - first:
+      213: 6136988702340186278
+    second: Permafrost_41
+  - first:
+      213: 5585470179645662854
+    second: Permafrost_42
+  - first:
+      213: 7706546432379240023
+    second: Permafrost_43
+  - first:
+      213: 8515515193759765373
+    second: Permafrost_44
+  - first:
+      213: 3341025161139973656
+    second: Permafrost_45
+  - first:
+      213: -2726146451358165468
+    second: Permafrost_46
+  - first:
+      213: 7391469969847276827
+    second: Permafrost_47
+  - first:
+      213: 6928183124798698393
+    second: Permafrost_48
+  - first:
+      213: -5089335958544303576
+    second: Permafrost_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Permafrost_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0da482b83dd987d0800000000000000
+      internalID: -2915556048162738929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3b2381aa132fc30800000000000000
+      internalID: 4391627193259832310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d4b3c032e51ef50800000000000000
+      internalID: 6908906807985130821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4744e5346e5eb2840800000000000000
+      internalID: 5200502971864859764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82816161cac4d9f0800000000000000
+      internalID: -444507531291557235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdc8555aa0b84f80800000000000000
+      internalID: -8122047682339877451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_6
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 649
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86961015ddd862190800000000000000
+      internalID: -7987540907408660120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 649
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58d01aa8a7cecff0800000000000000
+      internalID: -13854221613868961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 649
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b87178aa54df4eb0800000000000000
+      internalID: -4733331197504948042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_9
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 649
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44a9534bea8ee4e0800000000000000
+      internalID: -1950468845552950196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 499
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5010dc6b57b2f12b0800000000000000
+      internalID: -5611718826102292219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 499
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6c9d66a48043e50800000000000000
+      internalID: 6788059654000330486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ac620c3b93e9c80800000000000000
+      internalID: -8314144417893660034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df766cb790a781a20800000000000000
+      internalID: 3033308530183923709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb72410080e55c40800000000000000
+      internalID: 5500549360284498865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f05ee55a5794c00800000000000000
+      internalID: 885368154877136735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f176417f4463fc0800000000000000
+      internalID: -3515546631126180050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b752a42978986630800000000000000
+      internalID: 3920551121699100594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_18
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0207d1c942302e340800000000000000
+      internalID: 4891475601050660896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_19
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 499
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1067013985bd070800000000000000
+      internalID: 8132190940807168510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc12e81f4cb1e19d0800000000000000
+      internalID: -2801771385497706037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640e5fe2a29092010800000000000000
+      internalID: 1164472055433125958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e593fe9f270a5d00800000000000000
+      internalID: 962089371508643305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 349
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c35801cb9bab2580800000000000000
+      internalID: -8850791957219748927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_24
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 349
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23f02ad1d17a4740800000000000000
+      internalID: 5137043471091168043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 349
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386b9be2d1de32180800000000000000
+      internalID: -9141202109038217597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_26
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 349
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0396a44b38dd40440800000000000000
+      internalID: 4901285852221172016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39207f5779a70a2b0800000000000000
+      internalID: -5575321547746901357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_28
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1569cbd5e9dd0e0a0800000000000000
+      internalID: -6854234960610683311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b9a79707a49d430800000000000000
+      internalID: 3808156806853335816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_30
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 199
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cb99e494c3b72e0800000000000000
+      internalID: -2127040113453450096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_31
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 199
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4f3768cffd2da50800000000000000
+      internalID: 6544539484203250852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 199
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b787cbde226649320800000000000000
+      internalID: 2563786388084127867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4681788f040f34370800000000000000
+      internalID: 8305746299639502948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_34
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b981d2dc635c6a0800000000000000
+      internalID: -6429672638148732133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3788feab82f3062c0800000000000000
+      internalID: -4440479788419807117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_36
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ef3805e66b74900800000000000000
+      internalID: 668703654601293420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adadfe7b419cc0670800000000000000
+      internalID: 8506394887018502874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5824681be58f4fe0800000000000000
+      internalID: -1202595330711607206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9550c114a03803610800000000000000
+      internalID: 1598921947781793113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8435ba40a0bbb6f60800000000000000
+      internalID: 8028716412420445000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a08299a5b6fa2550800000000000000
+      internalID: 6136988702340186278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_42
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68621590983938d40800000000000000
+      internalID: 5585470179645662854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_43
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 49
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75eb403362723fa60800000000000000
+      internalID: 7706546432379240023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 49
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d731e7b93ff2d2670800000000000000
+      internalID: 8515515193759765373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_45
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 49
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ee36bbea4bd5e20800000000000000
+      internalID: 3341025161139973656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_46
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426da190f38ca2ad0800000000000000
+      internalID: -2726146451358165468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_47
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 49
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15d6b0a6c6c39660800000000000000
+      internalID: 7391469969847276827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_48
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9937b7c48d9d52060800000000000000
+      internalID: 6928183124798698393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Permafrost_49
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a385009eb0f59b0800000000000000
+      internalID: -5089335958544303576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Permafrost_0: -2915556048162738929
+      Permafrost_1: 4391627193259832310
+      Permafrost_10: -5611718826102292219
+      Permafrost_11: 6788059654000330486
+      Permafrost_12: -8314144417893660034
+      Permafrost_13: 3033308530183923709
+      Permafrost_14: 5500549360284498865
+      Permafrost_15: 885368154877136735
+      Permafrost_16: -3515546631126180050
+      Permafrost_17: 3920551121699100594
+      Permafrost_18: 4891475601050660896
+      Permafrost_19: 8132190940807168510
+      Permafrost_2: 6908906807985130821
+      Permafrost_20: -2801771385497706037
+      Permafrost_21: 1164472055433125958
+      Permafrost_22: 962089371508643305
+      Permafrost_23: -8850791957219748927
+      Permafrost_24: 5137043471091168043
+      Permafrost_25: -9141202109038217597
+      Permafrost_26: 4901285852221172016
+      Permafrost_27: -5575321547746901357
+      Permafrost_28: -6854234960610683311
+      Permafrost_29: 3808156806853335816
+      Permafrost_3: 5200502971864859764
+      Permafrost_30: -2127040113453450096
+      Permafrost_31: 6544539484203250852
+      Permafrost_32: 2563786388084127867
+      Permafrost_33: 8305746299639502948
+      Permafrost_34: -6429672638148732133
+      Permafrost_35: -4440479788419807117
+      Permafrost_36: 668703654601293420
+      Permafrost_37: 8506394887018502874
+      Permafrost_38: -1202595330711607206
+      Permafrost_39: 1598921947781793113
+      Permafrost_4: -444507531291557235
+      Permafrost_40: 8028716412420445000
+      Permafrost_41: 6136988702340186278
+      Permafrost_42: 5585470179645662854
+      Permafrost_43: 7706546432379240023
+      Permafrost_44: 8515515193759765373
+      Permafrost_45: 3341025161139973656
+      Permafrost_46: -2726146451358165468
+      Permafrost_47: 7391469969847276827
+      Permafrost_48: 6928183124798698393
+      Permafrost_49: -5089335958544303576
+      Permafrost_5: -8122047682339877451
+      Permafrost_6: -7987540907408660120
+      Permafrost_7: -13854221613868961
+      Permafrost_8: -4733331197504948042
+      Permafrost_9: -1950468845552950196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
