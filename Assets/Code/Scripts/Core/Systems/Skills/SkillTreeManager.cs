@@ -68,7 +68,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void InitializeImmediate()
         {
-            Debug.Log("SkillTreeManager: Starting immediate initialization...");
+            ////Debug.Log("SkillTreeManager: Starting immediate initialization...");
 
             // Intentar obtener servicios inmediatamente
             TryGetServices();
@@ -79,7 +79,7 @@ namespace Code.Scripts.Core.Systems.Skills
             }
             else
             {
-                Debug.Log("SkillTreeManager: Services not ready, starting rapid retry...");
+                ////Debug.Log("SkillTreeManager: Services not ready, starting rapid retry...");
                 InvokeRepeating(nameof(TryCompleteInitialization), 0.05f, 0.05f);
             }
         }
@@ -109,12 +109,12 @@ namespace Code.Scripts.Core.Systems.Skills
                 try
                 {
                     gameTime = ServiceLocator.GetService<IGameTime>();
-                    if (gameTime != null)
-                        Debug.Log("SkillTreeManager: Successfully acquired IGameTime");
+                    //if (gameTime != null)
+                        //Debug.Log("SkillTreeManager: Successfully acquired IGameTime");
                 }
                 catch (Exception e)
                 {
-                    Debug.Log($"SkillTreeManager: IGameTime not available: {e.Message}");
+                    //Debug.Log($"SkillTreeManager: IGameTime not available: {e.Message}");
                 }
             }
 
@@ -124,8 +124,8 @@ namespace Code.Scripts.Core.Systems.Skills
                 try
                 {
                     storageSystem = ServiceLocator.GetService<StorageSystem>();
-                    if (storageSystem != null)
-                        Debug.Log("SkillTreeManager: Successfully acquired StorageSystem");
+                    //if (storageSystem != null)
+                        //Debug.Log("SkillTreeManager: Successfully acquired StorageSystem");
                 }
                 catch (Exception e)
                 {
@@ -152,7 +152,7 @@ namespace Code.Scripts.Core.Systems.Skills
             AddSkillPoints(initialSkillPoints);
             isInitialized = true;
 
-            Debug.Log("SkillTreeManager: Initialization completed successfully");
+            //Debug.Log("SkillTreeManager: Initialization completed successfully");
         }
 
         private void InitializeStorageModifiers()
@@ -168,7 +168,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (!isInitialized) return;
 
-            Debug.Log("SkillTreeManager: Cycle completed - Current: " + currentCycle + ", Last counted: " + lastCycleCounted);
+            //Debug.Log("SkillTreeManager: Cycle completed - Current: " + currentCycle + ", Last counted: " + lastCycleCounted);
 
             int cyclesPassed = currentCycle - lastCycleCounted;
 
@@ -186,12 +186,12 @@ namespace Code.Scripts.Core.Systems.Skills
                 if (pointsToAdd > 0)
                 {
                     AddSkillPoints(pointsToAdd);
-                    Debug.Log("SkillTreeManager: Gained " + pointsToAdd + " skill points after " + cyclesPassed + " cycles (from cycle " + lastCycleCounted + " to " + currentCycle + ")");
+                    //Debug.Log("SkillTreeManager: Gained " + pointsToAdd + " skill points after " + cyclesPassed + " cycles (from cycle " + lastCycleCounted + " to " + currentCycle + ")");
                 }
                 else
                 {
                     int cyclesUntilNextPoint = cyclesPerPoint - (currentCycle % cyclesPerPoint);
-                    Debug.Log("SkillTreeManager: " + cyclesUntilNextPoint + " cycles until next point");
+                    //Debug.Log("SkillTreeManager: " + cyclesUntilNextPoint + " cycles until next point");
                 }
 
                 lastCycleCounted = currentCycle;
@@ -244,31 +244,31 @@ namespace Code.Scripts.Core.Systems.Skills
 
             availableSkillPoints += points;
             OnSkillPointsChanged?.Invoke(availableSkillPoints);
-            Debug.Log("SkillTreeManager: Skill points updated: " + availableSkillPoints);
+            //Debug.Log("SkillTreeManager: Skill points updated: " + availableSkillPoints);
         }
 
         public bool CanPurchaseSkill(SkillNodeData nodeData)
         {
             if (!isInitialized)
             {
-                Debug.LogWarning("SkillTreeManager not initialized");
+                //Debug.LogWarning("SkillTreeManager not initialized");
                 return false;
             }
             if (nodeData == null)
             {
-                Debug.LogWarning("NodeData is null");
+                //Debug.LogWarning("NodeData is null");
                 return false;
             }
             if (!nodeStates.ContainsKey(nodeData.name))
             {
-                Debug.LogWarning($"Node state not found for: {nodeData.name}");
+                //Debug.LogWarning($"Node state not found for: {nodeData.name}");
                 return false;
             }
 
             var state = nodeStates[nodeData.name];
             bool canPurchase = state.isUnlocked && !state.isPurchased && availableSkillPoints >= nodeData.skillPointCost;
 
-            Debug.Log($"CanPurchase {nodeData.nodeName}: Unlocked={state.isUnlocked}, Purchased={state.isPurchased}, Points={availableSkillPoints}, Cost={nodeData.skillPointCost}, Result={canPurchase}");
+            //Debug.Log($"CanPurchase {nodeData.nodeName}: Unlocked={state.isUnlocked}, Purchased={state.isPurchased}, Points={availableSkillPoints}, Cost={nodeData.skillPointCost}, Result={canPurchase}");
 
             return canPurchase;
         }
@@ -277,7 +277,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (!CanPurchaseSkill(nodeData))
             {
-                Debug.LogWarning($"Cannot purchase node: {nodeData.nodeName}");
+                //Debug.LogWarning($"Cannot purchase node: {nodeData.nodeName}");
                 return false;
             }
 
@@ -290,7 +290,7 @@ namespace Code.Scripts.Core.Systems.Skills
             OnSkillPurchased?.Invoke(nodeData);
             OnSkillPointsChanged?.Invoke(availableSkillPoints);
 
-            Debug.Log($"Successfully purchased node: {nodeData.nodeName}. Remaining points: {availableSkillPoints}");
+            //Debug.Log($"Successfully purchased node: {nodeData.nodeName}. Remaining points: {availableSkillPoints}");
 
             return true;
         }
@@ -304,11 +304,11 @@ namespace Code.Scripts.Core.Systems.Skills
                 try
                 {
                     improvement.ApplyImprovement();
-                    Debug.Log($"Applied improvement from node: {nodeData.nodeName}");
+                    //Debug.Log($"Applied improvement from node: {nodeData.nodeName}");
                 }
                 catch (System.Exception e)
                 {
-                    Debug.LogError($"Error applying improvement for node {nodeData.nodeName}: {e.Message}");
+                    //Debug.LogError($"Error applying improvement for node {nodeData.nodeName}: {e.Message}");
                 }
             }
         }
@@ -337,7 +337,7 @@ namespace Code.Scripts.Core.Systems.Skills
                     {
                         state.isUnlocked = true;
                         anyUnlocked = true;
-                        Debug.Log($"Node {node.nodeName} unlocked");
+                        //Debug.Log($"Node {node.nodeName} unlocked");
                     }
                 }
             }
@@ -389,11 +389,11 @@ namespace Code.Scripts.Core.Systems.Skills
         [ContextMenu("Debug Node States")]
         public void DebugNodeStates()
         {
-            Debug.Log($"=== SKILL TREE MANAGER DEBUG ===");
-            Debug.Log($"Initialized: {isInitialized}");
-            Debug.Log($"Available Skill Points: {availableSkillPoints}");
-            Debug.Log($"Total Nodes: {nodeStates.Count}");
-            Debug.Log($"Constellations: {constellations?.Count ?? 0}");
+            //Debug.Log($"=== SKILL TREE MANAGER DEBUG ===");
+            //Debug.Log($"Initialized: {isInitialized}");
+            //Debug.Log($"Available Skill Points: {availableSkillPoints}");
+            //Debug.Log($"Total Nodes: {nodeStates.Count}");
+            //Debug.Log($"Constellations: {constellations?.Count ?? 0}");
 
             if (constellations != null)
             {
@@ -401,7 +401,7 @@ namespace Code.Scripts.Core.Systems.Skills
                 {
                     if (constellation?.nodes == null) continue;
 
-                    Debug.Log($"Constellation: {constellation.constellationName} - Nodes: {constellation.nodes.Count}");
+                    //Debug.Log($"Constellation: {constellation.constellationName} - Nodes: {constellation.nodes.Count}");
 
                     foreach (var node in constellation.nodes)
                     {
@@ -410,11 +410,11 @@ namespace Code.Scripts.Core.Systems.Skills
                         if (nodeStates.ContainsKey(node.name))
                         {
                             var state = nodeStates[node.name];
-                            Debug.Log($"  Node: {node.nodeName} - Purchased: {state.isPurchased} - Unlocked: {state.isUnlocked}");
+                            //Debug.Log($"  Node: {node.nodeName} - Purchased: {state.isPurchased} - Unlocked: {state.isUnlocked}");
                         }
                         else
                         {
-                            Debug.Log($"  Node: {node.nodeName} - NO STATE FOUND");
+                            //Debug.Log($"  Node: {node.nodeName} - NO STATE FOUND");
                         }
                     }
                 }

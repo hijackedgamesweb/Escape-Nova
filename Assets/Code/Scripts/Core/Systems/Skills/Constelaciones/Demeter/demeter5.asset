@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: demeter5
   m_EditorClassIdentifier: 
   nodeName: DEMETER 5
-  description: Todos tus planetas producen el doble de recursos.
-  skillPointCost: 3
+  description: "Los planetas de un mismo tipo en una \xF3rbita generan un 50% m\xE1s
+    de recursos."
+  skillPointCost: 2
   prerequisiteNodes:
-  - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
-  positionInConstellation: {x: -3, y: 2}
+  - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
+  - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
+  positionInConstellation: {x: 0, y: 2}
   improvements:
-  - rid: -2
+  - rid: 162876391971094612
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 162876391971094612
+      type: {class: ProductionOnSamePlanetTogetherImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        productionBonusPercent: 50

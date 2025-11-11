@@ -1,0 +1,65 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using Code.Scripts.Core.Systems.Crafting;
+using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Patterns.ServiceLocator;
+using UnityEngine.EventSystems;
+
+namespace Code.Scripts.UI.Crafting 
+{
+    public class CraftingRecipeUIItem : MonoBehaviour, IPointerClickHandler
+    {
+        [Header("UI References")]
+        [SerializeField] private Image itemIcon;
+        [SerializeField] private TextMeshProUGUI itemName;
+        [SerializeField] private GameObject selectionHighlight;
+        [SerializeField] private GameObject canCraftHighlight;
+
+        private CraftingRecipe _recipe;
+        private CraftingPanelUI _panelUI;
+        private CraftingSystem _craftingSystem;
+        private StorageSystem _storageSystem;
+
+        public void Initialize(CraftingRecipe recipe, CraftingPanelUI panel, CraftingSystem system)
+        {
+            _recipe = recipe;
+            _panelUI = panel;
+            _craftingSystem = system;
+            
+            _storageSystem = ServiceLocator.GetService<StorageSystem>(); 
+
+            itemName.text = _recipe.displayName;
+            itemIcon.sprite = _recipe.icon; 
+
+
+            SetSelected(false);
+            UpdateCraftableStatus();
+        }
+
+        public void UpdateCraftableStatus()
+        {
+            if (_craftingSystem == null || _recipe == null) return;
+
+            bool canCraft = _craftingSystem.CanCraft(_recipe.recipeId);
+
+            if (canCraftHighlight != null)
+            {
+                canCraftHighlight.SetActive(canCraft);
+            }
+        }
+
+        public void SetSelected(bool isSelected)
+        {
+            if (selectionHighlight != null)
+            {
+                selectionHighlight.SetActive(isSelected);
+            }
+        }
+        
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            _panelUI.SelectRecipe(_recipe);
+        }
+    }
+}

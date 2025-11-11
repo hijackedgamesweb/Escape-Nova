@@ -43,11 +43,9 @@ namespace Code.Scripts.UI.Windows
            // _civilizationIcon.sprite = _currentCivilization.CivilizationData.CivilizationIcon;
             _leaderSprite.sprite = _currentCivilization.CivilizationData.LeaderPortrait;
            // _leaderNameText.text = _currentCivilization.LeaderName;
-           Debug.Log(_hungerSlider.value);
-            _hungerSlider.value = _currentCivilization.CivilizationState.HungerLevel;
-            Debug.Log(_hungerSlider.value);
-            _angerSlider.value = _currentCivilization.CivilizationState.AngerLevel;
-            _militaryPowerSlider.value = _currentCivilization.CivilizationState.MilitaryPowerLevel;
+            _hungerSlider.value = _currentCivilization.CivilizationState.FriendlinessLevel;
+            _angerSlider.value = _currentCivilization.CivilizationState.DependencyLevel;
+            _militaryPowerSlider.value = _currentCivilization.CivilizationState.InterestLevel;
         }
     }
 }

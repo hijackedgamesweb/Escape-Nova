@@ -17,10 +17,13 @@ MonoBehaviour:
   Description: Build a Leyev Planet
   Objectives:
   - rid: 967674831443067134
+  - rid: -2
   Reward: Las gracias
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 967674831443067134
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:

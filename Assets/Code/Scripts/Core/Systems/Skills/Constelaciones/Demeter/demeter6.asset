@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
+  m_Name: demeter6
+  m_EditorClassIdentifier: 
+  nodeName: DEMETER 6
+  description: "Todos tus planetas producen un 50% m\xE1s de recursos."
+  skillPointCost: 2
+  prerequisiteNodes:
+  - {fileID: 11400000, guid: d5a808fe21d3ad34f8bf9de3ca3078c1, type: 2}
+  positionInConstellation: {x: -2, y: 1}
+  improvements:
+  - rid: 162876391971094610
+  references:
+    version: 2
+    RefIds:
+    - rid: 162876391971094610
+      type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        productionBonusPercent: 50

@@ -2,15 +2,17 @@ namespace Code.Scripts.Core.Entity
 {
     public class EntityState
     {
-        public float HungerLevel { get; set; }
-        public float AngerLevel { get; set; }
-        public float MilitaryPowerLevel { get; set; }
+        public float FriendlinessLevel { get; set; }
+        public float DependencyLevel { get; set; }
+        public float InterestLevel { get; set; }
+        public float TrustLevel { get; set; }
         
         public EntityState(EntitySO entitySO)
         {
-            HungerLevel = entitySO.baseHunger;
-            AngerLevel = entitySO.baseAnger;
-            MilitaryPowerLevel = entitySO.baseMilitaryPower;
+            FriendlinessLevel = entitySO.baseFriendship;
+            DependencyLevel = entitySO.baseDependency;
+            InterestLevel = entitySO.baseInterest;
+            TrustLevel = entitySO.baseTrust;
         }
         
     }

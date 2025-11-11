@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Level/Scenes/CreditsScene.unity.meta
 guid: e0cee43f4256ef54288f659c9359f006
+========
+guid: 269de2d2d9e0cc44086e45071c80fe8a
+folderAsset: yes
+>>>>>>>> main:Assets/Code/Scripts/Audio.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

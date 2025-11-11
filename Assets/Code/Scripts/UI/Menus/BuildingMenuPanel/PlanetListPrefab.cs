@@ -1,4 +1,9 @@
+using System;
+using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.Systems.Resources;
+using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
+using Code.Scripts.Patterns.ServiceLocator;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,7 +20,49 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
         PlanetListInitializer _parentInitializer;
         public bool IsSelected { get; set; }
+        public bool IsAffordable { get; set; }
         public PlanetDataSO PlanetData { get; set; }
+        private IGameTime _gameTime;
+        private StorageSystem _storageSystem;
+        
+        private int[] _costPerResource;
+        private float totalDiscount;
+        
+        private void Start()
+        {
+            _gameTime = ServiceLocator.GetService<IGameTime>();
+            _gameTime.OnCycleCompleted += UpdatePrefabAvailability;
+        }
+
+        private void UpdatePrefabAvailability(int obj = 0)
+        {
+            bool canAfford = true;
+            for (int i = 0; i < PlanetData.buildCostAmounts.Length; i++)
+            {
+                ResourceType resource = PlanetData.buildCostResources[i].Type; 
+                var cost = PlanetData.buildCostAmounts[i];
+                if (_storageSystem.HasResource(resource, cost))
+                {
+                    continue;
+                }
+                else
+                {
+                    canAfford = false;
+                    break;
+                }
+            }
+
+            if (!IsSelected)
+            {
+                _planetSprite.color = canAfford ? Color.white : Color.red;
+                IsAffordable = canAfford;
+            } else if (IsSelected && !canAfford)
+            {
+                IsSelected = false;
+                _planetSprite.color = Color.red;
+                IsAffordable = false;
+            }
+        }
 
         public void Initialize(PlanetDataSO planetData, PlanetListInitializer parentInitializer)
         {
@@ -24,6 +71,8 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
             _planetSprite.sprite = planetData.sprite;
             _planetName.text = planetData.constructibleName;
             
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            
             var production = "";
             for (int i = 0; i < planetData.producibleResources.Count; i++)
             {
@@ -31,13 +80,30 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 if (i < planetData.producibleResources.Count - 1)
                     production += ", \n";
             }
+            
+            UpdatePrefabAvailability();
             _planetProductionResource.text = production;
-            _resourceCostInitializer.Initialize(planetData);
+            
+            _costPerResource = planetData.buildCostAmounts;
+            _resourceCostInitializer.Initialize(planetData, _costPerResource);
+        }
+        
+        public void UpdateCosts(float discountPercentage)
+        {
+            totalDiscount += discountPercentage;
+            int[] newCosts = new int[_costPerResource.Length];
+            for (int i = 0; i < _costPerResource.Length; i++)
+            {
+                float discountedCost = _costPerResource[i] * (1 - totalDiscount / 100f);
+                newCosts[i] = Mathf.CeilToInt(discountedCost);
+            }
+            _resourceCostInitializer.UpdateCosts(newCosts);
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            _parentInitializer.SetCurrentPlanetItem(this);
+            if(IsAffordable)
+                _parentInitializer.SetCurrentPlanetItem(this);
         }
 
         public void UpdateVisualState()
