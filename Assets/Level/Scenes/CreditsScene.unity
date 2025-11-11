@@ -511,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: efda5fcf7ff46f747911d48b82467f43, type: 3}
+  musicClip: {fileID: 8300000, guid: 1e21683310d465c40a6de875b467fc2f, type: 3}
   atTime: 0
   loop: 0
   fadeDuration: 1
@@ -802,7 +802,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &47420061
 MonoBehaviour:
@@ -841,7 +841,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &47420063
 MonoBehaviour:
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &47420070
 MonoBehaviour:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &47420077
 MonoBehaviour:
@@ -1387,7 +1387,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &47420084
 MonoBehaviour:
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 11
   durationOLD: 0
 --- !u!114 &47420108
 MonoBehaviour:
