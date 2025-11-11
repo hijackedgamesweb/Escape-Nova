@@ -1,7 +1,8 @@
 using Code.Scripts.Core.Systems.Civilization.AI;
-using Code.Scripts.Core.Systems.Civilization.AI.Behaviour.Interfaces;
-using Code.Scripts.Core.Systems.Civilization.ScriptableObjects;
+using Code.Scripts.Core.Systems.Diplomacy.AI;
+using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Patterns.Command;
+using UnityEngine;
 
 namespace Code.Scripts.Core.Entity.Civilization
 {

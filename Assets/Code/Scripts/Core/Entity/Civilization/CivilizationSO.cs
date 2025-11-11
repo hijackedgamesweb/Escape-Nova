@@ -1,14 +1,12 @@
-using Code.Scripts.Core.Entity;
-using Code.Scripts.Core.Systems.Civilization.AI.Behaviour.Interfaces;
-using Code.Scripts.Player;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace Code.Scripts.Core.Systems.Civilization.ScriptableObjects
+namespace Code.Scripts.Core.Entity.Civilization
 {
     public enum AIType
     {
         TestController,
+        AkkiBehaviour,
+        HalxiBehaviour,
     }
     public class CivilizationSO : EntitySO
     {

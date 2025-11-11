@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Akki
   civLeaderName: Akki No
-  baseHunger: 15
-  baseAnger: 23
-  baseMilitaryPower: 2
+  baseFriendship: 0.5
+  baseDependency: 0.5
+  baseInterest: 1
+  baseTrust: 0.5
   civilizationDescription: No hay quien viva
   civilizationIcon: {fileID: 21300000, guid: afcc21aaa520e9743b7c6ddd2ee73409, type: 3}
   civilizationFlag: {fileID: 0}
-  aiController: 0
+  aiController: 1
   angerTolerance: 0
   leaderPortrait: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}

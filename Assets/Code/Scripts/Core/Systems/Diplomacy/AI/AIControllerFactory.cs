@@ -1,9 +1,10 @@
-using Code.Scripts.Core.Systems.Civilization.AI.Behaviour.Interfaces;
-using Code.Scripts.Core.Systems.Civilization.ScriptableObjects;
+using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.TestController;
+using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 using Code.Scripts.Patterns.Command;
 
-namespace Code.Scripts.Core.Systems.Civilization.AI
+namespace Code.Scripts.Core.Systems.Diplomacy.AI
 {
     public static class AIControllerFactory
     {
@@ -11,6 +12,8 @@ namespace Code.Scripts.Core.Systems.Civilization.AI
         {
             return type switch {
                 AIType.TestController => new TestController(civ, invoker),
+                AIType.AkkiBehaviour => new AkkiBehaviour(civ, invoker),
+                AIType.HalxiBehaviour => new HalxiBehaviour(civ, invoker),
                 _ => null
             };
         }

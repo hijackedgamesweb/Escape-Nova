@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Halxi
   civLeaderName: Halxinomus
-  baseHunger: 12
-  baseAnger: 12
-  baseMilitaryPower: 12
+  baseFriendship: 0.2
+  baseDependency: 0.8
+  baseInterest: 0.4
+  baseTrust: 0.3
   civilizationDescription: No se bro, buscalo tu
   civilizationIcon: {fileID: 21300000, guid: e128b01dab70e7a498a78577123c2db0, type: 3}
   civilizationFlag: {fileID: 0}
-  aiController: 0
+  aiController: 2
   angerTolerance: 10
   leaderPortrait: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
