@@ -20,6 +20,8 @@ namespace Code.Scripts.UI.Menus.States.GameStates
             _mainMenuScreen.PlayButton.onClick.AddListener(() =>
             {
                 _stateManager.SetState(new InGameState(_stateManager));
+                AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
+                AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
             });
         }
 

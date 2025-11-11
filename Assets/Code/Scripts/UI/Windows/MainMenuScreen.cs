@@ -16,6 +16,7 @@ namespace Code.Scripts.UI.Windows
 
         private void OnEnable()
         {
+            AudioManager.Instance.PlayMusic("MainMenuMusic"); //LLamada al Singleton del AudioManager para reproducir la musica del menu principal
             StartCoroutine(SetInitialFocus());
         }
         private IEnumerator SetInitialFocus()
