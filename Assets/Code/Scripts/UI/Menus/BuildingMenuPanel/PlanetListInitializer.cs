@@ -2,32 +2,67 @@ using System.Collections.Generic;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
+using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.Core.Systems.Planets;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 {
     public class PlanetListInitializer : MonoBehaviour
     {
-        [SerializeField] private List<PlanetDataSO> _planetDataSOs;
+        [SerializeField] private List<PlanetDataSO> _planetDataSOs; 
         [SerializeField] private PlanetListPrefab _planetListPrefab;
         
         private PlanetListPrefab _currentPlanetItem;
+        private PlanetUnlockManager _unlockManager;
         
+        private Dictionary<string, PlanetListPrefab> _createdPlanets = new Dictionary<string, PlanetListPrefab>();
+
         private void Start()
         {
+            try
+            {
+                _unlockManager = ServiceLocator.GetService<PlanetUnlockManager>();
+            }
+            catch (System.Exception e)
+            {
+                return;
+            }
+
             foreach (var planetData in _planetDataSOs)
             {
-                PlanetListPrefab planetItem = Instantiate(_planetListPrefab, transform);
-                planetItem.Initialize(planetData, this);
+                AddNewPlanet(planetData);
             }
             
-            ResearchEvents.OnNewPlanetResearched += AddNewPlanet;
+            var alreadyUnlockedPlanets = _unlockManager.GetUnlockedPlanets();
+            foreach (var planetData in alreadyUnlockedPlanets)
+            {
+                AddNewPlanet(planetData);
+            }
+
+            _unlockManager.OnPlanetAddedToConstructionList += AddNewPlanet;
+        }
+
+        private void OnDestroy()
+        {
+            if (_unlockManager != null)
+            {
+                _unlockManager.OnPlanetAddedToConstructionList -= AddNewPlanet;
+            }
         }
 
         private void AddNewPlanet(PlanetDataSO obj)
         {
+            if (obj == null) return;
+            
+            if (_createdPlanets.ContainsKey(obj.constructibleName))
+            {
+                return;
+            }
+            
             PlanetListPrefab planetItem = Instantiate(_planetListPrefab, transform);
             planetItem.Initialize(obj, this);
-            _planetDataSOs.Add(obj);
+            
+            _createdPlanets.Add(obj.constructibleName, planetItem);
         }
 
         public void SetCurrentPlanetItem(PlanetListPrefab planetItem)

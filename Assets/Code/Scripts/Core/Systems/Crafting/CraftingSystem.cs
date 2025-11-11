@@ -8,6 +8,7 @@ using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Time;
+using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 
 namespace Code.Scripts.Core.Systems.Crafting
 {
@@ -75,7 +76,6 @@ namespace Code.Scripts.Core.Systems.Crafting
             if (_unlockedRecipeIds.Contains(recipeId) && !_viewedRecipeIds.Contains(recipeId))
             {
                 _viewedRecipeIds.Add(recipeId);
-                Debug.Log($"Receta marcada como vista: {recipeId}");
             }
         }
 
@@ -90,17 +90,14 @@ namespace Code.Scripts.Core.Systems.Crafting
         {
             if (!_recipeDatabase.ContainsKey(recipeId))
             {
-                Debug.LogWarning($"Se intentó desbloquear una receta que no existe: {recipeId}");
                 return;
             }
             if (_unlockedRecipeIds.Contains(recipeId))
             {
-                Debug.Log($"La receta {recipeId} ya estaba desbloqueada.");
                 return;
             }
             _unlockedRecipeIds.Add(recipeId);
             OnRecipeUnlocked?.Invoke(recipeId);
-            Debug.Log($"Receta desbloqueada: {recipeId}");
         }
 
         public bool IsRecipeUnlocked(string recipeId)
@@ -118,7 +115,6 @@ namespace Code.Scripts.Core.Systems.Crafting
             if (!IsRecipeUnlocked(recipeId)) return false;
             if (IsAnyCraftingInProgress())
             {
-                Debug.Log("CanCraft es 'false' porque ya hay un crafteo en progreso.");
                 return false;
             }
             if (_storageSystem == null) return false;
@@ -126,7 +122,6 @@ namespace Code.Scripts.Core.Systems.Crafting
             var recipe = _recipeDatabase[recipeId];
             if (recipe == null) return false;
     
-            // --- DEBUG DE INGREDIENTES ---
             foreach (var ingredient in recipe.ingredients)
             {
                 int requiredAmount = ingredient.amount * amount;
@@ -134,7 +129,6 @@ namespace Code.Scripts.Core.Systems.Crafting
                 {
                     if (!_storageSystem.HasInventoryItem(ingredient.itemName, requiredAmount))
                     {
-                        Debug.Log($"CanCraft es 'false' por falta de item-ingrediente: {ingredient.itemName}");
                         return false;
                     }
                 }
@@ -142,34 +136,27 @@ namespace Code.Scripts.Core.Systems.Crafting
                 {
                     if (!_storageSystem.HasResource(ingredient.resourceType, requiredAmount))
                     {
-                        Debug.Log($"CanCraft es 'false' por falta de recurso-ingrediente: {ingredient.resourceType}");
                         return false;
                     }
                 }
             }
-            // ----------------------------
 
             var output = recipe.output;
             int outputAmount = output.amount * amount;
 
             if (!_itemDataLookup.TryGetValue(output.itemName, out ItemData itemData))
             {
-                Debug.LogError($"CanCraft falló: No se encontró ItemData para {output.itemName} en _itemDataLookup"); 
                 return false; 
             }
     
             int maxStack = itemData.maxStack;
             int currentAmount = _storageSystem.GetInventoryItemQuantity(output.itemName);
 
-            // --- DEBUG DE MAXSTACK ---
             if (currentAmount + outputAmount > maxStack)
             {
-                Debug.Log($"CanCraft es 'false' por MAXSTACK. current({currentAmount}) + output({outputAmount}) > max({maxStack})");
                 return false; 
             }
-            // -------------------------
 
-            Debug.Log("CanCraft es 'true'. ¡Todo en orden!");
             return true;
         }
 
@@ -177,7 +164,6 @@ namespace Code.Scripts.Core.Systems.Crafting
         {
             if (!CanCraft(recipeId, amount))
             {
-                Debug.LogWarning($"Intento de craftear {recipeId} sin cumplir requisitos.");
                 return false;
             }
 
@@ -212,7 +198,6 @@ namespace Code.Scripts.Core.Systems.Crafting
             Action updateAction = () => UpdateCraftingProgress(UPDATE_INTERVAL);
             _currentCraftingTimer = _timeScheduler.ScheduleRepeating(UPDATE_INTERVAL, updateAction);
 
-            Debug.Log($"Se ha iniciado el crafteo de: {recipe.displayName}");
             OnCraftingStarted?.Invoke(recipeId);
             return true;
         }
@@ -256,9 +241,17 @@ namespace Code.Scripts.Core.Systems.Crafting
             _currentCraftingTimer = null;
             _currentCraftingData = null;
 
-            Debug.Log($"Se ha completado el crafteo de: {recipe.displayName}!");
             OnItemCrafted?.Invoke(recipeId, output.amount * amount);
             OnCraftingCompleted?.Invoke(recipeId);
+            ItemData craftedItemData = GetItemData(output.itemName);
+
+            if (craftedItemData != null && craftedItemData.itemToUnlock != null)
+            {
+                if (craftedItemData.itemToUnlock is PlanetDataSO)
+                {
+                    ResearchEvents.OnNewPlanetResearched?.Invoke(craftedItemData.itemToUnlock as PlanetDataSO);
+                }
+            }
             CraftingEvents.OnItemCrafted?.Invoke(GetItemData(output.itemName));
         }
         

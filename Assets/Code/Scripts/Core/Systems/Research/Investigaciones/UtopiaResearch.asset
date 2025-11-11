@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
+  m_Name: UtopiaResearch
+  m_EditorClassIdentifier: 
+  researchId: utopia_research
+  category: 0
+  displayName: Utopia
+  description: Utopia
+  icon: {fileID: 0}
+  prerequisites: []
+  researchTimeInSeconds: 2
+  resourceCosts: []
+  rewards:
+  - rid: 5265271182149550160
+  tier: 1
+  treePosition: {x: 0, y: 0}
+  unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271182149550160
+      type: {class: RewardUnlockPlanet, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        planetData: {fileID: 11400000, guid: 15bd4d4f3526e1b4a96df7acaba95422, type: 2}

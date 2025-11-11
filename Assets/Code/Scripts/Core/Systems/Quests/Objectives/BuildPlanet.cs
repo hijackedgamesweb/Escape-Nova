@@ -19,8 +19,7 @@ namespace Code.Scripts.Core.Systems.Quests.Objectives
 
         private void OnConstructibleCreated(ConstructibleDataSO obj)
         {
-            Debug.Log($"Constructible Created: {obj.name}, Required: {requiredConstructible.name}");
-            if(obj.name == requiredConstructible.name)
+            if(obj.constructibleName == requiredConstructible.constructibleName)
             {
                 isCompleted = true;
                 UnregisterEvents();

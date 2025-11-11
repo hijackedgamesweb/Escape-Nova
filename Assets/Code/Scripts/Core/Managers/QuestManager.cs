@@ -11,6 +11,8 @@ namespace Code.Scripts.Core.Managers
     {
         [SerializeField] private List<QuestData> allQuests;
         private List<QuestInstance> activeQuests = new();
+        
+        public event Action<QuestInstance> OnQuestCompleted;
 
         private void Awake()
         {
@@ -28,23 +30,24 @@ namespace Code.Scripts.Core.Managers
             }
             else
             {
-                Debug.LogWarning($"Quest with ID {questId} not found.");
             }
         }
 
         private void Start()
         {
-            StartQuest("pruebaMision");
         }
 
 
         private void Update()
         {
-            foreach (var q in activeQuests)
+            for (int i = activeQuests.Count - 1; i >= 0; i--)
             {
-                if(!q.isCompleted)
+                var q = activeQuests[i];
+                if (q.isCompleted) continue;
+                q.CheckCompletion();
+                if (q.isCompleted)
                 {
-                    q.CheckCompletion();
+                    OnQuestCompleted?.Invoke(q);
                 }
             }
         }

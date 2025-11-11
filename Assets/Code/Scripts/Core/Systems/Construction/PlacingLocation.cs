@@ -8,12 +8,32 @@ public class PlacingLocation : MonoBehaviour
     //VARIABLES
 
     [SerializeField] private Button PlacingBtn;
+    [Header("Coordenadas de Ubicación")]
+    public int orbitIndex;
+    public int positionIndex;
+    
+    private PlacingUI _placingUI;
     
     //METODOS
     
     private void Awake()
     {
-        PlacingBtn.onClick.AddListener(Find("PlacingUI").GetComponent<PlacingUI>().PlacingLocationPressed);
+        _placingUI = Find("PlacingUI").GetComponent<PlacingUI>();
+        
+        PlacingBtn.onClick.AddListener(OnLocationPressed);
+    }
+    
+    private void OnLocationPressed()
+    {
+        // Le decimos al PlacingUI DÓNDE hemos hecho clic
+        if (_placingUI != null)
+        {
+            _placingUI.PlacingLocationPressed(orbitIndex, positionIndex);
+        }
+        
+        // Lógica visual (esto se queda igual)
+        gameObject.GetComponent<RawImage>().color = new Color(1, 0, 0, 1f);
+        PlacingBtn.interactable = false;
     }
     
     public void PlacingLocationPressed()
