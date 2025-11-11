@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Metalico
   m_EditorClassIdentifier: 
   constructibleName: Leyev
-  sprite: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  sprite: {fileID: -1283102832548966608, guid: 2b497a5ead828334fa43390cad1d7a09, type: 3}
   timeToBuild: 5
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}

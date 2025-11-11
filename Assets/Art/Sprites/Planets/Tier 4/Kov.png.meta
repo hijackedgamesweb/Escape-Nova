@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: e4ccb77eb56d2f6419116c69b15a5fe8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6212125805387884322
+    second: Kov_0
+  - first:
+      213: 5283986903628429595
+    second: Kov_1
+  - first:
+      213: 7810916047878026598
+    second: Kov_2
+  - first:
+      213: -6038484557908937644
+    second: Kov_3
+  - first:
+      213: -5574640928201531776
+    second: Kov_4
+  - first:
+      213: -7865687599589149540
+    second: Kov_5
+  - first:
+      213: 5976549839406221047
+    second: Kov_6
+  - first:
+      213: -3317232913275419006
+    second: Kov_7
+  - first:
+      213: -1477149293737205142
+    second: Kov_8
+  - first:
+      213: 4583557587344785488
+    second: Kov_9
+  - first:
+      213: 5684370791866754243
+    second: Kov_10
+  - first:
+      213: 2049199553975321256
+    second: Kov_11
+  - first:
+      213: -6540731583244829938
+    second: Kov_12
+  - first:
+      213: 2586638046965493065
+    second: Kov_13
+  - first:
+      213: -4398854439274165713
+    second: Kov_14
+  - first:
+      213: 6025162577209969675
+    second: Kov_15
+  - first:
+      213: 340728502244316605
+    second: Kov_16
+  - first:
+      213: -8689445688068919608
+    second: Kov_17
+  - first:
+      213: -4015536743114158415
+    second: Kov_18
+  - first:
+      213: 4799583388733422139
+    second: Kov_19
+  - first:
+      213: -1231723571600629961
+    second: Kov_20
+  - first:
+      213: 5529061147800814036
+    second: Kov_21
+  - first:
+      213: 2989622136826488579
+    second: Kov_22
+  - first:
+      213: 7462939345221216661
+    second: Kov_23
+  - first:
+      213: 4083218777147335474
+    second: Kov_24
+  - first:
+      213: -3027302260914024362
+    second: Kov_25
+  - first:
+      213: -8317390895725223840
+    second: Kov_26
+  - first:
+      213: -5555627333019846770
+    second: Kov_27
+  - first:
+      213: -5209807948742453415
+    second: Kov_28
+  - first:
+      213: 8104168803154661961
+    second: Kov_29
+  - first:
+      213: -1669843785261741883
+    second: Kov_30
+  - first:
+      213: -635951260146605020
+    second: Kov_31
+  - first:
+      213: -2647991212790302944
+    second: Kov_32
+  - first:
+      213: 914229366094867042
+    second: Kov_33
+  - first:
+      213: -9208156070676826328
+    second: Kov_34
+  - first:
+      213: 9160858531931686059
+    second: Kov_35
+  - first:
+      213: 8550417593112417821
+    second: Kov_36
+  - first:
+      213: -6367943355435390843
+    second: Kov_37
+  - first:
+      213: 558369738103236374
+    second: Kov_38
+  - first:
+      213: 6571193657402968129
+    second: Kov_39
+  - first:
+      213: -4959455682841299830
+    second: Kov_40
+  - first:
+      213: -2034388480405918084
+    second: Kov_41
+  - first:
+      213: -6678861119389643701
+    second: Kov_42
+  - first:
+      213: -5998388950002676840
+    second: Kov_43
+  - first:
+      213: -4555616609443038188
+    second: Kov_44
+  - first:
+      213: -3584714509814914296
+    second: Kov_45
+  - first:
+      213: 8318291077557713231
+    second: Kov_46
+  - first:
+      213: 2067276145874026204
+    second: Kov_47
+  - first:
+      213: -778090957069759086
+    second: Kov_48
+  - first:
+      213: -2615629172392442053
+    second: Kov_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kov_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed851d54e781ac9a0800000000000000
+      internalID: -6212125805387884322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19b694d71e745940800000000000000
+      internalID: 5283986903628429595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665fa24f2c2f56c60800000000000000
+      internalID: 7810916047878026598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_3
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454f720b94ef23ca0800000000000000
+      internalID: -6038484557908937644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e913c8c95e2a2b0800000000000000
+      internalID: -5574640928201531776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c943b486dc677d290800000000000000
+      internalID: -7865687599589149540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_6
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6c930f968f0f250800000000000000
+      internalID: 5976549839406221047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_7
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2860cf6ad32d6f1d0800000000000000
+      internalID: -3317232913275419006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62239a2b8c108be0800000000000000
+      internalID: -1477149293737205142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_9
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0508b3947511c9f30800000000000000
+      internalID: 4583557587344785488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4e2dc3e11f2ee40800000000000000
+      internalID: 5684370791866754243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a286902328307c10800000000000000
+      internalID: 2049199553975321256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b73818747aa35a0800000000000000
+      internalID: -6540731583244829938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d63ef599595e320800000000000000
+      internalID: 2586638046965493065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ac960913124f2c0800000000000000
+      internalID: -4398854439274165713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_15
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc398f07dad9350800000000000000
+      internalID: 6025162577209969675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_16
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db59f1d74c28ab400800000000000000
+      internalID: 340728502244316605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce2a937f23e86780800000000000000
+      internalID: -8689445688068919608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bec62c7b92f548c0800000000000000
+      internalID: -4015536743114158415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_19
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a325ba9ab8b9240800000000000000
+      internalID: 4799583388733422139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fd44500f908eee0800000000000000
+      internalID: -1231723571600629961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_21
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1c418d1db2bbc40800000000000000
+      internalID: 5529061147800814036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307ef266e754d7920800000000000000
+      internalID: 2989622136826488579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599623c4bcfa19760800000000000000
+      internalID: 7462939345221216661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233621018d18aa830800000000000000
+      internalID: 4083218777147335474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_25
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6509b7e02acdcf5d0800000000000000
+      internalID: -3027302260914024362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_26
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060ea3a3c01b29c80800000000000000
+      internalID: -8317390895725223840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_27
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87b6e6206276e2b0800000000000000
+      internalID: -5555627333019846770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_28
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957133bf54b03b7b0800000000000000
+      internalID: -5209807948742453415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94216d7b69ac77070800000000000000
+      internalID: 8104168803154661961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8841dace583d8e0800000000000000
+      internalID: -1669843785261741883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424ef74c2b5ac27f0800000000000000
+      internalID: -635951260146605020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_32
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02737498502704bd0800000000000000
+      internalID: -2647991212790302944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26aa051c3ceffac00800000000000000
+      internalID: 914229366094867042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_34
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82773f237de063080800000000000000
+      internalID: -9208156070676826328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_35
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba405696c48e12f70800000000000000
+      internalID: 9160858531931686059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_36
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1657b6bf7f29a670800000000000000
+      internalID: 8550417593112417821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_37
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588e67dc14580a7a0800000000000000
+      internalID: -6367943355435390843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_38
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617a8f4815abfb700800000000000000
+      internalID: 558369738103236374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_39
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148cdc3d0d1913b50800000000000000
+      internalID: 6571193657402968129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84b3f035597c2bb0800000000000000
+      internalID: -4959455682841299830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_41
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e224aa47664c3e0800000000000000
+      internalID: -2034388480405918084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_42
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ccc92b23bef43a0800000000000000
+      internalID: -6678861119389643701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_43
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b4672e70171cca0800000000000000
+      internalID: -5998388950002676840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_44
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c374594d237c0c0800000000000000
+      internalID: -4555616609443038188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_45
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8032b4d5529804ec0800000000000000
+      internalID: -3584714509814914296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_46
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49f020b9a1807370800000000000000
+      internalID: 8318291077557713231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_47
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdeb577a3b070bc10800000000000000
+      internalID: 2067276145874026204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_48
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dc9e4a56aa335f0800000000000000
+      internalID: -778090957069759086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kov_49
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37466b302b63bbd0800000000000000
+      internalID: -2615629172392442053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kov_0: -6212125805387884322
+      Kov_1: 5283986903628429595
+      Kov_10: 5684370791866754243
+      Kov_11: 2049199553975321256
+      Kov_12: -6540731583244829938
+      Kov_13: 2586638046965493065
+      Kov_14: -4398854439274165713
+      Kov_15: 6025162577209969675
+      Kov_16: 340728502244316605
+      Kov_17: -8689445688068919608
+      Kov_18: -4015536743114158415
+      Kov_19: 4799583388733422139
+      Kov_2: 7810916047878026598
+      Kov_20: -1231723571600629961
+      Kov_21: 5529061147800814036
+      Kov_22: 2989622136826488579
+      Kov_23: 7462939345221216661
+      Kov_24: 4083218777147335474
+      Kov_25: -3027302260914024362
+      Kov_26: -8317390895725223840
+      Kov_27: -5555627333019846770
+      Kov_28: -5209807948742453415
+      Kov_29: 8104168803154661961
+      Kov_3: -6038484557908937644
+      Kov_30: -1669843785261741883
+      Kov_31: -635951260146605020
+      Kov_32: -2647991212790302944
+      Kov_33: 914229366094867042
+      Kov_34: -9208156070676826328
+      Kov_35: 9160858531931686059
+      Kov_36: 8550417593112417821
+      Kov_37: -6367943355435390843
+      Kov_38: 558369738103236374
+      Kov_39: 6571193657402968129
+      Kov_4: -5574640928201531776
+      Kov_40: -4959455682841299830
+      Kov_41: -2034388480405918084
+      Kov_42: -6678861119389643701
+      Kov_43: -5998388950002676840
+      Kov_44: -4555616609443038188
+      Kov_45: -3584714509814914296
+      Kov_46: 8318291077557713231
+      Kov_47: 2067276145874026204
+      Kov_48: -778090957069759086
+      Kov_49: -2615629172392442053
+      Kov_5: -7865687599589149540
+      Kov_6: 5976549839406221047
+      Kov_7: -3317232913275419006
+      Kov_8: -1477149293737205142
+      Kov_9: 4583557587344785488
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

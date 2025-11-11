@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 1a301e8e16a3b474cb10c6cdb5aa6437
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1483640974602868972
+    second: Pompeii_0
+  - first:
+      213: -4598336018999502096
+    second: Pompeii_1
+  - first:
+      213: -2423710175708931478
+    second: Pompeii_2
+  - first:
+      213: -9066899236265172166
+    second: Pompeii_3
+  - first:
+      213: 8821350414264974207
+    second: Pompeii_4
+  - first:
+      213: -557589918442305020
+    second: Pompeii_5
+  - first:
+      213: -6575264178763999345
+    second: Pompeii_6
+  - first:
+      213: 8417465299841112050
+    second: Pompeii_7
+  - first:
+      213: -4464072661995364266
+    second: Pompeii_8
+  - first:
+      213: 4004793697453312969
+    second: Pompeii_9
+  - first:
+      213: -1220594564730313224
+    second: Pompeii_10
+  - first:
+      213: 2444336416869147079
+    second: Pompeii_11
+  - first:
+      213: -2243866017611431708
+    second: Pompeii_12
+  - first:
+      213: -8673479760612457309
+    second: Pompeii_13
+  - first:
+      213: -1009169076107705524
+    second: Pompeii_14
+  - first:
+      213: -2062016100108043973
+    second: Pompeii_15
+  - first:
+      213: -3232804385960592675
+    second: Pompeii_16
+  - first:
+      213: -746171678394324582
+    second: Pompeii_17
+  - first:
+      213: 9082095679315227238
+    second: Pompeii_18
+  - first:
+      213: -3437782579810163613
+    second: Pompeii_19
+  - first:
+      213: -1729424035944749621
+    second: Pompeii_20
+  - first:
+      213: 6482270698016012054
+    second: Pompeii_21
+  - first:
+      213: -4785741495523400394
+    second: Pompeii_22
+  - first:
+      213: -2021691110120365532
+    second: Pompeii_23
+  - first:
+      213: 1776320855059369650
+    second: Pompeii_24
+  - first:
+      213: -5183868305571118522
+    second: Pompeii_25
+  - first:
+      213: 3543221440765075119
+    second: Pompeii_26
+  - first:
+      213: -6773349393894843249
+    second: Pompeii_27
+  - first:
+      213: 8197394238902298421
+    second: Pompeii_28
+  - first:
+      213: -4139991888600929679
+    second: Pompeii_29
+  - first:
+      213: 4540198445114014016
+    second: Pompeii_30
+  - first:
+      213: 1905181973044459399
+    second: Pompeii_31
+  - first:
+      213: -208492868660208157
+    second: Pompeii_32
+  - first:
+      213: -5575504502927964542
+    second: Pompeii_33
+  - first:
+      213: -6536368731935289165
+    second: Pompeii_34
+  - first:
+      213: 8765755368197733793
+    second: Pompeii_35
+  - first:
+      213: -815443378697424837
+    second: Pompeii_36
+  - first:
+      213: 6530259899902475206
+    second: Pompeii_37
+  - first:
+      213: -8047042435474607386
+    second: Pompeii_38
+  - first:
+      213: -8745788561330448992
+    second: Pompeii_39
+  - first:
+      213: 9002480225266916042
+    second: Pompeii_40
+  - first:
+      213: 5636341676329390856
+    second: Pompeii_41
+  - first:
+      213: 2527646651536257417
+    second: Pompeii_42
+  - first:
+      213: -1568650057887569335
+    second: Pompeii_43
+  - first:
+      213: -8340931417581925267
+    second: Pompeii_44
+  - first:
+      213: -6562506003590306699
+    second: Pompeii_45
+  - first:
+      213: 7587879831946814962
+    second: Pompeii_46
+  - first:
+      213: -4888571258704630484
+    second: Pompeii_47
+  - first:
+      213: -5615169336521149701
+    second: Pompeii_48
+  - first:
+      213: 8249035383401987721
+    second: Pompeii_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pompeii_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce81b611b93f69410800000000000000
+      internalID: 1483640974602868972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa96a5f0cd6f20c0800000000000000
+      internalID: -4598336018999502096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a9e52cf604d5ed0800000000000000
+      internalID: -2423710175708931478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a336720ee27eb2280800000000000000
+      internalID: -9066899236265172166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b3289d67bbb6a70800000000000000
+      internalID: 8821350414264974207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a48e46cea0348f0800000000000000
+      internalID: -557589918442305020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87db601118ffb4a0800000000000000
+      internalID: -6575264178763999345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7d432b718d0d470800000000000000
+      internalID: 8417465299841112050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650eb3ac09d6c02c0800000000000000
+      internalID: -4464072661995364266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_9
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb8d6746a2e39730800000000000000
+      internalID: 4004793697453312969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f52a7ad5b39f0fe0800000000000000
+      internalID: -1220594564730313224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1690f35070ce120800000000000000
+      internalID: 2444336416869147079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e043b8debf2cd0e0800000000000000
+      internalID: -2243866017611431708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4872e9c1c91a780800000000000000
+      internalID: -8673479760612457309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_14
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c438a447216bef1f0800000000000000
+      internalID: -1009169076107705524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_15
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b397cef284f3263e0800000000000000
+      internalID: -2062016100108043973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda7e720a85c223d0800000000000000
+      internalID: -3232804385960592675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_17
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9969d7dfc015a5f0800000000000000
+      internalID: -746171678394324582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_18
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662b1bdb6e51a0e70800000000000000
+      internalID: 9082095679315227238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_19
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364a36335fa8a40d0800000000000000
+      internalID: -3437782579810163613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5ad7f800adff7e0800000000000000
+      internalID: -1729424035944749621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617fa25fad6a5f950800000000000000
+      internalID: 6482270698016012054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6352b7c3771a59db0800000000000000
+      internalID: -4785741495523400394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422e5bf85a281f3e0800000000000000
+      internalID: -2021691110120365532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_24
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be8ee40862c6a810800000000000000
+      internalID: 1776320855059369650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_25
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642070ccd333f08b0800000000000000
+      internalID: -5183868305571118522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_26
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae9959a02d0c2130800000000000000
+      internalID: 3543221440765075119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_27
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c5a4dec9a3002a0800000000000000
+      internalID: -6773349393894843249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_28
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537ea9de0aef2c170800000000000000
+      internalID: 8197394238902298421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_29
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a61fadf4bcb86c0800000000000000
+      internalID: -4139991888600929679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0493dca4e66020f30800000000000000
+      internalID: 4540198445114014016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787facf09e0907a10800000000000000
+      internalID: 1905181973044459399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_32
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed5e4137d84b1df0800000000000000
+      internalID: -208492868660208157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_33
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2864363e134df92b0800000000000000
+      internalID: -5575504502927964542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_34
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0d60cf4472a45a0800000000000000
+      internalID: -6536368731935289165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad366d701836a970800000000000000
+      internalID: 8765755368197733793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_36
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30bb464196fea4f0800000000000000
+      internalID: -815443378697424837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb3aa8b7c420aa50800000000000000
+      internalID: 6530259899902475206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_38
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2ba0d3a89235090800000000000000
+      internalID: -8047042435474607386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_39
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5593104a7b0a680800000000000000
+      internalID: -8745788561330448992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca5384511c3fec70800000000000000
+      internalID: 9002480225266916042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803d75a54ee483e40800000000000000
+      internalID: 5636341676329390856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981368ecc31041320800000000000000
+      internalID: 2527646651536257417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_43
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a27ba55190b3ae0800000000000000
+      internalID: -1568650057887569335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_44
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c422f511f0f3c80800000000000000
+      internalID: -8340931417581925267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_45
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574a1a33f8b4de4a0800000000000000
+      internalID: -6562506003590306699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f56a8d31809d4960800000000000000
+      internalID: 7587879831946814962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_47
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2de9b9475e482cb0800000000000000
+      internalID: -4888571258704630484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_48
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2bdf62d39e212b0800000000000000
+      internalID: -5615169336521149701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompeii_49
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ebd47d9f57a7270800000000000000
+      internalID: 8249035383401987721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pompeii_0: 1483640974602868972
+      Pompeii_1: -4598336018999502096
+      Pompeii_10: -1220594564730313224
+      Pompeii_11: 2444336416869147079
+      Pompeii_12: -2243866017611431708
+      Pompeii_13: -8673479760612457309
+      Pompeii_14: -1009169076107705524
+      Pompeii_15: -2062016100108043973
+      Pompeii_16: -3232804385960592675
+      Pompeii_17: -746171678394324582
+      Pompeii_18: 9082095679315227238
+      Pompeii_19: -3437782579810163613
+      Pompeii_2: -2423710175708931478
+      Pompeii_20: -1729424035944749621
+      Pompeii_21: 6482270698016012054
+      Pompeii_22: -4785741495523400394
+      Pompeii_23: -2021691110120365532
+      Pompeii_24: 1776320855059369650
+      Pompeii_25: -5183868305571118522
+      Pompeii_26: 3543221440765075119
+      Pompeii_27: -6773349393894843249
+      Pompeii_28: 8197394238902298421
+      Pompeii_29: -4139991888600929679
+      Pompeii_3: -9066899236265172166
+      Pompeii_30: 4540198445114014016
+      Pompeii_31: 1905181973044459399
+      Pompeii_32: -208492868660208157
+      Pompeii_33: -5575504502927964542
+      Pompeii_34: -6536368731935289165
+      Pompeii_35: 8765755368197733793
+      Pompeii_36: -815443378697424837
+      Pompeii_37: 6530259899902475206
+      Pompeii_38: -8047042435474607386
+      Pompeii_39: -8745788561330448992
+      Pompeii_4: 8821350414264974207
+      Pompeii_40: 9002480225266916042
+      Pompeii_41: 5636341676329390856
+      Pompeii_42: 2527646651536257417
+      Pompeii_43: -1568650057887569335
+      Pompeii_44: -8340931417581925267
+      Pompeii_45: -6562506003590306699
+      Pompeii_46: 7587879831946814962
+      Pompeii_47: -4888571258704630484
+      Pompeii_48: -5615169336521149701
+      Pompeii_49: 8249035383401987721
+      Pompeii_5: -557589918442305020
+      Pompeii_6: -6575264178763999345
+      Pompeii_7: 8417465299841112050
+      Pompeii_8: -4464072661995364266
+      Pompeii_9: 4004793697453312969
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: be5cca90c386fd34599d05347b1248c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3270104525328145908
+    second: Blobi_0
+  - first:
+      213: -728129522250123014
+    second: Blobi_1
+  - first:
+      213: -3443973683624913500
+    second: Blobi_2
+  - first:
+      213: -9069874166917268567
+    second: Blobi_3
+  - first:
+      213: 1698526603560673008
+    second: Blobi_4
+  - first:
+      213: 5833415697890392833
+    second: Blobi_5
+  - first:
+      213: -2407278006368030813
+    second: Blobi_6
+  - first:
+      213: -8623510938874142300
+    second: Blobi_7
+  - first:
+      213: 7414913603190398150
+    second: Blobi_8
+  - first:
+      213: 6532825497653325799
+    second: Blobi_9
+  - first:
+      213: -2244013992935101169
+    second: Blobi_10
+  - first:
+      213: 8276243418568399728
+    second: Blobi_11
+  - first:
+      213: -2474226600603350873
+    second: Blobi_12
+  - first:
+      213: 3592380204957703058
+    second: Blobi_13
+  - first:
+      213: 3845192400663692408
+    second: Blobi_14
+  - first:
+      213: -568879441579356070
+    second: Blobi_15
+  - first:
+      213: 7986497707458503341
+    second: Blobi_16
+  - first:
+      213: 905321489210676682
+    second: Blobi_17
+  - first:
+      213: -1793846316762284411
+    second: Blobi_18
+  - first:
+      213: 2627086603309151470
+    second: Blobi_19
+  - first:
+      213: 6759951853161688077
+    second: Blobi_20
+  - first:
+      213: -6399330330215083848
+    second: Blobi_21
+  - first:
+      213: -4568638941901100767
+    second: Blobi_22
+  - first:
+      213: -3250990110214433989
+    second: Blobi_23
+  - first:
+      213: -4694111933287679806
+    second: Blobi_24
+  - first:
+      213: -7679084974371529878
+    second: Blobi_25
+  - first:
+      213: 7538428606546533294
+    second: Blobi_26
+  - first:
+      213: -4814181795735415179
+    second: Blobi_27
+  - first:
+      213: 1806721281411498494
+    second: Blobi_28
+  - first:
+      213: 6505720329500194646
+    second: Blobi_29
+  - first:
+      213: 6685671023180640947
+    second: Blobi_30
+  - first:
+      213: -1351378540333151159
+    second: Blobi_31
+  - first:
+      213: 8585792785899924001
+    second: Blobi_32
+  - first:
+      213: -8589592481172225336
+    second: Blobi_33
+  - first:
+      213: 3704078517846587104
+    second: Blobi_34
+  - first:
+      213: -808503682884365897
+    second: Blobi_35
+  - first:
+      213: -3604741378266946179
+    second: Blobi_36
+  - first:
+      213: -6170918451319049677
+    second: Blobi_37
+  - first:
+      213: -4042664511618350803
+    second: Blobi_38
+  - first:
+      213: -2900120415904536179
+    second: Blobi_39
+  - first:
+      213: 4686015421101252207
+    second: Blobi_40
+  - first:
+      213: -2957349561473765252
+    second: Blobi_41
+  - first:
+      213: 6716155174778027670
+    second: Blobi_42
+  - first:
+      213: -3157866458468636176
+    second: Blobi_43
+  - first:
+      213: -8192066182518437132
+    second: Blobi_44
+  - first:
+      213: 6109918254785053545
+    second: Blobi_45
+  - first:
+      213: -5649953974029347404
+    second: Blobi_46
+  - first:
+      213: -5198736793814016588
+    second: Blobi_47
+  - first:
+      213: 8670934323904259805
+    second: Blobi_48
+  - first:
+      213: -5462566535351427532
+    second: Blobi_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blobi_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdd4927dbeb16d20800000000000000
+      internalID: 3270104525328145908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af87ecbae0a25e5f0800000000000000
+      internalID: -728129522250123014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a55eb38e2c8430d0800000000000000
+      internalID: -3443973683624913500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_3
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab776bdf75512280800000000000000
+      internalID: -9069874166917268567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fed8ce52f0629710800000000000000
+      internalID: 1698526603560673008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bb1f3aba474f050800000000000000
+      internalID: 5833415697890392833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_6
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afa2d25861a79ed0800000000000000
+      internalID: -2407278006368030813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_7
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a126bb8d72235880800000000000000
+      internalID: -8623510938874142300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc106ed2a017e660800000000000000
+      internalID: 7414913603190398150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_9
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 629
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efad3f7d2249aa50800000000000000
+      internalID: 6532825497653325799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0de818a929abd0e0800000000000000
+      internalID: -2244013992935101169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b1f6e2a8f1bd270800000000000000
+      internalID: 8276243418568399728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a807390408c9add0800000000000000
+      internalID: -2474226600603350873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b16ae53c2bad130800000000000000
+      internalID: 3592380204957703058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874479e9d1edc5530800000000000000
+      internalID: 3845192400663692408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_15
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50d3a4792fea18f0800000000000000
+      internalID: -568879441579356070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_16
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da22984c95db5de60800000000000000
+      internalID: 7986497707458503341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac51eeb0919509c00800000000000000
+      internalID: 905321489210676682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ebdb3774afa17e0800000000000000
+      internalID: -1793846316762284411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_19
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 484
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4fd68c859457420800000000000000
+      internalID: 2627086603309151470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c227a056c20dd50800000000000000
+      internalID: 6759951853161688077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_21
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0952348f20137a0800000000000000
+      internalID: -6399330330215083848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129e7f8861fe890c0800000000000000
+      internalID: -4568638941901100767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b335c5028b922e2d0800000000000000
+      internalID: -3250990110214433989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c83770311a2bdeb0800000000000000
+      internalID: -4694111933287679806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_25
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b9b8eb6e86e6590800000000000000
+      internalID: -7679084974371529878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_26
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab59d990e0ed9860800000000000000
+      internalID: 7538428606546533294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_27
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576d905d927903db0800000000000000
+      internalID: -4814181795735415179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_28
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1cbaade63c21910800000000000000
+      internalID: 1806721281411498494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 339
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65775efbb26f84a50800000000000000
+      internalID: 6505720329500194646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2fdc59f5648cc50800000000000000
+      internalID: 6685671023180640947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c4b52a060fe3de0800000000000000
+      internalID: -1351378540333151159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_32
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a2dae9c0dd62770800000000000000
+      internalID: 8585792785899924001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c20d52e523abc880800000000000000
+      internalID: -8589592481172225336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_34
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6b66479c7876330800000000000000
+      internalID: 3704078517846587104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_35
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1151e1f2e97c4f0800000000000000
+      internalID: -808503682884365897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_36
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d752f31b0d269fdc0800000000000000
+      internalID: -3604741378266946179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_37
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332793b0d5e7c5aa0800000000000000
+      internalID: -6170918451319049677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_38
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2109eeab0295e7c0800000000000000
+      internalID: -4042664511618350803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_39
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 194
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89e624e8d3b0c7d0800000000000000
+      internalID: -2900120415904536179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e1ebaa232180140800000000000000
+      internalID: 4686015421101252207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_41
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70f2b71e3265f6d0800000000000000
+      internalID: -2957349561473765252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_42
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ebb093c83943d50800000000000000
+      internalID: 6716155174778027670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_43
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f92bd6ef210d24d0800000000000000
+      internalID: -3157866458468636176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_44
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa8f7ed53fef4e80800000000000000
+      internalID: -8192066182518437132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_45
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963432fe74acac450800000000000000
+      internalID: 6109918254785053545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_46
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b59cac9bc45791b0800000000000000
+      internalID: -5649953974029347404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_47
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd56fb1e606ad7b0800000000000000
+      internalID: -5198736793814016588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_48
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd62e07b3d8555870800000000000000
+      internalID: 8670934323904259805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobi_49
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e11729da01134b0800000000000000
+      internalID: -5462566535351427532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blobi_0: 3270104525328145908
+      Blobi_1: -728129522250123014
+      Blobi_10: -2244013992935101169
+      Blobi_11: 8276243418568399728
+      Blobi_12: -2474226600603350873
+      Blobi_13: 3592380204957703058
+      Blobi_14: 3845192400663692408
+      Blobi_15: -568879441579356070
+      Blobi_16: 7986497707458503341
+      Blobi_17: 905321489210676682
+      Blobi_18: -1793846316762284411
+      Blobi_19: 2627086603309151470
+      Blobi_2: -3443973683624913500
+      Blobi_20: 6759951853161688077
+      Blobi_21: -6399330330215083848
+      Blobi_22: -4568638941901100767
+      Blobi_23: -3250990110214433989
+      Blobi_24: -4694111933287679806
+      Blobi_25: -7679084974371529878
+      Blobi_26: 7538428606546533294
+      Blobi_27: -4814181795735415179
+      Blobi_28: 1806721281411498494
+      Blobi_29: 6505720329500194646
+      Blobi_3: -9069874166917268567
+      Blobi_30: 6685671023180640947
+      Blobi_31: -1351378540333151159
+      Blobi_32: 8585792785899924001
+      Blobi_33: -8589592481172225336
+      Blobi_34: 3704078517846587104
+      Blobi_35: -808503682884365897
+      Blobi_36: -3604741378266946179
+      Blobi_37: -6170918451319049677
+      Blobi_38: -4042664511618350803
+      Blobi_39: -2900120415904536179
+      Blobi_4: 1698526603560673008
+      Blobi_40: 4686015421101252207
+      Blobi_41: -2957349561473765252
+      Blobi_42: 6716155174778027670
+      Blobi_43: -3157866458468636176
+      Blobi_44: -8192066182518437132
+      Blobi_45: 6109918254785053545
+      Blobi_46: -5649953974029347404
+      Blobi_47: -5198736793814016588
+      Blobi_48: 8670934323904259805
+      Blobi_49: -5462566535351427532
+      Blobi_5: 5833415697890392833
+      Blobi_6: -2407278006368030813
+      Blobi_7: -8623510938874142300
+      Blobi_8: 7414913603190398150
+      Blobi_9: 6532825497653325799
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

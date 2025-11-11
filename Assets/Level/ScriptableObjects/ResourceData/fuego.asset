@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   DisplayName: Fire
-  Icon: {fileID: 21300000, guid: 062eeb9d5e8ba8f45a9ddfea52518f82, type: 3}
+  Icon: {fileID: -6073374272139994016, guid: 5caeb7dd275049a42bc89a5ef3af74d9, type: 3}
   Color: {r: 0, g: 0, b: 0, a: 0}
   MaxStack: 500
   VisualPrefab: {fileID: 0}

@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: c5e3bf4c7a15ef54f842be629308fd32
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7929207441958037050
+    second: Debrisa_0
+  - first:
+      213: -1744549261551345811
+    second: Debrisa_1
+  - first:
+      213: 4720680561660261363
+    second: Debrisa_2
+  - first:
+      213: -3520183133008659984
+    second: Debrisa_3
+  - first:
+      213: -65746375563324191
+    second: Debrisa_4
+  - first:
+      213: 5623352449048956088
+    second: Debrisa_5
+  - first:
+      213: -1158071532024810514
+    second: Debrisa_6
+  - first:
+      213: -2141285433004095886
+    second: Debrisa_7
+  - first:
+      213: 8287800557998951709
+    second: Debrisa_8
+  - first:
+      213: -1120277432418768718
+    second: Debrisa_9
+  - first:
+      213: 235603990172697661
+    second: Debrisa_10
+  - first:
+      213: 2668946564813543483
+    second: Debrisa_11
+  - first:
+      213: 5763079670439658810
+    second: Debrisa_12
+  - first:
+      213: 8104292667362110032
+    second: Debrisa_13
+  - first:
+      213: 6193637849763853324
+    second: Debrisa_14
+  - first:
+      213: 9028888248632234904
+    second: Debrisa_15
+  - first:
+      213: -7981972863062370637
+    second: Debrisa_16
+  - first:
+      213: 3709718493535432772
+    second: Debrisa_17
+  - first:
+      213: -330802322000009754
+    second: Debrisa_18
+  - first:
+      213: -5993324418447251506
+    second: Debrisa_19
+  - first:
+      213: -5717505144033594605
+    second: Debrisa_20
+  - first:
+      213: -678123612406664707
+    second: Debrisa_21
+  - first:
+      213: 6518768392294600020
+    second: Debrisa_22
+  - first:
+      213: -5850983031214984433
+    second: Debrisa_23
+  - first:
+      213: -7968920083420644839
+    second: Debrisa_24
+  - first:
+      213: -6863768134412041856
+    second: Debrisa_25
+  - first:
+      213: -1834983276827459821
+    second: Debrisa_26
+  - first:
+      213: -873303723231352211
+    second: Debrisa_27
+  - first:
+      213: 2526684316766328952
+    second: Debrisa_28
+  - first:
+      213: -5188481009220367903
+    second: Debrisa_29
+  - first:
+      213: 2865989543078086379
+    second: Debrisa_30
+  - first:
+      213: -3906920425526084129
+    second: Debrisa_31
+  - first:
+      213: 3465565797018802559
+    second: Debrisa_32
+  - first:
+      213: 809783882271578316
+    second: Debrisa_33
+  - first:
+      213: -6351133369041492341
+    second: Debrisa_34
+  - first:
+      213: 6605837125114928412
+    second: Debrisa_35
+  - first:
+      213: -916558620266813523
+    second: Debrisa_36
+  - first:
+      213: 4931390085449679616
+    second: Debrisa_37
+  - first:
+      213: -8506802213887719442
+    second: Debrisa_38
+  - first:
+      213: 5572090930286566926
+    second: Debrisa_39
+  - first:
+      213: -8906263692712537240
+    second: Debrisa_40
+  - first:
+      213: 3442529746769927758
+    second: Debrisa_41
+  - first:
+      213: -8662844588623706246
+    second: Debrisa_42
+  - first:
+      213: -1554412976166606340
+    second: Debrisa_43
+  - first:
+      213: -789462899015821595
+    second: Debrisa_44
+  - first:
+      213: -8498507727051642320
+    second: Debrisa_45
+  - first:
+      213: 7974553077343125066
+    second: Debrisa_46
+  - first:
+      213: -49169677181127942
+    second: Debrisa_47
+  - first:
+      213: 943439881503866456
+    second: Debrisa_48
+  - first:
+      213: 9004912826890025685
+    second: Debrisa_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Debrisa_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c915bf97dbc5f190800000000000000
+      internalID: -7929207441958037050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fdf0c80bd1ac7e0800000000000000
+      internalID: -1744549261551345811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3f9d7a5f9338140800000000000000
+      internalID: 4720680561660261363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f972bc571cc52fc0800000000000000
+      internalID: -3520183133008659984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4574f050c661ff0800000000000000
+      internalID: -65746375563324191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcc26432492a0e40800000000000000
+      internalID: 5623352449048956088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_6
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee33b2dc314bdefe0800000000000000
+      internalID: -1158071532024810514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27682136e30a842e0800000000000000
+      internalID: -2141285433004095886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dcfc462be240370800000000000000
+      internalID: 8287800557998951709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8eac65c99f370f0800000000000000
+      internalID: -1120277432418768718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3488eda498054300800000000000000
+      internalID: 235603990172697661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38d53092c00a0520800000000000000
+      internalID: 2668946564813543483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35c4d81d629aff40800000000000000
+      internalID: 5763079670439658810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05aebe91e3b387070800000000000000
+      internalID: 8104292667362110032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04b69e1fc834f550800000000000000
+      internalID: 6193637849763853324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8935c68660e0d4d70800000000000000
+      internalID: 9028888248632234904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b61c5aa8f55a3190800000000000000
+      internalID: -7981972863062370637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44070ef90519b7330800000000000000
+      internalID: 3709718493535432772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_18
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5a0527a01c86bf0800000000000000
+      internalID: -330802322000009754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7e6c6023f63dca0800000000000000
+      internalID: -5993324418447251506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313b8683d5757a0b0800000000000000
+      internalID: -5717505144033594605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df132b8da22d696f0800000000000000
+      internalID: -678123612406664707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d83cb9051577a50800000000000000
+      internalID: 6518768392294600020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03b795dee12dcea0800000000000000
+      internalID: -5850983031214984433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_24
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a7c30c765b86190800000000000000
+      internalID: -7968920083420644839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08189bf5f3ffeb0a0800000000000000
+      internalID: -6863768134412041856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_26
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fbaef8e64d886e0800000000000000
+      internalID: -1834983276827459821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ae4c304e661e3f0800000000000000
+      internalID: -873303723231352211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_28
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8785868cff5901320800000000000000
+      internalID: 2526684316766328952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e94f890300def7b0800000000000000
+      internalID: -5188481009220367903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be647250e4a06c720800000000000000
+      internalID: 2865989543078086379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddbcce9294d7c9c0800000000000000
+      internalID: -3906920425526084129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f799c052bb9281030800000000000000
+      internalID: 3465565797018802559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc852a7862eec3b00800000000000000
+      internalID: 809783882271578316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_34
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86e621c9dd3cd7a0800000000000000
+      internalID: -6351133369041492341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d1096bdd5acab50800000000000000
+      internalID: 6605837125114928412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_36
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7ac2f7acab743f0800000000000000
+      internalID: -916558620266813523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0038c14b721df6440800000000000000
+      internalID: 4931390085449679616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee747ba1574c1f980800000000000000
+      internalID: -8506802213887719442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e18ebcd2b045d40800000000000000
+      internalID: 5572090930286566926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86319efdb58966480800000000000000
+      internalID: -8906263692712537240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4edfecb09256cf20800000000000000
+      internalID: 3442529746769927758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_42
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a774bae8eb467c780800000000000000
+      internalID: -8662844588623706246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9e45142ad9d6ae0800000000000000
+      internalID: -1554412976166606340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_44
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6dfc41da34b05f0800000000000000
+      internalID: -789462899015821595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aac20df3c3f0a80800000000000000
+      internalID: -8498507727051642320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_46
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ef889d5cd4bae60800000000000000
+      internalID: 7974553077343125066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_47
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2f5e96070515ff0800000000000000
+      internalID: -49169677181127942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_48
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e79fbd295c71d00800000000000000
+      internalID: 943439881503866456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Debrisa_49
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da73288180e7fc70800000000000000
+      internalID: 9004912826890025685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Debrisa_0: -7929207441958037050
+      Debrisa_1: -1744549261551345811
+      Debrisa_10: 235603990172697661
+      Debrisa_11: 2668946564813543483
+      Debrisa_12: 5763079670439658810
+      Debrisa_13: 8104292667362110032
+      Debrisa_14: 6193637849763853324
+      Debrisa_15: 9028888248632234904
+      Debrisa_16: -7981972863062370637
+      Debrisa_17: 3709718493535432772
+      Debrisa_18: -330802322000009754
+      Debrisa_19: -5993324418447251506
+      Debrisa_2: 4720680561660261363
+      Debrisa_20: -5717505144033594605
+      Debrisa_21: -678123612406664707
+      Debrisa_22: 6518768392294600020
+      Debrisa_23: -5850983031214984433
+      Debrisa_24: -7968920083420644839
+      Debrisa_25: -6863768134412041856
+      Debrisa_26: -1834983276827459821
+      Debrisa_27: -873303723231352211
+      Debrisa_28: 2526684316766328952
+      Debrisa_29: -5188481009220367903
+      Debrisa_3: -3520183133008659984
+      Debrisa_30: 2865989543078086379
+      Debrisa_31: -3906920425526084129
+      Debrisa_32: 3465565797018802559
+      Debrisa_33: 809783882271578316
+      Debrisa_34: -6351133369041492341
+      Debrisa_35: 6605837125114928412
+      Debrisa_36: -916558620266813523
+      Debrisa_37: 4931390085449679616
+      Debrisa_38: -8506802213887719442
+      Debrisa_39: 5572090930286566926
+      Debrisa_4: -65746375563324191
+      Debrisa_40: -8906263692712537240
+      Debrisa_41: 3442529746769927758
+      Debrisa_42: -8662844588623706246
+      Debrisa_43: -1554412976166606340
+      Debrisa_44: -789462899015821595
+      Debrisa_45: -8498507727051642320
+      Debrisa_46: 7974553077343125066
+      Debrisa_47: -49169677181127942
+      Debrisa_48: 943439881503866456
+      Debrisa_49: 9004912826890025685
+      Debrisa_5: 5623352449048956088
+      Debrisa_6: -1158071532024810514
+      Debrisa_7: -2141285433004095886
+      Debrisa_8: 8287800557998951709
+      Debrisa_9: -1120277432418768718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
