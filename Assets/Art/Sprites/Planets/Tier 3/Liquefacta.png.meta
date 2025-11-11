@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 022f1e2ca35b5824b9cdaa7c711b1df5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3098759606283545503
+    second: Liquefacta_0
+  - first:
+      213: -5700972679479299599
+    second: Liquefacta_1
+  - first:
+      213: -716256449167951100
+    second: Liquefacta_2
+  - first:
+      213: 5772950241601327822
+    second: Liquefacta_3
+  - first:
+      213: -4042312400028001281
+    second: Liquefacta_4
+  - first:
+      213: -8279703751885780809
+    second: Liquefacta_5
+  - first:
+      213: 1315360949088397580
+    second: Liquefacta_6
+  - first:
+      213: 7134248227388264928
+    second: Liquefacta_7
+  - first:
+      213: 1336495596731267655
+    second: Liquefacta_8
+  - first:
+      213: -4164095699230493583
+    second: Liquefacta_9
+  - first:
+      213: 4737867375117374155
+    second: Liquefacta_10
+  - first:
+      213: 6892889922637717766
+    second: Liquefacta_11
+  - first:
+      213: 649927228387268327
+    second: Liquefacta_12
+  - first:
+      213: 4166967348365437007
+    second: Liquefacta_13
+  - first:
+      213: -6701563479029034892
+    second: Liquefacta_14
+  - first:
+      213: 4023554261915867696
+    second: Liquefacta_15
+  - first:
+      213: 5624020107648996814
+    second: Liquefacta_16
+  - first:
+      213: -3215827223352670876
+    second: Liquefacta_17
+  - first:
+      213: 1420787945010882574
+    second: Liquefacta_18
+  - first:
+      213: -3233168241671039544
+    second: Liquefacta_19
+  - first:
+      213: 6446293473738339140
+    second: Liquefacta_20
+  - first:
+      213: 2121295942036219888
+    second: Liquefacta_21
+  - first:
+      213: -5271979892726037706
+    second: Liquefacta_22
+  - first:
+      213: -6056353474098168646
+    second: Liquefacta_23
+  - first:
+      213: -7710387120558025941
+    second: Liquefacta_24
+  - first:
+      213: 6246880198596219080
+    second: Liquefacta_25
+  - first:
+      213: 5411332994689464204
+    second: Liquefacta_26
+  - first:
+      213: 6696702591769031082
+    second: Liquefacta_27
+  - first:
+      213: -9161408709050097215
+    second: Liquefacta_28
+  - first:
+      213: -6799200160237886727
+    second: Liquefacta_29
+  - first:
+      213: -5329945550877238779
+    second: Liquefacta_30
+  - first:
+      213: -6189017802712814243
+    second: Liquefacta_31
+  - first:
+      213: 492030500201831757
+    second: Liquefacta_32
+  - first:
+      213: 6945652587213190863
+    second: Liquefacta_33
+  - first:
+      213: 8656050051136122329
+    second: Liquefacta_34
+  - first:
+      213: -1613384584391154932
+    second: Liquefacta_35
+  - first:
+      213: -4812533765217963343
+    second: Liquefacta_36
+  - first:
+      213: -5244701781328072455
+    second: Liquefacta_37
+  - first:
+      213: 5032461095430299606
+    second: Liquefacta_38
+  - first:
+      213: 1041843807917729645
+    second: Liquefacta_39
+  - first:
+      213: 1272048244974116665
+    second: Liquefacta_40
+  - first:
+      213: -525771655833330212
+    second: Liquefacta_41
+  - first:
+      213: 8500683621378817914
+    second: Liquefacta_42
+  - first:
+      213: 2264974689262839731
+    second: Liquefacta_43
+  - first:
+      213: 2253872460910093889
+    second: Liquefacta_44
+  - first:
+      213: 473726399616503038
+    second: Liquefacta_45
+  - first:
+      213: -5196042644680704884
+    second: Liquefacta_46
+  - first:
+      213: 7229983998533944738
+    second: Liquefacta_47
+  - first:
+      213: -3652550452151511136
+    second: Liquefacta_48
+  - first:
+      213: -483956127476533159
+    second: Liquefacta_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Liquefacta_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b2cd8a171010b20800000000000000
+      internalID: 3098759606283545503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1fd659d8312e0b0800000000000000
+      internalID: -5700972679479299599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bf24bed885f06f0800000000000000
+      internalID: -716256449167951100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec217a888a3ad1050800000000000000
+      internalID: 5772950241601327822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb9c2d0a42d6e7c0800000000000000
+      internalID: -4042312400028001281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8016f2e45981d80800000000000000
+      internalID: -8279703751885780809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09a5d960d9114210800000000000000
+      internalID: 1315360949088397580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_7
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e110f4c6f0f10360800000000000000
+      internalID: 7134248227388264928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a7a070aaf2c8210800000000000000
+      internalID: 1336495596731267655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17472ac16092636c0800000000000000
+      internalID: -4164095699230493583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc298ce764940c140800000000000000
+      internalID: 4737867375117374155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601e0b25dd678af50800000000000000
+      internalID: 6892889922637717766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e690e9ee51050900800000000000000
+      internalID: 649927228387268327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4829fdc9ba04d930800000000000000
+      internalID: 4166967348365437007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4705eb0b5834ff2a0800000000000000
+      internalID: -6701563479029034892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_15
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a1104984986d730800000000000000
+      internalID: 4023554261915867696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_16
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec592169d788c0e40800000000000000
+      internalID: 5624020107648996814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4658805bd261f53d0800000000000000
+      internalID: -3215827223352670876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_18
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08e78bbb17a7b310800000000000000
+      internalID: 1420787945010882574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_19
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c59f104d9a7123d0800000000000000
+      internalID: -3233168241671039544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443b71ca2c5d57950800000000000000
+      internalID: 6446293473738339140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7eb809b6b507d10800000000000000
+      internalID: 2121295942036219888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633001f383a26d6b0800000000000000
+      internalID: -5271979892726037706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcfc2e6a9283fba0800000000000000
+      internalID: -6056353474098168646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_24
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b235466e3c33ff490800000000000000
+      internalID: -7710387120558025941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_25
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0dfb7717061b650800000000000000
+      internalID: 6246880198596219080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87f0dd20bae81b40800000000000000
+      internalID: 5411332994689464204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_27
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1b4dcc6877fec50800000000000000
+      internalID: 6696702591769031082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c126ee71532cd080800000000000000
+      internalID: -9161408709050097215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_29
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2ed3c5a7364a1a0800000000000000
+      internalID: -6799200160237886727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ad9cfb2ca3806b0800000000000000
+      internalID: -5329945550877238779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_31
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5debb869113c1aa0800000000000000
+      internalID: -6189017802712814243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d103f022b04d600800000000000000
+      internalID: 492030500201831757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_33
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc67d1a7a3ae36060800000000000000
+      internalID: 6945652587213190863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_34
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd68f7e8a7702870800000000000000
+      internalID: 8656050051136122329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c032641c44b1c99e0800000000000000
+      internalID: -1613384584391154932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_36
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b23c96d902763db0800000000000000
+      internalID: -4812533765217963343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_37
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0f41b74831737b0800000000000000
+      internalID: -5244701781328072455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_38
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df981304b4e6d540800000000000000
+      internalID: 5032461095430299606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_39
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6760626c6f557e00800000000000000
+      internalID: 1041843807917729645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f57d2a32937a110800000000000000
+      internalID: 1272048244974116665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_41
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddd515f67514b8f0800000000000000
+      internalID: -525771655833330212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ff34017be78f570800000000000000
+      internalID: 8500683621378817914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b723c2ca7ece6f10800000000000000
+      internalID: 2264974689262839731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_44
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146e499cf0d574f10800000000000000
+      internalID: 2253872460910093889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_45
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efccdd986a3039600800000000000000
+      internalID: 473726399616503038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_46
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c76069eb2f3e7b0800000000000000
+      internalID: -5196042644680704884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_47
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5cf5cf320165460800000000000000
+      internalID: 7229983998533944738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_48
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7115f37b88f4dc0800000000000000
+      internalID: -3652550452151511136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liquefacta_49
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95833e65774a849f0800000000000000
+      internalID: -483956127476533159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Liquefacta_0: 3098759606283545503
+      Liquefacta_1: -5700972679479299599
+      Liquefacta_10: 4737867375117374155
+      Liquefacta_11: 6892889922637717766
+      Liquefacta_12: 649927228387268327
+      Liquefacta_13: 4166967348365437007
+      Liquefacta_14: -6701563479029034892
+      Liquefacta_15: 4023554261915867696
+      Liquefacta_16: 5624020107648996814
+      Liquefacta_17: -3215827223352670876
+      Liquefacta_18: 1420787945010882574
+      Liquefacta_19: -3233168241671039544
+      Liquefacta_2: -716256449167951100
+      Liquefacta_20: 6446293473738339140
+      Liquefacta_21: 2121295942036219888
+      Liquefacta_22: -5271979892726037706
+      Liquefacta_23: -6056353474098168646
+      Liquefacta_24: -7710387120558025941
+      Liquefacta_25: 6246880198596219080
+      Liquefacta_26: 5411332994689464204
+      Liquefacta_27: 6696702591769031082
+      Liquefacta_28: -9161408709050097215
+      Liquefacta_29: -6799200160237886727
+      Liquefacta_3: 5772950241601327822
+      Liquefacta_30: -5329945550877238779
+      Liquefacta_31: -6189017802712814243
+      Liquefacta_32: 492030500201831757
+      Liquefacta_33: 6945652587213190863
+      Liquefacta_34: 8656050051136122329
+      Liquefacta_35: -1613384584391154932
+      Liquefacta_36: -4812533765217963343
+      Liquefacta_37: -5244701781328072455
+      Liquefacta_38: 5032461095430299606
+      Liquefacta_39: 1041843807917729645
+      Liquefacta_4: -4042312400028001281
+      Liquefacta_40: 1272048244974116665
+      Liquefacta_41: -525771655833330212
+      Liquefacta_42: 8500683621378817914
+      Liquefacta_43: 2264974689262839731
+      Liquefacta_44: 2253872460910093889
+      Liquefacta_45: 473726399616503038
+      Liquefacta_46: -5196042644680704884
+      Liquefacta_47: 7229983998533944738
+      Liquefacta_48: -3652550452151511136
+      Liquefacta_49: -483956127476533159
+      Liquefacta_5: -8279703751885780809
+      Liquefacta_6: 1315360949088397580
+      Liquefacta_7: 7134248227388264928
+      Liquefacta_8: 1336495596731267655
+      Liquefacta_9: -4164095699230493583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

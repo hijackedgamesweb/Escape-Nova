@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: e927cf56d6e47b44997291dc85d71838
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1199031869328478581
+    second: Dimidium_0
+  - first:
+      213: 787162289776072792
+    second: Dimidium_1
+  - first:
+      213: 5901481739582774038
+    second: Dimidium_2
+  - first:
+      213: -1295469007789668876
+    second: Dimidium_3
+  - first:
+      213: -368889901919933882
+    second: Dimidium_4
+  - first:
+      213: 1451452426444582511
+    second: Dimidium_5
+  - first:
+      213: -2082229740469634206
+    second: Dimidium_6
+  - first:
+      213: 3712028055825083770
+    second: Dimidium_7
+  - first:
+      213: 1267027241779302014
+    second: Dimidium_8
+  - first:
+      213: 4607115868062890758
+    second: Dimidium_9
+  - first:
+      213: -3088512040047179339
+    second: Dimidium_10
+  - first:
+      213: -100650318340491570
+    second: Dimidium_11
+  - first:
+      213: -4509697549456460545
+    second: Dimidium_12
+  - first:
+      213: -1707222137749790044
+    second: Dimidium_13
+  - first:
+      213: -7827605894285877093
+    second: Dimidium_14
+  - first:
+      213: 3970210875467713439
+    second: Dimidium_15
+  - first:
+      213: 4773983473554971331
+    second: Dimidium_16
+  - first:
+      213: 8930320937401151289
+    second: Dimidium_17
+  - first:
+      213: -4536750007884183922
+    second: Dimidium_18
+  - first:
+      213: 127464791482602292
+    second: Dimidium_19
+  - first:
+      213: 5457905678403076160
+    second: Dimidium_20
+  - first:
+      213: -6379752399037509109
+    second: Dimidium_21
+  - first:
+      213: 2137275635339329469
+    second: Dimidium_22
+  - first:
+      213: 8873633828448470058
+    second: Dimidium_23
+  - first:
+      213: 1315719061478266019
+    second: Dimidium_24
+  - first:
+      213: 2694162683043385756
+    second: Dimidium_25
+  - first:
+      213: -8442078791513591976
+    second: Dimidium_26
+  - first:
+      213: -7126873752102367208
+    second: Dimidium_27
+  - first:
+      213: 5236308905365927883
+    second: Dimidium_28
+  - first:
+      213: -8057133833837278572
+    second: Dimidium_29
+  - first:
+      213: -4476289230338033755
+    second: Dimidium_30
+  - first:
+      213: 3115981706578012873
+    second: Dimidium_31
+  - first:
+      213: 7998018296599479441
+    second: Dimidium_32
+  - first:
+      213: -2634666967337562564
+    second: Dimidium_33
+  - first:
+      213: 4916565341558543036
+    second: Dimidium_34
+  - first:
+      213: -7982258986448413537
+    second: Dimidium_35
+  - first:
+      213: 4916795573424153932
+    second: Dimidium_36
+  - first:
+      213: -8387824142768671794
+    second: Dimidium_37
+  - first:
+      213: 638844877363596890
+    second: Dimidium_38
+  - first:
+      213: 7823501482234953983
+    second: Dimidium_39
+  - first:
+      213: 587885010677063136
+    second: Dimidium_40
+  - first:
+      213: -5992568765693908808
+    second: Dimidium_41
+  - first:
+      213: 7068584079884075815
+    second: Dimidium_42
+  - first:
+      213: -5616515359686282052
+    second: Dimidium_43
+  - first:
+      213: 9034254774737334514
+    second: Dimidium_44
+  - first:
+      213: -7031800931590262239
+    second: Dimidium_45
+  - first:
+      213: 6864816803424758152
+    second: Dimidium_46
+  - first:
+      213: 644477400081639677
+    second: Dimidium_47
+  - first:
+      213: -6268896449402958005
+    second: Dimidium_48
+  - first:
+      213: 6347725471576222479
+    second: Dimidium_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dimidium_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57152b5e121d3a010800000000000000
+      internalID: 1199031869328478581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8589fa69eef8cea00800000000000000
+      internalID: 787162289776072792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b1940ff5646e150800000000000000
+      internalID: 5901481739582774038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f54b251dc1950ee0800000000000000
+      internalID: -1295469007789668876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a65d2b69071eaf0800000000000000
+      internalID: -368889901919933882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eab9eaa48942410800000000000000
+      internalID: 1451452426444582511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bbd8a451f6a13e0800000000000000
+      internalID: -2082229740469634206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7decbf79d5c38330800000000000000
+      internalID: 3712028055825083770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e8ffa3092659110800000000000000
+      internalID: 1267027241779302014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_9
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b34f2f873cfef30800000000000000
+      internalID: 4607115868062890758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b98878c9a66325d0800000000000000
+      internalID: -3088512040047179339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6f8c8911b6a9ef0800000000000000
+      internalID: -100650318340491570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4b230e8f55a61c0800000000000000
+      internalID: -4509697549456460545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2adbec28abe48e0800000000000000
+      internalID: -1707222137749790044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90265d59e1ce5390800000000000000
+      internalID: -7827605894285877093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b45a391c5091730800000000000000
+      internalID: 3970210875467713439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca54d0fca8904240800000000000000
+      internalID: 4773983473554971331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f6704e39fdeeb70800000000000000
+      internalID: 8930320937401151289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86005197e93a01c0800000000000000
+      internalID: -4536750007884183922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43390b17d88d4c100800000000000000
+      internalID: 127464791482602292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0408dca1c406ebb40800000000000000
+      internalID: 5457905678403076160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b025c649ef09677a0800000000000000
+      internalID: -6379752399037509109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf7f77ddd029ad10800000000000000
+      internalID: 2137275635339329469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a248f83d3fa752b70800000000000000
+      internalID: 8873633828448470058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_24
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a45f93f38f524210800000000000000
+      internalID: 1315719061478266019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c911ae99fa6936520800000000000000
+      internalID: 2694162683043385756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_26
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f29f13116b7da80800000000000000
+      internalID: -8442078791513591976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_27
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81012ee0512481d90800000000000000
+      internalID: -7126873752102367208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_28
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7fc8ec43b1ba840800000000000000
+      internalID: 5236308905365927883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_29
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a0956777f4f2090800000000000000
+      internalID: -8057133833837278572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a77bc159a601e1c0800000000000000
+      internalID: -4476289230338033755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9caa23b5ad03e3b20800000000000000
+      internalID: 3115981706578012873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19403e3f34baefe60800000000000000
+      internalID: 7998018296599479441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_33
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e836e2a58cf6bd0800000000000000
+      internalID: -2634666967337562564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_34
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2189a01262b3440800000000000000
+      internalID: 4916565341558543036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_35
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c929f5eb1593190800000000000000
+      internalID: -7982258986448413537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_36
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45e8231687fb3440800000000000000
+      internalID: 4916795573424153932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_37
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3f3dbf166789b80800000000000000
+      internalID: -8387824142768671794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_38
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ec5ddf702add800800000000000000
+      internalID: 638844877363596890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_39
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff04b5cb529a29c60800000000000000
+      internalID: 7823501482234953983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edde2e6d46982800800000000000000
+      internalID: 587885010677063136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8a6b4257e16dca0800000000000000
+      internalID: -5992568765693908808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_42
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723c87a05c7a81260800000000000000
+      internalID: 7068584079884075815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_43
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4bf56b9012e02b0800000000000000
+      internalID: -5616515359686282052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_44
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f078922ade106d70800000000000000
+      internalID: 9034254774737334514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_45
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1223d4d0f460a6e90800000000000000
+      internalID: -7031800931590262239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_46
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889e348e28ab44f50800000000000000
+      internalID: 6864816803424758152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_47
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df822a1e7c4a1f800800000000000000
+      internalID: 644477400081639677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_48
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f01afa4e76009a0800000000000000
+      internalID: -6268896449402958005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimidium_49
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0beff84fa6a71850800000000000000
+      internalID: 6347725471576222479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dimidium_0: 1199031869328478581
+      Dimidium_1: 787162289776072792
+      Dimidium_10: -3088512040047179339
+      Dimidium_11: -100650318340491570
+      Dimidium_12: -4509697549456460545
+      Dimidium_13: -1707222137749790044
+      Dimidium_14: -7827605894285877093
+      Dimidium_15: 3970210875467713439
+      Dimidium_16: 4773983473554971331
+      Dimidium_17: 8930320937401151289
+      Dimidium_18: -4536750007884183922
+      Dimidium_19: 127464791482602292
+      Dimidium_2: 5901481739582774038
+      Dimidium_20: 5457905678403076160
+      Dimidium_21: -6379752399037509109
+      Dimidium_22: 2137275635339329469
+      Dimidium_23: 8873633828448470058
+      Dimidium_24: 1315719061478266019
+      Dimidium_25: 2694162683043385756
+      Dimidium_26: -8442078791513591976
+      Dimidium_27: -7126873752102367208
+      Dimidium_28: 5236308905365927883
+      Dimidium_29: -8057133833837278572
+      Dimidium_3: -1295469007789668876
+      Dimidium_30: -4476289230338033755
+      Dimidium_31: 3115981706578012873
+      Dimidium_32: 7998018296599479441
+      Dimidium_33: -2634666967337562564
+      Dimidium_34: 4916565341558543036
+      Dimidium_35: -7982258986448413537
+      Dimidium_36: 4916795573424153932
+      Dimidium_37: -8387824142768671794
+      Dimidium_38: 638844877363596890
+      Dimidium_39: 7823501482234953983
+      Dimidium_4: -368889901919933882
+      Dimidium_40: 587885010677063136
+      Dimidium_41: -5992568765693908808
+      Dimidium_42: 7068584079884075815
+      Dimidium_43: -5616515359686282052
+      Dimidium_44: 9034254774737334514
+      Dimidium_45: -7031800931590262239
+      Dimidium_46: 6864816803424758152
+      Dimidium_47: 644477400081639677
+      Dimidium_48: -6268896449402958005
+      Dimidium_49: 6347725471576222479
+      Dimidium_5: 1451452426444582511
+      Dimidium_6: -2082229740469634206
+      Dimidium_7: 3712028055825083770
+      Dimidium_8: 1267027241779302014
+      Dimidium_9: 4607115868062890758
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

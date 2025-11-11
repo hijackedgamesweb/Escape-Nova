@@ -1,0 +1,1429 @@
+fileFormatVersion: 2
+guid: 3b35bbe28ef016b4c934dc71c83880c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5060925952560270938
+    second: Halongona_0
+  - first:
+      213: -1378208151301058153
+    second: Halongona_1
+  - first:
+      213: 7644813093676556682
+    second: Halongona_2
+  - first:
+      213: 7199873724604030120
+    second: Halongona_3
+  - first:
+      213: 4213565778137443221
+    second: Halongona_4
+  - first:
+      213: 7161870667849607359
+    second: Halongona_5
+  - first:
+      213: -2470549505152121699
+    second: Halongona_6
+  - first:
+      213: 8095261359881230148
+    second: Halongona_7
+  - first:
+      213: 8114397963227356051
+    second: Halongona_8
+  - first:
+      213: -7252288523329305337
+    second: Halongona_9
+  - first:
+      213: 8190393170011480370
+    second: Halongona_10
+  - first:
+      213: 2614668871842302376
+    second: Halongona_11
+  - first:
+      213: 6850945003186232219
+    second: Halongona_12
+  - first:
+      213: 3866756688317888852
+    second: Halongona_13
+  - first:
+      213: 6669012628839027311
+    second: Halongona_14
+  - first:
+      213: 8810331536500289162
+    second: Halongona_15
+  - first:
+      213: 2591512792530084696
+    second: Halongona_16
+  - first:
+      213: -7421311683571125871
+    second: Halongona_17
+  - first:
+      213: -3717140658013951876
+    second: Halongona_18
+  - first:
+      213: 6228491928709315149
+    second: Halongona_19
+  - first:
+      213: -2971699753940708325
+    second: Halongona_20
+  - first:
+      213: 5306327137031938464
+    second: Halongona_21
+  - first:
+      213: -6197548362778370088
+    second: Halongona_22
+  - first:
+      213: 5309257273480320518
+    second: Halongona_23
+  - first:
+      213: 882536425738798434
+    second: Halongona_24
+  - first:
+      213: 8612936358448838189
+    second: Halongona_25
+  - first:
+      213: 1580475212481510562
+    second: Halongona_26
+  - first:
+      213: 4453369999724830181
+    second: Halongona_27
+  - first:
+      213: 2122075550313680484
+    second: Halongona_28
+  - first:
+      213: -6303292640083012691
+    second: Halongona_29
+  - first:
+      213: -1725967107610381646
+    second: Halongona_30
+  - first:
+      213: -281263771136826475
+    second: Halongona_31
+  - first:
+      213: -4122677708762960632
+    second: Halongona_32
+  - first:
+      213: -7850603471616326727
+    second: Halongona_33
+  - first:
+      213: -1287038992172191668
+    second: Halongona_34
+  - first:
+      213: 5283439533072840086
+    second: Halongona_35
+  - first:
+      213: -8163452781544874056
+    second: Halongona_36
+  - first:
+      213: -1124763316304425157
+    second: Halongona_37
+  - first:
+      213: -640644773085527359
+    second: Halongona_38
+  - first:
+      213: -3666692549876263686
+    second: Halongona_39
+  - first:
+      213: -4744297078313380400
+    second: Halongona_40
+  - first:
+      213: 8819979040755683919
+    second: Halongona_41
+  - first:
+      213: -1618962284082632469
+    second: Halongona_42
+  - first:
+      213: -7838593974283879405
+    second: Halongona_43
+  - first:
+      213: -145955856697929756
+    second: Halongona_44
+  - first:
+      213: -8041155524628008794
+    second: Halongona_45
+  - first:
+      213: 8348251524650443341
+    second: Halongona_46
+  - first:
+      213: 1736981762701575807
+    second: Halongona_47
+  - first:
+      213: -2972263854336889555
+    second: Halongona_48
+  - first:
+      213: -151581378372481238
+    second: Halongona_49
+  - first:
+      213: -4258715641877617771
+    second: Halongona_50
+  - first:
+      213: 6474331817363327015
+    second: Halongona_51
+  - first:
+      213: -4111376969968726337
+    second: Halongona_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Halongona_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1374
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1f61bf8aaf3c9b0800000000000000
+      internalID: -5060925952560270938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_1
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1374
+        width: 181
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791172b0dfe9fdce0800000000000000
+      internalID: -1378208151301058153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1375
+        width: 182
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81a8d63105d71a60800000000000000
+      internalID: 7644813093676556682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_3
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1375
+        width: 184
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac11b681071be360800000000000000
+      internalID: 7199873724604030120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_4
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1375
+        width: 184
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bef9330c7997a30800000000000000
+      internalID: 4213565778137443221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_5
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1376
+        width: 182
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8277c5d63146360800000000000000
+      internalID: 7161870667849607359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_6
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1376
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9404698058d6bdd0800000000000000
+      internalID: -2470549505152121699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_7
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 1376
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4479aa7f055285070800000000000000
+      internalID: 8095261359881230148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_8
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1375
+        width: 179
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bd154a4f12c9070800000000000000
+      internalID: 8114397963227356051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_9
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 1374
+        width: 180
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70580562302ba5b90800000000000000
+      internalID: -7252288523329305337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1052
+        width: 182
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231e15d813f1aa170800000000000000
+      internalID: 8190393170011480370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_11
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1052
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a98e6f5c7b294420800000000000000
+      internalID: 2614668871842302376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_12
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1053
+        width: 183
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b17aabe22731f50800000000000000
+      internalID: 6850945003186232219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_13
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1054
+        width: 186
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459bd0898ba79a530800000000000000
+      internalID: 3866756688317888852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_14
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1055
+        width: 184
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f625b88e6a71d8c50800000000000000
+      internalID: 6669012628839027311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_15
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1054
+        width: 182
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e65827ad5944a70800000000000000
+      internalID: 8810331536500289162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_16
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1053
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853e2a58727e6f320800000000000000
+      internalID: 2591512792530084696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_17
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1054
+        width: 180
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1917945f754320990800000000000000
+      internalID: -7421311683571125871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_18
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 1055
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78aaea04401a6cc0800000000000000
+      internalID: -3717140658013951876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_20
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1056
+        width: 182
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b149f3b81d662c6d0800000000000000
+      internalID: -2971699753940708325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_21
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 737
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1edc0ca6cd3a940800000000000000
+      internalID: 5306327137031938464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 736
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df9a4e9992edf9a0800000000000000
+      internalID: -6197548362778370088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_23
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 735
+        width: 179
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60614fe4c554ea940800000000000000
+      internalID: 5309257273480320518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_24
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 735
+        width: 180
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265018d04366f3c00800000000000000
+      internalID: 882536425738798434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_25
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 734
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26b3661cfb478770800000000000000
+      internalID: 8612936358448838189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_26
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 734
+        width: 182
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac354005d9fee510800000000000000
+      internalID: 1580475212481510562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_27
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 733
+        width: 180
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eddaf67b6c8dcd30800000000000000
+      internalID: 4453369999724830181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_28
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 733
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e0df24870237d10800000000000000
+      internalID: 2122075550313680484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_29
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 735
+        width: 183
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da394887db43688a0800000000000000
+      internalID: -6303292640083012691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_30
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 735
+        width: 184
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2ffd86f022c08e0800000000000000
+      internalID: -1725967107610381646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 414
+        width: 180
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593e3312710c81cf0800000000000000
+      internalID: -281263771136826475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_32
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 413
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d23cd777e49c6c0800000000000000
+      internalID: -4122677708762960632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_33
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 414
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b34cd1acbd0d0390800000000000000
+      internalID: -7850603471616326727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_34
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 413
+        width: 180
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40ff7b0bd4832ee0800000000000000
+      internalID: -1287038992172191668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_35
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 413
+        width: 180
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695ff01334c825940800000000000000
+      internalID: 5283439533072840086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_36
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 413
+        width: 182
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfd75f62f695be80800000000000000
+      internalID: -8163452781544874056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_37
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 414
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fc84b19b90460f0800000000000000
+      internalID: -1124763316304425157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_38
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 415
+        width: 183
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2c60129f8fb17f0800000000000000
+      internalID: -640644773085527359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_39
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 416
+        width: 185
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4dd088d8a4d1dc0800000000000000
+      internalID: -3666692549876263686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_40
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 416
+        width: 185
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5153291fed82eb0800000000000000
+      internalID: -4744297078313380400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_41
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 95
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4212a2153cd66a70800000000000000
+      internalID: 8819979040755683919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_42
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 95
+        width: 180
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8ef78516a4889e0800000000000000
+      internalID: -1618962284082632469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_43
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 94
+        width: 179
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cba40af48b73390800000000000000
+      internalID: -7838593974283879405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_44
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 94
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efc1a0fbe579fdf0800000000000000
+      internalID: -145955856697929756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_46
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 94
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42276ed782fad370800000000000000
+      internalID: 8348251524650443341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_48
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 93
+        width: 182
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d248fa5c560c6d0800000000000000
+      internalID: -2972263854336889555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_49
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 94
+        width: 182
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f4b8b1a8975edf0800000000000000
+      internalID: -151581378372481238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_50
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 95
+        width: 181
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5932c76ffa006e4c0800000000000000
+      internalID: -4258715641877617771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_51
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 94
+        width: 179
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72843f34c7279d950800000000000000
+      internalID: 6474331817363327015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halongona_52
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 94
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbeca47cd6471f6c0800000000000000
+      internalID: -4111376969968726337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a45adb81ea3609a459df19d7c5e9e5cb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Halongona_0: -5060925952560270938
+      Halongona_1: -1378208151301058153
+      Halongona_10: 8190393170011480370
+      Halongona_11: 2614668871842302376
+      Halongona_12: 6850945003186232219
+      Halongona_13: 3866756688317888852
+      Halongona_14: 6669012628839027311
+      Halongona_15: 8810331536500289162
+      Halongona_16: 2591512792530084696
+      Halongona_17: -7421311683571125871
+      Halongona_18: -3717140658013951876
+      Halongona_19: 6228491928709315149
+      Halongona_2: 7644813093676556682
+      Halongona_20: -2971699753940708325
+      Halongona_21: 5306327137031938464
+      Halongona_22: -6197548362778370088
+      Halongona_23: 5309257273480320518
+      Halongona_24: 882536425738798434
+      Halongona_25: 8612936358448838189
+      Halongona_26: 1580475212481510562
+      Halongona_27: 4453369999724830181
+      Halongona_28: 2122075550313680484
+      Halongona_29: -6303292640083012691
+      Halongona_3: 7199873724604030120
+      Halongona_30: -1725967107610381646
+      Halongona_31: -281263771136826475
+      Halongona_32: -4122677708762960632
+      Halongona_33: -7850603471616326727
+      Halongona_34: -1287038992172191668
+      Halongona_35: 5283439533072840086
+      Halongona_36: -8163452781544874056
+      Halongona_37: -1124763316304425157
+      Halongona_38: -640644773085527359
+      Halongona_39: -3666692549876263686
+      Halongona_4: 4213565778137443221
+      Halongona_40: -4744297078313380400
+      Halongona_41: 8819979040755683919
+      Halongona_42: -1618962284082632469
+      Halongona_43: -7838593974283879405
+      Halongona_44: -145955856697929756
+      Halongona_45: -8041155524628008794
+      Halongona_46: 8348251524650443341
+      Halongona_47: 1736981762701575807
+      Halongona_48: -2972263854336889555
+      Halongona_49: -151581378372481238
+      Halongona_5: 7161870667849607359
+      Halongona_50: -4258715641877617771
+      Halongona_51: 6474331817363327015
+      Halongona_52: -4111376969968726337
+      Halongona_6: -2470549505152121699
+      Halongona_7: 8095261359881230148
+      Halongona_8: 8114397963227356051
+      Halongona_9: -7252288523329305337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
