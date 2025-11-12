@@ -61,6 +61,9 @@ public class ResearchInitializer : MonoBehaviour
     
         storage.AddResource(ResourceType.Arena, 2000);
         storage.AddResource(ResourceType.Piedra, 5000); 
+        storage.AddResource(ResourceType.Metal, 5000); 
+        storage.AddResource(ResourceType.Hielo, 5000); 
+        storage.AddResource(ResourceType.Fuego, 5000); 
         
         Debug.Log($"Recursos iniciales: 200 Madera, 100 Piedra");
     }

@@ -14,7 +14,6 @@ namespace Code.Scripts.Core.Systems.Storage
         [SerializeField] private Transform itemsContainer;
         
         [Header("Description Panel")]
-        [SerializeField] private GameObject descriptionPanel;
         [SerializeField] private TextMeshProUGUI descriptionText;
         [SerializeField] private TextMeshProUGUI descriptionItemName;
         [SerializeField] private Image descriptionItemSprite;
@@ -25,21 +24,13 @@ namespace Code.Scripts.Core.Systems.Storage
     
         private void Start()
         {
-            if (descriptionPanel != null)
-            {
-                descriptionPanel.SetActive(false);
-            }
-            
             try
             {
                 _storageSystem = ServiceLocator.GetService<StorageSystem>();
-                // 2. ¡Suscribirse al evento de actualización!
                 _storageSystem.OnStorageUpdated += RefreshStorageUI; 
-                Debug.Log("StorageUIManager conectado a StorageSystem.");
             }
             catch (System.Exception e)
             {
-                Debug.LogError($"StorageUIManager no pudo encontrar StorageSystem: {e.Message}");
                 return;
             }
             
@@ -68,7 +59,6 @@ namespace Code.Scripts.Core.Systems.Storage
             
             if (selectedItemView != null)
             {
-                descriptionPanel.SetActive(false);
                 selectedItemView = null;
             }
     
@@ -108,7 +98,7 @@ namespace Code.Scripts.Core.Systems.Storage
     
         private void UpdateDescriptionPanel(ItemData data)
         {
-            if (descriptionPanel == null || data == null) return;
+            if ( data == null) return;
     
             descriptionItemName.text = data.displayName;
             descriptionText.text = data.description;
@@ -126,7 +116,6 @@ namespace Code.Scripts.Core.Systems.Storage
                     descriptionItemSprite.color = new Color(1,1,1,0);
                 }
             }
-            descriptionPanel.SetActive(true);
         }
     }
 }
