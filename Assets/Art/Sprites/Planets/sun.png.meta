@@ -219,7 +219,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -263,10 +263,10 @@ TextureImporter:
       name: sun_0
       rect:
         serializedVersion: 2
-        x: 173
-        y: 2372
-        width: 255
-        height: 255
+        x: 175
+        y: 2374
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: sun_1
       rect:
         serializedVersion: 2
-        x: 724
-        y: 2372
-        width: 254
-        height: 255
+        x: 725
+        y: 2374
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: sun_2
       rect:
         serializedVersion: 2
-        x: 1274
-        y: 2372
-        width: 254
-        height: 255
+        x: 1275
+        y: 2374
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: sun_3
       rect:
         serializedVersion: 2
-        x: 1824
-        y: 2372
-        width: 255
-        height: 255
+        x: 1825
+        y: 2374
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: sun_4
       rect:
         serializedVersion: 2
-        x: 2374
-        y: 2372
-        width: 252
-        height: 255
+        x: 2375
+        y: 2374
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: sun_5
       rect:
         serializedVersion: 2
-        x: 2924
-        y: 2372
-        width: 252
-        height: 255
+        x: 2925
+        y: 2374
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +395,10 @@ TextureImporter:
       name: sun_6
       rect:
         serializedVersion: 2
-        x: 3474
-        y: 2372
-        width: 252
-        height: 255
+        x: 3476
+        y: 2374
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +417,10 @@ TextureImporter:
       name: sun_7
       rect:
         serializedVersion: 2
-        x: 4024
-        y: 2372
-        width: 252
-        height: 255
+        x: 4026
+        y: 2374
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,9 +440,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4574
-        y: 2372
+        y: 2374
         width: 252
-        height: 255
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,9 +462,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5125
-        y: 2372
+        y: 2374
         width: 252
-        height: 255
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +483,10 @@ TextureImporter:
       name: sun_10
       rect:
         serializedVersion: 2
-        x: 173
-        y: 1821
-        width: 255
-        height: 255
+        x: 175
+        y: 1824
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: sun_11
       rect:
         serializedVersion: 2
-        x: 724
-        y: 1821
-        width: 254
-        height: 255
+        x: 725
+        y: 1824
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +527,10 @@ TextureImporter:
       name: sun_12
       rect:
         serializedVersion: 2
-        x: 1274
-        y: 1821
-        width: 254
-        height: 255
+        x: 1275
+        y: 1824
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +549,10 @@ TextureImporter:
       name: sun_13
       rect:
         serializedVersion: 2
-        x: 1824
-        y: 1821
-        width: 255
-        height: 255
+        x: 1825
+        y: 1824
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +571,10 @@ TextureImporter:
       name: sun_14
       rect:
         serializedVersion: 2
-        x: 2374
-        y: 1821
-        width: 252
-        height: 255
+        x: 2375
+        y: 1824
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: sun_15
       rect:
         serializedVersion: 2
-        x: 2924
-        y: 1821
-        width: 252
-        height: 255
+        x: 2925
+        y: 1824
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +615,10 @@ TextureImporter:
       name: sun_16
       rect:
         serializedVersion: 2
-        x: 3474
-        y: 1821
-        width: 252
-        height: 255
+        x: 3476
+        y: 1824
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +637,10 @@ TextureImporter:
       name: sun_17
       rect:
         serializedVersion: 2
-        x: 4024
-        y: 1821
-        width: 252
-        height: 255
+        x: 4026
+        y: 1824
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,9 +660,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4574
-        y: 1821
+        y: 1824
         width: 252
-        height: 255
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,9 +682,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5125
-        y: 1821
+        y: 1824
         width: 252
-        height: 255
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +703,10 @@ TextureImporter:
       name: sun_20
       rect:
         serializedVersion: 2
-        x: 173
+        x: 175
         y: 1274
-        width: 255
-        height: 252
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +725,10 @@ TextureImporter:
       name: sun_21
       rect:
         serializedVersion: 2
-        x: 724
+        x: 725
         y: 1274
-        width: 254
-        height: 252
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +747,10 @@ TextureImporter:
       name: sun_22
       rect:
         serializedVersion: 2
-        x: 1274
+        x: 1275
         y: 1274
-        width: 254
-        height: 252
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +769,10 @@ TextureImporter:
       name: sun_23
       rect:
         serializedVersion: 2
-        x: 1824
+        x: 1825
         y: 1274
-        width: 255
-        height: 252
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,10 +791,10 @@ TextureImporter:
       name: sun_24
       rect:
         serializedVersion: 2
-        x: 2374
+        x: 2375
         y: 1274
-        width: 252
-        height: 252
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -813,10 +813,10 @@ TextureImporter:
       name: sun_25
       rect:
         serializedVersion: 2
-        x: 2924
+        x: 2925
         y: 1274
-        width: 252
-        height: 252
+        width: 251
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,10 +835,10 @@ TextureImporter:
       name: sun_26
       rect:
         serializedVersion: 2
-        x: 3474
+        x: 3476
         y: 1274
-        width: 252
-        height: 252
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -857,10 +857,10 @@ TextureImporter:
       name: sun_27
       rect:
         serializedVersion: 2
-        x: 4024
+        x: 4026
         y: 1274
-        width: 252
-        height: 252
+        width: 250
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,7 +882,7 @@ TextureImporter:
         x: 4574
         y: 1274
         width: 252
-        height: 252
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,7 +904,7 @@ TextureImporter:
         x: 5125
         y: 1274
         width: 252
-        height: 252
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -923,10 +923,10 @@ TextureImporter:
       name: sun_30
       rect:
         serializedVersion: 2
-        x: 173
+        x: 175
         y: 724
-        width: 255
-        height: 252
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,10 +945,10 @@ TextureImporter:
       name: sun_31
       rect:
         serializedVersion: 2
-        x: 724
+        x: 725
         y: 724
-        width: 254
-        height: 252
+        width: 251
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,10 +967,10 @@ TextureImporter:
       name: sun_32
       rect:
         serializedVersion: 2
-        x: 1274
+        x: 1275
         y: 724
-        width: 254
-        height: 252
+        width: 251
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -989,10 +989,10 @@ TextureImporter:
       name: sun_33
       rect:
         serializedVersion: 2
-        x: 1824
+        x: 1825
         y: 724
-        width: 255
-        height: 252
+        width: 251
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1011,10 +1011,10 @@ TextureImporter:
       name: sun_34
       rect:
         serializedVersion: 2
-        x: 2374
+        x: 2375
         y: 724
-        width: 252
-        height: 252
+        width: 251
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1033,10 +1033,10 @@ TextureImporter:
       name: sun_35
       rect:
         serializedVersion: 2
-        x: 2924
+        x: 2925
         y: 724
-        width: 252
-        height: 252
+        width: 251
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: sun_36
       rect:
         serializedVersion: 2
-        x: 3474
+        x: 3476
         y: 724
-        width: 252
-        height: 252
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,10 +1077,10 @@ TextureImporter:
       name: sun_37
       rect:
         serializedVersion: 2
-        x: 4024
+        x: 4026
         y: 724
-        width: 252
-        height: 252
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,7 +1102,7 @@ TextureImporter:
         x: 4574
         y: 724
         width: 252
-        height: 252
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,7 +1124,7 @@ TextureImporter:
         x: 5125
         y: 724
         width: 252
-        height: 252
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1143,9 +1143,9 @@ TextureImporter:
       name: sun_40
       rect:
         serializedVersion: 2
-        x: 173
+        x: 175
         y: 173
-        width: 255
+        width: 250
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1165,9 +1165,9 @@ TextureImporter:
       name: sun_41
       rect:
         serializedVersion: 2
-        x: 724
+        x: 725
         y: 173
-        width: 254
+        width: 251
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1187,9 +1187,9 @@ TextureImporter:
       name: sun_42
       rect:
         serializedVersion: 2
-        x: 1274
+        x: 1275
         y: 173
-        width: 254
+        width: 251
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1209,9 +1209,9 @@ TextureImporter:
       name: sun_43
       rect:
         serializedVersion: 2
-        x: 1824
+        x: 1825
         y: 173
-        width: 255
+        width: 251
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1231,9 +1231,9 @@ TextureImporter:
       name: sun_44
       rect:
         serializedVersion: 2
-        x: 2374
+        x: 2375
         y: 173
-        width: 252
+        width: 251
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1253,9 +1253,9 @@ TextureImporter:
       name: sun_45
       rect:
         serializedVersion: 2
-        x: 2924
+        x: 2925
         y: 173
-        width: 252
+        width: 251
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1275,9 +1275,9 @@ TextureImporter:
       name: sun_46
       rect:
         serializedVersion: 2
-        x: 3474
+        x: 3476
         y: 173
-        width: 252
+        width: 250
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1297,9 +1297,9 @@ TextureImporter:
       name: sun_47
       rect:
         serializedVersion: 2
-        x: 4024
+        x: 4026
         y: 173
-        width: 252
+        width: 250
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
