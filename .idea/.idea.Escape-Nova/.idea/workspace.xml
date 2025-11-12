@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Pixellari SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/Pixellari SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/C# API/StateMachines/BehaviourAPI.StateMachines.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/MainMenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/MainMenuScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" afterDir="false" />
-    </list>
+    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,11 +22,11 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/hijackedgamesweb/Escape-Nova.git",
-    "accountId": "383bcb43-1ccf-49f1-acc5-fe574cbe729b"
+    "accountId": "8ac2b77f-b91f-4cf6-8c0e-79503f3128be"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingRecipe.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingRecipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@38fa2290d5f2/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -51,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Audio-Implementation",
+    "git-widget-placeholder": "ivan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,7 +54,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Programas\Unity\Editor\6000.0.58f2-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath P:\GitHub\Escape-Nova -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -70,7 +62,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Programas\Unity\Editor\6000.0.58f2-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Programas\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath P:\GitHub\Escape-Nova -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="P:\GitHub\Escape-Nova" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -125,6 +117,7 @@
       <workItem from="1762443028912" duration="1248000" />
       <workItem from="1762444978274" duration="11881000" />
       <workItem from="1762880055128" duration="2740000" />
+      <workItem from="1762976753341" duration="8400000" />
     </task>
     <servers />
   </component>
