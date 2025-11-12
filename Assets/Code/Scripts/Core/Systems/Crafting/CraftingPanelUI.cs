@@ -23,7 +23,6 @@ public class CraftingPanelUI : MonoBehaviour
     [SerializeField] private Transform ingredientsContainer;
     
     [Header("Panel de Detalles")]
-    [SerializeField] private GameObject detailsPanel;
     [SerializeField] private Image detailIcon;
     [SerializeField] private TextMeshProUGUI detailName;
     [SerializeField] private TextMeshProUGUI detailDescription;
@@ -60,7 +59,6 @@ public class CraftingPanelUI : MonoBehaviour
         _craftingSystem.OnCraftingCompleted += OnCraftingCompleted;
         
         craftButton.onClick.AddListener(OnCraftButtonClicked);
-        detailsPanel.SetActive(false);
         
         if (craftingProgressBar != null)
         {
@@ -190,7 +188,6 @@ public class CraftingPanelUI : MonoBehaviour
     public void SelectRecipe(CraftingRecipe recipe)
     {
         _selectedRecipe = recipe;
-        detailsPanel.SetActive(true);
         
         if (placeholderTextObject != null)
         {

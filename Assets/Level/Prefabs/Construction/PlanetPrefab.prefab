@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8833908152091549978}
   - component: {fileID: 6223935161277792084}
   - component: {fileID: 1253099990460781578}
+  - component: {fileID: 75891865791105038}
   m_Layer: 0
   m_Name: PlanetPrefab
   m_TagString: Untagged
@@ -137,3 +138,17 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &75891865791105038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5676018479038464827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2b7c0472c144318faf7fe4a5a5eefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6223935161277792084}
+  animationData: {fileID: 11400000, guid: 41aeb9aa8edfe0247980957326c8b021, type: 2}
