@@ -11,7 +11,7 @@ namespace Code.Scripts.Core.Managers
     {
         [SerializeField] private List<QuestData> allQuests;
         private List<QuestInstance> activeQuests = new();
-        
+        public List<QuestData> AllQuests => allQuests;
         public event Action<QuestInstance> OnQuestCompleted;
 
         private void Awake()
