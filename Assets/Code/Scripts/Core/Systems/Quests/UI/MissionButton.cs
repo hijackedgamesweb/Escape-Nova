@@ -8,28 +8,37 @@ namespace Code.Scripts.Core.Systems.Quests.UI
     public class MissionButton : MonoBehaviour
     {
         [SerializeField] private TMP_Text missionTitleText;
+        [SerializeField] private GameObject highlightObject;
     
         private QuestData assignedQuest;
         private MissionsUIController uiController;
 
+        public QuestData AssignedQuest => assignedQuest;
+
         private void Awake()
         {
-            // Añadir el listener al botón
             GetComponent<Button>().onClick.AddListener(OnButtonClick);
         }
-
-        // El controlador principal llamará a esto al crear el botón
+        
         public void Setup(QuestData questData, MissionsUIController controller)
         {
             assignedQuest = questData;
             uiController = controller;
             missionTitleText.text = assignedQuest.Title;
+            SetSelected(false);
         }
 
         private void OnButtonClick()
         {
-            // Le dice al controlador principal que muestre los detalles de esta misión
             uiController.DisplayQuestDetails(assignedQuest);
+        }
+        
+        public void SetSelected(bool isSelected)
+        {
+            if (highlightObject != null)
+            {
+                highlightObject.SetActive(isSelected);
+            }
         }
     }
 }

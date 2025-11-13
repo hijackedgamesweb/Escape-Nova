@@ -28,6 +28,7 @@ public class ResearchInitializer : MonoBehaviour
     private void Awake()
     {
         InitializeSystems();
+        InitializeSystems();
     }
     
     private void Start()
@@ -59,11 +60,11 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        storage.AddResource(ResourceType.Arena, 2000);
-        storage.AddResource(ResourceType.Piedra, 5000); 
-        storage.AddResource(ResourceType.Metal, 5000); 
-        storage.AddResource(ResourceType.Hielo, 5000); 
-        storage.AddResource(ResourceType.Fuego, 5000); 
+        storage.AddResource(ResourceType.Arena, 100);
+        storage.AddResource(ResourceType.Piedra, 100); 
+        storage.AddResource(ResourceType.Metal, 100); 
+        storage.AddResource(ResourceType.Hielo, 100); 
+        storage.AddResource(ResourceType.Fuego, 100); 
         
         Debug.Log($"Recursos iniciales: 200 Madera, 100 Piedra");
     }

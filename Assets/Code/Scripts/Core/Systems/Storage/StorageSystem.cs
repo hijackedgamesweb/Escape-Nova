@@ -194,53 +194,39 @@ namespace Code.Scripts.Core.Systems.Storage
             if (newAmount > maxStack)
             {
                 _resources[type] = maxStack;
-                Debug.LogWarning($"Recurso de {type} ha llegado al máximo de {maxStack}!");
             }
             else
             {
                 _resources[type] = newAmount;
             }
             
-            // Aviso a todos los que estén escuchando que este recurso cambió
             OnResourceChanged?.Invoke(type, _resources[type]);
             OnStorageUpdated?.Invoke();
             return true;
         }
-        
-        // Método para CONSUMIR recursos
         public bool ConsumeResource(ResourceType type, int amount)
         {
-            // Verifico que tengamos suficientes recursos
             if (!HasResource(type, amount))
                 return false;
                 
-            // Resto la cantidad consumida
             _resources[type] -= amount;
-            // Aviso que el recurso cambió
             OnResourceChanged?.Invoke(type, _resources[type]);
             OnStorageUpdated?.Invoke();
             return true;
         }
         
-        // Verifico si tengo cierta cantidad de un recurso
         public bool HasResource(ResourceType type, int amount)
         {
             return _resources.ContainsKey(type) && _resources[type] >= amount;
         }
-        
-        // Obtengo la cantidad actual de un recurso
         public int GetResourceAmount(ResourceType type)
         {
             return _resources.GetValueOrDefault(type, 0);
         }
-        
-        // Obtengo los datos de configuración de un recurso
         public ResourceData GetResourceData(ResourceType type)
         {
             return _resourceDatabase.GetValueOrDefault(type);
         }
-        
-        // Obtengo una copia de todos los recursos que tenemos
         public Dictionary<ResourceType, int> GetAllResources()
         {
             return new Dictionary<ResourceType, int>(_resources);

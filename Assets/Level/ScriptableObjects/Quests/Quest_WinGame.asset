@@ -18,7 +18,11 @@ MonoBehaviour:
   Objectives:
   - rid: 5265271178754261163
   - rid: 5265271182149550176
-  Reward: Las gracias
+  Rewards:
+  - Description: Piedra
+    Amount: 50
+  - Description: Metal
+    Amount: 50
   references:
     version: 2
     RefIds:
@@ -33,4 +37,4 @@ MonoBehaviour:
       data:
         objectiveDescription: Utopia
         isCompleted: 0
-        requiredConstructible: {fileID: 11400000, guid: 15bd4d4f3526e1b4a96df7acaba95422, type: 2}
+        requiredConstructible: {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}

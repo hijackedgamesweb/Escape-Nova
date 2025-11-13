@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionTitleText: {fileID: 3976342645214155417}
+  highlightObject: {fileID: 6999229270176837107}
 --- !u!1 &6232142684991170630
 GameObject:
   m_ObjectHideFlags: 0
