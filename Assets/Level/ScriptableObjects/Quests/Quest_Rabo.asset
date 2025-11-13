@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
-  m_Name: PruebaMission
+  m_Name: Quest_Rabo
   m_EditorClassIdentifier: 
-  QuestId: pruebaMision
-  Title: Test Mision
-  Description: Reach to 100 metal production and build a Kados
+  QuestId: first_task
+  Title: Es un task
+  Description: No veas lo que me ha costado nene
   Objectives:
-  - rid: 967674831443067136
+  - rid: 5265271223047159923
   Rewards:
-  - Description: Fuego
-    Amount: 10
+  - Description: Arena
+    Amount: 1
   references:
     version: 2
     RefIds:
-    - rid: 967674831443067136
+    - rid: 5265271223047159923
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build a Kados
+        objectiveDescription: Construye el planeta Fuego
         isCompleted: 0
-        requiredConstructible: {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}
+        requiredConstructible: {fileID: 11400000, guid: 123340d8a43fa1046b95cfd9eda8c82b, type: 2}
