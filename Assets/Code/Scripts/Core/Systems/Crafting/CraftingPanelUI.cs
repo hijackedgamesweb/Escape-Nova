@@ -204,7 +204,7 @@ public class CraftingPanelUI : MonoBehaviour
         
         if (detailTimeText != null)
         {
-            detailTimeText.text = $"{recipe.craftingTimeInSeconds} s";
+            detailTimeText.text = $"Time: {recipe.craftingTimeInSeconds} seconds";
         }
 
         foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);

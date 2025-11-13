@@ -60,11 +60,11 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        storage.AddResource(ResourceType.Arena, 100);
-        storage.AddResource(ResourceType.Piedra, 100); 
-        storage.AddResource(ResourceType.Metal, 100); 
-        storage.AddResource(ResourceType.Hielo, 100); 
-        storage.AddResource(ResourceType.Fuego, 100); 
+        storage.AddResource(ResourceType.Arena, 10000);
+        storage.AddResource(ResourceType.Piedra, 10000); 
+        storage.AddResource(ResourceType.Metal, 10000); 
+        storage.AddResource(ResourceType.Hielo, 10000); 
+        storage.AddResource(ResourceType.Fuego, 10000); 
         
         Debug.Log($"Recursos iniciales: 200 Madera, 100 Piedra");
     }

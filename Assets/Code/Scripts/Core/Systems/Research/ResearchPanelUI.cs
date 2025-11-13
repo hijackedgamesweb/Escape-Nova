@@ -209,7 +209,7 @@ namespace Code.Scripts.UI.Research
             detailIcon.sprite = node.icon; 
             detailName.text = node.displayName;
             detailDescription.text = node.description;
-            detailTimeText.text = $"Tiempo: {node.researchTimeInSeconds}s";
+            detailTimeText.text = $"Time: {node.researchTimeInSeconds} seconds";
 
             foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
             foreach (var cost in node.resourceCosts)
