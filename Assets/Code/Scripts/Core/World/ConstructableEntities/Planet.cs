@@ -8,8 +8,9 @@ using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.States;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
+using Code.Scripts.UI.Menus; // Añadido para el panel de info
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.EventSystems; // Añadido para evitar clicks a través de UI
 
 namespace Code.Scripts.Core.World.ConstructableEntities
 {
@@ -30,10 +31,10 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         // Diccionario para acumular mejoras por tipo
         private Dictionary<string, float> _improvementPercentages = new Dictionary<string, float>();
 
-        // Eventos est�ticos para notificar a todos los planetas sobre mejoras globales
+        // Eventos estticos para notificar a todos los planetas sobre mejoras globales
         public static event Action<string, float> OnGlobalImprovementAdded;
 
-        // Lista est�tica de mejoras globales acumuladas
+        // Lista esttica de mejoras globales acumuladas
         private static Dictionary<string, float> _globalImprovements = new Dictionary<string, float>();
 
         private void Awake()
@@ -54,6 +55,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         {
             // Desuscribirse de eventos globales
             OnGlobalImprovementAdded -= HandleGlobalImprovementAdded;
+            _stateManager?.SetState(null);
         }
 
         public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
@@ -86,7 +88,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
         }
 
-        // M�todo para aplicar mejoras espec�ficas a este planeta
+        // Mtodo para aplicar mejoras especficas a este planeta
         public void AddImprovement(string improvementType, float percentage)
         {
             if (!_improvementPercentages.ContainsKey(improvementType))
@@ -100,7 +102,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             RecalculateProduction();
         }
 
-        // Recalcula la producci�n bas�ndose en los valores base y las mejoras acumuladas
+        // Recalcula la produccin basndose en los valores base y las mejoras acumuladas
         private void RecalculateProduction()
         {
             // Resetear a los valores base
@@ -139,14 +141,14 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             return total;
         }
 
-        // Obtener el porcentaje de una mejora espec�fica
+        // Obtener el porcentaje de una mejora especfica
         public float GetImprovementPercentage(string improvementType)
         {
             return _improvementPercentages.ContainsKey(improvementType) ?
                    _improvementPercentages[improvementType] : 0f;
         }
 
-        // M�todo est�tico para a�adir mejoras globales a todos los planetas
+        // Mtodo esttico para aadir mejoras globales a todos los planetas
         public static void AddGlobalImprovement(string improvementType, float percentage)
         {
             Debug.Log($"=== ADDING GLOBAL IMPROVEMENT: {improvementType} {percentage}% ===");
@@ -164,7 +166,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             OnGlobalImprovementAdded?.Invoke(improvementType, percentage);
         }
 
-        // Manejar mejora global a�adida
+        // Manejar mejora global aadida
         private void HandleGlobalImprovementAdded(string improvementType, float percentage)
         {
             AddImprovement(improvementType, percentage);
@@ -172,8 +174,16 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
         public void OnMouseDown()
         {
+            // --- INICIO DE MODIFICACIÓN ---
+            // Evita que el click atraviese la UI
+            if (EventSystem.current.IsPointerOverGameObject()) return; 
+
             Debug.Log("Planet clicked: " + this.name);
             UnityEngine.Camera.main.GetComponent<CameraController2D>().SetTarget(this.transform);
+            
+            // Llama al panel de información
+            PlanetInfoPanel.Instance.ShowPanel(this);
+            // --- FIN DE MODIFICACIÓN ---
         }
 
         public void AddSatelite(SateliteDataSO sateliteDataSo)
