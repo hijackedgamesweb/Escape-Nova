@@ -78,7 +78,6 @@ namespace Code.Scripts.Core.World
             }
             if (Planets[orbit][positionInOrbit] == null)
             {
-                Debug.LogWarning($"No planet to remove at orbit {orbit} position {positionInOrbit}");
                 return;
             }
 

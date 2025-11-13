@@ -52,7 +52,6 @@ public class ResearchInitializer : MonoBehaviour
         if (testResearch != null)
         {
             var allResearch = testResearch.GetAllResearchStatus();
-            Debug.Log($"ResearchSystem creado con {allResearch.Count} investigaciones registradas");
         }
     }
 
@@ -60,13 +59,11 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        storage.AddResource(ResourceType.Arena, 100);
-        storage.AddResource(ResourceType.Piedra, 100); 
-        storage.AddResource(ResourceType.Metal, 100); 
-        storage.AddResource(ResourceType.Hielo, 100); 
-        storage.AddResource(ResourceType.Fuego, 100); 
-        
-        Debug.Log($"Recursos iniciales: 200 Madera, 100 Piedra");
+        storage.AddResource(ResourceType.Arena, 2500);
+        storage.AddResource(ResourceType.Piedra, 2100); 
+        storage.AddResource(ResourceType.Metal, 2100); 
+        storage.AddResource(ResourceType.Hielo, 2100); 
+        storage.AddResource(ResourceType.Fuego, 2100); 
     }
     private void LogInitialState()
     {
@@ -75,8 +72,6 @@ public class ResearchInitializer : MonoBehaviour
         {
             var allResearch = _researchSystem.GetAllResearchStatus();
         
-            Debug.Log("ESTADO DE INVESTIGACIONES");
-            Debug.Log($"Total de investigaciones: {allResearch.Count}");
         
             foreach (var researchStatus in allResearch)
             {
@@ -84,18 +79,14 @@ public class ResearchInitializer : MonoBehaviour
                 Debug.Log($"- {researchStatus.Key}: {researchStatus.Value} (Node: {researchNode != null})");
             }
 
-            // Verificar recursos
             StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
             var resources = storage.GetAllResources();
-            Debug.Log("=== RECURSOS DISPONIBLES ===");
             foreach (var resource in resources)
             {
-                Debug.Log($"- {resource.Key}: {resource.Value}");
             }
         }
         catch (System.Exception e)
         {
-            Debug.LogError($"Error al verificar estado: {e.Message}");
         }
     }
 
@@ -107,11 +98,9 @@ public class ResearchInitializer : MonoBehaviour
         if (research.CanStartResearch("wood_capacity_1"))
         {
             research.StartResearch("wood_capacity_1");
-            Debug.Log("Investigación de madera iniciada!");
         }
         else
         {
-            Debug.Log("No se puede iniciar investigación de madera. Verificar recursos.");
         }
     }
 
@@ -123,11 +112,9 @@ public class ResearchInitializer : MonoBehaviour
         if (research.CanStartResearch("stone_processing"))
         {
             research.StartResearch("stone_processing");
-            Debug.Log("Investigación de piedra iniciada!");
         }
         else
         {
-            Debug.Log("No se puede iniciar investigación de piedra. Verificar recursos.");
         }
     }
 
@@ -137,14 +124,11 @@ public class ResearchInitializer : MonoBehaviour
         ResearchSystem research = ServiceLocator.GetService<ResearchSystem>();
         var allResearch = research.GetAllResearchStatus();
         
-        Debug.Log("ESTADO ACTUAL DE INVESTIGACIONES");
         foreach (var researchStatus in allResearch)
         {
             var researchNode = research.GetResearch(researchStatus.Key);
             string status = researchStatus.Value.ToString();
             string progress = (research.GetResearchProgress(researchStatus.Key) * 100).ToString("F1");
-            
-            Debug.Log($"{researchNode.displayName}: {status} ({progress}%)");
         }
     }
 }

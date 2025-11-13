@@ -66,7 +66,6 @@ namespace Code.Scripts.UI.Menus
             _currentPlanet = planet;
             if (_currentPlanet == null)
             {
-                Debug.LogError("Se intentó mostrar el panel sin un planeta.");
                 return;
             }
             
@@ -86,7 +85,6 @@ namespace Code.Scripts.UI.Menus
                 }
                 else
                 {
-                    Debug.LogWarning($"Índice de recurso fuera de rango para '{_currentPlanet.Name}'. ResourceType '{type.ToString()}' (valor {resourceIndex}) está fuera de los límites del array 'ResourcePerCycle' (tamaño {_currentPlanet.ResourcePerCycle.Length}). Revisa el PlanetDataSO. Mostrando 0.");
                     productionString.AppendLine($"{type.ToString()}: 0");
                 }
             }

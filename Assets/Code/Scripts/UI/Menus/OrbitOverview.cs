@@ -27,28 +27,19 @@ namespace Code.Scripts.UI.Menus
         {
             DrawOrbit(0);
             ConstructionPanelManager.OnConstructionTypeChanged += OnConstructionTypeChanged;
-            
-            // --- INICIO DE MODIFICACIÓN ---
-            // Nos suscribimos al evento OnPlanetRemoved de SolarSystem.
-            // Usamos el método DeletePlanetFromOverview que YA EXISTE y hace justo lo que necesitamos.
             if (_solarSystem != null)
             {
                 _solarSystem.OnPlanetRemoved += DeletePlanetFromOverview;
             }
-            // --- FIN DE MODIFICACIÓN ---
         }
-
-        // --- INICIO DE CÓDIGO AÑADIDO ---
         private void OnDestroy()
         {
-            // Buena práctica: desuscribirse de los eventos al destruir el objeto
             ConstructionPanelManager.OnConstructionTypeChanged -= OnConstructionTypeChanged;
             if (_solarSystem != null)
             {
                 _solarSystem.OnPlanetRemoved -= DeletePlanetFromOverview;
             }
         }
-        // --- FIN DE CÓDIGO AÑADIDO ---
 
         private void OnConstructionTypeChanged(ConstructionType obj)
         {
@@ -110,9 +101,6 @@ namespace Code.Scripts.UI.Menus
                     {
                     }
                 }
-                // NOTA: Aquí se podría añadir también el click para abrir el panel de info
-                // desde la vista de órbita, pero el requisito era al pinchar en el planeta *del juego*.
-                // Si también se quiere desde aquí, se añadiría la llamada a PlanetInfoPanel.Instance.ShowPanel()
             });
         }
         
