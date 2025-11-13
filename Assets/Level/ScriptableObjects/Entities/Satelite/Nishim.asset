@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97e2fff6615463385e2477109f6b024, type: 3}
-  m_Name: Ares
+  m_Name: Nishim
   m_EditorClassIdentifier: 
-  constructibleName: Ares
-  sprite: {fileID: 21300000, guid: fd412bdeb18902443bbb05cc2ec604e4, type: 3}
-  timeToBuild: 5
+  constructibleName: Nishim
+  sprite: {fileID: 0}
+  timeToBuild: 75
   buildCostResources:
-  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: 64000000
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  buildCostAmounts: 580200002c01000064000000
   size: 0
-  desc: Tu potencia de guerra aumenta un 10%
+  desc: "Este planeta produce un 75% m\xE1s de recursos"
   upgrades:
-  - rid: 967674922329964625
+  - rid: 2167832615999504385
   references:
     version: 2
     RefIds:
-    - rid: 967674922329964625
+    - rid: 2167832615999504385
       type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
         productionIncrement: 25
