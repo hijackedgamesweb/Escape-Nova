@@ -8,8 +8,9 @@ using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.States;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
+using Code.Scripts.UI.Menus; // Añadido para el panel de info
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.EventSystems; // Añadido para evitar clicks a través de UI
 
 namespace Code.Scripts.Core.World.ConstructableEntities
 {
@@ -30,26 +31,31 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         // Diccionario para acumular mejoras por tipo
         private Dictionary<string, float> _improvementPercentages = new Dictionary<string, float>();
 
-        // Eventos estáticos para notificar a todos los planetas sobre mejoras globales
+        // Eventos estticos para notificar a todos los planetas sobre mejoras globales
         public static event Action<string, float> OnGlobalImprovementAdded;
 
-        // Lista estática de mejoras globales acumuladas
+        // Lista esttica de mejoras globales acumuladas
         private static Dictionary<string, float> _globalImprovements = new Dictionary<string, float>();
 
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+
+            // Suscribirse a eventos globales
             OnGlobalImprovementAdded += HandleGlobalImprovementAdded;
         }
 
         private void Start()
         {
+            // Aplicar todas las mejoras globales existentes a este planeta
             ApplyExistingGlobalImprovements();
         }
 
         private void OnDestroy()
         {
+            // Desuscribirse de eventos globales
             OnGlobalImprovementAdded -= HandleGlobalImprovementAdded;
+            _stateManager?.SetState(null);
         }
 
         public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
@@ -68,12 +74,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             OrbitIndex = orbit;
             PlanetIndex = positionInOrbit;
 
-            var gameTime = ServiceLocator.GetService<IGameTime>();
-            _stateManager = new PlanetStateManager(gameTime);
-            _stateManager.SetState(new BuildingState(this, gameTime));
+            var gametTime = ServiceLocator.GetService<IGameTime>();
+            _stateManager = new PlanetStateManager(gametTime);
+            _stateManager.SetState(new BuildingState(this, gametTime));
         }
 
-        // Resto de los métodos de mejoras se mantienen igual...
+        // Aplicar mejoras globales existentes a este planeta
         private void ApplyExistingGlobalImprovements()
         {
             foreach (var improvement in _globalImprovements)
@@ -82,6 +88,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
         }
 
+        // Mtodo para aplicar mejoras especficas a este planeta
         public void AddImprovement(string improvementType, float percentage)
         {
             if (!_improvementPercentages.ContainsKey(improvementType))
@@ -89,19 +96,25 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 _improvementPercentages[improvementType] = 0f;
             }
 
+            float oldValue = _improvementPercentages[improvementType];
             _improvementPercentages[improvementType] += percentage;
+            
             RecalculateProduction();
         }
 
+        // Recalcula la produccin basndose en los valores base y las mejoras acumuladas
         private void RecalculateProduction()
         {
+            // Resetear a los valores base
             for (int i = 0; i < ResourcePerCycle.Length; i++)
             {
                 ResourcePerCycle[i] = _baseResourcePerCycle[i];
             }
 
+            // Calcular el porcentaje total de todas las mejoras
             float totalImprovement = GetTotalImprovementPercentage();
 
+            // Aplicar el porcentaje total al valor BASE
             if (totalImprovement > 0f)
             {
                 for (int i = 0; i < ResourcePerCycle.Length; i++)
@@ -112,9 +125,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 }
             }
 
-            Debug.Log($"Planet {Name}: Total improvement {totalImprovement}%, New production: {ResourcePerCycle[0]}");
+            // Mostrar resumen de mejoras
+            string improvementsSummary = string.Join(", ", _improvementPercentages.Select(kvp => $"{kvp.Key}: {kvp.Value}%"));
+            Debug.Log($"Planet {Name}: Base={_baseResourcePerCycle[0]}, Improvements={improvementsSummary}, Total={totalImprovement}%, Final={ResourcePerCycle[0]}");
         }
 
+        // Obtener el porcentaje total de mejora
         public float GetTotalImprovementPercentage()
         {
             float total = 0f;
@@ -125,16 +141,19 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             return total;
         }
 
+        // Obtener el porcentaje de una mejora especfica
         public float GetImprovementPercentage(string improvementType)
         {
             return _improvementPercentages.ContainsKey(improvementType) ?
                    _improvementPercentages[improvementType] : 0f;
         }
 
+        // Mtodo esttico para aadir mejoras globales a todos los planetas
         public static void AddGlobalImprovement(string improvementType, float percentage)
         {
             Debug.Log($"=== ADDING GLOBAL IMPROVEMENT: {improvementType} {percentage}% ===");
 
+            // Actualizar el registro global
             if (!_globalImprovements.ContainsKey(improvementType))
             {
                 _globalImprovements[improvementType] = 0f;
@@ -142,9 +161,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             _globalImprovements[improvementType] += percentage;
 
             Debug.Log($"Total {improvementType} improvement: {_globalImprovements[improvementType]}%");
+
+            // Notificar a todos los planetas existentes
             OnGlobalImprovementAdded?.Invoke(improvementType, percentage);
         }
 
+        // Manejar mejora global aadida
         private void HandleGlobalImprovementAdded(string improvementType, float percentage)
         {
             AddImprovement(improvementType, percentage);
@@ -152,8 +174,16 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
         public void OnMouseDown()
         {
+            // --- INICIO DE MODIFICACIÓN ---
+            // Evita que el click atraviese la UI
+            if (EventSystem.current.IsPointerOverGameObject()) return; 
+
             Debug.Log("Planet clicked: " + this.name);
             UnityEngine.Camera.main.GetComponent<CameraController2D>().SetTarget(this.transform);
+            
+            // Llama al panel de información
+            PlanetInfoPanel.Instance.ShowPanel(this);
+            // --- FIN DE MODIFICACIÓN ---
         }
 
         public void AddSatelite(SateliteDataSO sateliteDataSo)

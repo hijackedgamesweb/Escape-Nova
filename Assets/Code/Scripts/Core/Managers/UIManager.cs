@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Code.Scripts.Patterns.Singleton;
 using Code.Scripts.UI.Windows;
@@ -9,6 +10,8 @@ namespace Code.Scripts.Core.Managers
     {
         [SerializeField] private List<BaseUIScreen> screens;
         private BaseUIScreen _currentScreen;
+        
+        public static event Action OnScreenChanged;
         
         public void Awake()
         {
@@ -24,6 +27,9 @@ namespace Code.Scripts.Core.Managers
             }
             _currentScreen = screens.Find(screen => screen is T);
             _currentScreen.Show(parameter);
+            
+            OnScreenChanged?.Invoke();
+            
             return _currentScreen as T;
         }
 
