@@ -4,6 +4,7 @@ using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Planets;
+using Code.Scripts.Core.Systems.Storage;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 {
@@ -15,17 +16,19 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
         private PlanetListPrefab _currentPlanetItem;
         private PlanetUnlockManager _unlockManager;
         
+        private StorageSystem _storageSystem;
         private Dictionary<string, PlanetListPrefab> _createdPlanets = new Dictionary<string, PlanetListPrefab>();
 
         private void Start()
         {
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            
             try
             {
                 _unlockManager = ServiceLocator.GetService<PlanetUnlockManager>();
             }
             catch (System.Exception e)
             {
-                return;
             }
 
             foreach (var planetData in _planetDataSOs)
@@ -33,13 +36,15 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 AddNewPlanet(planetData);
             }
             
-            var alreadyUnlockedPlanets = _unlockManager.GetUnlockedPlanets();
-            foreach (var planetData in alreadyUnlockedPlanets)
+            if (_unlockManager != null)
             {
-                AddNewPlanet(planetData);
+                var alreadyUnlockedPlanets = _unlockManager.GetUnlockedPlanets();
+                foreach (var planetData in alreadyUnlockedPlanets)
+                {
+                    AddNewPlanet(planetData);
+                }
+                _unlockManager.OnPlanetAddedToConstructionList += AddNewPlanet;
             }
-
-            _unlockManager.OnPlanetAddedToConstructionList += AddNewPlanet;
         }
 
         private void OnDestroy()
@@ -84,6 +89,34 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 return null;
 
             return _currentPlanetItem.PlanetData;
+        }
+        public bool ConsumeResourcesForPlanet(PlanetDataSO planetData)
+        {
+            if (planetData == null) return false;
+            for (int i = 0; i < planetData.buildCostAmounts.Length; i++)
+            {
+                if (!_storageSystem.HasResource(planetData.buildCostResources[i].Type, planetData.buildCostAmounts[i]))
+                {
+                    return false;
+                }
+            }
+            for (int i = 0; i < planetData.buildCostAmounts.Length; i++)
+            {
+                _storageSystem.ConsumeResource(
+                    planetData.buildCostResources[i].Type, 
+                    planetData.buildCostAmounts[i]
+                );
+            }
+            return true;
+        }
+        public void ClearSelection()
+        {
+            if (_currentPlanetItem != null)
+            {
+                _currentPlanetItem.IsSelected = false;
+                _currentPlanetItem.UpdateVisualState();
+                _currentPlanetItem = null;
+            }
         }
     }
 }
