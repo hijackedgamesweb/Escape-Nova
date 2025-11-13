@@ -35,29 +35,28 @@ namespace Code.Scripts.Core.Systems.Skills
         private Dictionary<string, GameObject> nodeUIElements = new Dictionary<string, GameObject>();
         private Dictionary<string, GameObject> linesContainers = new Dictionary<string, GameObject>();
         private bool isInitialized = false;
-        private bool initializationAttempted = false;
 
         public override void Show(object parameter = null)
         {
             base.Show(parameter);
+            Debug.Log("SkillTreeUI: Show called");
 
-            Debug.Log($"SkillTreeUI: Show called. Initialized: {isInitialized}, Attempted: {initializationAttempted}");
-
-            if (!isInitialized && !initializationAttempted)
+            // Forzar inicialización inmediata
+            if (!isInitialized)
             {
-                Debug.Log("SkillTreeUI: First time showing, starting initialization...");
-                StartInitialization();
+                Initialize();
             }
-            else if (isInitialized)
+
+            // Si está inicializado, refrescar UI
+            if (isInitialized)
             {
-                Debug.Log("SkillTreeUI: Already initialized, refreshing UI...");
                 RefreshUI();
             }
-            else if (initializationAttempted && !isInitialized)
+            else
             {
-                Debug.Log("SkillTreeUI: Initialization in progress, waiting...");
-                // Si la inicialización está en progreso, intentar acelerarla
-                TryCompleteInitialization();
+                // Si no se pudo inicializar, intentar de nuevo en el próximo frame
+                Debug.LogWarning("SkillTreeUI: Initialization failed, will retry next frame");
+                Invoke(nameof(DelayedInitialization), 0.01f);
             }
         }
 
@@ -70,8 +69,6 @@ namespace Code.Scripts.Core.Systems.Skills
         private void Start()
         {
             Debug.Log("SkillTreeUI: Start method called");
-
-            // Configurar botones del modal
             SetupModalButtons();
             HideModal();
         }
@@ -80,116 +77,73 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (modalCloseButton != null)
                 modalCloseButton.onClick.AddListener(HideModal);
-            else
-                Debug.LogError("SkillTreeUI: ModalCloseButton is not assigned!");
 
             if (modalPurchaseButton != null)
                 modalPurchaseButton.onClick.AddListener(PurchaseSelectedNode);
-            else
-                Debug.LogError("SkillTreeUI: ModalPurchaseButton is not assigned!");
         }
 
-        private void StartInitialization()
+        private void Initialize()
         {
-            if (initializationAttempted) return;
+            if (isInitialized) return;
 
-            initializationAttempted = true;
-            Debug.Log("SkillTreeUI: Starting initialization process...");
-
-            // Intentar obtener SkillTreeManager inmediatamente
-            if (TryGetSkillTreeManagerImmediate())
-            {
-                CompleteInitialization();
-            }
-            else
-            {
-                Debug.Log("SkillTreeUI: SkillTreeManager not ready, starting rapid retry...");
-                // Reintentar rápidamente
-                InvokeRepeating(nameof(TryCompleteInitialization), 0.05f, 0.05f);
-            }
-        }
-
-        private void TryCompleteInitialization()
-        {
-            if (isInitialized)
-            {
-                CancelInvoke(nameof(TryCompleteInitialization));
-                return;
-            }
-
-            if (TryGetSkillTreeManagerImmediate())
-            {
-                CancelInvoke(nameof(TryCompleteInitialization));
-                CompleteInitialization();
-            }
-        }
-
-        private bool TryGetSkillTreeManagerImmediate()
-        {
-            if (skillTreeManager != null && skillTreeManager.IsInitialized)
-                return true;
+            Debug.Log("SkillTreeUI: Initializing...");
 
             try
             {
-                var manager = ServiceLocator.GetService<SkillTreeManager>();
-                if (manager != null && manager.IsInitialized)
+                skillTreeManager = ServiceLocator.GetService<SkillTreeManager>();
+
+                if (skillTreeManager != null && skillTreeManager.IsInitialized)
                 {
-                    skillTreeManager = manager;
-                    Debug.Log("SkillTreeUI: Successfully acquired initialized SkillTreeManager");
-                    return true;
+                    skillTreeManager.OnSkillPurchased += OnSkillPurchased;
+                    skillTreeManager.OnSkillPointsChanged += OnSkillPointsChanged;
+                    isInitialized = true;
+                    Debug.Log("SkillTreeUI: Initialized successfully with SkillTreeManager");
+                }
+                else
+                {
+                    Debug.LogWarning("SkillTreeUI: SkillTreeManager not ready yet");
                 }
             }
             catch (System.Exception e)
             {
-                Debug.Log($"SkillTreeUI: SkillTreeManager not available: {e.Message}");
+                Debug.LogError($"SkillTreeUI: Failed to initialize - {e.Message}");
             }
-
-            return false;
         }
 
-        private void CompleteInitialization()
+        private void DelayedInitialization()
         {
-            if (skillTreeManager == null)
+            if (!isInitialized)
             {
-                Debug.LogError("SkillTreeUI: Cannot complete initialization - SkillTreeManager is null!");
-                return;
+                Debug.Log("SkillTreeUI: Retrying initialization...");
+                Initialize();
+
+                if (isInitialized)
+                {
+                    RefreshUI();
+                }
             }
-
-            // Suscribirse a eventos
-            skillTreeManager.OnSkillPurchased += OnSkillPurchased;
-            skillTreeManager.OnSkillPointsChanged += OnSkillPointsChanged;
-
-            InitializeUI();
-            isInitialized = true;
-
-            Debug.Log("SkillTreeUI: Initialization completed successfully");
-
-            // Forzar una actualización visual
-            RefreshUI();
         }
 
         private void InitializeUI()
         {
             if (!CheckUIReferences())
             {
-                Debug.LogError("SkillTreeUI: Missing required UI references!");
+                Debug.LogError("SkillTreeUI: Missing UI references");
                 return;
             }
 
             if (skillTreeManager == null)
             {
-                Debug.LogError("SkillTreeUI: SkillTreeManager is null!");
+                Debug.LogError("SkillTreeUI: SkillTreeManager is null");
                 return;
             }
 
-            // Limpiar contenedor
             ClearUI();
 
-            // Crear áreas para cada constelación
             var constellations = skillTreeManager.GetConstellations();
             if (constellations == null)
             {
-                Debug.LogError("SkillTreeUI: Constellations list is null!");
+                Debug.LogError("SkillTreeUI: Constellations is null");
                 return;
             }
 
@@ -197,13 +151,10 @@ namespace Code.Scripts.Core.Systems.Skills
 
             foreach (var constellation in constellations)
             {
-                if (constellation == null)
+                if (constellation != null)
                 {
-                    Debug.LogError("SkillTreeUI: Found null constellation!");
-                    continue;
+                    CreateConstellationArea(constellation);
                 }
-
-                CreateConstellationArea(constellation);
             }
 
             UpdateSkillPointsDisplay();
@@ -245,18 +196,6 @@ namespace Code.Scripts.Core.Systems.Skills
                 allValid = false;
             }
 
-            if (nodeModal == null)
-            {
-                Debug.LogError("SkillTreeUI: NodeModal is not assigned!");
-                allValid = false;
-            }
-
-            if (skillPointsText == null)
-            {
-                Debug.LogError("SkillTreeUI: SkillPointsText is not assigned!");
-                allValid = false;
-            }
-
             return allValid;
         }
 
@@ -265,18 +204,13 @@ namespace Code.Scripts.Core.Systems.Skills
             GameObject area = Instantiate(constellationAreaPrefab, constellationsContainer);
             constellationAreas[constellation.constellationName] = area;
 
-            // Configurar el header de la constelación
             TextMeshProUGUI headerText = area.GetComponentInChildren<TextMeshProUGUI>();
             if (headerText != null)
             {
                 headerText.text = constellation.constellationName;
             }
-            else
-            {
-                Debug.LogWarning($"SkillTreeUI: Could not find header text for constellation {constellation.constellationName}");
-            }
 
-            // Crear contenedor específico para líneas
+            // Crear contenedor para líneas
             GameObject linesContainer = new GameObject("LinesContainer");
             linesContainer.transform.SetParent(area.transform);
             linesContainer.transform.SetAsFirstSibling();
@@ -322,10 +256,6 @@ namespace Code.Scripts.Core.Systems.Skills
                 nodeItem.Initialize(nodeData, skillTreeManager, this);
                 nodeUIElements[nodeData.name] = nodeUI;
             }
-            else
-            {
-                Debug.LogError("SkillTreeUI: SkillNodePrefab is missing SkillNodeUIItem component!");
-            }
         }
 
         private void CreateConnections(SkillConstellation constellation, Transform parent)
@@ -334,7 +264,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
             foreach (var node in constellation.nodes)
             {
-                if (node == null || node.prerequisiteNodes == null) continue;
+                if (node?.prerequisiteNodes == null) continue;
 
                 foreach (var prerequisite in node.prerequisiteNodes)
                 {
@@ -384,12 +314,9 @@ namespace Code.Scripts.Core.Systems.Skills
 
             selectedNode = nodeData;
 
-            if (modalNodeName != null)
-                modalNodeName.text = nodeData.nodeName;
-            if (modalDescription != null)
-                modalDescription.text = nodeData.description;
-            if (modalCost != null)
-                modalCost.text = $"Coste: {nodeData.skillPointCost} puntos";
+            if (modalNodeName != null) modalNodeName.text = nodeData.nodeName;
+            if (modalDescription != null) modalDescription.text = nodeData.description;
+            if (modalCost != null) modalCost.text = $"Coste: {nodeData.skillPointCost} puntos";
 
             if (modalPurchaseButton != null)
             {
@@ -406,9 +333,13 @@ namespace Code.Scripts.Core.Systems.Skills
 
         public void HideModal()
         {
-            if (nodeModal != null)
-                nodeModal.SetActive(false);
+            if (nodeModal != null) nodeModal.SetActive(false);
             selectedNode = null;
+        }
+
+        public void ForceCloseModal()
+        {
+            HideModal();
         }
 
         private void PurchaseSelectedNode()
@@ -446,11 +377,6 @@ namespace Code.Scripts.Core.Systems.Skills
             }
         }
 
-        public void ForceCloseModal()
-        {
-            HideModal();
-        }
-
         private void OnDestroy()
         {
             if (skillTreeManager != null)
@@ -458,8 +384,7 @@ namespace Code.Scripts.Core.Systems.Skills
                 skillTreeManager.OnSkillPurchased -= OnSkillPurchased;
                 skillTreeManager.OnSkillPointsChanged -= OnSkillPointsChanged;
             }
-
-            CancelInvoke(nameof(TryCompleteInitialization));
+            CancelInvoke(nameof(DelayedInitialization));
         }
 
         [ContextMenu("Debug UI State")]
@@ -467,8 +392,8 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             Debug.Log($"=== SKILL TREE UI DEBUG ===");
             Debug.Log($"Initialized: {isInitialized}");
-            Debug.Log($"Initialization Attempted: {initializationAttempted}");
             Debug.Log($"SkillTreeManager: {skillTreeManager != null}");
+            Debug.Log($"SkillTreeManager IsInitialized: {skillTreeManager?.IsInitialized}");
             Debug.Log($"Active in hierarchy: {gameObject.activeInHierarchy}");
         }
     }

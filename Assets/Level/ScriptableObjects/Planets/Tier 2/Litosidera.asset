@@ -24,3 +24,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   resourcePerCycle: 2300000023000000
+  animationFrames: []
+  frameRate: 0.1

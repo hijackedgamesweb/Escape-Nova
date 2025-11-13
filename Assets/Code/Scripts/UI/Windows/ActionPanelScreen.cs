@@ -15,7 +15,7 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public Button storageCraftingBtn;
         [SerializeField] public Button missionsBtn;
         [SerializeField] public Button researchBtn;
-        
+
         [SerializeField] public BaseUIScreen astrariumPanel;
         [SerializeField] public BaseUIScreen diplomacyPanel;
         [SerializeField] public BaseUIScreen skillTreePanel;
@@ -25,34 +25,27 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public BaseUIScreen researchPanel;
 
         private BaseUIScreen _currentPanel;
+
         public void Awake()
         {
-            astrariumBtn.onClick.AddListener(() => 
-                Show("Astrarium"));
-            diplomacyBtn.onClick.AddListener(() => 
-                Show("Diplomacy"));
-            skillTreeBtn.onClick.AddListener(() => 
-                Show("SkillTree"));
-          //  constructionBtn.onClick.AddListener(() => 
-          //      Show("Construction"));
-            storageCraftingBtn.onClick.AddListener(() => 
-                Show("Storage"));
-            missionsBtn.onClick.AddListener(() => 
-                Show("Missions"));
-            researchBtn.onClick.AddListener(() => 
-                Show("Research"));
+            astrariumBtn.onClick.AddListener(() => Show("Astrarium"));
+            diplomacyBtn.onClick.AddListener(() => Show("Diplomacy"));
+            skillTreeBtn.onClick.AddListener(() => Show("SkillTree"));
+            storageCraftingBtn.onClick.AddListener(() => Show("Storage"));
+            missionsBtn.onClick.AddListener(() => Show("Missions"));
+            researchBtn.onClick.AddListener(() => Show("Research"));
             returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
-            
         }
-
 
         public override void Show(object parameter = null)
         {
             base.Show(parameter);
+
             if (_currentPanel != null)
             {
                 _currentPanel.Hide();
             }
+
             switch (parameter)
             {
                 case "Astrarium":
@@ -67,7 +60,7 @@ namespace Code.Scripts.UI.Windows
                     skillTreePanel.Show();
                     _currentPanel = skillTreePanel;
                     break;
-               // case "Construction":
+                case "Construction":
                     constructionPanel.Show();
                     _currentPanel = constructionPanel;
                     break;
