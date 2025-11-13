@@ -10,17 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f8fc7482a414e1d8fdb07f14c7286f4, type: 3}
-  m_Name: RocosoMetalico
+  m_Name: Blobi
   m_EditorClassIdentifier: 
-  constructibleName: Litosidera
-  sprite: {fileID: 1892013316916492370, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
-  timeToBuild: 15
+  constructibleName: Blobi
+  sprite: {fileID: -5462566535351427532, guid: be5cca90c386fd34599d05347b1248c9, type: 3}
+  timeToBuild: 100
   buildCostResources:
-  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  buildCostAmounts: f4010000f4010000
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  buildCostAmounts: d0070000d0070000d0070000
   size: 0.5
   producibleResources:
-  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  resourcePerCycle: 2300000023000000
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  resourcePerCycle: 960000009600000096000000
+  animationFrames: []
+  frameRate: 0.1

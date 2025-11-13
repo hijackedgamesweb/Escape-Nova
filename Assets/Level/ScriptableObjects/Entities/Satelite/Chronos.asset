@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97e2fff6615463385e2477109f6b024, type: 3}
-  m_Name: Atenea
+  m_Name: Chronos
   m_EditorClassIdentifier: 
-  constructibleName: Atenea
-  sprite: {fileID: 21300000, guid: 849a2438d5e563a4daf827e412d69f46, type: 3}
-  timeToBuild: 5
+  constructibleName: Chronos
+  sprite: {fileID: 0}
+  timeToBuild: 50
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 64000000
+  buildCostAmounts: f4010000
   size: 0
-  desc: "El tiempo de investigaci\xF3n se reduce en 10 ciclos solares"
+  desc: "El tiempo de investigaci\xF3n se reduce en un 35%"
+  upgrades: []
+  references:
+    version: 2
+    RefIds: []

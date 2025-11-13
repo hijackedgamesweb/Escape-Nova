@@ -14,13 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Utopia
   sprite: {fileID: 2806572432059338708, guid: b82d76b630145da4f8722b1829650d1c, type: 3}
-  timeToBuild: 1
+  timeToBuild: 600
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 64000000
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  buildCostAmounts: b8880000b8880000b8880000b8880000b8880000
   size: 0.5
   producibleResources:
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  resourcePerCycle: 0a000000
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  resourcePerCycle: b0040000b0040000b0040000b0040000b0040000
   animationFrames: []
   frameRate: 0.1

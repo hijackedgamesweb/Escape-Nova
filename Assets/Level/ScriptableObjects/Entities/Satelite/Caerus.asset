@@ -10,22 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97e2fff6615463385e2477109f6b024, type: 3}
-  m_Name: Ares
+  m_Name: Caerus
   m_EditorClassIdentifier: 
-  constructibleName: Ares
-  sprite: {fileID: 21300000, guid: fd412bdeb18902443bbb05cc2ec604e4, type: 3}
-  timeToBuild: 5
+  constructibleName: Caerus
+  sprite: {fileID: 0}
+  timeToBuild: 8
   buildCostResources:
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: 64000000
+  buildCostAmounts: 6400000064000000
   size: 0
-  desc: Tu potencia de guerra aumenta un 10%
-  upgrades:
-  - rid: 967674922329964625
+  desc: "El tiempo de investigaci\xF3n se reduce en un 10%"
+  upgrades: []
   references:
     version: 2
-    RefIds:
-    - rid: 967674922329964625
-      type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
-      data:
-        productionIncrement: 25
+    RefIds: []
