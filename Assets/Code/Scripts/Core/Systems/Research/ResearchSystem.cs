@@ -93,7 +93,7 @@ namespace Code.Scripts.Core.Systems.Research
 
             RecalculateResearchAvailability();
         }
-
+        
         private void OnCycleCompleted(int currentCycle)
         {
             if (!IsAnyResearchInProgress()) return;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Research_Pruena
   m_EditorClassIdentifier: 
   researchId: prueba
-  category: 3
+  category: 2
   displayName: prueba
   description: prueba
   icon: {fileID: 0}
