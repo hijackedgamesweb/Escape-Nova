@@ -14,9 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: heating_things_up
   Title: Heating things up
-  Description: 
-  Objectives: []
+  Description: We need to bump up those production sites!
+  Objectives:
+  - rid: 6291952326318489678
+  - rid: 6291952326318489679
+  - rid: 6291952326318489681
+  - rid: 6291952326318489682
+  - rid: 6291952326318489683
   Rewards: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6291952326318489678
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 stone each cycle
+        isCompleted: 0
+        resourceType: 4
+        requiredAmount: 100
+    - rid: 6291952326318489679
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 metal each cycle
+        isCompleted: 0
+        resourceType: 0
+        requiredAmount: 100
+    - rid: 6291952326318489681
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 ice each cycle
+        isCompleted: 0
+        resourceType: 1
+        requiredAmount: 100
+    - rid: 6291952326318489682
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 fire each cycle
+        isCompleted: 0
+        resourceType: 2
+        requiredAmount: 100
+    - rid: 6291952326318489683
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 sand each cycle
+        isCompleted: 0
+        resourceType: 3
+        requiredAmount: 100

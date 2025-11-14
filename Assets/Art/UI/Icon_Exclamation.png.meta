@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b0f1dd65efa2594fac6698b2c99956e
+guid: deace0bc307d4b442815d161bf5ad3fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3575526083574489602
-    second: Diplomacy_Menu 1_0
+      213: -7117010234588523302
+    second: Icon_Exclamation_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Diplomacy_Menu 1_0
+      name: Icon_Exclamation_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 4
+        y: 4
+        width: 55
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 202e9907702de9130800000000000000
-      internalID: 3575526083574489602
+      spriteID: ad4188036ec4b3d90800000000000000
+      internalID: -7117010234588523302
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Diplomacy_Menu 1_0: 3575526083574489602
+      Icon_Exclamation_0: -7117010234588523302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

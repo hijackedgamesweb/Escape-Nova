@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2b0f1dd65efa2594fac6698b2c99956e
+guid: f770783e0e2ad884289e62e322a149b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3575526083574489602
-    second: Diplomacy_Menu 1_0
+      213: -4083543167136710652
+    second: Chronos_0
+  - first:
+      213: -3336299289053128341
+    second: Chronos_1
+  - first:
+      213: -3218858259719252710
+    second: Chronos_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Diplomacy_Menu 1_0
+      name: Chronos_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 6
+        y: 3
+        width: 49
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 202e9907702de9130800000000000000
-      internalID: 3575526083574489602
+      spriteID: 400c7d100275457c0800000000000000
+      internalID: -4083543167136710652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chronos_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69999b197513b1d0800000000000000
+      internalID: -3336299289053128341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chronos_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a151a1f87715453d0800000000000000
+      internalID: -3218858259719252710
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Diplomacy_Menu 1_0: 3575526083574489602
+      Chronos_0: -4083543167136710652
+      Chronos_1: -3336299289053128341
+      Chronos_2: -3218858259719252710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

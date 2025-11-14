@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b0f1dd65efa2594fac6698b2c99956e
+guid: 61fc2b191b840a945a32267dae0e696b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3575526083574489602
-    second: Diplomacy_Menu 1_0
+      213: -239665298251694053
+    second: 9Slice_White_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Diplomacy_Menu 1_0
+      name: 9Slice_White_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 3
+        y: 3
+        width: 478
+        height: 247
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 11, z: 11, w: 7}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 202e9907702de9130800000000000000
-      internalID: 3575526083574489602
+      spriteID: b1048b85ea98cacf0800000000000000
+      internalID: -239665298251694053
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ff4af476c271b6643be87d9318d4bd6a
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Diplomacy_Menu 1_0: 3575526083574489602
+      9Slice_White_0: -239665298251694053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
