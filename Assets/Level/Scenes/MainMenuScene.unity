@@ -2986,7 +2986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &158962980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3513,7 +3513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sateliteDataSOs:
-  - {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
   - {fileID: 11400000, guid: 5b96000c620a7694dbf7998e21b94f3a, type: 2}
   _sateliteListPrefab: {fileID: 416475519257235808, guid: f0cfbeced87fea742b14c0fb89945dc5, type: 3}
 --- !u!1 &205525686
@@ -25444,6 +25443,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466662702}
   m_CullTransparentMesh: 1
+--- !u!1 &1468815868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468815870}
+  - component: {fileID: 1468815869}
+  m_Layer: 0
+  m_Name: '@SatelliteUnlockManager'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1468815869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468815868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf89f9a3798b4838a7c08b2265b4becb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1468815870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468815868}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 766.6476, y: 470.20523, z: -1.1654043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474569758
 GameObject:
   m_ObjectHideFlags: 0
@@ -28586,6 +28629,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 28a92bf5ba7ec1c4a9e4b6d518d11605, type: 2}
   - {fileID: 11400000, guid: 280ad1d8029f7ad43ac1cc8274141f34, type: 2}
   - {fileID: 11400000, guid: 17b574a36843f5e45901a65a7064f5b4, type: 2}
+  - {fileID: 11400000, guid: 31264fac2c70fa6409f671aca20e75f3, type: 2}
   resourceDataList:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
@@ -34020,13 +34064,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allQuestSets:
-  - setName: Misiones 1
+  - setName: Introduccion
     quests:
     - {fileID: 11400000, guid: e223a1ec0e293c3489db323ebf0ffab1, type: 2}
-    - {fileID: 11400000, guid: f8ca63a47eed0304b82fa9c2cd70f2b0, type: 2}
-  - setName: Misiones finales
-    quests:
     - {fileID: 11400000, guid: d2939dcfdf08f744a9a0738b722d5b98, type: 2}
+  - setName: Gearing up
+    quests:
+    - {fileID: 11400000, guid: 737a8a9f9bd827f46aea88a2800369a7, type: 2}
+    - {fileID: 11400000, guid: dda718ec1cd70f0448656483a0faa17e, type: 2}
+  - setName: The end
+    quests:
     - {fileID: 11400000, guid: c196b4bbc795d6c428ca68a9cc0ad677, type: 2}
 --- !u!1 &1995384602
 GameObject:
@@ -36105,5 +36152,6 @@ SceneRoots:
   - {fileID: 1409648748}
   - {fileID: 1549085227}
   - {fileID: 258560892}
+  - {fileID: 1468815870}
   - {fileID: 147186760}
   - {fileID: 1208694180}
