@@ -25,9 +25,9 @@ namespace Code.Scripts.UI.Windows
             diplomacyBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Diplomacy"));
             skillTreeBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("SkillTree"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Constellations"));
             missionsBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Missions"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Objectives"));
             storageBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
             constructionBtn.onClick.AddListener(() => 
