@@ -54,7 +54,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3606b18f105548c489e3320b2c8b24d4, type: 3}
   - name: CreditsMusic
     clip: {fileID: 8300000, guid: 1e21683310d465c40a6de875b467fc2f, type: 3}
-  sfxSounds: []
+  sfxSounds:
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: 5ac25c2c52155e6469cd01d5cea696f8, type: 3}
+  - name: Confirmation
+    clip: {fileID: 8300000, guid: 03eb10d0acfd7564383a6816e4af0749, type: 3}
+  - name: Notification
+    clip: {fileID: 8300000, guid: b92794c93ed5cca47b8c125ac71f6cb5, type: 3}
   musicSource: {fileID: 5978876574385758183}
   sfxSource: {fileID: 6055554818733778738}
 --- !u!1 &2232511105417818901

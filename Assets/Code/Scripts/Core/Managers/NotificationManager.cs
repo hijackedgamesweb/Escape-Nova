@@ -12,6 +12,7 @@ namespace Code.Scripts.Core.Managers
         {
             NotificationPrefab notification = Instantiate(notificationPrefab, this.transform);
             notification.Initialize(message, type);
+            AudioManager.Instance.PlaySFX("Notification");
         }
     }
     

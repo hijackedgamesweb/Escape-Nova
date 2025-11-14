@@ -40,7 +40,9 @@ namespace Code.Scripts.UI.Windows
         public override void Show(object parameter = null)
         {
             base.Show(parameter);
-
+            
+            AudioManager.Instance.PlaySFX("ButtonClick");
+            
             if (_currentPanel != null)
             {
                 _currentPanel.Hide();
