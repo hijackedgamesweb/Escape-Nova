@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -14,11 +15,16 @@ namespace Code.Scripts.UI.Windows
 
         private GameObject _lastSelectedButton;
 
-        private void OnEnable()
+        private void Start()
         {
             AudioManager.Instance.PlayMusic("MainMenuMusic"); //LLamada al Singleton del AudioManager para reproducir la musica del menu principal
+        }
+        
+        private void OnEnable()
+        {
             StartCoroutine(SetInitialFocus());
         }
+        
         private IEnumerator SetInitialFocus()
         {
             yield return null; 
