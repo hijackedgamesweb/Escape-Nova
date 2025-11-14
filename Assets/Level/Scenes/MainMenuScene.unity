@@ -34020,13 +34020,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allQuestSets:
-  - setName: Misiones 1
+  - setName: Introduccion
     quests:
     - {fileID: 11400000, guid: e223a1ec0e293c3489db323ebf0ffab1, type: 2}
-    - {fileID: 11400000, guid: f8ca63a47eed0304b82fa9c2cd70f2b0, type: 2}
-  - setName: Misiones finales
-    quests:
     - {fileID: 11400000, guid: d2939dcfdf08f744a9a0738b722d5b98, type: 2}
+  - setName: Gearing up
+    quests:
+    - {fileID: 11400000, guid: 737a8a9f9bd827f46aea88a2800369a7, type: 2}
+    - {fileID: 11400000, guid: dda718ec1cd70f0448656483a0faa17e, type: 2}
+  - setName: The end
+    quests:
     - {fileID: 11400000, guid: c196b4bbc795d6c428ca68a9cc0ad677, type: 2}
 --- !u!1 &1995384602
 GameObject:
