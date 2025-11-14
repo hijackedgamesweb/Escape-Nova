@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8311268d52f24f043bc2769751920c40
+guid: deace0bc307d4b442815d161bf5ad3fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8298938443888920090
-    second: Slice9_0
+      213: -7117010234588523302
+    second: Icon_Exclamation_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slice9_0
+      name: Icon_Exclamation_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 478
-        height: 248
+        x: 4
+        y: 4
+        width: 55
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 238, y: 21, z: 235, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e9fa27747f34dc80800000000000000
-      internalID: -8298938443888920090
+      spriteID: ad4188036ec4b3d90800000000000000
+      internalID: -7117010234588523302
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slice9_0: -8298938443888920090
+      Icon_Exclamation_0: -7117010234588523302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
