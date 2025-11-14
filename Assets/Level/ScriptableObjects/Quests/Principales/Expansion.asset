@@ -20,9 +20,7 @@ MonoBehaviour:
   - rid: 6291952324994662401
   - rid: 6291952324994662402
   - rid: 6291952324994662403
-  Rewards:
-  - Description: Arena
-    Amount: 1
+  Rewards: []
   references:
     version: 2
     RefIds:
@@ -41,12 +39,12 @@ MonoBehaviour:
     - rid: 6291952324994662402
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Pompeii
+        objectiveDescription: Build the planet "Pompeii"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 123340d8a43fa1046b95cfd9eda8c82b, type: 2}
     - rid: 6291952324994662403
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Oasis
+        objectiveDescription: Build the planet "Oasis"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 41aeb9aa8edfe0247980957326c8b021, type: 2}

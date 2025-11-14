@@ -26,4 +26,4 @@ MonoBehaviour:
       data:
         objectiveDescription: Build the Storage Terminal and Research Station (S.T.A.R.S)
         isCompleted: 0
-        requiredConstructible: {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}
+        requiredConstructible: {fileID: 0}
