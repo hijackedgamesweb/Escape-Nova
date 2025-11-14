@@ -10,20 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: New Research 1
+  m_Name: Research_Pruena
   m_EditorClassIdentifier: 
-  researchId: 
-  category: 0
-  displayName: 
-  description: 
+  researchId: prueba
+  category: 2
+  displayName: prueba
+  description: prueba
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 60
-  resourceCosts: []
-  rewards: []
+  researchTimeInSeconds: 3
+  resourceCosts:
+  - resourceType: 3
+    amount: 50
+    itemName: prueba
+    useInventoryItem: 0
+  rewards:
+  - rid: 5265271151281045658
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5265271151281045658
+      type: {class: Reward_AddItemToInventory, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        itemName: Arena
+        amount: 100000
