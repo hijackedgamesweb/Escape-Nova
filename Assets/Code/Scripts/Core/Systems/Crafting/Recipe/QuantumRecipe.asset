@@ -26,4 +26,4 @@ MonoBehaviour:
   output:
     itemName: Quantum Propeller
     amount: 1
-  craftingTimeInSeconds: 2
+  craftingTimeInSeconds: 100

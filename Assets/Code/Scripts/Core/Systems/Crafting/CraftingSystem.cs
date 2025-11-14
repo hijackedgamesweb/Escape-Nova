@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
-using UnityEngine;
 using Code.Scripts.Core.Managers.Interfaces;
-using Code.Scripts.Core.Systems.Time;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
+using UnityEngine;
+using Code.Scripts.Config;
 
 namespace Code.Scripts.Core.Systems.Crafting
 {
@@ -17,6 +16,8 @@ namespace Code.Scripts.Core.Systems.Crafting
         public string recipeId;
         public float startTime;
         public int amount;
+        public int cyclesNeeded;
+        public int cyclesCompleted;
     }
 
     public class CraftingSystem
@@ -26,21 +27,22 @@ namespace Code.Scripts.Core.Systems.Crafting
         private HashSet<string> _viewedRecipeIds;
         private StorageSystem _storageSystem;
         private Dictionary<string, ItemData> _itemDataLookup;
-        
-        private TimeScheduler _timeScheduler;
+
         private IGameTime _gameTime;
-        private ITimerHandle _currentCraftingTimer;
+        private TimeConfig _timeConfig;
         private CraftingData _currentCraftingData;
-        
+
         public event Action<string> OnRecipeUnlocked;
         public event Action<string> OnCraftingStarted;
         public event Action<string, float> OnCraftingProgress;
         public event Action<string> OnCraftingCompleted;
         public event Action<string, int> OnItemCrafted;
+
+
         public CraftingSystem(List<CraftingRecipe> allRecipes, InventoryData itemDatabase)
         {
             ServiceLocator.RegisterService<CraftingSystem>(this);
-            
+
             _recipeDatabase = new Dictionary<string, CraftingRecipe>();
             foreach (var recipe in allRecipes)
             {
@@ -49,7 +51,7 @@ namespace Code.Scripts.Core.Systems.Crafting
                     _recipeDatabase.Add(recipe.recipeId, recipe);
                 }
             }
-            
+
             _unlockedRecipeIds = new HashSet<string>();
             _viewedRecipeIds = new HashSet<string>();
 
@@ -65,7 +67,37 @@ namespace Code.Scripts.Core.Systems.Crafting
                 }
             }
         }
-        
+
+        public void InitializeDependencies()
+        {
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _gameTime = ServiceLocator.GetService<IGameTime>();
+            _timeConfig = ServiceLocator.GetService<TimeConfig>();
+
+            if (_timeConfig == null)
+            {
+                Debug.LogError("CraftingSystem: TimeConfig not found in ServiceLocator");
+                return;
+            }
+
+            _gameTime.OnCycleCompleted += OnCycleCompleted;
+        }
+
+        private void OnCycleCompleted(int currentCycle)
+        {
+            if (!IsAnyCraftingInProgress()) return;
+
+            _currentCraftingData.cyclesCompleted++;
+
+            float progress = Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
+            OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, progress);
+
+            if (_currentCraftingData.cyclesCompleted >= _currentCraftingData.cyclesNeeded)
+            {
+                CompleteCrafting();
+            }
+        }
+
         public bool HasRecipeBeenViewed(string recipeId)
         {
             return _viewedRecipeIds.Contains(recipeId);
@@ -79,23 +111,11 @@ namespace Code.Scripts.Core.Systems.Crafting
             }
         }
 
-        public void InitializeDependencies()
-        {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
-            _timeScheduler = ServiceLocator.GetService<TimeScheduler>();
-            _gameTime = ServiceLocator.GetService<IGameTime>();
-        }
-
         public void UnlockRecipe(string recipeId)
         {
-            if (!_recipeDatabase.ContainsKey(recipeId))
-            {
+            if (!_recipeDatabase.ContainsKey(recipeId) || _unlockedRecipeIds.Contains(recipeId))
                 return;
-            }
-            if (_unlockedRecipeIds.Contains(recipeId))
-            {
-                return;
-            }
+
             _unlockedRecipeIds.Add(recipeId);
             OnRecipeUnlocked?.Invoke(recipeId);
         }
@@ -107,37 +127,30 @@ namespace Code.Scripts.Core.Systems.Crafting
 
         public bool IsAnyCraftingInProgress()
         {
-            return _currentCraftingTimer != null && _currentCraftingData != null;
+            return _currentCraftingData != null;
         }
 
         public bool CanCraft(string recipeId, int amount = 1)
         {
             if (!IsRecipeUnlocked(recipeId)) return false;
-            if (IsAnyCraftingInProgress())
-            {
-                return false;
-            }
+            if (IsAnyCraftingInProgress()) return false;
             if (_storageSystem == null) return false;
 
             var recipe = _recipeDatabase[recipeId];
             if (recipe == null) return false;
-    
+
             foreach (var ingredient in recipe.ingredients)
             {
                 int requiredAmount = ingredient.amount * amount;
                 if (ingredient.useInventoryItem)
                 {
                     if (!_storageSystem.HasInventoryItem(ingredient.itemName, requiredAmount))
-                    {
                         return false;
-                    }
                 }
                 else
                 {
                     if (!_storageSystem.HasResource(ingredient.resourceType, requiredAmount))
-                    {
                         return false;
-                    }
                 }
             }
 
@@ -145,27 +158,20 @@ namespace Code.Scripts.Core.Systems.Crafting
             int outputAmount = output.amount * amount;
 
             if (!_itemDataLookup.TryGetValue(output.itemName, out ItemData itemData))
-            {
-                return false; 
-            }
-    
+                return false;
+
             int maxStack = itemData.maxStack;
             int currentAmount = _storageSystem.GetInventoryItemQuantity(output.itemName);
 
             if (currentAmount + outputAmount > maxStack)
-            {
-                return false; 
-            }
+                return false;
 
             return true;
         }
 
         public bool Craft(string recipeId, int amount = 1)
         {
-            if (!CanCraft(recipeId, amount))
-            {
-                return false;
-            }
+            if (!CanCraft(recipeId, amount)) return false;
 
             var recipe = _recipeDatabase[recipeId];
 
@@ -186,48 +192,22 @@ namespace Code.Scripts.Core.Systems.Crafting
             {
                 recipeId = recipeId,
                 startTime = _gameTime.GameTime,
-                amount = amount
+                amount = amount,
+                cyclesNeeded = CalculateCyclesNeeded(recipe.craftingTimeInSeconds * amount),
+                cyclesCompleted = 0
             };
-            
-            if (_currentCraftingTimer != null)
-            {
-                _currentCraftingTimer.Cancel();
-            }
-
-            const float UPDATE_INTERVAL = 0.5f; 
-            Action updateAction = () => UpdateCraftingProgress(UPDATE_INTERVAL);
-            _currentCraftingTimer = _timeScheduler.ScheduleRepeating(UPDATE_INTERVAL, updateAction);
 
             OnCraftingStarted?.Invoke(recipeId);
             return true;
         }
 
-        private void UpdateCraftingProgress(float deltaTime)
+        private int CalculateCyclesNeeded(float craftingTimeInSeconds)
         {
-            if (!IsAnyCraftingInProgress())
-            {
-                _currentCraftingTimer?.Cancel();
-                _currentCraftingTimer = null;
-                return;
-            }
 
-            var recipe = _recipeDatabase[_currentCraftingData.recipeId];
-            float timeElapsed = _gameTime.GameTime - _currentCraftingData.startTime;
-    
-            float craftTime = recipe.craftingTimeInSeconds * _currentCraftingData.amount; 
-
-            if (timeElapsed >= craftTime)
-            {
-                OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, 1f);
-                CompleteCrafting();
-            }
-            else
-            {
-                float progress = Mathf.Clamp01(timeElapsed / craftTime);
-                OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, progress);
-            }
+            float secondsPerCycle = _timeConfig.secondsPerCycle;
+            return Mathf.CeilToInt(craftingTimeInSeconds / secondsPerCycle);
         }
-        
+
         private void CompleteCrafting()
         {
             string recipeId = _currentCraftingData.recipeId;
@@ -235,16 +215,15 @@ namespace Code.Scripts.Core.Systems.Crafting
             var recipe = _recipeDatabase[recipeId];
 
             var output = recipe.output;
-            _storageSystem.AddInventoryItem(output.itemName, output.amount * amount); 
+            _storageSystem.AddInventoryItem(output.itemName, output.amount * amount);
 
-            _currentCraftingTimer?.Cancel();
-            _currentCraftingTimer = null;
+            var completedData = _currentCraftingData;
             _currentCraftingData = null;
 
             OnItemCrafted?.Invoke(recipeId, output.amount * amount);
             OnCraftingCompleted?.Invoke(recipeId);
-            ItemData craftedItemData = GetItemData(output.itemName);
 
+            ItemData craftedItemData = GetItemData(output.itemName);
             if (craftedItemData != null && craftedItemData.itemToUnlock != null)
             {
                 if (craftedItemData.itemToUnlock is PlanetDataSO)
@@ -254,12 +233,12 @@ namespace Code.Scripts.Core.Systems.Crafting
             }
             CraftingEvents.OnItemCrafted?.Invoke(GetItemData(output.itemName));
         }
-        
+
         public CraftingRecipe GetRecipe(string recipeId)
         {
             return _recipeDatabase.GetValueOrDefault(recipeId);
         }
-        
+
         public ItemData GetItemData(string itemName)
         {
             return _itemDataLookup.GetValueOrDefault(itemName);
@@ -274,37 +253,22 @@ namespace Code.Scripts.Core.Systems.Crafting
             }
             return unlockedList;
         }
-        
+
         public string GetCurrentCraftingRecipeId()
         {
-            if (!IsAnyCraftingInProgress())
-            {
-                return null;
-            }
-            return _currentCraftingData.recipeId;
+            return IsAnyCraftingInProgress() ? _currentCraftingData.recipeId : null;
         }
 
         public float GetCurrentCraftingProgress()
         {
-            if (!IsAnyCraftingInProgress())
-            {
-                return 0f;
-            }
+            if (!IsAnyCraftingInProgress()) return 0f;
 
-            var recipe = _recipeDatabase[_currentCraftingData.recipeId];
-            float timeElapsed = _gameTime.GameTime - _currentCraftingData.startTime;
-            float craftTime = recipe.craftingTimeInSeconds * _currentCraftingData.amount;
-
-            return Mathf.Clamp01(timeElapsed / craftTime);
+            return Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
         }
 
         public int GetCurrentCraftingAmount()
         {
-            if (!IsAnyCraftingInProgress())
-            {
-                return 0;
-            }
-            return _currentCraftingData.amount;
+            return IsAnyCraftingInProgress() ? _currentCraftingData.amount : 0;
         }
     }
 }

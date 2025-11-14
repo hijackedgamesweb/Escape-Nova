@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Pleurus
   sprite: {fileID: -4017897918495185401, guid: ac732039df9d3034e98bc93bff181a86, type: 3}
-  timeToBuild: 250
+  timeToBuild: 1
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

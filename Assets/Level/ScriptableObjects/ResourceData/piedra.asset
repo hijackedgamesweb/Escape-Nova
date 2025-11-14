@@ -16,5 +16,5 @@ MonoBehaviour:
   DisplayName: Stone
   Icon: {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
   Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
-  MaxStack: 9999
+  MaxStack: 1000000000
   VisualPrefab: {fileID: 0}

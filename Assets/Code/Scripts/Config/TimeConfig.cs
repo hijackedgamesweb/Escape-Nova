@@ -7,7 +7,7 @@ namespace Code.Scripts.Config
     {
         [Header("Duración base")]
         [Tooltip("Duración en segundos de un ciclo")]
-        public float secondsPerCycle = 60f;
+        public float secondsPerCycle = 5f;
         
         [Tooltip("Velocidad base del juego (1 = tiempo real)")]
         public float baseGameSpeed = 1f;
