@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: Akki Translator 2
+  m_Name: Akki Translator
   m_EditorClassIdentifier: 
   researchId: akki_translator
   category: 0
-  displayName: Akki Translator 2
+  displayName: Akki Translator
   description: 
   icon: {fileID: 0}
   prerequisites: []
