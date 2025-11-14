@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: ac732039df9d3034e98bc93bff181a86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2160696426671699655
+    second: Pleurus_0
+  - first:
+      213: -7280677723472321576
+    second: Pleurus_1
+  - first:
+      213: 8969413143604550924
+    second: Pleurus_2
+  - first:
+      213: 6675301955572278276
+    second: Pleurus_3
+  - first:
+      213: -3808920240481481035
+    second: Pleurus_4
+  - first:
+      213: -4017897918495185401
+    second: Pleurus_5
+  - first:
+      213: -9043651125452234864
+    second: Pleurus_6
+  - first:
+      213: -41087607819307588
+    second: Pleurus_7
+  - first:
+      213: 5594419417393036572
+    second: Pleurus_8
+  - first:
+      213: -4389480471418280143
+    second: Pleurus_9
+  - first:
+      213: -673836519754136719
+    second: Pleurus_10
+  - first:
+      213: 6997057913732988603
+    second: Pleurus_11
+  - first:
+      213: -8974665399663811768
+    second: Pleurus_12
+  - first:
+      213: 2466774721641272085
+    second: Pleurus_13
+  - first:
+      213: -5801371537420631953
+    second: Pleurus_14
+  - first:
+      213: 7323272900434055496
+    second: Pleurus_15
+  - first:
+      213: 5962939561618622761
+    second: Pleurus_16
+  - first:
+      213: 2145325146385542904
+    second: Pleurus_17
+  - first:
+      213: -2995073397412689998
+    second: Pleurus_18
+  - first:
+      213: 7419597386447415089
+    second: Pleurus_19
+  - first:
+      213: -6026282756174292249
+    second: Pleurus_20
+  - first:
+      213: -118612290473981608
+    second: Pleurus_21
+  - first:
+      213: 4906190209457682180
+    second: Pleurus_22
+  - first:
+      213: 5392781964307717933
+    second: Pleurus_23
+  - first:
+      213: 2552057529476698586
+    second: Pleurus_24
+  - first:
+      213: -5308945864852670949
+    second: Pleurus_25
+  - first:
+      213: 1600598745227524351
+    second: Pleurus_26
+  - first:
+      213: -1041502698293452371
+    second: Pleurus_27
+  - first:
+      213: -6495218298036812726
+    second: Pleurus_28
+  - first:
+      213: 2289145072378765503
+    second: Pleurus_29
+  - first:
+      213: -4794620978157478589
+    second: Pleurus_30
+  - first:
+      213: -1123216876245793479
+    second: Pleurus_31
+  - first:
+      213: -1577436423031252661
+    second: Pleurus_32
+  - first:
+      213: -5663416918155865729
+    second: Pleurus_33
+  - first:
+      213: 6059821309778664312
+    second: Pleurus_34
+  - first:
+      213: -3323452325109027595
+    second: Pleurus_35
+  - first:
+      213: -8198998658187968639
+    second: Pleurus_36
+  - first:
+      213: 1812747904595077817
+    second: Pleurus_37
+  - first:
+      213: 7031070402925810782
+    second: Pleurus_38
+  - first:
+      213: 2739638410824565266
+    second: Pleurus_39
+  - first:
+      213: -6449989212323608894
+    second: Pleurus_40
+  - first:
+      213: 3228940725738543314
+    second: Pleurus_41
+  - first:
+      213: 2969814023826804183
+    second: Pleurus_42
+  - first:
+      213: -7567291384347486975
+    second: Pleurus_43
+  - first:
+      213: 8871153144232285354
+    second: Pleurus_44
+  - first:
+      213: 6749862543394051398
+    second: Pleurus_45
+  - first:
+      213: 3799852376381716773
+    second: Pleurus_46
+  - first:
+      213: 325926415505315450
+    second: Pleurus_47
+  - first:
+      213: 5664277824218805479
+    second: Pleurus_48
+  - first:
+      213: 6533612714687194321
+    second: Pleurus_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pleurus_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 609
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93907cc3c0aa302e0800000000000000
+      internalID: -2160696426671699655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 609
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d325586f26d5fa90800000000000000
+      internalID: -7280677723472321576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 609
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dd44c6bb1c97c70800000000000000
+      internalID: 8969413143604550924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 609
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4042b56e2cf63ac50800000000000000
+      internalID: 6675301955572278276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be4e48c83ff32bc0800000000000000
+      internalID: -3808920240481481035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7062050812f8d38c0800000000000000
+      internalID: -4017897918495185401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f9bda773f7e7280800000000000000
+      internalID: -9043651125452234864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb57243d9070e6ff0800000000000000
+      internalID: -41087607819307588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d7242d1de53ad40800000000000000
+      internalID: 5594419417393036572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_9
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 609
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137699884ce6513c0800000000000000
+      internalID: -4389480471418280143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 469
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1738e53614d06a6f0800000000000000
+      internalID: -673836519754136719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 469
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbef3ecb91b8a1160800000000000000
+      internalID: 6997057913732988603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_12
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 469
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843ac0b6e55937380800000000000000
+      internalID: -8974665399663811768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51357503a8ebb3220800000000000000
+      internalID: 2466774721641272085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f604bfdd2536d7fa0800000000000000
+      internalID: -5801371537420631953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841dd9f07ed71a560800000000000000
+      internalID: 7323272900434055496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929c66330fd90c250800000000000000
+      internalID: 5962939561618622761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fee50eaad9b5cd10800000000000000
+      internalID: 2145325146385542904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b78ef61d9c5f66d0800000000000000
+      internalID: -2995073397412689998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1376d932384b7f660800000000000000
+      internalID: 7419597386447415089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea5b2a03c75e5ca0800000000000000
+      internalID: -6026282756174292249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8598d4010ca9a5ef0800000000000000
+      internalID: -118612290473981608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407793b500a461440800000000000000
+      internalID: 4906190209457682180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fd1b5df9207da40800000000000000
+      internalID: 5392781964307717933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_24
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1d1da3dcaba6320800000000000000
+      internalID: 2552057529476698586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b167da92dd5d256b0800000000000000
+      internalID: -5308945864852670949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_26
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 329
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8f8351418763610800000000000000
+      internalID: 1600598745227524351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_27
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 329
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1ab9360d6db81f0800000000000000
+      internalID: -1041502698293452371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_28
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 329
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4406eefe595cd5a0800000000000000
+      internalID: -6495218298036812726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_29
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 329
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0e87e905da4cf10800000000000000
+      internalID: 2289145072378765503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_30
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d99449f95167db0800000000000000
+      internalID: -4794620978157478589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_31
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93545adb3388960f0800000000000000
+      internalID: -1123216876245793479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_32
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49957d4ee1db1ae0800000000000000
+      internalID: -1577436423031252661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_33
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71d16aa1508761b0800000000000000
+      internalID: -5663416918155865729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_34
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b13bbff5fc81450800000000000000
+      internalID: 6059821309778664312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_35
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc2eedf7b9b0e1d0800000000000000
+      internalID: -3323452325109027595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_36
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f3dc8192e473e80800000000000000
+      internalID: -8198998658187968639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_37
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba29b86d9c282910800000000000000
+      internalID: 1812747904595077817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_38
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 189
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54d72d7741639160800000000000000
+      internalID: 7031070402925810782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_39
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212c6329e96250620800000000000000
+      internalID: 2739638410824565266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c689522cf80d76a0800000000000000
+      internalID: -6449989212323608894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_41
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 49
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8107e7b708fcc20800000000000000
+      internalID: 3228940725738543314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_42
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 49
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd8b23be16e63920800000000000000
+      internalID: 2969814023826804183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_43
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 49
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105181444949bf690800000000000000
+      internalID: -7567291384347486975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_44
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 49
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa41e0688caac1b70800000000000000
+      internalID: 8871153144232285354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_45
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 49
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64597bd88345cad50800000000000000
+      internalID: 6749862543394051398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_46
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529f7259a99cbb430800000000000000
+      internalID: 3799852376381716773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_47
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a765c1b195ce58400800000000000000
+      internalID: 325926415505315450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_48
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e43fa5abae8b9e40800000000000000
+      internalID: 5664277824218805479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pleurus_49
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 49
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4e7eeb52e0caa50800000000000000
+      internalID: 6533612714687194321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pleurus_0: -2160696426671699655
+      Pleurus_1: -7280677723472321576
+      Pleurus_10: -673836519754136719
+      Pleurus_11: 6997057913732988603
+      Pleurus_12: -8974665399663811768
+      Pleurus_13: 2466774721641272085
+      Pleurus_14: -5801371537420631953
+      Pleurus_15: 7323272900434055496
+      Pleurus_16: 5962939561618622761
+      Pleurus_17: 2145325146385542904
+      Pleurus_18: -2995073397412689998
+      Pleurus_19: 7419597386447415089
+      Pleurus_2: 8969413143604550924
+      Pleurus_20: -6026282756174292249
+      Pleurus_21: -118612290473981608
+      Pleurus_22: 4906190209457682180
+      Pleurus_23: 5392781964307717933
+      Pleurus_24: 2552057529476698586
+      Pleurus_25: -5308945864852670949
+      Pleurus_26: 1600598745227524351
+      Pleurus_27: -1041502698293452371
+      Pleurus_28: -6495218298036812726
+      Pleurus_29: 2289145072378765503
+      Pleurus_3: 6675301955572278276
+      Pleurus_30: -4794620978157478589
+      Pleurus_31: -1123216876245793479
+      Pleurus_32: -1577436423031252661
+      Pleurus_33: -5663416918155865729
+      Pleurus_34: 6059821309778664312
+      Pleurus_35: -3323452325109027595
+      Pleurus_36: -8198998658187968639
+      Pleurus_37: 1812747904595077817
+      Pleurus_38: 7031070402925810782
+      Pleurus_39: 2739638410824565266
+      Pleurus_4: -3808920240481481035
+      Pleurus_40: -6449989212323608894
+      Pleurus_41: 3228940725738543314
+      Pleurus_42: 2969814023826804183
+      Pleurus_43: -7567291384347486975
+      Pleurus_44: 8871153144232285354
+      Pleurus_45: 6749862543394051398
+      Pleurus_46: 3799852376381716773
+      Pleurus_47: 325926415505315450
+      Pleurus_48: 5664277824218805479
+      Pleurus_49: 6533612714687194321
+      Pleurus_5: -4017897918495185401
+      Pleurus_6: -9043651125452234864
+      Pleurus_7: -41087607819307588
+      Pleurus_8: 5594419417393036572
+      Pleurus_9: -4389480471418280143
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

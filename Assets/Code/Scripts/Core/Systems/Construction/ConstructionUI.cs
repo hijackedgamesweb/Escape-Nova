@@ -1,6 +1,9 @@
+using System.Collections.Generic;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
+using Code.Scripts.Core.World;
+using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
@@ -25,28 +28,48 @@ namespace Code.Scripts.Core.Systems.Construction
         [SerializeField] private GameObject satelitesLayoutGroup;
     
         [SerializeField] private GameObject entitieConstructionButtonPrefab;
+        
+        [Header("Datos de Construcción")]
+        [SerializeField] private List<PlanetDataSO> availablePlanets;
+        [SerializeField] private List<SateliteDataSO> availableSatelites;
+        
+        private EntityConstructionButton _selectedButton;
+        private SolarSystem _solarSystem;
+        private PlacingUI _placingUIScript;
+        
+        private StorageSystem _storageSystem;
     
         //METODOS
         private void Awake()
         {
-            //PARA LA SIMULACION DE LA ALFA, CREAMOS NOSOTROS MISMOS DOS ENTIDADES, EN EL JUGO FINAL NO SERA ASI
-        
-            //CREACION DE UNA ENTRADA DE PLANETA
-            GameObject plnt = Instantiate(entitieConstructionButtonPrefab, new Vector3(0, 0, 0), Quaternion.identity); //Creamos el boton
-            plnt.transform.SetParent(planetsLayoutGroup.transform, false); //Añadimos el boton como hijo de "plaentsLayoutGroup"
-        
-            plnt.GetComponent<EntityConstructionButton>().entityName = "Earth"; //Añadimos a la variable del boton el nombre de la entidad que construye
-            plnt.GetComponent<EntityConstructionButton>().entityType = "Planet"; //Añadimos a la variable del boton el tipo de la entidad que construye
-        
-            //CREACION DE UNA ENTRADA DE SATELITE
-            GameObject stlt = Instantiate(entitieConstructionButtonPrefab, new Vector3(0, 0, 0), Quaternion.identity); //Creamos el boton
-            stlt.transform.SetParent(satelitesLayoutGroup.transform, false); //Añadimos el boton como hijo de "SatelitesLayoutGroup"
-        
-            stlt.GetComponent<EntityConstructionButton>().entityName = "Ares"; //Añadimos a la variable del boton el nombre de la entidad que construye
-            stlt.GetComponent<EntityConstructionButton>().entityType = "Satelite"; //Añadimos a la variable del boton el tipo de la entidad que construye
+            
         }
 
+        private void Start()
+        {
+            _solarSystem = ServiceLocator.GetService<SolarSystem>();
+            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            
+            if (placingUI != null)
+            {
+                _placingUIScript = placingUI.GetComponent<PlacingUI>();
+            }
 
+            foreach (var planetData in availablePlanets)
+            {
+                GameObject plnt = Instantiate(entitieConstructionButtonPrefab, planetsLayoutGroup.transform, false);
+                plnt.GetComponent<EntityConstructionButton>().Initialize(planetData);
+            }
+            
+            foreach (var sateliteData in availableSatelites)
+            {
+                GameObject stlt = Instantiate(entitieConstructionButtonPrefab, satelitesLayoutGroup.transform, false);
+                stlt.GetComponent<EntityConstructionButton>().Initialize(sateliteData);
+            }
+            
+            buildBtn.interactable = false;
+        }
+        
         public void TabPressed(int idx)
         {
             switch (idx)
@@ -65,30 +88,67 @@ namespace Code.Scripts.Core.Systems.Construction
         }
     
     
-        public void EntityPressed()
+        public void EntityPressed(EntityConstructionButton pressedButton)
         {
             buildBtn.interactable = true;
+            _selectedButton = pressedButton;
         }
-    
-    
         public void BuildButtonPressed()
         {
-            if (CheckForReources())
+            if (_selectedButton == null) return;
+            if (_placingUIScript == null)
             {
+                return;
+            }
+
+            if (CheckForReources()) 
+            {
+                ConstructibleDataSO dataToBuild = _selectedButton.entityData;
+                for (int i = 0; i < dataToBuild.buildCostResources.Length; i++)
+                {
+                    ResourceData resource = dataToBuild.buildCostResources[i];
+                    int amount = dataToBuild.buildCostAmounts[i];
+                    
+                    _storageSystem.ConsumeResource(resource.Type, amount); 
+                }
+                _placingUIScript.entityToBuild = dataToBuild;
+                placingUI.SetActive(true);
+                gameObject.SetActive(false); 
                 
-                var ts = ServiceLocator.GetService<TimeScheduler>();
-                var storage = ServiceLocator.GetService<StorageSystem>();
-                ts.ScheduleRepeating(5, () => storage.AddResource(ResourceType.Metal, 3));
-                gameObject.SetActive(false);
                 if(errorMsg.activeSelf) { errorMsg.SetActive(false); }
             }
-            else { errorMsg.SetActive(true); }
+            else 
+            {
+                errorMsg.SetActive(true); 
+            }
         }
     
     
         private bool CheckForReources()
         {
-            //AQUI COMPROBAR SI EL JUGADOR TIENE SUFICIENTES RECURSOS PARA CONSTRUIR EL ELEMENTO SELECCIONADO
+            if (_storageSystem == null)
+            {
+                return false;
+            }
+            if (_selectedButton == null)
+            {
+                return false;
+            }
+            ConstructibleDataSO dataToBuild = _selectedButton.entityData;
+            if (dataToBuild.buildCostResources.Length != dataToBuild.buildCostAmounts.Length)
+            {
+                return false;
+            }
+            for (int i = 0; i < dataToBuild.buildCostResources.Length; i++)
+            {
+                ResourceData resource = dataToBuild.buildCostResources[i];
+                int requiredAmount = dataToBuild.buildCostAmounts[i];
+                if (!_storageSystem.HasResource(resource.Type, requiredAmount))
+                {
+                    return false; 
+                }
+            }
+            
             return true;
         }
     }

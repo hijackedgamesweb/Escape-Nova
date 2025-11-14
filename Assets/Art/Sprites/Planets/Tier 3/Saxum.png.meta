@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 08ed824dd8f246343bc0dadd152ed85e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3433697384172529073
+    second: Saxum_0
+  - first:
+      213: -2575184072039500772
+    second: Saxum_1
+  - first:
+      213: 8415150004518246118
+    second: Saxum_2
+  - first:
+      213: 5358260965398494997
+    second: Saxum_3
+  - first:
+      213: -1103971681002507911
+    second: Saxum_4
+  - first:
+      213: 7851052027070318318
+    second: Saxum_5
+  - first:
+      213: -5387079116638417327
+    second: Saxum_6
+  - first:
+      213: 4255611949598740854
+    second: Saxum_7
+  - first:
+      213: 1460487315287200923
+    second: Saxum_8
+  - first:
+      213: -3037960713140889778
+    second: Saxum_9
+  - first:
+      213: -3086912666221642228
+    second: Saxum_10
+  - first:
+      213: -8049253104739688650
+    second: Saxum_11
+  - first:
+      213: 1380918975554583089
+    second: Saxum_12
+  - first:
+      213: 3030087443395781083
+    second: Saxum_13
+  - first:
+      213: -6604761783433156014
+    second: Saxum_14
+  - first:
+      213: 2246074115041740855
+    second: Saxum_15
+  - first:
+      213: 1583816264545653812
+    second: Saxum_16
+  - first:
+      213: 6801647295202866263
+    second: Saxum_17
+  - first:
+      213: 4864580689341750943
+    second: Saxum_18
+  - first:
+      213: 5696147248169321667
+    second: Saxum_19
+  - first:
+      213: 3755264155790291886
+    second: Saxum_20
+  - first:
+      213: 7571457690042934677
+    second: Saxum_21
+  - first:
+      213: -2157949836313591572
+    second: Saxum_22
+  - first:
+      213: 8133779793476637960
+    second: Saxum_23
+  - first:
+      213: 5980081025215407270
+    second: Saxum_24
+  - first:
+      213: -326969981330529288
+    second: Saxum_25
+  - first:
+      213: 111252925216003472
+    second: Saxum_26
+  - first:
+      213: 2129441333852042632
+    second: Saxum_27
+  - first:
+      213: -4227683175187425637
+    second: Saxum_28
+  - first:
+      213: -3085407537224974126
+    second: Saxum_29
+  - first:
+      213: 8034483183527449028
+    second: Saxum_30
+  - first:
+      213: 1708955466305057949
+    second: Saxum_31
+  - first:
+      213: 3423345712399594880
+    second: Saxum_32
+  - first:
+      213: -6939491605325347612
+    second: Saxum_33
+  - first:
+      213: -5817293394855616180
+    second: Saxum_34
+  - first:
+      213: -5051960596399061922
+    second: Saxum_35
+  - first:
+      213: 723276344849320972
+    second: Saxum_36
+  - first:
+      213: -6483953935540559524
+    second: Saxum_37
+  - first:
+      213: -1311193226055871249
+    second: Saxum_38
+  - first:
+      213: -1036086222321216983
+    second: Saxum_39
+  - first:
+      213: 6549694515919155662
+    second: Saxum_40
+  - first:
+      213: 3073065004800916056
+    second: Saxum_41
+  - first:
+      213: 557875035011967976
+    second: Saxum_42
+  - first:
+      213: -1723723326883757650
+    second: Saxum_43
+  - first:
+      213: 4105995362636258254
+    second: Saxum_44
+  - first:
+      213: 1708690903944320914
+    second: Saxum_45
+  - first:
+      213: 8936151609075538134
+    second: Saxum_46
+  - first:
+      213: -1652910122508812167
+    second: Saxum_47
+  - first:
+      213: -7470212303766627261
+    second: Saxum_48
+  - first:
+      213: -7520111324953271748
+    second: Saxum_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saxum_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5aac11491f6af20800000000000000
+      internalID: 3433697384172529073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1477dafabb134cd0800000000000000
+      internalID: -2575184072039500772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6dfeef75e98c470800000000000000
+      internalID: 8415150004518246118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f3b6075fd5c5a40800000000000000
+      internalID: 5358260965398494997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97131cfea97eda0f0800000000000000
+      internalID: -1103971681002507911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee603a2d83a84fc60800000000000000
+      internalID: 7851052027070318318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e87dbd5104d35b0800000000000000
+      internalID: -5387079116638417327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6719dbd5588fe0b30800000000000000
+      internalID: 4255611949598740854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9458aaa971b44410800000000000000
+      internalID: 1460487315287200923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_9
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 609
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4715a3c3def6d5d0800000000000000
+      internalID: -3037960713140889778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e743509451925d0800000000000000
+      internalID: -3086912666221642228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fd7c0b2fe4b4090800000000000000
+      internalID: -8049253104739688650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13af689ed720a2310800000000000000
+      internalID: 1380918975554583089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd12af5c9780d0a20800000000000000
+      internalID: 3030087443395781083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a2468c62c2754a0800000000000000
+      internalID: -6604761783433156014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7384346e188ab2f10800000000000000
+      internalID: 2246074115041740855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434dabd4088daf510800000000000000
+      internalID: 1583816264545653812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7543016ad2e446e50800000000000000
+      internalID: 6801647295202866263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e90710d56728340800000000000000
+      internalID: 4864580689341750943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 469
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c483732eb7cc0f40800000000000000
+      internalID: 5696147248169321667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea333ab7ad06d1430800000000000000
+      internalID: 3755264155790291886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595a8ee57a8331960800000000000000
+      internalID: 7571457690042934677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce08a63ae0c6d02e0800000000000000
+      internalID: -2157949836313591572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805dc67a0adf0e070800000000000000
+      internalID: 8133779793476637960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_24
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4a40432048df250800000000000000
+      internalID: 5980081025215407270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3e39ac88e567bf0800000000000000
+      internalID: -326969981330529288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_26
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09519bf22ff3b8100800000000000000
+      internalID: 111252925216003472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_27
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885f8426c9b4d8d10800000000000000
+      internalID: 2129441333852042632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_28
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96de082d804455c0800000000000000
+      internalID: -4227683175187425637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_29
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 329
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0846c213e6e25d0800000000000000
+      internalID: -3085407537224974126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1d00c03e7308f60800000000000000
+      internalID: 8034483183527449028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94331231fd67b710800000000000000
+      internalID: 1708955466305057949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0853feaa9ca228f20800000000000000
+      internalID: 3423345712399594880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_33
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e407c6e629f1bf90800000000000000
+      internalID: -6939491605325347612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_34
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41a76d8a72d44fa0800000000000000
+      internalID: -5817293394855616180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_35
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e540d50aa94d3e9b0800000000000000
+      internalID: -5051960596399061922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_36
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ccf29e008990a00800000000000000
+      internalID: 723276344849320972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_37
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51eb14cf3e5406a0800000000000000
+      internalID: -6483953935540559524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_38
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe49a0935b4bdcde0800000000000000
+      internalID: -1311193226055871249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_39
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 189
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9221ed9f1151f91f0800000000000000
+      internalID: -1036086222321216983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec17fa0e57035ea50800000000000000
+      internalID: 6549694515919155662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ab7de0758b5aa20800000000000000
+      internalID: 3073065004800916056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_42
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb62fa7368fdb700800000000000000
+      internalID: 557875035011967976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_43
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea10a0254ca1418e0800000000000000
+      internalID: -1723723326883757650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_44
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbd55f170d6bf830800000000000000
+      internalID: 4105995362636258254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_45
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297da88f25d76b710800000000000000
+      internalID: 1708690903944320914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_46
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d89bfdea86930c70800000000000000
+      internalID: 8936151609075538134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_47
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9700736400faf09e0800000000000000
+      internalID: -1652910122508812167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_48
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cdc351d79745890800000000000000
+      internalID: -7470212303766627261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saxum_49
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 49
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32a4ccd79233a790800000000000000
+      internalID: -7520111324953271748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saxum_0: 3433697384172529073
+      Saxum_1: -2575184072039500772
+      Saxum_10: -3086912666221642228
+      Saxum_11: -8049253104739688650
+      Saxum_12: 1380918975554583089
+      Saxum_13: 3030087443395781083
+      Saxum_14: -6604761783433156014
+      Saxum_15: 2246074115041740855
+      Saxum_16: 1583816264545653812
+      Saxum_17: 6801647295202866263
+      Saxum_18: 4864580689341750943
+      Saxum_19: 5696147248169321667
+      Saxum_2: 8415150004518246118
+      Saxum_20: 3755264155790291886
+      Saxum_21: 7571457690042934677
+      Saxum_22: -2157949836313591572
+      Saxum_23: 8133779793476637960
+      Saxum_24: 5980081025215407270
+      Saxum_25: -326969981330529288
+      Saxum_26: 111252925216003472
+      Saxum_27: 2129441333852042632
+      Saxum_28: -4227683175187425637
+      Saxum_29: -3085407537224974126
+      Saxum_3: 5358260965398494997
+      Saxum_30: 8034483183527449028
+      Saxum_31: 1708955466305057949
+      Saxum_32: 3423345712399594880
+      Saxum_33: -6939491605325347612
+      Saxum_34: -5817293394855616180
+      Saxum_35: -5051960596399061922
+      Saxum_36: 723276344849320972
+      Saxum_37: -6483953935540559524
+      Saxum_38: -1311193226055871249
+      Saxum_39: -1036086222321216983
+      Saxum_4: -1103971681002507911
+      Saxum_40: 6549694515919155662
+      Saxum_41: 3073065004800916056
+      Saxum_42: 557875035011967976
+      Saxum_43: -1723723326883757650
+      Saxum_44: 4105995362636258254
+      Saxum_45: 1708690903944320914
+      Saxum_46: 8936151609075538134
+      Saxum_47: -1652910122508812167
+      Saxum_48: -7470212303766627261
+      Saxum_49: -7520111324953271748
+      Saxum_5: 7851052027070318318
+      Saxum_6: -5387079116638417327
+      Saxum_7: 4255611949598740854
+      Saxum_8: 1460487315287200923
+      Saxum_9: -3037960713140889778
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -22,7 +22,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         {
             _currentState?.Exit(this);
             _currentState = state;
-            _currentState.Enter(this);
+            _currentState?.Enter(this);
         }
     }
 }

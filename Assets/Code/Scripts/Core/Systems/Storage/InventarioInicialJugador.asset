@@ -19,6 +19,7 @@ MonoBehaviour:
       icon: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
       maxStack: 5
       description: Es una lanza de madera
+      itemToUnlock: {fileID: 0}
     quantity: 1
   - itemData:
       itemName: Espada
@@ -26,4 +27,21 @@ MonoBehaviour:
       icon: {fileID: 21300000, guid: 43358b703766fee4ebe64c7fbd583376, type: 3}
       maxStack: 5
       description: "Es una puta espada, \xBFvale?"
+      itemToUnlock: {fileID: 0}
     quantity: 1
+  - itemData:
+      itemName: Utopia
+      displayName: Utopia
+      icon: {fileID: 21300000, guid: de328077ad8c9594c9ec3cf1023b25fe, type: 3}
+      maxStack: 5
+      description: Es el Quantum Memories
+      itemToUnlock: {fileID: 11400000, guid: 15bd4d4f3526e1b4a96df7acaba95422, type: 2}
+    quantity: 0
+  - itemData:
+      itemName: Quantum Propeller
+      displayName: Quantum Propeller
+      icon: {fileID: 21300000, guid: de328077ad8c9594c9ec3cf1023b25fe, type: 3}
+      maxStack: 5
+      description: Es el Quantum Memories
+      itemToUnlock: {fileID: 0}
+    quantity: 0

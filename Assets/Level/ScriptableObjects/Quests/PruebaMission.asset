@@ -16,30 +16,16 @@ MonoBehaviour:
   Title: Test Mision
   Description: Reach to 100 metal production and build a Kados
   Objectives:
-  - rid: 967674831443067135
   - rid: 967674831443067136
-  - rid: 967674854401114190
-  Reward: Las gracias
+  Rewards:
+  - Description: Fuego
+    Amount: 10
   references:
     version: 2
     RefIds:
-    - rid: 967674831443067135
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: Reach to 100 metal production
-        isCompleted: 0
-        resourceType: 0
-        requiredAmount: 100
     - rid: 967674831443067136
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
         objectiveDescription: Build a Kados
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}
-    - rid: 967674854401114190
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: 
-        isCompleted: 0
-        resourceType: 0
-        requiredAmount: 0

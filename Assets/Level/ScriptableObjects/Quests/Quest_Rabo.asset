@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
+  m_Name: Quest_Rabo
+  m_EditorClassIdentifier: 
+  QuestId: first_task
+  Title: Es un task
+  Description: No veas lo que me ha costado nene
+  Objectives:
+  - rid: 5265271223047159923
+  Rewards:
+  - Description: Arena
+    Amount: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271223047159923
+      type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Construye el planeta Fuego
+        isCompleted: 0
+        requiredConstructible: {fileID: 11400000, guid: 123340d8a43fa1046b95cfd9eda8c82b, type: 2}

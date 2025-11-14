@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   DisplayName: Ice
-  Icon: {fileID: 21300000, guid: c27014685dc9aee42800f1851d0d6e6d, type: 3}
+  Icon: {fileID: 4368363140937295827, guid: bec845c5a6be928438d6086b4310a450, type: 3}
   Color: {r: 0, g: 0, b: 0, a: 0}
-  MaxStack: 500
+  MaxStack: 1000000000
   VisualPrefab: {fileID: 0}

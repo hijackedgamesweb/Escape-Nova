@@ -23,6 +23,9 @@ namespace Code.Scripts.Core.World
         [SerializeField] private PlanetDataSO[] planetDatas;
         
         public List<List<Planet>> Planets = new();
+        
+        public event Action<int, int> OnPlanetRemoved;
+
 
         private void Awake()
         {
@@ -44,7 +47,6 @@ namespace Code.Scripts.Core.World
         {
             if(Planets[orbit][positionInOrbit] != null && Planets[orbit][positionInOrbit].gameObject != null)
             {
-                Debug.LogWarning($"There is already a planet at orbit {orbit} position {positionInOrbit}");
                 return;
             }
             Planet planet = planetFactory.CreatePlanet(Vector3.zero, data, transform, orbit, positionInOrbit);
@@ -62,12 +64,31 @@ namespace Code.Scripts.Core.World
             Planet planet = Planets[orbitIndex][positionInOrbit];
             if (planet == null)
             {
-                Debug.LogWarning($"No planet found at orbit {orbitIndex} position {positionInOrbit} to add a satellite.");
                 return;
             }
 
             planet.AddSatelite(sateliteDataSo);
             ConstructionEvents.OnConstructibleCreated?.Invoke(sateliteDataSo);
+        }
+        public void RemovePlanet(int orbit, int positionInOrbit)
+        {
+            if (orbit < 0 || orbit >= Planets.Count || positionInOrbit < 0 || positionInOrbit >= Planets[orbit].Count)
+            {
+                return;
+            }
+            if (Planets[orbit][positionInOrbit] == null)
+            {
+                return;
+            }
+
+            Planet planet = Planets[orbit][positionInOrbit];
+            string planetName = planet.Name;
+            Destroy(planet.gameObject);
+            Planets[orbit][positionInOrbit] = null;
+            OnPlanetRemoved?.Invoke(orbit, positionInOrbit);
+            UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
+            NotificationManager.Instance.CreateNotification($"Se ha eliminado el planeta: {planetName} de la órbita {orbit + 1}", NotificationType.Info);
+            ConstructionEvents.OnPlanetRemoved?.Invoke(planet);
         }
     }
 }

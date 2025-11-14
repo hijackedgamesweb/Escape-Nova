@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: c6844dc1c1c4624438d7821f63a30727
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6533525794168272614
+    second: Daduen_0
+  - first:
+      213: -1596333577181356323
+    second: Daduen_1
+  - first:
+      213: -6217543323003061593
+    second: Daduen_2
+  - first:
+      213: 6261897688295701603
+    second: Daduen_3
+  - first:
+      213: 60109871446699121
+    second: Daduen_4
+  - first:
+      213: -4914364396065643377
+    second: Daduen_5
+  - first:
+      213: 2166000563005622203
+    second: Daduen_6
+  - first:
+      213: -346287739979149927
+    second: Daduen_7
+  - first:
+      213: -7694078475721871255
+    second: Daduen_8
+  - first:
+      213: 555474084458609148
+    second: Daduen_9
+  - first:
+      213: 4712559149785700288
+    second: Daduen_10
+  - first:
+      213: 7595811505810264709
+    second: Daduen_11
+  - first:
+      213: 3016120259884769411
+    second: Daduen_12
+  - first:
+      213: 7871126146095825215
+    second: Daduen_13
+  - first:
+      213: 7208585585223301025
+    second: Daduen_14
+  - first:
+      213: -6225629242544544749
+    second: Daduen_15
+  - first:
+      213: -453259956979103245
+    second: Daduen_16
+  - first:
+      213: -1720790745834668815
+    second: Daduen_17
+  - first:
+      213: 6567532674150530076
+    second: Daduen_18
+  - first:
+      213: 5333977316944152422
+    second: Daduen_19
+  - first:
+      213: -6326375877922934489
+    second: Daduen_20
+  - first:
+      213: 4148748764348558256
+    second: Daduen_21
+  - first:
+      213: -8780521026303170892
+    second: Daduen_22
+  - first:
+      213: -7519168058971538846
+    second: Daduen_23
+  - first:
+      213: 6902892996324409815
+    second: Daduen_24
+  - first:
+      213: -4190071993475458829
+    second: Daduen_25
+  - first:
+      213: 6046739393948414719
+    second: Daduen_26
+  - first:
+      213: -4553928695017434267
+    second: Daduen_27
+  - first:
+      213: 9125895903848693290
+    second: Daduen_28
+  - first:
+      213: -6288420948058026739
+    second: Daduen_29
+  - first:
+      213: -3175048224117436031
+    second: Daduen_30
+  - first:
+      213: -4500104750745745417
+    second: Daduen_31
+  - first:
+      213: 1675898949289786224
+    second: Daduen_32
+  - first:
+      213: -2181351897034776782
+    second: Daduen_33
+  - first:
+      213: -1673339684014177264
+    second: Daduen_34
+  - first:
+      213: 3000938774937715259
+    second: Daduen_35
+  - first:
+      213: 3906937731007018533
+    second: Daduen_36
+  - first:
+      213: -3338982566864779063
+    second: Daduen_37
+  - first:
+      213: 663349496643002239
+    second: Daduen_38
+  - first:
+      213: 1159479716973346229
+    second: Daduen_39
+  - first:
+      213: 2238246250729218089
+    second: Daduen_40
+  - first:
+      213: 2744324293276978164
+    second: Daduen_41
+  - first:
+      213: 752597203440699557
+    second: Daduen_42
+  - first:
+      213: -3716867381461335304
+    second: Daduen_43
+  - first:
+      213: -3556882626070572731
+    second: Daduen_44
+  - first:
+      213: 6072387396595883791
+    second: Daduen_45
+  - first:
+      213: 4813847779751430418
+    second: Daduen_46
+  - first:
+      213: 7760114982914652840
+    second: Daduen_47
+  - first:
+      213: -8948565319112746634
+    second: Daduen_48
+  - first:
+      213: -6988655389753323926
+    second: Daduen_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daduen_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6704cf71fbbaa50800000000000000
+      internalID: 6533525794168272614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde931db11fa8d9e0800000000000000
+      internalID: -1596333577181356323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aafcc82a49d6b9a0800000000000000
+      internalID: -6217543323003061593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c74b245cab6e650800000000000000
+      internalID: 6261897688295701603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c231f0c9d85d000800000000000000
+      internalID: 60109871446699121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f842ea38e9baccbb0800000000000000
+      internalID: -4914364396065643377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_6
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb70f3d390e2f0e10800000000000000
+      internalID: 2166000563005622203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d487c922db13bf0800000000000000
+      internalID: -346287739979149927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9607e9c2464293590800000000000000
+      internalID: -7694078475721871255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 649
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9371e9cb075b700800000000000000
+      internalID: 555474084458609148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c75ef9149f566140800000000000000
+      internalID: 4712559149785700288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58255a8f15eb96960800000000000000
+      internalID: 7595811505810264709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3806a4275696bd920800000000000000
+      internalID: 3016120259884769411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31c450e68bdb3d60800000000000000
+      internalID: 7871126146095825215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a77c34a56a0a0460800000000000000
+      internalID: 7208585585223301025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31429de403f1a99a0800000000000000
+      internalID: -6225629242544544749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f90a597872b5b9f0800000000000000
+      internalID: -453259956979103245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcbebd0fe58e18e0800000000000000
+      internalID: -1720790745834668815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_18
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c738dbb20942b50800000000000000
+      internalID: 6567532674150530076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 499
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6678270fb18160a40800000000000000
+      internalID: 5333977316944152422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721bdc858a23438a0800000000000000
+      internalID: -6326375877922934489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb26592501539930800000000000000
+      internalID: 4148748764348558256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6e954d5a2552680800000000000000
+      internalID: -8780521026303170892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ab9861d7c86a790800000000000000
+      internalID: -7519168058971538846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_24
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1c2786b900ccf50800000000000000
+      internalID: 6902892996324409815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8159dc8bfd9d5c0800000000000000
+      internalID: -4190071993475458829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_26
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2f7a911755ae350800000000000000
+      internalID: 6046739393948414719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5631709caf13dc0c0800000000000000
+      internalID: -4553928695017434267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_28
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ef71639f1b5ae70800000000000000
+      internalID: 9125895903848693290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 349
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d40e8177a0bb8a0800000000000000
+      internalID: -6288420948058026739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181deb85676ffe3d0800000000000000
+      internalID: -3175048224117436031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f780cf529a6c81c0800000000000000
+      internalID: -4500104750745745417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b3edf073df14710800000000000000
+      internalID: 1675898949289786224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f1e17c1084ab1e0800000000000000
+      internalID: -2181351897034776782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_34
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01445c15c6a17c8e0800000000000000
+      internalID: -1673339684014177264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32cbd88ae975a920800000000000000
+      internalID: 3000938774937715259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_36
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5267e30aa2b383630800000000000000
+      internalID: 3906937731007018533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c88dcecb0d89a1d0800000000000000
+      internalID: -3338982566864779063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f17554ad0b43900800000000000000
+      internalID: 663349496643002239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 199
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd777ec8ac471010800000000000000
+      internalID: 1159479716973346229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920a0963b19df0f10800000000000000
+      internalID: 2238246250729218089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbcf39976cc51620800000000000000
+      internalID: 2744324293276978164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_42
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8090a4b23c17a00800000000000000
+      internalID: 752597203440699557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2c2c23fc80b6cc0800000000000000
+      internalID: -3716867381461335304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_44
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5411e45c81a63aec0800000000000000
+      internalID: -3556882626070572731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f18a01a24754450800000000000000
+      internalID: 6072387396595883791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_46
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21903e20d093ec240800000000000000
+      internalID: 4813847779751430418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_47
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa70dc467771bb60800000000000000
+      internalID: 7760114982914652840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_48
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67997e8f04f40d380800000000000000
+      internalID: -8948565319112746634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daduen_49
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 49
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e422453fe430f90800000000000000
+      internalID: -6988655389753323926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Daduen_0: 6533525794168272614
+      Daduen_1: -1596333577181356323
+      Daduen_10: 4712559149785700288
+      Daduen_11: 7595811505810264709
+      Daduen_12: 3016120259884769411
+      Daduen_13: 7871126146095825215
+      Daduen_14: 7208585585223301025
+      Daduen_15: -6225629242544544749
+      Daduen_16: -453259956979103245
+      Daduen_17: -1720790745834668815
+      Daduen_18: 6567532674150530076
+      Daduen_19: 5333977316944152422
+      Daduen_2: -6217543323003061593
+      Daduen_20: -6326375877922934489
+      Daduen_21: 4148748764348558256
+      Daduen_22: -8780521026303170892
+      Daduen_23: -7519168058971538846
+      Daduen_24: 6902892996324409815
+      Daduen_25: -4190071993475458829
+      Daduen_26: 6046739393948414719
+      Daduen_27: -4553928695017434267
+      Daduen_28: 9125895903848693290
+      Daduen_29: -6288420948058026739
+      Daduen_3: 6261897688295701603
+      Daduen_30: -3175048224117436031
+      Daduen_31: -4500104750745745417
+      Daduen_32: 1675898949289786224
+      Daduen_33: -2181351897034776782
+      Daduen_34: -1673339684014177264
+      Daduen_35: 3000938774937715259
+      Daduen_36: 3906937731007018533
+      Daduen_37: -3338982566864779063
+      Daduen_38: 663349496643002239
+      Daduen_39: 1159479716973346229
+      Daduen_4: 60109871446699121
+      Daduen_40: 2238246250729218089
+      Daduen_41: 2744324293276978164
+      Daduen_42: 752597203440699557
+      Daduen_43: -3716867381461335304
+      Daduen_44: -3556882626070572731
+      Daduen_45: 6072387396595883791
+      Daduen_46: 4813847779751430418
+      Daduen_47: 7760114982914652840
+      Daduen_48: -8948565319112746634
+      Daduen_49: -6988655389753323926
+      Daduen_5: -4914364396065643377
+      Daduen_6: 2166000563005622203
+      Daduen_7: -346287739979149927
+      Daduen_8: -7694078475721871255
+      Daduen_9: 555474084458609148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -27,6 +27,18 @@ namespace Code.Scripts.UI.Menus
         {
             DrawOrbit(0);
             ConstructionPanelManager.OnConstructionTypeChanged += OnConstructionTypeChanged;
+            if (_solarSystem != null)
+            {
+                _solarSystem.OnPlanetRemoved += DeletePlanetFromOverview;
+            }
+        }
+        private void OnDestroy()
+        {
+            ConstructionPanelManager.OnConstructionTypeChanged -= OnConstructionTypeChanged;
+            if (_solarSystem != null)
+            {
+                _solarSystem.OnPlanetRemoved -= DeletePlanetFromOverview;
+            }
         }
 
         private void OnConstructionTypeChanged(ConstructionType obj)
@@ -42,9 +54,22 @@ namespace Code.Scripts.UI.Menus
                 if (currentConstructionType == ConstructionType.Planet)
                 {
                     PlanetDataSO planetDataSo = _planetListInitializer.GetCurrentPlanetData();
-                    _solarSystem.AddPlanet(orbitIndex, positionInOrbit, planetDataSo);
-                    AddPlanetToOverview(orbitIndex, positionInOrbit, planetDataSo);
-                    UIManager.Instance.ShowScreen<InGameScreen>();
+                    
+                    if (planetDataSo == null)
+                    {
+                        return;
+                    }
+                    bool consumed = _planetListInitializer.ConsumeResourcesForPlanet(planetDataSo);
+                    if (consumed)
+                    {
+                        _solarSystem.AddPlanet(orbitIndex, positionInOrbit, planetDataSo);
+                        AddPlanetToOverview(orbitIndex, positionInOrbit, planetDataSo);
+                        _planetListInitializer.ClearSelection();
+                        UIManager.Instance.ShowScreen<InGameScreen>();
+                    }
+                    else
+                    {
+                    }
                 }
             });
         }
@@ -61,8 +86,20 @@ namespace Code.Scripts.UI.Menus
                 if (currentConstructionType == ConstructionType.Satelite)
                 {
                     SateliteDataSO sateliteDataSo = _sateliteListInitializer.GetCurrentSateliteData();
-                    _solarSystem.AddSateliteToPlanet(orbitIndex, positionInOrbit, sateliteDataSo);
-                    UIManager.Instance.ShowScreen<InGameScreen>();
+                    if (sateliteDataSo == null)
+                    {
+                        return;
+                    }
+                    bool consumed = _sateliteListInitializer.ConsumeResourcesForSatelite(sateliteDataSo);
+                    if (consumed)
+                    {
+                        _solarSystem.AddSateliteToPlanet(orbitIndex, positionInOrbit, sateliteDataSo);
+                        _sateliteListInitializer.ClearSelection();
+                        UIManager.Instance.ShowScreen<InGameScreen>();
+                    }
+                    else
+                    {
+                    }
                 }
             });
         }
@@ -84,11 +121,9 @@ namespace Code.Scripts.UI.Menus
             if (nextOrbitIndex < totalOrbits)
             {
                 DrawOrbit(nextOrbitIndex);
-                Debug.Log($"Nueva órbita añadida: {nextOrbitIndex}");
             }
             else
             {
-                Debug.Log("No hay más órbitas disponibles en el SolarSystem.");
             }
         }
         
@@ -102,16 +137,13 @@ namespace Code.Scripts.UI.Menus
         {
             var planetsPerOrbit = _solarSystem.planetsPerOrbit;
 
-            // Seguridad: evitar índice fuera de rango
             if (orbitIndex < 0 || orbitIndex >= planetsPerOrbit.Length)
             {
-                Debug.LogWarning($"Orbit index {orbitIndex} fuera de rango.");
                 return;
             }
 
             float orbitRadius = orbitRadiusStep * (orbitIndex + 1);
 
-            // Crear el círculo de la órbita
             GameObject orbitCircle = new GameObject($"OrbitCircle_{orbitIndex}", typeof(RectTransform), typeof(OrbitCircleUI));
             orbitCircle.transform.SetParent(_orbitContainer, false);
 
@@ -126,7 +158,6 @@ namespace Code.Scripts.UI.Menus
             orbitRect.sizeDelta = new Vector2(diameter, diameter);
             orbitRect.anchoredPosition = Vector2.zero;
 
-            // Crear los planet slots
             int planetsInOrbit = planetsPerOrbit[orbitIndex];
             _planetSlots.Add(new List<GameObject>());
 

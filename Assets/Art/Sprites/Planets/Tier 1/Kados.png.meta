@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 3008f88173d7fae42a6a68a5c9332908
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6587043922736091722
+    second: Kados_0
+  - first:
+      213: 1678020910971047891
+    second: Kados_1
+  - first:
+      213: -2894641305540307418
+    second: Kados_2
+  - first:
+      213: 6806675017216667336
+    second: Kados_3
+  - first:
+      213: -8812143822941446634
+    second: Kados_4
+  - first:
+      213: -6975393696788631624
+    second: Kados_5
+  - first:
+      213: -832809000736831141
+    second: Kados_6
+  - first:
+      213: 2941716014979490458
+    second: Kados_7
+  - first:
+      213: 9222278826747759075
+    second: Kados_8
+  - first:
+      213: -4603622968509211176
+    second: Kados_9
+  - first:
+      213: -3040855519166513885
+    second: Kados_10
+  - first:
+      213: 8057541855084983077
+    second: Kados_11
+  - first:
+      213: 6314416157826726995
+    second: Kados_12
+  - first:
+      213: 1287904915782915394
+    second: Kados_13
+  - first:
+      213: -1183846199419314745
+    second: Kados_14
+  - first:
+      213: -5764957811697664474
+    second: Kados_15
+  - first:
+      213: -4621143406514920064
+    second: Kados_16
+  - first:
+      213: -312329420406063747
+    second: Kados_17
+  - first:
+      213: -380021218885545897
+    second: Kados_18
+  - first:
+      213: 5466971119707476800
+    second: Kados_19
+  - first:
+      213: -9145254666661701129
+    second: Kados_20
+  - first:
+      213: 2338227759705231775
+    second: Kados_21
+  - first:
+      213: 627436633728043041
+    second: Kados_22
+  - first:
+      213: 8947884527714118411
+    second: Kados_23
+  - first:
+      213: 8764781946208133806
+    second: Kados_24
+  - first:
+      213: -7764950016530124254
+    second: Kados_25
+  - first:
+      213: 1869236053708825188
+    second: Kados_26
+  - first:
+      213: -2571252462653498800
+    second: Kados_27
+  - first:
+      213: 1497105768545852741
+    second: Kados_28
+  - first:
+      213: 5364053119263622194
+    second: Kados_29
+  - first:
+      213: 5952062814256451239
+    second: Kados_30
+  - first:
+      213: 6166046644192843252
+    second: Kados_31
+  - first:
+      213: -6080339108175729657
+    second: Kados_32
+  - first:
+      213: 1950425825456614500
+    second: Kados_33
+  - first:
+      213: -6962088804989929057
+    second: Kados_34
+  - first:
+      213: 6825224172806631940
+    second: Kados_35
+  - first:
+      213: -1477692287260642566
+    second: Kados_36
+  - first:
+      213: 7144214481546925124
+    second: Kados_37
+  - first:
+      213: -2193939887393077332
+    second: Kados_38
+  - first:
+      213: -3174271456817271618
+    second: Kados_39
+  - first:
+      213: 6976776674984522540
+    second: Kados_40
+  - first:
+      213: 9158950481593536547
+    second: Kados_41
+  - first:
+      213: 1524483643990193874
+    second: Kados_42
+  - first:
+      213: 4625724141622910304
+    second: Kados_43
+  - first:
+      213: -489834702911900797
+    second: Kados_44
+  - first:
+      213: -7114035028535063362
+    second: Kados_45
+  - first:
+      213: -135984324723792283
+    second: Kados_46
+  - first:
+      213: 2697198904899865641
+    second: Kados_47
+  - first:
+      213: -2016731743257598609
+    second: Kados_48
+  - first:
+      213: -6363595359634512430
+    second: Kados_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kados_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd6b61b37e1694a0800000000000000
+      internalID: -6587043922736091722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df4b14c027894710800000000000000
+      internalID: 1678020910971047891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626d81fa11b24d7d0800000000000000
+      internalID: -2894641305540307418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cea9b66dda267e50800000000000000
+      internalID: 6806675017216667336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e1cebb1e9f4b580800000000000000
+      internalID: -8812143822941446634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf2a66d36c623f90800000000000000
+      internalID: -6975393696788631624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59455150a44174f0800000000000000
+      internalID: -832809000736831141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a922ee6312313d820800000000000000
+      internalID: 2941716014979490458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e908ef2bbd1cff70800000000000000
+      internalID: 9222278826747759075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_9
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 549
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dddd2a1d45ac10c0800000000000000
+      internalID: -4603622968509211176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d3bc63406bcc5d0800000000000000
+      internalID: -3040855519166513885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523be2360a322df60800000000000000
+      internalID: 8057541855084983077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cbf335a0051a750800000000000000
+      internalID: 6314416157826726995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24558b182be8fd110800000000000000
+      internalID: 1287904915782915394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_14
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd5ae66722229fe0800000000000000
+      internalID: -1183846199419314745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_15
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62eb5a01a61ceffa0800000000000000
+      internalID: -5764957811697664474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0852a8e3e866edfb0800000000000000
+      internalID: -4621143406514920064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_17
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7dfac30c026aabf0800000000000000
+      internalID: -312329420406063747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_18
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750573107b4e9baf0800000000000000
+      internalID: -380021218885545897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_19
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 424
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043db73a4459edb40800000000000000
+      internalID: 5466971119707476800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f955259557851180800000000000000
+      internalID: -9145254666661701129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91103d42cd037020800000000000000
+      internalID: 2338227759705231775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1284d684b4a15b800800000000000000
+      internalID: 627436633728043041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b2d9de1954d2c70800000000000000
+      internalID: 8947884527714118411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_24
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea22e750eb2c2a970800000000000000
+      internalID: 8764781946208133806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_25
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222fe06b91b5d3490800000000000000
+      internalID: -7764950016530124254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_26
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462eaa6894cd0f910800000000000000
+      internalID: 1869236053708825188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_27
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a90bf1283115cd0800000000000000
+      internalID: -2571252462653498800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_28
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d1d55b3c9c6c410800000000000000
+      internalID: 1497105768545852741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_29
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 299
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234c80a54e1f07a40800000000000000
+      internalID: 5364053119263622194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae419c1899f99250800000000000000
+      internalID: 5952062814256451239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f59a97f0c2329550800000000000000
+      internalID: 6166046644192843252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_32
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c254fcbcb4e9ba0800000000000000
+      internalID: -6080339108175729657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_33
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ce61754fd411b10800000000000000
+      internalID: 1950425825456614500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_34
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99f9db5e11b16f90800000000000000
+      internalID: -6962088804989929057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4027c8c393118be50800000000000000
+      internalID: 6825224172806631940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_36
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2be72a1be2e7be0800000000000000
+      internalID: -1477692287260642566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4445ec32839552360800000000000000
+      internalID: 7144214481546925124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_38
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca70061eb4f8d81e0800000000000000
+      internalID: -2193939887393077332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_39
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 174
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcaeb39de8b2f3d0800000000000000
+      internalID: -3174271456817271618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23feaddb6d72d060800000000000000
+      internalID: 6976776674984522540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32096c2dfe02b1f70800000000000000
+      internalID: 9158950481593536547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6bde11ccd082510800000000000000
+      internalID: 1524483643990193874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_43
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dd162499fd13040800000000000000
+      internalID: 4625724141622910304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_44
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383f646dee1c339f0800000000000000
+      internalID: -489834702911900797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_45
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc4b7455ded54d90800000000000000
+      internalID: -7114035028535063362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56621d52af2ec1ef0800000000000000
+      internalID: -135984324723792283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_47
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c01271d106e6520800000000000000
+      internalID: 2697198904899865641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_48
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6560e32a212304e0800000000000000
+      internalID: -2016731743257598609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kados_49
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 49
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d529a67cb7ffa7a0800000000000000
+      internalID: -6363595359634512430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kados_0: -6587043922736091722
+      Kados_1: 1678020910971047891
+      Kados_10: -3040855519166513885
+      Kados_11: 8057541855084983077
+      Kados_12: 6314416157826726995
+      Kados_13: 1287904915782915394
+      Kados_14: -1183846199419314745
+      Kados_15: -5764957811697664474
+      Kados_16: -4621143406514920064
+      Kados_17: -312329420406063747
+      Kados_18: -380021218885545897
+      Kados_19: 5466971119707476800
+      Kados_2: -2894641305540307418
+      Kados_20: -9145254666661701129
+      Kados_21: 2338227759705231775
+      Kados_22: 627436633728043041
+      Kados_23: 8947884527714118411
+      Kados_24: 8764781946208133806
+      Kados_25: -7764950016530124254
+      Kados_26: 1869236053708825188
+      Kados_27: -2571252462653498800
+      Kados_28: 1497105768545852741
+      Kados_29: 5364053119263622194
+      Kados_3: 6806675017216667336
+      Kados_30: 5952062814256451239
+      Kados_31: 6166046644192843252
+      Kados_32: -6080339108175729657
+      Kados_33: 1950425825456614500
+      Kados_34: -6962088804989929057
+      Kados_35: 6825224172806631940
+      Kados_36: -1477692287260642566
+      Kados_37: 7144214481546925124
+      Kados_38: -2193939887393077332
+      Kados_39: -3174271456817271618
+      Kados_4: -8812143822941446634
+      Kados_40: 6976776674984522540
+      Kados_41: 9158950481593536547
+      Kados_42: 1524483643990193874
+      Kados_43: 4625724141622910304
+      Kados_44: -489834702911900797
+      Kados_45: -7114035028535063362
+      Kados_46: -135984324723792283
+      Kados_47: 2697198904899865641
+      Kados_48: -2016731743257598609
+      Kados_49: -6363595359634512430
+      Kados_5: -6975393696788631624
+      Kados_6: -832809000736831141
+      Kados_7: 2941716014979490458
+      Kados_8: 9222278826747759075
+      Kados_9: -4603622968509211176
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

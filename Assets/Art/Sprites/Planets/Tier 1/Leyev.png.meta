@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 2b497a5ead828334fa43390cad1d7a09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9201315229162653171
+    second: Leyev_0
+  - first:
+      213: -5270201902422384299
+    second: Leyev_1
+  - first:
+      213: -5362770466798115918
+    second: Leyev_2
+  - first:
+      213: -1025430498825953946
+    second: Leyev_3
+  - first:
+      213: -8998132295655151276
+    second: Leyev_4
+  - first:
+      213: 7178582672773156145
+    second: Leyev_5
+  - first:
+      213: -2672721788412022795
+    second: Leyev_6
+  - first:
+      213: 1791489999994336682
+    second: Leyev_7
+  - first:
+      213: -4215230303344511028
+    second: Leyev_8
+  - first:
+      213: -6645524701118199679
+    second: Leyev_9
+  - first:
+      213: -3611026058706238862
+    second: Leyev_10
+  - first:
+      213: 3131818271074881145
+    second: Leyev_11
+  - first:
+      213: -5642420460428669694
+    second: Leyev_12
+  - first:
+      213: -3005306639304491484
+    second: Leyev_13
+  - first:
+      213: -5144141581466042350
+    second: Leyev_14
+  - first:
+      213: -1868008493230479659
+    second: Leyev_15
+  - first:
+      213: -3829419920475308069
+    second: Leyev_16
+  - first:
+      213: 6852996371463676235
+    second: Leyev_17
+  - first:
+      213: 3331310568413667634
+    second: Leyev_18
+  - first:
+      213: -7390685393018482693
+    second: Leyev_19
+  - first:
+      213: 7335330842288764912
+    second: Leyev_20
+  - first:
+      213: -6280743743695755589
+    second: Leyev_21
+  - first:
+      213: 1148873853511080771
+    second: Leyev_22
+  - first:
+      213: -247455866067256504
+    second: Leyev_23
+  - first:
+      213: -6824665899766889227
+    second: Leyev_24
+  - first:
+      213: -3922762155030885060
+    second: Leyev_25
+  - first:
+      213: 2776958744257405338
+    second: Leyev_26
+  - first:
+      213: 6500262996658089106
+    second: Leyev_27
+  - first:
+      213: -1641902156140504589
+    second: Leyev_28
+  - first:
+      213: 3549070077218233103
+    second: Leyev_29
+  - first:
+      213: -676590498473532735
+    second: Leyev_30
+  - first:
+      213: 9221665694527208192
+    second: Leyev_31
+  - first:
+      213: -5494256630447980848
+    second: Leyev_32
+  - first:
+      213: -3220623237116763338
+    second: Leyev_33
+  - first:
+      213: 3041172193035246353
+    second: Leyev_34
+  - first:
+      213: 1352964075685778336
+    second: Leyev_35
+  - first:
+      213: -1344935654855474923
+    second: Leyev_36
+  - first:
+      213: 2793545608802093490
+    second: Leyev_37
+  - first:
+      213: -7754003619382563015
+    second: Leyev_38
+  - first:
+      213: -7801517589758177750
+    second: Leyev_39
+  - first:
+      213: 8890582097887184998
+    second: Leyev_40
+  - first:
+      213: -4731137702957014619
+    second: Leyev_41
+  - first:
+      213: -1283102832548966608
+    second: Leyev_42
+  - first:
+      213: -4000249472492608210
+    second: Leyev_43
+  - first:
+      213: -5403410553175678884
+    second: Leyev_44
+  - first:
+      213: 878022772460767598
+    second: Leyev_45
+  - first:
+      213: -7410396174919193529
+    second: Leyev_46
+  - first:
+      213: -4000939338751661040
+    second: Leyev_47
+  - first:
+      213: -1786208119656882308
+    second: Leyev_48
+  - first:
+      213: -2396106638666102404
+    second: Leyev_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leyev_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a3e5bbc8c5e4080800000000000000
+      internalID: -9201315229162653171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551a68fda4b7cd6b0800000000000000
+      internalID: -5270201902422384299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3ea827cac9395b0800000000000000
+      internalID: -5362770466798115918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d90afe460f4c1f0800000000000000
+      internalID: -1025430498825953946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_4
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459218be956302380800000000000000
+      internalID: -8998132295655151276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d0b6938e27f9360800000000000000
+      internalID: 7178582672773156145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_6
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff2142b1b598ead0800000000000000
+      internalID: -2672721788412022795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5b35cc9a6acd810800000000000000
+      internalID: 1791489999994336682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_8
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc730b25f5e7085c0800000000000000
+      internalID: -4215230303344511028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_9
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 569
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18804cb6e7a56c3a0800000000000000
+      internalID: -6645524701118199679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272c2208eee03edc0800000000000000
+      internalID: -3611026058706238862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e0f7cdf14767b20800000000000000
+      internalID: 3131818271074881145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_12
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dc0ce6c7812b1b0800000000000000
+      internalID: -5642420460428669694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ef12bc8810b46d0800000000000000
+      internalID: -3005306639304491484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210866a8c765c98b0800000000000000
+      internalID: -5144141581466042350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6a59b2c208316e0800000000000000
+      internalID: -1868008493230479659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_16
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfb3481fda2bdac0800000000000000
+      internalID: -3829419920475308069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41222024ebba1f50800000000000000
+      internalID: 6852996371463676235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_18
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2312dcadf413b3e20800000000000000
+      internalID: 3331310568413667634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_19
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 439
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff0776eac20f6990800000000000000
+      internalID: -7390685393018482693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7b69c69845cc560800000000000000
+      internalID: 7335330842288764912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6e1c787d056d8a0800000000000000
+      internalID: -6280743743695755589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_22
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b134aceae91ff00800000000000000
+      internalID: 1148873853511080771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b797d633cd09cf0800000000000000
+      internalID: -247455866067256504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_24
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f44ca5d58ae941a0800000000000000
+      internalID: -6824665899766889227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_25
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dc90b8a9c8f89c0800000000000000
+      internalID: -3922762155030885060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_26
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91a063d34db98620800000000000000
+      internalID: 2776958744257405338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ceb6e61c2953a50800000000000000
+      internalID: 6500262996658089106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_28
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f91c4b20bac639e0800000000000000
+      internalID: -1641902156140504589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_29
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 309
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b9f837e64d04130800000000000000
+      internalID: 3549070077218233103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2a410c6844c96f0800000000000000
+      internalID: -676590498473532735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b33b73710f9ff70800000000000000
+      internalID: 9221665694527208192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_32
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de305554ba70c3b0800000000000000
+      internalID: -5494256630447980848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633694cba3c0e43d0800000000000000
+      internalID: -3220623237116763338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_34
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b59aa2ff9643a20800000000000000
+      internalID: 3041172193035246353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_35
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a39d1598a1b6c210800000000000000
+      internalID: 1352964075685778336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_36
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511059ec524d55de0800000000000000
+      internalID: -1344935654855474923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9408c2eeaa4c620800000000000000
+      internalID: 2793545608802093490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_38
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93feb976ace346490800000000000000
+      internalID: -7754003619382563015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_39
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 179
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e808916117bb390800000000000000
+      internalID: -7801517589758177750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668430f4051b16b70800000000000000
+      internalID: 8890582097887184998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_41
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a12ac7635f975eb0800000000000000
+      internalID: -4731137702957014619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_42
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f0f9f95c0813ee0800000000000000
+      internalID: -1283102832548966608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_43
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25622b8c424c78c0800000000000000
+      internalID: -4000249472492608210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_44
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50ed5afaba3305b0800000000000000
+      internalID: -5403410553175678884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_45
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e694a314f0d5f2c00800000000000000
+      internalID: 878022772460767598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_46
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c270dd0fbf82990800000000000000
+      internalID: -7410396174919193529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c22d98edec978c0800000000000000
+      internalID: -4000939338751661040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_48
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fdeeccd2d1637e0800000000000000
+      internalID: -1786208119656882308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leyev_49
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 49
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c790a5e05b15fbed0800000000000000
+      internalID: -2396106638666102404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Leyev_0: -9201315229162653171
+      Leyev_1: -5270201902422384299
+      Leyev_10: -3611026058706238862
+      Leyev_11: 3131818271074881145
+      Leyev_12: -5642420460428669694
+      Leyev_13: -3005306639304491484
+      Leyev_14: -5144141581466042350
+      Leyev_15: -1868008493230479659
+      Leyev_16: -3829419920475308069
+      Leyev_17: 6852996371463676235
+      Leyev_18: 3331310568413667634
+      Leyev_19: -7390685393018482693
+      Leyev_2: -5362770466798115918
+      Leyev_20: 7335330842288764912
+      Leyev_21: -6280743743695755589
+      Leyev_22: 1148873853511080771
+      Leyev_23: -247455866067256504
+      Leyev_24: -6824665899766889227
+      Leyev_25: -3922762155030885060
+      Leyev_26: 2776958744257405338
+      Leyev_27: 6500262996658089106
+      Leyev_28: -1641902156140504589
+      Leyev_29: 3549070077218233103
+      Leyev_3: -1025430498825953946
+      Leyev_30: -676590498473532735
+      Leyev_31: 9221665694527208192
+      Leyev_32: -5494256630447980848
+      Leyev_33: -3220623237116763338
+      Leyev_34: 3041172193035246353
+      Leyev_35: 1352964075685778336
+      Leyev_36: -1344935654855474923
+      Leyev_37: 2793545608802093490
+      Leyev_38: -7754003619382563015
+      Leyev_39: -7801517589758177750
+      Leyev_4: -8998132295655151276
+      Leyev_40: 8890582097887184998
+      Leyev_41: -4731137702957014619
+      Leyev_42: -1283102832548966608
+      Leyev_43: -4000249472492608210
+      Leyev_44: -5403410553175678884
+      Leyev_45: 878022772460767598
+      Leyev_46: -7410396174919193529
+      Leyev_47: -4000939338751661040
+      Leyev_48: -1786208119656882308
+      Leyev_49: -2396106638666102404
+      Leyev_5: 7178582672773156145
+      Leyev_6: -2672721788412022795
+      Leyev_7: 1791489999994336682
+      Leyev_8: -4215230303344511028
+      Leyev_9: -6645524701118199679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

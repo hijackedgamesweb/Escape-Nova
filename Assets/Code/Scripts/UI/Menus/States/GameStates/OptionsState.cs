@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Windows;
 
@@ -6,10 +7,12 @@ namespace Code.Scripts.UI.Menus.States.GameStates
     public class OptionsState : AState
     {
         OptionsScreen _uiObject;
+        private IStateManager _stateManager;
         
-        public OptionsState(IStateManager stateManager, BaseUIScreen uiObject) : base(stateManager)
+        public OptionsState(IStateManager stateManager) : base(stateManager)
         {
-            _uiObject = (OptionsScreen) uiObject;
+            _uiObject = UIManager.Instance.ShowScreen<OptionsScreen>();
+            _stateManager = stateManager;
         }
 
         public override void Enter(IStateManager gameManager)

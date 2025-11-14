@@ -14,7 +14,7 @@ namespace Code.Scripts.UI.Crafting
         [SerializeField] private Image itemIcon;
         [SerializeField] private TextMeshProUGUI itemName;
         [SerializeField] private GameObject selectionHighlight;
-        [SerializeField] private GameObject canCraftHighlight;
+        [SerializeField] private Image canCraftHighlight;
 
         private CraftingRecipe _recipe;
         private CraftingPanelUI _panelUI;
@@ -43,9 +43,13 @@ namespace Code.Scripts.UI.Crafting
 
             bool canCraft = _craftingSystem.CanCraft(_recipe.recipeId);
 
-            if (canCraftHighlight != null)
+            if (canCraft)
             {
-                canCraftHighlight.SetActive(canCraft);
+                canCraftHighlight.color = new Color(0f, 0f, 0f, 0f); 
+            }
+            else
+            {
+                canCraftHighlight.color = new Color(0f, 0f, 0f, 0.2f);
             }
         }
 

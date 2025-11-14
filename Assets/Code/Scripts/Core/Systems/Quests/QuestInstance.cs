@@ -21,6 +21,11 @@ namespace Code.Scripts.Core.Systems.Quests
             isActive = false;
             isCompleted = false;
             RuntimeObjectives = new List<QuestObjective>();
+            
+            if (questData.Objectives.Count == 0)
+            {
+            }
+            
             foreach (var objective in questData.Objectives)
             {
                 var json = JsonUtility.ToJson(objective);

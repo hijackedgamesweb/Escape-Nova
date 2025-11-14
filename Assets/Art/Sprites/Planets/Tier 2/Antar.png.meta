@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 212db910e48e26d4dafc8c7ec7f585bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8492951607903232514
+    second: Antar_0
+  - first:
+      213: -584094789670317902
+    second: Antar_1
+  - first:
+      213: 2502892885794468618
+    second: Antar_2
+  - first:
+      213: -3589621733660486202
+    second: Antar_3
+  - first:
+      213: 2769559538896477565
+    second: Antar_4
+  - first:
+      213: 4004943467099971983
+    second: Antar_5
+  - first:
+      213: -5610107686608920923
+    second: Antar_6
+  - first:
+      213: -7143710984428089595
+    second: Antar_7
+  - first:
+      213: 660079098906886025
+    second: Antar_8
+  - first:
+      213: 6324141790235924736
+    second: Antar_9
+  - first:
+      213: -6475666871482694090
+    second: Antar_10
+  - first:
+      213: -3213675422662734072
+    second: Antar_11
+  - first:
+      213: 9111781296906544110
+    second: Antar_12
+  - first:
+      213: 6689492148670114732
+    second: Antar_13
+  - first:
+      213: 5894704497804116289
+    second: Antar_14
+  - first:
+      213: -9205059699656990715
+    second: Antar_15
+  - first:
+      213: 2747292501231166628
+    second: Antar_16
+  - first:
+      213: -4259248809635747171
+    second: Antar_17
+  - first:
+      213: -3203117105192664196
+    second: Antar_18
+  - first:
+      213: 1267179840786338731
+    second: Antar_19
+  - first:
+      213: 8056854483824857504
+    second: Antar_20
+  - first:
+      213: 9218188887736272967
+    second: Antar_21
+  - first:
+      213: -8617322434709161775
+    second: Antar_22
+  - first:
+      213: 1104198120790211368
+    second: Antar_23
+  - first:
+      213: -3895381189954294694
+    second: Antar_24
+  - first:
+      213: -2455404804491042554
+    second: Antar_25
+  - first:
+      213: -2800860976892791921
+    second: Antar_26
+  - first:
+      213: 6737581313180348634
+    second: Antar_27
+  - first:
+      213: 8250219949913256112
+    second: Antar_28
+  - first:
+      213: -5323555731211350262
+    second: Antar_29
+  - first:
+      213: 4618668152097053166
+    second: Antar_30
+  - first:
+      213: -7214134977501747726
+    second: Antar_31
+  - first:
+      213: -4334574456696558297
+    second: Antar_32
+  - first:
+      213: 210744323414616330
+    second: Antar_33
+  - first:
+      213: 1055852324991737494
+    second: Antar_34
+  - first:
+      213: 5476204836413533718
+    second: Antar_35
+  - first:
+      213: 5987456573545389938
+    second: Antar_36
+  - first:
+      213: -2512007397763403684
+    second: Antar_37
+  - first:
+      213: -362598566873242123
+    second: Antar_38
+  - first:
+      213: -3366677917306238389
+    second: Antar_39
+  - first:
+      213: -8076786525255146958
+    second: Antar_40
+  - first:
+      213: -3210224997290767775
+    second: Antar_41
+  - first:
+      213: 490461880304672952
+    second: Antar_42
+  - first:
+      213: -6412718860148117471
+    second: Antar_43
+  - first:
+      213: 1504048247441321571
+    second: Antar_44
+  - first:
+      213: -3497495170851234182
+    second: Antar_45
+  - first:
+      213: -4255945275665320612
+    second: Antar_46
+  - first:
+      213: -1654662440216724481
+    second: Antar_47
+  - first:
+      213: 3408011430676688028
+    second: Antar_48
+  - first:
+      213: -7936207270363453280
+    second: Antar_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Antar_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202a7a36d760dd570800000000000000
+      internalID: 8492951607903232514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b05b8a22e0e4e7f0800000000000000
+      internalID: -584094789670317902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03b1a891df0cb220800000000000000
+      internalID: 2502892885794468618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c515274d0a1f2ec0800000000000000
+      internalID: -3589621733660486202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d18341ab37f6620800000000000000
+      internalID: 2769559538896477565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81e30e3dda649730800000000000000
+      internalID: 4004943467099971983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae9cfb58c4e422b0800000000000000
+      internalID: -5610107686608920923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_7
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f8b1b65b07cdc90800000000000000
+      internalID: -7143710984428089595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f31067172192900800000000000000
+      internalID: 660079098906886025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 589
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0091734937dd3c750800000000000000
+      internalID: 6324141790235924736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63642893a4fc126a0800000000000000
+      internalID: -6475666871482694090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fc8c8da3bb663d0800000000000000
+      internalID: -3213675422662734072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3a92130dc837e70800000000000000
+      internalID: 9111781296906544110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab2f31baa9d5dc50800000000000000
+      internalID: 6689492148670114732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141038f52823ec150800000000000000
+      internalID: 5894704497804116289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_15
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5006ea149fe014080800000000000000
+      internalID: -9205059699656990715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_16
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a46afd59f7502620800000000000000
+      internalID: 2747292501231166628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ae7ab26cb14e4c0800000000000000
+      internalID: -4259248809635747171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_18
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c738303b6fd3c83d0800000000000000
+      internalID: -3203117105192664196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_19
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 454
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba31b94f95de59110800000000000000
+      internalID: 1267179840786338731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1d46b4772bfcf60800000000000000
+      internalID: 8056854483824857504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74849fd04f59def70800000000000000
+      internalID: 9218188887736272967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8f724f6ee196880800000000000000
+      internalID: -8617322434709161775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bba5f2756e25f00800000000000000
+      internalID: 1104198120790211368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_24
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c29044273d0f9c0800000000000000
+      internalID: -3895381189954294694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_25
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6012680f656acedd0800000000000000
+      internalID: -2455404804491042554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f833d07f7c75129d0800000000000000
+      internalID: -2800860976892791921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_27
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0bc61d182b08d50800000000000000
+      internalID: 6737581313180348634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0bb69355bae7270800000000000000
+      internalID: 8250219949913256112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_29
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 319
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f0723944eee16b0800000000000000
+      internalID: -5323555731211350262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9972da63ec81040800000000000000
+      internalID: 4618668152097053166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_31
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5a948c57e32eb90800000000000000
+      internalID: -7214134977501747726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dae184f7f78d3c0800000000000000
+      internalID: -4334574456696558297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_33
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09ee8778d6bce200800000000000000
+      internalID: 210744323414616330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_34
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e176e681427ae00800000000000000
+      internalID: 1055852324991737494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e64b7d8436ffb40800000000000000
+      internalID: 5476204836413533718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_36
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f104ed708b71350800000000000000
+      internalID: 5987456573545389938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_37
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50b827b49e832dd0800000000000000
+      internalID: -2512007397763403684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_38
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f56479468ac7faf0800000000000000
+      internalID: -362598566873242123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_39
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 184
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a4fc985482741d0800000000000000
+      internalID: -3366677917306238389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232618ba27d79ef80800000000000000
+      internalID: -8076786525255146958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_41
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a876b9f5df273d0800000000000000
+      internalID: -3210224997290767775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b02e674b787ec600800000000000000
+      internalID: 490461880304672952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1207c683c227107a0800000000000000
+      internalID: -6412718860148117471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_44
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ee9c989e37fd410800000000000000
+      internalID: 1504048247441321571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_45
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e94c13ca6667fc0800000000000000
+      internalID: -3497495170851234182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_46
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55777c1258dfe4c0800000000000000
+      internalID: -4255945275665320612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_47
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb73b307457909e0800000000000000
+      internalID: -1654662440216724481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_48
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c64fbf650bb4f20800000000000000
+      internalID: 3408011430676688028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antar_49
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 49
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a82d12198decd190800000000000000
+      internalID: -7936207270363453280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Antar_0: 8492951607903232514
+      Antar_1: -584094789670317902
+      Antar_10: -6475666871482694090
+      Antar_11: -3213675422662734072
+      Antar_12: 9111781296906544110
+      Antar_13: 6689492148670114732
+      Antar_14: 5894704497804116289
+      Antar_15: -9205059699656990715
+      Antar_16: 2747292501231166628
+      Antar_17: -4259248809635747171
+      Antar_18: -3203117105192664196
+      Antar_19: 1267179840786338731
+      Antar_2: 2502892885794468618
+      Antar_20: 8056854483824857504
+      Antar_21: 9218188887736272967
+      Antar_22: -8617322434709161775
+      Antar_23: 1104198120790211368
+      Antar_24: -3895381189954294694
+      Antar_25: -2455404804491042554
+      Antar_26: -2800860976892791921
+      Antar_27: 6737581313180348634
+      Antar_28: 8250219949913256112
+      Antar_29: -5323555731211350262
+      Antar_3: -3589621733660486202
+      Antar_30: 4618668152097053166
+      Antar_31: -7214134977501747726
+      Antar_32: -4334574456696558297
+      Antar_33: 210744323414616330
+      Antar_34: 1055852324991737494
+      Antar_35: 5476204836413533718
+      Antar_36: 5987456573545389938
+      Antar_37: -2512007397763403684
+      Antar_38: -362598566873242123
+      Antar_39: -3366677917306238389
+      Antar_4: 2769559538896477565
+      Antar_40: -8076786525255146958
+      Antar_41: -3210224997290767775
+      Antar_42: 490461880304672952
+      Antar_43: -6412718860148117471
+      Antar_44: 1504048247441321571
+      Antar_45: -3497495170851234182
+      Antar_46: -4255945275665320612
+      Antar_47: -1654662440216724481
+      Antar_48: 3408011430676688028
+      Antar_49: -7936207270363453280
+      Antar_5: 4004943467099971983
+      Antar_6: -5610107686608920923
+      Antar_7: -7143710984428089595
+      Antar_8: 660079098906886025
+      Antar_9: 6324141790235924736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

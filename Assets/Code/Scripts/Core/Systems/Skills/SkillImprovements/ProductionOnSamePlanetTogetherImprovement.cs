@@ -17,14 +17,10 @@ namespace Code.Scripts.Core.Systems.Skills.SkillImprovements
         {
             _solarSystem = ServiceLocator.GetService<SolarSystem>();
 
-            // Aplicar la mejora específica de adyacencia
             ImproveProductionOnSamePlanetTogether();
 
-            // Suscribirse a eventos para nuevos planetas
             ConstructionEvents.OnPlanetAdded += OnPlanetAdded;
             ConstructionEvents.OnPlanetRemoved += OnPlanetRemoved;
-
-            Debug.Log($"Applied adjacent production improvement: {productionBonusPercent}%");
         }
 
         private void OnPlanetAdded(Planet planet)

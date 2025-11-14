@@ -10,12 +10,12 @@ namespace Code.Scripts.Core.Managers
     {
         [Header("Configuración de tiempo")]
         [SerializeField] private TimeConfig timeConfig;
-        
+
         public float GameTime { get; private set; } = 0f;
-        public int CurrentCycle { get; private set ; } = 0;
+        public int CurrentCycle { get; private set; } = 0;
         public float TimeScale { get; private set; } = 1f;
         public bool IsPaused => TimeScale == 0f;
-        
+
         private float _nextCycleTime;
         public event Action<float> OnTimeAdvanced;
         public event Action<int> OnCycleCompleted;
@@ -23,12 +23,17 @@ namespace Code.Scripts.Core.Managers
         public void Awake()
         {
             TimeScale = 0f;
+
+            // Registrar tanto IGameTime como TimeConfig
             ServiceLocator.RegisterService<IGameTime>(this);
-            
+            ServiceLocator.RegisterService<TimeConfig>(timeConfig);
+
             if (timeConfig == null)
             {
                 Debug.LogWarning("TimeConfig no asignado, usando valores por defecto");
                 timeConfig = ScriptableObject.CreateInstance<TimeConfig>();
+                // Registrar también el TimeConfig por defecto
+                ServiceLocator.RegisterService<TimeConfig>(timeConfig);
             }
 
             _nextCycleTime = timeConfig.secondsPerCycle;
@@ -37,8 +42,8 @@ namespace Code.Scripts.Core.Managers
         private void OnDestroy()
         {
             ServiceLocator.UnregisterService<IGameTime>();
+            ServiceLocator.UnregisterService<TimeConfig>();
         }
-
 
         public void Update()
         {
@@ -46,9 +51,9 @@ namespace Code.Scripts.Core.Managers
 
             float deltaTime = Time.deltaTime * TimeScale;
             GameTime += deltaTime;
-            
+
             OnTimeAdvanced?.Invoke(deltaTime);
-            
+
             while (GameTime >= _nextCycleTime)
             {
                 CurrentCycle += 1;
@@ -56,6 +61,7 @@ namespace Code.Scripts.Core.Managers
                 _nextCycleTime += timeConfig.secondsPerCycle;
             }
         }
+
         public void StartTimer()
         {
             GameTime = 0f;
@@ -65,6 +71,5 @@ namespace Code.Scripts.Core.Managers
         public void SetSpeed(float timeScale) => TimeScale = Mathf.Max(0f, timeScale);
         public void Pause() => TimeScale = 0f;
         public void Resume() => TimeScale = 1f;
-
     }
 }

@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: e89076f9ce401934db663a953968a596
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8702481631172917241
+    second: Caminus_0
+  - first:
+      213: 10399939647931098
+    second: Caminus_1
+  - first:
+      213: 3939909310708404240
+    second: Caminus_2
+  - first:
+      213: -3955447505553782540
+    second: Caminus_3
+  - first:
+      213: -1572264110085707297
+    second: Caminus_4
+  - first:
+      213: 2211883952828396455
+    second: Caminus_5
+  - first:
+      213: -3155192563762694538
+    second: Caminus_6
+  - first:
+      213: -6408367254215245007
+    second: Caminus_7
+  - first:
+      213: -7492466888341505489
+    second: Caminus_8
+  - first:
+      213: 2490480118359593054
+    second: Caminus_9
+  - first:
+      213: -6259578428325588408
+    second: Caminus_10
+  - first:
+      213: -4045234061229787828
+    second: Caminus_11
+  - first:
+      213: 2981072130746288841
+    second: Caminus_12
+  - first:
+      213: -669266946414063213
+    second: Caminus_13
+  - first:
+      213: 6259117739988731322
+    second: Caminus_14
+  - first:
+      213: -206961890942739233
+    second: Caminus_15
+  - first:
+      213: -1757193367702989910
+    second: Caminus_16
+  - first:
+      213: 5466240049422792099
+    second: Caminus_17
+  - first:
+      213: -911388165815601556
+    second: Caminus_18
+  - first:
+      213: 6290970079412955304
+    second: Caminus_19
+  - first:
+      213: -7968447107291631251
+    second: Caminus_20
+  - first:
+      213: -5120937464039177811
+    second: Caminus_21
+  - first:
+      213: -106112247365889841
+    second: Caminus_22
+  - first:
+      213: -1078722764031946513
+    second: Caminus_23
+  - first:
+      213: -7223865747513097840
+    second: Caminus_24
+  - first:
+      213: 8112213039317057944
+    second: Caminus_25
+  - first:
+      213: 6636927483344644354
+    second: Caminus_26
+  - first:
+      213: -7777111770667142520
+    second: Caminus_27
+  - first:
+      213: -4594904444653413745
+    second: Caminus_28
+  - first:
+      213: 7147271791734169177
+    second: Caminus_29
+  - first:
+      213: -7916688926030117923
+    second: Caminus_30
+  - first:
+      213: -6248556302068348260
+    second: Caminus_31
+  - first:
+      213: -4540068131453458747
+    second: Caminus_32
+  - first:
+      213: 973194336674837703
+    second: Caminus_33
+  - first:
+      213: 7116204616396408681
+    second: Caminus_34
+  - first:
+      213: -1408134231949202437
+    second: Caminus_35
+  - first:
+      213: -1619862966521428572
+    second: Caminus_36
+  - first:
+      213: 266320761984197938
+    second: Caminus_37
+  - first:
+      213: -2392312960884966232
+    second: Caminus_38
+  - first:
+      213: -7724469142413454541
+    second: Caminus_39
+  - first:
+      213: 4013606602948771818
+    second: Caminus_40
+  - first:
+      213: -3262320795646666855
+    second: Caminus_41
+  - first:
+      213: 8476006805071624326
+    second: Caminus_42
+  - first:
+      213: -6419653311524988580
+    second: Caminus_43
+  - first:
+      213: 1844802384797755821
+    second: Caminus_44
+  - first:
+      213: -2185250912779685785
+    second: Caminus_45
+  - first:
+      213: -7053808176126793266
+    second: Caminus_46
+  - first:
+      213: -3107522871473452464
+    second: Caminus_47
+  - first:
+      213: 7091473084645376899
+    second: Caminus_48
+  - first:
+      213: 9162417900603322576
+    second: Caminus_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caminus_0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1407
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708839d60139a3780800000000000000
+      internalID: -8702481631172917241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1404
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad28664a0b2f42000800000000000000
+      internalID: 10399939647931098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_2
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1402
+        width: 96
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0105700c4ae5da630800000000000000
+      internalID: 3939909310708404240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_3
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1403
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f803c7537d6b19c0800000000000000
+      internalID: -3955447505553782540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_4
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1403
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9ee314f123e2ae0800000000000000
+      internalID: -1572264110085707297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_5
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1405
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a339bc6cb032be10800000000000000
+      internalID: 2211883952828396455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_6
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 1405
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67678f684118634d0800000000000000
+      internalID: -3155192563762694538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_7
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1403
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133414e6fe7e017a0800000000000000
+      internalID: -6408367254215245007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_8
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 1402
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a3705df09650890800000000000000
+      internalID: -7492466888341505489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_9
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 1403
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e501ff6f876ff8220800000000000000
+      internalID: 2490480118359593054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1069
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84294f785928129a0800000000000000
+      internalID: -6259578428325588408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1068
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45761bcd017cd7c0800000000000000
+      internalID: -4045234061229787828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_12
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1068
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca03fafe45ee5920800000000000000
+      internalID: 2981072130746288841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_13
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1068
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3915417124946b6f0800000000000000
+      internalID: -669266946414063213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_14
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1066
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5cf5b1c6adcd650800000000000000
+      internalID: 6259117739988731322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_15
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1066
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc9058b149b02df0800000000000000
+      internalID: -206961890942739233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_16
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 1068
+        width: 96
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3146c21f13d97e0800000000000000
+      internalID: -1757193367702989910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_17
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1070
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5fbd21d5cfbdb40800000000000000
+      internalID: 5466240049422792099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_18
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 1071
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66f01cba491a53f0800000000000000
+      internalID: -911388165815601556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_19
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 1068
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8250cc4f30e4750800000000000000
+      internalID: 6290970079412955304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_20
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 732
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61b46613936a6190800000000000000
+      internalID: -7968447107291631251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 733
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da184f22286cee8b0800000000000000
+      internalID: -5120937464039177811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_22
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 733
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc010752973078ef0800000000000000
+      internalID: -106112247365889841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_23
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 733
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe09fb68c5b9701f0800000000000000
+      internalID: -1078722764031946513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_24
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 732
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091ce56506cafbb90800000000000000
+      internalID: -7223865747513097840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_25
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 730
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89109c667ce549070800000000000000
+      internalID: 8112213039317057944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_26
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 731
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209e8c4d16a1b1c50800000000000000
+      internalID: 6636927483344644354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_27
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 732
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88230eaac06221490800000000000000
+      internalID: -7777111770667142520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_28
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 734
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ad19f90ce9b30c0800000000000000
+      internalID: -4594904444653413745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_29
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 736
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e1c73a3d5303360800000000000000
+      internalID: 7147271791734169177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_30
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 400
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3c4bebd55422290800000000000000
+      internalID: -7916688926030117923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 400
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a0038462ba849a0800000000000000
+      internalID: -6248556302068348260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_32
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 399
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c625a8b6107ef0c0800000000000000
+      internalID: -4540068131453458747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_33
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 398
+        width: 96
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4fceec71b718d00800000000000000
+      internalID: 973194336674837703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_34
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 397
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9678d453566d1c260800000000000000
+      internalID: 7116204616396408681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_35
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 398
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfba99c606d457ce0800000000000000
+      internalID: -1408134231949202437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_36
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 400
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a50eafd6371589e0800000000000000
+      internalID: -1619862966521428572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_37
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 399
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235216e625922b300800000000000000
+      internalID: 266320761984197938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_38
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 400
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac73ee790cccced0800000000000000
+      internalID: -2392312960884966232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_39
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 399
+        width: 96
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333daffad3c2dc490800000000000000
+      internalID: -7724469142413454541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_40
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 63
+        width: 96
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef7cecb0f133b730800000000000000
+      internalID: 4013606602948771818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 63
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9975c185588e9b2d0800000000000000
+      internalID: -3262320795646666855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_42
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 63
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688761a0843d0a570800000000000000
+      internalID: 8476006805071624326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_43
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 64
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c599461735fc8e6a0800000000000000
+      internalID: -6419653311524988580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_44
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 66
+        width: 96
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9e9aaaefd0a9910800000000000000
+      internalID: 1844802384797755821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_45
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 65
+        width: 96
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7603bae6fdd6ca1e0800000000000000
+      internalID: -2185250912779685785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_46
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 65
+        width: 96
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9673426d6db1e90800000000000000
+      internalID: -7053808176126793266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_47
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 66
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a4c6aa96cdfd4d0800000000000000
+      internalID: -3107522871473452464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_48
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 66
+        width: 96
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3830880c239f96260800000000000000
+      internalID: 7091473084645376899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caminus_49
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 66
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d034293982772f70800000000000000
+      internalID: 9162417900603322576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Caminus_0: -8702481631172917241
+      Caminus_1: 10399939647931098
+      Caminus_10: -6259578428325588408
+      Caminus_11: -4045234061229787828
+      Caminus_12: 2981072130746288841
+      Caminus_13: -669266946414063213
+      Caminus_14: 6259117739988731322
+      Caminus_15: -206961890942739233
+      Caminus_16: -1757193367702989910
+      Caminus_17: 5466240049422792099
+      Caminus_18: -911388165815601556
+      Caminus_19: 6290970079412955304
+      Caminus_2: 3939909310708404240
+      Caminus_20: -7968447107291631251
+      Caminus_21: -5120937464039177811
+      Caminus_22: -106112247365889841
+      Caminus_23: -1078722764031946513
+      Caminus_24: -7223865747513097840
+      Caminus_25: 8112213039317057944
+      Caminus_26: 6636927483344644354
+      Caminus_27: -7777111770667142520
+      Caminus_28: -4594904444653413745
+      Caminus_29: 7147271791734169177
+      Caminus_3: -3955447505553782540
+      Caminus_30: -7916688926030117923
+      Caminus_31: -6248556302068348260
+      Caminus_32: -4540068131453458747
+      Caminus_33: 973194336674837703
+      Caminus_34: 7116204616396408681
+      Caminus_35: -1408134231949202437
+      Caminus_36: -1619862966521428572
+      Caminus_37: 266320761984197938
+      Caminus_38: -2392312960884966232
+      Caminus_39: -7724469142413454541
+      Caminus_4: -1572264110085707297
+      Caminus_40: 4013606602948771818
+      Caminus_41: -3262320795646666855
+      Caminus_42: 8476006805071624326
+      Caminus_43: -6419653311524988580
+      Caminus_44: 1844802384797755821
+      Caminus_45: -2185250912779685785
+      Caminus_46: -7053808176126793266
+      Caminus_47: -3107522871473452464
+      Caminus_48: 7091473084645376899
+      Caminus_49: 9162417900603322576
+      Caminus_5: 2211883952828396455
+      Caminus_6: -3155192563762694538
+      Caminus_7: -6408367254215245007
+      Caminus_8: -7492466888341505489
+      Caminus_9: 2490480118359593054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

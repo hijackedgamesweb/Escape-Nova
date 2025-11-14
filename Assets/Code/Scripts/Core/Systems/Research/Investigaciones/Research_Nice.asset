@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Amable
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 20
+  researchTimeInSeconds: 50
   resourceCosts:
   - resourceType: 4
     amount: 5
