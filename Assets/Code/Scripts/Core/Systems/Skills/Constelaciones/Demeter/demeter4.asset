@@ -18,7 +18,15 @@ MonoBehaviour:
   prerequisiteNodes:
   - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
   positionInConstellation: {x: 1, y: 1}
-  improvements: []
+  improvements:
+  - rid: 5265271245964312749
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5265271245964312749
+      type: {class: LocalSynergySkill, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        skillIdToUnlock: SinergiaSalas50
+        requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
+        synergyImprovementType: BonoSalasSinergia
+        synergyPercentage: 50

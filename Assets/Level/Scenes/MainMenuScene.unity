@@ -35607,7 +35607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57af7e721c04e6188d68b477328f68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryQuestId: win_game_quest
+  victoryQuestId: escape
   nombreEscenaCreditos: CreditsScene
   grupoCanvasFadeOut: {fileID: 1060925194}
   duracionFadeOut: 1.5
