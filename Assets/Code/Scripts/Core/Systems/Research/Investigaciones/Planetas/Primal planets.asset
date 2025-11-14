@@ -31,7 +31,12 @@ MonoBehaviour:
   - rid: 6291952324994662484
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds: []
+  unlocksResearchIds:
+  - litosidera
+  - piroclastia
+  - friga
+  - antar
+  - kristra
   references:
     version: 2
     RefIds:
