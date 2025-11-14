@@ -7,6 +7,7 @@ using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.Factory;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace Code.Scripts.Core.World
@@ -21,6 +22,9 @@ namespace Code.Scripts.Core.World
         [Header("Planet Factory")]
         [SerializeField] private PlanetFactory planetFactory;
         [SerializeField] private PlanetDataSO[] planetDatas;
+        
+        [Header("UI Scroll Control")]
+        [SerializeField] private ScrollRect planetListScrollRect;
         
         public List<List<Planet>> Planets = new();
         
@@ -41,6 +45,16 @@ namespace Code.Scripts.Core.World
                 Planets.Add(orbit);
             }
             ServiceLocator.RegisterService(this);
+        }
+        
+        public void ResetScrollPositionToTop()
+        {
+            if (planetListScrollRect == null)
+            {
+                return;
+            }
+            LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
+            planetListScrollRect.verticalNormalizedPosition = 1f;
         }
 
         public void AddPlanet(int orbit, int positionInOrbit, PlanetDataSO data)
