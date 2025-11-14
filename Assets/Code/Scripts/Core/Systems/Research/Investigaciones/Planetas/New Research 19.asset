@@ -10,29 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: Research_Nice
+  m_Name: New Research 19
   m_EditorClassIdentifier: 
-  researchId: nice
+  researchId: 
   category: 0
-  displayName: Nice
-  description: Amable
+  displayName: 
+  description: 
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 50
-  resourceCosts:
-  - resourceType: 4
-    amount: 5
-    itemName: Nice
-    useInventoryItem: 0
-  rewards:
-  - rid: 5265271151281045657
+  researchTimeInSeconds: 60
+  resourceCosts: []
+  rewards: []
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
   references:
     version: 2
-    RefIds:
-    - rid: 5265271151281045657
-      type: {class: Reward_UnlockSpecies, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
-      data:
-        speciesId: akki
+    RefIds: []

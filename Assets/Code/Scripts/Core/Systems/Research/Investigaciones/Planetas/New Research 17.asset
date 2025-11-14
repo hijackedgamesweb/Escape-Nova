@@ -10,27 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: MamposteriaResearch
+  m_Name: New Research 17
   m_EditorClassIdentifier: 
-  researchId: mamposteria
-  category: 1
-  displayName: "Mamposter\xEDa"
+  researchId: 
+  category: 0
+  displayName: 
   description: 
   icon: {fileID: 0}
-  prerequisites:
-  - researchId: canteria_basica
-    buildingId: 
-    playerLevel: 0
-  researchTimeInSeconds: 2
-  resourceCosts:
-  - resourceType: 4
-    amount: 50
-    itemName: 
-    useInventoryItem: 0
-  - resourceType: 3
-    amount: 50
-    itemName: 
-    useInventoryItem: 0
+  prerequisites: []
+  researchTimeInSeconds: 60
+  resourceCosts: []
   rewards: []
   tier: 1
   treePosition: {x: 0, y: 0}

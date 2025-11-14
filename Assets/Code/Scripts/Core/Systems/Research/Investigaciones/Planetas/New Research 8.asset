@@ -10,26 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: QuantumPropeller_Research
+  m_Name: New Research 8
   m_EditorClassIdentifier: 
-  researchId: quantum_propeller
-  category: 1
-  displayName: Quantum Propeller
-  description: Es el Quantum Memories en serio de verdad akki akki akki no ai kien
-    viva
+  researchId: 
+  category: 0
+  displayName: 
+  description: 
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 2
+  researchTimeInSeconds: 60
   resourceCosts: []
-  rewards:
-  - rid: 5265271178754261158
+  rewards: []
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
   references:
     version: 2
-    RefIds:
-    - rid: 5265271178754261158
-      type: {class: Reward_UnlockCraftingRecipe, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
-      data:
-        recipeId: quantum_recipe
+    RefIds: []

@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/WinLoseCondition/VictoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/WinLoseCondition/VictoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Arena.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Arena.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Fuego.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Fuego.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Gelido.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Gelido.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Metalico.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Metalico.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Rocoso.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Rocoso.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/BuildPlanet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/BuildPlanet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/PruebaMission.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/PruebaMission.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_Rabo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_Rabo.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_WinGame.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_WinGame.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Satellites.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "isma",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;isma&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Programas\Unity\Editor\6000.0.58f2\Editor\Unity.exe" />
@@ -143,7 +122,7 @@
       <workItem from="1762976753341" duration="8400000" />
       <workItem from="1763047483611" duration="8360000" />
       <workItem from="1763120347913" duration="4535000" />
-      <workItem from="1763141477852" duration="19000" />
+      <workItem from="1763141477852" duration="616000" />
     </task>
     <servers />
   </component>
@@ -152,6 +131,7 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>

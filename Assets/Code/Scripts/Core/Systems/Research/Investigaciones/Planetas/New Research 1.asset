@@ -10,25 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: UtopiaResearch
+  m_Name: New Research 1
   m_EditorClassIdentifier: 
-  researchId: utopia_research
+  researchId: 
   category: 0
-  displayName: Utopia
-  description: Utopia
+  displayName: 
+  description: 
   icon: {fileID: 0}
   prerequisites: []
-  researchTimeInSeconds: 2
+  researchTimeInSeconds: 60
   resourceCosts: []
-  rewards:
-  - rid: 5265271182149550160
+  rewards: []
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
   references:
     version: 2
-    RefIds:
-    - rid: 5265271182149550160
-      type: {class: RewardUnlockPlanet, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
-      data:
-        planetData: {fileID: 11400000, guid: 15bd4d4f3526e1b4a96df7acaba95422, type: 2}
+    RefIds: []
