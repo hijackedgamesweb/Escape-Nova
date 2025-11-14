@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/AudioMixer.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/InGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/InGameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/OptionsState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/OptionsState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/MainMenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/MainMenuScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/OptionsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/OptionsScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Audio/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Audio/AudioManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/WinLoseCondition/VictoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/WinLoseCondition/VictoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Arena.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Arena.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Fuego.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Fuego.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Gelido.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Gelido.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Metalico.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Metalico.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Rocoso.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Planets/Tier 1/Rocoso.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/BuildPlanet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/BuildPlanet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/PruebaMission.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/PruebaMission.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_Rabo.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_Rabo.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_WinGame.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Quest_WinGame.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Satellites.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +40,12 @@
     &quot;assignee&quot;: &quot;ReibaxL&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/hijackedgamesweb/Escape-Nova.git",
-    "accountId": "383bcb43-1ccf-49f1-acc5-fe574cbe729b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hijackedgamesweb/Escape-Nova.git&quot;,
+    &quot;accountId&quot;: &quot;383bcb43-1ccf-49f1-acc5-fe574cbe729b&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Crafting/CraftingRecipe.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "OptionsMenu",
+    "git-widget-placeholder": "isma",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -133,6 +143,7 @@
       <workItem from="1762976753341" duration="8400000" />
       <workItem from="1763047483611" duration="8360000" />
       <workItem from="1763120347913" duration="4535000" />
+      <workItem from="1763141477852" duration="19000" />
     </task>
     <servers />
   </component>
@@ -141,7 +152,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
-    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>

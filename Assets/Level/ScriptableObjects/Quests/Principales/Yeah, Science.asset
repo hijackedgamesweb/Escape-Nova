@@ -10,22 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
-  m_Name: PruebaMission
+  m_Name: Yeah, Science
   m_EditorClassIdentifier: 
-  QuestId: pruebaMision
-  Title: Test Mision
-  Description: Reach to 100 metal production and build a Kados
+  QuestId: yeah_science
+  Title: Yeah, Science!
+  Description: We nned a place for scientific excellence
   Objectives:
   - rid: 967674831443067136
-  Rewards:
-  - Description: Fuego
-    Amount: 10
+  Rewards: []
   references:
     version: 2
     RefIds:
     - rid: 967674831443067136
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build a Kados
+        objectiveDescription: Build the Storage Terminal and Research Station (S.T.A.R.S)
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}

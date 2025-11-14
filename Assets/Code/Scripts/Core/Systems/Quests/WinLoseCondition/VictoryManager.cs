@@ -6,7 +6,7 @@ using Code.Scripts.Patterns.ServiceLocator;
 public class VictoryManager : MonoBehaviour
 {
     [Header("Misión de Victoria")]
-    [SerializeField] private string victoryQuestId = "win_game_quest";
+    [SerializeField] private string victoryQuestId = "escape";
 
     [Header("Pantalla de Créditos")]
     [SerializeField] private GameObject creditsPanel;

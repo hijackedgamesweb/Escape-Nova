@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
-  m_Name: Quest_Rabo
+  m_Name: New Life
   m_EditorClassIdentifier: 
-  QuestId: first_task
-  Title: Es un task
-  Description: No veas lo que me ha costado nene
+  QuestId: new_life
+  Title: New Life
+  Description: Your very first planet
   Objectives:
-  - rid: 5265271223047159923
+  - rid: 967674831443067134
   Rewards:
-  - Description: Arena
-    Amount: 1
+  - Description: 
+    Amount: 0
   references:
     version: 2
     RefIds:
-    - rid: 5265271223047159923
+    - rid: 967674831443067134
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Construye el planeta Fuego
+        objectiveDescription: Build the planet "Core"
         isCompleted: 0
-        requiredConstructible: {fileID: 11400000, guid: 123340d8a43fa1046b95cfd9eda8c82b, type: 2}
+        requiredConstructible: {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}

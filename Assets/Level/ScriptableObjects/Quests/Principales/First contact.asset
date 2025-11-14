@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
-  m_Name: BuildPlanet
+  m_Name: First contact
   m_EditorClassIdentifier: 
-  QuestId: buildPlanetLeyev
-  Title: Build a Leyev Planet
-  Description: Build a Leyev Planet
+  QuestId: first_contact
+  Title: First contact
+  Description: "It seems like another species wants to make contact with us\u2026"
   Objectives:
-  - rid: 967674831443067134
+  - rid: 6291952324994662480
   Rewards: []
   references:
     version: 2
     RefIds:
-    - rid: 967674831443067134
-      type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+    - rid: 6291952324994662480
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build a Litosidera
+        objectiveDescription: Build the Mippip Translator
         isCompleted: 0
-        requiredConstructible: {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}
+        requiredRecipeId: receta_mippip_translator

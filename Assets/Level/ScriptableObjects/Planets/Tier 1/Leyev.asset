@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f8fc7482a414e1d8fdb07f14c7286f4, type: 3}
-  m_Name: Metalico
+  m_Name: Leyev
   m_EditorClassIdentifier: 
   constructibleName: Leyev
   sprite: {fileID: -1283102832548966608, guid: 2b497a5ead828334fa43390cad1d7a09, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f8fc7482a414e1d8fdb07f14c7286f4, type: 3}
-  m_Name: Gelido
+  m_Name: Kados
   m_EditorClassIdentifier: 
   constructibleName: Kados
   sprite: {fileID: 5952062814256451239, guid: 3008f88173d7fae42a6a68a5c9332908, type: 3}
