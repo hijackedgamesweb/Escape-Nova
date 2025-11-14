@@ -1,6 +1,7 @@
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Windows;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Menus.States.GameStates
@@ -8,6 +9,7 @@ namespace Code.Scripts.UI.Menus.States.GameStates
     public class MainMenuState : AState
     {
         MainMenuScreen _mainMenuScreen;
+        OptionsScreen _optionsScreen;
         private IStateManager _stateManager;
         public MainMenuState(IStateManager stateManager) : base(stateManager)
         {
@@ -22,6 +24,11 @@ namespace Code.Scripts.UI.Menus.States.GameStates
                 _stateManager.SetState(new InGameState(_stateManager));
                 AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
                 AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
+            });
+            
+            _mainMenuScreen.SettingsButton.onClick.AddListener(() =>
+            {
+                _stateManager.SetState(new OptionsState(_stateManager));
             });
         }
 
