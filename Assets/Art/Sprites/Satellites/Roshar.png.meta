@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: e71b41a6faa3f5c49b8adda85992c7eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7353351216649529681
+    second: Roshar_0
+  - first:
+      213: 865310155069590695
+    second: Roshar_1
+  - first:
+      213: 7859765197230841290
+    second: Roshar_2
+  - first:
+      213: -4403719112696058245
+    second: Roshar_3
+  - first:
+      213: 2077380481269890037
+    second: Roshar_4
+  - first:
+      213: 4153568600313252661
+    second: Roshar_5
+  - first:
+      213: 7342823726780670360
+    second: Roshar_6
+  - first:
+      213: -2128732355999673870
+    second: Roshar_7
+  - first:
+      213: 1981346714491746717
+    second: Roshar_8
+  - first:
+      213: 6608710191880811007
+    second: Roshar_9
+  - first:
+      213: -1057339161559110806
+    second: Roshar_10
+  - first:
+      213: -317334918588312186
+    second: Roshar_11
+  - first:
+      213: -7258365886380836812
+    second: Roshar_12
+  - first:
+      213: 5453930422641681005
+    second: Roshar_13
+  - first:
+      213: -2229682914875798293
+    second: Roshar_14
+  - first:
+      213: 3552039910955544997
+    second: Roshar_15
+  - first:
+      213: -3376290752871725917
+    second: Roshar_16
+  - first:
+      213: -4673161659379033717
+    second: Roshar_17
+  - first:
+      213: 3071047992885781720
+    second: Roshar_18
+  - first:
+      213: -4315581550185112223
+    second: Roshar_19
+  - first:
+      213: -7185573459937696677
+    second: Roshar_20
+  - first:
+      213: -7369857048787521899
+    second: Roshar_21
+  - first:
+      213: -171339969286959653
+    second: Roshar_22
+  - first:
+      213: -7642535440526866901
+    second: Roshar_23
+  - first:
+      213: 2033144671024805760
+    second: Roshar_24
+  - first:
+      213: -4683700925787768784
+    second: Roshar_25
+  - first:
+      213: -6639485071528897022
+    second: Roshar_26
+  - first:
+      213: 7029285559556711030
+    second: Roshar_27
+  - first:
+      213: 1157972808624621687
+    second: Roshar_28
+  - first:
+      213: 8069524957367943286
+    second: Roshar_29
+  - first:
+      213: 5846251611156106698
+    second: Roshar_30
+  - first:
+      213: -279883744046900580
+    second: Roshar_31
+  - first:
+      213: -1343571177098870214
+    second: Roshar_32
+  - first:
+      213: -3009472730279675319
+    second: Roshar_33
+  - first:
+      213: -1278315130735907055
+    second: Roshar_34
+  - first:
+      213: -8966032818640422026
+    second: Roshar_35
+  - first:
+      213: 390326979675007356
+    second: Roshar_36
+  - first:
+      213: -23571956820924118
+    second: Roshar_37
+  - first:
+      213: 3613558827950913810
+    second: Roshar_38
+  - first:
+      213: -2605575933861339770
+    second: Roshar_39
+  - first:
+      213: 1016610912690896481
+    second: Roshar_40
+  - first:
+      213: 6580670974464974697
+    second: Roshar_41
+  - first:
+      213: 2815497246856837067
+    second: Roshar_42
+  - first:
+      213: 511957288640356193
+    second: Roshar_43
+  - first:
+      213: 2436569808206977165
+    second: Roshar_44
+  - first:
+      213: 3813787035267510748
+    second: Roshar_45
+  - first:
+      213: -6827577285032976120
+    second: Roshar_46
+  - first:
+      213: -7743357739184811836
+    second: Roshar_47
+  - first:
+      213: -4675346573775227047
+    second: Roshar_48
+  - first:
+      213: 7755217303644424296
+    second: Roshar_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Roshar_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa61be63706a3f990800000000000000
+      internalID: -7353351216649529681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac067d5003320c00800000000000000
+      internalID: 865310155069590695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd1ce6ddce731d60800000000000000
+      internalID: 7859765197230841290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e27258cc8d2e2c0800000000000000
+      internalID: -4403719112696058245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbfb619a8654dc10800000000000000
+      internalID: 2077380481269890037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b43eba2a074a930800000000000000
+      internalID: 4153568600313252661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891621b8643f6e560800000000000000
+      internalID: 7342823726780670360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_7
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f152c263393572e0800000000000000
+      internalID: -2128732355999673870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_8
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99fa26d6582f7b10800000000000000
+      internalID: 1981346714491746717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 299
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff13f82b7ead6bb50800000000000000
+      internalID: 6608710191880811007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6be82472a39351f0800000000000000
+      internalID: -1057339161559110806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68557b6a299989bf0800000000000000
+      internalID: -317334918588312186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438f47cceaa154b90800000000000000
+      internalID: -7258365886380836812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62e04fb2d040bb40800000000000000
+      internalID: 5453930422641681005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_14
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec0219c3339e01e0800000000000000
+      internalID: -2229682914875798293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1f380ca716b4130800000000000000
+      internalID: 3552039910955544997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a405a8d2710521d0800000000000000
+      internalID: -3376290752871725917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89dcb2fa38952fb0800000000000000
+      internalID: -4673161659379033717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_18
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d42220e0ed8e9a20800000000000000
+      internalID: 3071047992885781720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 229
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d9cfde179fb14c0800000000000000
+      internalID: -4315581550185112223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5460fc4207b74c90800000000000000
+      internalID: -7185573459937696677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e6c91bf0209b990800000000000000
+      internalID: -7369857048787521899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd03daa4374f9df0800000000000000
+      internalID: -171339969286959653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26001c328240f590800000000000000
+      internalID: -7642535440526866901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08779656e4e273c10800000000000000
+      internalID: 2033144671024805760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_25
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0387044c2d6200fb0800000000000000
+      internalID: -4683700925787768784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_26
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206d204418fcbd3a0800000000000000
+      internalID: -6639485071528897022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_27
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672292249f90d8160800000000000000
+      internalID: 7029285559556711030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_28
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778c1ad5222f11010800000000000000
+      internalID: 1157972808624621687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_29
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 159
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670c01ec136bcff60800000000000000
+      internalID: 8069524957367943286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdc3869dde022150800000000000000
+      internalID: 5846251611156106698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a9da9b737ad1cf0800000000000000
+      internalID: -279883744046900580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32819a022daa5de0800000000000000
+      internalID: -1343571177098870214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_33
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a74762f743c36d0800000000000000
+      internalID: -3009472730279675319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_34
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11faa715923824ee0800000000000000
+      internalID: -1278315130735907055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_35
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b7170d7a0429380800000000000000
+      internalID: -8966032818640422026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_36
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79a7c9e158ba6500800000000000000
+      internalID: 390326979675007356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_37
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29270f1e614caff0800000000000000
+      internalID: -23571956820924118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_38
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219bdfacb90f52230800000000000000
+      internalID: 3613558827950913810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_39
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 89
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d53ea3e7227dbd0800000000000000
+      internalID: -2605575933861339770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_40
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ef9b52d3abb1e00800000000000000
+      internalID: 1016610912690896481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f55b8a26d335b50800000000000000
+      internalID: 6580670974464974697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7fdf034d7a21720800000000000000
+      internalID: 2815497246856837067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_43
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f94990176da1700800000000000000
+      internalID: 511957288640356193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_44
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d885e90c45f60d120800000000000000
+      internalID: 2436569808206977165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_45
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd13c1e2a1b4de430800000000000000
+      internalID: 3813787035267510748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_46
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801651122a29f31a0800000000000000
+      internalID: -6827577285032976120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_47
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c01e1b89211a8490800000000000000
+      internalID: -7743357739184811836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_48
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957b94cef05dd1fb0800000000000000
+      internalID: -4675346573775227047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roshar_49
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 19
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86840bb7c0110ab60800000000000000
+      internalID: 7755217303644424296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Roshar_0: -7353351216649529681
+      Roshar_1: 865310155069590695
+      Roshar_10: -1057339161559110806
+      Roshar_11: -317334918588312186
+      Roshar_12: -7258365886380836812
+      Roshar_13: 5453930422641681005
+      Roshar_14: -2229682914875798293
+      Roshar_15: 3552039910955544997
+      Roshar_16: -3376290752871725917
+      Roshar_17: -4673161659379033717
+      Roshar_18: 3071047992885781720
+      Roshar_19: -4315581550185112223
+      Roshar_2: 7859765197230841290
+      Roshar_20: -7185573459937696677
+      Roshar_21: -7369857048787521899
+      Roshar_22: -171339969286959653
+      Roshar_23: -7642535440526866901
+      Roshar_24: 2033144671024805760
+      Roshar_25: -4683700925787768784
+      Roshar_26: -6639485071528897022
+      Roshar_27: 7029285559556711030
+      Roshar_28: 1157972808624621687
+      Roshar_29: 8069524957367943286
+      Roshar_3: -4403719112696058245
+      Roshar_30: 5846251611156106698
+      Roshar_31: -279883744046900580
+      Roshar_32: -1343571177098870214
+      Roshar_33: -3009472730279675319
+      Roshar_34: -1278315130735907055
+      Roshar_35: -8966032818640422026
+      Roshar_36: 390326979675007356
+      Roshar_37: -23571956820924118
+      Roshar_38: 3613558827950913810
+      Roshar_39: -2605575933861339770
+      Roshar_4: 2077380481269890037
+      Roshar_40: 1016610912690896481
+      Roshar_41: 6580670974464974697
+      Roshar_42: 2815497246856837067
+      Roshar_43: 511957288640356193
+      Roshar_44: 2436569808206977165
+      Roshar_45: 3813787035267510748
+      Roshar_46: -6827577285032976120
+      Roshar_47: -7743357739184811836
+      Roshar_48: -4675346573775227047
+      Roshar_49: 7755217303644424296
+      Roshar_5: 4153568600313252661
+      Roshar_6: 7342823726780670360
+      Roshar_7: -2128732355999673870
+      Roshar_8: 1981346714491746717
+      Roshar_9: 6608710191880811007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
