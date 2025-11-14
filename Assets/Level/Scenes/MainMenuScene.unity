@@ -2986,7 +2986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &158962980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15947,6 +15947,7 @@ MonoBehaviour:
   storageCraftingBtn: {fileID: 573119809}
   missionsBtn: {fileID: 1932860136}
   researchBtn: {fileID: 1151796319}
+  panelTitleText: {fileID: 158962981}
   astrariumPanel: {fileID: 958929759}
   diplomacyPanel: {fileID: 1307095147}
   skillTreePanel: {fileID: 1035813700}

@@ -1,5 +1,6 @@
 using System;
 using Code.Scripts.Core.Managers;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,8 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public Button missionsBtn;
         [SerializeField] public Button researchBtn;
 
+        [SerializeField] public TextMeshProUGUI panelTitleText;
+        
         [SerializeField] public BaseUIScreen astrariumPanel;
         [SerializeField] public BaseUIScreen diplomacyPanel;
         [SerializeField] public BaseUIScreen skillTreePanel;
@@ -30,9 +33,9 @@ namespace Code.Scripts.UI.Windows
         {
             astrariumBtn.onClick.AddListener(() => Show("Astrarium"));
             diplomacyBtn.onClick.AddListener(() => Show("Diplomacy"));
-            skillTreeBtn.onClick.AddListener(() => Show("SkillTree"));
+            skillTreeBtn.onClick.AddListener(() => Show("Constellations"));
             storageCraftingBtn.onClick.AddListener(() => Show("Storage"));
-            missionsBtn.onClick.AddListener(() => Show("Missions"));
+            missionsBtn.onClick.AddListener(() => Show("Objectives"));
             researchBtn.onClick.AddListener(() => Show("Research"));
             returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
         }
@@ -45,6 +48,12 @@ namespace Code.Scripts.UI.Windows
             {
                 _currentPanel.Hide();
             }
+            
+            string panelName = parameter as string;
+            if (panelTitleText != null)
+            {
+                panelTitleText.text = !string.IsNullOrEmpty(panelName) ? panelName : "Panel"; 
+            }
 
             switch (parameter)
             {
@@ -56,7 +65,7 @@ namespace Code.Scripts.UI.Windows
                     diplomacyPanel.Show();
                     _currentPanel = diplomacyPanel;
                     break;
-                case "SkillTree":
+                case "Constellations":
                     skillTreePanel.Show();
                     _currentPanel = skillTreePanel;
                     break;
@@ -68,7 +77,7 @@ namespace Code.Scripts.UI.Windows
                     storageCraftingPanel.Show();
                     _currentPanel = storageCraftingPanel;
                     break;
-                case "Missions":
+                case "Objectives":
                     missionsPanel.Show();
                     _currentPanel = missionsPanel;
                     break;
