@@ -12,28 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa403767189b42b3b11cab9f5096b57d, type: 3}
   m_Name: Perfect Sphere
   m_EditorClassIdentifier: 
-  recipeId: receta_multicore_chip
-  displayName: Multicore Chip
+  recipeId: receta_perfect_sphere
+  displayName: Perfect Sphere
   description: Multicore Chip
   icon: {fileID: 0}
   ingredients:
   - resourceType: 0
-    amount: 300
-    itemName: 
-    useInventoryItem: 0
+    amount: 3
+    itemName: Matter Condenser
+    useInventoryItem: 1
   - resourceType: 4
-    amount: 200
-    itemName: 
-    useInventoryItem: 0
+    amount: 3
+    itemName: Modular Spectrometer
+    useInventoryItem: 1
   - resourceType: 2
-    amount: 50
-    itemName: 
-    useInventoryItem: 0
+    amount: 3
+    itemName: Microscopic Lense
+    useInventoryItem: 1
   - resourceType: 1
-    amount: 50
-    itemName: 
-    useInventoryItem: 0
-  output:
+    amount: 3
     itemName: Multicore Chip
+    useInventoryItem: 1
+  - resourceType: 1
+    amount: 3
+    itemName: Freezed Core
+    useInventoryItem: 1
+  output:
+    itemName: Perfect Sphere
     amount: 1
-  craftingTimeInSeconds: 30
+  craftingTimeInSeconds: 50
