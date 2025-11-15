@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chronos
   m_EditorClassIdentifier: 
   constructibleName: Chronos
-  sprite: {fileID: 0}
+  sprite: {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   timeToBuild: 50
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
