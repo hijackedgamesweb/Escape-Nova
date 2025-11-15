@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Freezed Core
   m_EditorClassIdentifier: 
   researchId: freezed_core
-  category: 0
+  category: 1
   displayName: Freezed Core
   description: 
   icon: {fileID: 0}

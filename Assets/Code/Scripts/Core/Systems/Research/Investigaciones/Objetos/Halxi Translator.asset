@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Halxi Translator
   m_EditorClassIdentifier: 
   researchId: halxi_translator
-  category: 0
+  category: 1
   displayName: Halxi Translator
   description: 
   icon: {fileID: 0}

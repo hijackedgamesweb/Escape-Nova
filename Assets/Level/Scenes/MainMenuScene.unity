@@ -28585,6 +28585,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ca18aafb7d1f424d88b2de43f72c91d, type: 2}
   - {fileID: 11400000, guid: 17555edf1453eda4a91b5999f8254fc5, type: 2}
   - {fileID: 11400000, guid: f4d69cee81ad7714a904da84053518c6, type: 2}
+  - {fileID: 11400000, guid: da32d4202d6202b49976be961caece05, type: 2}
+  - {fileID: 11400000, guid: 66ff83077e5d5bd4f96c5beac022c55e, type: 2}
+  - {fileID: 11400000, guid: 9b26374fda834fc4296492c78a802b6f, type: 2}
   resourceDataList:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

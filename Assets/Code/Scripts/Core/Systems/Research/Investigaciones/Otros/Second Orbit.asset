@@ -10,45 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: Skulg Translator
+  m_Name: Second Orbit
   m_EditorClassIdentifier: 
-  researchId: skulg_translator
-  category: 1
-  displayName: Skulg Translator
-  description: 
-  icon: {fileID: 0}
+  researchId: second_orbit
+  category: 3
+  displayName: Second Orbit
+  description: You unlock a second orbit with space to build more planets
+  icon: {fileID: 3501154977271414607, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
   prerequisites: []
-  researchTimeInSeconds: 200
+  researchTimeInSeconds: 75
   resourceCosts:
   - resourceType: 0
-    amount: 750
+    amount: 200
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 750
+    amount: 200
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 750
+    amount: 200
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 750
+    amount: 200
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 750
+    amount: 200
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rid: 6291952326318489707
+  - rid: 5265271263977275482
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds: []
+  unlocksResearchIds:
+  - third_orbit
   references:
     version: 2
     RefIds:
-    - rid: 6291952326318489707
-      type: {class: Reward_UnlockCraftingRecipe, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
-      data:
-        recipeId: receta_skulg_translator
+    - rid: 5265271263977275482
+      type: {class: Reward_AddOrbit, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data: 

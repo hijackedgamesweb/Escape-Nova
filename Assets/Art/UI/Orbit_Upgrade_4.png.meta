@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a8b37306a54692b419984ae24656ab85
+guid: 1035573da4d71f541be9d5f338156472
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2775496335295181308
-    second: Icon_Stone_0
+      213: -9181567470229685275
+    second: Orbit_Upgrade_4_0
+  - first:
+      213: -7183444155718098116
+    second: Orbit_Upgrade_4_1
+  - first:
+      213: -5311570008024588311
+    second: Orbit_Upgrade_4_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Stone_0
+      name: Orbit_Upgrade_4_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 55
-        height: 54
+        x: 31
+        y: 45
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf1faa4363b848620800000000000000
-      internalID: 2775496335295181308
+      spriteID: 5eb7da72805849080800000000000000
+      internalID: -9181567470229685275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orbit_Upgrade_4_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 17
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33219299974f4c90800000000000000
+      internalID: -7183444155718098116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orbit_Upgrade_4_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 17
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef531838338946b0800000000000000
+      internalID: -5311570008024588311
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon_Stone_0: 2775496335295181308
+      Orbit_Upgrade_4_0: -9181567470229685275
+      Orbit_Upgrade_4_1: -7183444155718098116
+      Orbit_Upgrade_4_2: -5311570008024588311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
