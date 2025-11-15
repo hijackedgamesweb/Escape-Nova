@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 1
   displayName: Skulg Translator
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -7877341826017078353, guid: e2d5ace7c64c7f04dbc786c231d49a20, type: 3}
   prerequisites: []
   researchTimeInSeconds: 200
   resourceCosts:

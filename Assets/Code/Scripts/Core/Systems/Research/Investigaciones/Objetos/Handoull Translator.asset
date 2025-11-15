@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 1
   displayName: Handoull Translator
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -1656734156800635931, guid: af28c543acd466a4bb3bcef4d7b2f9f1, type: 3}
   prerequisites: []
   researchTimeInSeconds: 200
   resourceCosts:
