@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WHO
   m_EditorClassIdentifier: 
   researchId: who
-  category: 0
+  category: 2
   displayName: WHO
   description: 
   icon: {fileID: 0}

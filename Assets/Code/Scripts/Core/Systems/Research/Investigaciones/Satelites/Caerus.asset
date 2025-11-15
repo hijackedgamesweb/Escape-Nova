@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caerus
   m_EditorClassIdentifier: 
   researchId: caerus
-  category: 0
+  category: 2
   displayName: Caerus
   description: 
   icon: {fileID: 0}

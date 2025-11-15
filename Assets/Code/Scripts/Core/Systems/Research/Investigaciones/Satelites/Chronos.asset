@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chronos
   m_EditorClassIdentifier: 
   researchId: chronos
-  category: 0
+  category: 2
   displayName: Chronos
   description: 
   icon: {fileID: 0}

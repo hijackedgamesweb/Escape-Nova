@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nomon
   m_EditorClassIdentifier: 
   researchId: nomon
-  category: 0
+  category: 2
   displayName: Nomon
   description: 
   icon: {fileID: 0}

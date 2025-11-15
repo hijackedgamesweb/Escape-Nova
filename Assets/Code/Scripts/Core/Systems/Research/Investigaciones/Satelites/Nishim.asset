@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nishim
   m_EditorClassIdentifier: 
   researchId: nishim
-  category: 0
+  category: 2
   displayName: Nishim
   description: 
   icon: {fileID: 0}

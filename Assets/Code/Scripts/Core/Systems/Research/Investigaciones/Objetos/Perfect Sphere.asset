@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Perfect Sphere
   m_EditorClassIdentifier: 
   researchId: perfect_sphere
-  category: 0
+  category: 1
   displayName: Perfect Sphere
   description: 
   icon: {fileID: 0}
