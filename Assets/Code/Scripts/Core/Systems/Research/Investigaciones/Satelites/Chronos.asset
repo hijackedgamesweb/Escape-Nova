@@ -17,7 +17,10 @@ MonoBehaviour:
   displayName: Chronos
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: caerus
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 375
   resourceCosts:
   - resourceType: 3
