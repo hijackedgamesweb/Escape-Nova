@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 3
   displayName: Fifth Orbit
   description: You unlock a fifth orbit with space to build more planets
-  icon: {fileID: 3501154977271414607, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
+  icon: {fileID: -9181567470229685275, guid: 1035573da4d71f541be9d5f338156472, type: 3}
   prerequisites:
   - researchId: fourth_orbit
     buildingId: 

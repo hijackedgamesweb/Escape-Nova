@@ -112,12 +112,12 @@ TextureImporter:
       name: Orbit_Upgrade_3_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 45
-        width: 64
-        height: 66
+        x: 32
+        y: 18
+        width: 62
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,77 +130,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Orbit_Upgrade_3_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 17
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e469ba44641bc7d10800000000000000
-      internalID: 2124768039569954382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orbit_Upgrade_3_2
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 17
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39c90846b63cf71a0800000000000000
-      internalID: -6809509245545833325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orbit_Upgrade_3_3
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 17
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc9ec75b3834f1950800000000000000
-      internalID: 6421925826618255819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 94f782a4d4b64074ca18e45e3593356c
     internalID: 0
     vertices: []
     indices: 

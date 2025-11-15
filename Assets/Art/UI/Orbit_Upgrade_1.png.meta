@@ -106,12 +106,12 @@ TextureImporter:
       name: Orbit_Upgrade_1_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 45
-        width: 64
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 18
+        width: 62
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Orbit_Upgrade_1_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 17
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c5420fb4daf5f040800000000000000
-      internalID: 4680923179366106565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f33c6f745e16a8c43aa60da36d044df5
     internalID: 0
     vertices: []
     indices: 

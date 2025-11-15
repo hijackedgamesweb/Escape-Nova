@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 3
   displayName: Fourth Orbit
   description: You unlock a fourth orbit with space to build more planets
-  icon: {fileID: 3501154977271414607, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
+  icon: {fileID: -1568789022125449700, guid: b0ec1208ac1e2a944a7ca12a6db36bd8, type: 3}
   prerequisites:
   - researchId: third_orbit
     buildingId: 
