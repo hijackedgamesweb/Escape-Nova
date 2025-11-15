@@ -22,7 +22,7 @@ public class IngredientSlotUI : MonoBehaviour
         
         if (detailsText != null)
         {
-            detailsText.text = $"{amountOwned}/{amountNeeded} {itemName}";
+            detailsText.text = $"{amountOwned}/{amountNeeded} {itemName}\n";
         
             if (amountOwned >= amountNeeded)
             {
