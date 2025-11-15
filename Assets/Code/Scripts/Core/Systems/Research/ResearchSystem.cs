@@ -152,7 +152,8 @@ namespace Code.Scripts.Core.Systems.Research
             if (!CanStartResearch(researchId)) return false;
 
             var research = _researchDatabase[researchId];
-
+            AudioManager.Instance.PlaySFX("ResearchStarted");
+            
             // Consumir recursos
             foreach (var cost in research.resourceCosts)
             {
@@ -194,6 +195,8 @@ namespace Code.Scripts.Core.Systems.Research
 
             ApplyResearchRewards(researchId);
             UnlockNewResearch(researchId);
+            
+            AudioManager.Instance.PlaySFX("ResearchFinished");
 
             _currentResearchId = null;
             _cyclesNeeded = 0;

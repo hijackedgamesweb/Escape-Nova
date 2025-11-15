@@ -37,7 +37,7 @@ namespace Code.Scripts.UI.Windows
             storageCraftingBtn.onClick.AddListener(() => Show("Storage"));
             missionsBtn.onClick.AddListener(() => Show("Objectives"));
             researchBtn.onClick.AddListener(() => Show("Research"));
-            returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
+            returnBtn.onClick.AddListener(ReturnBtnPressed);
         }
 
         public override void Show(object parameter = null)
@@ -88,6 +88,12 @@ namespace Code.Scripts.UI.Windows
                     _currentPanel = researchPanel;
                     break;
             }
+        }
+        
+        private void ReturnBtnPressed()
+        {
+            AudioManager.Instance.PlaySFX("Close");
+            UIManager.Instance.ShowScreen<InGameScreen>();
         }
     }
 }
