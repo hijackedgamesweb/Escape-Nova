@@ -4,7 +4,6 @@ using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Storage;
-using Code.Scripts.UI.Common;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
@@ -159,7 +158,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 
                 ClearSelection();
                 
-                var panelManager = GetComponentInParent<ConstructionPanelManager>();
+                var panelManager = GetComponentInParent<StarsPanelUnlocker>();
                 if (panelManager != null)
                 {
                     panelManager.gameObject.SetActive(false);

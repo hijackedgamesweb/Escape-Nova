@@ -77,6 +77,10 @@ namespace Code.Scripts.Core.Managers
                 
                 if (q.isCompleted)
                 {
+                    foreach (var reward in q.questData.Rewards)
+                    {
+                        reward.ApplyReward();
+                    }
                     OnQuestCompleted?.Invoke(q);
                     CheckForSetCompletion();
                 }

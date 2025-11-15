@@ -5,10 +5,14 @@ using UnityEngine;
 namespace Code.Scripts.Core.Systems.Quests.ScriptableObjects
 {
     [System.Serializable]
-    public class QuestReward
+    public abstract class QuestReward
     {
+        [TextArea]
         public string Description;
-        public int Amount;
+        
+        public abstract void ApplyReward();
+        
+        public abstract string GetRewardInfo();
     }
 
     [CreateAssetMenu(menuName = "Quest System/Quest Data")]
@@ -19,6 +23,7 @@ namespace Code.Scripts.Core.Systems.Quests.ScriptableObjects
         [TextArea] public string Description;
         [SerializeReference, SubclassSelector] public List<QuestObjective> Objectives;
 
+        [SerializeReference, SubclassSelector]
         public List<QuestReward> Rewards; 
     }
 }

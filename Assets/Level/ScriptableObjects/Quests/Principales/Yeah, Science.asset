@@ -17,7 +17,8 @@ MonoBehaviour:
   Description: We need a place for scientific excellence
   Objectives:
   - rid: 5265271264873545832
-  Rewards: []
+  Rewards:
+  - rid: 5265271264873545959
   references:
     version: 2
     RefIds:
@@ -27,3 +28,13 @@ MonoBehaviour:
         objectiveDescription: Build the Storage Terminal and Research Station (S.T.A.R.S)
         isCompleted: 0
         starsPlanetData: {fileID: 11400000, guid: c4df4abe9c5220c4bbe9ecf4c73497af, type: 2}
+    - rid: 5265271264873545959
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: 'Unlocks the Research menu
+
+          Unlocks the Storage menu
+
+          Unloc
+          the Primal Planets Research'
+        researchIdToUnlock: primal_planets

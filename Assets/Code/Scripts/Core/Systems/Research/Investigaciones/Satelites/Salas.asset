@@ -17,7 +17,10 @@ MonoBehaviour:
   displayName: Salas
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: salas_sat
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 75
   resourceCosts:
   - resourceType: 4
