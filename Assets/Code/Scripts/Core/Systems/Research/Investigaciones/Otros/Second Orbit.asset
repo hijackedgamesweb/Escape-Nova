@@ -17,7 +17,10 @@ MonoBehaviour:
   displayName: Second Orbit
   description: You unlock a second orbit with space to build more planets
   icon: {fileID: 3501154977271414607, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: two_orbit
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 75
   resourceCosts:
   - resourceType: 0
@@ -41,7 +44,8 @@ MonoBehaviour:
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rid: 5265271263977275482
+  - rid: 5265271264873545981
+  - rid: 5265271264873545984
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds:
@@ -49,6 +53,9 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5265271263977275482
+    - rid: 5265271264873545981
       type: {class: Reward_AddOrbit, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data: 
+    - rid: 5265271264873545984
+      type: {class: UnlockConstellationsReward, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
       data: 

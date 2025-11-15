@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,6 +23,7 @@ namespace Code.Scripts.UI.Common
         
         public static Action<ConstructionType> OnConstructionTypeChanged;
     
+        
         public void ShowPlanetContent()
         {
             planetContent.SetActive(true);

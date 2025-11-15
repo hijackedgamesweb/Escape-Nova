@@ -17,7 +17,10 @@ MonoBehaviour:
   displayName: Primal planets
   description: Unlocks the first bach of the most basic planets
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: primal_research
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 25
   resourceCosts:
   - resourceType: 4

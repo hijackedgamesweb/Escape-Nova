@@ -2,13 +2,19 @@ using System;
 
 namespace Code.Scripts.Core.Events
 {
-    public class SystemEvents
+    public static class SystemEvents
     {
-        public static Action OnResearchUnlocked;
-        public static Action OnInventoryUnlocked;
+        public static event Action OnResearchUnlocked;
+        public static event Action OnInventoryUnlocked;
+        public static event Action OnConstellationsUnlocked;
+        
+        public static event Action OnStarsPanelUnlocked;
         
         public static bool IsResearchUnlocked { get; private set; }
         public static bool IsInventoryUnlocked { get; private set; }
+        public static bool IsConstellationsUnlocked { get; private set; }
+
+        public static bool IsStarsPanelUnlocked { get; private set; }
 
         public static void UnlockResearch()
         {
@@ -22,6 +28,20 @@ namespace Code.Scripts.Core.Events
             if (IsInventoryUnlocked) return;
             IsInventoryUnlocked = true;
             OnInventoryUnlocked?.Invoke();
+        }
+        
+        public static void UnlockConstellations()
+        {
+            if (IsConstellationsUnlocked) return;
+            IsConstellationsUnlocked = true;
+            OnConstellationsUnlocked?.Invoke();
+        }
+        
+        public static void UnlockStarsPanel()
+        {
+            if (IsStarsPanelUnlocked) return;
+            IsStarsPanelUnlocked = true;
+            OnStarsPanelUnlocked?.Invoke();
         }
     }
 }

@@ -189,6 +189,10 @@ namespace Code.Scripts.Core.Systems.Research
 
         private void CompleteResearch(string researchId)
         {
+            if (!_researchDatabase.ContainsKey(researchId)) return;
+            
+            var researchNode = _researchDatabase[researchId];
+            
             _researchStatus[researchId] = ResearchStatus.Completed;
             _researchProgress[researchId].progress = 1f;
             _researchProgress[researchId].completionTime = _gameTime.GameTime;
@@ -203,6 +207,7 @@ namespace Code.Scripts.Core.Systems.Research
             _cyclesCompleted = 0;
 
             OnResearchCompleted?.Invoke(researchId);
+            Events.ResearchEvents.CompleteResearch(researchNode);
         }
 
         public bool CancelCurrentResearch()

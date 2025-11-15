@@ -16337,7 +16337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1001283312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19270,31 +19270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetDataSOs:
-  - {fileID: 11400000, guid: 41aeb9aa8edfe0247980957326c8b021, type: 2}
-  - {fileID: 11400000, guid: 123340d8a43fa1046b95cfd9eda8c82b, type: 2}
-  - {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}
-  - {fileID: 11400000, guid: 383814b23fff2944fa3c79d18fa1b77c, type: 2}
   - {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}
-  - {fileID: 11400000, guid: 11c312bcb8b2b124fabe9c28574904e3, type: 2}
-  - {fileID: 11400000, guid: 9b5bd633e62ad7f43899a8794df9c118, type: 2}
-  - {fileID: 11400000, guid: d6825458475d109438fd77d7f5bad4a6, type: 2}
-  - {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}
-  - {fileID: 11400000, guid: d6c5126d2370e5a43982ee4952993966, type: 2}
-  - {fileID: 11400000, guid: 7c47a6fafe9bca14bb6ad66106f0cada, type: 2}
-  - {fileID: 11400000, guid: 59f1163686d003b43a5485ecfb0cd91b, type: 2}
-  - {fileID: 11400000, guid: cb1648fc243fef546b69a0e07666513a, type: 2}
-  - {fileID: 11400000, guid: d7c785eea516bad4389fed6cf431e2a8, type: 2}
-  - {fileID: 11400000, guid: 7360f79680a7a294f8103cce9331930f, type: 2}
-  - {fileID: 11400000, guid: 2377ddd502fb6624da511f83af120f32, type: 2}
-  - {fileID: 11400000, guid: 84b03deeebefef342bbbfe7e2bc368dc, type: 2}
-  - {fileID: 11400000, guid: f7a5530eda1506a469fed048d03e2ee8, type: 2}
-  - {fileID: 11400000, guid: ba64a565aec0dd2498fbb8a89c0b2aa7, type: 2}
-  - {fileID: 11400000, guid: 0375bf7b1398d5349bd31e8f065af1e7, type: 2}
-  - {fileID: 11400000, guid: ec1925f37188c1a4f91a60d6926dfa87, type: 2}
-  - {fileID: 11400000, guid: 1bc0075c183920e4ba27e0ecfb6aeb3a, type: 2}
-  - {fileID: 11400000, guid: fde3c0ed2f929ca48920fa71667e219a, type: 2}
-  - {fileID: 11400000, guid: 1b3c923b64d16264cac2283ae7b04755, type: 2}
-  - {fileID: 11400000, guid: 00068366364206e4190d6618acdacb7a, type: 2}
   _planetListPrefab: {fileID: 5360111157182251126, guid: 5895e1c088bc3954b861bb2d593926b7, type: 3}
 --- !u!1 &1146778126
 GameObject:
@@ -26851,6 +26827,7 @@ GameObject:
   - component: {fileID: 1481780123}
   - component: {fileID: 1481780125}
   - component: {fileID: 1481780124}
+  - component: {fileID: 1481780126}
   m_Layer: 5
   m_Name: S.T.A.R.S
   m_TagString: Untagged
@@ -26904,6 +26881,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481780122}
   m_CullTransparentMesh: 1
+--- !u!114 &1481780126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481780122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e804a2d18d4c2bbc516da1897d988a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1488419321
 GameObject:
   m_ObjectHideFlags: 0
@@ -28045,6 +28034,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4ff063e5d7dddfe44a4290f115d6cbd3, type: 2}
   - {fileID: 11400000, guid: e02d674505b3cee48b77175c08d1bdd9, type: 2}
   - {fileID: 11400000, guid: 432b781ca845b3b45bfa6ca927159165, type: 2}
+  - {fileID: 11400000, guid: d7dd5208f0815004da7d42f22add3eb7, type: 2}
   itemDatabase: {fileID: 11400000, guid: 6bf8d265001747840856e4a5af0ae6a9, type: 2}
 --- !u!4 &1549085227
 Transform:
@@ -29840,6 +29830,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: da32d4202d6202b49976be961caece05, type: 2}
   - {fileID: 11400000, guid: 66ff83077e5d5bd4f96c5beac022c55e, type: 2}
   - {fileID: 11400000, guid: 9b26374fda834fc4296492c78a802b6f, type: 2}
+  - {fileID: 11400000, guid: 7ee23640bba32594088312c652565cfc, type: 2}
   resourceDataList:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
@@ -35352,14 +35343,12 @@ MonoBehaviour:
   - setName: Introduccion
     quests:
     - {fileID: 11400000, guid: e223a1ec0e293c3489db323ebf0ffab1, type: 2}
-    - {fileID: 11400000, guid: d2939dcfdf08f744a9a0738b722d5b98, type: 2}
     - {fileID: 11400000, guid: f8ca63a47eed0304b82fa9c2cd70f2b0, type: 2}
-  - setName: Gearing up
-    quests:
     - {fileID: 11400000, guid: 737a8a9f9bd827f46aea88a2800369a7, type: 2}
+    - {fileID: 11400000, guid: 359297d8d58eec14b91d05eecaa6511d, type: 2}
+    - {fileID: 11400000, guid: a470b15ddd137a14e8a576144465f0cc, type: 2}
     - {fileID: 11400000, guid: dda718ec1cd70f0448656483a0faa17e, type: 2}
-  - setName: The end
-    quests:
+    - {fileID: 11400000, guid: d2939dcfdf08f744a9a0738b722d5b98, type: 2}
     - {fileID: 11400000, guid: c196b4bbc795d6c428ca68a9cc0ad677, type: 2}
 --- !u!1 &1995384602
 GameObject:

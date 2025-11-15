@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: demeter0
   m_EditorClassIdentifier: 
   nodeName: SALAS
-  description: "Desbloquea el sat\xE9lite Salas"
+  description: Unlock Salas satellite
   skillPointCost: 1
   prerequisiteNodes: []
   positionInConstellation: {x: 0, y: 1}
@@ -25,4 +25,4 @@ MonoBehaviour:
     - rid: 5265271245964312701
       type: {class: UnlockResearchSkillImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        researchIdToUnlock: salas_sat
+        researchIdToUnlock: salas

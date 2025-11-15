@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: new_life
   Title: New Life
-  Description: Your very first planet
+  Description: Your very first planet. This unlocks the abiility to build S.T.A.R.S.
   Objectives:
   - rid: 967674831443067134
   Rewards:
-  - Description: 
-    Amount: 0
+  - rid: 5265271264873545938
+  - rid: 5265271264873545943
   references:
     version: 2
     RefIds:
@@ -29,3 +29,13 @@ MonoBehaviour:
         objectiveDescription: Build the planet "Core"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}
+    - rid: 5265271264873545938
+      type: {class: GiveResourceReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Metal
+        resource: 0
+        amount: 300
+    - rid: 5265271264873545943
+      type: {class: UnlockStarsPanelReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks S.T.A.R.S panel

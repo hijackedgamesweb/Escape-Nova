@@ -44,6 +44,7 @@ namespace Code.Scripts.UI.Windows
             researchBtn.interactable = false;
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
+            SystemEvents.OnConstellationsUnlocked += EnableConstellationsButton;
             
             if (SystemEvents.IsInventoryUnlocked)
             {
@@ -62,12 +63,22 @@ namespace Code.Scripts.UI.Windows
             {
                 researchBtn.interactable = false;
             }
+            
+            if (SystemEvents.IsConstellationsUnlocked)
+            {
+                EnableConstellationsButton();
+            }
+            else
+            {
+                skillTreeBtn.interactable = false;
+            }
         }
 
         private void OnDestroy()
         {
             SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
             SystemEvents.OnResearchUnlocked -= EnableResearchButton;
+            SystemEvents.OnConstellationsUnlocked -= EnableConstellationsButton;
         }
 
         private void EnableStorageButton()
@@ -78,6 +89,11 @@ namespace Code.Scripts.UI.Windows
         private void EnableResearchButton()
         {
             researchBtn.interactable = true;
+        }
+        
+        private void EnableConstellationsButton()
+        {
+            skillTreeBtn.interactable = true;
         }
 
         public override void Show(object parameter = null)
