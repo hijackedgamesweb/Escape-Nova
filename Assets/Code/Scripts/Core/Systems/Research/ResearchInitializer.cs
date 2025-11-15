@@ -66,7 +66,6 @@ public class ResearchInitializer : MonoBehaviour
         storage.AddResource(ResourceType.Hielo, 500); 
         storage.AddResource(ResourceType.Fuego, 500); 
         
-        Debug.Log($"Recursos iniciales: 200 Madera, 100 Piedra");
     }
     private void LogInitialState()
     {
@@ -96,55 +95,6 @@ public class ResearchInitializer : MonoBehaviour
         catch (System.Exception e)
         {
             Debug.LogError($"Error al verificar estado: {e.Message}");
-        }
-    }
-
-    [ContextMenu("Test Wood Capacity Research")]
-    public void TestWoodCapacityResearch()
-    {
-        ResearchSystem research = ServiceLocator.GetService<ResearchSystem>();
-        
-        if (research.CanStartResearch("wood_capacity_1"))
-        {
-            research.StartResearch("wood_capacity_1");
-            Debug.Log("Investigación de madera iniciada!");
-        }
-        else
-        {
-            Debug.Log("No se puede iniciar investigación de madera. Verificar recursos.");
-        }
-    }
-
-    [ContextMenu("Test Stone Processing Research")]
-    public void TestStoneProcessingResearch()
-    {
-        ResearchSystem research = ServiceLocator.GetService<ResearchSystem>();
-        
-        if (research.CanStartResearch("stone_processing"))
-        {
-            research.StartResearch("stone_processing");
-            Debug.Log("Investigación de piedra iniciada!");
-        }
-        else
-        {
-            Debug.Log("No se puede iniciar investigación de piedra. Verificar recursos.");
-        }
-    }
-
-    [ContextMenu("Check All Research Status")]
-    public void CheckAllResearchStatus()
-    {
-        ResearchSystem research = ServiceLocator.GetService<ResearchSystem>();
-        var allResearch = research.GetAllResearchStatus();
-        
-        Debug.Log("ESTADO ACTUAL DE INVESTIGACIONES");
-        foreach (var researchStatus in allResearch)
-        {
-            var researchNode = research.GetResearch(researchStatus.Key);
-            string status = researchStatus.Value.ToString();
-            string progress = (research.GetResearchProgress(researchStatus.Key) * 100).ToString("F1");
-            
-            Debug.Log($"{researchNode.displayName}: {status} ({progress}%)");
         }
     }
 }
