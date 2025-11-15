@@ -9,6 +9,7 @@ namespace Code.Scripts.Core.Events
         public static event Action OnConstellationsUnlocked;
         
         public static event Action OnStarsPanelUnlocked;
+        public static event Action OnRequestMainMenu;
         
         public static bool IsResearchUnlocked { get; private set; }
         public static bool IsInventoryUnlocked { get; private set; }
@@ -42,6 +43,11 @@ namespace Code.Scripts.Core.Events
             if (IsStarsPanelUnlocked) return;
             IsStarsPanelUnlocked = true;
             OnStarsPanelUnlocked?.Invoke();
+        }
+        
+        public static void RequestMainMenu()
+        {
+            OnRequestMainMenu?.Invoke();
         }
     }
 }

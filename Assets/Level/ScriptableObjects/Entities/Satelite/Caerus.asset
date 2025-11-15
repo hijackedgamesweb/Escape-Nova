@@ -21,7 +21,13 @@ MonoBehaviour:
   buildCostAmounts: 6400000064000000
   size: 0
   desc: "El tiempo de investigaci\xF3n se reduce en un 10%"
-  upgrades: []
+  upgrades:
+  - rid: 5265271264873546022
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5265271264873546022
+      type: {class: GlobalCycleSpeedUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+      data:
+        globalSpeedBonusPercent: 5000
+        globalImprovementKey: GlobalCycleSpeed

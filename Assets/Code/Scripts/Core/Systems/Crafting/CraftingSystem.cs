@@ -8,6 +8,8 @@ using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Config;
+using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.World.ConstructableEntities;
 
 namespace Code.Scripts.Core.Systems.Crafting
 {
@@ -80,9 +82,46 @@ namespace Code.Scripts.Core.Systems.Crafting
                 return;
             }
 
+            Planet.OnGlobalImprovementAdded += OnGlobalImprovementApplied;
             _gameTime.OnCycleCompleted += OnCycleCompleted;
         }
 
+        private void OnDestroy()
+        {
+            if (_gameTime != null)
+            {
+                _gameTime.OnCycleCompleted -= OnCycleCompleted;
+            }
+            Planet.OnGlobalImprovementAdded -= OnGlobalImprovementApplied;
+        }
+        
+        private void OnGlobalImprovementApplied(string improvementType, float percentage)
+        {
+            if (improvementType == "GlobalCycleSpeed")
+            {
+                RecalculateCurrentCraftingCycles();
+            }
+        }
+        
+        private void RecalculateCurrentCraftingCycles()
+        {
+            if (!IsAnyCraftingInProgress()) return;
+            
+            if (!_recipeDatabase.TryGetValue(_currentCraftingData.recipeId, out CraftingRecipe recipe)) return;
+            float baseTimeInSeconds = recipe.craftingTimeInSeconds * _currentCraftingData.amount;
+            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
+            float effectiveTimeInSeconds = baseTimeInSeconds / (1 + (speedBonus / 100f));
+            
+            int newCyclesNeeded = Mathf.CeilToInt(effectiveTimeInSeconds / _timeConfig.secondsPerCycle);
+            if (_currentCraftingData.cyclesNeeded > 0)
+            {
+                float completionRatio = (float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded;
+                _currentCraftingData.cyclesCompleted = Mathf.FloorToInt(completionRatio * newCyclesNeeded);
+            }
+            _currentCraftingData.cyclesNeeded = newCyclesNeeded;
+            OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded));
+        }
+        
         private void OnCycleCompleted(int currentCycle)
         {
             if (!IsAnyCraftingInProgress()) return;
@@ -203,9 +242,10 @@ namespace Code.Scripts.Core.Systems.Crafting
 
         private int CalculateCyclesNeeded(float craftingTimeInSeconds)
         {
-
             float secondsPerCycle = _timeConfig.secondsPerCycle;
-            return Mathf.CeilToInt(craftingTimeInSeconds / secondsPerCycle);
+            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
+            float effectiveTimeInSeconds = craftingTimeInSeconds / (1 + (speedBonus / 100f));
+            return Mathf.CeilToInt(effectiveTimeInSeconds / secondsPerCycle);
         }
 
         private void CompleteCrafting()
@@ -232,6 +272,7 @@ namespace Code.Scripts.Core.Systems.Crafting
                 }
             }
             CraftingEvents.OnItemCrafted?.Invoke(GetItemData(output.itemName));
+            NotificationManager.Instance.CreateNotification($"Crafting: {craftedItemData.itemName} completed", NotificationType.Info);
         }
 
         public CraftingRecipe GetRecipe(string recipeId)

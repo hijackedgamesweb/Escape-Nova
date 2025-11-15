@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Code.Scripts.Utilities;
 
 public class IngredientSlotUI : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class IngredientSlotUI : MonoBehaviour
 
     public void SetData(Sprite sprite, string itemName, int amountOwned, int amountNeeded)
     {
+        string formattedOwned = NumberFormatter.FormatNumber(amountOwned, 1);
+        string formattedNeeded = NumberFormatter.FormatNumber(amountNeeded, 1);
 
         if (icon != null)
         {
@@ -21,7 +24,7 @@ public class IngredientSlotUI : MonoBehaviour
         
         if (detailsText != null)
         {
-            detailsText.text = $"{amountOwned}/{amountNeeded} {itemName}\n";
+            detailsText.text = $"{formattedOwned}/{formattedNeeded} {itemName}\n";
         
             if (amountOwned >= amountNeeded)
             {

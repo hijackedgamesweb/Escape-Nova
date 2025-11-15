@@ -17,6 +17,9 @@ namespace Code.Scripts.Core.Managers
         public bool IsPaused => TimeScale == 0f;
 
         private float _nextCycleTime;
+        
+        private static float _lastKnownTimeScale = 1f;
+
         public event Action<float> OnTimeAdvanced;
         public event Action<int> OnCycleCompleted;
 
@@ -24,15 +27,12 @@ namespace Code.Scripts.Core.Managers
         {
             TimeScale = 0f;
 
-            // Registrar tanto IGameTime como TimeConfig
             ServiceLocator.RegisterService<IGameTime>(this);
             ServiceLocator.RegisterService<TimeConfig>(timeConfig);
 
             if (timeConfig == null)
             {
-                Debug.LogWarning("TimeConfig no asignado, usando valores por defecto");
                 timeConfig = ScriptableObject.CreateInstance<TimeConfig>();
-                // Registrar también el TimeConfig por defecto
                 ServiceLocator.RegisterService<TimeConfig>(timeConfig);
             }
 
@@ -64,12 +64,23 @@ namespace Code.Scripts.Core.Managers
 
         public void StartTimer()
         {
-            GameTime = 0f;
-            TimeScale = 1f;
+            TimeScale = _lastKnownTimeScale;
         }
 
-        public void SetSpeed(float timeScale) => TimeScale = Mathf.Max(0f, timeScale);
-        public void Pause() => TimeScale = 0f;
-        public void Resume() => TimeScale = 1f;
+        public void SetSpeed(float timeScale)
+        {
+            TimeScale = Mathf.Max(0f, timeScale);
+            _lastKnownTimeScale = TimeScale;
+        }
+
+        public void Pause()
+        {
+            TimeScale = 0f;
+        }
+        
+        public void Resume()
+        {
+            TimeScale = _lastKnownTimeScale;
+        }
     }
 }

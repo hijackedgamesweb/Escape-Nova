@@ -67,7 +67,7 @@ namespace Code.Scripts.Core.World
 
             OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
             orbitCtrl.Initialize(planet, (orbit + 1) * orbitDistanceIncrement, positionInOrbit, planetsPerOrbit[orbit], rotationSpeed, orbit);
-            NotificationManager.Instance.CreateNotification($"Se ha añadido un planeta: {data.constructibleName} en la órbita {orbit + 1}", NotificationType.Info);
+            NotificationManager.Instance.CreateNotification($"A planet named: {data.constructibleName} was added on the orbit {orbit + 1}", NotificationType.Info);
             Planets[orbit][positionInOrbit] = planet;
             ConstructionEvents.OnConstructibleCreated?.Invoke(data);
             ConstructionEvents.OnPlanetAdded?.Invoke(planet);
@@ -101,7 +101,7 @@ namespace Code.Scripts.Core.World
             Planets[orbit][positionInOrbit] = null;
             OnPlanetRemoved?.Invoke(orbit, positionInOrbit);
             UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
-            NotificationManager.Instance.CreateNotification($"Se ha eliminado el planeta: {planetName} de la órbita {orbit + 1}", NotificationType.Info);
+            NotificationManager.Instance.CreateNotification($"The planet: {planetName} was deleted from the orbit {orbit + 1}", NotificationType.Info);
             ConstructionEvents.OnPlanetRemoved?.Invoke(planet);
         }
 
