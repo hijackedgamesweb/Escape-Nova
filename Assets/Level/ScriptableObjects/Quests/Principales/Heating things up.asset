@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
+  m_Name: Heating things up
+  m_EditorClassIdentifier: 
+  QuestId: heating_things_up
+  Title: Heating things up
+  Description: We need to bump up those production sites!
+  Objectives:
+  - rid: 6291952326318489678
+  - rid: 6291952326318489679
+  - rid: 6291952326318489681
+  - rid: 6291952326318489682
+  - rid: 6291952326318489683
+  Rewards: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6291952326318489678
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 stone each cycle
+        isCompleted: 0
+        resourceType: 4
+        requiredAmount: 100
+    - rid: 6291952326318489679
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 metal each cycle
+        isCompleted: 0
+        resourceType: 0
+        requiredAmount: 100
+    - rid: 6291952326318489681
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 ice each cycle
+        isCompleted: 0
+        resourceType: 1
+        requiredAmount: 100
+    - rid: 6291952326318489682
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 fire each cycle
+        isCompleted: 0
+        resourceType: 2
+        requiredAmount: 100
+    - rid: 6291952326318489683
+      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Produce 100 sand each cycle
+        isCompleted: 0
+        resourceType: 3
+        requiredAmount: 100

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
+  m_Name: Fourth Orbit
+  m_EditorClassIdentifier: 
+  researchId: fourth_orbit
+  category: 3
+  displayName: Fourth Orbit
+  description: You unlock a fourth orbit with space to build more planets
+  icon: {fileID: -1568789022125449700, guid: b0ec1208ac1e2a944a7ca12a6db36bd8, type: 3}
+  prerequisites:
+  - researchId: third_orbit
+    buildingId: 
+    playerLevel: 0
+  researchTimeInSeconds: 625
+  resourceCosts:
+  - resourceType: 0
+    amount: 2000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 1
+    amount: 2000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 2
+    amount: 2000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 3
+    amount: 2000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 4
+    amount: 2000
+    itemName: 
+    useInventoryItem: 0
+  rewards:
+  - rid: 5265271263977275482
+  tier: 1
+  treePosition: {x: 0, y: 0}
+  unlocksResearchIds:
+  - fifth_orbit
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271263977275482
+      type: {class: Reward_AddOrbit, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data: 

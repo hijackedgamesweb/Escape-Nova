@@ -73,7 +73,7 @@ namespace Code.Scripts.UI.Menus
             
             _planetNameText.text = _currentPlanet.Name;
             
-            StringBuilder productionString = new StringBuilder("Producción por ciclo:\n");
+            StringBuilder productionString = new StringBuilder("Production per cicle\n");
             
             foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
             {
@@ -107,7 +107,7 @@ namespace Code.Scripts.UI.Menus
             else
             {
                 GameObject itemGO = Instantiate(_satelliteListItemPrefab, _satelliteListContainer);
-                itemGO.GetComponentInChildren<TextMeshProUGUI>().text = "<i>Sin satélites</i>";
+                itemGO.GetComponentInChildren<TextMeshProUGUI>().text = "<i>No satellites</i>";
             }
         }
 

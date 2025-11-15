@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: b98b5f467971df44281ad822f1357722
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -786399054217615434
+    second: Nishim_0
+  - first:
+      213: 8241484902374966687
+    second: Nishim_1
+  - first:
+      213: -4933091225098900196
+    second: Nishim_2
+  - first:
+      213: 7622702100470953693
+    second: Nishim_3
+  - first:
+      213: 6750981176774204006
+    second: Nishim_4
+  - first:
+      213: 1018335370353631392
+    second: Nishim_5
+  - first:
+      213: -7688316424573496890
+    second: Nishim_6
+  - first:
+      213: 7829599135237666690
+    second: Nishim_7
+  - first:
+      213: 2476190557988619128
+    second: Nishim_8
+  - first:
+      213: 8438054787854610651
+    second: Nishim_9
+  - first:
+      213: -4778625867071572416
+    second: Nishim_10
+  - first:
+      213: 5441807215215083111
+    second: Nishim_11
+  - first:
+      213: 5280862865211458523
+    second: Nishim_12
+  - first:
+      213: 958837800026895122
+    second: Nishim_13
+  - first:
+      213: 1373016373789551797
+    second: Nishim_14
+  - first:
+      213: -8488625092328271494
+    second: Nishim_15
+  - first:
+      213: -4916045440147012620
+    second: Nishim_16
+  - first:
+      213: -7611384574349260569
+    second: Nishim_17
+  - first:
+      213: -5789918095424029307
+    second: Nishim_18
+  - first:
+      213: 2220466907221501812
+    second: Nishim_19
+  - first:
+      213: -7668011490983589658
+    second: Nishim_20
+  - first:
+      213: -2317389848411316308
+    second: Nishim_21
+  - first:
+      213: -1622654820204586437
+    second: Nishim_22
+  - first:
+      213: 3091025555734292433
+    second: Nishim_23
+  - first:
+      213: -1332638359668886039
+    second: Nishim_24
+  - first:
+      213: 1615234829450202117
+    second: Nishim_25
+  - first:
+      213: 8353254390976657649
+    second: Nishim_26
+  - first:
+      213: -5935881148754643993
+    second: Nishim_27
+  - first:
+      213: -4065706449669131248
+    second: Nishim_28
+  - first:
+      213: 4519642366267263568
+    second: Nishim_29
+  - first:
+      213: 3887665048179367977
+    second: Nishim_30
+  - first:
+      213: 5228343647682927117
+    second: Nishim_31
+  - first:
+      213: 3824837241393237625
+    second: Nishim_32
+  - first:
+      213: 5248438882114701148
+    second: Nishim_33
+  - first:
+      213: -9154851804114847334
+    second: Nishim_34
+  - first:
+      213: -373012649830410300
+    second: Nishim_35
+  - first:
+      213: 976869767625186470
+    second: Nishim_36
+  - first:
+      213: 1851802924794184649
+    second: Nishim_37
+  - first:
+      213: 4917759952306690679
+    second: Nishim_38
+  - first:
+      213: -8961185596319262814
+    second: Nishim_39
+  - first:
+      213: 7711880528180993103
+    second: Nishim_40
+  - first:
+      213: 8083360927523792784
+    second: Nishim_41
+  - first:
+      213: 7061533037817333886
+    second: Nishim_42
+  - first:
+      213: -4092737022716116110
+    second: Nishim_43
+  - first:
+      213: 8132351661835252592
+    second: Nishim_44
+  - first:
+      213: 6360655018137998241
+    second: Nishim_45
+  - first:
+      213: -4232781312951423499
+    second: Nishim_46
+  - first:
+      213: 4034998667039231780
+    second: Nishim_47
+  - first:
+      213: 4740492314037213609
+    second: Nishim_48
+  - first:
+      213: -2743300433415250164
+    second: Nishim_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nishim_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7e7a90a362615f0800000000000000
+      internalID: -786399054217615434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f950ecb7ad2af5270800000000000000
+      internalID: 8241484902374966687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d226bdaa32a8bb0800000000000000
+      internalID: -4933091225098900196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f13f6c2749c960800000000000000
+      internalID: 7622702100470953693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a99feac9d40bd50800000000000000
+      internalID: 6750981176774204006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0e42cbf9ad12e00800000000000000
+      internalID: 1018335370353631392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1de7042fc9d4590800000000000000
+      internalID: -7688316424573496890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_7
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287fb853ee258ac60800000000000000
+      internalID: 7829599135237666690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_8
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873861d61323d5220800000000000000
+      internalID: 2476190557988619128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_9
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 239
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0bb517f1ef91570800000000000000
+      internalID: 8438054787854610651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046b4b69719eeadb0800000000000000
+      internalID: -4778625867071572416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e7d0f84de258b40800000000000000
+      internalID: 5441807215215083111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd30b74fbc4694940800000000000000
+      internalID: 5280862865211458523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213f1d326e97e4d00800000000000000
+      internalID: 958837800026895122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc658e0e1fed0310800000000000000
+      internalID: 1373016373789551797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_15
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a715e440478523a80800000000000000
+      internalID: -8488625092328271494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3cb50f7b2b6cbb0800000000000000
+      internalID: -4916045440147012620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e846057e0eee5690800000000000000
+      internalID: -7611384574349260569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_18
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58df4a32b2416afa0800000000000000
+      internalID: -5789918095424029307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_19
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 184
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477a27833eea0de10800000000000000
+      internalID: 2220466907221501812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e84f420d20c59590800000000000000
+      internalID: -7668011490983589658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafd85ff53af6dfd0800000000000000
+      internalID: -2317389848411316308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a51a8c90c2b79e0800000000000000
+      internalID: -1622654820204586437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_23
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d76231bd5785ea20800000000000000
+      internalID: 3091025555734292433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e570e5f874818de0800000000000000
+      internalID: -1332638359668886039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cc73ef4877a6610800000000000000
+      internalID: 1615234829450202117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_26
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8b2a47c98bce370800000000000000
+      internalID: 8353254390976657649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3ba8b7b838f9da0800000000000000
+      internalID: -5935881148754643993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_28
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014f47a6685b397c0800000000000000
+      internalID: -4065706449669131248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_29
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a8a2939cef8be30800000000000000
+      internalID: 4519642366267263568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920ee6a73c2c3f530800000000000000
+      internalID: 3887665048179367977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a9fcbb8dece8840800000000000000
+      internalID: 5228343647682927117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ecde8c43d841530800000000000000
+      internalID: 3824837241393237625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_33
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c578bc91b5336d840800000000000000
+      internalID: 5248438882114701148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_34
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99f364e9ce63f080800000000000000
+      internalID: -9154851804114847334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_35
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c79126a8fac2daf0800000000000000
+      internalID: -373012649830410300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_36
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac1e13c0e98e8d00800000000000000
+      internalID: 976869767625186470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_37
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c30366e2fce2b910800000000000000
+      internalID: 1851802924794184649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_38
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ad1e70f946f3440800000000000000
+      internalID: 4917759952306690679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_39
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a71b05bd2973a380800000000000000
+      internalID: -8961185596319262814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_40
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cda782b7a160b60800000000000000
+      internalID: 7711880528180993103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_41
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097e354afeddd2070800000000000000
+      internalID: 8083360927523792784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_42
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7889c062ea9ff160800000000000000
+      internalID: 7061533037817333886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_43
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2738ae1bc5da337c0800000000000000
+      internalID: -4092737022716116110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0737f38dfbaebd070800000000000000
+      internalID: 8132351661835252592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_45
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3dbeee906954850800000000000000
+      internalID: 6360655018137998241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_46
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd6e9572d32245c0800000000000000
+      internalID: -4232781312951423499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_47
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f4c0ac8e13ff730800000000000000
+      internalID: 4034998667039231780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_48
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a958a6b4ac99c140800000000000000
+      internalID: 4740492314037213609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nishim_49
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 19
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fdb1a5ac6dde9d0800000000000000
+      internalID: -2743300433415250164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nishim_0: -786399054217615434
+      Nishim_1: 8241484902374966687
+      Nishim_10: -4778625867071572416
+      Nishim_11: 5441807215215083111
+      Nishim_12: 5280862865211458523
+      Nishim_13: 958837800026895122
+      Nishim_14: 1373016373789551797
+      Nishim_15: -8488625092328271494
+      Nishim_16: -4916045440147012620
+      Nishim_17: -7611384574349260569
+      Nishim_18: -5789918095424029307
+      Nishim_19: 2220466907221501812
+      Nishim_2: -4933091225098900196
+      Nishim_20: -7668011490983589658
+      Nishim_21: -2317389848411316308
+      Nishim_22: -1622654820204586437
+      Nishim_23: 3091025555734292433
+      Nishim_24: -1332638359668886039
+      Nishim_25: 1615234829450202117
+      Nishim_26: 8353254390976657649
+      Nishim_27: -5935881148754643993
+      Nishim_28: -4065706449669131248
+      Nishim_29: 4519642366267263568
+      Nishim_3: 7622702100470953693
+      Nishim_30: 3887665048179367977
+      Nishim_31: 5228343647682927117
+      Nishim_32: 3824837241393237625
+      Nishim_33: 5248438882114701148
+      Nishim_34: -9154851804114847334
+      Nishim_35: -373012649830410300
+      Nishim_36: 976869767625186470
+      Nishim_37: 1851802924794184649
+      Nishim_38: 4917759952306690679
+      Nishim_39: -8961185596319262814
+      Nishim_4: 6750981176774204006
+      Nishim_40: 7711880528180993103
+      Nishim_41: 8083360927523792784
+      Nishim_42: 7061533037817333886
+      Nishim_43: -4092737022716116110
+      Nishim_44: 8132351661835252592
+      Nishim_45: 6360655018137998241
+      Nishim_46: -4232781312951423499
+      Nishim_47: 4034998667039231780
+      Nishim_48: 4740492314037213609
+      Nishim_49: -2743300433415250164
+      Nishim_5: 1018335370353631392
+      Nishim_6: -7688316424573496890
+      Nishim_7: 7829599135237666690
+      Nishim_8: 2476190557988619128
+      Nishim_9: 8438054787854610651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

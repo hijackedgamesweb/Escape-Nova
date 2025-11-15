@@ -11,9 +11,11 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public int TimeToBuild { get; private set; }
         public Planet Planet { get; set; }
         public string Name { get; private set; }
+        public SateliteDataSO SateliteData { get; private set; }
 
         public void InitializeSatelite(SateliteDataSO sateliteDataSo, Planet planet)
         {
+            SateliteData = sateliteDataSo;
             Name = sateliteDataSo.constructibleName;
             TimeToBuild = sateliteDataSo.timeToBuild;
             Planet = planet;

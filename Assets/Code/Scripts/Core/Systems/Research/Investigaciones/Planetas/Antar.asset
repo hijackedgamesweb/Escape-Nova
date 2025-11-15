@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
+  m_Name: Antar
+  m_EditorClassIdentifier: 
+  researchId: antar
+  category: 0
+  displayName: Antar
+  description: 
+  icon: {fileID: 8492951607903232514, guid: 212db910e48e26d4dafc8c7ec7f585bc, type: 3}
+  prerequisites:
+  - researchId: primal_planets
+    buildingId: 
+    playerLevel: 0
+  researchTimeInSeconds: 100
+  resourceCosts:
+  - resourceType: 1
+    amount: 125
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 3
+    amount: 125
+    itemName: 
+    useInventoryItem: 0
+  rewards:
+  - rid: 6291952326318489687
+  tier: 1
+  treePosition: {x: 0, y: 0}
+  unlocksResearchIds: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6291952326318489687
+      type: {class: RewardUnlockPlanet, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
+      data:
+        planetData: {fileID: 11400000, guid: 11c312bcb8b2b124fabe9c28574904e3, type: 2}

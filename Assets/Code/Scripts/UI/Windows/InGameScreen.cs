@@ -20,26 +20,20 @@ namespace Code.Scripts.UI.Windows
 
         private void Awake()
         {
-            astrariumBtn.onClick.AddListener(() =>
-                ButtonPressed("Astrarium"));
+            astrariumBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Astrarium"));
             diplomacyBtn.onClick.AddListener(() => 
-                ButtonPressed("Diplomacy"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Diplomacy"));
             skillTreeBtn.onClick.AddListener(() => 
-                ButtonPressed("SkilTree"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Constellations"));
             missionsBtn.onClick.AddListener(() => 
-                ButtonPressed("Missions"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Objectives"));
             storageBtn.onClick.AddListener(() => 
-                ButtonPressed("Storage"));
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
             constructionBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
-                ButtonPressed("Research"));
-        }
-
-        private void ButtonPressed(string uiName)
-        {
-            AudioManager.Instance.PlaySFX("ButtonClick");
-            UIManager.Instance.ShowScreen<ActionPanelScreen>(uiName);
+                UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
         }
     }
 }

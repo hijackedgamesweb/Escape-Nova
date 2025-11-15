@@ -375,7 +375,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
             if (modalNodeName != null) modalNodeName.text = nodeData.nodeName;
             if (modalDescription != null) modalDescription.text = nodeData.description;
-            if (modalCost != null) modalCost.text = $"Coste: {nodeData.skillPointCost} puntos";
+            if (modalCost != null) modalCost.text = $"Price: {nodeData.skillPointCost} Star Points";
 
             if (modalPurchaseButton != null)
             {
@@ -436,7 +436,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (skillPointsText != null && skillTreeManager != null)
             {
-                skillPointsText.text = $"Puntos de Habilidad: {skillTreeManager.GetAvailableSkillPoints()}";
+                skillPointsText.text = $"Star Points: {skillTreeManager.GetAvailableSkillPoints()}";
             }
         }
 
