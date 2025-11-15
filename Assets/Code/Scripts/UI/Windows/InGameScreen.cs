@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
@@ -34,6 +35,27 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
+            
+            storageBtn.interactable = false;
+            researchBtn.interactable = false;
+            SystemEvents.OnInventoryUnlocked += EnableStorageButton;
+            SystemEvents.OnResearchUnlocked += EnableResearchButton;
+        }
+
+        private void OnDestroy()
+        {
+            SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
+            SystemEvents.OnResearchUnlocked -= EnableResearchButton;
+        }
+
+        private void EnableStorageButton()
+        {
+            storageBtn.interactable = true;
+        }
+
+        private void EnableResearchButton()
+        {
+            researchBtn.interactable = true;
         }
     }
 }

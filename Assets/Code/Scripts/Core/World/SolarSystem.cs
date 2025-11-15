@@ -104,5 +104,11 @@ namespace Code.Scripts.Core.World
             NotificationManager.Instance.CreateNotification($"Se ha eliminado el planeta: {planetName} de la órbita {orbit + 1}", NotificationType.Info);
             ConstructionEvents.OnPlanetRemoved?.Invoke(planet);
         }
+
+        public void BuildSpecialPlanet(STARSDataSO specialPlanetData)
+        {
+            NotificationManager.Instance.CreateNotification($"Se ha construido: {specialPlanetData.constructibleName}!", NotificationType.Info);
+            ConstructionEvents.OnConstructibleCreated?.Invoke(specialPlanetData);
+        }
     }
 }

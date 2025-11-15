@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e9a74eb2b54a3aaafef1af91818c0f, type: 3}
+  m_Name: STARS
+  m_EditorClassIdentifier: 
+  constructibleName: STARS
+  sprite: {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  timeToBuild: 0
+  buildCostResources:
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  buildCostAmounts: c8000000
+  size: 0.5
+  desc: 
+  upgrades: []
+  references:
+    version: 2
+    RefIds: []

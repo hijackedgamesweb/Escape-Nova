@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using TMPro;
 using UnityEngine;
@@ -38,6 +39,45 @@ namespace Code.Scripts.UI.Windows
             missionsBtn.onClick.AddListener(() => Show("Objectives"));
             researchBtn.onClick.AddListener(() => Show("Research"));
             returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
+
+            storageCraftingBtn.interactable = false;
+            researchBtn.interactable = false;
+            SystemEvents.OnInventoryUnlocked += EnableStorageButton;
+            SystemEvents.OnResearchUnlocked += EnableResearchButton;
+            
+            if (SystemEvents.IsInventoryUnlocked)
+            {
+                EnableStorageButton();
+            }
+            else
+            {
+                storageCraftingBtn.interactable = false;
+            }
+
+            if (SystemEvents.IsResearchUnlocked)
+            {
+                EnableResearchButton();
+            }
+            else
+            {
+                researchBtn.interactable = false;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
+            SystemEvents.OnResearchUnlocked -= EnableResearchButton;
+        }
+
+        private void EnableStorageButton()
+        {
+            storageCraftingBtn.interactable = true;
+        }
+
+        private void EnableResearchButton()
+        {
+            researchBtn.interactable = true;
         }
 
         public override void Show(object parameter = null)
