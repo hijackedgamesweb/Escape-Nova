@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_quantum_propeller
   displayName: Quantum Propeller
   description: Multicore Chip
-  icon: {fileID: 0}
+  icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   ingredients:
   - resourceType: 0
     amount: 4
@@ -24,4 +24,4 @@ MonoBehaviour:
   output:
     itemName: Quantum Propeller
     amount: 1
-  craftingTimeInSeconds: 100
+  craftingTimeInSeconds: 500

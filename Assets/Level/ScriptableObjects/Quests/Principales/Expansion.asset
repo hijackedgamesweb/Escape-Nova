@@ -16,21 +16,20 @@ MonoBehaviour:
   Title: Expansion
   Description: Research is the key to success
   Objectives:
+  - rid: 5265271264873545974
   - rid: 6291952324994662400
   - rid: 6291952324994662401
   - rid: 6291952324994662402
   - rid: 6291952324994662403
-  - rid: 5265271264873545974
   Rewards:
   - rid: 5265271264873545963
-  - rid: 5265271264873546003
   references:
     version: 2
     RefIds:
     - rid: 5265271264873545963
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
-        Description: 
+        Description: Unlock the "Second Orbit" research
         researchIdToUnlock: second_orbit
     - rid: 5265271264873545974
       type: {class: CompleteResearchObjective, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
@@ -38,10 +37,6 @@ MonoBehaviour:
         objectiveDescription: Research Primal Planets
         isCompleted: 0
         requiredResearch: {fileID: 11400000, guid: f41ef5e1f87595a43bbf840d53ea28a2, type: 2}
-    - rid: 5265271264873546003
-      type: {class: UnlockConstellationsReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
-      data:
-        Description: 
     - rid: 6291952324994662400
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:

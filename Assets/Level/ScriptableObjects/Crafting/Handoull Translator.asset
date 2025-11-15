@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_handoull_translator
   displayName: Handoull Translator
-  description: Device needed to comunicate with other species.
-  icon: {fileID: 0}
+  description: Device needed to comunicate with another species
+  icon: {fileID: -1656734156800635931, guid: af28c543acd466a4bb3bcef4d7b2f9f1, type: 3}
   ingredients:
   - resourceType: 0
     amount: 500
@@ -40,4 +40,4 @@ MonoBehaviour:
   output:
     itemName: Handoull Translator
     amount: 1
-  craftingTimeInSeconds: 15
+  craftingTimeInSeconds: 75

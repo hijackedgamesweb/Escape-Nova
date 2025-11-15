@@ -17,7 +17,10 @@ MonoBehaviour:
   displayName: Caerus
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: caerus_skill
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 225
   resourceCosts:
   - resourceType: 0

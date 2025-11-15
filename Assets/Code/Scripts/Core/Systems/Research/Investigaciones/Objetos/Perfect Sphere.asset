@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 1
   displayName: Perfect Sphere
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300
   resourceCosts:

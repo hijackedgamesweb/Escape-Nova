@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 1
   displayName: Quantum Propeller
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   prerequisites: []
   researchTimeInSeconds: 1250
   resourceCosts:

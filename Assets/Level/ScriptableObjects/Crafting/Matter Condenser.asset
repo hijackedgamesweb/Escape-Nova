@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_matter_condenser
   displayName: Matter Condenser
   description: Matter Condenser
-  icon: {fileID: 0}
+  icon: {fileID: 4464980799962186784, guid: 833bc3d0da7caff4f9aaa8e47b0c39e2, type: 3}
   ingredients:
   - resourceType: 0
     amount: 100
@@ -32,4 +32,4 @@ MonoBehaviour:
   output:
     itemName: Matter Condenser
     amount: 1
-  craftingTimeInSeconds: 30
+  craftingTimeInSeconds: 150

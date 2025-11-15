@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_freezed_core
   displayName: Freezed Core
   description: Freezed Core
-  icon: {fileID: 0}
+  icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
   ingredients:
   - resourceType: 1
     amount: 450
@@ -32,4 +32,4 @@ MonoBehaviour:
   output:
     itemName: Freezed Core
     amount: 1
-  craftingTimeInSeconds: 30
+  craftingTimeInSeconds: 150

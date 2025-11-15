@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 1
   displayName: Microscopic Lense
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300
   resourceCosts:

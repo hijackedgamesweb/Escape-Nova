@@ -14,35 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - itemData:
-      itemName: Lanza
-      displayName: Lanza de madera
-      icon: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
-      maxStack: 5
-      description: Es una lanza de madera
+      itemName: Halxi Translator
+      displayName: Halxi Translator
+      icon: {fileID: -6657923694154243408, guid: c544afcce22888343abd1144cf0c910f, type: 3}
+      maxStack: 1
+      description: Translator needed to communicate with the Halxi species
       itemToUnlock: {fileID: 0}
-    quantity: 1
-  - itemData:
-      itemName: Espada
-      displayName: Espada
-      icon: {fileID: 21300000, guid: 43358b703766fee4ebe64c7fbd583376, type: 3}
-      maxStack: 5
-      description: "Es una puta espada, \xBFvale?"
-      itemToUnlock: {fileID: 0}
-    quantity: 1
-  - itemData:
-      itemName: Utopia
-      displayName: Utopia
-      icon: {fileID: 21300000, guid: de328077ad8c9594c9ec3cf1023b25fe, type: 3}
-      maxStack: 5
-      description: Es el Quantum Memories
-      itemToUnlock: {fileID: 11400000, guid: 15bd4d4f3526e1b4a96df7acaba95422, type: 2}
     quantity: 0
   - itemData:
-      itemName: Quantum Propeller
-      displayName: Quantum Propeller
-      icon: {fileID: 21300000, guid: de328077ad8c9594c9ec3cf1023b25fe, type: 3}
-      maxStack: 5
-      description: Es el Quantum Memories
+      itemName: Skulg Translator
+      displayName: Skulg Translator
+      icon: {fileID: -7877341826017078353, guid: e2d5ace7c64c7f04dbc786c231d49a20, type: 3}
+      maxStack: 1
+      description: Translator needed to communicate with the Skulg species
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Akki Translator
+      displayName: Akki Translator
+      icon: {fileID: -999866019736742712, guid: 24e9ff8da265b1349a2f4c59293cecde, type: 3}
+      maxStack: 1
+      description: Translator needed to communicate with the Akki species
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Handoull Translator
+      displayName: Handoull Translator
+      icon: {fileID: -1656734156800635931, guid: af28c543acd466a4bb3bcef4d7b2f9f1, type: 3}
+      maxStack: 1
+      description: Translator needed to communicate with the Handoull species
       itemToUnlock: {fileID: 0}
     quantity: 0
   - itemData:
@@ -50,6 +50,70 @@ MonoBehaviour:
       displayName: Mippip Translator
       icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
       maxStack: 1
-      description: This translate the Mippip language
+      description: Translator needed to communicate wi the Mippip species
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Matter Condenser
+      displayName: Matter Condenser
+      icon: {fileID: 4464980799962186784, guid: 833bc3d0da7caff4f9aaa8e47b0c39e2, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Modular Spectrometer
+      displayName: Modular Spectrometer
+      icon: {fileID: 5554003434574828865, guid: 5cbd70e74bc9d814681b2edbeb3f997c, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Microscopic Lense
+      displayName: Microscopic Lense
+      icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Multicore Chip
+      displayName: Multicore Chip
+      icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Freezed Core
+      displayName: Freezed Core
+      icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Fire Strike
+      displayName: Fire Strike
+      icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Perfect Sphere
+      displayName: Perfect Sphere
+      icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
+      maxStack: 12
+      description: 
+      itemToUnlock: {fileID: 0}
+    quantity: 0
+  - itemData:
+      itemName: Quantum Propeller
+      displayName: Quantum Propeller
+      icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
+      maxStack: 4
+      description: 
       itemToUnlock: {fileID: 0}
     quantity: 0

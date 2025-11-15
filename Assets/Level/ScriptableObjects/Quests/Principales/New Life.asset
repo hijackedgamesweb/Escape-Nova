@@ -19,7 +19,7 @@ MonoBehaviour:
   - rid: 967674831443067134
   Rewards:
   - rid: 5265271264873545938
-  - rid: 5265271264873545943
+  - rid: 6291952346365689937
   references:
     version: 2
     RefIds:
@@ -35,7 +35,7 @@ MonoBehaviour:
         Description: Metal
         resource: 0
         amount: 300
-    - rid: 5265271264873545943
+    - rid: 6291952346365689937
       type: {class: UnlockStarsPanelReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
-        Description: Unlocks S.T.A.R.S panel
+        Description: Allows you to build "S.T.A.R.S"

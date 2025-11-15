@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_multicore_chip
   displayName: Multicore Chip
   description: Multicore Chip
-  icon: {fileID: 0}
+  icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
   ingredients:
   - resourceType: 0
     amount: 300
@@ -36,4 +36,4 @@ MonoBehaviour:
   output:
     itemName: Multicore Chip
     amount: 1
-  craftingTimeInSeconds: 30
+  craftingTimeInSeconds: 150

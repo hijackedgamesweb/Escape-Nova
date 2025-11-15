@@ -28,10 +28,10 @@ MonoBehaviour:
     itemName: 
     useInventoryItem: 0
   rewards:
-  - rid: 6291952324994662481
   - rid: 6291952324994662482
   - rid: 6291952324994662483
   - rid: 6291952324994662484
+  - rid: 6291952324994662481
   tier: 1
   treePosition: {x: 0, y: 0}
   unlocksResearchIds:
@@ -40,6 +40,22 @@ MonoBehaviour:
   - friga
   - antar
   - kristra
+  - dimidium
+  - blobi
+  - saxum
+  - liquefacta
+  - caminus
+  - kov
+  - istoovi
+  - halangona
+  - lahar
+  - pleurus
+  - debrisa
+  - daduen
+  - permafrost
+  - teide
+  - sekarral
+  - utopia
   references:
     version: 2
     RefIds:

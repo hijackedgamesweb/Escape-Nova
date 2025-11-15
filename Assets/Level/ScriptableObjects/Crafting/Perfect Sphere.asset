@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_perfect_sphere
   displayName: Perfect Sphere
   description: Multicore Chip
-  icon: {fileID: 0}
+  icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
   ingredients:
   - resourceType: 0
     amount: 3
@@ -40,4 +40,4 @@ MonoBehaviour:
   output:
     itemName: Perfect Sphere
     amount: 1
-  craftingTimeInSeconds: 50
+  craftingTimeInSeconds: 250

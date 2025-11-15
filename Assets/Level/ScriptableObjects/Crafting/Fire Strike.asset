@@ -15,7 +15,7 @@ MonoBehaviour:
   recipeId: receta_fire_strike
   displayName: Fire Strike
   description: Fire Strike
-  icon: {fileID: 0}
+  icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
   ingredients:
   - resourceType: 2
     amount: 550
@@ -28,4 +28,4 @@ MonoBehaviour:
   output:
     itemName: Fire Strike
     amount: 1
-  craftingTimeInSeconds: 30
+  craftingTimeInSeconds: 150
