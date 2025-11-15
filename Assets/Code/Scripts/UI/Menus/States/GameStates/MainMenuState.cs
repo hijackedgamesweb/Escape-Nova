@@ -24,10 +24,12 @@ namespace Code.Scripts.UI.Menus.States.GameStates
                 _stateManager.SetState(new InGameState(_stateManager));
                 AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
                 AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
+                AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
             });
             
             _mainMenuScreen.SettingsButton.onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
                 _stateManager.SetState(new OptionsState(_stateManager));
             });
         }

@@ -30,10 +30,17 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Objectives"));
             storageBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
-            constructionBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<PerfectViewScreen>());
+            constructionBtn.onClick.AddListener(ConstructionButtonPressed);
             researchBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
+            returnBtn.onClick.AddListener(() => 
+                AudioManager.Instance.PlaySFX("Close"));
+        }
+        
+        private void ConstructionButtonPressed()
+        {
+            AudioManager.Instance.PlaySFX("ConstructionMenuOpen");
+            UIManager.Instance.ShowScreen<PerfectViewScreen>();
         }
     }
 }
