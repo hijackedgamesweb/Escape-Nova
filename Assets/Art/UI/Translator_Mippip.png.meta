@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8b37306a54692b419984ae24656ab85
+guid: 36f34799241d5fc48b31dc5c1bc0e533
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2775496335295181308
-    second: Icon_Stone_0
+      213: 2422893713231291061
+    second: Translator_Mippip_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Stone_0
+      name: Translator_Mippip_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 55
-        height: 54
+        x: 11
+        y: 7
+        width: 114
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf1faa4363b848620800000000000000
-      internalID: 2775496335295181308
+      spriteID: 5b2ada1cef8df9120800000000000000
+      internalID: 2422893713231291061
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon_Stone_0: 2775496335295181308
+      Translator_Mippip_0: 2422893713231291061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

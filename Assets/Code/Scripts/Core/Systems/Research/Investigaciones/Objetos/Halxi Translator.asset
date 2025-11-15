@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Halxi Translator
   m_EditorClassIdentifier: 
   researchId: halxi_translator
-  category: 0
+  category: 1
   displayName: Halxi Translator
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -6657923694154243408, guid: c544afcce22888343abd1144cf0c910f, type: 3}
   prerequisites: []
   researchTimeInSeconds: 200
   resourceCosts:

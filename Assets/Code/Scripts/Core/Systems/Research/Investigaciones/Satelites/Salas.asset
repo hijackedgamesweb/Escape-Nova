@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Salas
   m_EditorClassIdentifier: 
   researchId: salas
-  category: 0
+  category: 2
   displayName: Salas
   description: 
   icon: {fileID: 0}

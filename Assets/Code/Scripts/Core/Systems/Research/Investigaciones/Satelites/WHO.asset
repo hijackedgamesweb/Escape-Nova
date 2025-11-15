@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: WHO
   m_EditorClassIdentifier: 
   researchId: who
-  category: 0
+  category: 2
   displayName: WHO
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: caerus
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 425
   resourceCosts:
   - resourceType: 3

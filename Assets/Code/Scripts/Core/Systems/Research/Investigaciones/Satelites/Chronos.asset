@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: Chronos
   m_EditorClassIdentifier: 
   researchId: chronos
-  category: 0
+  category: 2
   displayName: Chronos
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: caerus
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 375
   resourceCosts:
   - resourceType: 3

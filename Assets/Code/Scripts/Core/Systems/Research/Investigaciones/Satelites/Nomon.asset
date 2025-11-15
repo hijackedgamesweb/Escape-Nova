@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: Nomon
   m_EditorClassIdentifier: 
   researchId: nomon
-  category: 0
+  category: 2
   displayName: Nomon
   description: 
   icon: {fileID: 0}
-  prerequisites: []
+  prerequisites:
+  - researchId: salas
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 750
   resourceCosts:
   - resourceType: 4

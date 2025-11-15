@@ -10,25 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
-  m_Name: SecondOrbit
+  m_Name: Third Orbit
   m_EditorClassIdentifier: 
-  researchId: second_orbit
+  researchId: third_orbit
   category: 3
-  displayName: Unlock the second orbit
-  description: You will unlock the ability to create planets on the second orbit
-  icon: {fileID: 0}
-  prerequisites: []
-  researchTimeInSeconds: 5
+  displayName: Third Orbit
+  description: You unlock a third orbit with space to build more planets
+  icon: {fileID: -6931118599465138883, guid: c664172903cb3334f833f1cbbe0b8ed7, type: 3}
+  prerequisites:
+  - researchId: second_orbit
+    buildingId: 
+    playerLevel: 0
+  researchTimeInSeconds: 325
   resourceCosts:
   - resourceType: 0
-    amount: 10
+    amount: 600
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 1
+    amount: 600
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 2
+    amount: 600
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 3
+    amount: 600
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 4
+    amount: 600
     itemName: 
     useInventoryItem: 0
   rewards:
   - rid: 5265271263977275482
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds: []
+  unlocksResearchIds:
+  - fourth_orbit
   references:
     version: 2
     RefIds:
