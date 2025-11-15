@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
@@ -30,17 +31,31 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Objectives"));
             storageBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
-            constructionBtn.onClick.AddListener(ConstructionButtonPressed);
+            constructionBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
-            returnBtn.onClick.AddListener(() => 
-                AudioManager.Instance.PlaySFX("Close"));
+            
+            storageBtn.interactable = false;
+            researchBtn.interactable = false;
+            SystemEvents.OnInventoryUnlocked += EnableStorageButton;
+            SystemEvents.OnResearchUnlocked += EnableResearchButton;
         }
-        
-        private void ConstructionButtonPressed()
+
+        private void OnDestroy()
         {
-            AudioManager.Instance.PlaySFX("ConstructionMenuOpen");
-            UIManager.Instance.ShowScreen<PerfectViewScreen>();
+            SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
+            SystemEvents.OnResearchUnlocked -= EnableResearchButton;
+        }
+
+        private void EnableStorageButton()
+        {
+            storageBtn.interactable = true;
+        }
+
+        private void EnableResearchButton()
+        {
+            researchBtn.interactable = true;
         }
     }
 }
