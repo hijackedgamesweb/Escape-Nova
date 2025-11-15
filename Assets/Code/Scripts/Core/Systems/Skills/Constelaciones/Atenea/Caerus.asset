@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: atenea3
+  m_Name: Caerus
   m_EditorClassIdentifier: 
-  nodeName: ATENEA 3
-  description: 
+  nodeName: Caerus
+  description: Unlock the "Caeurs" satelite research
   skillPointCost: 1
-  prerequisiteNodes:
-  - {fileID: 11400000, guid: ad5d4d580ccb16540947ea4402be6958, type: 2}
-  positionInConstellation: {x: 1, y: 1}
-  improvements: []
+  prerequisiteNodes: []
+  positionInConstellation: {x: 3, y: 2}
+  improvements:
+  - rid: 6291952346365689856
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6291952346365689856
+      type: {class: UnlockResearchSkillImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        researchIdToUnlock: caerus

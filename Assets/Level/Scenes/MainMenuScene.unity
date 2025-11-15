@@ -6004,8 +6004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -496.02}
-  m_SizeDelta: {x: 1860, y: 932.04}
+  m_AnchoredPosition: {x: 960, y: -496.02002}
+  m_SizeDelta: {x: 1860, y: 932.04004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345042555
 MonoBehaviour:
@@ -22753,7 +22753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -1002.04}
+  m_AnchoredPosition: {x: 960, y: -1002.04004}
   m_SizeDelta: {x: 1860, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1281748845
@@ -24871,12 +24871,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: constellations.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: 'constellations.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: cda2a043251392e4588fa88b7e309858, type: 2}
+      objectReference: {fileID: 11400000, guid: 19338c8ec053bf749832b9e7103a60c9, type: 2}
     - target: {fileID: 6370524988102040163, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: m_Name
       value: '@SkillSystem'
@@ -25719,8 +25719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 930, y: -466.02}
-  m_SizeDelta: {x: 1860, y: 932.04}
+  m_AnchoredPosition: {x: 930, y: -466.02002}
+  m_SizeDelta: {x: 1860, y: 932.04004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447128790
 MonoBehaviour:

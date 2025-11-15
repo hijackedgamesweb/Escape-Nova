@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: demeter6
+  m_Name: Pangaea
   m_EditorClassIdentifier: 
-  nodeName: DEMETER 6
-  description: "Todos tus planetas producen un 50% m\xE1s de recursos."
-  skillPointCost: 2
+  nodeName: Pangaea
+  description: All your plannets generate 100% more resources
+  skillPointCost: 3
   prerequisiteNodes:
-  - {fileID: 11400000, guid: d5a808fe21d3ad34f8bf9de3ca3078c1, type: 2}
-  positionInConstellation: {x: -2, y: 1}
+  - {fileID: 11400000, guid: 75662143070b18e4391ddde9a57f6fcb, type: 2}
+  positionInConstellation: {x: -3, y: 1}
   improvements:
-  - rid: 162876391971094610
+  - rid: 162876391971094611
   references:
     version: 2
     RefIds:
-    - rid: 162876391971094610
+    - rid: 162876391971094611
       type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 50
+        productionBonusPercent: 100

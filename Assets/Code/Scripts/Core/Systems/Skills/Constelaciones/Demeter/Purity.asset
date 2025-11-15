@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: demeter1
+  m_Name: Purity
   m_EditorClassIdentifier: 
-  nodeName: DEMETER 1
-  description: "Todos tus planetas producen un 10% m\xE1s de recursos."
-  skillPointCost: 1
+  nodeName: Purity
+  description: natural planets generate 50% more resources
+  skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
-  positionInConstellation: {x: -1, y: 1}
+  positionInConstellation: {x: 0.5, y: 1.5}
   improvements:
-  - rid: 162876391971094606
+  - rid: 4256129551800467535
   references:
     version: 2
     RefIds:
-    - rid: 162876391971094606
-      type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+    - rid: 4256129551800467535
+      type: {class: SingleResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 10
+        productionBonusPercent: 50
