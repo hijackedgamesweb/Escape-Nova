@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Roshar
   m_EditorClassIdentifier: 
   constructibleName: Roshar
-  sprite: {fileID: 0}
+  sprite: {fileID: 3071047992885781720, guid: e71b41a6faa3f5c49b8adda85992c7eb, type: 3}
   timeToBuild: 100
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

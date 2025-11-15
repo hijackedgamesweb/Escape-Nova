@@ -424,6 +424,7 @@ namespace Code.Scripts.Core.Systems.Skills
         private void OnSkillPurchased(SkillNodeData nodeData)
         {
             RefreshUI();
+            AudioManager.Instance.PlaySFX("Confirmation");
         }
 
         private void OnSkillPointsChanged(int points)

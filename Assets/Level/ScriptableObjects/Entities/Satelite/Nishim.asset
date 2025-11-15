@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nishim
   m_EditorClassIdentifier: 
   constructibleName: Nishim
-  sprite: {fileID: 0}
+  sprite: {fileID: 976869767625186470, guid: b98b5f467971df44281ad822f1357722, type: 3}
   timeToBuild: 75
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

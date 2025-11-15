@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Multicore Chip
   m_EditorClassIdentifier: 
   researchId: multicore_chip
-  category: 0
+  category: 1
   displayName: Multicore Chip
   description: 
   icon: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WHO
   m_EditorClassIdentifier: 
   constructibleName: WHO
-  sprite: {fileID: 0}
+  sprite: {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   timeToBuild: 85
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}

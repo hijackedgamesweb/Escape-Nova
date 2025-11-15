@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nomon
   m_EditorClassIdentifier: 
   constructibleName: Nomon
-  sprite: {fileID: 0}
+  sprite: {fileID: -3782125344057952254, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
   timeToBuild: 40
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

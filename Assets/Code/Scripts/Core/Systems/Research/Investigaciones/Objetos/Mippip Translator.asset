@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Mippip Translator
   m_EditorClassIdentifier: 
   researchId: mippip_translator
-  category: 0
+  category: 1
   displayName: Mippip Translator
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
   prerequisites: []
   researchTimeInSeconds: 200
   resourceCosts:
