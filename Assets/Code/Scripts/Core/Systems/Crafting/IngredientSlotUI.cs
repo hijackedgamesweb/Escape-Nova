@@ -12,7 +12,6 @@ public class IngredientSlotUI : MonoBehaviour
 
     public void SetData(Sprite sprite, string itemName, int amountOwned, int amountNeeded)
     {
-        Debug.Log($"--- IngredientSlotUI.SetData() --- \nItem: {itemName}, Owned: {amountOwned}, Needed: {amountNeeded}, Sprite? {sprite != null}", this.gameObject);
 
         if (icon != null)
         {
