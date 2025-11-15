@@ -15667,7 +15667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1001283312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28584,6 +28584,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5728f6ad32fccc0469d96704808415db, type: 2}
   - {fileID: 11400000, guid: 7ca18aafb7d1f424d88b2de43f72c91d, type: 2}
   - {fileID: 11400000, guid: 17555edf1453eda4a91b5999f8254fc5, type: 2}
+  - {fileID: 11400000, guid: f4d69cee81ad7714a904da84053518c6, type: 2}
   resourceDataList:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
@@ -35441,7 +35442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57af7e721c04e6188d68b477328f68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryQuestId: win_game_quest
+  victoryQuestId: escape
   nombreEscenaCreditos: CreditsScene
   grupoCanvasFadeOut: {fileID: 1060925194}
   duracionFadeOut: 1.5

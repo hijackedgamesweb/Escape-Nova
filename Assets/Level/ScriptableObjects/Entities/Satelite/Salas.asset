@@ -22,11 +22,15 @@ MonoBehaviour:
   size: 0
   desc: "Este planeta produce un 25% m\xE1s de recursos"
   upgrades:
-  - rid: 2167832615999504385
+  - rid: 5265271245964312748
   references:
     version: 2
     RefIds:
-    - rid: 2167832615999504385
-      type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+    - rid: 5265271245964312748
+      type: {class: LocalSynergyUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        productionIncrement: 25
+        baseImprovementType: BonoSalasBase
+        basePercentage: 25
+        synergySkillId: SinergiaSalas50
+        synergyImprovementType: BonoSalasSinergia
+        synergyPercentage: 50

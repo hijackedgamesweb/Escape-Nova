@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Code.Scripts.Core.World;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
+using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Common;
 using Code.Scripts.UI.Menus.BuildingMenuPanel;
 using Code.Scripts.UI.Windows;
@@ -23,6 +24,12 @@ namespace Code.Scripts.UI.Menus
         private List<List<GameObject>> _planetSlots = new List<List<GameObject>>();
         
         private ConstructionType currentConstructionType = ConstructionType.Planet;
+
+        private void Awake()
+        {
+            ServiceLocator.RegisterService<OrbitOverview>(this);
+        }
+        
         private void Start()
         {
             DrawOrbit(0);
