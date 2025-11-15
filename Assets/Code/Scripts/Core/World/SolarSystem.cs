@@ -107,7 +107,7 @@ namespace Code.Scripts.Core.World
 
         public void BuildSpecialPlanet(STARSDataSO specialPlanetData)
         {
-            NotificationManager.Instance.CreateNotification($"Se ha construido: {specialPlanetData.constructibleName}!", NotificationType.Info);
+            //NotificationManager.Instance.CreateNotification($"Se ha construido: {specialPlanetData.constructibleName}!", NotificationType.Info);
             ConstructionEvents.OnConstructibleCreated?.Invoke(specialPlanetData);
         }
     }
