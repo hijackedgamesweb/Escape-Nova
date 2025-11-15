@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 2
   displayName: Salas
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 228398146440735941, guid: 83e2656a0a00d1e478ef14b6f3619257, type: 3}
   prerequisites:
   - researchId: salas_sat
     buildingId: 

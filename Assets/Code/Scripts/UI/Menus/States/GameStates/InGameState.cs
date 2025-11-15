@@ -32,6 +32,10 @@ namespace Code.Scripts.UI.Menus.States.GameStates
 
         public override void Exit(IStateManager gameManager)
         {
+            if (_gameTimeManager != null)
+            {
+                _gameTimeManager.Pause();
+            }
             _uiObject.gameObject.SetActive(false);
             _uiObject.returnBtn.onClick.RemoveAllListeners();
             AudioManager.Instance.StopMusic();

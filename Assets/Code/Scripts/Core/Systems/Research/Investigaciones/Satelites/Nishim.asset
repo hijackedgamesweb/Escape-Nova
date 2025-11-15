@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 2
   displayName: Nishim
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   prerequisites:
   - researchId: salas
     buildingId: 

@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 2
   displayName: Nomon
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -7014793757582525354, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
   prerequisites:
   - researchId: salas
     buildingId: 

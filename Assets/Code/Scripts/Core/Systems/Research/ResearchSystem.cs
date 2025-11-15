@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using Code.Scripts.Config;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
 
@@ -72,7 +74,17 @@ namespace Code.Scripts.Core.Systems.Research
             }
 
             _gameTime.OnCycleCompleted += OnCycleCompleted;
+            Planet.OnGlobalImprovementAdded += OnGlobalImprovementApplied;
             RecalculateResearchAvailability();
+        }
+        
+        private void OnDestroy()
+        {
+            if (_gameTime != null)
+            {
+                _gameTime.OnCycleCompleted -= OnCycleCompleted;
+            }
+            Planet.OnGlobalImprovementAdded -= OnGlobalImprovementApplied;
         }
 
         private void InitializeResearchDatabase(List<ResearchNode> availableResearch)
@@ -184,9 +196,19 @@ namespace Code.Scripts.Core.Systems.Research
         private int CalculateCyclesNeeded(float researchTimeInSeconds)
         {
             float secondsPerCycle = _timeConfig.secondsPerCycle;
-            return Mathf.CeilToInt(researchTimeInSeconds / secondsPerCycle);
+            float speedBonus = Planet.GetGlobalImprovement("GlobalCycleSpeed");
+            float effectiveTimeInSeconds = researchTimeInSeconds / (1 + (speedBonus / 100f));
+            return Mathf.CeilToInt(effectiveTimeInSeconds / secondsPerCycle);
         }
 
+        private void OnGlobalImprovementApplied(string improvementType, float percentage)
+        {
+            if (improvementType == "GlobalCycleSpeed")
+            {
+                RecalculateCurrentResearchCycles();
+            }
+        }
+        
         private void CompleteResearch(string researchId)
         {
             if (!_researchDatabase.ContainsKey(researchId)) return;
@@ -208,6 +230,7 @@ namespace Code.Scripts.Core.Systems.Research
 
             OnResearchCompleted?.Invoke(researchId);
             Events.ResearchEvents.CompleteResearch(researchNode);
+            NotificationManager.Instance.CreateNotification($"Research: {researchNode.name} completed", NotificationType.Info);
         }
 
         public bool CancelCurrentResearch()
@@ -258,6 +281,24 @@ namespace Code.Scripts.Core.Systems.Research
                 _researchStatus[researchId] = ResearchStatus.Available;
                 OnResearchUnlocked?.Invoke(researchId);
             }
+        }
+        
+        private void RecalculateCurrentResearchCycles()
+        {
+            if (!IsAnyResearchInProgress()) return;
+            
+            if (!_researchDatabase.TryGetValue(_currentResearchId, out ResearchNode research)) return;
+            float baseTimeInSeconds = research.researchTimeInSeconds;
+            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
+            float effectiveTimeInSeconds = baseTimeInSeconds / (1 + (speedBonus / 100f));
+            int newCyclesNeeded = Mathf.CeilToInt(effectiveTimeInSeconds / _timeConfig.secondsPerCycle);
+            if (_cyclesNeeded > 0)
+            {
+                float completionRatio = (float)_cyclesCompleted / _cyclesNeeded;
+                _cyclesCompleted = Mathf.FloorToInt(completionRatio * newCyclesNeeded);
+            }
+            _cyclesNeeded = newCyclesNeeded;
+            OnResearchProgress?.Invoke(_currentResearchId, Mathf.Clamp01((float)_cyclesCompleted / _cyclesNeeded));
         }
 
         public void RecalculateResearchAvailability()

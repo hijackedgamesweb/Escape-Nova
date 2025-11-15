@@ -47,6 +47,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             OnGlobalImprovementAdded -= HandleGlobalImprovementAdded;
             _stateManager?.SetState(null);
         }
+        
+        public static float GetGlobalImprovement(string improvementType)
+        {
+            _globalImprovements.TryGetValue(improvementType, out float value);
+            return value;
+        }
 
         public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
         {

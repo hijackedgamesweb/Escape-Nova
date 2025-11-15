@@ -16,7 +16,7 @@ MonoBehaviour:
   category: 2
   displayName: Caerus
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: -4481016797531701806, guid: 5957a7c775786ba4f94b4bcc3451d074, type: 3}
   prerequisites:
   - researchId: caerus_skill
     buildingId: 
