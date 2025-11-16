@@ -132,7 +132,7 @@ namespace Code.Scripts.Core.Systems.Storage
             if (data == null)
             {
                 descriptionItemName.text = "---";
-                descriptionText.text = "Selecciona un objeto del inventario para ver sus detalles.";
+                descriptionText.text = "Select an inventory item to see the details.";
                 descriptionItemSprite.sprite = null;
                 descriptionItemSprite.color = new Color(1,1,1,0); 
                 return;

@@ -218,7 +218,7 @@ public class CraftingPanelUI : MonoBehaviour
             float cyclesAsFloat = recipe.craftingTimeInSeconds / secondsPerCycle;
             int displayCycles = Mathf.CeilToInt(cyclesAsFloat);
             
-            detailTimeText.text = $"Tiempo: {displayCycles} ciclos";
+            detailTimeText.text = $"Time: {displayCycles} cicles";
         }
 
         foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);

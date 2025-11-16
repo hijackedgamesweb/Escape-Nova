@@ -214,7 +214,7 @@ namespace Code.Scripts.UI.Research
             float cyclesAsFloat = node.researchTimeInSeconds / secondsPerCycle;
             int displayCycles = Mathf.CeilToInt(cyclesAsFloat);
             
-            detailTimeText.text = $"Tiempo: {displayCycles} ciclos";
+            detailTimeText.text = $"Time: {displayCycles} cicles";
 
             foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
             foreach (var cost in node.resourceCosts)
@@ -258,21 +258,21 @@ namespace Code.Scripts.UI.Research
                 switch (status)
                 {
                     case ResearchStatus.Available:
-                        buttonText.text = "Investigar";
+                        buttonText.text = "Research";
                         break;
                     case ResearchStatus.Locked:
-                        buttonText.text = "Bloqueado";
+                        buttonText.text = "Blocked";
                         break;
                     case ResearchStatus.InProgress:
-                        buttonText.text = "En Progreso";
+                        buttonText.text = "In progress";
                         break;
                     case ResearchStatus.Completed:
-                        buttonText.text = "Completado";
+                        buttonText.text = "Completed";
                         break;
                 }
                 if (_researchSystem.IsAnyResearchInProgress() && status == ResearchStatus.Available)
                 {
-                    buttonText.text = "Investigación Ocupada";
+                    buttonText.text = "Occupied";
                 }
             }
         }
@@ -341,7 +341,7 @@ namespace Code.Scripts.UI.Research
         {
             if (resourcesText == null || _storageSystem == null) return;
             var resources = _storageSystem.GetAllResources();
-            string resourcesInfo = "Recursos: ";
+            string resourcesInfo = "Resources: ";
             foreach (var resource in resources)
             {
                 resourcesInfo += $"{resource.Key}: {resource.Value} ";
