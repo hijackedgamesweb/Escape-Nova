@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: yeah_science
   Title: Yeah, Science!
   Description: "Build the Storage Terminal and Research Station (S.T.A.R.S). \nWe
-    need a place for scientific excellence\n"
+    need a place for scientific excellence.\n"
   Objectives:
   - rid: 5265271264873545832
   Rewards:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: expansion
   Title: Expansion
-  Description: Research is the key to success
+  Description: Research is the key to success.
   Objectives:
   - rid: 5265271264873545974
   - rid: 6291952324994662400
