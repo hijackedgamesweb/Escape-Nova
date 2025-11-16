@@ -8,6 +8,33 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Pixellari SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/Pixellari SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/BehaviourAPI.UnityToolkit.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/BehaviourAPI.UnityToolkit.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BasicSoundComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BasicSoundComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BasicSpriteComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BasicSpriteComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BehaviourRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/BehaviourRunner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/GUISpriteComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/GUISpriteComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/IMovementComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/IMovementComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/IRendererComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/IRendererComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/ISoundComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/ISoundComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/ITalkComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/ITalkComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/NavmeshAgentMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/NavmeshAgentMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TMProTalkComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TMProTalkComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TextTalkComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TextTalkComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TransformMovementComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Components/TransformMovementComponent.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor/BehaviourAPI.UnityToolkit.Editor.asmdef" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor/BehaviourAPI.UnityToolkit.Editor.asmdef.meta" beforeDir="false" />
@@ -15,8 +42,103 @@
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor/InteractionMapPropertyDrawer.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor/NeedMapPropertyDrawer.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Editor/NeedMapPropertyDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectLocator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Nodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Nodes/UnityCurveFactor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Nodes/UnityCurveFactor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Nodes/UnityTimerDecorator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Nodes/UnityTimerDecorator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/CompoundSmartObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/CompoundSmartObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SimpleSmartObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SimpleSmartObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartAgent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartAgent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartInteractionProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartInteractionProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectLocator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectLocator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Components/SmartObjectManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/InteractionMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/InteractionMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/NeedMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/NeedMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/SerializedMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/SerializedMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/SmartAgentSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/Data/SmartAgentSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/NeedRequestAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/NeedRequestAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/RandomRequestAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/RandomRequestAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/TargetRequestAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/TargetRequestAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/UnityRequestAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/SmartObjects/RequestAction/UnityRequestAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/ITaskDisplayable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/ITaskDisplayable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/SelectionGroupAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/SelectionGroupAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Debug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Debug/DebugBreakAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Debug/DebugBreakAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Debug/DebugLogAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Debug/DebugLogAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/DelayAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/DelayAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/ChaseAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/ChaseAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/FleeAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/FleeAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/MoveToMousePosAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/MoveToMousePosAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/PathingAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/PathingAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/PatrolAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/PatrolAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/WalkAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Movement/WalkAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sound/PlaySoundAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sound/PlaySoundAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sound/SetVolumeAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sound/SetVolumeAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeAlphaAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeAlphaAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeSpriteAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeSpriteAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeTintAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/ChangeTintAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/FlipSpriteAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Sprite/FlipSpriteAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Talk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Talk/TalkAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/Talk/TalkAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/UnityAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Actions/UnityAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/DistancePerception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/DistancePerception.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/IsGroundedPerception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/IsGroundedPerception.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/IsLookingAtPerception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/IsLookingAtPerception.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/UnityPerception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/UnityPerception.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/UnityTimerPerception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/Tasks/Unity Perceptions/UnityTimerPerception.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/UnityExecutionContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Behaviour API/UnityToolkit/UnityExecutionContext.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/BT + FSM + US - Pizza.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/BT + FSM + US - Pizza/Animations.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/BT + FSM + US - Pizza/Animations/EnterRecipeNote.anim" beforeDir="false" />
@@ -947,7 +1069,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/SmartObjects/Textures.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/SmartObjects/Textures/msVFX_Stylized Smoke 1_Texture.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/Demo/SmartObjects/Textures/msVFX_Stylized Smoke 1_Texture.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/GUI Designer.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/GUI Designer/Editor.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/GUI Designer/Editor/BehaviourAPI.UnityToolkit.GUIDesigner.Editor.asmdef" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourAPI Unity Package/GUI Designer/Editor/BehaviourAPI.UnityToolkit.GUIDesigner.Editor.asmdef.meta" beforeDir="false" />
@@ -1291,7 +1412,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "xabi",
+    "git-widget-placeholder": "ivan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -1388,6 +1509,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
