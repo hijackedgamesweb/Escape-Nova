@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: daduen
   category: 0
   displayName: Daduen
-  description: 
+  description: Unlocks the planet 'Daduen'.
   icon: {fileID: 6533525794168272614, guid: c6844dc1c1c4624438d7821f63a30727, type: 3}
   prerequisites:
   - researchId: primal_planets

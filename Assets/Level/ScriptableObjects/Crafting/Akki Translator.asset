@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_akki_translator
   displayName: Akki Translator
-  description: Device needed to comunicate with another species
+  description: Automatic translator that allows communication with the Akki species.
   icon: {fileID: -999866019736742712, guid: 24e9ff8da265b1349a2f4c59293cecde, type: 3}
   ingredients:
   - resourceType: 0

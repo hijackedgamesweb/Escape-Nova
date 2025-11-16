@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: research_mippip
   Title: Enable SkillTree
-  Description: This enables the Skill Tree tab
+  Description: This enables the Skill Tree tab.
   Objectives:
   - rid: 5265271264873545894
   Rewards: []

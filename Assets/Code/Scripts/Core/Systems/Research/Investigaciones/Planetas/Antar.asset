@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: antar
   category: 0
   displayName: Antar
-  description: 
+  description: Unlocks the planet 'Antar'.
   icon: {fileID: 8492951607903232514, guid: 212db910e48e26d4dafc8c7ec7f585bc, type: 3}
   prerequisites:
   - researchId: primal_planets

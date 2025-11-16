@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: the_basics
   Title: The basics
-  Description: Familiarize yourself with the basics
+  Description: Familiarize yourself with the basics.
   Objectives: []
   Rewards: []
   references:

@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: liquefacta
   category: 0
   displayName: Liquefacta
-  description: 
+  description: Unlocks the planet 'Liquefacta'.
   icon: {fileID: 3098759606283545503, guid: 022f1e2ca35b5824b9cdaa7c711b1df5, type: 3}
   prerequisites:
   - researchId: primal_planets

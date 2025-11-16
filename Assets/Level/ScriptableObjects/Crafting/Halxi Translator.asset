@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_halxi_translator
   displayName: Halxi Translator
-  description: Device needed to comunicate with another species
+  description: Universal automatic translator that allows communication with the
+    Halxi species.
   icon: {fileID: -6657923694154243408, guid: c544afcce22888343abd1144cf0c910f, type: 3}
   ingredients:
   - resourceType: 0

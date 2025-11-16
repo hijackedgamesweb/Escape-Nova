@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_skulg_translator
   displayName: Skulg Translator
-  description: Device needed to comunicate with another species
+  description: Universal automatic translator that allows communication with the
+    Skulg species.
   icon: {fileID: -7877341826017078353, guid: e2d5ace7c64c7f04dbc786c231d49a20, type: 3}
   ingredients:
   - resourceType: 0

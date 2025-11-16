@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_multicore_chip
   displayName: Multicore Chip
-  description: Multicore Chip
+  description: A very useful multicore chip for building objects from a very technologically
+    advanced civilization.
   icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
   ingredients:
   - resourceType: 0
