@@ -87,7 +87,6 @@ GameObject:
   - component: {fileID: 4062007524301902480}
   - component: {fileID: 9139568570293212118}
   - component: {fileID: 3533661212469914757}
-  - component: {fileID: 5123034786707589272}
   m_Layer: 5
   m_Name: NotificationPrefab
   m_TagString: Untagged
@@ -171,20 +170,6 @@ MonoBehaviour:
   messageText: {fileID: 6927714239255326205}
   displayDuration: 5
   closeBtn: {fileID: 5464888668667345934}
---- !u!114 &5123034786707589272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5984171325055385231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0175b6130aa5475ebd44f17ec09de469, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 6927714239255326205}
-  backgroundImage: {fileID: 500760986368670244}
 --- !u!1 &7978238055269699520
 GameObject:
   m_ObjectHideFlags: 0

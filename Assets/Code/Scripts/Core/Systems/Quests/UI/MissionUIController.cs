@@ -146,7 +146,7 @@ namespace Code.Scripts.Core.Systems.Quests.UI
             LayoutRebuilder.ForceRebuildLayoutImmediate(subtaskContainer as RectTransform);
 
             questDescriptionText.text = quest.Description;
-            recompensaHeaderText.text = "Recompensas:";
+            recompensaHeaderText.text = "Rewards:";
             
             foreach (GameObject rewardObj in activeRewardObjects)
             {
