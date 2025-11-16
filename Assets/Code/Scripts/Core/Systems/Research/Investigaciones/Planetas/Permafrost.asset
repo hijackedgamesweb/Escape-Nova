@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: permafrost
   category: 0
   displayName: Permafrost
-  description: 
+  description: Unlocks the planet 'Permafrost'.
   icon: {fileID: -2915556048162738929, guid: 5a02eccae3fe4ab4e8909edf6afeed36, type: 3}
   prerequisites:
   - researchId: primal_planets

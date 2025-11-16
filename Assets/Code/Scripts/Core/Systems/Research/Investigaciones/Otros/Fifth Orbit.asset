@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   researchId: fifth_orbit
   category: 3
-  displayName: Fifth Orbit
-  description: You unlock a fifth orbit with space to build more planets
+  displayName: Additional Orbit
+  description: You unlock an additional orbit with space to build more planets.
   icon: {fileID: -9181567470229685275, guid: 1035573da4d71f541be9d5f338156472, type: 3}
   prerequisites:
   - researchId: fourth_orbit

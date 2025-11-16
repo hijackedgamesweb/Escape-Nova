@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: e8030000c80000009001000032000000
   size: 0
-  desc: "Este planeta produce un 100% m\xE1s de recursos"
+  desc: This planet produces 100% more resources.
   upgrades:
   - rid: 2167832615999504385
   references:

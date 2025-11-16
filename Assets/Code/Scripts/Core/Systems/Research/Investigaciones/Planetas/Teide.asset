@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: teide
   category: 0
   displayName: Teide
-  description: 
+  description: Unlocks the planet 'Teide'.
   icon: {fileID: -6087812442637709819, guid: c4f4d3b324eae084bb62807cf59e57fb, type: 3}
   prerequisites:
   - researchId: primal_planets

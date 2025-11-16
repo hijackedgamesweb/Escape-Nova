@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: freezed_core
   category: 1
   displayName: Freezed Core
-  description: 
+  description: Unlocks the item 'Freezed Core'.
   icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300

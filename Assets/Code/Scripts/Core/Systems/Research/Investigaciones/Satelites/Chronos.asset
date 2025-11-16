@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: chronos
   category: 2
   displayName: Chronos
-  description: 
+  description: Unlocks the planet 'Chronos'.
   icon: {fileID: -4083543167136710652, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   prerequisites:
   - researchId: caerus

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_perfect_sphere
   displayName: Perfect Sphere
-  description: Multicore Chip
+  description: The closest object to perfection found in your solar system.
   icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
   ingredients:
   - resourceType: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: utopia
   category: 0
   displayName: Utopia
-  description: 
+  description: Unlocks the planet 'Utopia'.
   icon: {fileID: -1803372714748242454, guid: b82d76b630145da4f8722b1829650d1c, type: 3}
   prerequisites:
   - researchId: primal_planets

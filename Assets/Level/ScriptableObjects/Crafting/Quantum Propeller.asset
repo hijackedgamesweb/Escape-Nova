@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_quantum_propeller
   displayName: Quantum Propeller
-  description: Multicore Chip
+  description: A quantum propeller necessary for interstellar travels.
   icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   ingredients:
   - resourceType: 0

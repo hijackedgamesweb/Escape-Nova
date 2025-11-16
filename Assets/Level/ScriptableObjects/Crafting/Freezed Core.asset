@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_freezed_core
   displayName: Freezed Core
-  description: Freezed Core
+  description: A core with a temperature close to absolute zero. Highly useful for
+    constructions requiring powerful cooling.
   icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
   ingredients:
   - resourceType: 1

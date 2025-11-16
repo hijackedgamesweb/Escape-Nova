@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   researchId: second_orbit
   category: 3
-  displayName: Second Orbit
-  description: You unlock a second orbit with space to build more planets
+  displayName: Additional Orbit
+  description: You unlock an additional orbit with space to build more planets.
   icon: {fileID: 3501154977271414607, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
   prerequisites:
   - researchId: two_orbit
