@@ -26,11 +26,11 @@ namespace Code.Scripts.UI.HUD
 
         private void UpdateUI()
         {
-            _sandText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Arena));
-            _stoneText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Piedra));
+            _sandText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Sand));
+            _stoneText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Stone));
             _metalText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Metal));
-            _iceText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Hielo));
-            _lavavagiText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Fuego));
+            _iceText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Ice));
+            _lavavagiText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Fire));
         }
 
         private void OnDestroy()

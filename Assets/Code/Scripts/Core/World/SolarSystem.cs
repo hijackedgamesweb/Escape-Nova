@@ -80,9 +80,10 @@ namespace Code.Scripts.Core.World
             {
                 return;
             }
-
+            
             planet.AddSatelite(sateliteDataSo);
             ConstructionEvents.OnConstructibleCreated?.Invoke(sateliteDataSo);
+            NotificationManager.Instance.CreateNotification($"A satellite named: {sateliteDataSo.name} was added to {planet.Name}", NotificationType.Info);
         }
         public void RemovePlanet(int orbit, int positionInOrbit)
         {
