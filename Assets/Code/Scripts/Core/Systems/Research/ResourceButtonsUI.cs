@@ -59,7 +59,7 @@ public class ResourceButtonsUI : MonoBehaviour
         if (addWoodButton != null)
         {
             addWoodButton.onClick.RemoveAllListeners();
-            addWoodButton.onClick.AddListener(() => AddResource(ResourceType.Arena, woodAmount));
+            addWoodButton.onClick.AddListener(() => AddResource(ResourceType.Sand, woodAmount));
         }
         else
         {
@@ -68,7 +68,7 @@ public class ResourceButtonsUI : MonoBehaviour
         if (addStoneButton != null)
         {
             addStoneButton.onClick.RemoveAllListeners();
-            addStoneButton.onClick.AddListener(() => AddResource(ResourceType.Piedra, stoneAmount));
+            addStoneButton.onClick.AddListener(() => AddResource(ResourceType.Stone, stoneAmount));
         }
         else
         {
@@ -112,10 +112,10 @@ public class ResourceButtonsUI : MonoBehaviour
             return;
         }
 
-        int currentWood = _storageSystem.GetResourceAmount(ResourceType.Arena);
-        int currentStone = _storageSystem.GetResourceAmount(ResourceType.Piedra);
-        _storageSystem.AddResource(ResourceType.Arena, 200 - currentWood);
-        _storageSystem.AddResource(ResourceType.Piedra, 100 - currentStone);
+        int currentWood = _storageSystem.GetResourceAmount(ResourceType.Sand);
+        int currentStone = _storageSystem.GetResourceAmount(ResourceType.Stone);
+        _storageSystem.AddResource(ResourceType.Sand, 200 - currentWood);
+        _storageSystem.AddResource(ResourceType.Stone, 100 - currentStone);
         
     }
 

@@ -56,13 +56,13 @@ namespace Code.Scripts.Core.Systems.Storage
 
         void AddWood()
         {
-            bool success = _storage.AddResource(ResourceType.Arena, addWoodAmount);
+            bool success = _storage.AddResource(ResourceType.Sand, addWoodAmount);
             Debug.Log(success ? $"Added {addWoodAmount} Wood" : "Failed to add Wood");
         }
 
         void AddStone()
         {
-            bool success = _storage.AddResource(ResourceType.Piedra, addStoneAmount);
+            bool success = _storage.AddResource(ResourceType.Stone, addStoneAmount);
             Debug.Log(success ? $"Added {addStoneAmount} Stone" : "Failed to add Stone");
         }
 
@@ -74,13 +74,13 @@ namespace Code.Scripts.Core.Systems.Storage
 
         void ConsumeWood()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Arena, consumeWoodAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Sand, consumeWoodAmount);
             Debug.Log(success ? $"Consumed {consumeWoodAmount} Wood" : "Not enough Wood");
         }
 
         void ConsumeStone()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Piedra, consumeStoneAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Stone, consumeStoneAmount);
             Debug.Log(success ? $"Consumed {consumeStoneAmount} Stone" : "Not enough Stone");
         }
         
