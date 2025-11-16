@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Code.Scripts.Patterns.Singleton;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Core.Managers
 {
@@ -25,6 +26,8 @@ namespace Code.Scripts.Core.Managers
             {
                 _currentScreen.Hide();
             }
+            ClearUIFocus();
+            
             _currentScreen = screens.Find(screen => screen is T);
             _currentScreen.Show(parameter);
             
@@ -36,6 +39,14 @@ namespace Code.Scripts.Core.Managers
         public BaseUIScreen GetCurrentScreen()
         {
             return _currentScreen;
+        }
+        
+        public void ClearUIFocus()
+        {
+            if (EventSystem.current != null)
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+            }
         }
     }
 }

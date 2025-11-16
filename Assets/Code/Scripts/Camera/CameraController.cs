@@ -50,6 +50,9 @@ namespace Code.Scripts.Camera
             float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (scroll != 0f)
             {
+                _zoomTween?.Kill();
+                _moveTween?.Kill(); 
+
                 Vector3 mouseWorldPosBeforeZoom = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 
                 float newSize = _mainCamera.orthographicSize - scroll * _zoomSpeed;
@@ -77,6 +80,8 @@ namespace Code.Scripts.Camera
 
             if (_isDragging)
             {
+                _moveTween?.Kill();
+                
                 Vector3 currentMousePosition = Input.mousePosition;
                 Vector3 difference = _mainCamera.ScreenToWorldPoint(currentMousePosition) - _mainCamera.ScreenToWorldPoint(_lastMousePosition);
                 transform.position -= difference;
@@ -152,7 +157,6 @@ namespace Code.Scripts.Camera
         public void ClearTarget()
         {
             _target = null;
-
             _zoomTween?.Kill();
             _zoomTween = DOTween.To(
                 () => _mainCamera.orthographicSize,
@@ -160,6 +164,12 @@ namespace Code.Scripts.Camera
                 _maxZoom,
                 1f
             ).SetEase(Ease.OutCirc);
+        }
+
+        public void ResetDragState()
+        {
+            _isDragging = false;
+            _velocity = Vector3.zero;
         }
     }
 }

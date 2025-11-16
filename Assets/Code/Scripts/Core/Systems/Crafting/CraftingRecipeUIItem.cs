@@ -21,6 +21,8 @@ namespace Code.Scripts.UI.Crafting
         private CraftingSystem _craftingSystem;
         private StorageSystem _storageSystem;
 
+        public string RecipeId { get; private set; }
+
         public void Initialize(CraftingRecipe recipe, CraftingPanelUI panel, CraftingSystem system)
         {
             _recipe = recipe;
@@ -31,7 +33,7 @@ namespace Code.Scripts.UI.Crafting
 
             itemName.text = _recipe.displayName;
             itemIcon.sprite = _recipe.icon; 
-
+            RecipeId = _recipe.recipeId;
 
             SetSelected(false);
             UpdateCraftableStatus();

@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using Code.Scripts.Core.Systems.Storage;
@@ -21,6 +22,13 @@ namespace Code.Scripts.Core.Managers
         {
             InitializeStates();
             ServiceLocator.RegisterService(this);
+            SystemEvents.OnRequestMainMenu += HandleRequestMainMenu;
+        }
+        
+        private void OnDestroy()
+        {
+            // Anular la suscripción al destruir
+            SystemEvents.OnRequestMainMenu -= HandleRequestMainMenu;
         }
         
         public IStateManager GetStateManager()
@@ -41,6 +49,12 @@ namespace Code.Scripts.Core.Managers
         private void Update()
         {
             _stateManager.GetCurrentState()?.Update();
+        }
+        
+        private void HandleRequestMainMenu()
+        {
+            // Al recibir la señal de ESC, forzamos el cambio al estado de Menú Principal.
+            _stateManager.SetState(new MainMenuState(_stateManager));
         }
     }
 }

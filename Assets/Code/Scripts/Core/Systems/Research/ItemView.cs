@@ -51,6 +51,8 @@ public class ItemView : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    public bool IsSelected => selectionHighlight != null && selectionHighlight.activeSelf;
+    
     public void SetSelected(bool selected)
     {
         if (selectionHighlight != null)
