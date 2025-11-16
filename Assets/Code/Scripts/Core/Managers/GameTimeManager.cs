@@ -1,5 +1,6 @@
 using System;
 using Code.Scripts.Config;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace Code.Scripts.Core.Managers
     public class GameTimeManager : MonoBehaviour, IGameTime
     {
         [Header("Configuración de Derrota")]
-        [SerializeField] public int maxCycles = 5; 
+        [SerializeField] public int maxCycles = 1000; 
         [Header("Configuración de tiempo")]
         [SerializeField] private TimeConfig timeConfig;
 
@@ -68,7 +69,7 @@ namespace Code.Scripts.Core.Managers
                 if (CurrentCycle >= maxCycles) 
                 {
                     Pause(); 
-                    OnGameOver?.Invoke(); 
+                    SystemEvents.TriggerGameOver();
                     enabled = false;
                     
                     return;
