@@ -17,6 +17,9 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
         [SerializeField] private TMP_Text _planetName;
         [SerializeField] private TMP_Text _planetProductionResource;
         [SerializeField] private ResourceCostInitializer _resourceCostInitializer;
+        [SerializeField] private Color _selectedColor = Color.white;
+        [SerializeField] private Color _availableColor = Color.red;
+        [SerializeField] private Color _unavailableColor = Color.gray;
 
         PlanetListInitializer _parentInitializer;
         public bool IsSelected { get; set; }
@@ -54,12 +57,12 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
             if (!IsSelected)
             {
-                _planetSprite.color = canAfford ? Color.white : Color.red;
+                _planetSprite.color = canAfford ? _availableColor : _unavailableColor;
                 IsAffordable = canAfford;
             } else if (IsSelected && !canAfford)
             {
                 IsSelected = false;
-                _planetSprite.color = Color.red;
+                _planetSprite.color = _unavailableColor;
                 IsAffordable = false;
             }
         }
@@ -110,11 +113,11 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
         {
             if (IsSelected)
             {
-                _planetSprite.color = Color.yellow;
+                GetComponent<Image>().color = _selectedColor;
             }
             else
             {
-                _planetSprite.color = Color.white;
+                GetComponent<Image>().color = _availableColor;
             }
         }
     }

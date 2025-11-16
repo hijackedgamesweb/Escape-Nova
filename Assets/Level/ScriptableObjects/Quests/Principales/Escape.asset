@@ -36,6 +36,6 @@ MonoBehaviour:
     - rid: 6291952346365689938
       type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build the item "Quantum Propeller"
+        objectiveDescription: Build the "Quantum Propeller"
         isCompleted: 0
         requiredRecipeId: receta_quantum_propeller

@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529413, g: 0.5254902, b: 0.9490197, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -185,6 +185,9 @@ MonoBehaviour:
   _planetName: {fileID: 8616053410803243100}
   _planetProductionResource: {fileID: 3420660800528141555}
   _resourceCostInitializer: {fileID: 7510557941215057270}
+  _selectedColor: {r: 0.9490196, g: 0.92941177, b: 0.15686275, a: 1}
+  _availableColor: {r: 1, g: 1, b: 1, a: 1}
+  _unavailableColor: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 1}
 --- !u!1 &4330329035407218179
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,13 +518,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8223966894192052187}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.078431375, g: 0.29803923, b: 0.6039216, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

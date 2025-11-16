@@ -14,27 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: yeah_science
   Title: Yeah, Science!
-  Description: We need a place for scientific excellence
+  Description: "Build the Storage Terminal and Research Station (S.T.A.R.S). \nWe
+    need a place for scientific excellence\n"
   Objectives:
   - rid: 5265271264873545832
   Rewards:
   - rid: 5265271264873545959
+  - rid: 967675058590056524
+  - rid: 967675058590056525
   references:
     version: 2
     RefIds:
+    - rid: 967675058590056524
+      type: {class: EmptyReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Storage menu
+    - rid: 967675058590056525
+      type: {class: EmptyReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Research menu
     - rid: 5265271264873545832
       type: {class: BuildStarsPlanet, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build the Storage Terminal and Research Station (S.T.A.R.S)
+        objectiveDescription: Build the  S.T.A.R.S
         isCompleted: 0
         starsPlanetData: {fileID: 11400000, guid: c4df4abe9c5220c4bbe9ecf4c73497af, type: 2}
     - rid: 5265271264873545959
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
-        Description: 'Unlocks the Research menu
-
-          Unlocks the Storage menu
-
-          Unlock
-          the "Primal Planets" Research'
+        Description: Unlock the "Primal Planets" Research
         researchIdToUnlock: primal_planets
