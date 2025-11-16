@@ -12,9 +12,9 @@ namespace Code.Scripts.Core.Systems.Skills
     public class SkillTreeManager : MonoBehaviour
     {
         [Header("Skill Point Settings")]
-        [SerializeField] private int initialSkillPoints = 3;
+        [SerializeField] private int initialSkillPoints = 2;
         [SerializeField] private int skillPointsPerCycle = 1;
-        [SerializeField] private int cyclesPerPoint = 10;
+        [SerializeField] private int cyclesPerPoint = 150;
 
         [Header("Constellations")]
         [SerializeField] private List<SkillConstellation> constellations = new List<SkillConstellation>();

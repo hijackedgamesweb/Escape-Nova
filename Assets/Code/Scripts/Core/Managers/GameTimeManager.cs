@@ -97,5 +97,11 @@ namespace Code.Scripts.Core.Managers
         {
             TimeScale = _lastKnownTimeScale;
         }
+        
+        //ESTE METODO EXISTE SOLO PARA DEBUGGEAR (LO USA EL SCRIPT "EscapeKeyListener.cs" HAY QUE BORRAR PARA EL RELESE
+        public void SetCurrentCycle(int cycle)
+        {
+            CurrentCycle += cycle;
+        }
     }
 }

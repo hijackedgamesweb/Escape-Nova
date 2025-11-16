@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: nomon
   category: 2
   displayName: Nomon
-  description: Unlocks the planet 'Nomon'.
+  description: Unlocks the satellite 'Nomon'.
   icon: {fileID: -7014793757582525354, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
   prerequisites:
   - researchId: salas

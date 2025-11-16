@@ -56,11 +56,11 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        storage.AddResource(ResourceType.Sand, 100000);
-        storage.AddResource(ResourceType.Stone, 100000); 
-        storage.AddResource(ResourceType.Metal, 100000); 
-        storage.AddResource(ResourceType.Ice, 100000); 
-        storage.AddResource(ResourceType.Fire, 100000); 
+        storage.AddResource(ResourceType.Sand, 0);
+        storage.AddResource(ResourceType.Stone, 100);
+        storage.AddResource(ResourceType.Metal, 0);
+        storage.AddResource(ResourceType.Ice, 0);
+        storage.AddResource(ResourceType.Fire, 0);
         
     }
     private void LogInitialState()

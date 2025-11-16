@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: luna
   category: 2
   displayName: Luna
-  description: Unlocks the planet 'Luna'.
+  description: Unlocks the satellite 'Luna'.
   icon: {fileID: 4125636645744980110, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
   prerequisites: []
   researchTimeInSeconds: 750
