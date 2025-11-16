@@ -397,11 +397,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 12.756134, y: 28.609764}
+  scrollPos: {x: 189.53429, y: 52.661247}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 521
-  zoom: 1
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -4693,7 +4693,7 @@ GameObject:
   - component: {fileID: 1819480866}
   - component: {fileID: 1819480865}
   m_Layer: 5
-  m_Name: EMPERGOD
+  m_Name: NOVA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4738,7 +4738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EMPERGOD
+  m_text: NOVA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
   m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}

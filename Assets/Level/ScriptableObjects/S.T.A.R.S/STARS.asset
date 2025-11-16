@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: STARS
   m_EditorClassIdentifier: 
   constructibleName: S.T.A.R.S
-  sprite: {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  sprite: {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}
   timeToBuild: 0
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

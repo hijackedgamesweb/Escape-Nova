@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/Prefabs/SubtaskPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/Prefabs/SubtaskPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/Investigaciones/Planetas/Primal planets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Research/Investigaciones/Planetas/Primal planets.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/Resources/ResourceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Storage/Resources/ResourceType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/CreditsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/CreditsScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/S.T.A.R.S/STARS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/S.T.A.R.S/STARS.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <workItem from="1763248516505" duration="6580000" />
       <workItem from="1763288805144" duration="7382000" />
       <workItem from="1763299180375" duration="737000" />
-      <workItem from="1763306144779" duration="1095000" />
+      <workItem from="1763306144779" duration="2865000" />
     </task>
     <servers />
   </component>
