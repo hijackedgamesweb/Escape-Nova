@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestId: expansion
   Title: Expansion
-  Description: Research is the key to success
+  Description: Research is the key to success.
   Objectives:
   - rid: 5265271264873545974
   - rid: 6291952324994662400
@@ -40,13 +40,13 @@ MonoBehaviour:
     - rid: 6291952324994662400
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Buld the planet "Leyev"
+        objectiveDescription: Build the planet "Leyev"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 383814b23fff2944fa3c79d18fa1b77c, type: 2}
     - rid: 6291952324994662401
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Buld the planet "Kados"
+        objectiveDescription: Build the planet "Kados"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 5b0b6a70d6aa7304198be35197d38bfc, type: 2}
     - rid: 6291952324994662402

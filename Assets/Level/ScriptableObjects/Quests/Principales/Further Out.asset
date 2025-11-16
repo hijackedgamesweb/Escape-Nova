@@ -25,7 +25,7 @@ MonoBehaviour:
     - rid: 6291952346365689933
       type: {class: CompleteResearchObjective, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Reserch the "Second Orbit"
+        objectiveDescription: Research the "Second Orbit"
         isCompleted: 0
         requiredResearch: {fileID: 11400000, guid: f4d69cee81ad7714a904da84053518c6, type: 2}
     - rid: 6291952346365689934
