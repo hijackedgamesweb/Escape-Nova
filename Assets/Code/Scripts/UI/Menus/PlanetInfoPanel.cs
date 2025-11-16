@@ -120,6 +120,7 @@ namespace Code.Scripts.UI.Menus
         private void OnCloseButtonClicked()
         {
             UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
+            AudioManager.Instance.PlaySFX("Close");
             HidePanel();
         }
         
