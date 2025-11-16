@@ -27,8 +27,8 @@ namespace Code.Scripts.Core.Managers
         
         private void OnDestroy()
         {
-            // Anular la suscripción al destruir
             SystemEvents.OnRequestMainMenu -= HandleRequestMainMenu;
+            SystemEvents.OnGameOver -= HandleGameOver;
         }
         
         public IStateManager GetStateManager()
@@ -53,8 +53,12 @@ namespace Code.Scripts.Core.Managers
         
         private void HandleRequestMainMenu()
         {
-            // Al recibir la señal de ESC, forzamos el cambio al estado de Menú Principal.
             _stateManager.SetState(new MainMenuState(_stateManager));
+        }
+        
+        private void HandleGameOver()
+        {
+            _stateManager.SetState(new GameOverState(_stateManager));
         }
     }
 }
