@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: sekarral
   category: 0
   displayName: Sekarral
-  description: 
+  description: Unlocks the planet 'Sekarral'.
   icon: {fileID: 3369094531837729759, guid: cfe8fdd31d52c1f4da9eda13b6272b58, type: 3}
   prerequisites:
   - researchId: primal_planets

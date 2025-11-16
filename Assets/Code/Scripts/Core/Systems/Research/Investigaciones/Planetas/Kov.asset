@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: kov
   category: 0
   displayName: Kov
-  description: 
+  description: Unlocks the planet 'Kov'.
   icon: {fileID: -6212125805387884322, guid: e4ccb77eb56d2f6419116c69b15a5fe8, type: 3}
   prerequisites:
   - researchId: primal_planets

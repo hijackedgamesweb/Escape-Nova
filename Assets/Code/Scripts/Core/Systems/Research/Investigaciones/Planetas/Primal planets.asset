@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: primal_planets
   category: 0
   displayName: Primal planets
-  description: Unlocks the first bach of the most basic planets
+  description: Unlocks the first batch of the most basic planets.
   icon: {fileID: 0}
   prerequisites:
   - researchId: primal_research

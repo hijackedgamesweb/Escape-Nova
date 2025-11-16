@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: dimidium
   category: 0
   displayName: Dimidium
-  description: 
+  description: Unlocks the planet 'Dimidium'.
   icon: {fileID: 1199031869328478581, guid: e927cf56d6e47b44997291dc85d71838, type: 3}
   prerequisites:
   - researchId: primal_planets

@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: e8030000e8030000e8030000e8030000e8030000
   size: 0
-  desc: Cada 100 ciclos solares, otorga 1 punto de habilidad
+  desc: Every 100 solar cycles, it provides 1 skill point.
   upgrades: []
   references:
     version: 2

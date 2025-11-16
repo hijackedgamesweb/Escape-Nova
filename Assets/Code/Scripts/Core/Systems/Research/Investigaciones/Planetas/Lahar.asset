@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: lahar
   category: 0
   displayName: Lahar
-  description: 
+  description: Unlocks the planet 'Lahar'.
   icon: {fileID: 1765669588405716114, guid: 12f970e8d59067841ac0f0a4528ddee7, type: 3}
   prerequisites:
   - researchId: primal_planets

@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   buildCostAmounts: f4010000
   size: 0
-  desc: "El tiempo de investigaci\xF3n se reduce en un 35%"
+  desc: Research time is reduced by 35%.
   upgrades: []
   references:
     version: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: saxum
   category: 0
   displayName: Saxum
-  description: 
+  description: Unlocks the planet 'Saxum'.
   icon: {fileID: 3433697384172529073, guid: 08ed824dd8f246343bc0dadd152ed85e, type: 3}
   prerequisites:
   - researchId: primal_planets

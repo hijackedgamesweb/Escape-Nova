@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: pleurus
   category: 0
   displayName: Pleurus
-  description: 
+  description: Unlocks the planet 'Pleurus'.
   icon: {fileID: -2160696426671699655, guid: ac732039df9d3034e98bc93bff181a86, type: 3}
   prerequisites:
   - researchId: primal_planets

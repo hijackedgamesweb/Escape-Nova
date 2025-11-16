@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: litosidera
   category: 0
   displayName: Litosidera
-  description: 
+  description: Unlocks the planet 'Litosidera'.
   icon: {fileID: 1121215930053453493, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
   prerequisites:
   - researchId: primal_planets
