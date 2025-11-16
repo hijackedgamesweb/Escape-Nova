@@ -18,7 +18,7 @@ MonoBehaviour:
   description: 
   icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
   prerequisites: []
-  researchTimeInSeconds: 1
+  researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0
     amount: 750
