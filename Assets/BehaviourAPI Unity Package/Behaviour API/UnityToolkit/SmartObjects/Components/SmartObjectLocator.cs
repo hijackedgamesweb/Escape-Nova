@@ -43,7 +43,7 @@ namespace BehaviourAPI.UnityToolkit
             // Actualizar el temporizador
             _timer += Time.deltaTime;
 
-            // Verificar si ha pasado el tiempo suficiente para realizar una comprobación
+            // Verificar si ha pasado el tiempo suficiente para realizar una comprobaciï¿½n
             if (_timer >= intervalTime)
             {
                 LocateObjects();                
@@ -76,6 +76,7 @@ namespace BehaviourAPI.UnityToolkit
         /// <returns>The list of available smart objects</returns>
         public List<SmartObject> GetSmartObjects() => _availableSmartObjects;
 
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             UnityEditor.Handles.color = gizmoColor;
@@ -88,5 +89,6 @@ namespace BehaviourAPI.UnityToolkit
 
             OnDrawGizmosSelected();
         }
+#endif
     }
 }
