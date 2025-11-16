@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caerus 1
   m_EditorClassIdentifier: 
   nodeName: .....
-  description: "Don\xB4t Buy it"
+  description: Dont Buy it
   skillPointCost: 100
   prerequisiteNodes:
   - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}

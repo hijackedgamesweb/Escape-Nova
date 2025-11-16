@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caerus 2
   m_EditorClassIdentifier: 
   nodeName: ..........
-  description: I told you not to buy it
+  description: I told you not to buy it...
   skillPointCost: 200
   prerequisiteNodes:
   - {fileID: 11400000, guid: c1d7c3e557737dd4c9701e454be64c74, type: 2}
