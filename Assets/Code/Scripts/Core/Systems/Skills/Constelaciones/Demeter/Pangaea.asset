@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pangaea
   m_EditorClassIdentifier: 
   nodeName: Pangaea
-  description: All your plannets generate 100% more resources
+  description: All your planets generate 100% more resources
   skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 75662143070b18e4391ddde9a57f6fcb, type: 2}

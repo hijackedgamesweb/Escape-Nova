@@ -18,10 +18,6 @@ public class ResearchInitializer : MonoBehaviour
     
     [SerializeField] private InventoryData startingInventory;
     
-    [Header("Test Resources")]
-    [SerializeField] private int initialWood = 100;
-    [SerializeField] private int initialStone = 100;
-    
     private ResearchSystem _researchSystem;
     private StorageSystem _storageSystem;
 
@@ -60,11 +56,11 @@ public class ResearchInitializer : MonoBehaviour
     {
         StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
     
-        storage.AddResource(ResourceType.Arena, 1000);
-        storage.AddResource(ResourceType.Piedra, 1000); 
-        storage.AddResource(ResourceType.Metal, 1000); 
-        storage.AddResource(ResourceType.Hielo, 1000); 
-        storage.AddResource(ResourceType.Fuego, 1000); 
+        storage.AddResource(ResourceType.Arena, 100000);
+        storage.AddResource(ResourceType.Piedra, 100000); 
+        storage.AddResource(ResourceType.Metal, 100000); 
+        storage.AddResource(ResourceType.Hielo, 100000); 
+        storage.AddResource(ResourceType.Fuego, 100000); 
         
     }
     private void LogInitialState()

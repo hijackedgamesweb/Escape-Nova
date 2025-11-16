@@ -117,7 +117,7 @@ namespace Code.Scripts.Core.Systems.Quests.UI
             }
 
             missionNameText.text = quest.Title;
-            timeContentText.text = "??? Ciclos"; 
+            timeContentText.text = "OBJECTIVES"; 
             
             // Limpiar subtareas
             foreach (GameObject subtaskObj in activeSubtaskObjects)

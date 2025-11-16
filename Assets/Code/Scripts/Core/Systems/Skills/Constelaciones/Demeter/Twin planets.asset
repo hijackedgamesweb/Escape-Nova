@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Twin planets
   m_EditorClassIdentifier: 
   nodeName: Twin planets
-  description: "Los planetas de un mismo tipo en una \xF3rbita generan un 50% m\xE1s
-    de recursos."
+  description: Planets of the same type in the same orbit generate 50% more resources
   skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
