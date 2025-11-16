@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: caminus
   category: 0
   displayName: Caminus
-  description: 
+  description: Unlocks the planet 'Caminus'.
   icon: {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   prerequisites:
   - researchId: primal_planets

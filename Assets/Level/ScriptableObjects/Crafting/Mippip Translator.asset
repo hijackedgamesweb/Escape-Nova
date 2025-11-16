@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_mippip_translator
   displayName: Mippip Translator
-  description: Device needed to comunicate with another species
+  description: Universal automatic translator that allows communication with the
+    Mippip species.
   icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
   ingredients:
   - resourceType: 0

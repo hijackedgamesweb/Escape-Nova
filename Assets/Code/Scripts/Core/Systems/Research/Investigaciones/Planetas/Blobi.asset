@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: blobi
   category: 0
   displayName: Blobi
-  description: 
+  description: Unlocks the planet 'Blobi'.
   icon: {fileID: 3270104525328145908, guid: be5cca90c386fd34599d05347b1248c9, type: 3}
   prerequisites:
   - researchId: primal_planets

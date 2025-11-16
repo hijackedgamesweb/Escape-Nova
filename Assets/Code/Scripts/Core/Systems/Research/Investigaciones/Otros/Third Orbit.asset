@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   researchId: third_orbit
   category: 3
-  displayName: Third Orbit
-  description: You unlock a third orbit with space to build more planets
+  displayName: Additional Orbit
+  description: You unlock an additional orbit with space to build more planets.
   icon: {fileID: -6931118599465138883, guid: c664172903cb3334f833f1cbbe0b8ed7, type: 3}
   prerequisites:
   - researchId: second_orbit

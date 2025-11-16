@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeId: receta_fire_strike
   displayName: Fire Strike
-  description: Fire Strike
+  description: An accessory for your empire's weapons that increases your military
+    power.
   icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
   ingredients:
   - resourceType: 2
