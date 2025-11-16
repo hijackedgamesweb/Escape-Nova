@@ -10,6 +10,7 @@ namespace Code.Scripts.Core.Events
         
         public static event Action OnStarsPanelUnlocked;
         public static event Action OnRequestMainMenu;
+        public static event Action OnGameOver; 
         
         public static bool IsResearchUnlocked { get; private set; }
         public static bool IsInventoryUnlocked { get; private set; }
@@ -48,6 +49,11 @@ namespace Code.Scripts.Core.Events
         public static void RequestMainMenu()
         {
             OnRequestMainMenu?.Invoke();
+        }
+        
+        public static void TriggerGameOver()
+        {
+            OnGameOver?.Invoke();
         }
     }
 }
