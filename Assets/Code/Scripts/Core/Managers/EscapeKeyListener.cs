@@ -1,6 +1,8 @@
 using Code.Scripts.UI.Windows;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Code.Scripts.Core.Events;
+using Code.Scripts.Camera;
 
 namespace Code.Scripts.Core.Managers
 {
@@ -17,17 +19,19 @@ namespace Code.Scripts.Core.Managers
         private void HandleEscapePress()
         {
             var currentScreen = UIManager.Instance.GetCurrentScreen();
-            if (currentScreen is ActionPanelScreen)
+            if (currentScreen is ActionPanelScreen || currentScreen is PerfectViewScreen)
             {
                 UIManager.Instance.ShowScreen<InGameScreen>();
+                var mainCamera = UnityEngine.Camera.main;
+                if (mainCamera != null && mainCamera.TryGetComponent<CameraController2D>(out var cameraController))
+                {
+                    cameraController.ClearTarget(); 
+                    cameraController.ResetDragState(); 
+                }
             }
-            else if (currentScreen is PerfectViewScreen)
+            else if (currentScreen is InGameScreen)
             {
-                UIManager.Instance.ShowScreen<InGameScreen>();
-            }
-            else if (currentScreen is ActionPanelScreen || currentScreen is PerfectViewScreen)
-            {
-                UIManager.Instance.ShowScreen<InGameScreen>();
+                SystemEvents.RequestMainMenu();
             }
         }
     }

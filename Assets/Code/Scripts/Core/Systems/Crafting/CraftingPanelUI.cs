@@ -10,19 +10,15 @@ using Code.Scripts.UI.Crafting;
 
 public class CraftingPanelUI : MonoBehaviour
 {
-    [Header("Sistemas")]
     private CraftingSystem _craftingSystem;
     private StorageSystem _storageSystem;
 
-    [Header("Prefabs")]
     [SerializeField] private GameObject recipeButtonPrefab;
     [SerializeField] private GameObject ingredientSlotPrefab;
 
-    [Header("Contenedores")]
     [SerializeField] private Transform recipeListContainer;
     [SerializeField] private Transform ingredientsContainer;
     
-    [Header("Panel de Detalles")]
     [SerializeField] private Image detailIcon;
     [SerializeField] private TextMeshProUGUI detailName;
     [SerializeField] private TextMeshProUGUI detailDescription;
@@ -30,10 +26,8 @@ public class CraftingPanelUI : MonoBehaviour
     [SerializeField] private Button craftButton;
     [SerializeField] private TMP_InputField craftAmountInput;
     
-    [Header("Progreso de Crafteo")]
     [SerializeField] private Slider craftingProgressBar;
     
-    [Header("Estado Vacío")]
     [SerializeField] private GameObject placeholderTextObject;
 
     private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
@@ -46,7 +40,6 @@ public class CraftingPanelUI : MonoBehaviour
         
         if (_craftingSystem == null || _storageSystem == null)
         {
-            Debug.LogError("¡No se pudieron encontrar los sistemas de Crafting o Storage!");
             return;
         }
 
@@ -133,7 +126,7 @@ public class CraftingPanelUI : MonoBehaviour
         if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
         {
             if (craftingProgressBar != null)
-            {
+            {                
                 craftingProgressBar.value = progress;
             }
         }
@@ -188,6 +181,23 @@ public class CraftingPanelUI : MonoBehaviour
     public void SelectRecipe(CraftingRecipe recipe)
     {
         _selectedRecipe = recipe;
+        
+        CraftingRecipeUIItem selectedItem = null;
+
+        foreach (var button in _recipeButtons)
+        {
+            button.SetSelected(false);
+            
+            if (button.RecipeId == recipe.recipeId)
+            {
+                selectedItem = button;
+            }
+        }
+
+        if (selectedItem != null)
+        {
+            selectedItem.SetSelected(true);
+        }
         
         if (placeholderTextObject != null)
         {

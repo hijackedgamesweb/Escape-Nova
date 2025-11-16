@@ -4,6 +4,7 @@ using Code.Scripts.Core.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic; // Necesario para la lista de botones
 
 namespace Code.Scripts.UI.Windows
 {
@@ -29,9 +30,21 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public BaseUIScreen researchPanel;
 
         private BaseUIScreen _currentPanel;
+        private Dictionary<string, Button> _buttonLookup;
 
         public void Awake()
         {
+            _buttonLookup = new Dictionary<string, Button>
+            {
+                { "Astrarium", astrariumBtn },
+                { "Diplomacy", diplomacyBtn },
+                { "Constellations", skillTreeBtn },
+                { "Storage", storageCraftingBtn },
+                { "Objectives", missionsBtn },
+                { "Research", researchBtn },
+            };
+
+
             astrariumBtn.onClick.AddListener(() => Show("Astrarium"));
             diplomacyBtn.onClick.AddListener(() => Show("Diplomacy"));
             skillTreeBtn.onClick.AddListener(() => Show("Constellations"));
@@ -39,9 +52,7 @@ namespace Code.Scripts.UI.Windows
             missionsBtn.onClick.AddListener(() => Show("Objectives"));
             researchBtn.onClick.AddListener(() => Show("Research"));
             returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
-
-            storageCraftingBtn.interactable = false;
-            researchBtn.interactable = false;
+            
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked += EnableConstellationsButton;
@@ -95,6 +106,18 @@ namespace Code.Scripts.UI.Windows
         {
             skillTreeBtn.interactable = true;
         }
+        
+        private void ResetButtonHighlights()
+        {
+            foreach (var button in _buttonLookup.Values)
+            {
+                if (button != null)
+                {
+                    button.interactable = button.IsInteractable(); 
+                    button.targetGraphic.color = button.colors.normalColor;
+                }
+            }
+        }
 
         public override void Show(object parameter = null)
         {
@@ -104,8 +127,17 @@ namespace Code.Scripts.UI.Windows
             {
                 _currentPanel.Hide();
             }
-            
             string panelName = parameter as string;
+            ResetButtonHighlights(); 
+            
+            if (!string.IsNullOrEmpty(panelName) && _buttonLookup.TryGetValue(panelName, out Button selectedButton))
+            {
+                if (selectedButton != null)
+                {
+                    selectedButton.targetGraphic.color = selectedButton.colors.selectedColor;
+                }
+            }
+            
             if (panelTitleText != null)
             {
                 panelTitleText.text = !string.IsNullOrEmpty(panelName) ? panelName : "Panel"; 

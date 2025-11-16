@@ -2,16 +2,19 @@ using System;
 using Code.Scripts.Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.Audio;
+using System.Collections.Generic;
 
 public class AudioManager : Singleton<AudioManager>
 {
+    private const float SFX_COOLDOWN = 0.1f; 
+    private readonly Dictionary<string, float> _lastSfxPlayTime = new(); 
+
     public AudioMixer audioMixer;
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
     private float _masterVolume = 1f;
     
-    //M�todos para reproducir musica y SFX
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, x => x.name == name);
@@ -39,7 +42,16 @@ public class AudioManager : Singleton<AudioManager>
 
         if (s != null)
         {
+            if (_lastSfxPlayTime.TryGetValue(name, out float lastPlayTime))
+            {
+                if (Time.time < lastPlayTime + SFX_COOLDOWN)
+                {
+                    return;
+                }
+            }
+            
             sfxSource.PlayOneShot(s.clip);
+            _lastSfxPlayTime[name] = Time.time;
         }
         else
         {
@@ -53,7 +65,6 @@ public class AudioManager : Singleton<AudioManager>
     }
 
 
-    //Metodos para configurar el sonido
     public void ToggleMusic()
     {
         musicSource.mute = !musicSource.mute;

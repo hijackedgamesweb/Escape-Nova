@@ -80,7 +80,7 @@ MonoBehaviour:
   - itemData:
       itemName: Multicore Chip
       displayName: Multicore Chip
-      icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
+      icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
       maxStack: 12
       description: 
       itemToUnlock: {fileID: 0}
