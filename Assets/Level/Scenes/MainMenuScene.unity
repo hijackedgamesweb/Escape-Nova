@@ -22085,6 +22085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f5d8ba80b7497fa0b7761f3ff72788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCycles: 5
   timeConfig: {fileID: 11400000, guid: 6b44aebc746dbe7438bee47fc89581ef, type: 2}
 --- !u!4 &1251641541
 Transform:
@@ -27476,6 +27477,7 @@ GameObject:
   - component: {fileID: 1531899066}
   - component: {fileID: 1531899068}
   - component: {fileID: 1531899069}
+  - component: {fileID: 1531899070}
   m_Layer: 0
   m_Name: The Sun
   m_TagString: Untagged
@@ -27603,6 +27605,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1531899066}
   animationData: {fileID: 11400000, guid: 87891bc09a2f6714c9f4c220c2b2fb47, type: 2}
+--- !u!114 &1531899070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531899064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5aa433b1efe4df5a1c1f54a654b6f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  endColor: {r: 0, g: 0.3140161, b: 1, a: 1}
+  colorChangeExponent: 1
+  sunRenderer: {fileID: 1531899066}
 --- !u!1 &1538244901
 GameObject:
   m_ObjectHideFlags: 0
@@ -35304,6 +35322,7 @@ GameObject:
   - component: {fileID: 1992747923}
   - component: {fileID: 1992747925}
   - component: {fileID: 1992747926}
+  - component: {fileID: 1992747927}
   m_Layer: 0
   m_Name: '@GameManager'
   m_TagString: Untagged
@@ -35382,6 +35401,18 @@ MonoBehaviour:
   - setName: Extinction
     quests:
     - {fileID: 11400000, guid: c196b4bbc795d6c428ca68a9cc0ad677, type: 2}
+--- !u!114 &1992747927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992747922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cebb3a60467447585ed65c24b84e858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1995384602
 GameObject:
   m_ObjectHideFlags: 0

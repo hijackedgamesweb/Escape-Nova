@@ -8,6 +8,8 @@ namespace Code.Scripts.Core.Managers
 {
     public class GameTimeManager : MonoBehaviour, IGameTime
     {
+        [Header("Configuración de Derrota")]
+        [SerializeField] public int maxCycles = 5; 
         [Header("Configuración de tiempo")]
         [SerializeField] private TimeConfig timeConfig;
 
@@ -22,12 +24,14 @@ namespace Code.Scripts.Core.Managers
 
         public event Action<float> OnTimeAdvanced;
         public event Action<int> OnCycleCompleted;
+        public event Action OnGameOver; 
 
         public void Awake()
         {
             TimeScale = 0f;
 
             ServiceLocator.RegisterService<IGameTime>(this);
+            ServiceLocator.RegisterService<GameTimeManager>(this); 
             ServiceLocator.RegisterService<TimeConfig>(timeConfig);
 
             if (timeConfig == null)
@@ -42,6 +46,7 @@ namespace Code.Scripts.Core.Managers
         private void OnDestroy()
         {
             ServiceLocator.UnregisterService<IGameTime>();
+            ServiceLocator.UnregisterService<GameTimeManager>(); 
             ServiceLocator.UnregisterService<TimeConfig>();
         }
 
@@ -59,6 +64,15 @@ namespace Code.Scripts.Core.Managers
                 CurrentCycle += 1;
                 OnCycleCompleted?.Invoke(CurrentCycle);
                 _nextCycleTime += timeConfig.secondsPerCycle;
+
+                if (CurrentCycle >= maxCycles) 
+                {
+                    Pause(); 
+                    OnGameOver?.Invoke(); 
+                    enabled = false;
+                    
+                    return;
+                }
             }
         }
 
