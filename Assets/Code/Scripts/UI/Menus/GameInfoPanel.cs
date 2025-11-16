@@ -37,7 +37,7 @@ namespace Code.Scripts.UI.Menus
         
         private void Start()
         {
-            _closeButton.onClick.AddListener(() => gameObject.SetActive(false)); //Que el boton de cerrar cierre la UI
+            _closeButton.onClick.AddListener(OnCloseButtonClicked); //Que el boton de cerrar cierre la UI
             
             UIManager.OnScreenChanged += HandleScreenChange;
         }
@@ -66,5 +66,10 @@ namespace Code.Scripts.UI.Menus
             _messageText.text = message;
         }
         
+        private void OnCloseButtonClicked()
+        {
+            AudioManager.Instance.PlaySFX("Close");
+            gameObject.SetActive(false);
+        }
     }
 }

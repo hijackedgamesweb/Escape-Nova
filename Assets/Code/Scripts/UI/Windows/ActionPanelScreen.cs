@@ -51,7 +51,7 @@ namespace Code.Scripts.UI.Windows
             storageCraftingBtn.onClick.AddListener(() => Show("Storage"));
             missionsBtn.onClick.AddListener(() => Show("Objectives"));
             researchBtn.onClick.AddListener(() => Show("Research"));
-            returnBtn.onClick.AddListener(() => UIManager.Instance.ShowScreen<InGameScreen>());
+            returnBtn.onClick.AddListener(() => OnReturnButtonPressed());
             
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
@@ -122,7 +122,9 @@ namespace Code.Scripts.UI.Windows
         public override void Show(object parameter = null)
         {
             base.Show(parameter);
-
+            
+            AudioManager.Instance.PlaySFX("ButtonClick");
+            
             if (_currentPanel != null)
             {
                 _currentPanel.Hide();
@@ -174,6 +176,12 @@ namespace Code.Scripts.UI.Windows
                     _currentPanel = researchPanel;
                     break;
             }
+        }
+
+        private void OnReturnButtonPressed()
+        {
+            AudioManager.Instance.PlaySFX("Close");
+            UIManager.Instance.ShowScreen<InGameScreen>();
         }
     }
 }

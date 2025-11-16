@@ -22,19 +22,19 @@ namespace Code.Scripts.UI.Windows
         private void Awake()
         {
             astrariumBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Astrarium"));
+                OnButtonPressed("Astrarium"));
             diplomacyBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Diplomacy"));
+                OnButtonPressed("Diplomacy"));
             skillTreeBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Constellations"));
+                OnButtonPressed("Constellations"));
             missionsBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Objectives"));
+                OnButtonPressed("Objectives"));
             storageBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Storage"));
+                OnButtonPressed("Storage"));
             constructionBtn.onClick.AddListener(() => 
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
-                UIManager.Instance.ShowScreen<ActionPanelScreen>("Research"));
+                OnButtonPressed("Research"));
             
             storageBtn.interactable = false;
             researchBtn.interactable = false;
@@ -50,7 +50,13 @@ namespace Code.Scripts.UI.Windows
             SystemEvents.OnResearchUnlocked -= EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked -= EnableConstellationsButton;
         }
-
+        
+        private void OnButtonPressed(String interf)
+        {
+            AudioManager.Instance.PlaySFX("ButtonClick");
+            UIManager.Instance.ShowScreen<ActionPanelScreen>(interf);
+        }
+        
         private void EnableStorageButton()
         {
             storageBtn.interactable = true;

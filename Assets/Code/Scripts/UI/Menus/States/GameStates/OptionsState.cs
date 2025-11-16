@@ -29,6 +29,7 @@ namespace Code.Scripts.UI.Menus.States.GameStates
 
         private void OnReturnButtonClicked()
         {
+            AudioManager.Instance.PlaySFX("Close");
             _stateManager.SetState(new MainMenuState(_stateManager));
         }
 

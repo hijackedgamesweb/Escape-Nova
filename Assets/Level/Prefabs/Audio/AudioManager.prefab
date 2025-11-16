@@ -69,6 +69,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8b1fe0bcef26eae4f98e568398732198, type: 3}
   - name: ResearchFinished
     clip: {fileID: 8300000, guid: 953bb0005375afb469534645e798eb94, type: 3}
+  - name: ConstructionMenuOpen
+    clip: {fileID: 8300000, guid: fe4ada29c3dc75342a2bc07b84c3caa2, type: 3}
+  - name: MainMenuButtonPressed
+    clip: {fileID: 8300000, guid: 8ddac29adba3bd446a4a129024eb689d, type: 3}
+  - name: NovaSfx
+    clip: {fileID: 8300000, guid: 3b99e34abbfcd4f4388bf434b4541617, type: 3}
   musicSource: {fileID: 5978876574385758183}
   sfxSource: {fileID: 6055554818733778738}
 --- !u!1 &2232511105417818901
