@@ -31,16 +31,10 @@ namespace Code.Scripts.Core.Managers
             {
                 HandleTabPress();
             }
-            
-            //mientras pulsas el shift (mantienes pulsado)
-            if (Keyboard.current.shiftKey.isPressed)
-            {
-                //al pulsar la tecla 0, 1, 2 o 3 (pausa, veloicdad 1, 2 o 4)
-                if (Keyboard.current.digit0Key.wasPressedThisFrame) ChangeGameSpeed(0f);
-                if (Keyboard.current.digit1Key.wasPressedThisFrame) ChangeGameSpeed(1f);
-                if (Keyboard.current.digit2Key.wasPressedThisFrame) ChangeGameSpeed(2f);
-                if (Keyboard.current.digit4Key.wasPressedThisFrame) ChangeGameSpeed(4f);
-            }
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) ChangeGameSpeed(0f);
+            if (Keyboard.current.digit1Key.wasPressedThisFrame) ChangeGameSpeed(1f);
+            if (Keyboard.current.digit2Key.wasPressedThisFrame) ChangeGameSpeed(2f);
+            if (Keyboard.current.digit3Key.wasPressedThisFrame) ChangeGameSpeed(4f);
             
             if (Keyboard.current.f1Key.wasPressedThisFrame)
             {

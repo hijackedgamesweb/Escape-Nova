@@ -12,8 +12,9 @@ namespace Code.Scripts.UI.Common
         {
             if (Keyboard.current == null) return;
 
-            // S -> Storage
-            if (Keyboard.current.sKey.wasPressedThisFrame)
+            // LAS TECLAS VAN EN EL ORDEN DE QWERTY, siguiendo el criterio del orden del menu de juego.
+            // R -> Storage
+            if (Keyboard.current.rKey.wasPressedThisFrame)
             {
                 if (SystemEvents.IsInventoryUnlocked)
                 {
@@ -21,8 +22,8 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // R -> Research
-            if (Keyboard.current.rKey.wasPressedThisFrame)
+            // E -> Research
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 if (SystemEvents.IsResearchUnlocked)
                 {
@@ -30,14 +31,14 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // M -> Missions
-            if (Keyboard.current.mKey.wasPressedThisFrame)
+            // W -> Missions
+            if (Keyboard.current.wKey.wasPressedThisFrame)
             {
                 OpenActionPanel("Objectives");
             }
 
-            // C -> Constelaciones
-            if (Keyboard.current.cKey.wasPressedThisFrame)
+            // Y -> Constelaciones
+            if (Keyboard.current.yKey.wasPressedThisFrame)
             {
                 if (SystemEvents.IsConstellationsUnlocked)
                 {
@@ -45,14 +46,14 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // A -> Astrario
-            if (Keyboard.current.aKey.wasPressedThisFrame)
+            // Tt -> Astrario
+            if (Keyboard.current.tKey.wasPressedThisFrame)
             {
                 OpenActionPanel("Astrarium");
             }
 
-            // D -> Diplomacia
-            if (Keyboard.current.dKey.wasPressedThisFrame)
+            // Q -> Diplomacia
+            if (Keyboard.current.qKey.wasPressedThisFrame)
             {
                 OpenActionPanel("Diplomacy");
             }
