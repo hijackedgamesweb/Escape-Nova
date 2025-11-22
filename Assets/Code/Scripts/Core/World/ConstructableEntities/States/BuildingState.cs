@@ -38,7 +38,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
 
             if (_cycleCount >= _planetData.TimeToBuild)
             {
-                // Cambiar al estado de producción
+                // Cambiar al estado de producciÃ³n
                 gameManager.SetState(new ProductionState(_planetData, _gameTime));
                 Debug.Log($"BuildingState: {_planetData.Name} construction completed");
             }
