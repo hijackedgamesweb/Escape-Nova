@@ -1,20 +1,70 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem; // Necesario
 using Code.Scripts.Core.Managers;
 using Code.Scripts.UI.Windows;
 using Code.Scripts.Core.Events;
 
-namespace Code.Scripts.UI.Common
+namespace Code.Scripts.Core.Systems.UI
 {
     public class MenuShortcuts : MonoBehaviour
     {
+        [Header("Input Configuration")]
+        [SerializeField] private InputActionAsset inputActionAsset;
+        [SerializeField] private string actionMapName = "Shortcuts";
+
+        private InputAction _diplomacyAction;
+        private InputAction _missionsAction;
+        private InputAction _researchAction;
+        private InputAction _storageAction;
+        private InputAction _astrariumAction;
+        private InputAction _constellationsAction;
+        private InputAction _constructionAction;
+
+        private void Awake()
+        {
+            var map = inputActionAsset.FindActionMap(actionMapName);
+
+            if (map == null)
+            {
+                Debug.LogError($"No se encontró el Action Map: {actionMapName}");
+                return;
+            }
+
+            _diplomacyAction = map.FindAction("OpenDiplomacy");
+            _missionsAction = map.FindAction("OpenMissions");
+            _researchAction = map.FindAction("OpenResearch");
+            _storageAction = map.FindAction("OpenStorage");
+            _astrariumAction = map.FindAction("OpenAstrarium");
+            _constellationsAction = map.FindAction("OpenConstellations");
+            _constructionAction = map.FindAction("OpenConstruction");
+        }
+
+        private void OnEnable()
+        {
+            _diplomacyAction?.Enable();
+            _missionsAction?.Enable();
+            _researchAction?.Enable();
+            _storageAction?.Enable();
+            _astrariumAction?.Enable();
+            _constellationsAction?.Enable();
+            _constructionAction?.Enable();
+        }
+
+        private void OnDisable()
+        {
+            _diplomacyAction?.Disable();
+            _missionsAction?.Disable();
+            _researchAction?.Disable();
+            _storageAction?.Disable();
+            _astrariumAction?.Disable();
+            _constellationsAction?.Disable();
+            _constructionAction?.Disable();
+        }
+
         private void Update()
         {
-            if (Keyboard.current == null) return;
-
-            // LAS TECLAS VAN EN EL ORDEN DE QWERTY, siguiendo el criterio del orden del menu de juego.
-            // R -> Storage
-            if (Keyboard.current.rKey.wasPressedThisFrame)
+            // R -> Storage (Action: OpenStorage)
+            if (_storageAction != null && _storageAction.WasPerformedThisFrame())
             {
                 if (SystemEvents.IsInventoryUnlocked)
                 {
@@ -22,8 +72,8 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // E -> Research
-            if (Keyboard.current.eKey.wasPressedThisFrame)
+            // E -> Research (Action: OpenResearch)
+            if (_researchAction != null && _researchAction.WasPerformedThisFrame())
             {
                 if (SystemEvents.IsResearchUnlocked)
                 {
@@ -31,14 +81,14 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // W -> Missions
-            if (Keyboard.current.wKey.wasPressedThisFrame)
+            // W -> Missions (Action: OpenMissions)
+            if (_missionsAction != null && _missionsAction.WasPerformedThisFrame())
             {
                 OpenActionPanel("Objectives");
             }
 
-            // Y -> Constelaciones
-            if (Keyboard.current.yKey.wasPressedThisFrame)
+            // Y -> Constelaciones (Action: OpenConstellations)
+            if (_constellationsAction != null && _constellationsAction.WasPerformedThisFrame())
             {
                 if (SystemEvents.IsConstellationsUnlocked)
                 {
@@ -46,25 +96,24 @@ namespace Code.Scripts.UI.Common
                 }
             }
 
-            // Tt -> Astrario
-            if (Keyboard.current.tKey.wasPressedThisFrame)
+            // T -> Astrario (Action: OpenAstrarium)
+            if (_astrariumAction != null && _astrariumAction.WasPerformedThisFrame())
             {
                 OpenActionPanel("Astrarium");
             }
 
-            // Q -> Diplomacia
-            if (Keyboard.current.qKey.wasPressedThisFrame)
+            // Q -> Diplomacia (Action: OpenDiplomacy)
+            if (_diplomacyAction != null && _diplomacyAction.WasPerformedThisFrame())
             {
                 OpenActionPanel("Diplomacy");
             }
-
-            // P -> Volver / Pausa
-            if (Keyboard.current.pKey.wasPressedThisFrame)
+            
+            // U -> Construcción (Action: OpenConstruction)
+            if (_constructionAction != null && _constructionAction.WasPerformedThisFrame())
             {
-                UIManager.Instance.ShowScreen<InGameScreen>();
+                UIManager.Instance.ShowScreen<PerfectViewScreen>();
             }
         }
-
         private void OpenActionPanel(string panelId)
         {
             UIManager.Instance.ShowScreen<ActionPanelScreen>(panelId);
