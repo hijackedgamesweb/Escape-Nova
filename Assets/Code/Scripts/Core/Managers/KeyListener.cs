@@ -12,28 +12,49 @@ namespace Code.Scripts.Core.Managers
 {
     public class EscapeKeyListener : MonoBehaviour
     {
-
         [SerializeField] private GameObject _gameTimeManager;
         
+        private GameTimeManager _timeManagerComponent;
+
+        private void Start()
+        {
+            if (_gameTimeManager != null)
+            {
+                _timeManagerComponent = _gameTimeManager.GetComponent<GameTimeManager>();
+            }
+        }
+
         private void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+            if (Keyboard.current == null) return;
+            if (Keyboard.current.tabKey.wasPressedThisFrame)
             {
-                HandleEscapePress();
+                HandleTabPress();
             }
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) ChangeGameSpeed(0f);
+            if (Keyboard.current.digit1Key.wasPressedThisFrame) ChangeGameSpeed(1f);
+            if (Keyboard.current.digit2Key.wasPressedThisFrame) ChangeGameSpeed(2f);
+            if (Keyboard.current.digit3Key.wasPressedThisFrame) ChangeGameSpeed(4f);
             
-            //ESTAS LINEAS DE AQUI SON PARA DEJARNOS HERRAMIENTAS QUE PODAMOS USAR PARA DEBUGGEAR EL JUEGO
-            
-            //F1 PARA GANAR LA PARTIDA INMEDIATAMENTE
-            if (Keyboard.current != null && Keyboard.current.f1Key.wasPressedThisFrame)
+            if (Keyboard.current.f1Key.wasPressedThisFrame)
             {
                 StartCoroutine(SecuenciaVictoria());
             }
             
-            //F2 PARA AUMENTAR LOS CICLOS
-            if (Keyboard.current != null && Keyboard.current.f2Key.wasPressedThisFrame)
+            if (Keyboard.current.f2Key.wasPressedThisFrame)
             {
-                _gameTimeManager.GetComponent<GameTimeManager>().SetCurrentCycle(1000);
+                if (_timeManagerComponent != null)
+                {
+                    _timeManagerComponent.SetCurrentCycle(1000);
+                }
+            }
+        }
+        
+        private void ChangeGameSpeed(float newSpeed)
+        {
+            if (_timeManagerComponent != null)
+            {
+                _timeManagerComponent.SetSpeed(newSpeed);
             }
         }
         
@@ -43,13 +64,11 @@ namespace Code.Scripts.Core.Managers
             {
                 AudioManager.Instance.StopMusic();
             }
-
             SceneManager.LoadScene("CreditsScene");
-            
             yield return null;
         }
         
-        private void HandleEscapePress()
+        private void HandleTabPress()
         {
             var currentScreen = UIManager.Instance.GetCurrentScreen();
             if (currentScreen is ActionPanelScreen || currentScreen is PerfectViewScreen)
