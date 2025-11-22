@@ -5,6 +5,7 @@ using Code.Scripts.UI.Menus.States.GameStates;
 using Code.Scripts.UI.Windows;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Camera
 {
@@ -33,6 +34,7 @@ namespace Code.Scripts.Camera
         private UnityEngine.Camera _mainCamera;
         private Vector3 _dragOrigin;
         private bool _isDragging = false;
+        private bool _isTweening = false;
         
         private Vector3 _velocity = Vector3.zero;
         private Vector3 _lastMousePosition;
@@ -55,6 +57,9 @@ namespace Code.Scripts.Camera
         void Update()
         {
             if(UIManager.Instance.GetCurrentScreen() is not InGameScreen) return;
+            
+            if (_isTweening) return;
+            
             HandleZoom();
             HandleMovement();
             HandleFollowTarget();
@@ -100,6 +105,10 @@ namespace Code.Scripts.Camera
         {
             if (Input.GetMouseButtonDown(0))
             {
+                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                {
+                    return;
+                }
                 _isDragging = true;
                 _dragOrigin = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 _lastMousePosition = Input.mousePosition;
@@ -201,6 +210,23 @@ namespace Code.Scripts.Camera
         {
             _isDragging = false;
             _velocity = Vector3.zero;
+        }
+        
+        public void ResetCameraOnTarget(Transform targetToCenter)
+        {
+            _target = null;
+            ResetDragState();
+            _zoomTween?.Kill();
+            _moveTween?.Kill();
+            Vector3 targetPos = new Vector3(targetToCenter.position.x, targetToCenter.position.y, transform.position.z);
+            _moveTween = transform.DOMove(targetPos, 1f).SetEase(Ease.OutCirc);
+            float halfZoom = (_minZoom + _maxZoom) / 2f;
+            //_zoomTween = DOTween.To(
+            //    () => _mainCamera.orthographicSize,
+            //    x => _mainCamera.orthographicSize = x,
+            //    halfZoom,
+            //    2.5f
+            //).SetEase(Ease.OutCirc);
         }
     }
 }
