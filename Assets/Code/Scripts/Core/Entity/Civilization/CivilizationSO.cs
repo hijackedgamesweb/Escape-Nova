@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using Code.Scripts.Core.Systems.Resources;
+using Code.Scripts.Core.Systems.Storage;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Entity.Civilization
@@ -24,6 +27,9 @@ namespace Code.Scripts.Core.Entity.Civilization
         [Header("Civilization Leader")]
         public Sprite leaderPortrait;
         
+        [Header("Starting Resources")]
+        public List<ResourceData> startingResources;
+        public InventoryData startingInventory;
         
     }
 }

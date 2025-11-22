@@ -43,7 +43,7 @@ namespace Code.Scripts.Core.Systems.Skills
         public override void Show(object parameter = null)
         {
             base.Show(parameter);
-            Debug.Log($"SkillTreeUI: Show called - Active: {gameObject.activeInHierarchy}");
+           // Debug.Log($"SkillTreeUI: Show called - Active: {gameObject.activeInHierarchy}");
 
             // Inicialización inmediata y agresiva
             if (!isInitialized)
@@ -64,20 +64,20 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void Start()
         {
-            Debug.Log("SkillTreeUI: Start method called");
+//            Debug.Log("SkillTreeUI: Start method called");
             ForceSetupModalButtons();
             HideModal();
         }
 
         private void ForceSetupModalButtons()
         {
-            Debug.Log("SkillTreeUI: Force setting up modal buttons");
+          //  Debug.Log("SkillTreeUI: Force setting up modal buttons");
 
             // Buscar referencias si no están asignadas
             if (modalCloseButton == null && nodeModal != null)
             {
                 modalCloseButton = nodeModal.GetComponentInChildren<Button>();
-                Debug.Log($"SkillTreeUI: Searched for close button - found: {modalCloseButton != null}");
+               // Debug.Log($"SkillTreeUI: Searched for close button - found: {modalCloseButton != null}");
             }
 
             if (modalPurchaseButton == null && nodeModal != null)
@@ -91,7 +91,7 @@ namespace Code.Scripts.Core.Systems.Skills
                         break;
                     }
                 }
-                Debug.Log($"SkillTreeUI: Searched for purchase button - found: {modalPurchaseButton != null}");
+             //   Debug.Log($"SkillTreeUI: Searched for purchase button - found: {modalPurchaseButton != null}");
             }
 
             // Configurar close button
@@ -99,7 +99,7 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 modalCloseButton.onClick.RemoveAllListeners();
                 modalCloseButton.onClick.AddListener(OnCloseButtonClicked);
-                Debug.Log("SkillTreeUI: Close button configured successfully");
+              // Debug.Log("SkillTreeUI: Close button configured successfully");
             }
             else
             {
@@ -111,7 +111,7 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 modalPurchaseButton.onClick.RemoveAllListeners();
                 modalPurchaseButton.onClick.AddListener(OnPurchaseButtonClicked);
-                Debug.Log("SkillTreeUI: Purchase button configured successfully");
+              //  Debug.Log("SkillTreeUI: Purchase button configured successfully");
             }
             else
             {
@@ -121,13 +121,13 @@ namespace Code.Scripts.Core.Systems.Skills
 
         private void OnCloseButtonClicked()
         {
-            Debug.Log("SkillTreeUI: Close button clicked!");
+           // Debug.Log("SkillTreeUI: Close button clicked!");
             HideModal();
         }
 
         private void OnPurchaseButtonClicked()
         {
-            Debug.Log("SkillTreeUI: Purchase button clicked!");
+          //  Debug.Log("SkillTreeUI: Purchase button clicked!");
             PurchaseSelectedNode();
         }
 
@@ -135,7 +135,7 @@ namespace Code.Scripts.Core.Systems.Skills
         {
             if (isInitialized) yield break;
 
-            Debug.Log("SkillTreeUI: Starting initialization routine...");
+           // Debug.Log("SkillTreeUI: Starting initialization routine...");
 
             int maxAttempts = 10;
             for (int i = 0; i < maxAttempts; i++)
@@ -143,13 +143,13 @@ namespace Code.Scripts.Core.Systems.Skills
                 if (TryInitialize())
                 {
                     isInitialized = true;
-                    Debug.Log("SkillTreeUI: Initialization successful!");
+                  //  Debug.Log("SkillTreeUI: Initialization successful!");
                     OnInitialized?.Invoke();
                     RefreshUI();
                     yield break;
                 }
 
-                Debug.Log($"SkillTreeUI: Initialization attempt {i + 1}/{maxAttempts} failed");
+                //Debug.Log($"SkillTreeUI: Initialization attempt {i + 1}/{maxAttempts} failed");
                 yield return new WaitForSeconds(0.1f);
             }
 
@@ -201,7 +201,7 @@ namespace Code.Scripts.Core.Systems.Skills
                 return;
             }
 
-            Debug.Log($"SkillTreeUI: Creating UI for {constellations.Count} constellations");
+          //  Debug.Log($"SkillTreeUI: Creating UI for {constellations.Count} constellations");
 
             foreach (var constellation in constellations)
             {
@@ -387,7 +387,7 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 nodeModal.SetActive(true);
                 nodeModal.transform.SetAsLastSibling();
-                Debug.Log("SkillTreeUI: Modal shown successfully");
+              //  Debug.Log("SkillTreeUI: Modal shown successfully");
             }
             else
             {
@@ -400,7 +400,7 @@ namespace Code.Scripts.Core.Systems.Skills
             if (nodeModal != null)
             {
                 nodeModal.SetActive(false);
-                Debug.Log("SkillTreeUI: Modal hidden");
+               // Debug.Log("SkillTreeUI: Modal hidden");
             }
             selectedNode = null;
         }

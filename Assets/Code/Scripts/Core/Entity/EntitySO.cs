@@ -13,5 +13,8 @@ namespace Code.Scripts.Core.Entity
         public float baseDependency;
         public float baseInterest;
         public float baseTrust;
+        
+        [Header("Entity Stats")]
+        public EntityItemPreferencesSO itemPreferences;
     }
 }

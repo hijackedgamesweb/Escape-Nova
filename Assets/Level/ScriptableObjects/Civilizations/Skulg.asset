@@ -14,12 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Skulg
   civLeaderName: Nil
-  baseHunger: 12
-  baseAnger: 23
-  baseMilitaryPower: 1
+  baseFriendship: 0
+  baseDependency: 0
+  baseInterest: 0
+  baseTrust: 0
+  itemPreferences: {fileID: 0}
   civilizationDescription: Los de la old skulg
-  civilizationIcon: {fileID: 21300000, guid: 8066e15c4e3df6e4f9806f9d5f71e70a, type: 3}
+  civilizationIcon: {fileID: 21300000, guid: 02a8b7a3690c2524aafb899824a3d008, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 0
   angerTolerance: 2
-  leaderPortrait: {fileID: 21300000, guid: f4103f617e36f4741858259a604af822, type: 3}
+  leaderPortrait: {fileID: -7368006706622409379, guid: 3c35c54865c02c644ad9313ecec794d2, type: 3}
+  startingResources: []
+  startingInventory: {fileID: 0}

@@ -20,6 +20,15 @@ namespace Code.Scripts.Camera
         [SerializeField] float _inertiaDamping = 5f;
         
         [SerializeField] private SpriteRenderer _background;
+        [SerializeField] private GameObject _solarSystem;
+        
+        [Header("Parallax Settings")]
+        [SerializeField, Range(0f, 1f)] float _backgroundParallax = 0.3f;
+        [SerializeField, Range(0f, 1f)] float _solarParallax = 0.8f;
+        
+        private Vector3 _initialBackgroundPos;
+        private Vector3 _initialSolarPos;
+        private Vector3 _initialCameraPos;
         
         private UnityEngine.Camera _mainCamera;
         private Vector3 _dragOrigin;
@@ -35,6 +44,12 @@ namespace Code.Scripts.Camera
         void Start()
         {
             _mainCamera = GetComponent<UnityEngine.Camera>();
+            
+            if(_background != null)
+                _initialBackgroundPos = _background.transform.position;
+            if(_solarSystem != null)
+                _initialSolarPos = _solarSystem.transform.position;
+            _initialCameraPos = transform.position;
         }
 
         void Update()
@@ -43,6 +58,22 @@ namespace Code.Scripts.Camera
             HandleZoom();
             HandleMovement();
             HandleFollowTarget();
+
+            ApplyParallax();
+        }
+
+        private void ApplyParallax()
+        {
+            if(_background != null)
+            {
+                Vector3 backgroundTargetPos = _initialBackgroundPos + (transform.position - _initialCameraPos) * _backgroundParallax;
+                _background.transform.position = backgroundTargetPos;
+            }
+            if(_solarSystem != null)
+            {
+                Vector3 solarTargetPos = _initialSolarPos + (transform.position - _initialCameraPos) * _solarParallax;
+                _solarSystem.transform.position = solarTargetPos;
+            }
         }
 
         private void HandleZoom()

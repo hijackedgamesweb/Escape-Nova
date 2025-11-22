@@ -36,7 +36,7 @@ namespace Code.Scripts.Core.Managers
         {
             _invoker = new CommandInvoker();
             
-            _player = new Entity.Player.Player(_invoker, _playerData, _worldResources, _startingInventory);
+            
         }
 
         private void Start()
@@ -44,7 +44,9 @@ namespace Code.Scripts.Core.Managers
             _gameTime = ServiceLocator.GetService<IGameTime>();
             _gameTime.OnCycleCompleted += UpdateWorld;
             _invoker.OnCommandExecuted += UpdateWorldOnCommand;
+            _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
         }
+        
 
         [ContextMenu("Add Civilization")]
         public void AddCivilizationFromInspector()

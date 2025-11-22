@@ -1,31 +1,36 @@
+using System;
 using Code.Scripts.Core.Managers;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.HUD
 {
-    public class NotificationPrefab : MonoBehaviour
+    public class NotificationPrefab : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] private Image iconImage;
         [SerializeField] private TMP_Text messageText;
         [SerializeField] private float displayDuration = 3f;
         [SerializeField] private Image closeBtn;
-        public void Initialize(string message, NotificationType type)
+        [SerializeField] private Sprite[] iconSprites;
+        private Action onClickAction;
+        public void Initialize(string message, NotificationType type, Action onClick = null)
         {
             messageText.text = message;
+            onClickAction = onClick;
             switch (type)
             {
                 case NotificationType.Info:
-                    iconImage.color = Color.green;
+                    iconImage.sprite = iconSprites[0];
                     break;
                 case NotificationType.Warning:
-                    iconImage.color = Color.yellow;
+                    iconImage.sprite = iconSprites[1];
                     break;
                 case NotificationType.Error:
-                    iconImage.color = Color.red;
+                    iconImage.sprite = iconSprites[2];
                     break;
             }
             ShowNotification();
@@ -51,7 +56,11 @@ namespace Code.Scripts.UI.HUD
                 Destroy(gameObject);
             });
         }
-        
-        
+
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            onClickAction?.Invoke();
+        }
     }
 }

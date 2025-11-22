@@ -170,6 +170,10 @@ MonoBehaviour:
   messageText: {fileID: 6927714239255326205}
   displayDuration: 5
   closeBtn: {fileID: 5464888668667345934}
+  iconSprites:
+  - {fileID: 21300000, guid: de50d1f4106f65545921a17c92cf0250, type: 3}
+  - {fileID: -7117010234588523302, guid: deace0bc307d4b442815d161bf5ad3fd, type: 3}
+  - {fileID: 21300000, guid: 4d2a4136ebef6f041b43fdca42412caa, type: 3}
 --- !u!1 &7978238055269699520
 GameObject:
   m_ObjectHideFlags: 0

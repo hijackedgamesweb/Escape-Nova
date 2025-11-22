@@ -9,13 +9,13 @@ namespace Code.Scripts.Core.Entity.Player
 {
     public class Player : Entity
     {
-        private StorageSystem _storageSystem;
         private PlayerData _playerData;
         private PlayerState _playerState;
         
-        public Player(CommandInvoker invoker, PlayerSO playerSO, List<ResourceData> startingResources, InventoryData startingInventory) : base(invoker, playerSO)
+        public Player(CommandInvoker invoker, PlayerSO playerSO, StorageSystem storageSystem) : base(invoker, playerSO, storageSystem)
         {
-            _storageSystem = new StorageSystem(startingResources, startingInventory);
+            StorageSystem = storageSystem;
+            ItemPreferences = new EntityItemPreferences(playerSO.itemPreferences);
             
             _invoker = invoker;
             _playerData = new PlayerData(playerSO);

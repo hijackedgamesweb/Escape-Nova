@@ -1,4 +1,6 @@
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.World;
+using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
@@ -21,6 +23,7 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         {
             _mainMenuScreen.PlayButton.onClick.AddListener(() =>
             {
+                ServiceLocator.GetService<SolarSystem>().Initialize();
                 _stateManager.SetState(new InGameState(_stateManager));
                 AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
                 AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego

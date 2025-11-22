@@ -42,6 +42,9 @@
         /// </summary>
         /// <param name="x">The child utility. </param>
         /// <returns>The result of apply the function to <paramref name="x"/>.</returns>
-        protected override float Evaluate(float x) => Slope * x + YIntercept;
+        protected override float Evaluate(float x)
+        {
+            return Slope * x + YIntercept;
+        }
     }
 }

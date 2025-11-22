@@ -1,7 +1,9 @@
 using System;
 using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Menus.Diplomacy;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,9 +17,12 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] private Image _civilizationIcon;
         [SerializeField] public Image _leaderSprite;
         [SerializeField] private Text _leaderNameText;
-        [SerializeField] private Slider _hungerSlider;
-        [SerializeField] private Slider _angerSlider;
-        [SerializeField] private Slider _militaryPowerSlider;
+        [SerializeField] private Slider _friendshipSlider;
+        [SerializeField] private Slider _dependencySlider;
+        [SerializeField] private Slider _interestSlider;
+        [SerializeField] private Slider _trustSlider;
+        
+        [SerializeField] private DiplomacyButtonsController _diplomacyButtonsPanel;
         
         private Civilization _currentCivilization;
         private CivilizationManager _civilizationManager;
@@ -25,12 +30,14 @@ namespace Code.Scripts.UI.Windows
         private void Start()
         {
             ServiceLocator.GetService<CivilizationManager>();
+            UIEvents.OnUpdateCivilizationUI += UpdateUI;
         }
 
         public void SetCivilization(string civilizationName)
         {
             _civilizationManager = ServiceLocator.GetService<CivilizationManager>();
             _currentCivilization = _civilizationManager.GetCivilization(civilizationName);
+            _diplomacyButtonsPanel.SetCivilization(_currentCivilization);
             UpdateUI();
         }
 
@@ -43,9 +50,10 @@ namespace Code.Scripts.UI.Windows
            // _civilizationIcon.sprite = _currentCivilization.CivilizationData.CivilizationIcon;
             _leaderSprite.sprite = _currentCivilization.CivilizationData.LeaderPortrait;
            // _leaderNameText.text = _currentCivilization.LeaderName;
-            _hungerSlider.value = _currentCivilization.CivilizationState.FriendlinessLevel;
-            _angerSlider.value = _currentCivilization.CivilizationState.DependencyLevel;
-            _militaryPowerSlider.value = _currentCivilization.CivilizationState.InterestLevel;
+           _friendshipSlider.value = _currentCivilization.CivilizationState.FriendlinessLevel;
+           _dependencySlider.value = _currentCivilization.CivilizationState.DependencyLevel;
+           _interestSlider.value = _currentCivilization.CivilizationState.InterestLevel;
+           _trustSlider.value = _currentCivilization.CivilizationState.TrustLevel;
         }
     }
 }

@@ -70,22 +70,22 @@ public class ResearchInitializer : MonoBehaviour
         {
             var allResearch = _researchSystem.GetAllResearchStatus();
         
-            Debug.Log("ESTADO DE INVESTIGACIONES");
-            Debug.Log($"Total de investigaciones: {allResearch.Count}");
+           // Debug.Log("ESTADO DE INVESTIGACIONES");
+           // Debug.Log($"Total de investigaciones: {allResearch.Count}");
         
             foreach (var researchStatus in allResearch)
             {
                 var researchNode = _researchSystem.GetResearch(researchStatus.Key);
-                Debug.Log($"- {researchStatus.Key}: {researchStatus.Value} (Node: {researchNode != null})");
+                //Debug.Log($"- {researchStatus.Key}: {researchStatus.Value} (Node: {researchNode != null})");
             }
 
             // Verificar recursos
             StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
             var resources = storage.GetAllResources();
-            Debug.Log("=== RECURSOS DISPONIBLES ===");
+           // Debug.Log("=== RECURSOS DISPONIBLES ===");
             foreach (var resource in resources)
             {
-                Debug.Log($"- {resource.Key}: {resource.Value}");
+               // Debug.Log($"- {resource.Key}: {resource.Value}");
             }
         }
         catch (System.Exception e)

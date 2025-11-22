@@ -123,6 +123,23 @@ namespace Code.Scripts.Core.Systems.Storage
         {
             return new Dictionary<string, int>(_inventoryItems);
         }
+        
+        public List<InventoryItem> GetInventoryItemList()
+        {
+            List<InventoryItem> itemList = new List<InventoryItem>();
+            foreach (var kvp in _inventoryItems)
+            {
+                if (_itemDatabase.TryGetValue(kvp.Key, out ItemData data))
+                {
+                    itemList.Add(new InventoryItem
+                    {
+                        itemData = data,
+                        quantity = kvp.Value
+                    });
+                }
+            }
+            return itemList;
+        }
 
         public ItemData GetItemData(string itemName)
         {

@@ -1,8 +1,8 @@
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 
-[System.Serializable]
-public class ItemData
+[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item Data")]
+public class ItemData : ScriptableObject
 {
     public string itemName;
     public string displayName;

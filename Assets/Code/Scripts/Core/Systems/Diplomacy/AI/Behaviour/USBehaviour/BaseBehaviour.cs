@@ -8,6 +8,7 @@ using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
 using UnityEngine;
+using Action = System.Action;
 
 namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
 {
@@ -20,6 +21,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
         protected Dictionary<string, CurveFactor> _curveFactors = new Dictionary<string, CurveFactor>();
         protected Dictionary<string, FunctionalAction> _actions = new Dictionary<string, FunctionalAction>();
+        protected Dictionary<string, UtilityAction> _utilityActions = new Dictionary<string, UtilityAction>();
         
         public BaseBehaviour(Entity.Civilization.Civilization civ, CommandInvoker invoker)
         {
@@ -50,10 +52,14 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             dependencyCurve.Function = (x) =>
             {
                 if (x <= 0.6f)
+                {
+                    Debug.Log("Dependency Curve: 0");
                     return 0f;
+                }
                 float X = x * 100f;
                 double numerator = Math.Exp(0.1 * (X - 60)) - 1;
                 double denominator = Math.Exp(4) - 1;
+                Debug.Log($"Dependency Curve: {numerator}/{denominator}");
                 return (float)(numerator / denominator);
             };
             _curveFactors["DependencyCurve"] = dependencyCurve;
@@ -62,10 +68,14 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             independencyCurve.Function = (x) =>
             {
                 if (x <= 0.6f)
+                {
+                    Debug.Log("Independency Curve: 1");
                     return 1f;
+                }
                 float X = x * 100f;
                 double numerator = Math.Exp(-0.1 * (X - 60)) - Math.Exp(-4);
                 double denominator = 1 - Math.Exp(-4);
+                Debug.Log($"Independency Curve: {numerator}/{denominator}");
                 return (float)(numerator / denominator);
             };
             _curveFactors["IndependencyCurve"] = independencyCurve;
@@ -94,8 +104,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             distrustCurve.Function = (x) =>
             {
                 if (x <= 0.8f)
-                    return (float)(1 - Math.Pow((x/80), 2));
-                return (float)(0.000625f*Math.Pow((x - 80), 2));
+                {
+                    Debug.Log($"Distrust Curve: {1 - Math.Pow((x/0.8f), 2)}");
+                    return (float)(1 - Math.Pow((x/0.8f), 2));
+                }
+                Debug.Log($"Distrust Curve: {6.25f*Math.Pow((x - 0.8f), 2)}");
+                return (float)(6.25f*Math.Pow((x - 0.8f), 2));
             };
             _curveFactors["DistrustCurve"] = distrustCurve;
             
@@ -103,10 +117,16 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             faithCurve.Function = (x) =>
             {
                 if (x <= 0.8f)
-                    return (float)Math.Pow((x/80), 2);
-                return (float)(1 - 0.001875f*Math.Pow((x - 80), 2));
+                {
+                    Debug.Log($"Faith Curve: {(float)Math.Pow((x/0.8f), 2)}");
+                    return (float)Math.Pow((x/0.8f), 2);
+                }
+                Debug.Log($"Faith Curve: {1 - 18.75f*Math.Pow((x - 80), 2)}");
+                return (float)(1 - 18.75f*Math.Pow((x - 0.8f), 2));
             };
             _curveFactors["FaithCurve"] = faithCurve;
+            
+            
             
              FunctionalAction offerPeace = new FunctionalAction(
                 
@@ -174,8 +194,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 () => Debug.Log("Increase Trade"),
                 () =>
                 {
-                    Debug.Log("Increasing Trade");
-                    _civilization.CivilizationState.FriendlinessLevel = 1f;
+                    Debug.Log("Increase Trade");
                     return Status.Success;
                 },
                 () => Debug.Log("Increased Trade")
@@ -188,6 +207,8 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 () =>
                 {
                     Debug.Log("Running Away");
+                    _civilization.CivilizationState.FriendlinessLevel = 1f;
+                    _civilization.CivilizationState.InterestLevel = 1f;
                     return Status.Success;
                 },
                 () => Debug.Log("Ran Away")

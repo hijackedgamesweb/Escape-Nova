@@ -26,10 +26,13 @@ namespace Code.Scripts.Core.World
         [Header("UI Scroll Control")]
         [SerializeField] private ScrollRect planetListScrollRect;
         
+        [SerializeField] private GameObject sun;
+        
         public List<List<Planet>> Planets = new();
         
         public event Action<int, int> OnPlanetRemoved;
 
+        private bool _initialized = false;
 
         private void Awake()
         {
@@ -46,7 +49,15 @@ namespace Code.Scripts.Core.World
             }
             ServiceLocator.RegisterService(this);
         }
-        
+
+       
+        public void Initialize()
+        {
+            if (_initialized) return;
+            _initialized = true;
+            Instantiate(sun, Vector3.zero, Quaternion.identity, transform);
+        }
+
         public void ResetScrollPositionToTop()
         {
             if (planetListScrollRect == null)

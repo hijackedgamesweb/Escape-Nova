@@ -18,9 +18,14 @@ MonoBehaviour:
   baseDependency: 0.5
   baseInterest: 0.5
   baseTrust: 0.5
-  civilizationDescription: No hay quien viva
-  civilizationIcon: {fileID: 21300000, guid: afcc21aaa520e9743b7c6ddd2ee73409, type: 3}
+  itemPreferences: {fileID: 0}
+  civilizationDescription: Very little is known about the planet these Akki come
+    from. Highly unpredictable, they seem to behave just like atoms, as seen in quantum
+    mechanics
+  civilizationIcon: {fileID: 21300000, guid: 0314919a5e8302d4694efaa9b2646570, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 1
   angerTolerance: 0
   leaderPortrait: {fileID: -7317164782365401908, guid: 2aa9265ac9e44b140a8ce73ac5123533, type: 3}
+  startingResources: []
+  startingInventory: {fileID: 0}

@@ -6,5 +6,6 @@ namespace Code.Scripts.Core.Entity.Civilization
         {
             
         }
+
     }
 }
