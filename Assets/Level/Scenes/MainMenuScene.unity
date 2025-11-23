@@ -43821,6 +43821,8 @@ MonoBehaviour:
   _arrowIndicator: {fileID: 708052055}
   _cameraController: {fileID: 1957786941}
   _edgePadding: 50
+  _topHudHeight: 100
+  _bottomHudHeight: 110
 --- !u!1 &2026544436
 GameObject:
   m_ObjectHideFlags: 0

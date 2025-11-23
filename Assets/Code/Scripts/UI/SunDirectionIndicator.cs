@@ -14,6 +14,13 @@ namespace Code.Scripts.UI
 
         [Header("Settings")]
         [SerializeField] private float _edgePadding = 50f;
+
+        [Header("HUD Settings")]
+        [Tooltip("Altura en píxeles del HUD superior para evitar solapamiento")]
+        [SerializeField] private float _topHudHeight = 100f;
+        [Tooltip("Altura en píxeles del HUD inferior para evitar solapamiento")]
+        [SerializeField] private float _bottomHudHeight = 100f;
+
         private Transform _sunTransform;
         private UnityEngine.Camera _mainCamera;
         private Canvas _parentCanvas;
@@ -62,21 +69,26 @@ namespace Code.Scripts.UI
 
                 Vector3 screenCenter = new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0);
                 Vector3 dir = (screenPos - screenCenter).normalized;
-
                 if (viewportPos.z < 0)
                 {
                     dir *= -1;
                 }
-
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 _arrowIndicator.rotation = Quaternion.Euler(0, 0, angle - 90);
+                float safeHalfWidth = (Screen.width * 0.5f) - _edgePadding;
+                float safeDistUp = (Screen.height * 0.5f) - _topHudHeight - _edgePadding;
+                float safeDistDown = (Screen.height * 0.5f) - _bottomHudHeight - _edgePadding;
+                float slopeX = Mathf.Abs(dir.x) > 0 ? safeHalfWidth / Mathf.Abs(dir.x) : float.MaxValue;
 
-                float halfWidth = (Screen.width * 0.5f) - _edgePadding;
-                float halfHeight = (Screen.height * 0.5f) - _edgePadding;
-
-                float slopeX = Mathf.Abs(dir.x) > 0 ? halfWidth / Mathf.Abs(dir.x) : float.MaxValue;
-                float slopeY = Mathf.Abs(dir.y) > 0 ? halfHeight / Mathf.Abs(dir.y) : float.MaxValue;
-
+                float slopeY = float.MaxValue;
+                if (dir.y > 0)
+                {
+                    slopeY = safeDistUp / dir.y;
+                }
+                else if (dir.y < 0)
+                {
+                    slopeY = safeDistDown / Mathf.Abs(dir.y);
+                }
                 float scaleFactor = Mathf.Min(slopeX, slopeY);
                 Vector3 arrowPos = screenCenter + dir * scaleFactor;
 
