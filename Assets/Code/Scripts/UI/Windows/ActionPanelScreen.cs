@@ -56,6 +56,7 @@ namespace Code.Scripts.UI.Windows
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked += EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked += EnableDiplomacyButton;
             
             if (SystemEvents.IsInventoryUnlocked)
             {
@@ -83,6 +84,20 @@ namespace Code.Scripts.UI.Windows
             {
                 skillTreeBtn.interactable = false;
             }
+            
+            if (SystemEvents.IsDiplomacyUnlocked)
+            {
+                EnableDiplomacyButton();
+            }
+            else
+            {
+                diplomacyBtn.interactable = false;
+            }
+        }
+
+        private void EnableDiplomacyButton()
+        {
+            diplomacyBtn.interactable = true;
         }
 
         private void OnDestroy()
@@ -90,6 +105,7 @@ namespace Code.Scripts.UI.Windows
             SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
             SystemEvents.OnResearchUnlocked -= EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked -= EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked -= EnableDiplomacyButton;
         }
 
         private void EnableStorageButton()

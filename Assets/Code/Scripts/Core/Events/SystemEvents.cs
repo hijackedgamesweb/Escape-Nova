@@ -7,6 +7,7 @@ namespace Code.Scripts.Core.Events
         public static event Action OnResearchUnlocked;
         public static event Action OnInventoryUnlocked;
         public static event Action OnConstellationsUnlocked;
+        public static event Action OnDiplomacyUnlocked;
         
         public static event Action OnStarsPanelUnlocked;
         public static event Action OnRequestMainMenu;
@@ -15,6 +16,7 @@ namespace Code.Scripts.Core.Events
         public static bool IsResearchUnlocked { get; private set; }
         public static bool IsInventoryUnlocked { get; private set; }
         public static bool IsConstellationsUnlocked { get; private set; }
+        public static bool IsDiplomacyUnlocked { get; set; }
 
         public static bool IsStarsPanelUnlocked { get; private set; }
 
@@ -55,5 +57,13 @@ namespace Code.Scripts.Core.Events
         {
             OnGameOver?.Invoke();
         }
+
+        public static void UnlockDiplomacyPanel()
+        {
+            if (IsDiplomacyUnlocked) return;
+            IsDiplomacyUnlocked = true;
+            OnDiplomacyUnlocked?.Invoke();
+        }
+
     }
 }

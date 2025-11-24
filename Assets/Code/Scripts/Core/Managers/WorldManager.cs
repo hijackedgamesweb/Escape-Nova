@@ -10,12 +10,13 @@ using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.Patterns.Singleton;
 using Code.Scripts.Player;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Managers
 {
-    public class WorldManager : MonoBehaviour
+    public class WorldManager : Singleton<WorldManager>
     {
         //STORAGE SYSTEM
         [SerializeField] List<ResourceData> _worldResources = new();
@@ -34,6 +35,7 @@ namespace Code.Scripts.Core.Managers
 
         private void Awake()
         {
+            base.Awake();
             _invoker = new CommandInvoker();
             
             
@@ -56,9 +58,17 @@ namespace Code.Scripts.Core.Managers
             _civilizationSOs.RemoveAt(0);
         }
         
-        public void AddCivilization(Civilization civ)
+        public void AddCivilization(string civ)
         {
-            _civilizationManager.AddCivilization(civ);
+            foreach (var civSO in _civilizationSOs)
+            {
+                if (civSO.civName == civ)
+                {
+                    Civilization newCiv = new Civilization(_invoker, civSO);
+                    _civilizationManager.AddCivilization(newCiv);
+                    return;
+                }
+            }
         }
 
         private void UpdateWorld(int currentTurn)
