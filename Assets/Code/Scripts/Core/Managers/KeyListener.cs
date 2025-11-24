@@ -1,20 +1,77 @@
 using System.Collections;
+using Code.Scripts.Camera;
+using Code.Scripts.Core.Events;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Code.Scripts.Core.Events;
-using Code.Scripts.Camera;
-using Code.Scripts.Core.Systems.Research;
-using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine.SceneManagement;
 
 namespace Code.Scripts.Core.Managers
 {
-    public class EscapeKeyListener : MonoBehaviour
+    public class KeyListener : MonoBehaviour
     {
+        [Header("Dependencies")]
         [SerializeField] private GameObject _gameTimeManager;
         
+        [Header("Input Configuration")]
+        [SerializeField] private InputActionAsset inputActionAsset;
+        [SerializeField] private string actionMapName = "Shortcuts";
+
+        // Actions
+        private InputAction _toggleMenuAction;
+        private InputAction _pauseTimeAction;
+        private InputAction _speed1Action;
+        private InputAction _speed2Action;
+        private InputAction _speed3Action;
+        
+        // Debug Actions
+        private InputAction _debugWinAction;
+        private InputAction _debugCycleAction;
+
         private GameTimeManager _timeManagerComponent;
+
+        private void Awake()
+        {
+            // 1. Inicializar las acciones
+            var map = inputActionAsset.FindActionMap(actionMapName);
+
+            if (map == null)
+            {
+                Debug.LogError($"[EscapeKeyListener] No se encontró el Action Map: {actionMapName}");
+                return;
+            }
+
+            _toggleMenuAction = map.FindAction("ToggleMenu");
+            _pauseTimeAction = map.FindAction("TimePause");
+            _speed1Action = map.FindAction("TimeSpeed1");
+            _speed2Action = map.FindAction("TimeSpeed2");
+            _speed3Action = map.FindAction("TimeSpeed3");
+            
+            _debugWinAction = map.FindAction("DebugWin");
+            _debugCycleAction = map.FindAction("DebugSkip");
+        }
+
+        private void OnEnable()
+        {
+            _toggleMenuAction?.Enable();
+            _pauseTimeAction?.Enable();
+            _speed1Action?.Enable();
+            _speed2Action?.Enable();
+            _speed3Action?.Enable();
+            _debugWinAction?.Enable();
+            _debugCycleAction?.Enable();
+        }
+
+        private void OnDisable()
+        {
+            _toggleMenuAction?.Disable();
+            _pauseTimeAction?.Disable();
+            _speed1Action?.Disable();
+            _speed2Action?.Disable();
+            _speed3Action?.Disable();
+            _debugWinAction?.Disable();
+            _debugCycleAction?.Disable();
+        }
 
         private void Start()
         {
@@ -26,22 +83,22 @@ namespace Code.Scripts.Core.Managers
 
         private void Update()
         {
-            if (Keyboard.current == null) return;
-            if (Keyboard.current.tabKey.wasPressedThisFrame)
+            
+            if (_toggleMenuAction != null && _toggleMenuAction.WasPerformedThisFrame())
             {
                 HandleTabPress();
             }
-            if (Keyboard.current.spaceKey.wasPressedThisFrame) ChangeGameSpeed(0f);
-            if (Keyboard.current.digit1Key.wasPressedThisFrame) ChangeGameSpeed(1f);
-            if (Keyboard.current.digit2Key.wasPressedThisFrame) ChangeGameSpeed(2f);
-            if (Keyboard.current.digit3Key.wasPressedThisFrame) ChangeGameSpeed(4f);
+
+            if (_pauseTimeAction != null && _pauseTimeAction.WasPerformedThisFrame()) ChangeGameSpeed(0f);
+            if (_speed1Action != null && _speed1Action.WasPerformedThisFrame()) ChangeGameSpeed(1f);
+            if (_speed2Action != null && _speed2Action.WasPerformedThisFrame()) ChangeGameSpeed(2f);
+            if (_speed3Action != null && _speed3Action.WasPerformedThisFrame()) ChangeGameSpeed(4f);
             
-            if (Keyboard.current.f1Key.wasPressedThisFrame)
+            if (_debugWinAction != null && _debugWinAction.WasPerformedThisFrame())
             {
                 StartCoroutine(SecuenciaVictoria());
             }
-            
-            if (Keyboard.current.f2Key.wasPressedThisFrame)
+            if (_debugCycleAction != null && _debugCycleAction.WasPerformedThisFrame())
             {
                 if (_timeManagerComponent != null)
                 {
