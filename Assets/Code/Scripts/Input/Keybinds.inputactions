@@ -131,6 +131,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "AddResource",
+                    "type": "Button",
+                    "id": "dd752c7f-71c8-46c9-bb4a-56b16ce47a55",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -214,7 +223,7 @@
                 {
                     "name": "",
                     "id": "6020efb1-95df-4615-86c3-5be2ea2cc8cb",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -285,6 +294,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "DebugLose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a178d9db-7c05-43d3-bcac-e87943a587e1",
+                    "path": "<Keyboard>/f3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AddResource",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

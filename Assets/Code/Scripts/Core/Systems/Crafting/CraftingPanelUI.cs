@@ -62,9 +62,10 @@ public class CraftingPanelUI : MonoBehaviour
         {
             placeholderTextObject.SetActive(false);
         }
-            
-        
+
+
         RefreshRecipeList();
+        UpdateCraftButtonState();
     }
 
     private void OnDestroy()
@@ -279,18 +280,50 @@ public class CraftingPanelUI : MonoBehaviour
     {
         if (_selectedRecipe == null)
         {
-            craftButton.interactable = false;
+            craftButton.gameObject.SetActive(false);
             return;
         }
-        
+        craftButton.gameObject.SetActive(true);
         if (_craftingSystem.IsAnyCraftingInProgress())
         {
             craftButton.interactable = false;
             return;
         }
-        
         int amountToCraft = GetCraftAmount(); 
-        craftButton.interactable = _craftingSystem.CanCraft(_selectedRecipe.recipeId, amountToCraft);
+        bool canCraft = _craftingSystem.CanCraft(_selectedRecipe.recipeId, amountToCraft);
+        craftButton.interactable = canCraft;
+        if (!canCraft)
+        {
+            Debug.Log($"[CraftingDebug] No se puede craftear '{_selectedRecipe.recipeId}'. Cantidad: {amountToCraft}");
+            CheckWhyCannotCraft(_selectedRecipe, amountToCraft); 
+        }
+    }
+    private void CheckWhyCannotCraft(CraftingRecipe recipe, int amount)
+    {
+        foreach (var ingredient in recipe.ingredients)
+        {
+            int req = ingredient.amount * amount;
+            if (ingredient.useInventoryItem)
+            {
+                if (!_storageSystem.HasInventoryItem(ingredient.itemName, req))
+                    Debug.Log($"-> Falta Ingrediente Inventario: {ingredient.itemName}. Tienes {_storageSystem.GetInventoryItemQuantity(ingredient.itemName)}/{req}");
+            }
+            else
+            {
+                if (!_storageSystem.HasResource(ingredient.resourceType, req))
+                     Debug.Log($"-> Falta Recurso: {ingredient.resourceType}. Tienes {_storageSystem.GetResourceAmount(ingredient.resourceType)}/{req}");
+            }
+        }
+        var outputItem = _craftingSystem.GetItemData(recipe.output.itemName);
+        if (outputItem != null)
+        {
+            int current = _storageSystem.GetInventoryItemQuantity(outputItem.itemName);
+            int total = current + (recipe.output.amount * amount);
+            if (total > outputItem.maxStack)
+            {
+                Debug.Log($"-> Inventario Lleno/Stack Maximo superado: Tienes {current}, quieres crear {recipe.output.amount * amount}, MaxStack es {outputItem.maxStack}. Total seria {total}");
+            }
+        }
     }
 
     private void OnCraftButtonClicked()
