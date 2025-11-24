@@ -37,7 +37,10 @@ namespace Code.Scripts.Core.Systems.Astrarium
     
         private void Update()
         {
-            
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
         
     
