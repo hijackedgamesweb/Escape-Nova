@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.IO;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Code.Scripts.Core.Systems.Astrarium
@@ -33,6 +35,11 @@ namespace Code.Scripts.Core.Systems.Astrarium
             filePath = Application.dataPath + "/Code/Scripts/Core/Systems/Astrarium/Astrarium.txt";
         }
     
+        private void Update()
+        {
+            
+        }
+        
     
         public void CategoryButtonPressed(int idx)
         {

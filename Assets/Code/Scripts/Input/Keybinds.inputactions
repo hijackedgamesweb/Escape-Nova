@@ -135,7 +135,7 @@
                 {
                     "name": "AddResource",
                     "type": "Button",
-                    "id": "29849ae6-b33d-43ae-b7b2-87b3573aaf70",
+                    "id": "dd752c7f-71c8-46c9-bb4a-56b16ce47a55",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -223,7 +223,7 @@
                 {
                     "name": "",
                     "id": "6020efb1-95df-4615-86c3-5be2ea2cc8cb",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -299,7 +299,7 @@
                 },
                 {
                     "name": "",
-                    "id": "def4cdf1-87b7-4dab-808a-a1e94065e756",
+                    "id": "a178d9db-7c05-43d3-bcac-e87943a587e1",
                     "path": "<Keyboard>/f3",
                     "interactions": "",
                     "processors": "",

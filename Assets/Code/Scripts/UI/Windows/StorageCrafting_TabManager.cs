@@ -1,6 +1,8 @@
+using Code.Scripts.Core.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 using Code.Scripts.UI.Windows;
+using UnityEngine.InputSystem;
 
 namespace Code.Scripts.UI.Windows 
 {
@@ -25,6 +27,14 @@ namespace Code.Scripts.UI.Windows
             
             if (craftingTabButton != null)
                 craftingTabButton.onClick.AddListener(ShowCraftingPanel);
+        }
+        
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
 
         public override void Show(object parameter = null)

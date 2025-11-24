@@ -4,6 +4,7 @@ using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Windows
@@ -51,6 +52,20 @@ namespace Code.Scripts.UI.Windows
             diplomacyBtn.interactable = true;
         }
 
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                OpenPauseMenu();
+            }
+        }
+
+        private void OpenPauseMenu()
+        {
+            Time.timeScale = 0f;
+            UIManager.Instance.ShowOverlay<PauseMenuScreen>();
+        }
+
         private void OnDestroy()
         {
             SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
@@ -63,6 +78,11 @@ namespace Code.Scripts.UI.Windows
         {
             AudioManager.Instance.PlaySFX("ButtonClick");
             UIManager.Instance.ShowScreen<ActionPanelScreen>(interf);
+        }
+
+        private void OnMenuPressed(String interf)
+        {
+            UIManager.Instance.ShowScreen<OptionsScreen>(interf);
         }
         
         private void EnableStorageButton()
