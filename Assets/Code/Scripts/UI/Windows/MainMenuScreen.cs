@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.InputSystem;
+using Code.Scripts.Core.Managers;
 
 namespace Code.Scripts.UI.Windows
 {
@@ -14,10 +15,19 @@ namespace Code.Scripts.UI.Windows
         [SerializeField] public Button ExitButton;
 
         private GameObject _lastSelectedButton;
+        private void Awake()
+        {
+            PlayButton.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<InGameScreen>());
+            SettingsButton.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<OptionsScreen>("MainMenu"));
+            ExitButton.onClick.AddListener(() => 
+                Application.Quit());
+        }
 
         private void Start()
         {
-            AudioManager.Instance.PlayMusic("MainMenuMusic"); //LLamada al Singleton del AudioManager para reproducir la musica del menu principal
+            AudioManager.Instance.PlayMusic("MainMenuMusic"); 
         }
         
         private void OnEnable()
@@ -37,6 +47,7 @@ namespace Code.Scripts.UI.Windows
                 EventSystem.current.SetSelectedGameObject(_lastSelectedButton);
             }
         }
+        
         public void SetLastSelectedButton(GameObject button)
         {
             _lastSelectedButton = button;
@@ -52,6 +63,7 @@ namespace Code.Scripts.UI.Windows
                 }
             }
         }
+        
         private bool WasNavigationKeyPressed()
         {
             var keyboard = Keyboard.current;

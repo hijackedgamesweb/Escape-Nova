@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Skills;
 using Code.Scripts.UI.Windows;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Code.Scripts.Core.Systems.Skills
@@ -67,6 +69,14 @@ namespace Code.Scripts.Core.Systems.Skills
 //            Debug.Log("SkillTreeUI: Start method called");
             ForceSetupModalButtons();
             HideModal();
+        }
+        
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
 
         private void ForceSetupModalButtons()

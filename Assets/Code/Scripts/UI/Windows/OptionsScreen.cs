@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,34 +6,44 @@ namespace Code.Scripts.UI.Windows
 {
     public class OptionsScreen : BaseUIScreen
     {
-        //Variables
-        
         [SerializeField] public Button returnBtn;
-        
-        
-        //Metodos
-        
-        //AUDIO
-        public void OnMasterVolumeSliderValueChanged(Slider sldr)
+        private string _previousScreen;
+
+        private void Awake()
         {
-            AudioManager.Instance.SetMasterVolume(sldr.value);
+            returnBtn.onClick.AddListener(OnReturnPressed);
         }
-        
-        public void OnMusicVolumeSliderValueChanged(Slider sldr)
+        public override void Show(object parameter = null)
         {
-            AudioManager.Instance.SetMusicVolume(sldr.value);
+            base.Show(parameter);
+
+            if (parameter is string origin)
+            {
+                _previousScreen = origin;
+            }
+            else
+            {
+                _previousScreen = "MainMenu";
+            }
         }
-        
-        public void OnSfxVolumeSliderValueChanged(Slider sldr)
+
+        private void OnReturnPressed()
         {
-            AudioManager.Instance.SetSFXVolume(sldr.value);
+            AudioManager.Instance.PlaySFX("ButtonClick");
+
+            if (_previousScreen == "PauseMenu")
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+                UIManager.Instance.ShowOverlay<PauseMenuScreen>();
+            }
+            else 
+            {
+                UIManager.Instance.ShowScreen<MainMenuScreen>();
+            }
         }
-        
-        //VIDEO
-        
-        public void FullscreenTogglePressed()
-        {
-            Screen.fullScreen = !Screen.fullScreen;
-        }
+        public void OnMasterVolumeSliderValueChanged(Slider sldr) => AudioManager.Instance.SetMasterVolume(sldr.value);
+        public void OnMusicVolumeSliderValueChanged(Slider sldr) => AudioManager.Instance.SetMusicVolume(sldr.value);
+        public void OnSfxVolumeSliderValueChanged(Slider sldr) => AudioManager.Instance.SetSFXVolume(sldr.value);
+        public void FullscreenTogglePressed() => Screen.fullScreen = !Screen.fullScreen;
     }
 }

@@ -31,7 +31,8 @@ namespace Code.Scripts.Core.Systems.Crafting
         private Dictionary<string, ItemData> _itemDataLookup;
 
         private IGameTime _gameTime;
-        private TimeConfig _timeConfig;
+        private const float STANDARD_SECONDS_PER_CYCLE = 5.0f;
+        
         private CraftingData _currentCraftingData;
 
         public event Action<string> OnRecipeUnlocked;
@@ -39,7 +40,6 @@ namespace Code.Scripts.Core.Systems.Crafting
         public event Action<string, float> OnCraftingProgress;
         public event Action<string> OnCraftingCompleted;
         public event Action<string, int> OnItemCrafted;
-
 
         public CraftingSystem(List<CraftingRecipe> allRecipes, InventoryData itemDatabase)
         {
@@ -74,15 +74,6 @@ namespace Code.Scripts.Core.Systems.Crafting
         {
             _storageSystem = ServiceLocator.GetService<StorageSystem>();
             _gameTime = ServiceLocator.GetService<IGameTime>();
-            _timeConfig = ServiceLocator.GetService<TimeConfig>();
-
-            if (_timeConfig == null)
-            {
-                Debug.LogError("CraftingSystem: TimeConfig not found in ServiceLocator");
-                return;
-            }
-
-            Planet.OnGlobalImprovementAdded += OnGlobalImprovementApplied;
             _gameTime.OnCycleCompleted += OnCycleCompleted;
         }
 
@@ -92,43 +83,18 @@ namespace Code.Scripts.Core.Systems.Crafting
             {
                 _gameTime.OnCycleCompleted -= OnCycleCompleted;
             }
-            Planet.OnGlobalImprovementAdded -= OnGlobalImprovementApplied;
         }
-        
-        private void OnGlobalImprovementApplied(string improvementType, float percentage)
-        {
-            if (improvementType == "GlobalCycleSpeed")
-            {
-                RecalculateCurrentCraftingCycles();
-            }
-        }
-        
-        private void RecalculateCurrentCraftingCycles()
-        {
-            if (!IsAnyCraftingInProgress()) return;
-            
-            if (!_recipeDatabase.TryGetValue(_currentCraftingData.recipeId, out CraftingRecipe recipe)) return;
-            float baseTimeInSeconds = recipe.craftingTimeInSeconds * _currentCraftingData.amount;
-            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
-            float effectiveTimeInSeconds = baseTimeInSeconds / (1 + (speedBonus / 100f));
-            
-            int newCyclesNeeded = Mathf.CeilToInt(effectiveTimeInSeconds / _timeConfig.secondsPerCycle);
-            if (_currentCraftingData.cyclesNeeded > 0)
-            {
-                float completionRatio = (float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded;
-                _currentCraftingData.cyclesCompleted = Mathf.FloorToInt(completionRatio * newCyclesNeeded);
-            }
-            _currentCraftingData.cyclesNeeded = newCyclesNeeded;
-            OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded));
-        }
-        
         private void OnCycleCompleted(int currentCycle)
         {
             if (!IsAnyCraftingInProgress()) return;
 
             _currentCraftingData.cyclesCompleted++;
-
-            float progress = Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
+            float progress = 0f;
+            if (_currentCraftingData.cyclesNeeded > 0)
+            {
+                progress = Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
+            }
+            
             OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, progress);
 
             if (_currentCraftingData.cyclesCompleted >= _currentCraftingData.cyclesNeeded)
@@ -239,13 +205,10 @@ namespace Code.Scripts.Core.Systems.Crafting
             OnCraftingStarted?.Invoke(recipeId);
             return true;
         }
-
         private int CalculateCyclesNeeded(float craftingTimeInSeconds)
         {
-            float secondsPerCycle = _timeConfig.secondsPerCycle;
-            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
-            float effectiveTimeInSeconds = craftingTimeInSeconds / (1 + (speedBonus / 100f));
-            return Mathf.CeilToInt(effectiveTimeInSeconds / secondsPerCycle);
+            int cycles = Mathf.CeilToInt(craftingTimeInSeconds / STANDARD_SECONDS_PER_CYCLE);
+            return Mathf.Max(1, cycles);
         }
 
         private void CompleteCrafting()
@@ -303,6 +266,7 @@ namespace Code.Scripts.Core.Systems.Crafting
         public float GetCurrentCraftingProgress()
         {
             if (!IsAnyCraftingInProgress()) return 0f;
+            if (_currentCraftingData.cyclesNeeded == 0) return 0f; // Seguridad extra
 
             return Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
         }

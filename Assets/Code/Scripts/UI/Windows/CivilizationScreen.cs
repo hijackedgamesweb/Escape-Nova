@@ -6,6 +6,7 @@ using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Menus.Diplomacy;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Windows
@@ -31,6 +32,14 @@ namespace Code.Scripts.UI.Windows
         {
             ServiceLocator.GetService<CivilizationManager>();
             UIEvents.OnUpdateCivilizationUI += UpdateUI;
+        }
+        
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
 
         public void SetCivilization(string civilizationName)
