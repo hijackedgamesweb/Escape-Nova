@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6223935161277792084}
   - component: {fileID: 1253099990460781578}
   - component: {fileID: 75891865791105038}
+  - component: {fileID: 5628574427647113941}
   m_Layer: 0
   m_Name: PlanetPrefab
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 610972c8e3dfe084db997ceb6262e651, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,3 +153,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6223935161277792084}
   animationData: {fileID: 11400000, guid: 41aeb9aa8edfe0247980957326c8b021, type: 2}
+--- !u!114 &5628574427647113941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5676018479038464827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ca4a3ed3f64f14ade8c2eba82e595d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 0}

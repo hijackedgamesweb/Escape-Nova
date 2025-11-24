@@ -27,6 +27,8 @@ namespace Code.Scripts.Core.World
         [SerializeField] private ScrollRect planetListScrollRect;
         
         [SerializeField] private GameObject sun;
+
+        private Transform sunPos;
         
         public List<List<Planet>> Planets = new();
         
@@ -55,7 +57,8 @@ namespace Code.Scripts.Core.World
         {
             if (_initialized) return;
             _initialized = true;
-            Instantiate(sun, Vector3.zero, Quaternion.identity, transform);
+            
+            sunPos = Instantiate(sun, Vector3.zero, Quaternion.identity, transform).transform;
         }
 
         public void ResetScrollPositionToTop()
@@ -121,6 +124,11 @@ namespace Code.Scripts.Core.World
         {
             //NotificationManager.Instance.CreateNotification($"Se ha construido: {specialPlanetData.constructibleName}!", NotificationType.Info);
             ConstructionEvents.OnConstructibleCreated?.Invoke(specialPlanetData);
+        }
+        
+        public Transform GetSunTransform()
+        {
+            return sunPos;
         }
     }
 }
