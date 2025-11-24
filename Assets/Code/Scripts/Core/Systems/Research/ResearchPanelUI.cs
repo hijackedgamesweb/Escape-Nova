@@ -3,10 +3,12 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Research;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
+using UnityEngine.InputSystem;
 
 namespace Code.Scripts.UI.Research
 {
@@ -60,6 +62,14 @@ namespace Code.Scripts.UI.Research
             }
             SelectCategory(_currentCategory);
             UpdateAllUI();
+        }
+        
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
         
         public override void Hide()
