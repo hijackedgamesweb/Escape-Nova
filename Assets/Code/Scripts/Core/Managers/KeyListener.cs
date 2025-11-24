@@ -1,6 +1,9 @@
 using System.Collections;
 using Code.Scripts.Camera;
 using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Systems.Resources;
+using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -23,6 +26,7 @@ namespace Code.Scripts.Core.Managers
         private InputAction _speed1Action;
         private InputAction _speed2Action;
         private InputAction _speed3Action;
+        private InputAction _addResource;
         
         // Debug Actions
         private InputAction _debugWinAction;
@@ -46,6 +50,7 @@ namespace Code.Scripts.Core.Managers
             _speed1Action = map.FindAction("TimeSpeed1");
             _speed2Action = map.FindAction("TimeSpeed2");
             _speed3Action = map.FindAction("TimeSpeed3");
+            _addResource = map.FindAction("AddResource");
             
             _debugWinAction = map.FindAction("DebugWin");
             _debugCycleAction = map.FindAction("DebugSkip");
@@ -58,6 +63,7 @@ namespace Code.Scripts.Core.Managers
             _speed1Action?.Enable();
             _speed2Action?.Enable();
             _speed3Action?.Enable();
+            _addResource?.Enable();
             _debugWinAction?.Enable();
             _debugCycleAction?.Enable();
         }
@@ -69,6 +75,7 @@ namespace Code.Scripts.Core.Managers
             _speed1Action?.Disable();
             _speed2Action?.Disable();
             _speed3Action?.Disable();
+            _addResource?.Disable();
             _debugWinAction?.Disable();
             _debugCycleAction?.Disable();
         }
@@ -104,6 +111,16 @@ namespace Code.Scripts.Core.Managers
                 {
                     _timeManagerComponent.SetCurrentCycle(1000);
                 }
+            }
+
+            if (_addResource != null && _addResource.WasPerformedThisFrame())
+            {
+                StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+                storage.AddResource(ResourceType.Sand, 1000000);
+                storage.AddResource(ResourceType.Stone, 1000000);
+                storage.AddResource(ResourceType.Metal, 1000000);
+                storage.AddResource(ResourceType.Ice, 1000000);
+                storage.AddResource(ResourceType.Fire, 1000000);
             }
         }
         

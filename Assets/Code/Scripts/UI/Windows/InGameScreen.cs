@@ -39,9 +39,16 @@ namespace Code.Scripts.UI.Windows
             storageBtn.interactable = false;
             researchBtn.interactable = false;
             skillTreeBtn.interactable = false;
+            diplomacyBtn.interactable = false;
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked += EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked += EnableDiplomacyButton;
+        }
+
+        private void EnableDiplomacyButton()
+        {
+            diplomacyBtn.interactable = true;
         }
 
         private void OnDestroy()
@@ -49,6 +56,7 @@ namespace Code.Scripts.UI.Windows
             SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
             SystemEvents.OnResearchUnlocked -= EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked -= EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked -= EnableDiplomacyButton;
         }
         
         private void OnButtonPressed(String interf)

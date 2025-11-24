@@ -45,7 +45,8 @@ namespace Code.Scripts.Core.Systems.Research
 
         private StorageSystem _storageSystem;
         private IGameTime _gameTime;
-        private TimeConfig _timeConfig;
+        private const float STANDARD_SECONDS_PER_CYCLE = 5.0f; 
+
         private string _currentResearchId;
         private int _cyclesNeeded;
         private int _cyclesCompleted;
@@ -65,16 +66,7 @@ namespace Code.Scripts.Core.Systems.Research
         {
             _storageSystem = ServiceLocator.GetService<StorageSystem>();
             _gameTime = ServiceLocator.GetService<IGameTime>();
-            _timeConfig = ServiceLocator.GetService<TimeConfig>();
-
-            if (_timeConfig == null)
-            {
-                Debug.LogError("ResearchSystem: TimeConfig not found in ServiceLocator");
-                return;
-            }
-
             _gameTime.OnCycleCompleted += OnCycleCompleted;
-            Planet.OnGlobalImprovementAdded += OnGlobalImprovementApplied;
             RecalculateResearchAvailability();
         }
         
@@ -84,7 +76,6 @@ namespace Code.Scripts.Core.Systems.Research
             {
                 _gameTime.OnCycleCompleted -= OnCycleCompleted;
             }
-            Planet.OnGlobalImprovementAdded -= OnGlobalImprovementApplied;
         }
 
         private void InitializeResearchDatabase(List<ResearchNode> availableResearch)
@@ -112,7 +103,7 @@ namespace Code.Scripts.Core.Systems.Research
 
             _cyclesCompleted++;
 
-            float progress = Mathf.Clamp01((float)_cyclesCompleted / _cyclesNeeded);
+            float progress = _cyclesNeeded > 0 ? Mathf.Clamp01((float)_cyclesCompleted / _cyclesNeeded) : 0f;
             _researchProgress[_currentResearchId].progress = progress;
 
             OnResearchProgress?.Invoke(_currentResearchId, progress);
@@ -127,7 +118,6 @@ namespace Code.Scripts.Core.Systems.Research
         {
             if (!_researchDatabase.ContainsKey(researchId)) return false;
             if (_researchStatus[researchId] != ResearchStatus.Available) return false;
-
             if (IsAnyResearchInProgress()) return false;
 
             var research = _researchDatabase[researchId];
@@ -166,17 +156,12 @@ namespace Code.Scripts.Core.Systems.Research
             var research = _researchDatabase[researchId];
             AudioManager.Instance.PlaySFX("ResearchStarted");
             
-            // Consumir recursos
             foreach (var cost in research.resourceCosts)
             {
                 if (cost.useInventoryItem)
-                {
                     _storageSystem.ConsumeInventoryItem(cost.itemName, cost.amount);
-                }
                 else
-                {
                     _storageSystem.ConsumeResource(cost.resourceType, cost.amount);
-                }
             }
 
             _researchStatus[researchId] = ResearchStatus.InProgress;
@@ -184,8 +169,6 @@ namespace Code.Scripts.Core.Systems.Research
             _researchProgress[researchId].researchId = researchId;
 
             _currentResearchId = researchId;
-
-            // Convertir tiempo de investigación a ciclos usando TimeConfig
             _cyclesNeeded = CalculateCyclesNeeded(research.researchTimeInSeconds);
             _cyclesCompleted = 0;
 
@@ -195,18 +178,8 @@ namespace Code.Scripts.Core.Systems.Research
 
         private int CalculateCyclesNeeded(float researchTimeInSeconds)
         {
-            float secondsPerCycle = _timeConfig.secondsPerCycle;
-            float speedBonus = Planet.GetGlobalImprovement("GlobalCycleSpeed");
-            float effectiveTimeInSeconds = researchTimeInSeconds / (1 + (speedBonus / 100f));
-            return Mathf.CeilToInt(effectiveTimeInSeconds / secondsPerCycle);
-        }
-
-        private void OnGlobalImprovementApplied(string improvementType, float percentage)
-        {
-            if (improvementType == "GlobalCycleSpeed")
-            {
-                RecalculateCurrentResearchCycles();
-            }
+            int cycles = Mathf.CeilToInt(researchTimeInSeconds / STANDARD_SECONDS_PER_CYCLE);
+            return Mathf.Max(1, cycles);
         }
         
         private void CompleteResearch(string researchId)
@@ -229,7 +202,7 @@ namespace Code.Scripts.Core.Systems.Research
             _cyclesCompleted = 0;
 
             OnResearchCompleted?.Invoke(researchId);
-            Events.ResearchEvents.CompleteResearch(researchNode);
+            Code.Scripts.Core.Events.ResearchEvents.CompleteResearch(researchNode);
             NotificationManager.Instance.CreateNotification($"Research: {researchNode.name} completed", NotificationType.Info);
         }
 
@@ -238,7 +211,6 @@ namespace Code.Scripts.Core.Systems.Research
             if (!IsAnyResearchInProgress()) return false;
 
             string researchToCancelId = _currentResearchId;
-
             _researchStatus[researchToCancelId] = ResearchStatus.Available;
 
             if (_researchProgress.TryGetValue(researchToCancelId, out ResearchData data))
@@ -266,7 +238,6 @@ namespace Code.Scripts.Core.Systems.Research
         private void UnlockNewResearch(string completedResearchId)
         {
             var research = _researchDatabase[completedResearchId];
-
             foreach (var unlockedId in research.unlocksResearchIds)
             {
                 UnlockResearch(unlockedId);
@@ -281,24 +252,6 @@ namespace Code.Scripts.Core.Systems.Research
                 _researchStatus[researchId] = ResearchStatus.Available;
                 OnResearchUnlocked?.Invoke(researchId);
             }
-        }
-        
-        private void RecalculateCurrentResearchCycles()
-        {
-            if (!IsAnyResearchInProgress()) return;
-            
-            if (!_researchDatabase.TryGetValue(_currentResearchId, out ResearchNode research)) return;
-            float baseTimeInSeconds = research.researchTimeInSeconds;
-            float speedBonus = Code.Scripts.Core.World.ConstructableEntities.Planet.GetGlobalImprovement("GlobalCycleSpeed");
-            float effectiveTimeInSeconds = baseTimeInSeconds / (1 + (speedBonus / 100f));
-            int newCyclesNeeded = Mathf.CeilToInt(effectiveTimeInSeconds / _timeConfig.secondsPerCycle);
-            if (_cyclesNeeded > 0)
-            {
-                float completionRatio = (float)_cyclesCompleted / _cyclesNeeded;
-                _cyclesCompleted = Mathf.FloorToInt(completionRatio * newCyclesNeeded);
-            }
-            _cyclesNeeded = newCyclesNeeded;
-            OnResearchProgress?.Invoke(_currentResearchId, Mathf.Clamp01((float)_cyclesCompleted / _cyclesNeeded));
         }
 
         public void RecalculateResearchAvailability()
@@ -325,49 +278,16 @@ namespace Code.Scripts.Core.Systems.Research
                     if (!IsResearchCompleted(prereq.researchId))
                         return false;
                 }
-
-                if (!string.IsNullOrEmpty(prereq.buildingId))
-                {
-                    // Verificar con sistema de construcción
-                }
-
-                if (prereq.playerLevel > 0)
-                {
-                    // Verificar con sistema de progresión
-                }
             }
             return true;
         }
 
-        public ResearchStatus GetResearchStatus(string researchId)
-        {
-            return _researchStatus.GetValueOrDefault(researchId, ResearchStatus.Locked);
-        }
-
-        public float GetResearchProgress(string researchId)
-        {
-            return _researchProgress.GetValueOrDefault(researchId, new ResearchData()).progress;
-        }
-
-        public bool IsResearchCompleted(string researchId)
-        {
-            return GetResearchStatus(researchId) == ResearchStatus.Completed;
-        }
-
-        public bool IsResearchAvailable(string researchId)
-        {
-            return GetResearchStatus(researchId) == ResearchStatus.Available;
-        }
-
-        public ResearchNode GetResearch(string researchId)
-        {
-            return _researchDatabase.GetValueOrDefault(researchId);
-        }
-
-        public Dictionary<string, ResearchStatus> GetAllResearchStatus()
-        {
-            return new Dictionary<string, ResearchStatus>(_researchStatus);
-        }
+        public ResearchStatus GetResearchStatus(string researchId) => _researchStatus.GetValueOrDefault(researchId, ResearchStatus.Locked);
+        public float GetResearchProgress(string researchId) => _researchProgress.GetValueOrDefault(researchId, new ResearchData()).progress;
+        public bool IsResearchCompleted(string researchId) => GetResearchStatus(researchId) == ResearchStatus.Completed;
+        public bool IsResearchAvailable(string researchId) => GetResearchStatus(researchId) == ResearchStatus.Available;
+        public ResearchNode GetResearch(string researchId) => _researchDatabase.GetValueOrDefault(researchId);
+        public Dictionary<string, ResearchStatus> GetAllResearchStatus() => new Dictionary<string, ResearchStatus>(_researchStatus);
     }
 
     [System.Serializable]
