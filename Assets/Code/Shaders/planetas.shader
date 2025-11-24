@@ -55,25 +55,26 @@ Shader "Custom/PlanetLit2D"
 
                 fixed4 frag(v2f i) : SV_Target
             {
-                // 1️⃣ Color base
                 fixed4 col = tex2D(_MainTex, i.uv);
 
-                // 2️⃣ Normal map
-                float3 nSample = UnpackNormal(tex2D(_NormalMap, i.uv)); // XYZ already in [-1,1]
-                float3 normal = normalize(nSample);
+                // 1️⃣ Normal map
+                float3 nSample = UnpackNormal(tex2D(_NormalMap, i.uv)); 
+                float2 nXY = nSample.xy;
+                float nZ = sqrt(saturate(1 - dot(nXY,nXY)));
+                float3 normal = normalize(float3(nXY, nZ));
 
-                // 4️⃣ Vector de luz correcto en 3D
-                float3 toLight = (_LightPos - i.worldPos); // ahora Z se considera
-                toLight = normalize(toLight);
+                // 2️⃣ Vector luz en 2D
+                float2 L2 = _LightPos.xy - i.worldPos.xy;
+                float3 toLight = normalize(float3(L2, 0.0));
 
-                // 5️⃣ Dot product Lambert
-                float NdotL = max(0, dot(normal, toLight));
+                // 3️⃣ Dot product Lambert
+                float NdotL = saturate(dot(normal, toLight));
 
-                // 6️⃣ Atenuación por distancia XY
-                float distance = length(_LightPos.xy - i.worldPos.xy);
+                // 4️⃣ Atenuación por distancia
+                float distance = length(L2);
                 float attenuation = saturate(1.0 - pow(distance / _LightRange, 2));
 
-                // 7️⃣ Factor de luz final con mínimo ambiental
+                // 5️⃣ Factor luz final
                 float lightFactor = NdotL * _LightIntensity * attenuation + 0.1;
                 col.rgb *= lightFactor;
 
