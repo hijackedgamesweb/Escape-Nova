@@ -102,10 +102,12 @@ namespace Code.Scripts.Core.Systems.UI
                 OpenActionPanel("Astrarium");
             }
 
-            // Q -> Diplomacia (Action: OpenDiplomacy)
             if (_diplomacyAction != null && _diplomacyAction.WasPerformedThisFrame())
             {
-                OpenActionPanel("Diplomacy");
+                if (SystemEvents.IsDiplomacyUnlocked)
+                {
+                    OpenActionPanel("Diplomacy");
+                }
             }
             
             // U -> Construcción (Action: OpenConstruction)

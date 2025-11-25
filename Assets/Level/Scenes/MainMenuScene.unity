@@ -21809,7 +21809,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -23560,7 +23560,6 @@ RectTransform:
   m_Children:
   - {fileID: 802596743}
   - {fileID: 1614571045}
-  - {fileID: 1153062125}
   - {fileID: 158962980}
   - {fileID: 1461095061}
   m_Father: {fileID: 932223187}
@@ -27877,12 +27876,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1020033735}
+  m_Father: {fileID: 1276697297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -107}
-  m_SizeDelta: {x: 675.74, y: 92.2645}
+  m_AnchoredPosition: {x: 395, y: -33.836}
+  m_SizeDelta: {x: 675.74, y: 41.8564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153062126
 MonoBehaviour:
@@ -31121,6 +31120,7 @@ RectTransform:
   m_Children:
   - {fileID: 184815392}
   - {fileID: 1539308343}
+  - {fileID: 1153062125}
   m_Father: {fileID: 802596743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
