@@ -89,7 +89,7 @@ namespace Code.Scripts.UI.Windows
             UIManager.Instance.ShowScreen<ActionPanelScreen>(interf);
         }
 
-        private void OnMenuPressed(String interf)
+        public void OnMenuPressed(String interf)
         {
             UIManager.Instance.ShowScreen<OptionsScreen>(interf);
         }
