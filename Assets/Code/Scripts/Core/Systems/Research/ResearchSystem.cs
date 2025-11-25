@@ -45,6 +45,7 @@ namespace Code.Scripts.Core.Systems.Research
 
         private StorageSystem _storageSystem;
         private IGameTime _gameTime;
+        
         private const float STANDARD_SECONDS_PER_CYCLE = 5.0f; 
 
         private string _currentResearchId;
@@ -66,7 +67,9 @@ namespace Code.Scripts.Core.Systems.Research
         {
             _storageSystem = ServiceLocator.GetService<StorageSystem>();
             _gameTime = ServiceLocator.GetService<IGameTime>();
+            
             _gameTime.OnCycleCompleted += OnCycleCompleted;
+            
             RecalculateResearchAvailability();
         }
         
@@ -93,7 +96,6 @@ namespace Code.Scripts.Core.Systems.Research
                     _researchProgress[research.researchId] = new ResearchData();
                 }
             }
-
             RecalculateResearchAvailability();
         }
         
@@ -114,29 +116,46 @@ namespace Code.Scripts.Core.Systems.Research
             }
         }
 
+        public bool CanAffordResearch(string researchId)
+        {
+            if (!_researchDatabase.TryGetValue(researchId, out var research)) return false;
+            
+            foreach (var cost in research.resourceCosts)
+            {
+                if (cost.useInventoryItem)
+                {
+                    if (!_storageSystem.HasInventoryItem(cost.itemName, cost.amount)) return false;
+                }
+                else
+                {
+                    if (!_storageSystem.HasResource(cost.resourceType, cost.amount)) return false;
+                }
+            }
+            return true;
+        }
+
         public bool CanStartResearch(string researchId)
         {
             if (!_researchDatabase.ContainsKey(researchId)) return false;
             if (_researchStatus[researchId] != ResearchStatus.Available) return false;
             if (IsAnyResearchInProgress()) return false;
 
-            var research = _researchDatabase[researchId];
+            return CanAffordResearch(researchId);
+        }
 
-            foreach (var cost in research.resourceCosts)
+        public List<ResearchNode> GetVisibleResearch()
+        {
+            List<ResearchNode> visibleList = new List<ResearchNode>();
+            foreach (var entry in _researchDatabase)
             {
-                if (cost.useInventoryItem)
+                ResearchStatus status = _researchStatus[entry.Key];
+                
+                if (status != ResearchStatus.Locked)
                 {
-                    if (!_storageSystem.HasInventoryItem(cost.itemName, cost.amount))
-                        return false;
-                }
-                else
-                {
-                    if (!_storageSystem.HasResource(cost.resourceType, cost.amount))
-                        return false;
+                    visibleList.Add(entry.Value);
                 }
             }
-
-            return true;
+            return visibleList;
         }
 
         public bool IsAnyResearchInProgress()
@@ -169,6 +188,7 @@ namespace Code.Scripts.Core.Systems.Research
             _researchProgress[researchId].researchId = researchId;
 
             _currentResearchId = researchId;
+
             _cyclesNeeded = CalculateCyclesNeeded(research.researchTimeInSeconds);
             _cyclesCompleted = 0;
 
@@ -181,7 +201,7 @@ namespace Code.Scripts.Core.Systems.Research
             int cycles = Mathf.CeilToInt(researchTimeInSeconds / STANDARD_SECONDS_PER_CYCLE);
             return Mathf.Max(1, cycles);
         }
-        
+
         private void CompleteResearch(string researchId)
         {
             if (!_researchDatabase.ContainsKey(researchId)) return;
@@ -277,6 +297,16 @@ namespace Code.Scripts.Core.Systems.Research
                 {
                     if (!IsResearchCompleted(prereq.researchId))
                         return false;
+                }
+
+                if (!string.IsNullOrEmpty(prereq.buildingId))
+                {
+                    
+                }
+
+                if (prereq.playerLevel > 0)
+                {
+                    
                 }
             }
             return true;

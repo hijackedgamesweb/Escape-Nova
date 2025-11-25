@@ -54,7 +54,16 @@ namespace Code.Scripts.UI.Windows
 
         private void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            bool pausePressed = false;
+            if (Keyboard.current != null)
+            {
+                if (Keyboard.current.escapeKey.wasPressedThisFrame || 
+                    Keyboard.current.tabKey.wasPressedThisFrame)
+                {
+                    pausePressed = true;
+                }
+            }
+            if (pausePressed)
             {
                 OpenPauseMenu();
             }
