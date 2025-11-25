@@ -15,7 +15,9 @@ MonoBehaviour:
   researchId: primal_planets
   category: 0
   displayName: Primal planets
-  description: Unlocks the first batch of the most basic planets.
+  description: 'Unlocks the first batch of the most basic planets: Leyev, Kados,
+    Pompeii and Oasis. Each planet generates 10 of a single resource every solar
+    cycle.'
   icon: {fileID: -8691266674337138276, guid: 01896e080012cf84ca4d7aa45664acce, type: 3}
   prerequisites:
   - researchId: primal_research
