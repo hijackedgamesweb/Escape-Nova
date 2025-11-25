@@ -4,7 +4,7 @@ using Code.Scripts.Core.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic; // Necesario para la lista de botones
+using System.Collections.Generic;
 
 namespace Code.Scripts.UI.Windows
 {
@@ -196,6 +196,11 @@ namespace Code.Scripts.UI.Windows
 
         private void OnReturnButtonPressed()
         {
+            var camController = FindFirstObjectByType<Code.Scripts.Core.Utilities.MobileCameraController>();
+            if (camController != null)
+            {
+                camController.BlockInputForShortTime();
+            }
             AudioManager.Instance.PlaySFX("Close");
             UIManager.Instance.ShowScreen<InGameScreen>();
         }
