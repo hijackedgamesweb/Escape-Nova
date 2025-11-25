@@ -21,26 +21,26 @@ MonoBehaviour:
   - researchId: two_orbit
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 75
+  researchTimeInSeconds: 15
   resourceCosts:
   - resourceType: 0
-    amount: 200
+    amount: 50
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 200
+    amount: 50
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 200
+    amount: 50
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 200
+    amount: 50
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 200
+    amount: 50
     itemName: 
     useInventoryItem: 0
   rewards:

@@ -21,10 +21,10 @@ MonoBehaviour:
   - researchId: primal_research
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 25
+  researchTimeInSeconds: 10
   resourceCosts:
   - resourceType: 4
-    amount: 50
+    amount: 10
     itemName: 
     useInventoryItem: 0
   rewards:
