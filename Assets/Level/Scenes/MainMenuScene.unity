@@ -2532,7 +2532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &79238990
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43062,6 +43062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _messageTitle: {fileID: 2147070119}
   _messageText: {fileID: 1970811837}
+  _iconImage: {fileID: 150607558}
   _closeButton: {fileID: 1601875497}
   _nextPageButton: {fileID: 999432859}
   _previousPageButton: {fileID: 1676365013}
