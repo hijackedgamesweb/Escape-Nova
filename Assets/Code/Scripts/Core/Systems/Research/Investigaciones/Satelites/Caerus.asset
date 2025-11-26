@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: caerus
   category: 2
   displayName: Caerus
-  description: Unlocks the satellite 'Caerus'.
+  description: Unlocks the satellite 'Caerus'. This satellite reduces research time
+    by 1%.
   icon: {fileID: -4481016797531701806, guid: 5957a7c775786ba4f94b4bcc3451d074, type: 3}
   prerequisites:
   - researchId: caerus_skill
