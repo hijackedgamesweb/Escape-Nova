@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/thaleahfat/ThaleahFat SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/GameInfo/GameInfoPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/GameInfo/GameInfoPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/GameInfo/GameInfoSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/GameInfo/GameInfoSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Menus/States/GameStates/MainMenuState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/GameInfo/TutorialInfo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/GameInfo/TutorialInfo.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

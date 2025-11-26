@@ -35,7 +35,7 @@ namespace Code.Scripts.UI.Menus
             _nextPageButton.onClick.AddListener(delegate{SwapPages(1);});
             _previousPageButton.onClick.AddListener(delegate{SwapPages(-1);});
             
-            UIManager.OnScreenChanged += HandleScreenChange;
+            //UIManager.OnScreenChanged += HandleScreenChange;
         }
         
         

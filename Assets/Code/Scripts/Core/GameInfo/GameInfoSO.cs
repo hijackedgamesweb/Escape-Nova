@@ -8,7 +8,6 @@ namespace Code.Scripts.Core.GameInfo
     public class GameInfoSO : ScriptableObject
     {
         //Variables
-        public int pages;
         public String[] titles;
         public String[] messages;
         public Sprite[] images;
