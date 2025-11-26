@@ -27,7 +27,12 @@ namespace Code.Scripts.UI.Menus.States.GameStates
 
         private void InitializeHUD()
         {
-            _uiObject.returnBtn.onClick.AddListener(() => _stateManager.SetState(new MainMenuState(_stateManager)));
+            _uiObject.returnBtn.onClick.RemoveAllListeners();
+            _uiObject.returnBtn.onClick.AddListener(() => 
+            {
+                UnityEngine.Time.timeScale = 0f; // Congelar el tiempo
+                Code.Scripts.Core.Managers.UIManager.Instance.ShowOverlay<Code.Scripts.UI.Windows.PauseMenuScreen>();
+            });
         }
 
         public override void Exit(IStateManager gameManager)

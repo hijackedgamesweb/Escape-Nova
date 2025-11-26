@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Core
   sprite: {fileID: 3535130075770999005, guid: 075ac4ada67a7934d8575bbf5e1fe7bc, type: 3}
-  timeToBuild: 5
+  timeToBuild: 3
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: 64000000

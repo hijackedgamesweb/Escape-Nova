@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: fire_strike
   category: 1
   displayName: Fire Strike
-  description: Unlocks the item 'Fire Strike'.
+  description: Unlocks the item 'Fire Strike'. Crafting this item will grant you
+    combat power.
   icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300

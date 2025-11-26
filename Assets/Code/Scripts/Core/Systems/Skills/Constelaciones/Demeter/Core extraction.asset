@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Core extraction
   m_EditorClassIdentifier: 
   nodeName: Core extraction
-  description: All your planets generate 50% more resources
+  description: All your planets generate 50% more resources.
   skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: d5a808fe21d3ad34f8bf9de3ca3078c1, type: 2}

@@ -16,6 +16,7 @@ namespace Code.Scripts.UI.Research
 
         [Header("Colors (Estado)")]
         [SerializeField] private Color availableColor = Color.green;
+        [SerializeField] private Color unaffordableColor = Color.red; 
         [SerializeField] private Color lockedColor = Color.gray;
         [SerializeField] private Color inProgressColor = Color.yellow;
         [SerializeField] private Color completedColor = Color.blue;
@@ -46,7 +47,14 @@ namespace Code.Scripts.UI.Research
             switch (status)
             {
                 case ResearchStatus.Available:
-                    backgroundImage.color = availableColor;
+                    if (_researchSystem.CanAffordResearch(_researchNode.researchId))
+                    {
+                        backgroundImage.color = availableColor;
+                    }
+                    else
+                    {
+                        backgroundImage.color = unaffordableColor;
+                    }
                     break;
                 case ResearchStatus.Locked:
                     backgroundImage.color = lockedColor;

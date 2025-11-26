@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: kov
   category: 0
   displayName: Kov
-  description: Unlocks the planet 'Kov'.
+  description: Unlocks the planet 'Kov'. This planet generates 500 ice, stone and
+    metal every solar cycle.
   icon: {fileID: -6212125805387884322, guid: e4ccb77eb56d2f6419116c69b15a5fe8, type: 3}
   prerequisites:
   - researchId: primal_planets

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caerus
   m_EditorClassIdentifier: 
   nodeName: Caerus
-  description: Unlock the "Caerus" satelite research
+  description: Unlock the "Caerus" satelite research.
   skillPointCost: 1
   prerequisiteNodes: []
   positionInConstellation: {x: 3, y: 2}

@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: caminus
   category: 0
   displayName: Caminus
-  description: Unlocks the planet 'Caminus'.
+  description: Unlocks the planet 'Caminus'. This planet generates 275 sand every
+    solar cycle.
   icon: {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   prerequisites:
   - researchId: primal_planets
