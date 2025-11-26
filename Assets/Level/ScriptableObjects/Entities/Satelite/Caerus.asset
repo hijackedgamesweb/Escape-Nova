@@ -19,8 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   buildCostAmounts: 6400000064000000
-  size: 0
+  size: 1
   desc: Research time is reduced by 10%.
+  sprite: {fileID: 337037241722719046, guid: 5957a7c775786ba4f94b4bcc3451d074, type: 3}
   upgrades:
   - rid: 5265271264873546022
   references:
