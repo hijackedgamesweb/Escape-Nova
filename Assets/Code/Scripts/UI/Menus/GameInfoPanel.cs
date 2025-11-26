@@ -16,6 +16,13 @@ namespace Code.Scripts.UI.Menus
         [SerializeField] private TextMeshProUGUI _messageTitle;
         [SerializeField] private TextMeshProUGUI _messageText;
         [SerializeField] private Button _closeButton;
+        [SerializeField] private Button _nextPageButton;
+        [SerializeField] private Button _previousPageButton;
+
+        private String[] _currentTitle;
+        private String[] _currentMessage;
+        private int _currentPage = 1;
+        private int _maxPages;
         
         
         //Metodos
@@ -38,6 +45,8 @@ namespace Code.Scripts.UI.Menus
         private void Start()
         {
             _closeButton.onClick.AddListener(OnCloseButtonClicked); //Que el boton de cerrar cierre la UI
+            _nextPageButton.onClick.AddListener(delegate{SwapPages(1);});
+            _previousPageButton.onClick.AddListener(delegate{SwapPages(-1);});
             
             UIManager.OnScreenChanged += HandleScreenChange;
         }
@@ -58,13 +67,44 @@ namespace Code.Scripts.UI.Menus
         }
         
         
-        public void ShowPanel(String title, String message)
+        public void ShowPanel(String[] titles, String[] messages)
         {
             gameObject.SetActive(true);
+
+            _currentTitle = titles;
+            _currentMessage = messages;
+
+            _currentPage = 1;
+            _maxPages = _currentMessage.Length;
             
-            _messageTitle.text = title;
-            _messageText.text = message;
+            if (_maxPages != 1) { _nextPageButton.interactable = true; }
+            else
+            {
+                _nextPageButton.interactable = false;
+                _previousPageButton.interactable = false;
+            }
+            
+            UpdateInfo();
         }
+        
+        
+        private void SwapPages(int dir)
+        {
+            _currentPage += dir;
+
+            UpdateInfo();
+            
+            _previousPageButton.interactable = _currentPage != 1;
+            _nextPageButton.interactable = _currentPage != _maxPages;
+        }
+        
+        
+        private void UpdateInfo()
+        {
+            _messageTitle.text = _currentTitle[_currentPage-1];
+            _messageText.text = _currentMessage[_currentPage-1];
+        }
+        
         
         private void OnCloseButtonClicked()
         {

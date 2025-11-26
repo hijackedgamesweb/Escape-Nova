@@ -28,8 +28,13 @@ namespace Code.Scripts.UI.Menus.States.GameStates
                 AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
                 AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
                 AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
-                GameInfoPanel.Instance.ShowPanel("Welcome", "Welcome to NOVA. We'll guide you through the basics of the game. " +
-                                                            "First, take a look at the 'Missions' menu, on the lower side of your screen.");
+                GameInfoPanel.Instance.ShowPanel(new[] 
+                    {"Welcome", "Welcome"}, 
+                    new[] {
+                    "Welcome to NOVA. We'll guide you through the basics of the game. " +
+                    "First, take a look at the 'Missions' menu, on the lower side of your screen.",
+                    "Este es el segundo mensaje"
+                });
             });
             
             _mainMenuScreen.SettingsButton.onClick.AddListener(() =>
