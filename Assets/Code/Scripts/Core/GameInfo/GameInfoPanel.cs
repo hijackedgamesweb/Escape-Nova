@@ -90,12 +90,14 @@ namespace Code.Scripts.UI.Menus
             
             _iconImage.enabled = _currentImages[_currentPage-1] != null;
             _iconImage.sprite = _currentImages[_currentPage-1];
+            
+            AudioManager.Instance.PlaySFX("ButtonClick");
         }
         
         
         private void OnCloseButtonClicked()
         {
-            AudioManager.Instance.PlaySFX("Close");
+            
             gameObject.SetActive(false);
         }
     }
