@@ -29,5 +29,5 @@ MonoBehaviour:
     - rid: 5265271264873546022
       type: {class: GlobalCycleSpeedUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        globalSpeedBonusPercent: 30
+        globalSpeedBonusPercent: 1
         globalImprovementKey: GlobalCycleSpeed

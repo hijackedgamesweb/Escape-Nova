@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: quantum_propeller
   category: 1
   displayName: Quantum Propeller
-  description: Unlocks the item 'Quantum Propeller'.
+  description: Unlocks the item 'Quantum Propeller'. This item can be used to build
+    and trade.
   icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   prerequisites: []
   researchTimeInSeconds: 1250

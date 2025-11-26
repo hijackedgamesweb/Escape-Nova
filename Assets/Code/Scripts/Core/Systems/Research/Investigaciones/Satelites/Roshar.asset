@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: roshar
   category: 2
   displayName: Roshar
-  description: Unlocks the satellite 'Roshar'.
+  description: Unlocks the satellite 'Roshar'. This satellite makes a planet produce
+    100% more resources.
   icon: {fileID: -7353351216649529681, guid: e71b41a6faa3f5c49b8adda85992c7eb, type: 3}
   prerequisites:
   - researchId: salas
