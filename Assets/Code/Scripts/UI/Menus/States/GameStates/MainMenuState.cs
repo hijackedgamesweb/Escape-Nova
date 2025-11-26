@@ -29,11 +29,12 @@ namespace Code.Scripts.UI.Menus.States.GameStates
                 AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
                 AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
                 GameInfoPanel.Instance.ShowPanel(new[] 
-                    {"Welcome", "Welcome"}, 
+                    {"Welcome", "Welcome", "PLANETS", "SATELITES", "Welcome"}, 
                     new[] {
                     "Welcome to NOVA. We'll guide you through the basics of the game. " +
                     "First, take a look at the 'Missions' menu, on the lower side of your screen.",
-                    "Este es el segundo mensaje"
+                    "Este es el segundo mensaje",
+                    "HOLA"
                 });
             });
             

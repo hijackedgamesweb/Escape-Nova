@@ -19,8 +19,8 @@ namespace Code.Scripts.UI.Menus
         [SerializeField] private Button _nextPageButton;
         [SerializeField] private Button _previousPageButton;
 
-        private String[] _currentTitle;
-        private String[] _currentMessage;
+        private String[] _currentTitles;
+        private String[] _currentMessages;
         private int _currentPage = 1;
         private int _maxPages;
         
@@ -71,18 +71,14 @@ namespace Code.Scripts.UI.Menus
         {
             gameObject.SetActive(true);
 
-            _currentTitle = titles;
-            _currentMessage = messages;
+            _currentTitles = titles;
+            _currentMessages = messages;
 
             _currentPage = 1;
-            _maxPages = _currentMessage.Length;
-            
-            if (_maxPages != 1) { _nextPageButton.interactable = true; }
-            else
-            {
-                _nextPageButton.interactable = false;
-                _previousPageButton.interactable = false;
-            }
+            _maxPages = _currentMessages.Length;
+
+            _nextPageButton.interactable = _maxPages != 1;
+            _previousPageButton.interactable = false;
             
             UpdateInfo();
         }
@@ -101,8 +97,8 @@ namespace Code.Scripts.UI.Menus
         
         private void UpdateInfo()
         {
-            _messageTitle.text = _currentTitle[_currentPage-1];
-            _messageText.text = _currentMessage[_currentPage-1];
+            _messageTitle.text = _currentTitles[_currentPage-1];
+            _messageText.text = _currentMessages[_currentPage-1];
         }
         
         
