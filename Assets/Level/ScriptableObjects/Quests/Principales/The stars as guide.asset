@@ -19,10 +19,16 @@ MonoBehaviour:
   Objectives:
   - rid: 6291952326318489676
   - rid: 6291952326318489677
-  Rewards: []
+  Rewards:
+  - rid: 967675238434996300
   references:
     version: 2
     RefIds:
+    - rid: 967675238434996300
+      type: {class: UnlockCivilizationReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock Diplomacy Panel
+        civilizationName: Mippip
     - rid: 6291952326318489676
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:

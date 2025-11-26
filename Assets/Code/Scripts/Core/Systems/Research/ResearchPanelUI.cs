@@ -3,10 +3,12 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Research;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
+using UnityEngine.InputSystem;
 
 namespace Code.Scripts.UI.Research
 {
@@ -58,8 +60,17 @@ namespace Code.Scripts.UI.Research
             {
                 Initialize();
             }
+            BuildFullResearchList();
             SelectCategory(_currentCategory);
             UpdateAllUI();
+        }
+        
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                UIManager.Instance.ShowScreen<InGameScreen>();
+            }
         }
         
         public override void Hide()
@@ -101,7 +112,6 @@ namespace Code.Scripts.UI.Research
                 _currentSelectedTab = planetasTabButton; 
             }
             
-            BuildFullResearchList();
             isInitialized = true;
         }
 
@@ -110,12 +120,10 @@ namespace Code.Scripts.UI.Research
             foreach (Transform child in researchItemsContainer) Destroy(child.gameObject);
             _researchUIItems.Clear();
 
-            var allResearch = _researchSystem.GetAllResearchStatus();
+            var visibleNodes = _researchSystem.GetVisibleResearch();
 
-            foreach (var researchStatus in allResearch)
+            foreach (var node in visibleNodes)
             {
-                ResearchNode node = _researchSystem.GetResearch(researchStatus.Key);
-                
                 if (node != null) 
                 {
                     GameObject uiItemGO = Instantiate(researchItemPrefab, researchItemsContainer);
@@ -307,11 +315,8 @@ namespace Code.Scripts.UI.Research
         
         private void OnResearchUnlocked(string researchId)
         {
-            var node = _researchSystem.GetResearch(researchId);
-            if (node != null && _researchUIItems.ContainsKey(researchId))
-            {
-                 _researchUIItems[researchId].UpdateButtonState();
-            }
+            BuildFullResearchList();
+            SelectCategory(_currentCategory);
         }
 
         private void OnStorageUpdated()

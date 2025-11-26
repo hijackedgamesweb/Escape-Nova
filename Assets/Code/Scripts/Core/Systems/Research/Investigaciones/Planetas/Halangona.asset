@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: halangona
   category: 0
   displayName: Halangona
-  description: Unlocks the planet 'Halangona'.
+  description: Unlocks the planet 'Halangona'. This planet generates 500 ice, sand
+    and metal every solar cycle.
   icon: {fileID: -5060925952560270938, guid: 3b35bbe28ef016b4c934dc71c83880c3, type: 3}
   prerequisites:
   - researchId: primal_planets

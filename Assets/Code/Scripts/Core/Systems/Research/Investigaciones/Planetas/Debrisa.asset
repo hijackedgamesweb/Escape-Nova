@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: debrisa
   category: 0
   displayName: Debrisa
-  description: Unlocks the planet 'Debrisa'.
+  description: Unlocks the planet 'Debrisa'. This planet generates 800 stone every
+    solar cycle.
   icon: {fileID: -7929207441958037050, guid: c5e3bf4c7a15ef54f842be629308fd32, type: 3}
   prerequisites:
   - researchId: primal_planets

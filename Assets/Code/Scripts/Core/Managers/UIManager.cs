@@ -45,7 +45,19 @@ namespace Code.Scripts.Core.Managers
             
             return _currentScreen as T;
         }
-
+        
+        public T ShowOverlay<T>(object parameter = null) where T : BaseUIScreen
+        {
+            ClearUIFocus();
+            
+            BaseUIScreen overlay = screens.Find(screen => screen is T);
+            if (overlay != null)
+            {
+                overlay.Show(parameter);
+            }
+            return overlay as T;
+        }
+        
         public BaseUIScreen GetCurrentScreen()
         {
             return _currentScreen;

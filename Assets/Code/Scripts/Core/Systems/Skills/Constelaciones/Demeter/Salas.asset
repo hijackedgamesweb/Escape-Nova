@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Salas
   m_EditorClassIdentifier: 
   nodeName: Salas
-  description: Unlock the "Salas" satellite research
+  description: Unlock the "Salas" satellite research.
   skillPointCost: 1
   prerequisiteNodes: []
   positionInConstellation: {x: 0, y: 1}

@@ -1,11 +1,12 @@
+using System.Collections;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Patterns.ServiceLocator;
-using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.UI.Menus.States.GameStates;
 using Code.Scripts.UI.Windows;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.EnhancedTouch; // Necesario para el sistema tactil nuevo
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; // Alias para evitar conflictos
 
 namespace Code.Scripts.Camera
 {
@@ -26,27 +27,30 @@ namespace Code.Scripts.Camera
         [Header("Parallax Settings")]
         [SerializeField, Range(0f, 1f)] float _backgroundParallax = 0.3f;
         [SerializeField, Range(0f, 1f)] float _solarParallax = 0.8f;
-        
         private Vector3 _initialBackgroundPos;
         private Vector3 _initialSolarPos;
         private Vector3 _initialCameraPos;
-        
         private UnityEngine.Camera _mainCamera;
+        private Vector3 _lastMousePosition;
         private Vector3 _dragOrigin;
         private bool _isDragging = false;
         private bool _isTweening = false;
-        
+        private bool _inputBlocked = false;
         private Vector3 _velocity = Vector3.zero;
-        private Vector3 _lastMousePosition;
         
         private Tween _zoomTween;
         private Tween _moveTween;
-        
         private Transform _target;
-        void Start()
+
+        void Awake()
         {
             _mainCamera = GetComponent<UnityEngine.Camera>();
-            
+            ServiceLocator.RegisterService<CameraController2D>(this);
+            EnhancedTouchSupport.Enable();
+        }
+
+        void Start()
+        {
             if(_background != null)
                 _initialBackgroundPos = _background.transform.position;
             if(_solarSystem != null)
@@ -54,34 +58,88 @@ namespace Code.Scripts.Camera
             _initialCameraPos = transform.position;
         }
 
+        void OnDestroy()
+        {
+            ServiceLocator.UnregisterService<CameraController2D>();
+            EnhancedTouchSupport.Disable();
+        }
+
         void Update()
         {
             if(UIManager.Instance.GetCurrentScreen() is not InGameScreen) return;
-            
-            if (_isTweening) return;
-            
-            HandleZoom();
-            HandleMovement();
-            HandleFollowTarget();
+            if (_isTweening || _inputBlocked) return;
+            var touches = Touch.activeTouches;
 
+            if (touches.Count > 0)
+            {
+                HandleMobileInput(touches);
+            }
+            else
+            {
+                HandleMouseZoom();
+                HandleMouseMovement();
+            }
+            HandleFollowTarget();
+            ClampCameraToBounds();
             ApplyParallax();
         }
 
-        private void ApplyParallax()
+        private void HandleMobileInput(UnityEngine.InputSystem.Utilities.ReadOnlyArray<Touch> touches)
         {
-            if(_background != null)
+            if (touches.Count == 2)
             {
-                Vector3 backgroundTargetPos = _initialBackgroundPos + (transform.position - _initialCameraPos) * _backgroundParallax;
-                _background.transform.position = backgroundTargetPos;
+                _isDragging = false;
+                _velocity = Vector3.zero;
+                ClearTarget();
+                
+                HandleTouchZoom(touches[0], touches[1]);
             }
-            if(_solarSystem != null)
+            else if (touches.Count == 1)
             {
-                Vector3 solarTargetPos = _initialSolarPos + (transform.position - _initialCameraPos) * _solarParallax;
-                _solarSystem.transform.position = solarTargetPos;
+                Touch touch = touches[0];
+                if (IsPointerOverUI(touch.touchId)) 
+                {
+                    _isDragging = false;
+                    return;
+                }
+
+                HandleTouchPan(touch);
             }
         }
 
-        private void HandleZoom()
+        private void HandleTouchPan(Touch touch)
+        {
+            if (touch.phase == UnityEngine.InputSystem.TouchPhase.Began)
+            {
+                _dragOrigin = _mainCamera.ScreenToWorldPoint(touch.screenPosition);
+                _isDragging = true;
+                _velocity = Vector3.zero;
+                ClearTarget();
+            }
+            else if (touch.phase == UnityEngine.InputSystem.TouchPhase.Moved && _isDragging)
+            {
+                Vector3 currentPos = _mainCamera.ScreenToWorldPoint(touch.screenPosition);
+                Vector3 difference = _dragOrigin - currentPos;
+                transform.position += difference;
+            }
+            else if (touch.phase == UnityEngine.InputSystem.TouchPhase.Ended)
+            {
+                _isDragging = false;
+            }
+        }
+
+        private void HandleTouchZoom(Touch touch0, Touch touch1)
+        {
+            Vector2 touch0PrevPos = touch0.screenPosition - touch0.delta;
+            Vector2 touch1PrevPos = touch1.screenPosition - touch1.delta;
+            float prevTouchDeltaMag = (touch0PrevPos - touch1PrevPos).magnitude;
+            float touchDeltaMag = (touch0.screenPosition - touch1.screenPosition).magnitude;
+            float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
+            float newSize = _mainCamera.orthographicSize + (deltaMagnitudeDiff * _zoomSpeed * 0.01f);
+            _mainCamera.orthographicSize = Mathf.Clamp(newSize, _minZoom, _maxZoom);
+        }
+
+        private void HandleMouseZoom()
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (scroll != 0f)
@@ -97,15 +155,13 @@ namespace Code.Scripts.Camera
                 Vector3 mouseWorldPosAfterZoom = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 transform.position += mouseWorldPosBeforeZoom - mouseWorldPosAfterZoom;
             }
-
-            ClampCameraToBounds();
         }
         
-        private void HandleMovement()
+        private void HandleMouseMovement()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                if (IsPointerOverUI(-1)) 
                 {
                     return;
                 }
@@ -141,12 +197,26 @@ namespace Code.Scripts.Camera
                     _velocity = Vector3.zero;
                 }
             }
-
-            ClampCameraToBounds();
         }
-        
+
+        private void ApplyParallax()
+        {
+            if(_background != null)
+            {
+                Vector3 backgroundTargetPos = _initialBackgroundPos + (transform.position - _initialCameraPos) * _backgroundParallax;
+                _background.transform.position = backgroundTargetPos;
+            }
+            if(_solarSystem != null)
+            {
+                Vector3 solarTargetPos = _initialSolarPos + (transform.position - _initialCameraPos) * _solarParallax;
+                _solarSystem.transform.position = solarTargetPos;
+            }
+        }
+
         private void HandleFollowTarget()
         {
+            if (_isDragging) return;
+
             if (_target != null)
             {
                 Vector3 targetPosition = new Vector3(_target.position.x, _target.position.y, transform.position.z);
@@ -167,13 +237,38 @@ namespace Code.Scripts.Camera
             float maxX = bounds.max.x - cameraHalfWidth;
             float minY = bounds.min.y + cameraHalfHeight;
             float maxY = bounds.max.y - cameraHalfHeight;
+            if (minX > maxX) minX = maxX = bounds.center.x;
+            if (minY > maxY) minY = maxY = bounds.center.y;
 
             Vector3 clampedPos = transform.position;
             clampedPos.x = Mathf.Clamp(clampedPos.x, minX, maxX);
             clampedPos.y = Mathf.Clamp(clampedPos.y, minY, maxY);
             transform.position = clampedPos;
         }
-        
+        private bool IsPointerOverUI(int pointerId)
+        {
+            if (EventSystem.current == null) return false;
+            if (pointerId == -1)
+            {
+                return EventSystem.current.IsPointerOverGameObject();
+            }
+            return EventSystem.current.IsPointerOverGameObject(pointerId);
+        }
+        public void BlockInputForShortTime()
+        {
+            StopAllCoroutines();
+            StartCoroutine(BlockInputRoutine());
+        }
+
+        private IEnumerator BlockInputRoutine()
+        {
+            _inputBlocked = true;
+            _isDragging = false;
+            _velocity = Vector3.zero;
+            yield return new WaitForSeconds(0.2f);
+            _inputBlocked = false;
+        }
+
         public void SetTarget(Transform target)
         {
             _zoomTween?.Kill();
@@ -183,8 +278,7 @@ namespace Code.Scripts.Camera
 
             Vector3 targetPos = new Vector3(target.position.x, target.position.y, transform.position.z);
 
-            _moveTween = transform.DOMove(targetPos, 0.8f)
-                .SetEase(Ease.OutCirc);
+            _moveTween = transform.DOMove(targetPos, 0.8f).SetEase(Ease.OutCirc);
 
             _zoomTween = DOTween.To(
                 () => _mainCamera.orthographicSize,
@@ -220,13 +314,6 @@ namespace Code.Scripts.Camera
             _moveTween?.Kill();
             Vector3 targetPos = new Vector3(targetToCenter.position.x, targetToCenter.position.y, transform.position.z);
             _moveTween = transform.DOMove(targetPos, 1f).SetEase(Ease.OutCirc);
-            float halfZoom = (_minZoom + _maxZoom) / 2f;
-            //_zoomTween = DOTween.To(
-            //    () => _mainCamera.orthographicSize,
-            //    x => _mainCamera.orthographicSize = x,
-            //    halfZoom,
-            //    2.5f
-            //).SetEase(Ease.OutCirc);
         }
     }
 }

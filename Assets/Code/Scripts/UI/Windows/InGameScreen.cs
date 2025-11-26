@@ -4,6 +4,7 @@ using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Windows
@@ -39,9 +40,39 @@ namespace Code.Scripts.UI.Windows
             storageBtn.interactable = false;
             researchBtn.interactable = false;
             skillTreeBtn.interactable = false;
+            diplomacyBtn.interactable = false;
             SystemEvents.OnInventoryUnlocked += EnableStorageButton;
             SystemEvents.OnResearchUnlocked += EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked += EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked += EnableDiplomacyButton;
+        }
+
+        private void EnableDiplomacyButton()
+        {
+            diplomacyBtn.interactable = true;
+        }
+
+        private void Update()
+        {
+            bool pausePressed = false;
+            if (Keyboard.current != null)
+            {
+                if (Keyboard.current.escapeKey.wasPressedThisFrame || 
+                    Keyboard.current.tabKey.wasPressedThisFrame)
+                {
+                    pausePressed = true;
+                }
+            }
+            if (pausePressed)
+            {
+                OpenPauseMenu();
+            }
+        }
+
+        private void OpenPauseMenu()
+        {
+            Time.timeScale = 0f;
+            UIManager.Instance.ShowOverlay<PauseMenuScreen>();
         }
 
         private void OnDestroy()
@@ -49,12 +80,18 @@ namespace Code.Scripts.UI.Windows
             SystemEvents.OnInventoryUnlocked -= EnableStorageButton;
             SystemEvents.OnResearchUnlocked -= EnableResearchButton;
             SystemEvents.OnConstellationsUnlocked -= EnableConstellationsButton;
+            SystemEvents.OnDiplomacyUnlocked -= EnableDiplomacyButton;
         }
         
         private void OnButtonPressed(String interf)
         {
             AudioManager.Instance.PlaySFX("ButtonClick");
             UIManager.Instance.ShowScreen<ActionPanelScreen>(interf);
+        }
+
+        public void OnMenuPressed(String interf)
+        {
+            UIManager.Instance.ShowScreen<OptionsScreen>(interf);
         }
         
         private void EnableStorageButton()

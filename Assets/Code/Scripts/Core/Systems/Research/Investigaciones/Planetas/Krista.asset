@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: krista
   category: 0
   displayName: Krista
-  description: Unlocks the planet 'Krista'
+  description: Unlocks the planet 'Krista'. This planet generates 35 fire and sand
+    every solar cycle.
   icon: {fileID: -4382546669981004773, guid: ec4049cffa4792649bae3988d698145b, type: 3}
   prerequisites:
   - researchId: primal_planets

@@ -15,20 +15,21 @@ MonoBehaviour:
   researchId: salas
   category: 2
   displayName: Salas
-  description: Unlocks the satellite 'Salas'.
+  description: Unlocks the satellite 'Salas'. This satellite makes a planet produce
+    25% more resources.
   icon: {fileID: 228398146440735941, guid: 83e2656a0a00d1e478ef14b6f3619257, type: 3}
   prerequisites:
   - researchId: salas_sat
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 75
+  researchTimeInSeconds: 50
   resourceCosts:
   - resourceType: 4
-    amount: 300
+    amount: 60
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 150
+    amount: 30
     itemName: 
     useInventoryItem: 0
   rewards:

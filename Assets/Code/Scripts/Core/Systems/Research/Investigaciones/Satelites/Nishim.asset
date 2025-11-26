@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: nishim
   category: 2
   displayName: Nishim
-  description: Unlocks the satellite 'Nishim'.
+  description: Unlocks the satellite 'Nishim'. This satellite makes a planet produce
+    75% more resources.
   icon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   prerequisites:
   - researchId: salas
