@@ -187,10 +187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fungusFontAssets:
+  - {fileID: 12800000, guid: 8c5c1f3a425bea84da08e543b19bd7fc, type: 3}
   - {fileID: 12800000, guid: 36f77ea445c5e8942b7fd5755b9705c5, type: 3}
   - {fileID: 12800000, guid: 230f356a7b4d35242b931fe7c6ae359c, type: 3}
   - {fileID: 12800000, guid: 12d1837bf5564e348b4f86f4e6ffd1a2, type: 3}
-  - {fileID: 12800000, guid: 8c5c1f3a425bea84da08e543b19bd7fc, type: 3}
   textComponent: {fileID: 1896256977}
   nameTextComponent: {fileID: 879044824}
 --- !u!4 &4786475
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5034965, g: 0.7272727, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5499,7 +5499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 1
-  indentLevel: 0
+  indentLevel: 1
   storyText: "Hola EMPERGOD! Nos ha cautivado tu se\xF1al y hemos llegado hasta akki"
   description: 
   character: {fileID: 1152108037}
@@ -5558,11 +5558,11 @@ MonoBehaviour:
   - {fileID: 253767475}
   - {fileID: 253767474}
   - {fileID: 253767473}
-  - {fileID: 253767461}
   - {fileID: 253767479}
   - {fileID: 253767478}
   - {fileID: 253767472}
   - {fileID: 253767471}
+  - {fileID: 253767461}
   suppressAllAutoSelections: 0
 --- !u!114 &253767464
 MonoBehaviour:
@@ -5580,7 +5580,7 @@ MonoBehaviour:
   scrollPos: {x: 926.04004, y: 248.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 211
+  blockViewHeight: 391
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -5588,8 +5588,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 253767463}
+  selectedCommands:
+  - {fileID: 253767461}
   variables:
   - {fileID: 253767476}
   description: 
@@ -6040,7 +6042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 1
-  key: MippipTranslator
+  key: Translator
   value: 0
 --- !u!114 &253767477
 MonoBehaviour:
@@ -6354,7 +6356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 253767481}
   suppressBlockAutoSelect: 0
-  message: DiscoverMippip
+  message: CivilizationDiscovered
 --- !u!114 &253767481
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8512,20 +8514,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 341288063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 13390341}
-        m_TargetAssemblyTypeName: Code.Scripts.UI.Menus.Diplomacy.DiplomacyButtonsController,
-          Assembly-CSharp
-        m_MethodName: OnTradeButtonClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!224 &341288062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42081,12 +42070,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896256974}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
+  m_IgnoreLayout: 1
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: 1150

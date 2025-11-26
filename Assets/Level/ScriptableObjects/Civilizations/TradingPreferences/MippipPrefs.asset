@@ -9,11 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f08c5c717cb41089fa0f66f9f83d747, type: 3}
-  m_Name: InventarioInicialJugador
+  m_Script: {fileID: 11500000, guid: 713fa624fc4b42e3953b5306a3db65f7, type: 3}
+  m_Name: MippipPrefs
   m_EditorClassIdentifier: 
-  items:
+  stoneWorth: 1
+  metalWorth: 2
+  fireWorth: 3
+  iceWorth: 3
+  sandWorth: 1.5
+  tier0Items:
   - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 1
-  - itemData: {fileID: 11400000, guid: a7c291d49898f0f47bd1a33494ee0686, type: 2}
     quantity: 0
+  tier2Items: []
+  tier3Items: []
+  tier4Items: []

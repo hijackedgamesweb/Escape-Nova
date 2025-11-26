@@ -1,5 +1,6 @@
 using Code.Scripts.Core.Entity.Civilization;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Menus.Trading;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -24,6 +25,10 @@ namespace Code.Scripts.UI.Menus.Diplomacy
             _tradePanelPrefab = Instantiate(_tradingPanelPrefab, _mainCanvas.transform);
             TradeManager tradingPanel = _tradePanelPrefab.GetComponent<TradeManager>();
             tradingPanel.SetCivilization(_currentCivilization);
+            tradingPanel.InitializeTrade(
+                WorldManager.Instance.Player,
+                _currentCivilization
+            );
         }
         
         public void OnBlameClicked()

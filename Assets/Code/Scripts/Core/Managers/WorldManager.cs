@@ -30,6 +30,7 @@ namespace Code.Scripts.Core.Managers
         
         [SerializeField] private CivilizationManager _civilizationManager;
         private Entity.Player.Player _player;
+        public Entity.Player.Player Player => _player;
         private CommandInvoker _invoker;
         private IGameTime _gameTime;
 
@@ -88,6 +89,14 @@ namespace Code.Scripts.Core.Managers
             return context;
         }
 
-        
+
+        public void AddAllCivilizations()
+        {
+            foreach (var civSO in _civilizationSOs)
+            {
+                Civilization newCiv = new Civilization(_invoker, civSO);
+                _civilizationManager.AddCivilization(newCiv);
+            }
+        }
     }
 }

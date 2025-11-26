@@ -18,12 +18,12 @@ MonoBehaviour:
   baseDependency: 0
   baseInterest: 0
   baseTrust: 0
-  itemPreferences: {fileID: 0}
+  itemPreferences: {fileID: 11400000, guid: 71307f0101db2c04f9e66df6b8a9e5b9, type: 2}
   civilizationDescription: "no se que co\xF1o poner"
   civilizationIcon: {fileID: 21300000, guid: 59809e53e9dc1a94f82e21f1a493056a, type: 3}
   civilizationFlag: {fileID: 0}
-  aiController: 0
+  aiController: 1
   angerTolerance: 10
   leaderPortrait: {fileID: 7455233923170213856, guid: 4e51028b67e9a754fb39549b48393798, type: 3}
   startingResources: []
-  startingInventory: {fileID: 0}
+  startingInventory: {fileID: 11400000, guid: 06f3f096ac23bc44fa2d93139e9396e2, type: 2}

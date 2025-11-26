@@ -27,6 +27,7 @@ namespace Code.Scripts.Core.Managers
         private InputAction _speed2Action;
         private InputAction _speed3Action;
         private InputAction _addResource;
+        private InputAction _unlockAll;
         
         // Debug Actions
         private InputAction _debugWinAction;
@@ -51,6 +52,7 @@ namespace Code.Scripts.Core.Managers
             _speed2Action = map.FindAction("TimeSpeed2");
             _speed3Action = map.FindAction("TimeSpeed3");
             _addResource = map.FindAction("AddResource");
+            _unlockAll = map.FindAction("UnlockAll");
             
             _debugWinAction = map.FindAction("DebugWin");
             _debugCycleAction = map.FindAction("DebugSkip");
@@ -64,6 +66,7 @@ namespace Code.Scripts.Core.Managers
             _speed2Action?.Enable();
             _speed3Action?.Enable();
             _addResource?.Enable();
+            _unlockAll?.Enable();
             _debugWinAction?.Enable();
             _debugCycleAction?.Enable();
         }
@@ -76,6 +79,7 @@ namespace Code.Scripts.Core.Managers
             _speed2Action?.Disable();
             _speed3Action?.Disable();
             _addResource?.Disable();
+            _unlockAll?.Disable();
             _debugWinAction?.Disable();
             _debugCycleAction?.Disable();
         }
@@ -121,6 +125,12 @@ namespace Code.Scripts.Core.Managers
                 storage.AddResource(ResourceType.Metal, 1000000);
                 storage.AddResource(ResourceType.Ice, 1000000);
                 storage.AddResource(ResourceType.Fire, 1000000);
+            }
+            
+            if (_unlockAll != null && _unlockAll.WasPerformedThisFrame())
+            {
+                SystemEvents.UnlockAll();
+                WorldManager.Instance.AddAllCivilizations();
             }
         }
         

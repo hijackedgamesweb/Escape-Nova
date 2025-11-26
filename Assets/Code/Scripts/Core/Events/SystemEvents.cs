@@ -65,5 +65,13 @@ namespace Code.Scripts.Core.Events
             OnDiplomacyUnlocked?.Invoke();
         }
 
+        public static void UnlockAll()
+        {
+            UnlockResearch();
+            UnlockInventory();
+            UnlockConstellations();
+            UnlockStarsPanel();
+            UnlockDiplomacyPanel();
+        }
     }
 }
