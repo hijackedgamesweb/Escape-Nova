@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: litosidera
   category: 0
   displayName: Litosidera
-  description: Unlocks the planet 'Litosidera'.
+  description: Unlocks the planet 'Litosidera'. This planet generates 35 stone and
+    metal every solar cycle.
   icon: {fileID: 1121215930053453493, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
   prerequisites:
   - researchId: primal_planets

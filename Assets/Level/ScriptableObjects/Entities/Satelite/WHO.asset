@@ -22,7 +22,13 @@ MonoBehaviour:
   buildCostAmounts: e8030000fa00000064000000
   size: 0
   desc: Research time is reduced by 50%.
-  upgrades: []
+  upgrades:
+  - rid: 6291952592291364865
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6291952592291364865
+      type: {class: GlobalCycleSpeedUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+      data:
+        globalSpeedBonusPercent: 5
+        globalImprovementKey: GlobalCycleSpeed

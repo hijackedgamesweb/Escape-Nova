@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: utopia
   category: 0
   displayName: Utopia
-  description: Unlocks the planet 'Utopia'.
+  description: Unlocks the planet 'Utopia'. This planet generates 1000 of every resource
+    every solar cycle.
   icon: {fileID: -1803372714748242454, guid: b82d76b630145da4f8722b1829650d1c, type: 3}
   prerequisites:
   - researchId: primal_planets

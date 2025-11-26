@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: perfect_sphere
   category: 1
   displayName: Perfect Sphere
-  description: Unlocks the item 'Perfect Sphere'.
+  description: Unlocks the item 'Perfect Sphere'. This item can be used to build
+    and trade.
   icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300

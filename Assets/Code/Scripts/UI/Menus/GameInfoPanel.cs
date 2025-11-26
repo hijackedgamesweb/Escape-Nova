@@ -16,6 +16,13 @@ namespace Code.Scripts.UI.Menus
         [SerializeField] private TextMeshProUGUI _messageTitle;
         [SerializeField] private TextMeshProUGUI _messageText;
         [SerializeField] private Button _closeButton;
+        [SerializeField] private Button _nextPageButton;
+        [SerializeField] private Button _previousPageButton;
+
+        private String[] _currentTitles;
+        private String[] _currentMessages;
+        private int _currentPage = 1;
+        private int _maxPages;
         
         
         //Metodos
@@ -38,6 +45,8 @@ namespace Code.Scripts.UI.Menus
         private void Start()
         {
             _closeButton.onClick.AddListener(OnCloseButtonClicked); //Que el boton de cerrar cierre la UI
+            _nextPageButton.onClick.AddListener(delegate{SwapPages(1);});
+            _previousPageButton.onClick.AddListener(delegate{SwapPages(-1);});
             
             UIManager.OnScreenChanged += HandleScreenChange;
         }
@@ -58,13 +67,40 @@ namespace Code.Scripts.UI.Menus
         }
         
         
-        public void ShowPanel(String title, String message)
+        public void ShowPanel(String[] titles, String[] messages)
         {
             gameObject.SetActive(true);
+
+            _currentTitles = titles;
+            _currentMessages = messages;
+
+            _currentPage = 1;
+            _maxPages = _currentMessages.Length;
+
+            _nextPageButton.interactable = _maxPages != 1;
+            _previousPageButton.interactable = false;
             
-            _messageTitle.text = title;
-            _messageText.text = message;
+            UpdateInfo();
         }
+        
+        
+        private void SwapPages(int dir)
+        {
+            _currentPage += dir;
+
+            UpdateInfo();
+            
+            _previousPageButton.interactable = _currentPage != 1;
+            _nextPageButton.interactable = _currentPage != _maxPages;
+        }
+        
+        
+        private void UpdateInfo()
+        {
+            _messageTitle.text = _currentTitles[_currentPage-1];
+            _messageText.text = _currentMessages[_currentPage-1];
+        }
+        
         
         private void OnCloseButtonClicked()
         {

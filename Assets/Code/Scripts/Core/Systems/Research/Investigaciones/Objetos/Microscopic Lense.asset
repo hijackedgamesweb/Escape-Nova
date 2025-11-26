@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: microscopic_lens
   category: 1
   displayName: Microscopic Lens
-  description: Unlocks the item 'Microscopic Lens'.
+  description: Unlocks the item 'Microscopic Lens'. This item can be used to build
+    and trade.
   icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300

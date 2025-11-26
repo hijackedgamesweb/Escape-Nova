@@ -15,7 +15,8 @@ MonoBehaviour:
   researchId: multicore_chip
   category: 1
   displayName: Multicore Chip
-  description: Unlocks the item 'Multicore Chip'.
+  description: Unlocks the item 'Multicore Chip'. This item can be used to build
+    and trade.
   icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
   prerequisites: []
   researchTimeInSeconds: 300
