@@ -36,28 +36,7 @@ MonoBehaviour:
   - rid: 6291952324994662481
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds:
-  - litosidera
-  - piroclastia
-  - friga
-  - antar
-  - krista
-  - dimidium
-  - blobi
-  - saxum
-  - liquefacta
-  - caminus
-  - kov
-  - istoovii
-  - halangona
-  - lahar
-  - pleurus
-  - debrisa
-  - daduen
-  - permafrost
-  - teide
-  - sekarral
-  - utopia
+  unlocksResearchIds: []
   references:
     version: 2
     RefIds:
