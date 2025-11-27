@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Freezed Core'. This item can be used to build and
     trade.
   icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_firstcontact_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 300
   resourceCosts:
   - resourceType: 1

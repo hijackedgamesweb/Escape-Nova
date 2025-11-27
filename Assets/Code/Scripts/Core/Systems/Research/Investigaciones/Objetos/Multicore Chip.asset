@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Multicore Chip'. This item can be used to build
     and trade.
   icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_firstcontact_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 300
   resourceCosts:
   - resourceType: 0

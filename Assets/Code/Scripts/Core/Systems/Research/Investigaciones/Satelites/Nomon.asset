@@ -40,7 +40,8 @@ MonoBehaviour:
   - rid: 6291952326318489706
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds: []
+  unlocksResearchIds:
+  - nishim
   references:
     version: 2
     RefIds:

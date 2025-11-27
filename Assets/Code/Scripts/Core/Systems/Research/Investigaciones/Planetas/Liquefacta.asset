@@ -19,7 +19,7 @@ MonoBehaviour:
     and ice every solar cycle.
   icon: {fileID: 3098759606283545503, guid: 022f1e2ca35b5824b9cdaa7c711b1df5, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_heatingthingsup_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 250

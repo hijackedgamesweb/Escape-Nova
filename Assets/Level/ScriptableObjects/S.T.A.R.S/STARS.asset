@@ -17,7 +17,7 @@ MonoBehaviour:
   timeToBuild: 0
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  buildCostAmounts: c8000000
+  buildCostAmounts: 1e000000
   size: 0.25
   desc: S.T.A.R.S. project
   sprite: {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}

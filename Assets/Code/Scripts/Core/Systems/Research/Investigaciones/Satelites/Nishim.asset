@@ -19,7 +19,7 @@ MonoBehaviour:
     75% more resources.
   icon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   prerequisites:
-  - researchId: salas
+  - researchId: nomon
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 75
@@ -40,7 +40,8 @@ MonoBehaviour:
   - rid: 6291952326318489706
   tier: 1
   treePosition: {x: 0, y: 0}
-  unlocksResearchIds: []
+  unlocksResearchIds:
+  - roshar
   references:
     version: 2
     RefIds:
