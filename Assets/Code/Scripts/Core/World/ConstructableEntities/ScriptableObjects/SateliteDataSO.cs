@@ -10,6 +10,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects
     {
         public float size;
         public string desc;
+        public Sprite sprite;
         [SerializeReference, SubclassSelector] public List<Upgrade> upgrades;
     }
 }

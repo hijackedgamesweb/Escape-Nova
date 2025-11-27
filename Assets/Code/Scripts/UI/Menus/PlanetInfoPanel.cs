@@ -73,21 +73,35 @@ namespace Code.Scripts.UI.Menus
             
             _planetNameText.text = _currentPlanet.Name;
             
+            
             StringBuilder productionString = new StringBuilder("Production per cicle\n");
             
-            foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
+            if (_currentPlanet.ProducibleResources != null && _currentPlanet.ResourcePerCycle != null)
             {
-                int resourceIndex = (int)type;
-                if (resourceIndex >= 0 && resourceIndex < _currentPlanet.ResourcePerCycle.Length)
+                // Iteramos solo sobre lo que el planeta tiene definido
+                for (int i = 0; i < _currentPlanet.ProducibleResources.Count; i++)
                 {
-                    int amount = _currentPlanet.ResourcePerCycle[resourceIndex];
-                    productionString.AppendLine($"{type.ToString()}: {amount}");
-                }
-                else
-                {
-                    productionString.AppendLine($"{type.ToString()}: 0");
+                    // Aseguramos que no nos salimos del array de cantidades
+                    if (i < _currentPlanet.ResourcePerCycle.Length)
+                    {
+                        ResourceType type = _currentPlanet.ProducibleResources[i];
+                        int amount = _currentPlanet.ResourcePerCycle[i];
+
+                        // Si quisieramso ver los que no producen nada, habríua que quitar este if
+                        if (amount > 0)
+                        {
+                            productionString.AppendLine($"{type}: {amount}");
+                        }
+                    }
                 }
             }
+            
+            // Si el planeta no tiene recursos configurados, mostramos un mensaje por defecto
+            if (productionString.Length <= "Production per cicle\n".Length) 
+            {
+                productionString.AppendLine("None");
+            }
+
             _productionText.text = productionString.ToString();
 
             
@@ -119,7 +133,13 @@ namespace Code.Scripts.UI.Menus
 
         private void OnCloseButtonClicked()
         {
-            UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
+            if (UnityEngine.Camera.main != null)
+            {
+                var camController = UnityEngine.Camera.main.GetComponent<Code.Scripts.Camera.CameraController2D>();
+                if (camController != null) 
+                    camController.ClearTarget();
+            }
+            
             AudioManager.Instance.PlaySFX("Close");
             HidePanel();
         }
