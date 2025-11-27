@@ -103,5 +103,5 @@ MonoBehaviour:
     - rid: 6291952611966058619
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
-        Description: Unlock the "Microscopic Lense" research
-        researchIdToUnlock: microscopic_lense
+        Description: Unlock the "Microscopic Lens" research
+        researchIdToUnlock: microscopic_lens

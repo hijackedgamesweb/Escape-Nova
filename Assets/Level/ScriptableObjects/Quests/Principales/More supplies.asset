@@ -46,13 +46,13 @@ MonoBehaviour:
       data:
         objectiveDescription: Build 1 Modular Spectrometer
         isCompleted: 0
-        requiredRecipeId: receta_modular spectrometer
+        requiredRecipeId: receta_modular_spectrometer
     - rid: 6291952611966058580
       type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Build 1 Microscopic Lense
+        objectiveDescription: Build 1 Microscopic Lens
         isCompleted: 0
-        requiredRecipeId: receta_microscopic_lense
+        requiredRecipeId: receta_microscopic_lens
     - rid: 6291952611966058581
       type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5db4aa064b4130b34614fcd7f6949a, type: 3}
   m_Name: Microscopic Lense
   m_EditorClassIdentifier: 
-  itemName: Microscopic Lense
-  displayName: Microscopic Lense
+  itemName: Microscopic Lens
+  displayName: Microscopic Lens
   icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
   maxStack: 9
   description: This item can be used to build and trade.
