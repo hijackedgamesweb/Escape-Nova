@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
+  m_Name: new_life_info
+  m_EditorClassIdentifier: 
+  titles:
+  - Congratulations
+  - New quest
+  - S.T.A.R.S
+  messages:
+  - Good job on finishing your very first quest!
+  - Each time you finish a quest you shoud check the quest menu, just in case there's
+    something new
+  - You have now unlocked the Storage Terminal and Research Station, aka S.T.A.R.S.
+    You can build it through the build menu to unlock new features
+  images:
+  - {fileID: 0}
+  - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}
+  - {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}

@@ -16639,6 +16639,8 @@ MonoBehaviour:
   _gameInfoPanel: {fileID: 1825460835}
   gameInfos:
   - {fileID: 11400000, guid: 9d618e3a2931792409dc97e510d2f5d8, type: 2}
+  - {fileID: 11400000, guid: df8aadd391ec8c64696ad7dce946f67f, type: 2}
+  - {fileID: 11400000, guid: 8790ae79b03c27f499f38b4528909385, type: 2}
 --- !u!1 &708052054
 GameObject:
   m_ObjectHideFlags: 0
