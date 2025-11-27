@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
+  m_Name: Scientific peak
+  m_EditorClassIdentifier: 
+  QuestId: scientific_peak
+  Title: Scientific peak
+  Description: "With all of these items combined\u2026 Could we make something perfect?"
+  Objectives:
+  - rid: 6291952611966058592
+  Rewards:
+  - rid: 6291952611966058593
+  - rid: 6291952611966058594
+  references:
+    version: 2
+    RefIds:
+    - rid: 6291952611966058592
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build a Perfect Sphere
+        isCompleted: 0
+        requiredRecipeId: receta_perfect_sphere
+    - rid: 6291952611966058593
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Utopia" research
+        researchIdToUnlock: utopia
+    - rid: 6291952611966058594
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Quantum Propeller" research
+        researchIdToUnlock: quantum_propeller

@@ -31,6 +31,8 @@ namespace Code.Scripts.UI.Menus
         //Metodos
         private void Start()
         {
+            gameObject.SetActive(false);
+            
             _closeButton.onClick.AddListener(OnCloseButtonClicked); //Que el boton de cerrar cierre la UI
             _nextPageButton.onClick.AddListener(delegate{SwapPages(1);});
             _previousPageButton.onClick.AddListener(delegate{SwapPages(-1);});
@@ -38,12 +40,12 @@ namespace Code.Scripts.UI.Menus
             //UIManager.OnScreenChanged += HandleScreenChange;
         }
         
-        
+        /*
         private void OnDestroy()
         {
             UIManager.OnScreenChanged -= HandleScreenChange;
         }
-        
+        */
         
         private void HandleScreenChange()
         {
@@ -97,7 +99,6 @@ namespace Code.Scripts.UI.Menus
         
         private void OnCloseButtonClicked()
         {
-            
             gameObject.SetActive(false);
         }
     }

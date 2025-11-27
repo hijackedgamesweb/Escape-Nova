@@ -19,7 +19,7 @@ MonoBehaviour:
     and fire every solar cycle.
   icon: {fileID: -2160696426671699655, guid: ac732039df9d3034e98bc93bff181a86, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_firstcontact_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 500

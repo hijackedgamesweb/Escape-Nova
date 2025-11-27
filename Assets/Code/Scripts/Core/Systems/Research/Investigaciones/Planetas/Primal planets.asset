@@ -20,7 +20,7 @@ MonoBehaviour:
     cycle.'
   icon: {fileID: -8691266674337138276, guid: 01896e080012cf84ca4d7aa45664acce, type: 3}
   prerequisites:
-  - researchId: primal_research
+  - researchId: blocked_until_yeahscience_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 10

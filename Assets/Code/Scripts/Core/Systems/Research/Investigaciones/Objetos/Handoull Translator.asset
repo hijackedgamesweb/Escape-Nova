@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Handoull Translator'. Crafting this item will allow
     you to communicate with the Handoull.
   icon: {fileID: -1656734156800635931, guid: af28c543acd466a4bb3bcef4d7b2f9f1, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_moresupplies_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0

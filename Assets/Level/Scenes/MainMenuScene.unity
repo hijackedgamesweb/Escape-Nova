@@ -47980,9 +47980,14 @@ MonoBehaviour:
   - setName: Gearing up
     quests:
     - {fileID: 11400000, guid: 737a8a9f9bd827f46aea88a2800369a7, type: 2}
+    - {fileID: 11400000, guid: 359297d8d58eec14b91d05eecaa6511d, type: 2}
   - setName: Another Life
     quests:
     - {fileID: 11400000, guid: dda718ec1cd70f0448656483a0faa17e, type: 2}
+  - setName: The Peak
+    quests:
+    - {fileID: 11400000, guid: eb10958f27863b94986188af17e4c017, type: 2}
+    - {fileID: 11400000, guid: 7e3ba9dd49c354645a1392b91e6eac20, type: 2}
   - setName: Extinction
     quests:
     - {fileID: 11400000, guid: c196b4bbc795d6c428ca68a9cc0ad677, type: 2}

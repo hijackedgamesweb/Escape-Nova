@@ -19,7 +19,7 @@ MonoBehaviour:
     by 5%.
   icon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   prerequisites:
-  - researchId: caerus
+  - researchId: chronos
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 425

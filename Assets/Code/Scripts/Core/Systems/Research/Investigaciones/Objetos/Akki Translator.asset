@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Akki Translator'. Crafting this item will allow
     you to communicate with the Akki.
   icon: {fileID: -999866019736742712, guid: 24e9ff8da265b1349a2f4c59293cecde, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_moresupplies_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0
