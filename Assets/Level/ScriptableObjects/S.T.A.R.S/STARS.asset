@@ -21,7 +21,7 @@ MonoBehaviour:
   size: 0.25
   desc: S.T.A.R.S. project
   sprite: {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}
-  material: {fileID: 2100000, guid: 610972c8e3dfe084db997ceb6262e651, type: 2}
+  material: {fileID: 0}
   orbitDistance: 2
   orbitSpeed: 5
   upgrades: []
