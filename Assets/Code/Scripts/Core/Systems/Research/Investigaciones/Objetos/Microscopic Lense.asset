@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99eb5dd9ec84a7a979ef480ebde1e84, type: 3}
   m_Name: Microscopic Lense
   m_EditorClassIdentifier: 
-  researchId: microscopic_lense
+  researchId: microscopic_lens
   category: 1
-  displayName: Microscopic Lense
+  displayName: Microscopic Lens
   description: Unlocks the item 'Microscopic Lens'. This item can be used to build
     and trade.
   icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
