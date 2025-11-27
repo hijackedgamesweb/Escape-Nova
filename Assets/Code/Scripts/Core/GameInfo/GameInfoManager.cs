@@ -32,14 +32,17 @@ public class GameInfoManager : MonoBehaviour
     
     public void DisplayGameInfo(String name)
     {
+        bool found = false;
+        
         foreach (var gameInfo in gameInfos)
         {
             if (gameInfo.name == name)
             {
+                found = true;
                 _gameInfo = gameInfo;
             }
         }
         
-        _gameInfoPanel.ShowPanel(_gameInfo.titles, _gameInfo.messages, _gameInfo.images);
+        if(found){_gameInfoPanel.ShowPanel(_gameInfo.titles, _gameInfo.messages, _gameInfo.images);}
     }
 }

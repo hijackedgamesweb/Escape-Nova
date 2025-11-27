@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa403767189b42b3b11cab9f5096b57d, type: 3}
   m_Name: Microscopic Lense
   m_EditorClassIdentifier: 
-  recipeId: receta_microscopic_lens
-  displayName: Microscopic Lens
+  recipeId: receta_microscopic_lense
+  displayName: Microscopic Lense
   description: A lens that allows microscopic investigations to be carried out with
     a very high level of detail.
   icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
