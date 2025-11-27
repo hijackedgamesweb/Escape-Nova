@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5db4aa064b4130b34614fcd7f6949a, type: 3}
-  m_Name: Akki Translator
+  m_Name: Multicore Chip
   m_EditorClassIdentifier: 
-  itemName: Akki Translator
-  displayName: Akki Translator
-  icon: {fileID: -999866019736742712, guid: 24e9ff8da265b1349a2f4c59293cecde, type: 3}
-  maxStack: 1
-  description: This device allows you to communicate with the Akki species.
+  itemName: Multicore Chip
+  displayName: Multicore Chip
+  icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
+  maxStack: 9
+  description: This item can be used to build and trade.
   itemToUnlock: {fileID: 0}
