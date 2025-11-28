@@ -30,7 +30,7 @@ MonoBehaviour:
   - 'On the top left corner you have your available resources. They''re, from left
     to right: Stone, Metal, ice, Fire and Sand.'
   - Each resource has different uses, and must be generated through planets
-  - On the bottom right corner you have de 'Building' menu. Through here, you can
+  - On the bottom right corner you have the 'Building' menu. Through here, you can
     build planets and Satellites. For planets, first pick the one you want to build
     and then select a free spot on your solar system. For satelittes, you'll have
     to select a planet to build it on its orbit.
@@ -42,7 +42,7 @@ MonoBehaviour:
     requirements, as well as time constraints and rewards.
   - Check out the quests menu and complete your first quest to continue.
   images:
-  - {fileID: 21300000, guid: 62f633bc35646dd46a7c74261b757f8b, type: 3}
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
   - {fileID: 3794550611322748858, guid: c6fb43811f177d549be9a768b79ec59d, type: 3}
   - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
   - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
