@@ -1,5 +1,5 @@
+using System;
 using Code.Scripts.Core.Managers.Interfaces;
-using Code.Scripts.Core.Systems.Time;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.State.Interfaces;
 using UnityEngine;
@@ -12,6 +12,8 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         IGameTime _gameTime;
         int _cycleCount = 0;
         Planet _planetData;
+        
+        public event Action<float> OnProgressUpdated;
 
         public BuildingState(Planet planetData, IGameTime gameTime)
         {
@@ -24,6 +26,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
             _gameTime.OnCycleCompleted += UpdateCycle;
             this.gameManager = gameManager;
             Debug.Log($"BuildingState: {_planetData.Name} started construction ({_planetData.TimeToBuild} cycles)");
+            OnProgressUpdated?.Invoke(0f);
         }
 
         public void Exit(IStateManager gameManager)
@@ -34,11 +37,15 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         public void UpdateCycle(int currentCycle)
         {
             _cycleCount++;
-            Debug.Log($"BuildingState: {_planetData.Name} construction progress {_cycleCount}/{_planetData.TimeToBuild}");
+            float progress = Mathf.Clamp01((float)_cycleCount / _planetData.TimeToBuild);
+            OnProgressUpdated?.Invoke(progress);
+
+            Debug.Log($"BuildingState: {_planetData.Name} progress {progress:P0}");
 
             if (_cycleCount >= _planetData.TimeToBuild)
             {
-                // Cambiar al estado de producción
+                OnProgressUpdated?.Invoke(1f);
+                
                 gameManager.SetState(new ProductionState(_planetData, _gameTime));
                 Debug.Log($"BuildingState: {_planetData.Name} construction completed");
             }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Code.Scripts.Camera;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -31,10 +32,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         private static Dictionary<string, float> _globalImprovements = new Dictionary<string, float>();
 
         private const int MAX_SLOTS = 3; 
-        private const float BASE_SATELLITE_DISTANCE = 1.2f;
-        private const float SATELLITE_SPEED = 25f;
+        private const float BASE_SATELLITE_DISTANCE = 0.6f;
+        private const float SATELLITE_SPEED = 50f;
 
-        private bool[] _occupiedSlots = new bool[MAX_SLOTS]; 
+        private bool[] _occupiedSlots = new bool[MAX_SLOTS];
+        public event Action<float> OnConstructionProgress;
+        public event Action OnConstructionCompleted;
 
         private void Awake()
         {
@@ -77,7 +80,18 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
             var gametTime = ServiceLocator.GetService<IGameTime>();
             _stateManager = new PlanetStateManager(gametTime);
-            _stateManager.SetState(new BuildingState(this, gametTime));
+            var buildingState = new BuildingState(this, gametTime);
+            buildingState.OnProgressUpdated += HandleBuildingProgress;
+            _stateManager.SetState(buildingState);
+        }
+        private void HandleBuildingProgress(float progress)
+        {
+            OnConstructionProgress?.Invoke(progress);
+            
+            if (progress >= 1f)
+            {
+                OnConstructionCompleted?.Invoke();
+            }
         }
 
         private void ApplyExistingGlobalImprovements()
@@ -175,7 +189,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
             if (freeSlotIndex == -1)
             {
-                Code.Scripts.Core.Managers.NotificationManager.Instance.CreateNotification($"Max satellites reached for {Name}", Code.Scripts.Core.Managers.NotificationType.Warning);
+                NotificationManager.Instance.CreateNotification($"Max satellites reached for {Name}", NotificationType.Warning);
                 return false;
             }
 
@@ -202,6 +216,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
             SpriteRenderer sr = satObj.AddComponent<SpriteRenderer>();
             sr.sprite = data.sprite;
+            
 
             if (_spriteRenderer != null) 
             {
@@ -217,7 +232,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
             
             float orbitRadius = planetRadius + BASE_SATELLITE_DISTANCE;
-            
             float fixedAngle = slotIndex * (360f / MAX_SLOTS);
 
             orbitCtrl.Initialize(orbitRadius, SATELLITE_SPEED, fixedAngle);
