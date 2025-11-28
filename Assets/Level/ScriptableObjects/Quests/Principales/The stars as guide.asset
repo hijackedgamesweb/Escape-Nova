@@ -20,15 +20,14 @@ MonoBehaviour:
   - rid: 6291952326318489676
   - rid: 6291952326318489677
   Rewards:
-  - rid: 967675238434996300
+  - rid: 6291952611966058572
+  - rid: 6291952611966058573
+  - rid: 6291952611966058574
+  - rid: 6291952611966058575
+  - rid: 6291952611966058576
   references:
     version: 2
     RefIds:
-    - rid: 967675238434996300
-      type: {class: UnlockCivilizationReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
-      data:
-        Description: Unlock Diplomacy Panel
-        civilizationName: Mippip
     - rid: 6291952326318489676
       type: {class: BuildConstructible, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
@@ -41,3 +40,28 @@ MonoBehaviour:
         objectiveDescription: Build the satellite "Caerus"
         isCompleted: 0
         requiredConstructible: {fileID: 11400000, guid: 5b96000c620a7694dbf7998e21b94f3a, type: 2}
+    - rid: 6291952611966058572
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Litosidera research
+        researchIdToUnlock: litosidera
+    - rid: 6291952611966058573
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Piroclastia research
+        researchIdToUnlock: piroclastia
+    - rid: 6291952611966058574
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Friga research
+        researchIdToUnlock: friga
+    - rid: 6291952611966058575
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Antas research
+        researchIdToUnlock: antar
+    - rid: 6291952611966058576
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlocks the Krista research
+        researchIdToUnlock: krista

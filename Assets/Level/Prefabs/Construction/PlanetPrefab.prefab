@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a434a8404da74c0aaee9d3f065cf2b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetMaterial: {fileID: 0}
 --- !u!212 &6223935161277792084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -165,4 +166,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ca4a3ed3f64f14ade8c2eba82e595d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sun: {fileID: 0}

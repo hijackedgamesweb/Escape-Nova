@@ -19,7 +19,7 @@ MonoBehaviour:
     and sand every solar cycle.
   icon: {fileID: 3270104525328145908, guid: be5cca90c386fd34599d05347b1248c9, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_heatingthingsup_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 250

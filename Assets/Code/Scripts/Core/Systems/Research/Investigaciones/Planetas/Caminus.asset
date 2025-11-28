@@ -19,7 +19,7 @@ MonoBehaviour:
     solar cycle.
   icon: {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_heatingthingsup_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 250

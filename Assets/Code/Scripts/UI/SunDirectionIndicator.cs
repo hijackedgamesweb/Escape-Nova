@@ -27,9 +27,13 @@ namespace Code.Scripts.UI
 
         private void Start()
         {
-            _mainCamera = _cameraController.GetComponent<UnityEngine.Camera>();
+            if (_cameraController != null)
+                _mainCamera = _cameraController.GetComponent<UnityEngine.Camera>();
+            else
+                _mainCamera = UnityEngine.Camera.main;
+
             _parentCanvas = GetComponentInParent<Canvas>();
-            _arrowIndicator.gameObject.SetActive(false);
+            if (_arrowIndicator != null) _arrowIndicator.gameObject.SetActive(false);
             FindSunReference();
         }
 
@@ -48,6 +52,12 @@ namespace Code.Scripts.UI
 
         private void Update()
         {
+            if (_mainCamera == null)
+            {
+                _mainCamera = UnityEngine.Camera.main;
+                if (_mainCamera == null) return;
+            }
+
             if (_sunTransform == null)
             {
                 FindSunReference();
@@ -59,6 +69,8 @@ namespace Code.Scripts.UI
 
         private void UpdateIndicator()
         {
+            if (_mainCamera == null || _sunTransform == null || _arrowIndicator == null) return;
+
             Vector3 screenPos = _mainCamera.WorldToScreenPoint(_sunTransform.position);
             Vector3 viewportPos = _mainCamera.WorldToViewportPoint(_sunTransform.position);
             bool isOffScreen = viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1 || viewportPos.z < 0;

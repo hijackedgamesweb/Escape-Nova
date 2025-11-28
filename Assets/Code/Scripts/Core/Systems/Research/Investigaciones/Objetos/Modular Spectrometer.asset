@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Modular Spectrometer'. This item can be used to
     build and trade.
   icon: {fileID: 5554003434574828865, guid: 5cbd70e74bc9d814681b2edbeb3f997c, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_firstcontact_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 300
   resourceCosts:
   - resourceType: 0

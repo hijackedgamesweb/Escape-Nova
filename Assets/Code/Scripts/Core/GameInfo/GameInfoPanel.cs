@@ -10,53 +10,42 @@ namespace Code.Scripts.UI.Menus
     public class GameInfoPanel : MonoBehaviour
     {
         //Variables
-        public static GameInfoPanel Instance { get; private set; }
         
         [Header("UI References")]
         [SerializeField] private TextMeshProUGUI _messageTitle;
         [SerializeField] private TextMeshProUGUI _messageText;
+        [SerializeField] private Image _iconImage;
+        
         [SerializeField] private Button _closeButton;
         [SerializeField] private Button _nextPageButton;
         [SerializeField] private Button _previousPageButton;
-
+        
         private String[] _currentTitles;
         private String[] _currentMessages;
+        private Sprite[] _currentImages;
+        
         private int _currentPage = 1;
         private int _maxPages;
         
         
         //Metodos
-        
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-            }
-            else
-            {
-                Instance = this;
-            }
-            
-            gameObject.SetActive(false);
-        }
-        
-        
         private void Start()
         {
+            gameObject.SetActive(false);
+            
             _closeButton.onClick.AddListener(OnCloseButtonClicked); //Que el boton de cerrar cierre la UI
             _nextPageButton.onClick.AddListener(delegate{SwapPages(1);});
             _previousPageButton.onClick.AddListener(delegate{SwapPages(-1);});
             
-            UIManager.OnScreenChanged += HandleScreenChange;
+            //UIManager.OnScreenChanged += HandleScreenChange;
         }
-
         
+        /*
         private void OnDestroy()
         {
             UIManager.OnScreenChanged -= HandleScreenChange;
         }
-        
+        */
         
         private void HandleScreenChange()
         {
@@ -67,12 +56,13 @@ namespace Code.Scripts.UI.Menus
         }
         
         
-        public void ShowPanel(String[] titles, String[] messages)
+        public void ShowPanel(String[] titles, String[] messages, Sprite[] images)
         {
             gameObject.SetActive(true);
 
             _currentTitles = titles;
             _currentMessages = messages;
+            _currentImages = images;
 
             _currentPage = 1;
             _maxPages = _currentMessages.Length;
@@ -99,12 +89,16 @@ namespace Code.Scripts.UI.Menus
         {
             _messageTitle.text = _currentTitles[_currentPage-1];
             _messageText.text = _currentMessages[_currentPage-1];
+            
+            _iconImage.enabled = _currentImages[_currentPage-1] != null;
+            _iconImage.sprite = _currentImages[_currentPage-1];
+            
+            AudioManager.Instance.PlaySFX("ButtonClick");
         }
         
         
         private void OnCloseButtonClicked()
         {
-            AudioManager.Instance.PlaySFX("Close");
             gameObject.SetActive(false);
         }
     }

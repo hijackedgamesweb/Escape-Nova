@@ -16,5 +16,5 @@ MonoBehaviour:
   displayName: Mippip Translator
   icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
   maxStack: 1
-  description: Mippip Translator
+  description: This device allows you to communicate with the Mippip species.
   itemToUnlock: {fileID: 0}

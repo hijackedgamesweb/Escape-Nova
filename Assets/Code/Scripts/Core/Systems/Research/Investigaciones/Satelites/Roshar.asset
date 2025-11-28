@@ -19,7 +19,7 @@ MonoBehaviour:
     100% more resources.
   icon: {fileID: -7353351216649529681, guid: e71b41a6faa3f5c49b8adda85992c7eb, type: 3}
   prerequisites:
-  - researchId: salas
+  - researchId: nishim
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 225

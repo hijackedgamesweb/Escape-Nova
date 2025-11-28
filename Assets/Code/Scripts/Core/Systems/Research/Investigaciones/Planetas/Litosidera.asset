@@ -19,7 +19,7 @@ MonoBehaviour:
     metal every solar cycle.
   icon: {fileID: 1121215930053453493, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_thestarsasguide_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 100

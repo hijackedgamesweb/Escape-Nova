@@ -17,6 +17,12 @@ namespace Code.Scripts.UI.HUD
         [SerializeField] private TMP_Text _stoneText;
         [SerializeField] private TMP_Text _metalText;
 
+        [SerializeField] private TMP_Text _sandName;
+        [SerializeField] private TMP_Text _stoneName;
+        [SerializeField] private TMP_Text _metalName;
+        [SerializeField] private TMP_Text _iceName;
+        [SerializeField] private TMP_Text _fireName;
+
         private void Start()
         {
             _storageSystem = ServiceLocator.GetService<StorageSystem>();
@@ -40,5 +46,39 @@ namespace Code.Scripts.UI.HUD
                 _storageSystem.OnStorageUpdated -= UpdateUI;
             }
         }
+
+        public void ShowResourceName(ResourceType type)
+        {
+            HideAllNames();
+
+            switch (type)
+            {
+                case ResourceType.Sand:
+                    _sandName.gameObject.SetActive(true);
+                    break;
+                case ResourceType.Stone:
+                    _stoneName.gameObject.SetActive(true);
+                    break;
+                case ResourceType.Metal:
+                    _metalName.gameObject.SetActive(true);
+                    break;
+                case ResourceType.Ice:
+                    _iceName.gameObject.SetActive(true);
+                    break;
+                case ResourceType.Fire:
+                    _fireName.gameObject.SetActive(true);
+                    break;
+            }
+        }
+
+        public void HideAllNames()
+        {
+            _sandName.gameObject.SetActive(false);
+            _stoneName.gameObject.SetActive(false);
+            _metalName.gameObject.SetActive(false);
+            _iceName.gameObject.SetActive(false);
+            _fireName.gameObject.SetActive(false);
+        }
+
     }
 }

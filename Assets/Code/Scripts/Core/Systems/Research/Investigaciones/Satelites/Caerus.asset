@@ -38,7 +38,6 @@ MonoBehaviour:
   treePosition: {x: 0, y: 0}
   unlocksResearchIds:
   - chronos
-  - who
   references:
     version: 2
     RefIds:

@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7064553ff4734c98a8545c5fa5e86a8d, type: 3}
+  m_Name: More supplies
+  m_EditorClassIdentifier: 
+  QuestId: more_supplies
+  Title: More supplies
+  Description: "With all of these resources at our hands, it\u2019d be interesting
+    to see what we can build with them"
+  Objectives:
+  - rid: 6291952611966058578
+  - rid: 6291952611966058579
+  - rid: 6291952611966058580
+  - rid: 6291952611966058581
+  - rid: 6291952611966058582
+  - rid: 6291952611966058583
+  Rewards:
+  - rid: 6291952611966058584
+  - rid: 6291952611966058585
+  - rid: 6291952611966058586
+  - rid: 6291952611966058587
+  - rid: 6291952611966058588
+  - rid: 6291952611966058589
+  - rid: 6291952611966058590
+  - rid: 6291952611966058591
+  references:
+    version: 2
+    RefIds:
+    - rid: 6291952611966058578
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Matter Condenser
+        isCompleted: 0
+        requiredRecipeId: receta_matter_condenser
+    - rid: 6291952611966058579
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Modular Spectrometer
+        isCompleted: 0
+        requiredRecipeId: receta_modular_spectrometer
+    - rid: 6291952611966058580
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Microscopic Lens
+        isCompleted: 0
+        requiredRecipeId: receta_microscopic_lens
+    - rid: 6291952611966058581
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Multicore Chip
+        isCompleted: 0
+        requiredRecipeId: receta_multicore_chip
+    - rid: 6291952611966058582
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Freezed Core
+        isCompleted: 0
+        requiredRecipeId: receta_freezed_core
+    - rid: 6291952611966058583
+      type: {class: CraftItem, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+      data:
+        objectiveDescription: Build 1 Fire Strike
+        isCompleted: 0
+        requiredRecipeId: receta_fire_strike
+    - rid: 6291952611966058584
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Perfect Sphere" research
+        researchIdToUnlock: perfect_sphere
+    - rid: 6291952611966058585
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Handoull Translator" research
+        researchIdToUnlock: handoull_translator
+    - rid: 6291952611966058586
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Akki Translator" research
+        researchIdToUnlock: akki_translator
+    - rid: 6291952611966058587
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Debrisa" research
+        researchIdToUnlock: debrisa
+    - rid: 6291952611966058588
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Daduen" research
+        researchIdToUnlock: daduen
+    - rid: 6291952611966058589
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Permafrost" research
+        researchIdToUnlock: permafrost
+    - rid: 6291952611966058590
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Teide" research
+        researchIdToUnlock: teide
+    - rid: 6291952611966058591
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Sekarral" research
+        researchIdToUnlock: sekarral

@@ -16,5 +16,5 @@ MonoBehaviour:
   displayName: Akki Translator
   icon: {fileID: -999866019736742712, guid: 24e9ff8da265b1349a2f4c59293cecde, type: 3}
   maxStack: 1
-  description: Akki Translator
+  description: This device allows you to communicate with the Akki species.
   itemToUnlock: {fileID: 0}

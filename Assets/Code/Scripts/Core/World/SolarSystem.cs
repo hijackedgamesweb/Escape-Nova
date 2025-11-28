@@ -8,7 +8,6 @@ using Code.Scripts.Patterns.Factory;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 namespace Code.Scripts.Core.World
 {
@@ -58,7 +57,16 @@ namespace Code.Scripts.Core.World
             if (_initialized) return;
             _initialized = true;
             
-            sunPos = Instantiate(sun, Vector3.zero, Quaternion.identity, transform).transform;
+            GameObject sunInstance = Instantiate(sun, Vector3.zero, Quaternion.identity, transform);
+            sunPos = sunInstance.transform;
+            if (sunInstance.GetComponent<SunInteractable>() == null)
+            {
+                sunInstance.AddComponent<SunInteractable>();
+            }
+            if (sunInstance.GetComponent<Collider2D>() == null)
+            {
+                sunInstance.AddComponent<CircleCollider2D>().radius = 2.5f;
+            }
         }
 
         public void ResetScrollPositionToTop()
@@ -94,11 +102,15 @@ namespace Code.Scripts.Core.World
             {
                 return;
             }
+            bool success = planet.AddSatelite(sateliteDataSo);
             
-            planet.AddSatelite(sateliteDataSo);
-            ConstructionEvents.OnConstructibleCreated?.Invoke(sateliteDataSo);
-            NotificationManager.Instance.CreateNotification($"A satellite named: {sateliteDataSo.name} was added to {planet.Name}", NotificationType.Info);
+            if (success)
+            {
+                ConstructionEvents.OnConstructibleCreated?.Invoke(sateliteDataSo);
+                NotificationManager.Instance.CreateNotification($"A satellite named: {sateliteDataSo.name} was added to {planet.Name}", NotificationType.Info);
+            }
         }
+
         public void RemovePlanet(int orbit, int positionInOrbit)
         {
             if (orbit < 0 || orbit >= Planets.Count || positionInOrbit < 0 || positionInOrbit >= Planets[orbit].Count)
@@ -115,15 +127,30 @@ namespace Code.Scripts.Core.World
             Destroy(planet.gameObject);
             Planets[orbit][positionInOrbit] = null;
             OnPlanetRemoved?.Invoke(orbit, positionInOrbit);
-            UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
+            if(UnityEngine.Camera.main != null) 
+                UnityEngine.Camera.main.GetComponent<Camera.CameraController2D>().ClearTarget();
+                
             NotificationManager.Instance.CreateNotification($"The planet: {planetName} was deleted from the orbit {orbit + 1}", NotificationType.Info);
             ConstructionEvents.OnPlanetRemoved?.Invoke(planet);
         }
 
         public void BuildSpecialPlanet(STARSDataSO specialPlanetData)
         {
-            //NotificationManager.Instance.CreateNotification($"Se ha construido: {specialPlanetData.constructibleName}!", NotificationType.Info);
+            GameObject starsObj = new GameObject(specialPlanetData.constructibleName);
+            starsObj.transform.SetParent(this.transform); // Hijo del sistema solar
+            starsObj.transform.localScale = Vector3.one * (specialPlanetData.size > 0 ? specialPlanetData.size : 1f);
+            SpriteRenderer sr = starsObj.AddComponent<SpriteRenderer>();
+            sr.sprite = specialPlanetData.sprite;
+            if (specialPlanetData.material != null)
+            {
+                sr.material = specialPlanetData.material;
+            }
+            starsObj.AddComponent<BoxCollider2D>();
+            SatelliteOrbitController orbitCtrl = starsObj.AddComponent<SatelliteOrbitController>();
+            orbitCtrl.Initialize(specialPlanetData.orbitDistance, specialPlanetData.orbitSpeed, 0f);
+
             ConstructionEvents.OnConstructibleCreated?.Invoke(specialPlanetData);
+            NotificationManager.Instance.CreateNotification($"STARS Launched: {specialPlanetData.constructibleName}", NotificationType.Info);
         }
         
         public Transform GetSunTransform()

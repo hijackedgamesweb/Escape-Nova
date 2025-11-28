@@ -21,42 +21,84 @@ MonoBehaviour:
   - rid: 6291952326318489681
   - rid: 6291952326318489682
   - rid: 6291952326318489683
-  Rewards: []
+  Rewards:
+  - rid: 6291952611966058595
+  - rid: 6291952611966058596
+  - rid: 6291952611966058597
+  - rid: 6291952611966058598
+  - rid: 6291952611966058599
+  - rid: 6291952611966058600
+  - rid: 6291952611966058601
   references:
     version: 2
     RefIds:
     - rid: 6291952326318489678
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 100 stone/cycle
+        objectiveDescription: Produce 50 stone/cycle
         isCompleted: 0
         resourceType: 4
-        requiredAmount: 100
+        requiredAmount: 50
     - rid: 6291952326318489679
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 100 metal/cycle
+        objectiveDescription: Produce 50 metal/cycle
         isCompleted: 0
         resourceType: 0
-        requiredAmount: 100
+        requiredAmount: 50
     - rid: 6291952326318489681
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 100 ice each cycle
+        objectiveDescription: Produce 50 ice each cycle
         isCompleted: 0
         resourceType: 1
-        requiredAmount: 100
+        requiredAmount: 50
     - rid: 6291952326318489682
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 100 fire each cycle
+        objectiveDescription: Produce 50 fire each cycle
         isCompleted: 0
         resourceType: 2
-        requiredAmount: 100
+        requiredAmount: 50
     - rid: 6291952326318489683
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 100 sand each cycle
+        objectiveDescription: Produce 50 sand each cycle
         isCompleted: 0
         resourceType: 3
-        requiredAmount: 100
+        requiredAmount: 50
+    - rid: 6291952611966058595
+      type: {class: UnlockCivilizationReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock Diplomacy Panel
+        civilizationName: Mippip
+    - rid: 6291952611966058596
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Mippip Translator" research
+        researchIdToUnlock: mippip_translator
+    - rid: 6291952611966058597
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Dimidium" research
+        researchIdToUnlock: dimidium
+    - rid: 6291952611966058598
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Blobi" research
+        researchIdToUnlock: blobi
+    - rid: 6291952611966058599
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Saxum" research
+        researchIdToUnlock: saxum
+    - rid: 6291952611966058600
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Liquefacta" research
+        researchIdToUnlock: liquefacta
+    - rid: 6291952611966058601
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Caminus" research
+        researchIdToUnlock: caminus

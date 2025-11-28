@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Halxi Translator'. Crafting this item will allow
     you to communicate with the Halxi.
   icon: {fileID: -6657923694154243408, guid: c544afcce22888343abd1144cf0c910f, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_firstcontact_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0
