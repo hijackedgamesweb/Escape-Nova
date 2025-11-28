@@ -14,18 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titles:
   - New menus
-  - Research
   - Storage
+  - Research
+  - Research
   messages:
   - 'Now you have unlocked two new menus: Research and Inventory. You can see them
     at the bottom of the screen.'
+  - The the storage menu will alow you to craft and store items, will will become
+    very useful very soon
   - The research menu will allow to to unlock new planets, items, satellites and
     more, by researching them. Each research will cost resources and take a certain
     ammount of solar cycle to finish, but once you research them they're unlocked
     forever.
-  - Through the storage menu you can craft and store items, will will become very
-    useful very soon
+  - Your next objective is to research 'Primal Planets', so check out the research
+    menu and let the science begin.
   images:
   - {fileID: 0}
-  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
   - {fileID: -3511662136145019918, guid: 1b269d12507f5cf4cb8f02281394007c, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
