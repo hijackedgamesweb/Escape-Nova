@@ -12,6 +12,7 @@ namespace Code.Scripts.UI.Menus.Diplomacy
     {
         [SerializeField] GameObject _tradingPanelPrefab;
         [SerializeField] Canvas _mainCanvas;
+        [SerializeField] FlowchartManager _flowchartManager;
         private GameObject _tradePanelPrefab;
         Civilization _currentCivilization;
         public void SetCivilization(Civilization civ)
@@ -41,6 +42,12 @@ namespace Code.Scripts.UI.Menus.Diplomacy
         {
             if (_currentCivilization == null) return;
             _currentCivilization.CivilizationState.ReceiveBond();
+        }
+
+        public void OnTalkPressed()
+        {
+            if (_currentCivilization == null) return;
+            _flowchartManager.OnTalkWithCivilization(_currentCivilization);
         }
         
     }

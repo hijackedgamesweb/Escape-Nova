@@ -45,6 +45,29 @@ namespace Code.Scripts.Core.Managers
                     break;
             }
         }
+
+        public void OnTalkWithCivilization(Civilization civilization)
+        {
+            switch (civilization.CivilizationData.Name)
+            {
+                case "Mippip":
+                    _mippipFlowchart.SendFungusMessage("Talk");
+                    break;
+                case "Akki":
+                    _akkiFlowchart.SendFungusMessage("Talk");
+                    break;
+                case "Halxi":
+                    _halxiFlowchart.SendFungusMessage("Talk");
+                    break;
+                case "Skulg":
+                    _skulgFlowchart.SendFungusMessage("Talk");
+                    break;
+                case "Handoull":
+                    _handoullFlowchart.SendFungusMessage("Talk");
+                    break;
+            }
+            
+        }
         
         private void UnlockTranslations(string civilizationId)
         {

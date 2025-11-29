@@ -10,6 +10,9 @@ namespace Code.Scripts.Core.Entity.Civilization
         TestController,
         AkkiBehaviour,
         HalxiBehaviour,
+        MippipBehaviour,
+        SkulgBehaviour,
+        HandoullBehaviour
     }
     public class CivilizationSO : EntitySO
     {

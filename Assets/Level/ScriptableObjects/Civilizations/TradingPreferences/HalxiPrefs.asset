@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713fa624fc4b42e3953b5306a3db65f7, type: 3}
-  m_Name: AkkiPrefs
+  m_Name: HalxiPrefs
   m_EditorClassIdentifier: 
   stoneWorth: 1
   metalWorth: 2
