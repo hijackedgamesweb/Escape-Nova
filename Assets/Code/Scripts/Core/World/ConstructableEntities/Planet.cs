@@ -31,11 +31,13 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public static event Action<string, float> OnGlobalImprovementAdded;
         private static Dictionary<string, float> _globalImprovements = new Dictionary<string, float>();
 
-        private const int MAX_SLOTS = 3; 
+        private int _satelliteSlots;
+        private bool[] _occupiedSatelliteSlots;
+        
         private const float BASE_SATELLITE_DISTANCE = 0.6f;
         private const float SATELLITE_SPEED = 50f;
 
-        private bool[] _occupiedSlots = new bool[MAX_SLOTS];
+        
         public event Action<float> OnConstructionProgress;
         public event Action OnConstructionCompleted;
 
@@ -77,6 +79,9 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             TimeToBuild = data.timeToBuild;
             OrbitIndex = orbit;
             PlanetIndex = positionInOrbit;
+            
+            _satelliteSlots = data.maxSatellites;
+            _occupiedSatelliteSlots = new bool[_satelliteSlots];
 
             var gametTime = ServiceLocator.GetService<IGameTime>();
             _stateManager = new PlanetStateManager(gametTime);
@@ -178,9 +183,9 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public bool AddSatelite(SateliteDataSO sateliteDataSo)
         {
             int freeSlotIndex = -1;
-            for (int i = 0; i < MAX_SLOTS; i++)
+            for (int i = 0; i < _satelliteSlots; i++)
             {
-                if (!_occupiedSlots[i])
+                if (!_occupiedSatelliteSlots[i])
                 {
                     freeSlotIndex = i;
                     break;
@@ -193,7 +198,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 return false;
             }
 
-            _occupiedSlots[freeSlotIndex] = true;
+            _occupiedSatelliteSlots[freeSlotIndex] = true;
 
             Satelite satelite = new Satelite();
             satelite.InitializeSatelite(sateliteDataSo, this);
@@ -232,7 +237,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
             
             float orbitRadius = planetRadius + BASE_SATELLITE_DISTANCE;
-            float fixedAngle = slotIndex * (360f / MAX_SLOTS);
+            float fixedAngle = slotIndex * (360f / _satelliteSlots);
 
             orbitCtrl.Initialize(orbitRadius, SATELLITE_SPEED, fixedAngle);
         }
