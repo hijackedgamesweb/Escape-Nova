@@ -20,12 +20,11 @@ MonoBehaviour:
   messages:
   - 'Now you have unlocked two new menus: Research and Inventory. You can see them
     at the bottom of the screen.'
-  - The the storage menu will alow you to craft and store items, will will become
+  - The the storage menu will alow you to craft and store items, which will become
     very useful very soon
-  - The research menu will allow to to unlock new planets, items, satellites and
-    more, by researching them. Each research will cost resources and take a certain
-    ammount of solar cycle to finish, but once you research them they're unlocked
-    forever.
+  - The research menu will allow to unlock new planets, items, satellites and more,
+    by researching them. Each research will cost resources and take a certain ammount
+    of solar cycles to finish, but once a research is done it's unlocked forever
   - Your next objective is to research 'Primal Planets', so check out the research
     menu and let the science begin.
   images:
