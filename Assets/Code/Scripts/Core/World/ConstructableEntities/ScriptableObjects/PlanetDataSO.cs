@@ -18,5 +18,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects
         public Sprite[] animationFrames;
         public float frameRate = 0.1f;
         
+        public int maxSatellites;
     }
 }

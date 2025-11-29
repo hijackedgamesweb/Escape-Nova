@@ -78,3 +78,4 @@ MonoBehaviour:
   - {fileID: -3652550452151511136, guid: 022f1e2ca35b5824b9cdaa7c711b1df5, type: 3}
   - {fileID: -483956127476533159, guid: 022f1e2ca35b5824b9cdaa7c711b1df5, type: 3}
   frameRate: 0.1
+  maxSatellites: 3
