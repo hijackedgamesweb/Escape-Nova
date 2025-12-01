@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Handoull
   civLeaderName: 'Hand '
-  baseFriendship: 0
-  baseDependency: 0
-  baseInterest: 0
-  baseTrust: 0
-  itemPreferences: {fileID: 0}
+  baseFriendship: 0.4
+  baseDependency: 0.5
+  baseInterest: 0.6
+  baseTrust: 0.7
+  itemPreferences: {fileID: 11400000, guid: f44d784bc97707643aaf980414c6f3c1, type: 2}
   civilizationDescription: texto de ejemplo 2
   civilizationIcon: {fileID: 21300000, guid: 505f4e0c77703794188a084682c3c5c6, type: 3}
   civilizationFlag: {fileID: 0}
-  aiController: 0
+  aiController: 5
   angerTolerance: 32
   leaderPortrait: {fileID: 3026952216567731805, guid: c0c3868c32ee93b42a1880be967141dd, type: 3}
   startingResources: []
-  startingInventory: {fileID: 0}
+  startingInventory: {fileID: 11400000, guid: bf0cb55411fab7a4abc931a81e0294c1, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: ec1925f37188c1a4f91a60d6926dfa87, type: 2}

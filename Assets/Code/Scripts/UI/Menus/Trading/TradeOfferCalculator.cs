@@ -1,4 +1,5 @@
 using Code.Scripts.Core.Entity;
+using Code.Scripts.Core.Systems.Resources;
 
 namespace Code.Scripts.UI.Menus.Trading
 {
@@ -8,11 +9,11 @@ namespace Code.Scripts.UI.Menus.Trading
         {
             int totalValue = 0;
             
-            totalValue +=  (int) (tradingData.stoneAmount * entity.ItemPreferences.stoneWorth);
-            totalValue +=  (int) (tradingData.metalAmount * entity.ItemPreferences.metalWorth);
-            totalValue +=  (int) (tradingData.fireAmount * entity.ItemPreferences.fireWorth);
-            totalValue +=  (int) (tradingData.iceAmount * entity.ItemPreferences.iceWorth);
-            totalValue +=  (int) (tradingData.sandAmount * entity.ItemPreferences.sandWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Stone] * entity.ItemPreferences.stoneWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Metal] * entity.ItemPreferences.metalWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Fire] * entity.ItemPreferences.fireWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Ice] * entity.ItemPreferences.iceWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Sand] * entity.ItemPreferences.sandWorth);
             
             foreach (var item in tradingData.itemsToTrade)
             {

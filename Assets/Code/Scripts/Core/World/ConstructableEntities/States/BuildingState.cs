@@ -25,7 +25,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
         {
             _gameTime.OnCycleCompleted += UpdateCycle;
             this.gameManager = gameManager;
-            Debug.Log($"BuildingState: {_planetData.Name} started construction ({_planetData.TimeToBuild} cycles)");
             OnProgressUpdated?.Invoke(0f);
         }
 
@@ -40,14 +39,11 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
             float progress = Mathf.Clamp01((float)_cycleCount / _planetData.TimeToBuild);
             OnProgressUpdated?.Invoke(progress);
 
-            Debug.Log($"BuildingState: {_planetData.Name} progress {progress:P0}");
-
             if (_cycleCount >= _planetData.TimeToBuild)
             {
                 OnProgressUpdated?.Invoke(1f);
                 
                 gameManager.SetState(new ProductionState(_planetData, _gameTime));
-                Debug.Log($"BuildingState: {_planetData.Name} construction completed");
             }
         }
 

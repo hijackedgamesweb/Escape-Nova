@@ -100,7 +100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5476204836413533718, guid: 212db910e48e26d4dafc8c7ec7f585bc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae2abb1c5bd22474eac152ca0e4e4912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -310,8 +310,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -9033598538284505753, guid: ea7758638a9b3ab45991552263f5cfad, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 6055236851413665520, guid: f3d8c2196d6198a4fa326d8c5d460afe, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -337,6 +337,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 342624653754957672}
   selectionHighlight: {fileID: 8674056119043658771}
   availableColor: {r: 0.13203098, g: 0.4056604, b: 0.13203098, a: 1}
+  unaffordableColor: {r: 1, g: 0, b: 0, a: 1}
   lockedColor: {r: 0.49056602, g: 0.14578141, b: 0.14578141, a: 1}
   inProgressColor: {r: 0.7169812, g: 0.6849129, b: 0.31452474, a: 1}
   completedColor: {r: 1, g: 1, b: 1, a: 1}

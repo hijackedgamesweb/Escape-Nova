@@ -14,6 +14,9 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI
                 AIType.TestController => new TestController(civ, invoker),
                 AIType.AkkiBehaviour => new AkkiBehaviour(civ, invoker),
                 AIType.HalxiBehaviour => new HalxiBehaviour(civ, invoker),
+                AIType.MippipBehaviour => new MippipBehaviour(civ, invoker),
+                AIType.HandoullBehaviour => new HandoullBehaviour(civ, invoker),
+                AIType.SkulgBehaviour => new SkulgBehaviour(civ, invoker),
                 _ => null
             };
         }

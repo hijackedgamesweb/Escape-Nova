@@ -13,6 +13,7 @@ namespace Code.Scripts.UI.Menus.Trading
         {
             foreach (InventoryItem item in inventoryData)
             {
+                if(item.quantity <= 0) continue;
                 GameObject itemObject = Instantiate(itemPrefab, transform);
                 TradingItemUI itemUI = itemObject.GetComponent<TradingItemUI>();
                 itemUI.SetItemData(item);

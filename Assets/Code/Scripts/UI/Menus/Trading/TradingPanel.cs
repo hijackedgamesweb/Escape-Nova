@@ -19,6 +19,11 @@ namespace Code.Scripts.UI.Menus.Trading
         public void InitializePanel(StorageSystem storage)
         {
             _storage = storage;
+            stoneAmountText.text = "0";
+            metalAmountText.text = "0";
+            fireAmountText.text = "0";
+            iceAmountText.text = "0";
+            sandAmountText.text = "0";
             tradingObjectsGrid.InitializeGrid(_storage.GetInventoryItemList());
         }
         

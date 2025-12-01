@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Akki
   civLeaderName: Akki No
-  baseFriendship: 0.5
-  baseDependency: 0.5
-  baseInterest: 0.5
-  baseTrust: 0.5
-  itemPreferences: {fileID: 0}
+  baseFriendship: 1
+  baseDependency: 1
+  baseInterest: 0
+  baseTrust: 0
+  itemPreferences: {fileID: 11400000, guid: 71307f0101db2c04f9e66df6b8a9e5b9, type: 2}
   civilizationDescription: Very little is known about the planet these Akki come
     from. Highly unpredictable, they seem to behave just like atoms, as seen in quantum
     mechanics
@@ -28,4 +28,6 @@ MonoBehaviour:
   angerTolerance: 0
   leaderPortrait: {fileID: -7317164782365401908, guid: 2aa9265ac9e44b140a8ce73ac5123533, type: 3}
   startingResources: []
-  startingInventory: {fileID: 0}
+  startingResourceAmounts: 
+  startingInventory: {fileID: 11400000, guid: 3cb353dddcaeb4b47aa07ee83aa2bb66, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: 1b3c923b64d16264cac2283ae7b04755, type: 2}

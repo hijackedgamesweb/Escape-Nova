@@ -18,13 +18,7 @@ MonoBehaviour:
   iceWorth: 3
   sandWorth: 1.5
   tier0Items:
-  - itemData:
-      itemName: 
-      displayName: 
-      icon: {fileID: 0}
-      maxStack: 1
-      description: 
-      itemToUnlock: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 9de089f136c7a9d46a3654a43684ee3e, type: 2}
     quantity: 0
   tier2Items: []
   tier3Items: []

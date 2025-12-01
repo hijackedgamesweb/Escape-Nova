@@ -18,6 +18,8 @@ MonoBehaviour:
   - itemData: {fileID: 11400000, guid: 6471c1e69c7c2b348b0f1bac5bf5884f, type: 2}
     quantity: 0
   - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: a7c291d49898f0f47bd1a33494ee0686, type: 2}
     quantity: 0
   - itemData: {fileID: 11400000, guid: a3d1e44d4a3bd1d42aa7ef286abf0a07, type: 2}
     quantity: 0
