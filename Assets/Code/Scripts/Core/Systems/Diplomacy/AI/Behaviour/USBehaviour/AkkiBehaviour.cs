@@ -48,14 +48,14 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             negotiationFusion.Weights = new float[]{ 0.7f, 0.3f };
             
             
-            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["Runaway"]);
-            UtilityAction offerPeaceAction = UtilitySystem.CreateAction(peaceFusion, _actions["OfferPeace"]);
-            UtilityAction declareWarAction = UtilitySystem.CreateAction(belligerentFusion, _actions["DeclareWar"]);
-            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(loveFusion, _actions["ProposeMarriage"]);
-            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SeekHelp"]);
-            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["IncreaseTrade"]);
-            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["ProposeInvestigation"]);
-            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["ExchangeTreaty"]);
+            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["SetDisgusted"]);
+            UtilityAction offerPeaceAction = UtilitySystem.CreateAction(peaceFusion, _actions["SetPeaceful"]);
+            UtilityAction declareWarAction = UtilitySystem.CreateAction(belligerentFusion, _actions["SetBelligerent"]);
+            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(loveFusion, _actions["SetLove"]);
+            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SetNeeded"]);
+            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["SetCommerce"]);
+            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["SetProgressive"]);
+            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["SetNegotiation"]);
             
         }
 

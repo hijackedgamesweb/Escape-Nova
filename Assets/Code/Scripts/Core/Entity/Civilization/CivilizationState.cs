@@ -1,3 +1,5 @@
+using Code.Scripts.Core.Events;
+
 namespace Code.Scripts.Core.Entity.Civilization
 {
     public class CivilizationState : EntityState
@@ -7,5 +9,10 @@ namespace Code.Scripts.Core.Entity.Civilization
             
         }
 
+        public void SetCurrentMood(EntityMood mood)
+        {
+            CurrentMood = mood;
+            UIEvents.OnUpdateCivilizationUI?.Invoke();
+        }
     }
 }

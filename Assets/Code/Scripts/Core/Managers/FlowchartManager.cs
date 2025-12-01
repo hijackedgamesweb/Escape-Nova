@@ -53,18 +53,23 @@ namespace Code.Scripts.Core.Managers
             switch (civilization.CivilizationData.Name)
             {
                 case "Mippip":
+                    _mippipFlowchart.SetStringVariable("Mood", civilization.CivilizationState.GetMoodDescription());
                     _mippipFlowchart.SendFungusMessage("Talk");
                     break;
                 case "Akki":
+                    _akkiFlowchart.SetStringVariable("Mood", civilization.CivilizationState.GetMoodDescription());
                     _akkiFlowchart.SendFungusMessage("Talk");
                     break;
                 case "Halxi":
+                    _halxiFlowchart.SetStringVariable("Mood", civilization.CivilizationState.GetMoodDescription());
                     _halxiFlowchart.SendFungusMessage("Talk");
                     break;
                 case "Skulg":
+                    _skulgFlowchart.SetStringVariable("Mood", civilization.CivilizationState.GetMoodDescription());
                     _skulgFlowchart.SendFungusMessage("Talk");
                     break;
                 case "Handoull":
+                    _handoullFlowchart.SetStringVariable("Mood", civilization.CivilizationState.GetMoodDescription());
                     _handoullFlowchart.SendFungusMessage("Talk");
                     break;
             }

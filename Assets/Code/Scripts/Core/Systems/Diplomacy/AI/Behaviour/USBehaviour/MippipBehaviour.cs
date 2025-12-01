@@ -42,12 +42,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             negotiationFusion.Weights = new float[]{ 0.6f, 0.4f };
             
             
-            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["Runaway"]);
-            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["ProposeInvestigation"]);
-            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SeekHelp"]);
-            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["IncreaseTrade"]);
-            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(loveFusion, _actions["ProposeMarriage"]);
-            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["ExchangeTreaty"]);
+            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["SetDisgusted"]);
+            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["SetProgressive"]);
+            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SetNeeded"]);
+            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["SetCommerce"]);
+            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(loveFusion, _actions["SetLove"]);
+            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["SetNegotiation"]);
             
         }
 

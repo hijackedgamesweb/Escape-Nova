@@ -40,15 +40,15 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             WeightedFusionFactor generosityFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["InterestCurve"], _curveFactors["FaithCurve"]);
             generosityFusion.Weights = new float[]{ 0.7f, 0.15f, 0.15f };
             
-            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["Runaway"]);
-            UtilityAction offerPeaceAction = UtilitySystem.CreateAction(peaceFusion, _actions["OfferPeace"]);
-            UtilityAction declareWarAction = UtilitySystem.CreateAction(belligerentFusion, _actions["DeclareWar"]);
-            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(allianceFusion, _actions["ProposeAlliance"]);
-            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SeekHelp"]);
-            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["IncreaseTrade"]);
-            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["ProposeInvestigation"]);
-            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["ExchangeTreaty"]);
-            UtilityAction giveAidAction = UtilitySystem.CreateAction(generosityFusion, _actions["GiveAid"]);
+            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["SetDisgusted"]);
+            UtilityAction offerPeaceAction = UtilitySystem.CreateAction(peaceFusion, _actions["SetPeaceful"]);
+            UtilityAction declareWarAction = UtilitySystem.CreateAction(belligerentFusion, _actions["SetBelligerent"]);
+            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(allianceFusion, _actions["SetAlly"]);
+            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SetNeeded"]);
+            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["SetCommerce"]);
+            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["SetProgressive"]);
+            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["SetNegotiation"]);
+            UtilityAction giveAidAction = UtilitySystem.CreateAction(generosityFusion, _actions["SetGenerous"]);
 
             
         }

@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sun
-  m_Shader: {fileID: -6465566751694194690, guid: 18f0f4fb95d7a004b96fac930998b058, type: 3}
+  m_Shader: {fileID: 4800000, guid: ec18af541b40b524da67eb3df0ce5e78, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -69,6 +69,7 @@ Material:
     m_Floats:
     - _ColorSteps: 4
     - _EnableExternalAlpha: 0
+    - _Intensity: 1.5
     - _PixelDensity: 64
     - _PlanetRadius: 0.45
     - _QueueControl: 0
@@ -77,6 +78,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.8490566, g: 0.07609467, b: 0.07609467, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TargetColor: {r: 1, g: 0.66660136, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5123775865345511077
