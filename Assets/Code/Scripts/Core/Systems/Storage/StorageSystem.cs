@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Menus.Trading;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 
 
@@ -220,6 +221,48 @@ namespace Code.Scripts.Core.Systems.Storage
         public Dictionary<ResourceType, int> GetAllResources()
         {
             return new Dictionary<ResourceType, int>(_resources);
+        }
+
+        public void SetResourceAmounts(List<ResourceData> civilizationSoStartingResources, int[] civilizationSoStartingResourceAmounts)
+        {
+            for (int i = 0; i < civilizationSoStartingResources.Count; i++)
+            {
+                var resourceType = civilizationSoStartingResources[i].Type;
+                var amount = civilizationSoStartingResourceAmounts[i];
+                AddResource(resourceType, amount);
+            }
+        }
+
+        public void ExecuteTrade(TradingData playerTradeData, TradingData targetTradeData, StorageSystem targetEntityStorageSystem)
+        {
+            
+            // Process player offered resources
+            foreach (var resourceOffer in playerTradeData.ResourceData)
+            {
+                ConsumeResource(resourceOffer.Key, resourceOffer.Value);
+                targetEntityStorageSystem.AddResource(resourceOffer.Key, resourceOffer.Value);
+            }
+
+            // Process target offered resources
+            foreach (var resourceOffer in targetTradeData.ResourceData)
+            {
+                targetEntityStorageSystem.ConsumeResource(resourceOffer.Key, resourceOffer.Value);
+                AddResource(resourceOffer.Key, resourceOffer.Value);
+            }
+
+            // Process player offered inventory items
+            foreach (var itemOffer in playerTradeData.itemsToTrade)
+            {
+                ConsumeInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+                targetEntityStorageSystem.AddInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+            }
+
+            // Process target offered inventory items
+            foreach (var itemOffer in targetTradeData.itemsToTrade)
+            {
+                targetEntityStorageSystem.ConsumeInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+                AddInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+            }
         }
     }
 }

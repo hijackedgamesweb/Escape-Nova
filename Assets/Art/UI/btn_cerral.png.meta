@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: b0ec1208ac1e2a944a7ca12a6db36bd8
+guid: 7d06c04ef6b93df42bc9463115af3255
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1568789022125449700
-    second: Orbit_Upgrade_3_0
-  - first:
-      213: 2124768039569954382
-    second: Orbit_Upgrade_3_1
-  - first:
-      213: -6809509245545833325
-    second: Orbit_Upgrade_3_2
-  - first:
-      213: 6421925826618255819
-    second: Orbit_Upgrade_3_3
+      213: -3936334572980021141
+    second: btn_cerral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -122,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orbit_Upgrade_3_0
+      name: btn_cerral_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 4
+        y: 4
+        width: 55
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1e1ea832ba8a3ae0800000000000000
-      internalID: -1568789022125449700
+      spriteID: b68df6cbf845f59c0800000000000000
+      internalID: -3936334572980021141
       vertices: []
       indices: 
       edges: []
@@ -147,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 94f782a4d4b64074ca18e45e3593356c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -157,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Orbit_Upgrade_3_0: -1568789022125449700
-      Orbit_Upgrade_3_1: 2124768039569954382
-      Orbit_Upgrade_3_2: -6809509245545833325
-      Orbit_Upgrade_3_3: 6421925826618255819
+      btn_cerral_0: -3936334572980021141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

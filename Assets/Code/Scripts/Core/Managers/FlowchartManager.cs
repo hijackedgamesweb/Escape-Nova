@@ -1,5 +1,6 @@
 using System;
 using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Patterns.ServiceLocator;
 using Fungus;
@@ -22,6 +23,7 @@ namespace Code.Scripts.Core.Managers
             ServiceLocator.GetService<CivilizationManager>().OnNewCivilizationDiscovered += OnNewCivilizationDiscovered;
             _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
             _craftingSystem.OnCraftingCompleted += UnlockTranslations;
+            DiplomacyEvents.OnTradeProposed += OnTradeOffered;
         }
 
         private void OnNewCivilizationDiscovered(Civilization obj)
@@ -87,6 +89,33 @@ namespace Code.Scripts.Core.Managers
                     break;
                 case "receta_halxi_translator":
                     _halxiFlowchart.SetBooleanVariable("Translator", true);
+                    break;
+            }
+        }
+        
+        private void OnTradeOffered(Civilization civilization, bool response)
+        {
+            switch (civilization.CivilizationData.Name)
+            {
+                case "Mippip":
+                    _mippipFlowchart.SetBooleanVariable("TradeAccepted", response);
+                    _mippipFlowchart.SendFungusMessage("Trade");
+                    break;
+                case "Akki":
+                    _akkiFlowchart.SetBooleanVariable("TradeAccepted", response);
+                    _akkiFlowchart.SendFungusMessage("Trade");
+                    break;
+                case "Halxi":
+                    _halxiFlowchart.SetBooleanVariable("TradeAccepted", response);
+                    _halxiFlowchart.SendFungusMessage("Trade");
+                    break;
+                case "Skulg":
+                    _skulgFlowchart.SetBooleanVariable("TradeAccepted", response);
+                    _skulgFlowchart.SendFungusMessage("Trade");
+                    break;
+                case "Handoull":
+                    _handoullFlowchart.SetBooleanVariable("TradeAccepted", response);
+                    _handoullFlowchart.SendFungusMessage("Trade");
                     break;
             }
         }

@@ -20,8 +20,9 @@ namespace Code.Scripts.Core.Entity.Civilization
             
             CivilizationData = new CivilizationData(civilizationSO);
             CivilizationState = new CivilizationState(civilizationSO);
-            //ItemPreferences = new EntityItemPreferences(civilizationSO.itemPreferences);
-            //StorageSystem = new StorageSystem(civilizationSO.startingResources, civilizationSO.startingInventory);
+            ItemPreferences = new EntityItemPreferences(civilizationSO.itemPreferences);
+            StorageSystem = new StorageSystem(civilizationSO.startingResources, civilizationSO.startingInventory);
+            StorageSystem.SetResourceAmounts(civilizationSO.startingResources, civilizationSO.startingResourceAmounts);
             AIController = AIControllerFactory.CreateAIController(civilizationSO.aiController, this, invoker);
         }
     }

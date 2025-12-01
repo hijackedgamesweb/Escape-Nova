@@ -27,3 +27,4 @@ MonoBehaviour:
   leaderPortrait: {fileID: -5612916301264726696, guid: 33904318cf0b5e94884142a9ebcca063, type: 3}
   startingResources: []
   startingInventory: {fileID: 11400000, guid: dff1c39901ec50b42b9f376c66887924, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: f7a5530eda1506a469fed048d03e2ee8, type: 2}

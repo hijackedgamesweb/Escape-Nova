@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Entity.Civilization;
 using Code.Scripts.Core.Entity.Player;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Civilization;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World;
+using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
@@ -38,8 +40,6 @@ namespace Code.Scripts.Core.Managers
         {
             base.Awake();
             _invoker = new CommandInvoker();
-            
-            
         }
 
         private void Start()
@@ -48,8 +48,21 @@ namespace Code.Scripts.Core.Managers
             _gameTime.OnCycleCompleted += UpdateWorld;
             _invoker.OnCommandExecuted += UpdateWorldOnCommand;
             _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
+            ConstructionEvents.OnPlanetAdded += OnPlanetConstructed;
         }
-        
+
+        private void OnPlanetConstructed(Planet obj)
+        {
+            foreach (var civ in _civilizationSOs)
+            {
+                if (civ.preferredPlanet != null && civ.preferredPlanet.constructibleName == obj.Name)
+                {
+                    AddCivilization(civ.civName);
+                    break;
+                }
+            }
+        }
+
 
         [ContextMenu("Add Civilization")]
         public void AddCivilizationFromInspector()
@@ -67,6 +80,7 @@ namespace Code.Scripts.Core.Managers
                 {
                     Civilization newCiv = new Civilization(_invoker, civSO);
                     _civilizationManager.AddCivilization(newCiv);
+                    _civilizationSOs.Remove(civSO);
                     return;
                 }
             }
@@ -97,6 +111,7 @@ namespace Code.Scripts.Core.Managers
                 Civilization newCiv = new Civilization(_invoker, civSO);
                 _civilizationManager.AddCivilization(newCiv);
             }
+            _civilizationSOs.Clear();
         }
     }
 }

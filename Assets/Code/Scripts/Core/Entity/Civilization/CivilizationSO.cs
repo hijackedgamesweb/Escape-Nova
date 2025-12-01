@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Entity.Civilization
@@ -32,7 +33,11 @@ namespace Code.Scripts.Core.Entity.Civilization
         
         [Header("Starting Resources")]
         public List<ResourceData> startingResources;
+        public int[] startingResourceAmounts;
         public InventoryData startingInventory;
+        
+        [Header("Civilization Prefs")]
+        public PlanetDataSO preferredPlanet;
         
     }
 }
