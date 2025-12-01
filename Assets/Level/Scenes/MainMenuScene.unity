@@ -2833,7 +2833,7 @@ MonoBehaviour:
   storyText: {fileID: 1896256977}
   storyTextGO: {fileID: 0}
   characterImage: {fileID: 34393752}
-  fitTextWithImage: 1
+  fitTextWithImage: 0
   closeOtherDialogs: 0
 --- !u!114 &79238995
 MonoBehaviour:
@@ -24574,8 +24574,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 30859584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.021562502, y: 0.5}
-  m_AnchorMax: {x: 0.5416563, y: 0.68166685}
+  m_AnchorMin: {x: 0.021562502, y: 0.4766667}
+  m_AnchorMax: {x: 0.5416563, y: 0.63500005}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -53915,7 +53915,7 @@ RectTransform:
   m_Father: {fileID: 30859584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.021562502, y: 0.10666667}
-  m_AnchorMax: {x: 0.60356253, y: 0.5}
+  m_AnchorMax: {x: 0.6414063, y: 0.45666668}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -15,3 +15,11 @@ MonoBehaviour:
   items:
   - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
     quantity: 5
+  - itemData: {fileID: 11400000, guid: 2dd208a6d06c7be43bd34427aad5e1eb, type: 2}
+    quantity: 5
+  - itemData: {fileID: 11400000, guid: 9d0d9428cf0217e4ca458616df38de8e, type: 2}
+    quantity: 5
+  - itemData: {fileID: 11400000, guid: 485f61ce26e99484b8f1d0106fa9a107, type: 2}
+    quantity: 5
+  - itemData: {fileID: 11400000, guid: f11e1b5ea3ddc4b49ab6d23effe4a893, type: 2}
+    quantity: 5

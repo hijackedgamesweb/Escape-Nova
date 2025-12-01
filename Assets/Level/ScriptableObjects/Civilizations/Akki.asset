@@ -27,7 +27,10 @@ MonoBehaviour:
   aiController: 1
   angerTolerance: 0
   leaderPortrait: {fileID: -7317164782365401908, guid: 2aa9265ac9e44b140a8ce73ac5123533, type: 3}
-  startingResources: []
-  startingResourceAmounts: 
+  startingResources:
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  startingResourceAmounts: 900100002c01000014000000
   startingInventory: {fileID: 11400000, guid: 3cb353dddcaeb4b47aa07ee83aa2bb66, type: 2}
   preferredPlanet: {fileID: 11400000, guid: 1b3c923b64d16264cac2283ae7b04755, type: 2}
