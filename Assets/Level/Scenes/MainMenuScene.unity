@@ -33695,8 +33695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 240.26575
-    y: 754.96826
+    x: -282.51843
+    y: 846.11163
     width: 224.05
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -33721,8 +33721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 229.12073
-    y: 707.96826
+    x: -293.66342
+    y: 799.1103
     width: 182.33
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -33747,8 +33747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 246.93076
-    y: 655.46857
+    x: -275.8534
+    y: 746.608
     width: 140.62
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
