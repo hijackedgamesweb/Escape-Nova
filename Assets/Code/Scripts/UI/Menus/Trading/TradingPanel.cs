@@ -44,68 +44,68 @@ namespace Code.Scripts.UI.Menus.Trading
         {
             switch (resourceType)
             {
-                case "Stone":
+                case "Batee":
                     int stoneAmount = int.Parse(stoneAmountText.text);
-                    if (stoneAmount + 10 <= _storage.GetResourceAmount(ResourceType.Stone))
+                    if (stoneAmount + 10 <= _storage.GetResourceAmount(ResourceType.Batee))
                     {
                         stoneAmount += 10;
                         stoneAmountText.text = stoneAmount.ToString();
                     }
                     else
                     {
-                        stoneAmount = _storage.GetResourceAmount(ResourceType.Stone);
+                        stoneAmount = _storage.GetResourceAmount(ResourceType.Batee);
                         stoneAmountText.text = stoneAmount.ToString();
                     }
                     break;
-                case "Metal":
+                case "Paladium":
                     int metalAmount = int.Parse(metalAmountText.text);
-                    if (metalAmount + 10 <= _storage.GetResourceAmount(ResourceType.Metal))
+                    if (metalAmount + 10 <= _storage.GetResourceAmount(ResourceType.Paladium))
                     {
                         metalAmount += 10;
                         metalAmountText.text = metalAmount.ToString();
                     }
                     else
                     {
-                        metalAmount = _storage.GetResourceAmount(ResourceType.Metal);
+                        metalAmount = _storage.GetResourceAmount(ResourceType.Paladium);
                         metalAmountText.text = metalAmount.ToString();
                     }
                     break;
-                case "Fire":
+                case "Magmavite":
                     int fireAmount = int.Parse(fireAmountText.text);
-                    if (fireAmount + 10 <= _storage.GetResourceAmount(ResourceType.Fire))
+                    if (fireAmount + 10 <= _storage.GetResourceAmount(ResourceType.Magmavite))
                     {
                         fireAmount += 10;
                         fireAmountText.text = fireAmount.ToString();
                     }
                     else
                     {
-                        fireAmount = _storage.GetResourceAmount(ResourceType.Fire);
+                        fireAmount = _storage.GetResourceAmount(ResourceType.Magmavite);
                         fireAmountText.text = fireAmount.ToString();
                     }
                     break;
-                case "Ice":
+                case "Frostice":
                     int iceAmount = int.Parse(iceAmountText.text);
-                    if (iceAmount + 10 <= _storage.GetResourceAmount(ResourceType.Ice))
+                    if (iceAmount + 10 <= _storage.GetResourceAmount(ResourceType.Frostice))
                     {
                         iceAmount += 10;
                         iceAmountText.text = iceAmount.ToString();
                     }
                     else
                     {
-                        iceAmount = _storage.GetResourceAmount(ResourceType.Ice);
+                        iceAmount = _storage.GetResourceAmount(ResourceType.Frostice);
                         iceAmountText.text = iceAmount.ToString();
                     }
                     break;
-                case "Sand":
+                case "Sandit":
                     int sandAmount = int.Parse(sandAmountText.text);
-                    if (sandAmount + 10 <= _storage.GetResourceAmount(ResourceType.Sand))
+                    if (sandAmount + 10 <= _storage.GetResourceAmount(ResourceType.Sandit))
                     {
                         sandAmount += 10;
                         sandAmountText.text = sandAmount.ToString();
                     }
                     else
                     {
-                        sandAmount = _storage.GetResourceAmount(ResourceType.Sand);
+                        sandAmount = _storage.GetResourceAmount(ResourceType.Sandit);
                         sandAmountText.text = sandAmount.ToString();
                     }
                     break;
@@ -116,7 +116,7 @@ namespace Code.Scripts.UI.Menus.Trading
         {
             switch (resourceType)
             {
-                case "Stone":
+                case "Batee":
                     int stoneAmount = int.Parse(stoneAmountText.text);
                     if (stoneAmount - 10 >= 0)
                     {
@@ -129,7 +129,7 @@ namespace Code.Scripts.UI.Menus.Trading
                         stoneAmountText.text = stoneAmount.ToString();
                     }
                     break;
-                case "Metal":
+                case "Paladium":
                     int metalAmount = int.Parse(metalAmountText.text);
                     if (metalAmount - 10 >= 0)
                     {
@@ -142,7 +142,7 @@ namespace Code.Scripts.UI.Menus.Trading
                         metalAmountText.text = metalAmount.ToString();
                     }
                     break;
-                case "Fire":
+                case "Magmavite":
                     int fireAmount = int.Parse(fireAmountText.text);
                     if (fireAmount - 10 >= 0)
                     {
@@ -155,7 +155,7 @@ namespace Code.Scripts.UI.Menus.Trading
                         fireAmountText.text = fireAmount.ToString();
                     }
                     break;
-                case "Ice":
+                case "Frostice":
                     int iceAmount = int.Parse(iceAmountText.text);
                     if (iceAmount - 10 >= 0)
                     {
@@ -168,7 +168,7 @@ namespace Code.Scripts.UI.Menus.Trading
                         iceAmountText.text = iceAmount.ToString();
                     }
                     break;
-                case "Sand":
+                case "Sandit":
                     int sandAmount = int.Parse(sandAmountText.text);
                     if (sandAmount - 10 >= 0)
                     {

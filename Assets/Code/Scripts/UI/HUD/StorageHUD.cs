@@ -32,11 +32,11 @@ namespace Code.Scripts.UI.HUD
 
         private void UpdateUI()
         {
-            _sandText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Sand));
-            _stoneText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Stone));
-            _metalText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Metal));
-            _iceText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Ice));
-            _lavavagiText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Fire));
+            _sandText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Sandit));
+            _stoneText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Batee));
+            _metalText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Paladium));
+            _iceText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Frostice));
+            _lavavagiText.text = NumberFormatter.FormatNumber(_storageSystem.GetResourceAmount(ResourceType.Magmavite));
         }
 
         private void OnDestroy()
@@ -53,19 +53,19 @@ namespace Code.Scripts.UI.HUD
 
             switch (type)
             {
-                case ResourceType.Sand:
+                case ResourceType.Sandit:
                     _sandName.gameObject.SetActive(true);
                     break;
-                case ResourceType.Stone:
+                case ResourceType.Batee:
                     _stoneName.gameObject.SetActive(true);
                     break;
-                case ResourceType.Metal:
+                case ResourceType.Paladium:
                     _metalName.gameObject.SetActive(true);
                     break;
-                case ResourceType.Ice:
+                case ResourceType.Frostice:
                     _iceName.gameObject.SetActive(true);
                     break;
-                case ResourceType.Fire:
+                case ResourceType.Magmavite:
                     _fireName.gameObject.SetActive(true);
                     break;
             }

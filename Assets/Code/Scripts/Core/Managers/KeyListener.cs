@@ -120,11 +120,11 @@ namespace Code.Scripts.Core.Managers
             if (_addResource != null && _addResource.WasPerformedThisFrame())
             {
                 StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
-                storage.AddResource(ResourceType.Sand, 1000000);
-                storage.AddResource(ResourceType.Stone, 1000000);
-                storage.AddResource(ResourceType.Metal, 1000000);
-                storage.AddResource(ResourceType.Ice, 1000000);
-                storage.AddResource(ResourceType.Fire, 1000000);
+                storage.AddResource(ResourceType.Sandit, 1000000);
+                storage.AddResource(ResourceType.Batee, 1000000);
+                storage.AddResource(ResourceType.Paladium, 1000000);
+                storage.AddResource(ResourceType.Frostice, 1000000);
+                storage.AddResource(ResourceType.Magmavite, 1000000);
             }
             
             if (_unlockAll != null && _unlockAll.WasPerformedThisFrame())

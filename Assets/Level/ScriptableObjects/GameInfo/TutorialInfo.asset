@@ -30,7 +30,7 @@ MonoBehaviour:
   - 'On the top left corner you have your available resources. They''re, from left
     to right: Batee, Paladium, Frostice, Magmavite and Sandit.'
   - Each resource has different uses, and must be generated through planets.
-  - On the bottom right corner you have the 'Building' menu. Through here, you can
+  - On the bottom right corner you have the "Building" menu. Through here, you can
     build planets and Satellites. For planets, first pick the one you want to build
     and then select a free spot on your solar system. For satellites, you'll have
     to select a planet to build it on its orbit.

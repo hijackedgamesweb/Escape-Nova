@@ -9,21 +9,21 @@ namespace Code.Scripts.UI.Menus.Trading
     {
         public Dictionary<ResourceType, int> ResourceData = new Dictionary<ResourceType, int>()
         {
-            { ResourceType.Stone, 0 },
-            { ResourceType.Metal, 0 },
-            { ResourceType.Fire, 0 },
-            { ResourceType.Ice, 0 },
-            { ResourceType.Sand, 0 }
+            { ResourceType.Batee, 0 },
+            { ResourceType.Paladium, 0 },
+            { ResourceType.Magmavite, 0 },
+            { ResourceType.Frostice, 0 },
+            { ResourceType.Sandit, 0 }
         };
         public List<InventoryItem> itemsToTrade = new List<InventoryItem>();
         
-        public TradingData(int stone, int metal, int fire, int ice, int sand, List<InventoryItem> items)
+        public TradingData(int batee, int paladium, int magmavite, int frostice, int sandit, List<InventoryItem> items)
         {
-            ResourceData[ResourceType.Stone] = stone;
-            ResourceData[ResourceType.Metal] = metal;
-            ResourceData[ResourceType.Fire] = fire;
-            ResourceData[ResourceType.Ice] = ice;
-            ResourceData[ResourceType.Sand] = sand;
+            ResourceData[ResourceType.Batee] = batee;
+            ResourceData[ResourceType.Paladium] = paladium;
+            ResourceData[ResourceType.Magmavite] = magmavite;
+            ResourceData[ResourceType.Frostice] = frostice;
+            ResourceData[ResourceType.Sandit] = sandit;
             itemsToTrade = items;
         }
 
