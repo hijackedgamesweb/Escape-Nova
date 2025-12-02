@@ -35,35 +35,35 @@ MonoBehaviour:
     - rid: 6291952326318489678
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 stone/cycle
+        objectiveDescription: Produce 50 Batee/cycle
         isCompleted: 0
         resourceType: 4
         requiredAmount: 50
     - rid: 6291952326318489679
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 metal/cycle
+        objectiveDescription: Produce 50 Paladium/cycle
         isCompleted: 0
         resourceType: 0
         requiredAmount: 50
     - rid: 6291952326318489681
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 ice each cycle
+        objectiveDescription: Produce 50 Frostice each cycle
         isCompleted: 0
         resourceType: 1
         requiredAmount: 50
     - rid: 6291952326318489682
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 fire each cycle
+        objectiveDescription: Produce 50 Magmavite each cycle
         isCompleted: 0
         resourceType: 2
         requiredAmount: 50
     - rid: 6291952326318489683
       type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 sand each cycle
+        objectiveDescription: Produce 50 Sandit each cycle
         isCompleted: 0
         resourceType: 3
         requiredAmount: 50

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: hielo
   m_EditorClassIdentifier: 
   Type: 1
-  DisplayName: Ice
+  DisplayName: Frostice
   Icon: {fileID: 4368363140937295827, guid: bec845c5a6be928438d6086b4310a450, type: 3}
   Color: {r: 0, g: 0, b: 0, a: 0}
   MaxStack: 1000000000
