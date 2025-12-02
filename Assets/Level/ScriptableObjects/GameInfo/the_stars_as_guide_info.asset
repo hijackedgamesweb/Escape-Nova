@@ -16,6 +16,6 @@ MonoBehaviour:
   - Production
   messages:
   - Time to get production flowing! You can check the total production of your solar
-    system by clicking the sun
+    system by clicking the Sun.
   images:
   - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}

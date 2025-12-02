@@ -16,8 +16,8 @@ MonoBehaviour:
   - New planets
   - New research
   messages:
-  - These new planeets will start generating resources for us as soon as they're
-    finished building,
+  - These new planets will start generating resources for us as soon as they're finished
+    building.
   - Seems like we ran out of space to build more planets... but fear not, our empergod,
     for researches think they've found a solution to our problem. Why don't you check
     the research menu?

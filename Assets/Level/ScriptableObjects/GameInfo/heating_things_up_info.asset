@@ -16,6 +16,6 @@ MonoBehaviour:
   - Contact
   messages:
   - An alien species seems to want to contact with us, but their language is too
-    different from ours. Perhaps we could craft a translator to understam them...
+    different from ours. Perhaps we could craft a translator to understand them...
   images:
   - {fileID: 0}

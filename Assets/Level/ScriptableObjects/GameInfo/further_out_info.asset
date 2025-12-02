@@ -15,7 +15,7 @@ MonoBehaviour:
   titles:
   - Constellations
   messages:
-  - You have unlocked the 'Constellations' menu. You can use star points to unlock
-    nodes that will upgrade your solar system, or unlock new researches
+  - You have unlocked the "Constellations" menu. You can use star points to unlock
+    nodes that will upgrade your solar system, or unlock new researches.
   images:
   - {fileID: 7255457626301636360, guid: a12f032a61b59e342a042cf71dbad8e5, type: 3}
