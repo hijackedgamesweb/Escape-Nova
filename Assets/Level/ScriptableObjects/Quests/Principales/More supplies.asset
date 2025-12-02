@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: more_supplies
   Title: More supplies
   Description: "With all of these resources at our hands, it\u2019d be interesting
-    to see what we can build with them"
+    to see what we can build with them."
   Objectives:
   - rid: 6291952611966058578
   - rid: 6291952611966058579

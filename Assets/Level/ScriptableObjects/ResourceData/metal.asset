@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: metal
   m_EditorClassIdentifier: 
   Type: 0
-  DisplayName: Metal
+  DisplayName: Paladium
   Icon: {fileID: -6116414136729066917, guid: 55f0cf9a04edac94abcb26f247320e50, type: 3}
   Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
   MaxStack: 1000000000

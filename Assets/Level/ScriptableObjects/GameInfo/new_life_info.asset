@@ -19,9 +19,9 @@ MonoBehaviour:
   messages:
   - Good job on finishing your very first quest!
   - Each time you finish a quest you shoud check the quest menu, just in case there's
-    something new
-  - You have now unlocked the Storage Terminal and Research Station, aka S.T.A.R.S.
-    You can build it through the build menu to unlock new features
+    something new.
+  - You have now unlocked the Storage Terminal and Research Station, aka "S.T.A.R.S.".
+    You can build it through the build menu to unlock new features.
   images:
   - {fileID: 0}
   - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}

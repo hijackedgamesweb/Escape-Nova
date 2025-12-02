@@ -9,11 +9,11 @@ namespace Code.Scripts.UI.Menus.Trading
         {
             int totalValue = 0;
             
-            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Stone] * entity.ItemPreferences.stoneWorth);
-            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Metal] * entity.ItemPreferences.metalWorth);
-            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Fire] * entity.ItemPreferences.fireWorth);
-            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Ice] * entity.ItemPreferences.iceWorth);
-            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Sand] * entity.ItemPreferences.sandWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Batee] * entity.ItemPreferences.stoneWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Paladium] * entity.ItemPreferences.metalWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Magmavite] * entity.ItemPreferences.fireWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Frostice] * entity.ItemPreferences.iceWorth);
+            totalValue +=  (int) (tradingData.ResourceData[ResourceType.Sandit] * entity.ItemPreferences.sandWorth);
             
             foreach (var item in tradingData.itemsToTrade)
             {

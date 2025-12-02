@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: the_stars_as_guide
   Title: The stars as guide
   Description: Use your skill points to unlock new skills. Research and build the
-    satellites 'Salas' and 'Caerus'.
+    satellites "Salas" and "Caerus".
   Objectives:
   - rid: 6291952326318489676
   - rid: 6291952326318489677
