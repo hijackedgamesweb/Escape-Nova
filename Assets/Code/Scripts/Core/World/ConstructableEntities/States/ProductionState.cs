@@ -1,4 +1,5 @@
 using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -31,7 +32,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
             _gameTime.OnCycleCompleted += OnCycleCompleted;
 
             // Obtener el StorageSystem
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
 
             // Inicializar el último ciclo producido
             _lastCycleProduced = _gameTime.CurrentCycle;

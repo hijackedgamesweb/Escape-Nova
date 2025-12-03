@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Core.Managers
 {
-    public class UIManager : Singleton<UIManager>
+    public class UIManager : InGameSingleton<UIManager>
     {
         [Header("Referencias de Pantallas")]
         [SerializeField] private GameOverAnimationController gameOverScreen;
@@ -24,7 +24,12 @@ namespace Code.Scripts.Core.Managers
             base.Awake();
             screens = new List<BaseUIScreen>(GetComponentsInChildren<BaseUIScreen>(true));
         }
-        
+
+        public void Start()
+        {
+            ShowScreen<InGameScreen>();
+        }
+
         private void OnDestroy()
         {
             ServiceLocator.UnregisterService<UIManager>();

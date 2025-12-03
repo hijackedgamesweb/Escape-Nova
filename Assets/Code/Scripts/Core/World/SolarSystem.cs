@@ -2,16 +2,18 @@ using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.Factory;
 using Code.Scripts.Patterns.ServiceLocator;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Code.Scripts.Core.World
 {
-    public class SolarSystem : MonoBehaviour
+    public class SolarSystem : MonoBehaviour, ISaveable
     {
         [Header("Orbits Settings")]
         [SerializeField] public int[] planetsPerOrbit;
@@ -156,6 +158,71 @@ namespace Code.Scripts.Core.World
         public Transform GetSunTransform()
         {
             return sunPos;
+        }
+
+        public string GetSaveId()
+        {
+            return "SolarSystem";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject obj = new JObject();
+            JArray orbitsArray = new JArray();
+
+            for (int i = 0; i < Planets.Count; i++)
+            {
+                JArray orbitArray = new JArray();
+                for (int j = 0; j < Planets[i].Count; j++)
+                {
+                    Planet planet = Planets[i][j];
+                    if (planet == null)
+                    {
+                        orbitArray.Add(JValue.CreateNull());
+                    }
+                    else
+                    {
+                        orbitArray.Add(planet.CaptureState());
+                    }
+                }
+                orbitsArray.Add(orbitArray);
+            }
+
+            obj["Planets"] = orbitsArray;
+            return obj;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JObject obj = state as JObject;
+            JArray orbitsArray = obj["Planets"] as JArray;
+
+            for (int i = 0; i < orbitsArray.Count; i++)
+            {
+                JArray orbitArray = orbitsArray[i] as JArray;
+                for (int j = 0; j < orbitArray.Count; j++)
+                {
+                    JToken planetToken = orbitArray[j];
+                    if (planetToken.Type == JTokenType.Null)
+                    {
+                        Planets[i][j] = null;
+                    }
+                    else
+                    {
+                        JObject planetObj = planetToken as JObject;
+                        string planetName = planetObj["Name"].ToString();
+                        PlanetDataSO planetData = Array.Find(planetDatas, pd => pd.constructibleName == planetName);
+                        if (planetData != null)
+                        {
+                            Planet planet = planetFactory.CreatePlanet(Vector3.zero, planetData, transform, i, j);
+                            OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
+                            orbitCtrl.Initialize(planet, (i + 1) * orbitDistanceIncrement, j, planetsPerOrbit[i], rotationSpeed, i);
+                            planet.RestoreState(planetObj);
+                            Planets[i][j] = planet;
+                        }
+                    }
+                }
+            }
         }
     }
 }

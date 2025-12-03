@@ -18,6 +18,7 @@ namespace Code.Scripts.Core.Managers
         public int CurrentCycle { get; private set; } = 0;
         public float TimeScale { get; private set; } = 1f;
         public bool IsPaused => TimeScale == 0f;
+        public bool StartPaused = true;
 
         private float _nextCycleTime;
         
@@ -40,6 +41,9 @@ namespace Code.Scripts.Core.Managers
                 timeConfig = ScriptableObject.CreateInstance<TimeConfig>();
                 ServiceLocator.RegisterService<TimeConfig>(timeConfig);
             }
+            
+            if (!StartPaused)
+                StartTimer();
 
             _nextCycleTime = timeConfig.secondsPerCycle;
         }

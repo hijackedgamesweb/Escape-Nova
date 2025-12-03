@@ -65,7 +65,7 @@ namespace Code.Scripts.Core.Systems.Research
 
         public void InitializeDependencies()
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             _gameTime = ServiceLocator.GetService<IGameTime>();
             
             _gameTime.OnCycleCompleted += OnCycleCompleted;

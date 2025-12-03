@@ -1,4 +1,6 @@
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad;
+using Code.Scripts.Core.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,12 +33,13 @@ namespace Code.Scripts.UI.Windows
             this.Hide();
         }
 
-        private void OnExitPressed()
+        async void OnExitPressed()
         {
-            AudioManager.Instance.PlaySFX("ButtonClick");
+            await SaveManager.Instance.SaveAsync();
             Time.timeScale = 1f;
-            UIManager.Instance.ShowScreen<MainMenuScreen>();
+            AudioManager.Instance.PlaySFX("ButtonClick");
             this.Hide();
+            Loader.Load("MainMenuScene");
         }
     }
 }

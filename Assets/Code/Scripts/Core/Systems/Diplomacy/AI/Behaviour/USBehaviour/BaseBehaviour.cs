@@ -7,6 +7,7 @@ using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using Action = System.Action;
 
@@ -293,5 +294,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         {
             _invoker = invoker;
         }
+
+        
     }
 }

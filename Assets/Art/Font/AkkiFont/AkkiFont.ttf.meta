@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9970fbc908718654fb31ef1719f5322c
+guid: c079e237fc2a53b4db59c91f2f4e63e6
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Pixellari
+  - Kakoulookiam
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

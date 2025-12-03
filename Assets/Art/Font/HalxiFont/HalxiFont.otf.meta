@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 230f356a7b4d35242b931fe7c6ae359c
+guid: 2c5189f7825fb2e43826d615697e8897
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
+  fontSize: 1
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1

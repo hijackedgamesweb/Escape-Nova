@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
@@ -34,7 +35,7 @@ namespace Code.Scripts.Core.Systems.Storage
         void Start()
         {
             // Esperamos un frame para que StorageSystem se inicialice
-            _storage = ServiceLocator.GetService<StorageSystem>();
+            _storage = WorldManager.Instance.Player.StorageSystem;
             
             // Configurar botones
             addMetalButton.onClick.AddListener(() => AddMetal());

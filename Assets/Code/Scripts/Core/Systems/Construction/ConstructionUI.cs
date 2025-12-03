@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
@@ -48,7 +49,7 @@ namespace Code.Scripts.Core.Systems.Construction
         private void Start()
         {
             _solarSystem = ServiceLocator.GetService<SolarSystem>();
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             
             if (placingUI != null)
             {

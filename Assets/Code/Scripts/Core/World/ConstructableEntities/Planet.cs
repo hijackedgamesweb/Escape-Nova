@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using Code.Scripts.Camera;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.States;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
 using Code.Scripts.UI.Menus;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Core.World.ConstructableEntities
 {
-    public class Planet : MonoBehaviour
+    public class Planet : MonoBehaviour, ISaveable
     {
         private SpriteRenderer _spriteRenderer;
         public int[] ResourcePerCycle { get; private set; }
@@ -175,9 +177,43 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
             Debug.Log("Planet clicked: " + this.name);
             if(UnityEngine.Camera.main != null)
-                UnityEngine.Camera.main.GetComponent<CameraController2D>().SetTarget(this.transform);
+                UnityEngine.Camera.main.GetComponent<CameraController2D>()?.SetTarget(this.transform);
             
             PlanetInfoPanel.Instance.ShowPanel(this);
+        }
+
+        public bool AddSatelite(string sateliteId)
+        {
+            int freeSlotIndex = -1;
+            for (int i = 0; i < _satelliteSlots; i++)
+            {
+                if (!_occupiedSatelliteSlots[i])
+                {
+                    freeSlotIndex = i;
+                    break;
+                }
+            }
+            if (freeSlotIndex == -1)
+            {
+                NotificationManager.Instance.CreateNotification($"Max satellites reached for {Name}", NotificationType.Warning);
+                return false;
+            }
+
+            _occupiedSatelliteSlots[freeSlotIndex] = true;
+
+            Satelite satelite = new Satelite();
+            var sateliteDataArray = Resources.LoadAll<SateliteDataSO>("ScriptableObjects/Satelites");
+            SateliteDataSO SateliteData = System.Array.Find(sateliteDataArray, data => data.name == sateliteId || data.constructibleName == sateliteId);
+            satelite.InitializeSatelite(SateliteData, this);
+            Satelites.Add(satelite);
+            foreach (var upgrade in SateliteData.upgrades)
+            {
+                upgrade.ApplyUpgrade(this);
+            }
+
+            CreateSatelliteVisual(SateliteData, freeSlotIndex);
+            
+            return true;
         }
 
         public bool AddSatelite(SateliteDataSO sateliteDataSo)
@@ -240,6 +276,57 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             float fixedAngle = slotIndex * (360f / _satelliteSlots);
 
             orbitCtrl.Initialize(orbitRadius, SATELLITE_SPEED, fixedAngle);
+        }
+
+        public string GetSaveId()
+        {
+            return $"{OrbitIndex}_{PlanetIndex}";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject();
+            state["State"] = _stateManager.GetCurrentStateName();
+
+            JArray sateliteArray = new JArray();
+            foreach (var satelite in Satelites)
+            {
+                sateliteArray.Add(satelite.GetSaveId());
+            }
+            state["Satelites"] = sateliteArray;
+
+            JObject improvementsObj = new JObject();
+            foreach (var improvement in _improvementPercentages)
+            {
+                improvementsObj[improvement.Key] = improvement.Value;
+            }
+            state["Improvements"] = improvementsObj;
+
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JObject obj = state as JObject;
+            string stateName = obj["State"].ToObject<string>();
+            _stateManager.SetStateByName(stateName);
+
+            JArray sateliteArray = obj["Satelites"] as JArray;
+            foreach (var sateliteIdToken in sateliteArray)
+            {
+                string sateliteId = sateliteIdToken.ToObject<string>();
+                AddSatelite(sateliteId);
+            }
+
+            JObject improvementsObj = obj["Improvements"] as JObject;
+            foreach (var improvementProperty in improvementsObj.Properties())
+            {
+                string improvementType = improvementProperty.Name;
+                float percentage = improvementProperty.Value.ToObject<float>();
+                _improvementPercentages[improvementType] = percentage;
+            }
+
+            RecalculateProduction();
         }
     }
 }

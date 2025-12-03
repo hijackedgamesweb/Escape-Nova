@@ -23,12 +23,10 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         {
             _mainMenuScreen.PlayButton.onClick.AddListener(() =>
             {
-                ServiceLocator.GetService<SolarSystem>().Initialize();
+
                 _stateManager.SetState(new InGameState(_stateManager));
                 AudioManager.Instance.StopMusic(); //Llama al AudioMannager y detienne la musica del menu principal
-                AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
-                AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
-                GameInfoManager.Instance.DisplayGameInfo("TutorialInfo"); //Mostrar la ventana de tutorial
+
             });
             
             _mainMenuScreen.SettingsButton.onClick.AddListener(() =>

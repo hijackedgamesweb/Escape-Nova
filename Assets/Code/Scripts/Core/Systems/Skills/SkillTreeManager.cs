@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
@@ -123,7 +124,7 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 try
                 {
-                    storageSystem = ServiceLocator.GetService<StorageSystem>();
+                    storageSystem = WorldManager.Instance.Player.StorageSystem;
                     //if (storageSystem != null)
                         //Debug.Log("SkillTreeManager: Successfully acquired StorageSystem");
                 }

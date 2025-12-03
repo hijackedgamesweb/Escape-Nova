@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -6,6 +7,7 @@ using UnityEngine;
 
 namespace Code.Scripts.Core.Entity.Civilization
 {
+    [Serializable]
     public enum AIType
     {
         TestController,

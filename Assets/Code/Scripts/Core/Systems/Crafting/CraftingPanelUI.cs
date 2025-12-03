@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
@@ -36,7 +37,7 @@ public class CraftingPanelUI : MonoBehaviour
     void Start()
     {
         _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
-        _storageSystem = ServiceLocator.GetService<StorageSystem>();
+        _storageSystem = WorldManager.Instance.Player.StorageSystem;
         
         if (_craftingSystem == null || _storageSystem == null)
         {

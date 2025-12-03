@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12d1837bf5564e348b4f86f4e6ffd1a2
+guid: 559167bc57e1a4f448a3b17bac5b99a7
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Harald Runic
+  - Markbats 12
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

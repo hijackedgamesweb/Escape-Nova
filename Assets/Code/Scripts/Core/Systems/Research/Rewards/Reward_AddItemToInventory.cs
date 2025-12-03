@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Managers;
 using UnityEngine;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
@@ -12,7 +13,7 @@ namespace Code.Scripts.Core.Systems.Research.Rewards
         public int amount = 1;
         public override void ApplyReward()
         {
-            StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+            StorageSystem storage = WorldManager.Instance.Player.StorageSystem;
             if (storage == null)
             {
                 Debug.LogError("StorageSystem no encontrado.");

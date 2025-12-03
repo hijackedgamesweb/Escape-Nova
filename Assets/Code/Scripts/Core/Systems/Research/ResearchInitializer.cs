@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Resources;
 
 namespace Code.Scripts.Core.Systems.Research
@@ -54,7 +55,7 @@ public class ResearchInitializer : MonoBehaviour
 
     private void SetupTestEnvironment()
     {
-        StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+        StorageSystem storage = WorldManager.Instance.Player.StorageSystem;
     
         storage.AddResource(ResourceType.Sandit, 0);
         storage.AddResource(ResourceType.Batee, 100);
@@ -80,7 +81,7 @@ public class ResearchInitializer : MonoBehaviour
             }
 
             // Verificar recursos
-            StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+            StorageSystem storage = WorldManager.Instance.Player.StorageSystem;
             var resources = storage.GetAllResources();
            // Debug.Log("=== RECURSOS DISPONIBLES ===");
             foreach (var resource in resources)

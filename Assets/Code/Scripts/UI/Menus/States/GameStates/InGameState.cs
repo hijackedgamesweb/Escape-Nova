@@ -1,5 +1,6 @@
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Factory;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
@@ -20,6 +21,9 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         public override void Enter(IStateManager gameManager)
         {
             InitializeHUD();
+            ServiceLocator.GetService<SolarSystem>().Initialize();
+            AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
+            GameInfoManager.Instance.DisplayGameInfo("TutorialInfo"); //Mostrar la ventana de tutorial
             _uiObject.gameObject.SetActive(true);
             _gameTimeManager = ServiceLocator.GetService<IGameTime>();
             _gameTimeManager.StartTimer();

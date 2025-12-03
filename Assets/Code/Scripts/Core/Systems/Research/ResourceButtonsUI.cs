@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
@@ -38,7 +39,7 @@ public class ResourceButtonsUI : MonoBehaviour
             attempts++;
             try
             {
-                _storageSystem = ServiceLocator.GetService<StorageSystem>();
+                _storageSystem = WorldManager.Instance.Player.StorageSystem;
             }
             catch (System.Exception e)
             {

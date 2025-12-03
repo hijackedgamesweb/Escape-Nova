@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Managers;
 using UnityEngine;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -14,7 +15,7 @@ namespace Code.Scripts.Core.Systems.Research.Rewards
 
         public override void ApplyReward()
         {
-            var storage = ServiceLocator.GetService<StorageSystem>();
+            var storage = WorldManager.Instance.Player.StorageSystem;
             if (storage != null)
             {
                 Debug.Log($"Recompensa: Max stack aumentado para {resourceType} en {increaseAmount}");

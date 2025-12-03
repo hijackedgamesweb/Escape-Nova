@@ -1,6 +1,8 @@
+using Code.Scripts.Core.SaveLoad.Interfaces;
+
 namespace Code.Scripts.Core.Entity
 {
-    public class EntityData
+    public class EntityData 
     {
         public string Name;
         public string LeaderName;
@@ -13,6 +15,13 @@ namespace Code.Scripts.Core.Entity
             Name = entitySO.civName;
             LeaderName = entitySO.civLeaderName;
             AngerTolerance = 100f; 
+        }
+
+        public EntityData()
+        {
+            Name = "";
+            LeaderName = "";
+            AngerTolerance = 0f;
         }
     }
 }

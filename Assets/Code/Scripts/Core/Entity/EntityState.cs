@@ -25,12 +25,24 @@ namespace Code.Scripts.Core.Entity
         
         public EntityMood CurrentMood { get; set; }
         
+        public string entityName;
+        
         public EntityState(EntitySO entitySO)
         {
             FriendlinessLevel = entitySO.baseFriendship;
             DependencyLevel = entitySO.baseDependency;
             InterestLevel = entitySO.baseInterest;
             TrustLevel = entitySO.baseTrust;
+            entityName = entitySO.civName;
+        }
+        
+        public EntityState()
+        {
+            FriendlinessLevel = 0f;
+            DependencyLevel = 0f;
+            InterestLevel = 0f;
+            TrustLevel = 0f;
+            entityName = "Unknown";
         }
         
         public string GetMoodDescription()

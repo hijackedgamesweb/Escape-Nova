@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!21 &-125483233776878214
+--- !u!21 &-574961011586263752
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ThaleahFat Atlas Material
-  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Name: HandoullFont Atlas Material
+  m_Shader: {fileID: 4800000, guid: 14eb328de4b8eb245bb7cea29e4ac00b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2043648453145538731}
+        m_Texture: {fileID: 966605721356596199}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -70,7 +70,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.25
+    - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
@@ -102,7 +102,7 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.007843138, g: 0.039215688, b: 0.050980393, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -119,36 +119,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: ThaleahFat SDF
+  m_Name: HandoullFont SDF
   m_EditorClassIdentifier: 
   m_Version: 1.1.0
   m_FaceInfo:
     m_FaceIndex: 0
-    m_FamilyName: ThaleahFat
-    m_StyleName: Medium
+    m_FamilyName: Glagolitsa
+    m_StyleName: Regular
     m_PointSize: 90
     m_Scale: 1
-    m_UnitsPerEM: 1024
-    m_LineHeight: 90.52734
-    m_AscentLine: 59.941406
-    m_CapLine: 40
-    m_MeanLine: 40
+    m_UnitsPerEM: 1000
+    m_LineHeight: 90
+    m_AscentLine: 67.5
+    m_CapLine: 67
+    m_MeanLine: 0
     m_Baseline: 0
     m_DescentLine: -22.5
-    m_SuperscriptOffset: 59.941406
+    m_SuperscriptOffset: 67.5
     m_SuperscriptSize: 0.5
     m_SubscriptOffset: -22.5
     m_SubscriptSize: 0.5
-    m_UnderlineOffset: -13.447266
-    m_UnderlineThickness: 4.482422
-    m_StrikethroughOffset: 16
-    m_StrikethroughThickness: 4.482422
-    m_TabWidth: 28
-  m_Material: {fileID: -125483233776878214}
-  m_SourceFontFileGUID: 8c5c1f3a425bea84da08e543b19bd7fc
+    m_UnderlineOffset: -9
+    m_UnderlineThickness: 4.5
+    m_StrikethroughOffset: 26.8
+    m_StrikethroughThickness: 4.5
+    m_TabWidth: 22
+  m_Material: {fileID: -574961011586263752}
+  m_SourceFontFileGUID: 5ab05f8f7c84c0b428464bdf57ba37e0
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: 8c5c1f3a425bea84da08e543b19bd7fc
+    sourceFontFileGUID: 5ab05f8f7c84c0b428464bdf57ba37e0
     faceIndex: 0
     pointSizeSamplingMode: 0
     pointSize: 90
@@ -165,7 +165,7 @@ MonoBehaviour:
     fontStyleModifier: 0
     renderMode: 4165
     includeFontFeatures: 0
-  m_SourceFontFile: {fileID: 12800000, guid: 8c5c1f3a425bea84da08e543b19bd7fc, type: 3}
+  m_SourceFontFile: {fileID: 12800000, guid: 5ab05f8f7c84c0b428464bdf57ba37e0, type: 3}
   m_SourceFontFilePath: 
   m_AtlasPopulationMode: 1
   InternalDynamicOS: 0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
     m_GlyphIndex: 84
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2043648453145538731}
+  - {fileID: 966605721356596199}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_GetFontFeatures: 1
@@ -1591,13 +1591,13 @@ MonoBehaviour:
     kerningPairs: []
   fallbackFontAssets: []
   atlas: {fileID: 0}
---- !u!28 &2043648453145538731
+--- !u!28 &966605721356596199
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ThaleahFat Atlas
+  m_Name: HandoullFont Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -1621,7 +1621,7 @@ Texture2D:
   m_TextureDimension: 2
   m_TextureSettings:
     serializedVersion: 2
-    m_FilterMode: 1
+    m_FilterMode: 0
     m_Aniso: 1
     m_MipBias: 0
     m_WrapU: 0

@@ -26,7 +26,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
         private void Start()
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             _solarSystem = ServiceLocator.GetService<SolarSystem>();
 
             foreach (var starsData in _starsDataSOs)

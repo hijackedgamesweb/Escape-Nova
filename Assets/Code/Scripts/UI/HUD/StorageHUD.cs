@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
@@ -25,7 +26,7 @@ namespace Code.Scripts.UI.HUD
 
         private void Start()
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             _storageSystem.OnStorageUpdated += UpdateUI;
             UpdateUI();
         }

@@ -4,7 +4,8 @@ using TMPro;
 using System.Collections.Generic;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Storage;
-using System.Linq; // Necesario para la búsqueda por clave
+using System.Linq;
+using Code.Scripts.Core.Managers; // Necesario para la búsqueda por clave
 
 namespace Code.Scripts.Core.Systems.Storage
 {
@@ -27,7 +28,7 @@ namespace Code.Scripts.Core.Systems.Storage
         {
             try
             {
-                _storageSystem = ServiceLocator.GetService<StorageSystem>();
+                _storageSystem = WorldManager.Instance.Player.StorageSystem;
                 _storageSystem.OnStorageUpdated += RefreshStorageUI; 
             }
             catch (System.Exception e)
