@@ -31,7 +31,7 @@ namespace Code.Scripts.Patterns.Singleton
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.name == "MainMenuScene")
+            if (scene.name == "MainMenu")
             {
                 Destroy(gameObject);  
             }

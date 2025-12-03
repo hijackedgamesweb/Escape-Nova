@@ -39,10 +39,14 @@ namespace Code.Scripts.Core.Managers
         private CommandInvoker _invoker;
         private IGameTime _gameTime;
 
-        private void Awake()
+        private async void Awake()
         {
             base.Awake();
             _invoker = new CommandInvoker();
+            
+            _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
+            if(SaveManager.Instance.SlotExists())
+                await SaveManager.Instance.LoadSlotAsync();
         }
 
         private async void Start()
@@ -50,10 +54,8 @@ namespace Code.Scripts.Core.Managers
             _gameTime = ServiceLocator.GetService<IGameTime>();
             _gameTime.OnCycleCompleted += UpdateWorld;
             _invoker.OnCommandExecuted += UpdateWorldOnCommand;
-            _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
             ConstructionEvents.OnPlanetAdded += OnPlanetConstructed;
             
-            await SaveManager.Instance.LoadSlotAsync();
         }
 
         private void OnPlanetConstructed(Planet obj)

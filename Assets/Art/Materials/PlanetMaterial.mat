@@ -139,7 +139,7 @@ Material:
     - _GlossinessSource: 0
     - _GlossyReflections: 0
     - _Intensity: 0
-    - _LightIntensity: 0.7
+    - _LightIntensity: 1
     - _LightRange: 42.62
     - _Metallic: 0
     - _OcclusionStrength: 1

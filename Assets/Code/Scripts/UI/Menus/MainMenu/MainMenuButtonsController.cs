@@ -5,7 +5,7 @@ public class MainMenuButtonsController : MonoBehaviour
 {
     public void OnPlayButtonPressed()
     {
-        Loader.Load("InGameScene");
+        Loader.Load("InGame");
     }
     
     public void OnExitButtonPressed()

@@ -244,7 +244,7 @@ namespace Code.Scripts.Core.SaveLoad
             }
         }
 
-        public bool SlotExists(int slot) => File.Exists(GetSlotFilePath(slot));
+        public bool SlotExists() => File.Exists(GetSlotFilePath(selectedSlot));
 
         public bool DeleteSlot(int slot)
         {

@@ -39,7 +39,7 @@ namespace Code.Scripts.UI.Windows
             Time.timeScale = 1f;
             AudioManager.Instance.PlaySFX("ButtonClick");
             this.Hide();
-            Loader.Load("MainMenuScene");
+            Loader.Load("MainMenu");
         }
     }
 }

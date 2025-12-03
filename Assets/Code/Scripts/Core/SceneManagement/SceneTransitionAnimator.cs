@@ -34,7 +34,7 @@ public class SceneTransitionAnimator : Singleton<SceneTransitionAnimator>
 
         // 5) Nave sale por la derecha
         s.Append(
-            rocket.DOAnchorPosX(5000, rocketDuration)
+            rocket.DOAnchorPosX(7000, rocketDuration)
                 .SetEase(Ease.InQuad)
         );
         
