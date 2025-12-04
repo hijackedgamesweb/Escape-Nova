@@ -47,6 +47,7 @@ namespace Code.Scripts.Core.Systems.Quests.UI
             }
 
             questManager.OnVisibleQuestsChanged += HandleQuestListChanged;
+            questManager.OnQuestCompleted += HandleQuestCompleted;
             PopulateMissionList();
 
             if (questManager.VisibleQuests.Count > 0)
@@ -72,7 +73,33 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 ClearQuestDetails();
             }
         }
-
+        
+        private void HandleQuestCompleted(QuestInstance completedQuest)
+        {
+            foreach (Transform child in missionButtonContainer)
+            {
+                if (child.GetComponent<MissionButton>().GetMissionTitle() == completedQuest.questData.Title)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            
+            GameObject buttonObj = Instantiate(missionButtonPrefab, missionButtonContainer);
+            MissionButton missionButton = buttonObj.GetComponent<MissionButton>();
+            
+            if (missionButton != null)
+            {
+                missionButton.Setup(completedQuest.questData, this);
+            }
+                
+            if (selectedQuest != null && completedQuest.questData.QuestId == selectedQuest.QuestId)
+            {
+                missionButton.SetSelected(true);
+            }
+            
+            missionButton.MarkAskCompleted();
+        }
+        
         private void PopulateMissionList()
         {
             foreach (Transform child in missionButtonContainer)
@@ -94,6 +121,24 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 {
                     missionButton.SetSelected(true);
                 }
+            }
+            
+            foreach (QuestData quest in questManager.CompletedQuests)
+            {
+                GameObject buttonObj = Instantiate(missionButtonPrefab, missionButtonContainer);
+                MissionButton missionButton = buttonObj.GetComponent<MissionButton>();
+                
+                if (missionButton != null)
+                {
+                    missionButton.Setup(quest, this);
+                }
+                
+                if (selectedQuest != null && quest.QuestId == selectedQuest.QuestId)
+                {
+                    missionButton.SetSelected(true);
+                }
+                
+                missionButton.MarkAskCompleted();
             }
         }
         
