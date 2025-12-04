@@ -38,4 +38,3 @@ MonoBehaviour:
       data:
         Description: Receive 2 star points
         points: 2
-        skillTreeManager: {fileID: 0}

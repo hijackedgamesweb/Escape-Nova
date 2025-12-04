@@ -16,6 +16,7 @@ namespace Code.Scripts.Camera
         [SerializeField] float _zoomSpeed = 1f;
         [SerializeField] float _minZoom = 2f;
         [SerializeField] float _maxZoom = 10f;
+        [SerializeField] float _unFocusMaxZoom = 5f;
         
         [Header("Movement Settings")]
         [SerializeField] float _moveSpeed = 5f;
@@ -295,7 +296,7 @@ namespace Code.Scripts.Camera
             _zoomTween = DOTween.To(
                 () => _mainCamera.orthographicSize,
                 x => _mainCamera.orthographicSize = x,
-                _maxZoom,
+                _unFocusMaxZoom,
                 1f
             ).SetEase(Ease.OutCirc);
         }

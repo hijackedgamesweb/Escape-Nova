@@ -23,8 +23,10 @@ namespace Code.Scripts.Core.Managers
         private int currentQuestSetIndex = 0;
         
         private List<QuestData> visibleQuests = new();
+        private List<QuestData> completedQuests = new();
 
         public List<QuestData> VisibleQuests => visibleQuests;
+        public List<QuestData> CompletedQuests => completedQuests;
         
         public event Action OnVisibleQuestsChanged;
         public event Action<QuestInstance> OnQuestCompleted;
@@ -81,6 +83,7 @@ namespace Code.Scripts.Core.Managers
                     {
                         reward.ApplyReward();
                     }
+                    completedQuests.Add(q.questData);
                     OnQuestCompleted?.Invoke(q);
                     CheckForSetCompletion();
                 }
