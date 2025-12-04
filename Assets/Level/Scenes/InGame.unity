@@ -46644,6 +46644,7 @@ MonoBehaviour:
   _zoomSpeed: 3
   _minZoom: 2
   _maxZoom: 20
+  _unFocusMaxZoom: 5
   _moveSpeed: 5
   _inertiaDamping: 5
   _background: {fileID: 1382856402}
