@@ -54,7 +54,8 @@ MonoBehaviour:
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   points: []
-  lineWidth: 3
+  lineWidth: 1
+  useWorldSpace: 0
 --- !u!222 &4569289340362695931
 CanvasRenderer:
   m_ObjectHideFlags: 0

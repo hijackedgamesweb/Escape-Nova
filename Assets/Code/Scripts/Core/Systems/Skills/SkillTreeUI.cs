@@ -30,7 +30,7 @@ namespace Code.Scripts.Core.Systems.Skills
 
         [Header("UI Settings")]
         [SerializeField] private Vector2 baseNodeSpacing = new Vector2(120f, 120f);
-        [SerializeField] private float connectionLineWidth = 3f;
+        [SerializeField] private float connectionLineWidth = 1f;
 
         private SkillTreeManager skillTreeManager;
         private SkillNodeData selectedNode;
@@ -361,12 +361,23 @@ namespace Code.Scripts.Core.Systems.Skills
 
                     if (fromRect != null && toRect != null)
                     {
-                        Vector2 fromPos = fromRect.anchoredPosition;
-                        Vector2 toPos = toRect.anchoredPosition;
+                        // Obtener posiciones en coordenadas del mundo
+                        Vector3 fromWorldPos = fromRect.position;
+                        Vector3 toWorldPos = toRect.position;
 
-                        lineRenderer.Points = new Vector2[] { fromPos, toPos };
+                        // Convertir a posición local relativa al contenedor de líneas
+                        Vector2 fromLocalPos = parent.InverseTransformPoint(fromWorldPos);
+                        Vector2 toLocalPos = parent.InverseTransformPoint(toWorldPos);
+
+                        // Establecer los puntos de la línea
+                        lineRenderer.Points = new Vector2[] { fromLocalPos, toLocalPos };
                         lineRenderer.LineWidth = connectionLineWidth;
                         lineRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+
+                        // Forzar actualización del renderizado
+                        lineRenderer.SetVerticesDirty();
+                        lineRenderer.SetAllDirty();
+
                         line.transform.SetAsFirstSibling();
                     }
                 }
@@ -385,19 +396,48 @@ namespace Code.Scripts.Core.Systems.Skills
 
             if (modalNodeName != null) modalNodeName.text = nodeData.nodeName;
             if (modalDescription != null) modalDescription.text = nodeData.description;
-            if (modalCost != null) modalCost.text = $"Price: {nodeData.skillPointCost} Star Points";
+
+            // Determinar si el nodo ya está comprado
+            bool isPurchased = skillTreeManager != null && skillTreeManager.IsSkillPurchased(nodeData);
+
+            if (modalCost != null)
+            {
+                    modalCost.text = $"Price: {nodeData.skillPointCost} Star Points";
+                    modalCost.color = Color.white;
+            }
 
             if (modalPurchaseButton != null)
             {
-                bool canPurchase = skillTreeManager.CanPurchaseSkill(nodeData);
-                modalPurchaseButton.interactable = canPurchase;
+                // Obtener el texto del botón
+                TextMeshProUGUI buttonText = modalPurchaseButton.GetComponentInChildren<TextMeshProUGUI>();
+
+                if (isPurchased)
+                {
+                    // Si ya está comprado, cambiar texto y deshabilitar
+                    if (buttonText != null)
+                    {
+                        buttonText.text = "PURCHASED";
+                    }
+                    modalPurchaseButton.interactable = false;
+                }
+                else
+                {
+                    // Si no está comprado, verificar si se puede comprar
+                    bool canPurchase = skillTreeManager.CanPurchaseSkill(nodeData);
+                    modalPurchaseButton.interactable = canPurchase;
+
+                    if (buttonText != null)
+                    {
+                        buttonText.text = "BUY";
+                    }
+                }
             }
 
             if (nodeModal != null)
             {
                 nodeModal.SetActive(true);
                 nodeModal.transform.SetAsLastSibling();
-              //  Debug.Log("SkillTreeUI: Modal shown successfully");
+                // Debug.Log("SkillTreeUI: Modal shown successfully");
             }
             else
             {

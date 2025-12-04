@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Code.Scripts.Core.Systems.Skills;
+using TMPro;
 
 namespace Code.Scripts.UI.Skills
 {
@@ -8,11 +9,12 @@ namespace Code.Scripts.UI.Skills
     {
         [SerializeField] private Button nodeButton;
         [SerializeField] private Image backgroundImage;
+        [SerializeField] private TextMeshProUGUI nodeNameText; // Agregado para mostrar nombre
 
         [Header("Colors")]
-        [SerializeField] private Color availableColor = Color.white;
-        [SerializeField] private Color purchasedColor = Color.green;
-        [SerializeField] private Color lockedColor = Color.gray;
+        [SerializeField] private Color purchasedColor = Color.gray;
+        [SerializeField] private Color unlockedColor = Color.green;
+        [SerializeField] private Color lockedColor = Color.red;
 
         private SkillNodeData nodeData;
         private SkillTreeManager skillTreeManager;
@@ -23,6 +25,13 @@ namespace Code.Scripts.UI.Skills
             nodeData = data;
             skillTreeManager = manager;
             skillTreeUI = ui;
+            skillTreeUI = ui;
+
+            // Configurar nombre del nodo
+            if (nodeNameText != null && nodeData != null)
+            {
+                nodeNameText.text = nodeData.nodeName;
+            }
 
             if (nodeButton != null)
             {
@@ -57,16 +66,19 @@ namespace Code.Scripts.UI.Skills
             {
                 if (skillTreeManager.IsSkillPurchased(nodeData))
                 {
+                    // Nodo comprado: color verde, pero SIEMPRE interactuable para mostrar info
                     backgroundImage.color = purchasedColor;
-                    nodeButton.interactable = false;
+                    nodeButton.interactable = true; // IMPORTANTE: Siempre interactuable
                 }
                 else if (skillTreeManager.IsSkillUnlocked(nodeData))
                 {
-                    backgroundImage.color = availableColor;
+                    // Nodo desbloqueado pero no comprado
+                    backgroundImage.color = unlockedColor;
                     nodeButton.interactable = true;
                 }
                 else
                 {
+                    // Nodo bloqueado
                     backgroundImage.color = lockedColor;
                     nodeButton.interactable = false;
                 }

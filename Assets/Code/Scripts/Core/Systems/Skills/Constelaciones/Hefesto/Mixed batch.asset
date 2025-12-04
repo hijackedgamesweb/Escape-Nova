@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: hefesto1
+  m_Name: Mixed batch
   m_EditorClassIdentifier: 
-  nodeName: HEFESTO 1
-  description: Recibe el doble de objetos construidos.
-  skillPointCost: 3
+  nodeName: Mixed batch
+  description: Mixed planets generate 10% more resources.
+  skillPointCost: 1
   prerequisiteNodes: []
-  positionInConstellation: {x: 0, y: 6.3}
+  positionInConstellation: {x: 0, y: 7}
   improvements:
-  - rid: -2
+  - rid: 4256129551800467534
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 4256129551800467534
+      type: {class: MultiResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        productionBonusPercent: 10

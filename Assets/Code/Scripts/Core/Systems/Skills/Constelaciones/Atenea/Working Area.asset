@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Shadows in the sky
+  m_Name: Working Area
   m_EditorClassIdentifier: 
-  nodeName: Shadows in the sky
+  nodeName: Working Area
   description: Production satellites generate 50% more resources.
   skillPointCost: 2
   prerequisiteNodes:
-  - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
-  positionInConstellation: {x: 1, y: 1}
+  - {fileID: 11400000, guid: b9432b2b69fcbf34fbf2e494b2220966, type: 2}
+  positionInConstellation: {x: 0, y: 6}
   improvements:
   - rid: 5265271245964312749
   references:

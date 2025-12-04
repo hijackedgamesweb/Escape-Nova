@@ -6,6 +6,7 @@ public class UILineRenderer : Graphic
 {
     [SerializeField] private Vector2[] points;
     [SerializeField] private float lineWidth = 2f;
+    [SerializeField] private bool useWorldSpace = false; // Nuevo: para usar espacio mundial o local
 
     public Vector2[] Points
     {
@@ -14,6 +15,7 @@ public class UILineRenderer : Graphic
         {
             points = value;
             SetVerticesDirty();
+            SetAllDirty();
         }
     }
 
@@ -44,6 +46,14 @@ public class UILineRenderer : Graphic
         {
             Vector2 start = points[i];
             Vector2 end = points[i + 1];
+
+            // Si estamos usando espacio mundial, convertir a local
+            if (useWorldSpace)
+            {
+                start = transform.InverseTransformPoint(start);
+                end = transform.InverseTransformPoint(end);
+            }
+
             AddLineSegment(vh, start, end);
         }
     }
@@ -58,6 +68,7 @@ public class UILineRenderer : Graphic
         UIVertex vertex = new UIVertex();
         vertex.color = color;
 
+        // Asegurar que las coordenadas están en espacio local correcto
         vertex.position = start - perpendicular;
         vh.AddVert(vertex);
 
@@ -77,5 +88,13 @@ public class UILineRenderer : Graphic
     public void UpdateLine(Vector2 from, Vector2 to)
     {
         Points = new Vector2[] { from, to };
+    }
+
+    // Nuevo método para actualizar líneas en coordenadas mundiales
+    public void UpdateLineWorldSpace(Vector3 worldFrom, Vector3 worldTo)
+    {
+        Vector2 localFrom = transform.InverseTransformPoint(worldFrom);
+        Vector2 localTo = transform.InverseTransformPoint(worldTo);
+        Points = new Vector2[] { localFrom, localTo };
     }
 }

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Pangaea
+  m_Name: Purity 2
   m_EditorClassIdentifier: 
-  nodeName: Pangaea
-  description: All your planets generate 25% more resources.
+  nodeName: Purity
+  description: Natural planets generate 50% more resources.
   skillPointCost: 3
   prerequisiteNodes:
-  - {fileID: 11400000, guid: 75662143070b18e4391ddde9a57f6fcb, type: 2}
-  positionInConstellation: {x: -4, y: 4.5}
+  - {fileID: 11400000, guid: e3da1c1b4ea3656449608e9e5329ac43, type: 2}
+  positionInConstellation: {x: -7.5, y: 3}
   improvements:
-  - rid: 162876391971094611
+  - rid: 4256129551800467535
   references:
     version: 2
     RefIds:
-    - rid: 162876391971094611
-      type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+    - rid: 4256129551800467535
+      type: {class: SingleResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 25
+        productionBonusPercent: 50
