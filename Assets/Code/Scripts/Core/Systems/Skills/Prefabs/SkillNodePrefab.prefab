@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2349216038180033583, guid: 117b2e6ef0881944ba20fd087dcd0ae3, type: 3}
+  m_Sprite: {fileID: -2717320672723976216, guid: 198f06450e23dfd43ba7d21d1bc326b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -136,7 +136,6 @@ MonoBehaviour:
   nodeButton: {fileID: 3052762994060972842}
   backgroundImage: {fileID: 5883001753372187447}
   nodeNameText: {fileID: 0}
-  availableColor: {r: 0.7081585, g: 0.8679245, b: 0.51174796, a: 1}
-  purchasedColor: {r: 1, g: 1, b: 1, a: 1}
-  unlockedColor: {r: 0, g: 0.6132076, b: 0, a: 1}
+  purchasedColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
   lockedColor: {r: 0.41509432, g: 0.18600924, b: 0.18600924, a: 1}
