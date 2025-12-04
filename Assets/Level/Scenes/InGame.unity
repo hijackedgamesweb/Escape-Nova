@@ -2058,7 +2058,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6322,7 +6322,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -26406,7 +26406,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -31032,6 +31032,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d1b4c8074e99f4581198ffca4af643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pauseButton: {fileID: 1948556963}
+  _basePauseButtonSprite: {fileID: 21300000, guid: bae8a9352ff738e40b8f434ef4dbd6b5, type: 3}
+  _highlightedPauseButtonSprite: {fileID: -6094710543449696968, guid: 7bdc6ebab20a4394a89b74ffb0590589, type: 3}
+  _baseSpeedButton: {fileID: 55586736}
+  _baseBaseSpeedButtonSprite: {fileID: 3794550611322748858, guid: c6fb43811f177d549be9a768b79ec59d, type: 3}
+  _hightlightedBaseButtonSprite: {fileID: -4935973104315556610, guid: de26a79188b3c8744b9fc5ef1ab8ad08, type: 3}
+  _doubleSpeedButton: {fileID: 1098293134}
+  _baseDoubleSpeedButtonSprite: {fileID: -8366067564511975507, guid: 66f156bdeebf4274385d8d78390febf8, type: 3}
+  _highlightedDoubleSpeedButtonSprite: {fileID: 5520550586184687947, guid: ab096338f8d92be49be678fcaf7bb264, type: 3}
+  _fourthSpeedButton: {fileID: 275184803}
+  _baseFourthSpeedButtonSprite: {fileID: 8321528207803008786, guid: fa69e7d8e9ad06b478f3530ccf570a46, type: 3}
+  _highlightedFourthSpeedButtonSprite: {fileID: 7033763837043333686, guid: 82b4f10375f9f4d4dbbe4e814b69cfde, type: 3}
 --- !u!114 &1251641543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46046,7 +46058,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}

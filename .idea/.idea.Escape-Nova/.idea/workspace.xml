@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/QuestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/UI/MissionUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Expansion.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Expansion.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Further Out.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Further Out.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/New Life.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/New Life.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Yeah, Science.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Quests/Principales/Yeah, Science.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/pause_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/UI/pause_pressed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/HUD/TimerControlUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/HUD/TimerControlUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +159,7 @@
       <workItem from="1764406532421" duration="914000" />
       <workItem from="1764433892617" duration="716000" />
       <workItem from="1764701094652" duration="3094000" />
-      <workItem from="1764869683399" duration="4862000" />
+      <workItem from="1764869683399" duration="6423000" />
     </task>
     <servers />
   </component>
