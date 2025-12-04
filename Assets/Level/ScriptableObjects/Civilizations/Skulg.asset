@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: Skulg
   m_EditorClassIdentifier: 
   civName: Skulg
-  civLeaderName: Nil
+  civLeaderName: Skunog
   baseFriendship: 0.5
   baseDependency: 0.7
   baseInterest: 0.6
   baseTrust: 0.3
   itemPreferences: {fileID: 11400000, guid: 994bc3f15cc66f644a50ac3100413acc, type: 2}
-  civilizationDescription: Los de la old skulg
+  civilizationDescription: The Skulg are defined by their industrial precision and
+    a rigid military dictatorship. Their society is organized not around culture,
+    but around function and "integration," viewing planetary systems as logistical
+    puzzles to be solved and optimized. They possess a formidable fleet designed
+    for heavy resource management and enforcement of their internal order. They do
+    not engage in idle chatter. They approach the galaxy with a cold, mechanical
+    efficiency, showing interest only in things, and people, that can serve a tangible
+    purpose in their grand design
   civilizationIcon: {fileID: 21300000, guid: 02a8b7a3690c2524aafb899824a3d008, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 4
   angerTolerance: 2
   leaderPortrait: {fileID: -7368006706622409379, guid: 3c35c54865c02c644ad9313ecec794d2, type: 3}
   startingResources: []
+  startingResourceAmounts: 
   startingInventory: {fileID: 11400000, guid: ab72b27289387574eb725e3d124730a0, type: 2}
   preferredPlanet: {fileID: 11400000, guid: 84b03deeebefef342bbbfe7e2bc368dc, type: 2}

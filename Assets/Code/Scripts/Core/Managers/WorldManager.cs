@@ -44,7 +44,10 @@ namespace Code.Scripts.Core.Managers
             base.Awake();
             _invoker = new CommandInvoker();
             
-            _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
+            StorageSystem playerStorage = new StorageSystem(_worldResources, _startingInventory);
+            ServiceLocator.RegisterService<StorageSystem>(playerStorage);
+            
+            _player = new Entity.Player.Player(_invoker, _playerData, playerStorage);
             if(SaveManager.Instance.SlotExists())
                 await SaveManager.Instance.LoadSlotAsync();
         }
