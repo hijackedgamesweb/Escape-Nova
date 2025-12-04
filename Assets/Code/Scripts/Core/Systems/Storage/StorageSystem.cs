@@ -43,7 +43,7 @@ namespace Code.Scripts.Core.Systems.Storage
         {
             InitializeResourceDatabase();
             InitializeInventoryItems();
-            ServiceLocator.RegisterService<StorageSystem>(this);
+            
         }
 
         public void AddMaxCapacity(ResourceType type, int additionalCapacity)

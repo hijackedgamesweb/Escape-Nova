@@ -13,18 +13,25 @@ MonoBehaviour:
   m_Name: Handoull
   m_EditorClassIdentifier: 
   civName: Handoull
-  civLeaderName: 'Hand '
+  civLeaderName: "Hull\u2019all"
   baseFriendship: 0.4
   baseDependency: 0.5
   baseInterest: 0.6
   baseTrust: 0.7
   itemPreferences: {fileID: 11400000, guid: f44d784bc97707643aaf980414c6f3c1, type: 2}
-  civilizationDescription: texto de ejemplo 2
+  civilizationDescription: As the primary suppliers of the rare quartz crystals essential
+    for space travel, the Handoull are the cornerstones of the galactic economy.
+    While they present themselves as a democracy, their governance appears to be
+    a complex web of merchant families and trade guilds. They are experts in negotiation
+    and logistics, capable of supplying advanced technology to any system that can
+    meet their terms. Their agreements are legendary for their detail and length,
+    often requiring a sharp eye to understand the full scope of the exchange
   civilizationIcon: {fileID: 21300000, guid: 505f4e0c77703794188a084682c3c5c6, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 5
   angerTolerance: 32
   leaderPortrait: {fileID: 3026952216567731805, guid: c0c3868c32ee93b42a1880be967141dd, type: 3}
   startingResources: []
+  startingResourceAmounts: 
   startingInventory: {fileID: 11400000, guid: bf0cb55411fab7a4abc931a81e0294c1, type: 2}
   preferredPlanet: {fileID: 11400000, guid: ec1925f37188c1a4f91a60d6926dfa87, type: 2}
