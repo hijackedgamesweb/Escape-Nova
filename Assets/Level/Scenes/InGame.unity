@@ -40144,6 +40144,12 @@ MonoBehaviour:
   modalCloseButton: {fileID: 1488419323}
   baseNodeSpacing: {x: 120, y: 120}
   connectionLineWidth: 3
+  constellationColors:
+  - {r: 0.5518868, g: 0.77317727, b: 1, a: 1}
+  - {r: 1, g: 0.5235849, b: 0.7617924, a: 1}
+  - {r: 0.7806604, g: 1, b: 0.5613208, a: 1}
+  - {r: 1, g: 0.78914267, b: 0.5707547, a: 1}
+  - {r: 0.7904456, g: 0.5896226, b: 1, a: 1}
 --- !u!114 &1035813701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40157,15 +40163,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.99215686}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7249197610883570905, guid: f6425ede4101418449a03141339ed639, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -80314,7 +80320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1905118054
 RectTransform:
   m_ObjectHideFlags: 0
@@ -80375,7 +80381,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -8298938443888920090, guid: 8311268d52f24f043bc2769751920c40, type: 3}
-  m_Type: 0
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

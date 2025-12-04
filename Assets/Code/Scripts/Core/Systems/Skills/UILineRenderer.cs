@@ -1,12 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 [RequireComponent(typeof(CanvasRenderer))]
 public class UILineRenderer : Graphic
 {
     [SerializeField] private Vector2[] points;
     [SerializeField] private float lineWidth = 2f;
-    [SerializeField] private bool useWorldSpace = false; // Nuevo: para usar espacio mundial o local
+    [SerializeField] private bool useWorldSpace = false;
+
+    [Header("Pulse Effect")]
+    [SerializeField] private bool enablePulse = true;
+    [SerializeField] private float pulseSpeed = 1f;
+    [SerializeField] private float minAlpha = 0.3f;
+    [SerializeField] private float maxAlpha = 0.7f;
+
+    private float pulseTime = 0f;
+    private Color originalColor;
 
     public Vector2[] Points
     {
@@ -33,6 +43,24 @@ public class UILineRenderer : Graphic
     {
         base.Start();
         canvasRenderer.SetMaterial(materialForRendering, null);
+        originalColor = color;
+
+        if (enablePulse)
+        {
+            StartCoroutine(PulseRoutine());
+        }
+    }
+
+    private IEnumerator PulseRoutine()
+    {
+        while (true)
+        {
+            pulseTime += Time.deltaTime * pulseSpeed;
+            float alpha = Mathf.Lerp(minAlpha, maxAlpha, (Mathf.Sin(pulseTime) + 1f) / 2f);
+            this.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            SetVerticesDirty();
+            yield return null;
+        }
     }
 
     protected override void OnPopulateMesh(VertexHelper vh)

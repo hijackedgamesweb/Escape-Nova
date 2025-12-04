@@ -50,12 +50,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.66977686}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   points: []
   lineWidth: 1
   useWorldSpace: 0
+  enablePulse: 1
+  pulseSpeed: 2
+  minAlpha: 0.2
+  maxAlpha: 1
 --- !u!222 &4569289340362695931
 CanvasRenderer:
   m_ObjectHideFlags: 0

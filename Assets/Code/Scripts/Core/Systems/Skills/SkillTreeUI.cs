@@ -188,6 +188,7 @@ namespace Code.Scripts.Core.Systems.Skills
             }
         }
 
+        // En InitializeUI, modificar el bucle:
         private void InitializeUI()
         {
             if (!CheckUIReferences())
@@ -211,13 +212,13 @@ namespace Code.Scripts.Core.Systems.Skills
                 return;
             }
 
-          //  Debug.Log($"SkillTreeUI: Creating UI for {constellations.Count} constellations");
-
+            int constellationIndex = 0;
             foreach (var constellation in constellations)
             {
                 if (constellation != null)
                 {
-                    CreateConstellationArea(constellation);
+                    CreateConstellationArea(constellation, constellationIndex);
+                    constellationIndex++;
                 }
             }
 
@@ -264,17 +265,34 @@ namespace Code.Scripts.Core.Systems.Skills
             return allValid;
         }
 
-        private void CreateConstellationArea(SkillConstellation constellation)
+        [Header("Constellation Colors")]
+        [SerializeField]
+        private Color[] constellationColors = new Color[]
+        {
+            new Color(0.4f, 0.7f, 1f),    // Azul
+            new Color(1f, 0.4f, 0.7f),    // Rosa
+            new Color(0.7f, 1f, 0.4f),    // Verde
+            new Color(1f, 0.7f, 0.4f),    // Naranja
+            new Color(0.7f, 0.4f, 1f)     // Púrpura
+        };
+
+        // Modificar el método CreateConstellationArea:
+        private void CreateConstellationArea(SkillConstellation constellation, int constellationIndex)
         {
             if (constellationAreaPrefab == null || constellationsContainer == null) return;
 
             GameObject area = Instantiate(constellationAreaPrefab, constellationsContainer);
             constellationAreas[constellation.constellationName] = area;
 
+            // Asignar color a la constelación
+            Color constellationColor = constellationColors[constellationIndex % constellationColors.Length];
+
+            // Aplicar color al título
             TextMeshProUGUI headerText = area.GetComponentInChildren<TextMeshProUGUI>();
             if (headerText != null)
             {
                 headerText.text = constellation.constellationName;
+                headerText.color = constellationColor;
             }
 
             // Crear contenedor para líneas
@@ -290,23 +308,25 @@ namespace Code.Scripts.Core.Systems.Skills
 
             linesContainers[constellation.constellationName] = linesContainer;
 
-            // Crear nodos
+            // Crear nodos con color de constelación
             if (constellation.nodes != null)
             {
                 foreach (var node in constellation.nodes)
                 {
                     if (node != null)
                     {
-                        CreateNodeUI(node, area.transform);
+                        CreateNodeUI(node, area.transform, constellationColor);
                     }
                 }
 
-                // Crear conexiones
-                CreateConnections(constellation, linesContainer.transform);
+                // Crear conexiones con color de constelación
+                CreateConnections(constellation, linesContainer.transform, constellationColor);
             }
         }
 
-        private void CreateNodeUI(SkillNodeData nodeData, Transform parent)
+
+
+        private void CreateNodeUI(SkillNodeData nodeData, Transform parent, Color constellationColor)
         {
             if (skillNodePrefab == null) return;
 
@@ -322,12 +342,14 @@ namespace Code.Scripts.Core.Systems.Skills
             SkillNodeUIItem nodeItem = nodeUI.GetComponent<SkillNodeUIItem>();
             if (nodeItem != null)
             {
+                // Pasar el color de la constelación al nodo
+                nodeItem.SetConstellationColor(constellationColor);
                 nodeItem.Initialize(nodeData, skillTreeManager, this);
                 nodeUIElements[nodeData.name] = nodeUI;
             }
         }
 
-        private void CreateConnections(SkillConstellation constellation, Transform parent)
+        private void CreateConnections(SkillConstellation constellation, Transform parent, Color lineColor)
         {
             if (connectionLinePrefab == null) return;
 
@@ -339,13 +361,13 @@ namespace Code.Scripts.Core.Systems.Skills
                 {
                     if (prerequisite != null && nodeUIElements.ContainsKey(node.name) && nodeUIElements.ContainsKey(prerequisite.name))
                     {
-                        CreateConnectionLine(nodeUIElements[prerequisite.name], nodeUIElements[node.name], parent);
+                        CreateConnectionLine(nodeUIElements[prerequisite.name], nodeUIElements[node.name], parent, lineColor);
                     }
                 }
             }
         }
 
-        private void CreateConnectionLine(GameObject fromNode, GameObject toNode, Transform parent)
+        private void CreateConnectionLine(GameObject fromNode, GameObject toNode, Transform parent, Color lineColor)
         {
             if (fromNode == null || toNode == null || connectionLinePrefab == null) return;
 
@@ -369,10 +391,10 @@ namespace Code.Scripts.Core.Systems.Skills
                         Vector2 fromLocalPos = parent.InverseTransformPoint(fromWorldPos);
                         Vector2 toLocalPos = parent.InverseTransformPoint(toWorldPos);
 
-                        // Establecer los puntos de la línea
+                        // Establecer los puntos de la línea con color de constelación
                         lineRenderer.Points = new Vector2[] { fromLocalPos, toLocalPos };
                         lineRenderer.LineWidth = connectionLineWidth;
-                        lineRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+                        lineRenderer.color = new Color(lineColor.r, lineColor.g, lineColor.b, 0.5f);
 
                         // Forzar actualización del renderizado
                         lineRenderer.SetVerticesDirty();
@@ -466,6 +488,17 @@ namespace Code.Scripts.Core.Systems.Skills
             {
                 if (skillTreeManager.PurchaseSkill(selectedNode))
                 {
+                    // Detener efectos en el nodo comprado
+                    if (nodeUIElements.ContainsKey(selectedNode.name))
+                    {
+                        SkillNodeUIItem nodeItem = nodeUIElements[selectedNode.name].GetComponent<SkillNodeUIItem>();
+                        if (nodeItem != null)
+                        {
+                            nodeItem.StopAllEffects();
+                            nodeItem.PlayPurchaseEffect();
+                        }
+                    }
+
                     HideModal();
                 }
             }
