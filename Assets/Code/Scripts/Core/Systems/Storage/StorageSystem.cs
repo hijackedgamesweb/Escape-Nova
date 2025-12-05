@@ -2,14 +2,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Menus.Trading;
+using Newtonsoft.Json.Linq;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 
 
 namespace Code.Scripts.Core.Systems.Storage
 {
-    public class StorageSystem
+    public class StorageSystem : ISaveable
     {
         private List<ResourceData> _resourceDataList;
         private InventoryData _inventoryData;
@@ -29,11 +32,18 @@ namespace Code.Scripts.Core.Systems.Storage
             Initialize();
         }
         
+        public StorageSystem()
+        {
+            _resourceDataList = new List<ResourceData>();
+            _inventoryData = new InventoryData();
+            Initialize();
+        }
+        
         private void Initialize()
         {
             InitializeResourceDatabase();
             InitializeInventoryItems();
-            ServiceLocator.RegisterService<StorageSystem>(this);
+            
         }
 
         public void AddMaxCapacity(ResourceType type, int additionalCapacity)
@@ -220,6 +230,100 @@ namespace Code.Scripts.Core.Systems.Storage
         public Dictionary<ResourceType, int> GetAllResources()
         {
             return new Dictionary<ResourceType, int>(_resources);
+        }
+
+        public void SetResourceAmounts(List<ResourceData> civilizationSoStartingResources, int[] civilizationSoStartingResourceAmounts)
+        {
+            for (int i = 0; i < civilizationSoStartingResources.Count; i++)
+            {
+                var resourceType = civilizationSoStartingResources[i].Type;
+                var amount = civilizationSoStartingResourceAmounts[i];
+                AddResource(resourceType, amount);
+            }
+        }
+
+        public void ExecuteTrade(TradingData playerTradeData, TradingData targetTradeData, StorageSystem targetEntityStorageSystem)
+        {
+            
+            // Process player offered resources
+            foreach (var resourceOffer in playerTradeData.ResourceData)
+            {
+                ConsumeResource(resourceOffer.Key, resourceOffer.Value);
+                targetEntityStorageSystem.AddResource(resourceOffer.Key, resourceOffer.Value);
+            }
+
+            // Process target offered resources
+            foreach (var resourceOffer in targetTradeData.ResourceData)
+            {
+                targetEntityStorageSystem.ConsumeResource(resourceOffer.Key, resourceOffer.Value);
+                AddResource(resourceOffer.Key, resourceOffer.Value);
+            }
+
+            // Process player offered inventory items
+            foreach (var itemOffer in playerTradeData.itemsToTrade)
+            {
+                ConsumeInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+                targetEntityStorageSystem.AddInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+            }
+
+            // Process target offered inventory items
+            foreach (var itemOffer in targetTradeData.itemsToTrade)
+            {
+                targetEntityStorageSystem.ConsumeInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+                AddInventoryItem(itemOffer.itemData.itemName, itemOffer.quantity);
+            }
+        }
+
+        public string GetSaveId()
+        {
+            return "StorageSystem";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject();
+
+            // Save resource amounts
+            JObject resourcesState = new JObject();
+            foreach (var kvp in _resources)
+            {
+                resourcesState[kvp.Key.ToString()] = kvp.Value;
+            }
+            state["resources"] = resourcesState;
+
+            // Save inventory items
+            JObject inventoryState = new JObject();
+            foreach (var kvp in _inventoryItems)
+            {
+                inventoryState[kvp.Key] = kvp.Value;
+            }
+            state["inventoryItems"] = inventoryState;
+
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JObject obj = (JObject)state;
+
+            // Restore resource amounts
+            JObject resourcesState = (JObject)obj["resources"];
+            foreach (var kvp in resourcesState)
+            {
+                if (Enum.TryParse(kvp.Key, out ResourceType resourceType))
+                {
+                    _resources[resourceType] = kvp.Value.ToObject<int>();
+                }
+            }
+
+            // Restore inventory items
+            JObject inventoryState = (JObject)obj["inventoryItems"];
+            foreach (var kvp in inventoryState)
+            {
+                _inventoryItems[kvp.Key] = kvp.Value.ToObject<int>();
+            }
+
+            OnStorageUpdated?.Invoke();
         }
     }
 }

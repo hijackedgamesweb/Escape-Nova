@@ -19,7 +19,7 @@ MonoBehaviour:
     and metal every solar cycle.
   icon: {fileID: -5060925952560270938, guid: 3b35bbe28ef016b4c934dc71c83880c3, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_firstcontact_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 500

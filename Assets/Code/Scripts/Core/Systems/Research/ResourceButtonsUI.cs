@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
@@ -38,7 +39,7 @@ public class ResourceButtonsUI : MonoBehaviour
             attempts++;
             try
             {
-                _storageSystem = ServiceLocator.GetService<StorageSystem>();
+                _storageSystem = WorldManager.Instance.Player.StorageSystem;
             }
             catch (System.Exception e)
             {
@@ -59,7 +60,7 @@ public class ResourceButtonsUI : MonoBehaviour
         if (addWoodButton != null)
         {
             addWoodButton.onClick.RemoveAllListeners();
-            addWoodButton.onClick.AddListener(() => AddResource(ResourceType.Sand, woodAmount));
+            addWoodButton.onClick.AddListener(() => AddResource(ResourceType.Sandit, woodAmount));
         }
         else
         {
@@ -68,7 +69,7 @@ public class ResourceButtonsUI : MonoBehaviour
         if (addStoneButton != null)
         {
             addStoneButton.onClick.RemoveAllListeners();
-            addStoneButton.onClick.AddListener(() => AddResource(ResourceType.Stone, stoneAmount));
+            addStoneButton.onClick.AddListener(() => AddResource(ResourceType.Batee, stoneAmount));
         }
         else
         {
@@ -112,10 +113,10 @@ public class ResourceButtonsUI : MonoBehaviour
             return;
         }
 
-        int currentWood = _storageSystem.GetResourceAmount(ResourceType.Sand);
-        int currentStone = _storageSystem.GetResourceAmount(ResourceType.Stone);
-        _storageSystem.AddResource(ResourceType.Sand, 200 - currentWood);
-        _storageSystem.AddResource(ResourceType.Stone, 100 - currentStone);
+        int currentWood = _storageSystem.GetResourceAmount(ResourceType.Sandit);
+        int currentStone = _storageSystem.GetResourceAmount(ResourceType.Batee);
+        _storageSystem.AddResource(ResourceType.Sandit, 200 - currentWood);
+        _storageSystem.AddResource(ResourceType.Batee, 100 - currentStone);
         
     }
 

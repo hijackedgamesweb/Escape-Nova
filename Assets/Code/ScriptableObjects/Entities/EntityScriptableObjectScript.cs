@@ -12,11 +12,11 @@ public class EntityScriptableObjectScript : ScriptableObject
     
     public enum Resources
     {
-        Stone,
-        Metal,
-        Ice,
-        Fire,
-        Sand
+        Batee,
+        Paladium,
+        Frostice,
+        Magmavite,
+        Sandit
     }
     
     

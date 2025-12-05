@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -29,7 +30,7 @@ namespace Code.Scripts.UI.Crafting
             _panelUI = panel;
             _craftingSystem = system;
             
-            _storageSystem = ServiceLocator.GetService<StorageSystem>(); 
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
 
             itemName.text = _recipe.displayName;
             itemIcon.sprite = _recipe.icon; 

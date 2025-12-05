@@ -18,7 +18,10 @@ MonoBehaviour:
   description: Unlocks the item 'Skulg Translator'. Crafting this item will allow
     you to communicate with the Skulg.
   icon: {fileID: -7877341826017078353, guid: e2d5ace7c64c7f04dbc786c231d49a20, type: 3}
-  prerequisites: []
+  prerequisites:
+  - researchId: blocked_until_firstcontact_quest_completed
+    buildingId: 
+    playerLevel: 0
   researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0

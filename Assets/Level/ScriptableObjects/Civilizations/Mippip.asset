@@ -14,16 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Mippip
   civLeaderName: Mips32
-  baseFriendship: 0
+  baseFriendship: 1
   baseDependency: 0
-  baseInterest: 0
-  baseTrust: 0
-  itemPreferences: {fileID: 0}
-  civilizationDescription: "no se que co\xF1o poner"
+  baseInterest: 1
+  baseTrust: 1
+  itemPreferences: {fileID: 11400000, guid: 469b955a8ac39c74e946df55f2382357, type: 2}
+  civilizationDescription: Famous for their communist social structure and deep empathetic
+    bonds, the Mippip are the galaxy's most outwardly welcoming species. Their society
+    is built on shared emotion and the distribution of resources, creating a world
+    that many consider a utopia. They are eager to form connections with other species
+    and are frequently found in diplomatic or humanitarian roles. However, their
+    way of relying on a collective mental link creates a relentless harmony, an intensity
+    of being together that can feel overwhelming to those accustomed to keeping their
+    thoughts to themselves
   civilizationIcon: {fileID: 21300000, guid: 59809e53e9dc1a94f82e21f1a493056a, type: 3}
   civilizationFlag: {fileID: 0}
-  aiController: 0
+  aiController: 3
   angerTolerance: 10
   leaderPortrait: {fileID: 7455233923170213856, guid: 4e51028b67e9a754fb39549b48393798, type: 3}
-  startingResources: []
-  startingInventory: {fileID: 0}
+  startingResources:
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  startingResourceAmounts: e8030000204e0000c28631005e5300000c000000
+  startingInventory: {fileID: 11400000, guid: 06f3f096ac23bc44fa2d93139e9396e2, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}

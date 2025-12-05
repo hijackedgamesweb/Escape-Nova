@@ -19,7 +19,7 @@ MonoBehaviour:
     and stone every solar cycle.
   icon: {fileID: 3948998494920026277, guid: 8abd4e1bb79b3e644a2fedbd142eda02, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_firstcontact_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 500

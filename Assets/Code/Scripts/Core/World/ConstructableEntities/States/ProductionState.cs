@@ -1,4 +1,5 @@
 using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -31,12 +32,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
             _gameTime.OnCycleCompleted += OnCycleCompleted;
 
             // Obtener el StorageSystem
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
 
-            // Inicializar el 鷏timo ciclo producido
+            // Inicializar el 煤ltimo ciclo producido
             _lastCycleProduced = _gameTime.CurrentCycle;
 
-            // Notificar sobre la producci髇 (para UI u otros sistemas)
+            // Notificar sobre la producci贸n (para UI u otros sistemas)
             for (int i = 0; i < _planetData.ProducibleResources.Count; i++)
             {
                 ConstructionEvents.OnResourceProductionAdded?.Invoke(_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
@@ -50,7 +51,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
             // Desuscribirse de los ciclos
             _gameTime.OnCycleCompleted -= OnCycleCompleted;
 
-            // Notificar que se detiene la producci髇
+            // Notificar que se detiene la producci贸n
             for (int i = 0; i < _planetData.ProducibleResources.Count; i++)
             {
                 ConstructionEvents.OnResourceProductionAdded?.Invoke(-_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
@@ -93,7 +94,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
 
         public void Update()
         {
-            // No necesita actualizaci髇 por frame, la producci髇 es por ciclos
+            // No necesita actualizaci贸n por frame, la producci贸n es por ciclos
         }
     }
 }

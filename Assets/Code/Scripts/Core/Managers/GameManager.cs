@@ -43,7 +43,7 @@ namespace Code.Scripts.Core.Managers
 
         private void Start()
         {
-            _stateManager.SetState(new MainMenuState(_stateManager));
+            _stateManager.SetState(new InGameState(_stateManager));
         }
         
         private void Update()

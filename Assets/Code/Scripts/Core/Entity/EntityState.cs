@@ -2,6 +2,20 @@ using Code.Scripts.Core.Events;
 
 namespace Code.Scripts.Core.Entity
 {
+    public enum EntityMood
+    {
+        Disgusted,
+        Progressive,
+        Needed,
+        Ally,
+        Commerce,
+        Love,
+        Negotiation,
+        Belligerent,
+        Peaceful,
+        Generous,
+        Offended
+    }
     public class EntityState
     {
         public float FriendlinessLevel { get; set; }
@@ -9,12 +23,58 @@ namespace Code.Scripts.Core.Entity
         public float InterestLevel { get; set; }
         public float TrustLevel { get; set; }
         
+        public EntityMood CurrentMood { get; set; }
+        
+        public string entityName;
+        
         public EntityState(EntitySO entitySO)
         {
             FriendlinessLevel = entitySO.baseFriendship;
             DependencyLevel = entitySO.baseDependency;
             InterestLevel = entitySO.baseInterest;
             TrustLevel = entitySO.baseTrust;
+            entityName = entitySO.civName;
+        }
+        
+        public EntityState()
+        {
+            FriendlinessLevel = 0f;
+            DependencyLevel = 0f;
+            InterestLevel = 0f;
+            TrustLevel = 0f;
+            entityName = "Unknown";
+        }
+        
+        public string GetMoodDescription()
+        {
+            switch (CurrentMood)
+            {
+                case EntityMood.Disgusted:
+                    return "Disgusted";
+                case EntityMood.Progressive:
+                    return "Optimistic";
+                case EntityMood.Needed:
+                    return "Required";
+                case EntityMood.Ally:
+                    return "Ally";
+                case EntityMood.Commerce:
+                    return "Commercial";
+                case EntityMood.Love:
+                    return "Loving";
+                case EntityMood.Negotiation:
+                    return "Negotiating";
+                case EntityMood.Belligerent:
+                    return "Aggressive";
+                case EntityMood.Peaceful:
+                    return "Peaceful";
+                case EntityMood.Generous:
+                    return "Generous";
+                case EntityMood.Offended:
+                    return "Offended";
+                default:
+                    return "Neutral";
+                
+            }
         }
 
         public void ReceiveBlame()

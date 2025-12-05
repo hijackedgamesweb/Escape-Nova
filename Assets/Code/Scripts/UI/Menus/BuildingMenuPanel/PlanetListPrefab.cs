@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -74,8 +75,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
             _planetSprite.sprite = planetData.sprite;
             _planetName.text = planetData.constructibleName;
             
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
-            
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             var production = "";
             for (int i = 0; i < planetData.producibleResources.Count; i++)
             {

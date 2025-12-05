@@ -21,5 +21,10 @@ namespace Code.Scripts.Core.Entity
             StorageSystem = storageSystem;
         }
         
+        public Entity()
+        {
+            
+        }
+        
     }
 }

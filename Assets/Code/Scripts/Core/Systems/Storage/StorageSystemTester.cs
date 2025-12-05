@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
@@ -34,7 +35,7 @@ namespace Code.Scripts.Core.Systems.Storage
         void Start()
         {
             // Esperamos un frame para que StorageSystem se inicialice
-            _storage = ServiceLocator.GetService<StorageSystem>();
+            _storage = WorldManager.Instance.Player.StorageSystem;
             
             // Configurar botones
             addMetalButton.onClick.AddListener(() => AddMetal());
@@ -50,37 +51,37 @@ namespace Code.Scripts.Core.Systems.Storage
 
         void AddMetal()
         {
-            bool success = _storage.AddResource(ResourceType.Metal, addMetalAmount);
+            bool success = _storage.AddResource(ResourceType.Paladium, addMetalAmount);
             Debug.Log(success ? $"Added {addMetalAmount} Metal" : "Failed to add Metal");
         }
 
         void AddWood()
         {
-            bool success = _storage.AddResource(ResourceType.Sand, addWoodAmount);
+            bool success = _storage.AddResource(ResourceType.Sandit, addWoodAmount);
             Debug.Log(success ? $"Added {addWoodAmount} Wood" : "Failed to add Wood");
         }
 
         void AddStone()
         {
-            bool success = _storage.AddResource(ResourceType.Stone, addStoneAmount);
+            bool success = _storage.AddResource(ResourceType.Batee, addStoneAmount);
             Debug.Log(success ? $"Added {addStoneAmount} Stone" : "Failed to add Stone");
         }
 
         void ConsumeMetal()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Metal, consumeMetalAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Paladium, consumeMetalAmount);
             Debug.Log(success ? $"Consumed {consumeMetalAmount} Metal" : "Not enough Metal");
         }
 
         void ConsumeWood()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Sand, consumeWoodAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Sandit, consumeWoodAmount);
             Debug.Log(success ? $"Consumed {consumeWoodAmount} Wood" : "Not enough Wood");
         }
 
         void ConsumeStone()
         {
-            bool success = _storage.ConsumeResource(ResourceType.Stone, consumeStoneAmount);
+            bool success = _storage.ConsumeResource(ResourceType.Batee, consumeStoneAmount);
             Debug.Log(success ? $"Consumed {consumeStoneAmount} Stone" : "Not enough Stone");
         }
         

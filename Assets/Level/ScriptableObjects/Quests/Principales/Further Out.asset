@@ -19,6 +19,7 @@ MonoBehaviour:
   - rid: 6291952346365689933
   Rewards:
   - rid: 6291952346365689934
+  - rid: 6291952656736059468
   references:
     version: 2
     RefIds:
@@ -32,3 +33,8 @@ MonoBehaviour:
       type: {class: UnlockStarsPanelReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
         Description: Unlock the "Constellations" panel
+    - rid: 6291952656736059468
+      type: {class: GiveSkillPoints, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Receive 2 star points
+        points: 2

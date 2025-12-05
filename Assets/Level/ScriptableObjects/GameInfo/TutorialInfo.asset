@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
+  m_Name: TutorialInfo
+  m_EditorClassIdentifier: 
+  titles:
+  - Welcome
+  - Time
+  - Resources
+  - Resources
+  - Building Menu
+  - Planets
+  - Menu Icons
+  - Quest Menu
+  - First quest
+  messages:
+  - Welcome, our empergod, to NOVA! We're going to give you teach you the basics
+    to expand and rule over your new solar system.
+  - Time is measured in "solar cycles". You can pause time, or swap between x1, x2
+    or x4 speed through the icons on the bottom left corner.
+  - 'On the top left corner you have your available resources. They''re, from left
+    to right: Batee, Paladium, Frostice, Magmavite and Sandit.'
+  - Each resource has different uses, and must be generated through planets.
+  - On the bottom right corner you have the "Building" menu. Through here, you can
+    build planets and Satellites. For planets, first pick the one you want to build
+    and then select a free spot on your solar system. For satellites, you'll have
+    to select a planet to build it on its orbit.
+  - Planets cost resources. Once paid, you'll start building the planet, which will
+    take a number of solar cycles. Once built, the planet will generate the same
+    resource types it cost you to build it.
+  - On the bottom of the screen you have a few icons that represent different menus.
+  - One of these menus is the quest menu, which will display available quests, their
+    requirements, as well as time constraints and rewards.
+  - Check out the quests menu and complete your first quest to continue.
+  images:
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  - {fileID: 3794550611322748858, guid: c6fb43811f177d549be9a768b79ec59d, type: 3}
+  - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
+  - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
+  - {fileID: -4496198411766186618, guid: b0251eeff7f7f99428d88570f4d544c9, type: 3}
+  - {fileID: 1170115753450382605, guid: 075ac4ada67a7934d8575bbf5e1fe7bc, type: 3}
+  - {fileID: 0}
+  - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}
+  - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}

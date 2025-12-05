@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -40,7 +41,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
         public void Initialize(SateliteDataSO sateliteData, SateliteListInitializer parentInitializer)
         {
             
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             SateliteData = sateliteData;
             _parentInitializer = parentInitializer;
             _planetSprite.sprite = sateliteData.sprite;

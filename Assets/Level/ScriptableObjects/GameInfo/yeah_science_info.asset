@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
+  m_Name: yeah_science_info
+  m_EditorClassIdentifier: 
+  titles:
+  - New menus
+  - Storage
+  - Research
+  - Research
+  messages:
+  - 'Now you have unlocked two new menus: Research and Inventory. You can see them
+    at the bottom of the screen.'
+  - The storage menu will alow you to craft and store items, which will become very
+    useful very soon.
+  - The research menu will allow to unlock new planets, items, satellites and more,
+    by researching them. Each research will cost resources and take a certain ammount
+    of solar cycles to finish, but once a research is done it's unlocked forever.
+  - Your next objective is to research "Primal Planets", so check out the research
+    menu and let the science begin.
+  images:
+  - {fileID: 0}
+  - {fileID: -3511662136145019918, guid: 1b269d12507f5cf4cb8f02281394007c, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}

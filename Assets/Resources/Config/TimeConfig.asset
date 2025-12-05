@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79cff6ea87ff4bbcbc4b1623846fcfc2, type: 3}
   m_Name: TimeConfig
   m_EditorClassIdentifier: 
-  secondsPerCycle: 0.5
+  secondsPerCycle: 5
   baseGameSpeed: 1
   timeSpeeds:
   - 0
   - 1
   - 2
-  - 10
+  - 4
   timeUnitName: 

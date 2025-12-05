@@ -36,6 +36,8 @@ namespace Code.Scripts.UI.Windows
                 UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
                 OnButtonPressed("Research"));
+            returnBtn.onClick.AddListener(() => 
+                OpenPauseMenu());
             
             storageBtn.interactable = false;
             researchBtn.interactable = false;

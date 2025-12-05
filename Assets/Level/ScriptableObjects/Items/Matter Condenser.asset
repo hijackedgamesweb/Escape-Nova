@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5db4aa064b4130b34614fcd7f6949a, type: 3}
+  m_Name: Matter Condenser
+  m_EditorClassIdentifier: 
+  itemName: Matter Condenser
+  displayName: Matter Condenser
+  icon: {fileID: 4464980799962186784, guid: 833bc3d0da7caff4f9aaa8e47b0c39e2, type: 3}
+  maxStack: 9
+  description: This item can be used to build and trade.
+  itemToUnlock: {fileID: 0}

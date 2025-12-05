@@ -13,17 +13,26 @@ MonoBehaviour:
   m_Name: Halxi
   m_EditorClassIdentifier: 
   civName: Halxi
-  civLeaderName: Halxinomus
+  civLeaderName: Alio-xi
   baseFriendship: 0.2
   baseDependency: 0.8
   baseInterest: 0.4
   baseTrust: 0.3
-  itemPreferences: {fileID: 0}
-  civilizationDescription: No se bro, buscalo tu
+  itemPreferences: {fileID: 11400000, guid: 3587325db2c04d647a8a710277a3c6f1, type: 2}
+  civilizationDescription: The Halxi civilization developed in an environment highly
+    toxic to most other species, who need a life of biological isolation. They operate
+    under a unique democracy of total neural unanimity, where no action is taken
+    unless every mind in the network agrees. This collective connection was forged
+    to survive a volatile history, resulting in a society that moves with deliberate,
+    unified slowness. Interacting with a Halxi means facing a wall of silence, as
+    their debates happen internally and instantaneously, presenting a consensus that
+    is often impossible to sway
   civilizationIcon: {fileID: 21300000, guid: d76d43f413af86c49931c4468afcb907, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 2
   angerTolerance: 10
   leaderPortrait: {fileID: -5612916301264726696, guid: 33904318cf0b5e94884142a9ebcca063, type: 3}
   startingResources: []
-  startingInventory: {fileID: 0}
+  startingResourceAmounts: 
+  startingInventory: {fileID: 11400000, guid: dff1c39901ec50b42b9f376c66887924, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: f7a5530eda1506a469fed048d03e2ee8, type: 2}

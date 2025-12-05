@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civName: Anatoli
   civLeaderName: Yo
-  baseHunger: 2
-  baseAnger: 3
-  baseMilitaryPower: 4
+  baseFriendship: 0
+  baseDependency: 0
+  baseInterest: 0
+  baseTrust: 0
+  itemPreferences: {fileID: 11400000, guid: e8941c94fb6e606429af53c4ba5ff977, type: 2}
   baseWood: 2
   baseFood: 1

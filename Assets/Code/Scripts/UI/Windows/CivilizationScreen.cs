@@ -15,6 +15,7 @@ namespace Code.Scripts.UI.Windows
     {
         [SerializeField] private TMP_Text _civilizationNameText;
         [SerializeField] private TMP_Text _civilizationDescText;
+        [SerializeField] private TMP_Text _currentMoodText;
         [SerializeField] private Image _civilizationIcon;
         [SerializeField] public Image _leaderSprite;
         [SerializeField] private Text _leaderNameText;
@@ -63,6 +64,7 @@ namespace Code.Scripts.UI.Windows
            _dependencySlider.value = _currentCivilization.CivilizationState.DependencyLevel;
            _interestSlider.value = _currentCivilization.CivilizationState.InterestLevel;
            _trustSlider.value = _currentCivilization.CivilizationState.TrustLevel;
+           _currentMoodText.text = _currentCivilization.CivilizationState.GetMoodDescription();
         }
     }
 }

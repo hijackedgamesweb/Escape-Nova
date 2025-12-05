@@ -123,7 +123,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1196580360959472385}
         m_TargetAssemblyTypeName: Code.Scripts.UI.Menus.Trading.TradingItemUI, Assembly-CSharp
-        m_MethodName: RemoveItem
+        m_MethodName: AddItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -498,7 +498,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1196580360959472385}
         m_TargetAssemblyTypeName: Code.Scripts.UI.Menus.Trading.TradingItemUI, Assembly-CSharp
-        m_MethodName: AddItem
+        m_MethodName: RemoveItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -7,6 +7,7 @@ using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using Action = System.Action;
 
@@ -21,7 +22,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
         protected Dictionary<string, CurveFactor> _curveFactors = new Dictionary<string, CurveFactor>();
         protected Dictionary<string, FunctionalAction> _actions = new Dictionary<string, FunctionalAction>();
-        protected Dictionary<string, UtilityAction> _utilityActions = new Dictionary<string, UtilityAction>();
         
         public BaseBehaviour(Entity.Civilization.Civilization civ, CommandInvoker invoker)
         {
@@ -53,13 +53,11 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             {
                 if (x <= 0.6f)
                 {
-                    Debug.Log("Dependency Curve: 0");
                     return 0f;
                 }
                 float X = x * 100f;
                 double numerator = Math.Exp(0.1 * (X - 60)) - 1;
                 double denominator = Math.Exp(4) - 1;
-                Debug.Log($"Dependency Curve: {numerator}/{denominator}");
                 return (float)(numerator / denominator);
             };
             _curveFactors["DependencyCurve"] = dependencyCurve;
@@ -69,13 +67,11 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             {
                 if (x <= 0.6f)
                 {
-                    Debug.Log("Independency Curve: 1");
                     return 1f;
                 }
                 float X = x * 100f;
                 double numerator = Math.Exp(-0.1 * (X - 60)) - Math.Exp(-4);
                 double denominator = 1 - Math.Exp(-4);
-                Debug.Log($"Independency Curve: {numerator}/{denominator}");
                 return (float)(numerator / denominator);
             };
             _curveFactors["IndependencyCurve"] = independencyCurve;
@@ -105,10 +101,8 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             {
                 if (x <= 0.8f)
                 {
-                    Debug.Log($"Distrust Curve: {1 - Math.Pow((x/0.8f), 2)}");
                     return (float)(1 - Math.Pow((x/0.8f), 2));
                 }
-                Debug.Log($"Distrust Curve: {6.25f*Math.Pow((x - 0.8f), 2)}");
                 return (float)(6.25f*Math.Pow((x - 0.8f), 2));
             };
             _curveFactors["DistrustCurve"] = distrustCurve;
@@ -118,13 +112,45 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             {
                 if (x <= 0.8f)
                 {
-                    Debug.Log($"Faith Curve: {(float)Math.Pow((x/0.8f), 2)}");
                     return (float)Math.Pow((x/0.8f), 2);
                 }
-                Debug.Log($"Faith Curve: {1 - 18.75f*Math.Pow((x - 80), 2)}");
                 return (float)(1 - 18.75f*Math.Pow((x - 0.8f), 2));
             };
             _curveFactors["FaithCurve"] = faithCurve;
+            
+            FunctionalAction setDisgusted = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Disgusted); return Status.Success; }, () => { });
+            _actions["SetDisgusted"] = setDisgusted;
+            
+            FunctionalAction setProgressive = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Progressive); return Status.Success; }, () => { });
+            _actions["SetProgressive"] = setProgressive;
+            
+            FunctionalAction setNeeded = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Needed); return Status.Success; }, () => { });
+            _actions["SetNeeded"] = setNeeded;
+            
+            FunctionalAction setAlly = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Ally); return Status.Success; }, () => { });
+            _actions["SetAlly"] = setAlly;
+            
+            FunctionalAction setCommerce = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Commerce); return Status.Success; }, () => { });
+            _actions["SetCommerce"] = setCommerce;
+            
+            FunctionalAction setLove = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Love); return Status.Success; }, () => { });
+            _actions["SetLove"] = setLove;
+            
+            FunctionalAction setNegotiation = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Negotiation); return Status.Success; }, () => { });
+            _actions["SetNegotiation"] = setNegotiation;
+            
+            FunctionalAction setBelligerent = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent); return Status.Success; }, () => { });
+            _actions["SetBelligerent"] = setBelligerent;
+            
+            FunctionalAction setPeaceful = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Peaceful); return Status.Success; }, () => { });
+            _actions["SetPeaceful"] = setPeaceful;
+            
+            FunctionalAction setGenerous = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Generous); return Status.Success; }, () => { });
+            _actions["SetGenerous"] = setGenerous;
+            
+            FunctionalAction setOffended = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Offended); return Status.Success; }, () => { });
+            _actions["SetOffended"] = setOffended;
+            
             
             
             
@@ -268,5 +294,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         {
             _invoker = invoker;
         }
+
+        
     }
 }

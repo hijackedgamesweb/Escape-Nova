@@ -2,21 +2,26 @@ using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Entity.Civilization;
 using Code.Scripts.Core.Entity.Player;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.SaveLoad;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Civilization;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World;
+using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.Singleton;
 using Code.Scripts.Player;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Managers
 {
-    public class WorldManager : Singleton<WorldManager>
+    public class WorldManager : InGameSingleton<WorldManager>, ISaveable
     {
         //STORAGE SYSTEM
         [SerializeField] List<ResourceData> _worldResources = new();
@@ -30,25 +35,44 @@ namespace Code.Scripts.Core.Managers
         
         [SerializeField] private CivilizationManager _civilizationManager;
         private Entity.Player.Player _player;
+        public Entity.Player.Player Player => _player;
         private CommandInvoker _invoker;
         private IGameTime _gameTime;
 
-        private void Awake()
+        private async void Awake()
         {
             base.Awake();
             _invoker = new CommandInvoker();
             
+            StorageSystem playerStorage = new StorageSystem(_worldResources, _startingInventory);
+            ServiceLocator.RegisterService<StorageSystem>(playerStorage);
             
+            _player = new Entity.Player.Player(_invoker, _playerData, playerStorage);
+            if(SaveManager.Instance.SlotExists())
+                await SaveManager.Instance.LoadSlotAsync();
         }
 
-        private void Start()
+        private async void Start()
         {
             _gameTime = ServiceLocator.GetService<IGameTime>();
             _gameTime.OnCycleCompleted += UpdateWorld;
             _invoker.OnCommandExecuted += UpdateWorldOnCommand;
-            _player = new Entity.Player.Player(_invoker, _playerData, new StorageSystem(_worldResources, _startingInventory));
+            ConstructionEvents.OnPlanetAdded += OnPlanetConstructed;
+            
         }
-        
+
+        private void OnPlanetConstructed(Planet obj)
+        {
+            foreach (var civ in _civilizationSOs)
+            {
+                if (civ.preferredPlanet != null && civ.preferredPlanet.constructibleName == obj.Name)
+                {
+                    AddCivilization(civ.civName);
+                    break;
+                }
+            }
+        }
+
 
         [ContextMenu("Add Civilization")]
         public void AddCivilizationFromInspector()
@@ -66,6 +90,7 @@ namespace Code.Scripts.Core.Managers
                 {
                     Civilization newCiv = new Civilization(_invoker, civSO);
                     _civilizationManager.AddCivilization(newCiv);
+                    _civilizationSOs.Remove(civSO);
                     return;
                 }
             }
@@ -88,6 +113,35 @@ namespace Code.Scripts.Core.Managers
             return context;
         }
 
-        
+
+        public void AddAllCivilizations()
+        {
+            foreach (var civSO in _civilizationSOs)
+            {
+                Civilization newCiv = new Civilization(_invoker, civSO);
+                _civilizationManager.AddCivilization(newCiv);
+            }
+            _civilizationSOs.Clear();
+        }
+
+        public string GetSaveId()
+        {
+            return "WorldContext";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject();
+            state["Player"] = JToken.FromObject(_player.CaptureState());
+            state["Civilizations"] = JToken.FromObject(_civilizationManager.CaptureState());
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JObject obj = state as JObject;
+            _player.RestoreState(obj["Player"]);
+            _civilizationManager.RestoreState(obj["Civilizations"]);
+        }
     }
 }

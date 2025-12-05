@@ -86,7 +86,7 @@ namespace Code.Scripts.UI.Research
             try
             {
                 _researchSystem = ServiceLocator.GetService<ResearchSystem>();
-                _storageSystem = ServiceLocator.GetService<StorageSystem>();
+                _storageSystem = WorldManager.Instance.Player.StorageSystem;
             }
             catch (System.Exception e)
             {

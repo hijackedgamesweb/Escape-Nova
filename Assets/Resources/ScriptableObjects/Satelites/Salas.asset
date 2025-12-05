@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97e2fff6615463385e2477109f6b024, type: 3}
+  m_Name: Salas
+  m_EditorClassIdentifier: 
+  constructibleName: Salas
+  sprite: {fileID: 2520398507511136234, guid: 83e2656a0a00d1e478ef14b6f3619257, type: 3}
+  timeToBuild: 15
+  buildCostResources:
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  buildCostAmounts: c800000064000000
+  size: 1
+  desc: This planet produces 25% more resources.
+  sprite: {fileID: 2520398507511136234, guid: 83e2656a0a00d1e478ef14b6f3619257, type: 3}
+  upgrades:
+  - rid: 5265271245964312748
+  references:
+    version: 2
+    RefIds:
+    - rid: 5265271245964312748
+      type: {class: LocalSynergyUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+      data:
+        baseImprovementType: BonoSalasBase
+        basePercentage: 25
+        synergySkillId: SinergiaSalas50
+        synergyImprovementType: BonoSalasSinergia
+        synergyPercentage: 50

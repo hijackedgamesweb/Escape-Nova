@@ -6,12 +6,13 @@ namespace Code.Scripts.Core.World
 {
     public class PlanetLightController : MonoBehaviour
     {
-        private Transform sun;
+        [SerializeField] private Transform sun;
         private Material mat;
 
         void Start()
         {
-            sun = ServiceLocator.GetService<SolarSystem>().GetSunTransform();
+            if(sun == null)
+                sun = ServiceLocator.GetService<SolarSystem>()?.GetSunTransform();
             mat = GetComponent<SpriteRenderer>().material;
         }
 

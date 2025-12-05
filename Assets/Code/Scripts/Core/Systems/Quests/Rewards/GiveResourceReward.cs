@@ -1,4 +1,5 @@
 using System;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -14,7 +15,7 @@ namespace Code.Scripts.Core.Systems.Quests.Rewards
 
         public override void ApplyReward()
         {
-            StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+            StorageSystem storage = WorldManager.Instance.Player.StorageSystem;
             if (storage != null)
             {
                 storage.AddResource(resource, amount);

@@ -17,7 +17,20 @@ MonoBehaviour:
   Description: "It seems like another species wants to make contact with us\u2026"
   Objectives:
   - rid: 6291952324994662480
-  Rewards: []
+  Rewards:
+  - rid: 6291952611966058602
+  - rid: 6291952611966058603
+  - rid: 6291952611966058604
+  - rid: 6291952611966058605
+  - rid: 6291952611966058619
+  - rid: 6291952611966058618
+  - rid: 6291952611966058617
+  - rid: 6291952611966058616
+  - rid: 6291952611966058612
+  - rid: 6291952611966058614
+  - rid: 6291952611966058608
+  - rid: 6291952611966058607
+  - rid: 6291952611966058606
   references:
     version: 2
     RefIds:
@@ -27,3 +40,68 @@ MonoBehaviour:
         objectiveDescription: Research and craft the Mippip Translator
         isCompleted: 0
         requiredRecipeId: receta_mippip_translator
+    - rid: 6291952611966058602
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Halxi Translator" research
+        researchIdToUnlock: halxi_translator
+    - rid: 6291952611966058603
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Skulg Translator" research
+        researchIdToUnlock: skulg_translator
+    - rid: 6291952611966058604
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Matter Condenser" research
+        researchIdToUnlock: matter_condenser
+    - rid: 6291952611966058605
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Modular Spectrometer" research
+        researchIdToUnlock: modular_spectrometer
+    - rid: 6291952611966058606
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Plerus" research
+        researchIdToUnlock: plerus
+    - rid: 6291952611966058607
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Lahar" research
+        researchIdToUnlock: lahar
+    - rid: 6291952611966058608
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Halangona" research
+        researchIdToUnlock: halangona
+    - rid: 6291952611966058612
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Kov" research
+        researchIdToUnlock: kov
+    - rid: 6291952611966058614
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Istoovi" research
+        researchIdToUnlock: istoovi
+    - rid: 6291952611966058616
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Fire Strike" research
+        researchIdToUnlock: fire_strike
+    - rid: 6291952611966058617
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Freezed Core" research
+        researchIdToUnlock: freezed_core
+    - rid: 6291952611966058618
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Multicore Chip" research
+        researchIdToUnlock: multicore_chip
+    - rid: 6291952611966058619
+      type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
+      data:
+        Description: Unlock the "Microscopic Lens" research
+        researchIdToUnlock: microscopic_lens

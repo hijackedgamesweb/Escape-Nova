@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: arena
   m_EditorClassIdentifier: 
   Type: 3
-  DisplayName: Sand
+  DisplayName: Sandit
   Icon: {fileID: 8346932396677304797, guid: ad55b252c28478a4cb642545a6eeef7b, type: 3}
   Color: {r: 0, g: 0, b: 0, a: 0}
   MaxStack: 1000000000

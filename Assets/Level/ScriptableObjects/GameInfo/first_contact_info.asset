@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
+  m_Name: first_contact_info
+  m_EditorClassIdentifier: 
+  titles:
+  - Mippip
+  - New crafts
+  - New signals
+  messages:
+  - We did it! The species seems to call themselves "Mippip". We could really bennefit
+    from this relationship, though we should be carefull not to anger or bother them.
+    It seems like our actions could have consequences in our relationship from now
+    on.
+  - Now that we've reached this level of scientific wonder, perhaps it is time to
+    reach even further. You should check these new research recipees.
+  - New lost signals seem to have reached us. We can probably create translator to
+    understand them too. But perhaps we should be carefull with who reaches out to
+    us...
+  images:
+  - {fileID: 21300000, guid: 59809e53e9dc1a94f82e21f1a493056a, type: 3}
+  - {fileID: -3511662136145019918, guid: 1b269d12507f5cf4cb8f02281394007c, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}

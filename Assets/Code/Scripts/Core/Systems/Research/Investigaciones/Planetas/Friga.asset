@@ -19,7 +19,7 @@ MonoBehaviour:
     every solar cycle.
   icon: {fileID: -6202497339816156783, guid: 887c03e2f489b5a4ea56b3c75e7860c2, type: 3}
   prerequisites:
-  - researchId: primal_planets
+  - researchId: blocked_until_thestarsasguide_quest_completed
     buildingId: 
     playerLevel: 0
   researchTimeInSeconds: 100

@@ -1,20 +1,22 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Code.Scripts.Camera;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.States;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Patterns.State.Interfaces;
-using Code.Scripts.UI.Menus; // Añadido para el panel de info
+using Code.Scripts.UI.Menus;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
-using UnityEngine.EventSystems; // Añadido para evitar clicks a través de UI
+using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Core.World.ConstructableEntities
 {
-    public class Planet : MonoBehaviour
+    public class Planet : MonoBehaviour, ISaveable
     {
         private SpriteRenderer _spriteRenderer;
         public int[] ResourcePerCycle { get; private set; }
@@ -30,6 +32,16 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         private Dictionary<string, float> _improvementPercentages = new Dictionary<string, float>();
         public static event Action<string, float> OnGlobalImprovementAdded;
         private static Dictionary<string, float> _globalImprovements = new Dictionary<string, float>();
+
+        private int _satelliteSlots;
+        private bool[] _occupiedSatelliteSlots;
+        
+        private const float BASE_SATELLITE_DISTANCE = 0.6f;
+        private const float SATELLITE_SPEED = 50f;
+
+        
+        public event Action<float> OnConstructionProgress;
+        public event Action OnConstructionCompleted;
 
         private void Awake()
         {
@@ -47,7 +59,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             OnGlobalImprovementAdded -= HandleGlobalImprovementAdded;
             _stateManager?.SetState(null);
         }
-        
+
         public static float GetGlobalImprovement(string improvementType)
         {
             _globalImprovements.TryGetValue(improvementType, out float value);
@@ -69,11 +81,26 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             TimeToBuild = data.timeToBuild;
             OrbitIndex = orbit;
             PlanetIndex = positionInOrbit;
+            
+            _satelliteSlots = data.maxSatellites;
+            _occupiedSatelliteSlots = new bool[_satelliteSlots];
 
             var gametTime = ServiceLocator.GetService<IGameTime>();
             _stateManager = new PlanetStateManager(gametTime);
-            _stateManager.SetState(new BuildingState(this, gametTime));
+            var buildingState = new BuildingState(this, gametTime);
+            buildingState.OnProgressUpdated += HandleBuildingProgress;
+            _stateManager.SetState(buildingState);
         }
+        private void HandleBuildingProgress(float progress)
+        {
+            OnConstructionProgress?.Invoke(progress);
+            
+            if (progress >= 1f)
+            {
+                OnConstructionCompleted?.Invoke();
+            }
+        }
+
         private void ApplyExistingGlobalImprovements()
         {
             foreach (var improvement in _globalImprovements)
@@ -81,6 +108,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 AddImprovement(improvement.Key, improvement.Value);
             }
         }
+        
         public void AddImprovement(string improvementType, float percentage)
         {
             if (!_improvementPercentages.ContainsKey(improvementType))
@@ -93,6 +121,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             
             RecalculateProduction();
         }
+
         private void RecalculateProduction()
         {
             for (int i = 0; i < ResourcePerCycle.Length; i++)
@@ -109,9 +138,8 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                     ResourcePerCycle[i] = Mathf.RoundToInt(newValue);
                 }
             }
-
-            string improvementsSummary = string.Join(", ", _improvementPercentages.Select(kvp => $"{kvp.Key}: {kvp.Value}%"));
         }
+
         public float GetTotalImprovementPercentage()
         {
             float total = 0f;
@@ -121,11 +149,13 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
             return total;
         }
+
         public float GetImprovementPercentage(string improvementType)
         {
             return _improvementPercentages.ContainsKey(improvementType) ?
                    _improvementPercentages[improvementType] : 0f;
         }
+
         public static void AddGlobalImprovement(string improvementType, float percentage)
         {
             if (!_globalImprovements.ContainsKey(improvementType))
@@ -146,12 +176,66 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             if (EventSystem.current.IsPointerOverGameObject()) return; 
 
             Debug.Log("Planet clicked: " + this.name);
-            UnityEngine.Camera.main.GetComponent<CameraController2D>().SetTarget(this.transform);
+            if(UnityEngine.Camera.main != null)
+                UnityEngine.Camera.main.GetComponent<CameraController2D>()?.SetTarget(this.transform);
+            
             PlanetInfoPanel.Instance.ShowPanel(this);
         }
 
-        public void AddSatelite(SateliteDataSO sateliteDataSo)
+        public bool AddSatelite(string sateliteId)
         {
+            int freeSlotIndex = -1;
+            for (int i = 0; i < _satelliteSlots; i++)
+            {
+                if (!_occupiedSatelliteSlots[i])
+                {
+                    freeSlotIndex = i;
+                    break;
+                }
+            }
+            if (freeSlotIndex == -1)
+            {
+                NotificationManager.Instance.CreateNotification($"Max satellites reached for {Name}", NotificationType.Warning);
+                return false;
+            }
+
+            _occupiedSatelliteSlots[freeSlotIndex] = true;
+
+            Satelite satelite = new Satelite();
+            var sateliteDataArray = Resources.LoadAll<SateliteDataSO>("ScriptableObjects/Satelites");
+            SateliteDataSO SateliteData = System.Array.Find(sateliteDataArray, data => data.name == sateliteId || data.constructibleName == sateliteId);
+            satelite.InitializeSatelite(SateliteData, this);
+            Satelites.Add(satelite);
+            foreach (var upgrade in SateliteData.upgrades)
+            {
+                upgrade.ApplyUpgrade(this);
+            }
+
+            CreateSatelliteVisual(SateliteData, freeSlotIndex);
+            
+            return true;
+        }
+
+        public bool AddSatelite(SateliteDataSO sateliteDataSo)
+        {
+            int freeSlotIndex = -1;
+            for (int i = 0; i < _satelliteSlots; i++)
+            {
+                if (!_occupiedSatelliteSlots[i])
+                {
+                    freeSlotIndex = i;
+                    break;
+                }
+            }
+
+            if (freeSlotIndex == -1)
+            {
+                NotificationManager.Instance.CreateNotification($"Max satellites reached for {Name}", NotificationType.Warning);
+                return false;
+            }
+
+            _occupiedSatelliteSlots[freeSlotIndex] = true;
+
             Satelite satelite = new Satelite();
             satelite.InitializeSatelite(sateliteDataSo, this);
             Satelites.Add(satelite);
@@ -159,6 +243,90 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             {
                 upgrade.ApplyUpgrade(this);
             }
+
+            CreateSatelliteVisual(sateliteDataSo, freeSlotIndex);
+            
+            return true;
+        }
+
+        private void CreateSatelliteVisual(SateliteDataSO data, int slotIndex)
+        {
+            GameObject satObj = new GameObject($"{data.name}_Visual_{slotIndex}");
+            satObj.transform.SetParent(this.transform);
+            satObj.transform.localScale = Vector3.one * (data.size > 0 ? data.size : 0.3f);
+
+            SpriteRenderer sr = satObj.AddComponent<SpriteRenderer>();
+            sr.sprite = data.sprite;
+            
+
+            if (_spriteRenderer != null) 
+            {
+                sr.sortingOrder = _spriteRenderer.sortingOrder + 1;
+            }
+
+            SatelliteOrbitController orbitCtrl = satObj.AddComponent<SatelliteOrbitController>();
+            
+            float planetRadius = 1f;
+            if (_spriteRenderer != null && _spriteRenderer.sprite != null)
+            {
+                planetRadius = _spriteRenderer.bounds.extents.x;
+            }
+            
+            float orbitRadius = planetRadius + BASE_SATELLITE_DISTANCE;
+            float fixedAngle = slotIndex * (360f / _satelliteSlots);
+
+            orbitCtrl.Initialize(orbitRadius, SATELLITE_SPEED, fixedAngle);
+        }
+
+        public string GetSaveId()
+        {
+            return $"{OrbitIndex}_{PlanetIndex}";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject();
+            state["State"] = _stateManager.GetCurrentStateName();
+
+            JArray sateliteArray = new JArray();
+            foreach (var satelite in Satelites)
+            {
+                sateliteArray.Add(satelite.GetSaveId());
+            }
+            state["Satelites"] = sateliteArray;
+
+            JObject improvementsObj = new JObject();
+            foreach (var improvement in _improvementPercentages)
+            {
+                improvementsObj[improvement.Key] = improvement.Value;
+            }
+            state["Improvements"] = improvementsObj;
+
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JObject obj = state as JObject;
+            string stateName = obj["State"].ToObject<string>();
+            _stateManager.SetStateByName(stateName);
+
+            JArray sateliteArray = obj["Satelites"] as JArray;
+            foreach (var sateliteIdToken in sateliteArray)
+            {
+                string sateliteId = sateliteIdToken.ToObject<string>();
+                AddSatelite(sateliteId);
+            }
+
+            JObject improvementsObj = obj["Improvements"] as JObject;
+            foreach (var improvementProperty in improvementsObj.Properties())
+            {
+                string improvementType = improvementProperty.Name;
+                float percentage = improvementProperty.Value.ToObject<float>();
+                _improvementPercentages[improvementType] = percentage;
+            }
+
+            RecalculateProduction();
         }
     }
 }

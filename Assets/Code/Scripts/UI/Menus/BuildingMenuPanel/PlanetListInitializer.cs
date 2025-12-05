@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
@@ -21,7 +22,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
         private void Start()
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             
             try
             {

@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.World;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Storage;
+using Code.Scripts.UI.Windows;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
@@ -24,7 +26,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
         private void Start()
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             _solarSystem = ServiceLocator.GetService<SolarSystem>();
 
             foreach (var starsData in _starsDataSOs)
@@ -150,7 +152,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
             
             if (ConsumeResourcesForStars(starsData))
             {
-                _solarSystem.BuildSpecialPlanet(starsData);
+                //_solarSystem.BuildSpecialPlanet(starsData);
                 
                 Destroy(_currentStarsItem.gameObject);
                 _createdStars.Remove(starsData.constructibleName);
@@ -163,6 +165,8 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 {
                     panelManager.gameObject.SetActive(false);
                 }
+
+                UIManager.Instance.ShowScreen<InGameScreen>();
             }
         }
     }

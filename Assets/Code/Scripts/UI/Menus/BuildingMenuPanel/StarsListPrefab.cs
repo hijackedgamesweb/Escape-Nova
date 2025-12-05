@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
@@ -44,7 +45,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
         public void Initialize(STARSDataSO starsData, StarsInitializer parentInitializer)
         {
-            _storageSystem = ServiceLocator.GetService<StorageSystem>();
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
             StarsData = starsData;
             _parentInitializer = parentInitializer;
             _starsIcon.sprite = starsData.sprite; 

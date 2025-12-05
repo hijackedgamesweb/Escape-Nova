@@ -13,19 +13,29 @@ MonoBehaviour:
   m_Name: Akki
   m_EditorClassIdentifier: 
   civName: Akki
-  civLeaderName: Akki No
-  baseFriendship: 0.5
-  baseDependency: 0.5
-  baseInterest: 0.5
-  baseTrust: 0.5
-  itemPreferences: {fileID: 0}
-  civilizationDescription: Very little is known about the planet these Akki come
-    from. Highly unpredictable, they seem to behave just like atoms, as seen in quantum
-    mechanics
+  civLeaderName: "Akk\u2019Olix"
+  baseFriendship: 1
+  baseDependency: 1
+  baseInterest: 0
+  baseTrust: 0
+  itemPreferences: {fileID: 11400000, guid: 71307f0101db2c04f9e66df6b8a9e5b9, type: 2}
+  civilizationDescription: Originating from the distant sector of Kepler 452b, the
+    Akki are an elusive presence in the stellar charts. Their political structure
+    is undefined, though their erratic behavior suggests a form of anarchy governed
+    by principles that may be more quantum than social. They leave behind traces
+    of fractal symbols and complex harmonies, drifting through systems without establishing
+    permanent roots. To an observer, they appear to be watching the universe unfold,
+    though their silence makes it impossible to know if they are merely witnesses
+    or if they are waiting for a specific moment to act
   civilizationIcon: {fileID: 21300000, guid: 0314919a5e8302d4694efaa9b2646570, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 1
   angerTolerance: 0
   leaderPortrait: {fileID: -7317164782365401908, guid: 2aa9265ac9e44b140a8ce73ac5123533, type: 3}
-  startingResources: []
-  startingInventory: {fileID: 0}
+  startingResources:
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
+  - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  startingResourceAmounts: 900100002c01000014000000
+  startingInventory: {fileID: 11400000, guid: 3cb353dddcaeb4b47aa07ee83aa2bb66, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: 1b3c923b64d16264cac2283ae7b04755, type: 2}
