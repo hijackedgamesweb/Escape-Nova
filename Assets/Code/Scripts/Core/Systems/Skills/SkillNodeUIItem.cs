@@ -15,15 +15,14 @@ namespace Code.Scripts.UI.Skills
         [SerializeField] private TextMeshProUGUI nodeNameText;
 
         [Header("Colors")]
-        [SerializeField] private Color purchasedColor = Color.gray;
         [SerializeField] private Color unlockedColor = Color.green;
         [SerializeField] private Color lockedColor = Color.red;
+        [SerializeField] private Color purchasedDimColor = new Color(0.5f, 0.5f, 0.5f, 1f); // Color atenuado para nodos comprados
 
         [Header("Glow Effects")]
         [SerializeField] private bool enablePulse = true;
         [SerializeField] private float pulseSpeed = 2f;
         [SerializeField] private float unlockedPulseIntensity = 1.2f;
-        [SerializeField] private float purchasedPulseIntensity = 1.1f;
 
         private SkillNodeData nodeData;
         private SkillTreeManager skillTreeManager;
@@ -31,11 +30,20 @@ namespace Code.Scripts.UI.Skills
         private Vector3 originalScale;
         private Coroutine pulseCoroutine;
         private Color constellationColor = Color.white;
+        private Color purchasedColor = Color.white; // Color de comprado basado en constelación
 
         // Método para establecer el color de la constelación
         public void SetConstellationColor(Color color)
         {
             constellationColor = color;
+
+            // Calcular color para nodos comprados (versión más oscura del color de constelación)
+            purchasedColor = new Color(
+                color.r * 0.6f,  // 60% del brillo
+                color.g * 0.6f,
+                color.b * 0.6f,
+                1f
+            );
 
             // Aplicar inmediatamente si el nodo ya está configurado
             if (nodeData != null)
@@ -104,8 +112,8 @@ namespace Code.Scripts.UI.Skills
             {
                 if (skillTreeManager.IsSkillPurchased(nodeData))
                 {
-                    // NODO COMPRADO: Color fijo sin pulso
-                    backgroundImage.color = purchasedColor;
+                    // NODO COMPRADO: Color de constelación atenuado sin pulso
+                    backgroundImage.color = purchasedColor; // Usar versión oscura del color de constelación
                     nodeButton.interactable = true; // Sigue siendo clickeable para mostrar info
 
                     // DETENER TODOS LOS EFECTOS DE PULSO
@@ -124,11 +132,17 @@ namespace Code.Scripts.UI.Skills
                         glowEffect.gameObject.SetActive(false);
                     }
 
-                    // Mostrar indicador de comprado (checkmark o similar)
+                    // Mostrar indicador de comprado (checkmark o similar) en blanco para contraste
                     if (purchasedIndicator != null)
                     {
                         purchasedIndicator.gameObject.SetActive(true);
                         purchasedIndicator.color = Color.white;
+                    }
+
+                    // Asegurar que el nombre del nodo sea visible (blanco o color claro)
+                    if (nodeNameText != null)
+                    {
+                        nodeNameText.color = Color.white;
                     }
                 }
                 else if (skillTreeManager.IsSkillUnlocked(nodeData))
@@ -159,6 +173,12 @@ namespace Code.Scripts.UI.Skills
                     {
                         purchasedIndicator.gameObject.SetActive(false);
                     }
+
+                    // Restaurar color original del texto
+                    if (nodeNameText != null)
+                    {
+                        nodeNameText.color = Color.white;
+                    }
                 }
                 else
                 {
@@ -184,6 +204,12 @@ namespace Code.Scripts.UI.Skills
                     if (purchasedIndicator != null)
                     {
                         purchasedIndicator.gameObject.SetActive(false);
+                    }
+
+                    // Color de texto para nodos bloqueados (más oscuro)
+                    if (nodeNameText != null)
+                    {
+                        nodeNameText.color = new Color(0.3f, 0.3f, 0.3f, 1f);
                     }
                 }
             }
@@ -224,35 +250,46 @@ namespace Code.Scripts.UI.Skills
 
         private IEnumerator PurchaseEffectCoroutine()
         {
-            // Flash de compra
+            // Flash de compra usando el color de constelación original (no atenuado)
             Image image = GetComponent<Image>();
-            Color originalColor = image.color;
+            Color originalImageColor = image.color;
 
-            // Flash blanco rápido
-            image.color = Color.white;
+            // Flash rápido con el color brillante de la constelación
+            image.color = new Color(constellationColor.r * 1.5f, constellationColor.g * 1.5f, constellationColor.b * 1.5f, 1f);
             yield return new WaitForSeconds(0.1f);
 
-            // Vuelta al color original
-            image.color = originalColor;
-
-            // Efecto de "explosión" o "destello" sin pulso
-            Vector3 startScale = originalScale * 1.5f;
-            transform.localScale = startScale;
-
-            float duration = 0.3f;
+            // Transición suave al color de comprado (atenuado)
+            float duration = 0.4f;
             float elapsed = 0f;
+            Color startColor = image.color;
+            Color targetColor = purchasedColor;
 
             while (elapsed < duration)
             {
                 elapsed += Time.deltaTime;
                 float t = elapsed / duration;
+                image.color = Color.Lerp(startColor, targetColor, t);
+                yield return null;
+            }
+
+            image.color = targetColor;
+
+            // Efecto de "explosión" sutil
+            Vector3 startScale = originalScale * 1.3f;
+            transform.localScale = startScale;
+
+            elapsed = 0f;
+            while (elapsed < 0.3f)
+            {
+                elapsed += Time.deltaTime;
+                float t = elapsed / 0.3f;
                 transform.localScale = Vector3.Lerp(startScale, originalScale, t);
                 yield return null;
             }
 
             transform.localScale = originalScale;
 
-            // Después del efecto, actualizar el estado visual para asegurar que no hay pulso
+            // Asegurar que el estado visual está actualizado
             UpdateVisualState();
         }
 
