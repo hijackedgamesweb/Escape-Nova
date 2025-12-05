@@ -38,8 +38,7 @@ namespace Code.Scripts.Core.Managers
         public Entity.Player.Player Player => _player;
         private CommandInvoker _invoker;
         private IGameTime _gameTime;
-
-        private async void Awake()
+        protected override void Awake()
         {
             base.Awake();
             _invoker = new CommandInvoker();
@@ -48,17 +47,24 @@ namespace Code.Scripts.Core.Managers
             ServiceLocator.RegisterService<StorageSystem>(playerStorage);
             
             _player = new Entity.Player.Player(_invoker, _playerData, playerStorage);
-            if(SaveManager.Instance.SlotExists())
-                await SaveManager.Instance.LoadSlotAsync();
         }
 
         private async void Start()
         {
             _gameTime = ServiceLocator.GetService<IGameTime>();
-            _gameTime.OnCycleCompleted += UpdateWorld;
+            
+            if (_gameTime != null)
+            {
+                _gameTime.OnCycleCompleted += UpdateWorld;
+            }
+            
             _invoker.OnCommandExecuted += UpdateWorldOnCommand;
             ConstructionEvents.OnPlanetAdded += OnPlanetConstructed;
-            
+
+            if (SaveManager.Instance != null && SaveManager.Instance.SlotExists())
+            {
+                await SaveManager.Instance.LoadSlotAsync();
+            }
         }
 
         private void OnPlanetConstructed(Planet obj)
@@ -73,13 +79,15 @@ namespace Code.Scripts.Core.Managers
             }
         }
 
-
         [ContextMenu("Add Civilization")]
         public void AddCivilizationFromInspector()
         {
-            Civilization newCiv = new Civilization(_invoker, _civilizationSOs[0]);
-            _civilizationManager.AddCivilization(newCiv);
-            _civilizationSOs.RemoveAt(0);
+            if (_civilizationSOs.Count > 0)
+            {
+                Civilization newCiv = new Civilization(_invoker, _civilizationSOs[0]);
+                _civilizationManager.AddCivilization(newCiv);
+                _civilizationSOs.RemoveAt(0);
+            }
         }
         
         public void AddCivilization(string civ)
@@ -101,6 +109,7 @@ namespace Code.Scripts.Core.Managers
             var context = GetWorldContext();
             _civilizationManager.UpdateCivilizations(context);
         }
+        
         private void UpdateWorldOnCommand(ICommand command)
         {
             var context = GetWorldContext();
@@ -109,10 +118,10 @@ namespace Code.Scripts.Core.Managers
 
         private WorldContext GetWorldContext()
         {
-            WorldContext context = new WorldContext(_gameTime.CurrentCycle, _player);
+            int cycle = _gameTime != null ? _gameTime.CurrentCycle : 0;
+            WorldContext context = new WorldContext(cycle, _player);
             return context;
         }
-
 
         public void AddAllCivilizations()
         {
@@ -140,8 +149,11 @@ namespace Code.Scripts.Core.Managers
         public void RestoreState(JToken state)
         {
             JObject obj = state as JObject;
-            _player.RestoreState(obj["Player"]);
-            _civilizationManager.RestoreState(obj["Civilizations"]);
+            if (obj != null)
+            {
+                if(obj["Player"] != null) _player.RestoreState(obj["Player"]);
+                if(obj["Civilizations"] != null) _civilizationManager.RestoreState(obj["Civilizations"]);
+            }
         }
     }
 }
