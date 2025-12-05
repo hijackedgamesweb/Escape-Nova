@@ -22,7 +22,7 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         {
             InitializeHUD();
             ServiceLocator.GetService<SolarSystem>().Initialize();
-            AudioManager.Instance.PlayMusic("GameMusic"); //Llama al Audiomanager y comienza la musica del juego
+            AudioManager.Instance.PlayInGameMusic(); //Llama al Audiomanager y comienza la musica del juego
             GameInfoManager.Instance.DisplayGameInfo("TutorialInfo"); //Mostrar la ventana de tutorial
             _uiObject.gameObject.SetActive(true);
             _gameTimeManager = ServiceLocator.GetService<IGameTime>();

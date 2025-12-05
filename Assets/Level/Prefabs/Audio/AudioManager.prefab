@@ -50,10 +50,15 @@ MonoBehaviour:
   musicSounds:
   - name: MainMenuMusic
     clip: {fileID: 8300000, guid: fc11b8cdb17beef45ad3f7b19417c080, type: 3}
-  - name: GameMusic
-    clip: {fileID: 8300000, guid: 3606b18f105548c489e3320b2c8b24d4, type: 3}
   - name: CreditsMusic
     clip: {fileID: 8300000, guid: 1e21683310d465c40a6de875b467fc2f, type: 3}
+  inGameMusicSounds:
+  - name: Horizon
+    clip: {fileID: 8300000, guid: 3606b18f105548c489e3320b2c8b24d4, type: 3}
+  - name: Hope
+    clip: {fileID: 8300000, guid: 776fa1427e1592f4db364f906c08dfa0, type: 3}
+  - name: Lurking
+    clip: {fileID: 8300000, guid: ad1b959000e7a5741b0f79d1d1c83fc7, type: 3}
   sfxSounds:
   - name: ButtonClick
     clip: {fileID: 8300000, guid: 5ac25c2c52155e6469cd01d5cea696f8, type: 3}
