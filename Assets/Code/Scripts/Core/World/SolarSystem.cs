@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.SaveLoad.Interfaces;
+using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.Factory;
@@ -223,6 +224,28 @@ namespace Code.Scripts.Core.World
                     }
                 }
             }
+        }
+        
+        public int GetTotalResourceProductionFor(List<ResourceType> targetResources)
+        {
+            int grandTotalProduction = 0;
+    
+            foreach (var targetType in targetResources)
+            {
+                int totalForThisType = 0;
+        
+                foreach (var orbit in Planets)
+                {
+                    foreach (var planet in orbit)
+                    {
+                        if (planet == null) continue;
+
+                        totalForThisType += planet.GetResourceProductionOfType(targetType); 
+                    }
+                }
+                grandTotalProduction += totalForThisType;
+            }
+            return grandTotalProduction;
         }
     }
 }

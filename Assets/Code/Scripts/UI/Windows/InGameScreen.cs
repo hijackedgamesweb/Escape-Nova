@@ -56,6 +56,8 @@ namespace Code.Scripts.UI.Windows
 
         private void Update()
         {
+            if (UIManager.Instance.IsScreenActive<ActionPanelScreen>()) return;
+
             bool pausePressed = false;
             if (Keyboard.current != null)
             {
@@ -65,6 +67,7 @@ namespace Code.Scripts.UI.Windows
                     pausePressed = true;
                 }
             }
+    
             if (pausePressed)
             {
                 OpenPauseMenu();

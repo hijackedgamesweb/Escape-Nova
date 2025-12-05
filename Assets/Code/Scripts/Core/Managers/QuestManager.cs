@@ -60,7 +60,6 @@ namespace Code.Scripts.Core.Managers
             }
             else
             {
-                Debug.LogError($"Quest con ID {questId} no encontrada en ningún lote.");
             }
         }
         
@@ -127,15 +126,11 @@ namespace Code.Scripts.Core.Managers
 
             if (allComplete)
             {
-                Debug.Log($"Lote de misiones '{allQuestSets[currentQuestSetIndex].setName}' completado!");
                 currentQuestSetIndex++;
                 LoadCurrentQuestSet();
             }
         }
         
-        /// <summary>
-        /// Obtiene la lista de objetivos en tiempo real (RuntimeObjectives) de una QuestInstance activa.
-        /// </summary>
         public List<QuestObjective> GetRuntimeObjectivesForQuest(string questId)
         {
             var questInstance = activeQuests.Find(q => q.questData.QuestId == questId);
@@ -144,7 +139,6 @@ namespace Code.Scripts.Core.Managers
                 return questInstance.RuntimeObjectives;
             }
             
-            Debug.LogWarning($"No se encontró QuestInstance para {questId}. Mostrando objetivos estáticos.");
             var questData = VisibleQuests.Find(q => q.QuestId == questId);
             if (questData != null)
             {

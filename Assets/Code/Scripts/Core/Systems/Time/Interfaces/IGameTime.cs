@@ -17,5 +17,6 @@ namespace Code.Scripts.Core.Managers.Interfaces
         
         event Action<float> OnTimeAdvanced;
         event Action<int> OnCycleCompleted;
+        event Action<float> OnTimeScaleChanged;
     }
 }

@@ -100,6 +100,17 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 OnConstructionCompleted?.Invoke();
             }
         }
+        public int GetResourceProductionOfType(ResourceType type)
+        {
+            for (int i = 0; i < ProducibleResources.Count; i++)
+            {
+                if (ProducibleResources[i] == type)
+                {
+                    return ResourcePerCycle[i];
+                }
+            }
+            return 0;
+        }
 
         private void ApplyExistingGlobalImprovements()
         {
