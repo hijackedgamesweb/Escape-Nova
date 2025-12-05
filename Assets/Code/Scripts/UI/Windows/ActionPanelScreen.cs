@@ -3,6 +3,7 @@ using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
@@ -92,6 +93,18 @@ namespace Code.Scripts.UI.Windows
             else
             {
                 diplomacyBtn.interactable = false;
+            }
+        }
+
+        private void Update()
+        {
+            if (Keyboard.current != null)
+            {
+                if (Keyboard.current.escapeKey.wasPressedThisFrame || 
+                    Keyboard.current.tabKey.wasPressedThisFrame)
+                {
+                    OnReturnButtonPressed();
+                }
             }
         }
 
