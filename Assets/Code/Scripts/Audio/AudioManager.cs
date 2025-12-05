@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 using Code.Scripts.Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.Audio;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 public class AudioManager : Singleton<AudioManager>
 {
@@ -10,10 +12,19 @@ public class AudioManager : Singleton<AudioManager>
     private readonly Dictionary<string, float> _lastSfxPlayTime = new(); 
 
     public AudioMixer audioMixer;
-    public Sound[] musicSounds, sfxSounds;
+    public Sound[] musicSounds, inGameMusicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
     private float _masterVolume = 1f;
+
+    private int[] auxInGameMusicIndex;
+    private int maxIdx = 0;
+
+    private void Start()
+    {
+        auxInGameMusicIndex = new int[inGameMusicSounds.Length];
+    }
+    
     
     public void PlayMusic(string name)
     {
@@ -30,12 +41,44 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
+    
+    public void PlayInGameMusic()
+    {
+        if (maxIdx == inGameMusicSounds.Length)
+        {
+            auxInGameMusicIndex = new int[inGameMusicSounds.Length];
+        }
+        
+        int idx = Random.Range(0, inGameMusicSounds.Length);
+        while (auxInGameMusicIndex[idx] != 0)
+        {
+            idx = Random.Range(0, inGameMusicSounds.Length);
+        }
+        
+        auxInGameMusicIndex[idx] = 1;
+        maxIdx++;
+        
+        musicSource.clip = inGameMusicSounds[idx].clip;
+        musicSource.Play();
+        StartCoroutine(StartMethod(musicSource.clip.length));
+    }
+    
+    
+    private IEnumerator StartMethod(float clipLength)
+    {
+        yield return new WaitForSeconds(clipLength);
+
+        PlayInGameMusic();
+    }
+    
+    
     public void PlayMusic(AudioClip clip)
     {
         musicSource.clip = clip;
         musicSource.Play();
     }
-
+    
+    
     public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);
@@ -58,6 +101,7 @@ public class AudioManager : Singleton<AudioManager>
             Debug.Log("Sound not Found");
         }
     }
+    
     
     public void PlaySFX(AudioClip clip)
     {
