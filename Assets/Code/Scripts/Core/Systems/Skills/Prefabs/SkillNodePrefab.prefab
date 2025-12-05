@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 5883001753372187447}
   - component: {fileID: 3052762994060972842}
   - component: {fileID: 2436698868836132312}
+  - component: {fileID: 118589814187176418}
   m_Layer: 5
   m_Name: SkillNodePrefab
   m_TagString: Untagged
@@ -214,10 +215,23 @@ MonoBehaviour:
   glowEffect: {fileID: 1048900243183907355}
   purchasedIndicator: {fileID: 0}
   nodeNameText: {fileID: 0}
-  purchasedColor: {r: 1, g: 1, b: 1, a: 1}
   unlockedColor: {r: 1, g: 0.9320468, b: 0, a: 1}
   lockedColor: {r: 0.41509432, g: 0.18600924, b: 0.18600924, a: 1}
+  purchasedDimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   enablePulse: 1
   pulseSpeed: 2
   unlockedPulseIntensity: 1.2
-  purchasedPulseIntensity: 1.1
+--- !u!114 &118589814187176418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062538161482825696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd7028c5a3240e1a053713aa40164a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  header: 
+  content: 
