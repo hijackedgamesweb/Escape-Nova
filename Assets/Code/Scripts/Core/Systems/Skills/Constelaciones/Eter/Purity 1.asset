@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: hefesto3
+  m_Name: Purity 1
   m_EditorClassIdentifier: 
-  nodeName: HEFESTO 3
-  description: ccccccccccccc
-  skillPointCost: 1
-  prerequisiteNodes:
-  - {fileID: 11400000, guid: cca7332f298bc554d8ffe021e26684d5, type: 2}
-  positionInConstellation: {x: 2, y: 5}
+  nodeName: Purity
+  description: Natural planets generate 5% more resources.
+  skillPointCost: 0
+  prerequisiteNodes: []
+  positionInConstellation: {x: -7, y: 5}
   improvements:
-  - rid: -2
+  - rid: 4256129551800467535
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 4256129551800467535
+      type: {class: SingleResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        productionBonusPercent: 5

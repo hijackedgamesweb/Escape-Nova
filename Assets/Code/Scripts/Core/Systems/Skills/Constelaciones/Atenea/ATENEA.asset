@@ -15,6 +15,8 @@ MonoBehaviour:
   constellationName: ATENEA
   nodes:
   - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}
-  - {fileID: 11400000, guid: c1d7c3e557737dd4c9701e454be64c74, type: 2}
-  - {fileID: 11400000, guid: 3fc8cfd7b77e56f4e9a133e40683decb, type: 2}
-  - {fileID: 11400000, guid: 0bbd1612a36916144a2734ee8986ad4f, type: 2}
+  - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
+  - {fileID: 11400000, guid: 2837ca62aed57f54f82d7ae7a40a94be, type: 2}
+  - {fileID: 11400000, guid: b9432b2b69fcbf34fbf2e494b2220966, type: 2}
+  - {fileID: 11400000, guid: 5face63996c4ea348ad52fe7ef5c3e59, type: 2}
+  - {fileID: 11400000, guid: 8ac3fee9e33892b4c84dc84ebb6ef492, type: 2}

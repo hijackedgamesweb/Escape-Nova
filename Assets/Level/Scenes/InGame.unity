@@ -23939,7 +23939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1035813697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24026,6 +24026,12 @@ MonoBehaviour:
   modalCloseButton: {fileID: 1488419323}
   baseNodeSpacing: {x: 120, y: 120}
   connectionLineWidth: 3
+  constellationColors:
+  - {r: 0.5518868, g: 0.77317727, b: 1, a: 1}
+  - {r: 1, g: 0.5235849, b: 0.7617924, a: 1}
+  - {r: 0.7806604, g: 1, b: 0.5613208, a: 1}
+  - {r: 1, g: 0.78914267, b: 0.5707547, a: 1}
+  - {r: 0.7904456, g: 0.5896226, b: 1, a: 1}
 --- !u!114 &1035813701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24039,15 +24045,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.99215686}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7249197610883570905, guid: f6425ede4101418449a03141339ed639, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -31733,7 +31739,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1307095146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34523,12 +34529,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: constellations.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: 'constellations.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: 19338c8ec053bf749832b9e7103a60c9, type: 2}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: 'constellations.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8485dfa0547a5a6449cd8369fc014963, type: 2}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: 'constellations.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3dc7ff9c846fe28419aee0438f56753b, type: 2}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: 'constellations.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e9d5b38eb8c8ae45aa08c7fdfef4ab2, type: 2}
+    - target: {fileID: 3133312342042662071, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
+      propertyPath: 'constellations.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e9d5b38eb8c8ae45aa08c7fdfef4ab2, type: 2}
     - target: {fileID: 6370524988102040163, guid: 230488adcbd0d2947a90391428dc1af3, type: 3}
       propertyPath: m_Name
       value: '@SkillSystem'
@@ -43034,7 +43056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.000004, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -150, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825460833
@@ -44495,7 +44517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1905118054
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44556,7 +44578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -8298938443888920090, guid: 8311268d52f24f043bc2769751920c40, type: 3}
-  m_Type: 0
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

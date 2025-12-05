@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Caerus 1
+  m_Name: Mineralization
   m_EditorClassIdentifier: 
-  nodeName: .....
-  description: Dont Buy it
-  skillPointCost: 100
+  nodeName: Mineralization
+  description: All your planets generate 100% more resources.
+  skillPointCost: 7
   prerequisiteNodes:
-  - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}
-  positionInConstellation: {x: 2, y: 3}
+  - {fileID: 11400000, guid: 3d78696d54fd0d043935a14f2d5c8357, type: 2}
+  positionInConstellation: {x: -1, y: 3}
   improvements:
-  - rid: 6291952346365689856
+  - rid: 162876391971094611
   references:
     version: 2
     RefIds:
-    - rid: 6291952346365689856
-      type: {class: UnlockResearchSkillImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+    - rid: 162876391971094611
+      type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        researchIdToUnlock: caerus
+        productionBonusPercent: 100

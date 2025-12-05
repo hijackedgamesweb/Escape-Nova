@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: Twin planets
   m_EditorClassIdentifier: 
   nodeName: Twin planets
-  description: Planets of the same type in the same orbit generate 50% more resources.
+  description: Planets of the same type in the same orbit generate 25% more resources.
   skillPointCost: 2
-  prerequisiteNodes:
-  - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
-  - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
-  positionInConstellation: {x: 0, y: 2}
+  prerequisiteNodes: []
+  positionInConstellation: {x: 4.5, y: 3.33}
   improvements:
   - rid: 162876391971094612
   references:
@@ -27,4 +25,4 @@ MonoBehaviour:
     - rid: 162876391971094612
       type: {class: ProductionOnSamePlanetTogetherImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 50
+        productionBonusPercent: 25
