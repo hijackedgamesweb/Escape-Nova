@@ -19,7 +19,14 @@ MonoBehaviour:
   baseInterest: 1
   baseTrust: 1
   itemPreferences: {fileID: 11400000, guid: 469b955a8ac39c74e946df55f2382357, type: 2}
-  civilizationDescription: "no se que co\xF1o poner"
+  civilizationDescription: Famous for their communist social structure and deep empathetic
+    bonds, the Mippip are the galaxy's most outwardly welcoming species. Their society
+    is built on shared emotion and the distribution of resources, creating a world
+    that many consider a utopia. They are eager to form connections with other species
+    and are frequently found in diplomatic or humanitarian roles. However, their
+    way of relying on a collective mental link creates a relentless harmony, an intensity
+    of being together that can feel overwhelming to those accustomed to keeping their
+    thoughts to themselves
   civilizationIcon: {fileID: 21300000, guid: 59809e53e9dc1a94f82e21f1a493056a, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 3

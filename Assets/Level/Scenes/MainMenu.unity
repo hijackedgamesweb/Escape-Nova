@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d418fc3c1b0e02e4dbe50ea4b1ddce50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  font: {fileID: 0}
+  font: {fileID: 11400000, guid: 74207cb3f603c794bb7dacde0be38365, type: 2}
   _fontController: {fileID: 0}
 --- !u!4 &1718785883 stripped
 Transform:

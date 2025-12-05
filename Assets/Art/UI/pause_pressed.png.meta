@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ea7758638a9b3ab45991552263f5cfad
+guid: 7bdc6ebab20a4394a89b74ffb0590589
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9033598538284505753
-    second: SliderHUD_0
+      213: -6094710543449696968
+    second: pause_pressed_0
+  - first:
+      213: -8509485287852864132
+    second: pause_pressed_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +99,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SliderHUD_0
+      name: pause_pressed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 803
-        height: 89
+        width: 45
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 18, z: 18, w: 18}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7656012ddf532a280800000000000000
-      internalID: -9033598538284505753
+      spriteID: 8355ad84d0d3b6ba0800000000000000
+      internalID: -6094710543449696968
       vertices: []
       indices: 
       edges: []
@@ -138,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 20b1bc6d5068a1e479f2dada2546f827
+    spriteID: 32b78ee300a8c6240989e78b731c0aee
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +138,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SliderHUD_0: -9033598538284505753
+      pause_pressed_0: -6094710543449696968
+      pause_pressed_1: -8509485287852864132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

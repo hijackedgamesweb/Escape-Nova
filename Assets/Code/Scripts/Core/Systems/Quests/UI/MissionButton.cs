@@ -40,5 +40,12 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 highlightObject.SetActive(isSelected);
             }
         }
+
+        public void MarkAskCompleted()
+        {
+            missionTitleText.text += " (Completed)";
+        }
+        
+        public string GetMissionTitle(){return missionTitleText.text;}
     }
 }
