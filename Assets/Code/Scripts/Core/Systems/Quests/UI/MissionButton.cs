@@ -1,5 +1,6 @@
 using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
 using TMPro;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,6 +52,7 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 ColorBlock colors = btn.colors;
                 colors.normalColor = Color.green;
                 colors.selectedColor = Color.green;
+                colors.highlightedColor = new Color(0f, 0.39f, 0f);
                 btn.colors = colors;
             }
         }
