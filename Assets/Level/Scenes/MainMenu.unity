@@ -244,6 +244,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
+      propertyPath: inGameMusicSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
+      propertyPath: inGameMusicSounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ba74548f2f66e641a625262692d9711, type: 3}
+    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
+      propertyPath: inGameMusicSounds.Array.data[5].name
+      value: Ocean
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
