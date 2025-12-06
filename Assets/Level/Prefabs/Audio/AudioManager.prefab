@@ -61,6 +61,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ad1b959000e7a5741b0f79d1d1c83fc7, type: 3}
   - name: Serenade
     clip: {fileID: 8300000, guid: aaaacb92529795f41a8fbc41e5e2c0ce, type: 3}
+  - name: Voices
+    clip: {fileID: 8300000, guid: f78bc0d71da0a79448551293273b1982, type: 3}
   sfxSounds:
   - name: ButtonClick
     clip: {fileID: 8300000, guid: 5ac25c2c52155e6469cd01d5cea696f8, type: 3}
