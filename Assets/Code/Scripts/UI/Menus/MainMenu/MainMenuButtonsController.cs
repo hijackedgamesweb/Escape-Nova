@@ -1,13 +1,15 @@
 using System;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.SaveLoad;
 using Code.Scripts.Core.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuButtonsController : MonoBehaviour
 {
     [SerializeField] private Button continueButton;
-
+    [SerializeField] private GameObject storePanel;
     private void Start()
     {
         bool hasSaveData = SaveManager.Instance.SlotExists();
@@ -17,6 +19,7 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnPlayButtonPressed()
     {
         SaveManager.Instance.DeleteSlot();
+        SystemEvents.LockAll();
         Loader.Load("InGame");
     }
     
@@ -28,7 +31,7 @@ public class MainMenuButtonsController : MonoBehaviour
     
     public void OnCreditsButtonPressed()
     {
-        Debug.Log("Credits button pressed");
+        Loader.Load("CreditsScene");
     }
     
     public void OnLoadGameButtonPressed()
@@ -39,5 +42,10 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnContinueButtonPressed()
     {
         Loader.Load("InGame");
+    }
+    
+    public void OnStoreButtonPressed()
+    {
+        storePanel.SetActive(true);
     }
 }

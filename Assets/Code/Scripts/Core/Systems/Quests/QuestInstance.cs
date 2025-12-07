@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.GameInfo;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.SaveLoad.Interfaces;
@@ -50,7 +51,7 @@ namespace Code.Scripts.Core.Systems.Quests
                 {
                     objective.UnregisterEvents();
                 }
-        
+                MissionEvents.OnMissionCompleted?.Invoke();
                 NotificationManager.Instance.CreateNotification($"Quest Completed: {questData.Title}", NotificationType.Info);
         
                 if (questData.CompletionGameInfo != null)

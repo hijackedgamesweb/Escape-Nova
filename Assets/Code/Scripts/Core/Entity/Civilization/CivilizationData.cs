@@ -1,4 +1,5 @@
 using Code.Scripts.Core.SaveLoad.Interfaces;
+using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ namespace Code.Scripts.Core.Entity.Civilization
         public Sprite LeaderPortrait;
 
         public float AngerTolerance;
+        public PlanetDataSO HomePlanetData;
 
         public CivilizationData(CivilizationSO entitySO) : base(entitySO)
         {
@@ -22,6 +24,7 @@ namespace Code.Scripts.Core.Entity.Civilization
             CivilizationFlag = entitySO.civilizationFlag;
             LeaderPortrait = entitySO.leaderPortrait;
             AngerTolerance = entitySO.angerTolerance;
+            HomePlanetData = entitySO.preferredPlanet;
         }
         
         public CivilizationData() : base()
