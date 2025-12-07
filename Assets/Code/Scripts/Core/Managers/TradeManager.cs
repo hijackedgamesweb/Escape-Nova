@@ -37,17 +37,19 @@ namespace Code.Scripts.Core.Managers
             int playerOfferValue = TradeOfferCalculator.CalculateTotalOfferValue(playerTradeData, _playerEntity);
             int targetOfferValue = TradeOfferCalculator.CalculateTotalOfferValue(targetTradeData, _targetEntity);
             
-            float friendshipModifier = 0.5f + (_targetEntity.EntityState.FriendlinessLevel);
+            float friendshipModifier = 0.5f + (_targetEntity.CivilizationState.FriendlinessLevel);
             
             if (playerOfferValue * friendshipModifier >= targetOfferValue)
             {
                 // Execute trade
                 _playerEntity.StorageSystem.ExecuteTrade(playerTradeData, targetTradeData, _targetEntity.StorageSystem);
+                _targetEntity.AcceptTradeOffer();
                 CloseTradePanel();
                 DiplomacyEvents.OnTradeProposed?.Invoke((Civilization)_targetEntity, true);
             }
             else
             {
+                _targetEntity.DenyTradeOffer();
                 DiplomacyEvents.OnTradeProposed?.Invoke((Civilization)_targetEntity, false);
             }
         }

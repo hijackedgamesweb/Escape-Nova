@@ -48,6 +48,15 @@ namespace Code.Scripts.Core.Events
             OnStarsPanelUnlocked?.Invoke();
         }
         
+        public static void LockAll()
+        {
+            IsResearchUnlocked = false;
+            IsInventoryUnlocked = false;
+            IsConstellationsUnlocked = false;
+            IsStarsPanelUnlocked = false;
+            IsDiplomacyUnlocked = false;
+        }
+        
         public static void RequestMainMenu()
         {
             OnRequestMainMenu?.Invoke();
