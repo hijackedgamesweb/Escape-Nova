@@ -15,6 +15,7 @@ MonoBehaviour:
   QuestId: further_out
   Title: Further out
   Description: Who knew we would run out of space so quickly?
+  CompletionGameInfo: {fileID: 11400000, guid: 3b3f835df924532429a3c1b62531c2db, type: 2}
   Objectives:
   - rid: 6291952346365689933
   Rewards:

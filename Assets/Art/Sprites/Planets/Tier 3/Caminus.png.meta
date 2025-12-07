@@ -250,10 +250,10 @@ TextureImporter:
       name: Caminus_0
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1407
-        width: 96
-        height: 257
+        x: 50
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: Caminus_1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 1404
-        width: 96
-        height: 259
+        x: 200
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: Caminus_2
       rect:
         serializedVersion: 2
-        x: 815
-        y: 1402
-        width: 96
-        height: 260
+        x: 350
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: Caminus_3
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 1403
-        width: 96
-        height: 256
+        x: 500
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +338,10 @@ TextureImporter:
       name: Caminus_4
       rect:
         serializedVersion: 2
-        x: 1485
-        y: 1403
-        width: 96
-        height: 254
+        x: 650
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: Caminus_5
       rect:
         serializedVersion: 2
-        x: 1820
-        y: 1405
-        width: 96
-        height: 254
+        x: 800
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +382,10 @@ TextureImporter:
       name: Caminus_6
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 1405
-        width: 96
-        height: 254
+        x: 950
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: Caminus_7
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 1403
-        width: 96
-        height: 256
+        x: 1100
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: Caminus_8
       rect:
         serializedVersion: 2
-        x: 2825
-        y: 1402
-        width: 96
-        height: 259
+        x: 1250
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: Caminus_9
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 1403
-        width: 96
-        height: 259
+        x: 1400
+        y: 649
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: Caminus_10
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1069
-        width: 96
-        height: 255
+        x: 50
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,10 +492,10 @@ TextureImporter:
       name: Caminus_11
       rect:
         serializedVersion: 2
-        x: 480
-        y: 1068
-        width: 96
-        height: 257
+        x: 200
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +514,10 @@ TextureImporter:
       name: Caminus_12
       rect:
         serializedVersion: 2
-        x: 815
-        y: 1068
-        width: 96
-        height: 257
+        x: 350
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,10 +536,10 @@ TextureImporter:
       name: Caminus_13
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 1068
-        width: 96
-        height: 257
+        x: 499
+        y: 499
+        width: 102
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,10 +558,10 @@ TextureImporter:
       name: Caminus_14
       rect:
         serializedVersion: 2
-        x: 1485
-        y: 1066
-        width: 96
-        height: 259
+        x: 649
+        y: 499
+        width: 102
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +580,10 @@ TextureImporter:
       name: Caminus_15
       rect:
         serializedVersion: 2
-        x: 1820
-        y: 1066
-        width: 96
-        height: 259
+        x: 799
+        y: 499
+        width: 102
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -602,10 +602,10 @@ TextureImporter:
       name: Caminus_16
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 1068
-        width: 96
-        height: 258
+        x: 950
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,10 +624,10 @@ TextureImporter:
       name: Caminus_17
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 1070
-        width: 96
-        height: 256
+        x: 1100
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +646,10 @@ TextureImporter:
       name: Caminus_18
       rect:
         serializedVersion: 2
-        x: 2825
-        y: 1071
-        width: 96
-        height: 254
+        x: 1250
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +668,10 @@ TextureImporter:
       name: Caminus_19
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 1068
-        width: 96
-        height: 256
+        x: 1400
+        y: 499
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,10 +690,10 @@ TextureImporter:
       name: Caminus_20
       rect:
         serializedVersion: 2
-        x: 145
-        y: 732
-        width: 96
-        height: 257
+        x: 50
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +712,10 @@ TextureImporter:
       name: Caminus_21
       rect:
         serializedVersion: 2
-        x: 480
-        y: 733
-        width: 96
-        height: 255
+        x: 200
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -734,10 +734,10 @@ TextureImporter:
       name: Caminus_22
       rect:
         serializedVersion: 2
-        x: 815
-        y: 733
-        width: 96
-        height: 254
+        x: 350
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +756,10 @@ TextureImporter:
       name: Caminus_23
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 733
-        width: 96
-        height: 256
+        x: 500
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,10 +778,10 @@ TextureImporter:
       name: Caminus_24
       rect:
         serializedVersion: 2
-        x: 1485
-        y: 732
-        width: 96
-        height: 257
+        x: 650
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -800,10 +800,10 @@ TextureImporter:
       name: Caminus_25
       rect:
         serializedVersion: 2
-        x: 1820
-        y: 730
-        width: 96
-        height: 257
+        x: 800
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: Caminus_26
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 731
-        width: 96
-        height: 257
+        x: 950
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -844,10 +844,10 @@ TextureImporter:
       name: Caminus_27
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 732
-        width: 96
-        height: 259
+        x: 1100
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +866,10 @@ TextureImporter:
       name: Caminus_28
       rect:
         serializedVersion: 2
-        x: 2825
-        y: 734
-        width: 96
-        height: 257
+        x: 1250
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,10 +888,10 @@ TextureImporter:
       name: Caminus_29
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 736
-        width: 96
-        height: 255
+        x: 1400
+        y: 349
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -910,10 +910,10 @@ TextureImporter:
       name: Caminus_30
       rect:
         serializedVersion: 2
-        x: 145
-        y: 400
-        width: 96
-        height: 254
+        x: 50
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: Caminus_31
       rect:
         serializedVersion: 2
-        x: 480
-        y: 400
-        width: 96
-        height: 254
+        x: 200
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -954,10 +954,10 @@ TextureImporter:
       name: Caminus_32
       rect:
         serializedVersion: 2
-        x: 815
-        y: 399
-        width: 96
-        height: 257
+        x: 350
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,10 +976,10 @@ TextureImporter:
       name: Caminus_33
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 398
-        width: 96
-        height: 258
+        x: 500
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,10 +998,10 @@ TextureImporter:
       name: Caminus_34
       rect:
         serializedVersion: 2
-        x: 1485
-        y: 397
-        width: 96
-        height: 259
+        x: 650
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1020,10 +1020,10 @@ TextureImporter:
       name: Caminus_35
       rect:
         serializedVersion: 2
-        x: 1820
-        y: 398
-        width: 96
-        height: 257
+        x: 800
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1042,10 +1042,10 @@ TextureImporter:
       name: Caminus_36
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 400
-        width: 96
-        height: 256
+        x: 950
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1064,10 +1064,10 @@ TextureImporter:
       name: Caminus_37
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 399
-        width: 96
-        height: 257
+        x: 1100
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1086,10 +1086,10 @@ TextureImporter:
       name: Caminus_38
       rect:
         serializedVersion: 2
-        x: 2825
-        y: 400
-        width: 96
-        height: 255
+        x: 1250
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,10 +1108,10 @@ TextureImporter:
       name: Caminus_39
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 399
-        width: 96
-        height: 258
+        x: 1400
+        y: 199
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1130,10 +1130,10 @@ TextureImporter:
       name: Caminus_40
       rect:
         serializedVersion: 2
-        x: 145
-        y: 63
-        width: 96
-        height: 259
+        x: 50
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1152,10 +1152,10 @@ TextureImporter:
       name: Caminus_41
       rect:
         serializedVersion: 2
-        x: 480
-        y: 63
-        width: 96
-        height: 257
+        x: 200
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,10 +1174,10 @@ TextureImporter:
       name: Caminus_42
       rect:
         serializedVersion: 2
-        x: 815
-        y: 63
-        width: 96
-        height: 255
+        x: 350
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1196,10 +1196,10 @@ TextureImporter:
       name: Caminus_43
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 64
-        width: 96
-        height: 256
+        x: 500
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1218,10 +1218,10 @@ TextureImporter:
       name: Caminus_44
       rect:
         serializedVersion: 2
-        x: 1485
-        y: 66
-        width: 96
-        height: 256
+        x: 650
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1240,10 +1240,10 @@ TextureImporter:
       name: Caminus_45
       rect:
         serializedVersion: 2
-        x: 1820
-        y: 65
-        width: 96
-        height: 258
+        x: 800
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1262,10 +1262,10 @@ TextureImporter:
       name: Caminus_46
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 65
-        width: 96
-        height: 257
+        x: 950
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1284,10 @@ TextureImporter:
       name: Caminus_47
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 66
-        width: 96
-        height: 255
+        x: 1100
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1306,10 +1306,10 @@ TextureImporter:
       name: Caminus_48
       rect:
         serializedVersion: 2
-        x: 2825
-        y: 66
-        width: 96
-        height: 255
+        x: 1250
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: Caminus_49
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 66
-        width: 96
-        height: 254
+        x: 1400
+        y: 49
+        width: 101
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

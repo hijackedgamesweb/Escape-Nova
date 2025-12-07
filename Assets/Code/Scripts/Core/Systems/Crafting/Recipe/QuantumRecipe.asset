@@ -17,7 +17,7 @@ MonoBehaviour:
   description: 'Es el Quantum Memories de verdad te lo digo
 
 '
-  icon: {fileID: 0}
+  icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   ingredients:
   - resourceType: 3
     amount: 1
