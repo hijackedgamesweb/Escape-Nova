@@ -50,7 +50,6 @@ public class CraftingPanelUI : MonoBehaviour, ISaveable
         _storageSystem.OnStorageUpdated += OnStorageUpdated;
         
         _craftingSystem.OnCraftingStarted += OnCraftingStarted;
-        _craftingSystem.OnCraftingProgress += OnCraftingProgress;
         _craftingSystem.OnCraftingCompleted += OnCraftingCompleted;
         
         craftButton.onClick.AddListener(OnCraftButtonClicked);
@@ -77,7 +76,6 @@ public class CraftingPanelUI : MonoBehaviour, ISaveable
             _craftingSystem.OnRecipeUnlocked -= OnRecipeUnlocked;
             _craftingSystem.OnItemCrafted -= OnItemCrafted;
             _craftingSystem.OnCraftingStarted -= OnCraftingStarted;
-            _craftingSystem.OnCraftingProgress -= OnCraftingProgress;
             _craftingSystem.OnCraftingCompleted -= OnCraftingCompleted;
         }
         if (_storageSystem != null)
