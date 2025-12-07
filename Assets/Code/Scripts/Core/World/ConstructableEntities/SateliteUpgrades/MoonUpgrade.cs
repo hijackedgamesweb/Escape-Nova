@@ -30,7 +30,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades
 
             // Notificación
             NotificationManager.Instance?.CreateNotification(
-                $"¡Satélite Luna activado! Ganarás {skillPointsPerCycle} punto(s) de habilidad cada {cyclesRequired} ciclos solares.",
+                $"Luna active! {skillPointsPerCycle} star points each {cyclesRequired} cycles.",
                 NotificationType.Info);
         }
 
