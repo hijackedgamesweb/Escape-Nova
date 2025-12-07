@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Purity 1
+  m_Name: Quintessence
   m_EditorClassIdentifier: 
-  nodeName: Purity
-  description: Natural planets generate 5% more resources.
-  skillPointCost: 0
-  prerequisiteNodes: []
-  positionInConstellation: {x: -7, y: 5}
+  nodeName: Quintessence
+  description: Natural planets generate 100% more resources.
+  skillPointCost: 5
+  prerequisiteNodes:
+  - {fileID: 11400000, guid: 8c8faf561cd8a834b852d49ecbf6a23a, type: 2}
+  positionInConstellation: {x: -7, y: 1}
   improvements:
   - rid: 4256129551800467535
   references:
@@ -25,4 +26,4 @@ MonoBehaviour:
     - rid: 4256129551800467535
       type: {class: SingleResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 5
+        productionBonusPercent: 100
