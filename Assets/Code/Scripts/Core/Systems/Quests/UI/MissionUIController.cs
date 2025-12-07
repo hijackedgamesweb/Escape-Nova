@@ -76,28 +76,20 @@ namespace Code.Scripts.Core.Systems.Quests.UI
         
         private void HandleQuestCompleted(QuestInstance completedQuest)
         {
-            foreach (Transform child in missionButtonContainer)
-            {
-                if (child.GetComponent<MissionButton>().GetMissionTitle() == completedQuest.questData.Title)
-                {
-                    Destroy(child.gameObject);
-                }
-            }
-            
-            GameObject buttonObj = Instantiate(missionButtonPrefab, missionButtonContainer);
-            MissionButton missionButton = buttonObj.GetComponent<MissionButton>();
-            
-            if (missionButton != null)
-            {
-                missionButton.Setup(completedQuest.questData, this);
-            }
-                
+            PopulateMissionList();
+
             if (selectedQuest != null && completedQuest.questData.QuestId == selectedQuest.QuestId)
             {
-                missionButton.SetSelected(true);
+                foreach(Transform child in missionButtonContainer)
+                {
+                    var btn = child.GetComponent<MissionButton>();
+                    if(btn != null && btn.AssignedQuest.QuestId == selectedQuest.QuestId)
+                    {
+                        btn.SetSelected(true);
+                        break;
+                    }
+                }
             }
-            
-            missionButton.MarkAskCompleted();
         }
         
         private void PopulateMissionList()
@@ -106,9 +98,13 @@ namespace Code.Scripts.Core.Systems.Quests.UI
             {
                 Destroy(child.gameObject);
             }
-
             foreach (QuestData quest in questManager.VisibleQuests)
             {
+                if (questManager.CompletedQuests.Contains(quest))
+                {
+                    continue; 
+                }
+
                 GameObject buttonObj = Instantiate(missionButtonPrefab, missionButtonContainer);
                 MissionButton missionButton = buttonObj.GetComponent<MissionButton>();
 
@@ -122,7 +118,6 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                     missionButton.SetSelected(true);
                 }
             }
-            
             foreach (QuestData quest in questManager.CompletedQuests)
             {
                 GameObject buttonObj = Instantiate(missionButtonPrefab, missionButtonContainer);
@@ -137,7 +132,6 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 {
                     missionButton.SetSelected(true);
                 }
-                
                 missionButton.MarkAskCompleted();
             }
         }
