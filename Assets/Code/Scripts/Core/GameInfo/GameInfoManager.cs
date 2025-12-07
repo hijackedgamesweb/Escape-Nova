@@ -1,48 +1,60 @@
 using System;
-using Code.Scripts.Core.GameInfo;
+using System.Collections.Generic;
 using Code.Scripts.UI.Menus;
 using UnityEngine;
 
-public class GameInfoManager : MonoBehaviour
+namespace Code.Scripts.Core.GameInfo
 {
-    
-    //Variables
-    public static GameInfoManager Instance { get; private set; }
+    public class GameInfoManager : MonoBehaviour
+    {
+        public static GameInfoManager Instance { get; private set; }
 
-    [SerializeField] private GameInfoPanel _gameInfoPanel;
-    [SerializeField] private GameInfoSO[] gameInfos;
-    
-    private GameInfoSO _gameInfo;
-    
-    //Metodos
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
+        [SerializeField] private GameInfoPanel _gameInfoPanel;
+        [SerializeField] private GameInfoSO[] gameInfos;
+        private Dictionary<string, GameInfoSO> _infoDictionary = new Dictionary<string, GameInfoSO>();
+
+        private void Awake()
         {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
-            
-        gameObject.SetActive(false);
-    }
-    
-    
-    public void DisplayGameInfo(String name)
-    {
-        bool found = false;
-        
-        foreach (var gameInfo in gameInfos)
-        {
-            if (gameInfo.name == name)
+            if (Instance != null && Instance != this)
             {
-                found = true;
-                _gameInfo = gameInfo;
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+            
+            foreach (var info in gameInfos)
+            {
+                if (!_infoDictionary.ContainsKey(info.name))
+                {
+                    _infoDictionary.Add(info.name, info);
+                }
+            }
+
+            gameObject.SetActive(false); 
+        }
+        
+        public void DisplayGameInfo(GameInfoSO infoConfig)
+        {
+            if (infoConfig == null) 
+            {
+                Debug.LogWarning("GameInfoManager: Se intentó mostrar información pero el SO es nulo.");
+                return;
+            }
+
+            gameObject.SetActive(true); 
+            _gameInfoPanel.ShowPanel(infoConfig.titles, infoConfig.messages, infoConfig.images);
+        }
+
+        public void DisplayGameInfo(string name)
+        {
+            if (_infoDictionary.TryGetValue(name, out GameInfoSO foundInfo))
+            {
+                DisplayGameInfo(foundInfo);
+            }
+            else
+            {
+                Debug.LogWarning($"GameInfoManager: No se encontró información con el nombre '{name}'");
             }
         }
-        
-        if(found){_gameInfoPanel.ShowPanel(_gameInfo.titles, _gameInfo.messages, _gameInfo.images);}
     }
 }
