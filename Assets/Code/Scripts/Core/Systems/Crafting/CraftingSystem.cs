@@ -40,7 +40,6 @@ namespace Code.Scripts.Core.Systems.Crafting
 
         public event Action<string> OnRecipeUnlocked;
         public event Action<string> OnCraftingStarted;
-        // Eliminado OnCraftingProgress para evitar sobrecarga (Usaremos Polling en la UI)
         public event Action<string> OnCraftingCompleted;
         public event Action<string, int> OnItemCrafted;
 
