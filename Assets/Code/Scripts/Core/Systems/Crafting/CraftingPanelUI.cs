@@ -3,13 +3,15 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Crafting;
+using Newtonsoft.Json.Linq;
 
-public class CraftingPanelUI : MonoBehaviour
+public class CraftingPanelUI : MonoBehaviour, ISaveable
 {
     private CraftingSystem _craftingSystem;
     private StorageSystem _storageSystem;
@@ -23,7 +25,6 @@ public class CraftingPanelUI : MonoBehaviour
     [SerializeField] private Image detailIcon;
     [SerializeField] private TextMeshProUGUI detailName;
     [SerializeField] private TextMeshProUGUI detailDescription;
-    [SerializeField] private TextMeshProUGUI detailTimeText;
     [SerializeField] private Button craftButton;
     [SerializeField] private TMP_InputField craftAmountInput;
     
@@ -213,15 +214,6 @@ public class CraftingPanelUI : MonoBehaviour
             detailName.text = outputItemData.displayName;
             detailDescription.text = outputItemData.description;
         }
-        
-        if (detailTimeText != null)
-        {
-            const float secondsPerCycle = 5.0f;
-            float cyclesAsFloat = recipe.craftingTimeInSeconds / secondsPerCycle;
-            int displayCycles = Mathf.CeilToInt(cyclesAsFloat);
-            
-            detailTimeText.text = $"Time: {displayCycles} cicles";
-        }
 
         foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
 
@@ -338,5 +330,41 @@ public class CraftingPanelUI : MonoBehaviour
         {
             UpdateCraftButtonState(); 
         }
+    }
+
+    public string GetSaveId()
+    {
+        return "CraftingPanelUI";
+    }
+
+    public JToken CaptureState()
+    {
+        // Save all recipe buttons
+        var recipes = new JArray();
+        foreach (var button in _recipeButtons)
+        {
+            recipes.Add(button.RecipeId);
+        }
+
+        var state = new JObject()
+        {
+            ["UnlockedRecipes"] = recipes
+        };
+        return state;
+    }
+
+    public void RestoreState(JToken state)
+    {
+        JObject obj = state as JObject;
+        JArray recipes = obj["UnlockedRecipes"] as JArray;
+
+        _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
+        foreach (var recipeIdToken in recipes)
+        {
+            string recipeId = recipeIdToken.ToObject<string>();
+            _craftingSystem.UnlockRecipe(recipeId);
+        }
+
+        RefreshRecipeList();
     }
 }
