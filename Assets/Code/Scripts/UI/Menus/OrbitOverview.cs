@@ -98,8 +98,11 @@ namespace Code.Scripts.UI.Menus
                 if (currentConstructionType == ConstructionType.Satelite)
                 {
                     SateliteDataSO sateliteDataSo = _sateliteListInitializer.GetCurrentSateliteData();
-                    if (sateliteDataSo == null)
+                    if (sateliteDataSo == null) return;
+                    Planet targetPlanet = _solarSystem.Planets[orbitIndex][positionInOrbit];
+                    if (targetPlanet != null && !targetPlanet.CanAddSatelite())
                     {
+                        NotificationManager.Instance.CreateNotification($"Orbit full on {targetPlanet.Name}", NotificationType.Warning);
                         return;
                     }
                     bool consumed = _sateliteListInitializer.ConsumeResourcesForSatelite(sateliteDataSo);
@@ -111,6 +114,7 @@ namespace Code.Scripts.UI.Menus
                     }
                     else
                     {
+                        NotificationManager.Instance.CreateNotification("Not enough resources!", NotificationType.Error);
                     }
                 }
             });
