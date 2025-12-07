@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: liquefacta
   category: 0
   displayName: Liquefacta
-  description: Unlocks the planet 'Liquefacta'. This planet generates 150 fire, metal
-    and ice every solar cycle.
+  description: Unlocks the planet 'Liquefacta'. This planet generates 150 Magmavite,
+    Paladium and Frostice every solar cycle.
   icon: {fileID: 3098759606283545503, guid: 022f1e2ca35b5824b9cdaa7c711b1df5, type: 3}
   prerequisites:
   - researchId: blocked_until_heatingthingsup_quest_completed

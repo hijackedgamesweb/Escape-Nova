@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: istoovii
   category: 0
   displayName: Istoovii
-  description: Unlocks the planet 'Istoovii'.  This planet generates 500 fire, sand
-    and stone every solar cycle.
+  description: Unlocks the planet 'Istoovii'.  This planet generates 500 Magmavite,
+    Sandit and Batee every solar cycle.
   icon: {fileID: 3948998494920026277, guid: 8abd4e1bb79b3e644a2fedbd142eda02, type: 3}
   prerequisites:
   - researchId: blocked_until_firstcontact_quest_completed
