@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Purity 4
+  m_Name: Erebus
   m_EditorClassIdentifier: 
-  nodeName: Purity
+  nodeName: Erebus
   description: Natural planets generate 10% more resources.
   skillPointCost: 1
   prerequisiteNodes:

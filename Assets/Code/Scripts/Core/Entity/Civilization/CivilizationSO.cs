@@ -20,6 +20,7 @@ namespace Code.Scripts.Core.Entity.Civilization
     public class CivilizationSO : EntitySO
     {
         [Header("Civilization Info")]
+        [TextArea(3, 10)]
         public string civilizationDescription;
         public Sprite civilizationIcon;
         public Sprite civilizationFlag;

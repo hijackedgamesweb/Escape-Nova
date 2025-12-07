@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: dimidium
   category: 0
   displayName: Dimidium
-  description: Unlocks the planet 'Dimidium'. This planet generates 200 fire and
-    ice every solar cycle.
+  description: Unlocks the planet 'Dimidium'. This planet generates 200 Magmavite
+    and Frostice every solar cycle.
   icon: {fileID: 1199031869328478581, guid: e927cf56d6e47b44997291dc85d71838, type: 3}
   prerequisites:
   - researchId: blocked_until_heatingthingsup_quest_completed

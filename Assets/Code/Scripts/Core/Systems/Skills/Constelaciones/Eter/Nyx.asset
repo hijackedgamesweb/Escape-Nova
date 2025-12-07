@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
-  m_Name: Purity 3
+  m_Name: Nyx
   m_EditorClassIdentifier: 
-  nodeName: Purity
-  description: Natural planets generate 100% more resources.
-  skillPointCost: 5
+  nodeName: Nyx
+  description: Natural planets generate 50% more resources.
+  skillPointCost: 3
   prerequisiteNodes:
-  - {fileID: 11400000, guid: 8c8faf561cd8a834b852d49ecbf6a23a, type: 2}
-  positionInConstellation: {x: -7, y: 1}
+  - {fileID: 11400000, guid: e3da1c1b4ea3656449608e9e5329ac43, type: 2}
+  positionInConstellation: {x: -7.5, y: 3}
   improvements:
   - rid: 4256129551800467535
   references:
@@ -26,4 +26,4 @@ MonoBehaviour:
     - rid: 4256129551800467535
       type: {class: SingleResourceProductionImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 100
+        productionBonusPercent: 50

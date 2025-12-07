@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: blobi
   category: 0
   displayName: Blobi
-  description: Unlocks the planet 'Blobi'. This planet generates 150 stone, metal
-    and sand every solar cycle.
+  description: Unlocks the planet 'Blobi'. This planet generates 150 Batee, Paladium
+    and Sandit every solar cycle.
   icon: {fileID: 3270104525328145908, guid: be5cca90c386fd34599d05347b1248c9, type: 3}
   prerequisites:
   - researchId: blocked_until_heatingthingsup_quest_completed

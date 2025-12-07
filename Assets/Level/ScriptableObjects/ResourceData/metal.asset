@@ -16,5 +16,5 @@ MonoBehaviour:
   DisplayName: Paladium
   Icon: {fileID: -6116414136729066917, guid: 55f0cf9a04edac94abcb26f247320e50, type: 3}
   Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
-  MaxStack: 1000000000
+  MaxStack: 100000000
   VisualPrefab: {fileID: 0}

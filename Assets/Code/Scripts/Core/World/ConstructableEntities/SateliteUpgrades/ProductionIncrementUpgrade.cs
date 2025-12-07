@@ -14,7 +14,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades
             planet.AddImprovement("Satelite", productionIncrement);
             
             NotificationManager.Instance.CreateNotification(
-                $"La producción de recursos del planeta {planet.Name} ha aumentado en un {productionIncrement}%", 
+                $"{planet.Name}'s resources production has improved {productionIncrement}%", 
                 NotificationType.Info);
         }
     }

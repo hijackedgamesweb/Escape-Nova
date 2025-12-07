@@ -19,14 +19,14 @@ MonoBehaviour:
   baseInterest: 0
   baseTrust: 0
   itemPreferences: {fileID: 11400000, guid: 71307f0101db2c04f9e66df6b8a9e5b9, type: 2}
-  civilizationDescription: Originating from the distant sector of Kepler 452b, the
+  civilizationDescription: "Originating from the distant sector of Kepler 452b, the
     Akki are an elusive presence in the stellar charts. Their political structure
     is undefined, though their erratic behavior suggests a form of anarchy governed
-    by principles that may be more quantum than social. They leave behind traces
+    by principles that may be more quantum than social. \n\nThey leave behind traces
     of fractal symbols and complex harmonies, drifting through systems without establishing
-    permanent roots. To an observer, they appear to be watching the universe unfold,
-    though their silence makes it impossible to know if they are merely witnesses
-    or if they are waiting for a specific moment to act
+    permanent roots. \n\nTo an observer, they appear to be watching the universe
+    unfold, though their silence makes it impossible to know if they are merely witnesses
+    or if they are waiting for a specific moment to act"
   civilizationIcon: {fileID: 21300000, guid: 0314919a5e8302d4694efaa9b2646570, type: 3}
   civilizationFlag: {fileID: 0}
   aiController: 1

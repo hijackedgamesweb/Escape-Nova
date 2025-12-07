@@ -1,4 +1,5 @@
 using System;
+using System;
 using System.Collections.Generic;
 using Code.Scripts.Camera;
 using Code.Scripts.Core.Managers;
@@ -144,6 +145,18 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             RecalculateProduction();
         }
 
+        public bool CanAddSatelite()
+        {
+            if (_occupiedSatelliteSlots == null) return false;
+            for (int i = 0; i < _satelliteSlots; i++)
+            {
+                if (!_occupiedSatelliteSlots[i])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         private void RecalculateProduction()
         {
             for (int i = 0; i < ResourcePerCycle.Length; i++)

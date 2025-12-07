@@ -72,6 +72,14 @@ namespace Code.Scripts.Core.World
             }
         }
 
+        public Planet GetPlanet(int orbitIndex, int planetIndex)
+        {
+            if (orbitIndex < 0 || orbitIndex >= Planets.Count) return null;
+            if (planetIndex < 0 || planetIndex >= Planets[orbitIndex].Count) return null;
+            
+            return Planets[orbitIndex][planetIndex];
+        }
+
         public void ResetScrollPositionToTop()
         {
             if (planetListScrollRect == null)
