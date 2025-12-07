@@ -152,12 +152,6 @@ TextureImporter:
   - first:
       213: 8376974068769698876
     second: Sekarral_49
-  - first:
-      213: 1272389090455400031
-    second: Sekarral_50
-  - first:
-      213: 3055828617487070693
-    second: Sekarral_51
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -190,7 +184,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -256,12 +250,12 @@ TextureImporter:
       name: Sekarral_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 1679
-        width: 308
-        height: 111
+        x: 50
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +272,12 @@ TextureImporter:
       name: Sekarral_1
       rect:
         serializedVersion: 2
-        x: 440
-        y: 1679
-        width: 312
-        height: 111
+        x: 250
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +294,12 @@ TextureImporter:
       name: Sekarral_2
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1679
-        width: 313
-        height: 111
+        x: 450
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +316,12 @@ TextureImporter:
       name: Sekarral_3
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1679
-        width: 311
-        height: 111
+        x: 650
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +338,12 @@ TextureImporter:
       name: Sekarral_4
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 1679
-        width: 309
-        height: 111
+        x: 850
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +360,12 @@ TextureImporter:
       name: Sekarral_5
       rect:
         serializedVersion: 2
-        x: 1965
-        y: 1679
-        width: 304
-        height: 111
+        x: 1050
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,12 +382,12 @@ TextureImporter:
       name: Sekarral_6
       rect:
         serializedVersion: 2
-        x: 2345
-        y: 1679
-        width: 302
-        height: 111
+        x: 1250
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,12 +404,12 @@ TextureImporter:
       name: Sekarral_7
       rect:
         serializedVersion: 2
-        x: 2728
-        y: 1679
-        width: 302
-        height: 111
+        x: 1450
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,12 +426,12 @@ TextureImporter:
       name: Sekarral_8
       rect:
         serializedVersion: 2
-        x: 3106
-        y: 1679
-        width: 305
-        height: 111
+        x: 1650
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,12 +448,12 @@ TextureImporter:
       name: Sekarral_9
       rect:
         serializedVersion: 2
-        x: 3483
-        y: 1679
-        width: 309
-        height: 111
+        x: 1850
+        y: 849
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,12 +470,12 @@ TextureImporter:
       name: Sekarral_10
       rect:
         serializedVersion: 2
-        x: 62
-        y: 1299
-        width: 309
-        height: 111
+        x: 50
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,12 +492,12 @@ TextureImporter:
       name: Sekarral_11
       rect:
         serializedVersion: 2
-        x: 443
-        y: 1299
-        width: 307
-        height: 111
+        x: 250
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,12 +514,12 @@ TextureImporter:
       name: Sekarral_12
       rect:
         serializedVersion: 2
-        x: 826
-        y: 1299
-        width: 301
-        height: 111
+        x: 450
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -542,12 +536,12 @@ TextureImporter:
       name: Sekarral_13
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 1299
-        width: 305
-        height: 111
+        x: 650
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,12 +558,12 @@ TextureImporter:
       name: Sekarral_14
       rect:
         serializedVersion: 2
-        x: 1583
-        y: 1299
-        width: 307
-        height: 111
+        x: 850
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,12 +580,12 @@ TextureImporter:
       name: Sekarral_15
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 1299
-        width: 307
-        height: 111
+        x: 1050
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,12 +602,12 @@ TextureImporter:
       name: Sekarral_16
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 1299
-        width: 307
-        height: 111
+        x: 1250
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -627,15 +621,37 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Sekarral_17
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 649
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f28d20f115935cd0800000000000000
+      internalID: -2570547058021924110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Sekarral_18
       rect:
         serializedVersion: 2
-        x: 2719
-        y: 1299
-        width: 311
-        height: 111
+        x: 1650
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +668,12 @@ TextureImporter:
       name: Sekarral_19
       rect:
         serializedVersion: 2
-        x: 3098
-        y: 1299
-        width: 310
-        height: 111
+        x: 1850
+        y: 649
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +690,12 @@ TextureImporter:
       name: Sekarral_20
       rect:
         serializedVersion: 2
-        x: 3480
-        y: 1299
-        width: 308
-        height: 111
+        x: 50
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +712,12 @@ TextureImporter:
       name: Sekarral_21
       rect:
         serializedVersion: 2
-        x: 59
-        y: 919
-        width: 306
-        height: 111
+        x: 250
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -718,12 +734,12 @@ TextureImporter:
       name: Sekarral_22
       rect:
         serializedVersion: 2
-        x: 439
-        y: 919
-        width: 308
-        height: 111
+        x: 450
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -740,12 +756,12 @@ TextureImporter:
       name: Sekarral_23
       rect:
         serializedVersion: 2
-        x: 818
-        y: 919
-        width: 309
-        height: 111
+        x: 650
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -762,12 +778,12 @@ TextureImporter:
       name: Sekarral_24
       rect:
         serializedVersion: 2
-        x: 1199
-        y: 919
-        width: 308
-        height: 111
+        x: 850
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -784,12 +800,12 @@ TextureImporter:
       name: Sekarral_25
       rect:
         serializedVersion: 2
-        x: 1581
-        y: 919
-        width: 306
-        height: 111
+        x: 1050
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -806,12 +822,12 @@ TextureImporter:
       name: Sekarral_26
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 919
-        width: 306
-        height: 111
+        x: 1250
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -828,12 +844,12 @@ TextureImporter:
       name: Sekarral_27
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 919
-        width: 309
-        height: 111
+        x: 1450
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -850,12 +866,12 @@ TextureImporter:
       name: Sekarral_28
       rect:
         serializedVersion: 2
-        x: 2719
-        y: 919
-        width: 313
-        height: 111
+        x: 1650
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -872,12 +888,12 @@ TextureImporter:
       name: Sekarral_29
       rect:
         serializedVersion: 2
-        x: 3100
-        y: 919
-        width: 312
-        height: 111
+        x: 1850
+        y: 449
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -894,12 +910,12 @@ TextureImporter:
       name: Sekarral_30
       rect:
         serializedVersion: 2
-        x: 3481
-        y: 919
-        width: 309
-        height: 111
+        x: 50
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -916,12 +932,12 @@ TextureImporter:
       name: Sekarral_31
       rect:
         serializedVersion: 2
-        x: 63
-        y: 539
-        width: 303
-        height: 111
+        x: 250
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -938,12 +954,12 @@ TextureImporter:
       name: Sekarral_32
       rect:
         serializedVersion: 2
-        x: 442
-        y: 539
-        width: 304
-        height: 111
+        x: 450
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -960,12 +976,12 @@ TextureImporter:
       name: Sekarral_33
       rect:
         serializedVersion: 2
-        x: 820
-        y: 539
-        width: 304
-        height: 111
+        x: 650
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -982,12 +998,12 @@ TextureImporter:
       name: Sekarral_34
       rect:
         serializedVersion: 2
-        x: 1199
-        y: 539
-        width: 308
-        height: 111
+        x: 850
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1004,12 +1020,12 @@ TextureImporter:
       name: Sekarral_35
       rect:
         serializedVersion: 2
-        x: 1579
-        y: 539
-        width: 311
-        height: 111
+        x: 1050
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1026,12 +1042,12 @@ TextureImporter:
       name: Sekarral_36
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 539
-        width: 311
-        height: 111
+        x: 1250
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1048,12 +1064,12 @@ TextureImporter:
       name: Sekarral_37
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 539
-        width: 308
-        height: 111
+        x: 1450
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1070,12 +1086,12 @@ TextureImporter:
       name: Sekarral_38
       rect:
         serializedVersion: 2
-        x: 2723
-        y: 539
-        width: 304
-        height: 111
+        x: 1650
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1092,12 +1108,12 @@ TextureImporter:
       name: Sekarral_39
       rect:
         serializedVersion: 2
-        x: 3104
-        y: 539
-        width: 303
-        height: 111
+        x: 1850
+        y: 249
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1114,12 +1130,12 @@ TextureImporter:
       name: Sekarral_40
       rect:
         serializedVersion: 2
-        x: 3482
-        y: 539
-        width: 307
-        height: 111
+        x: 50
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1133,15 +1149,37 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Sekarral_41
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 49
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9247b9242d3940c60800000000000000
+      internalID: 7783508587272959017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Sekarral_42
       rect:
         serializedVersion: 2
-        x: 63
-        y: 159
-        width: 307
-        height: 111
+        x: 450
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1158,12 +1196,12 @@ TextureImporter:
       name: Sekarral_43
       rect:
         serializedVersion: 2
-        x: 441
-        y: 159
-        width: 310
-        height: 111
+        x: 650
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1180,12 +1218,12 @@ TextureImporter:
       name: Sekarral_44
       rect:
         serializedVersion: 2
-        x: 822
-        y: 159
-        width: 310
-        height: 111
+        x: 850
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1202,12 +1240,12 @@ TextureImporter:
       name: Sekarral_45
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 159
-        width: 309
-        height: 111
+        x: 1050
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1224,12 +1262,12 @@ TextureImporter:
       name: Sekarral_46
       rect:
         serializedVersion: 2
-        x: 1583
-        y: 159
-        width: 309
-        height: 111
+        x: 1250
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1246,12 +1284,12 @@ TextureImporter:
       name: Sekarral_47
       rect:
         serializedVersion: 2
-        x: 1965
-        y: 159
-        width: 308
-        height: 111
+        x: 1450
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1268,12 +1306,12 @@ TextureImporter:
       name: Sekarral_48
       rect:
         serializedVersion: 2
-        x: 2344
-        y: 159
-        width: 308
-        height: 111
+        x: 1650
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1290,12 +1328,12 @@ TextureImporter:
       name: Sekarral_49
       rect:
         serializedVersion: 2
-        x: 2724
-        y: 159
-        width: 308
-        height: 111
+        x: 1850
+        y: 49
+        width: 151
+        height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1308,55 +1346,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Sekarral_50
-      rect:
-        serializedVersion: 2
-        x: 3103
-        y: 159
-        width: 309
-        height: 111
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5e2da8e22f68a110800000000000000
-      internalID: 1272389090455400031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sekarral_51
-      rect:
-        serializedVersion: 2
-        x: 3483
-        y: 159
-        width: 308
-        height: 111
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e53ac7efeb786a20800000000000000
-      internalID: 3055828617487070693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08ee06a61cab0054a82774f80e60334e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1412,8 +1406,6 @@ TextureImporter:
       Sekarral_48: -4508895957235058476
       Sekarral_49: 8376974068769698876
       Sekarral_5: 7421526970404338899
-      Sekarral_50: 1272389090455400031
-      Sekarral_51: 3055828617487070693
       Sekarral_6: -8884279229514913989
       Sekarral_7: 6210280586831163840
       Sekarral_8: 5803618637093438033

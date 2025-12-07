@@ -152,15 +152,6 @@ TextureImporter:
   - first:
       213: -151581378372481238
     second: Halongona_49
-  - first:
-      213: -4258715641877617771
-    second: Halongona_50
-  - first:
-      213: 6474331817363327015
-    second: Halongona_51
-  - first:
-      213: -4111376969968726337
-    second: Halongona_52
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -259,12 +250,12 @@ TextureImporter:
       name: Halongona_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1374
-        width: 182
-        height: 182
+        x: 50
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +272,12 @@ TextureImporter:
       name: Halongona_1
       rect:
         serializedVersion: 2
-        x: 415
-        y: 1374
-        width: 181
-        height: 182
+        x: 225
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +294,12 @@ TextureImporter:
       name: Halongona_2
       rect:
         serializedVersion: 2
-        x: 734
-        y: 1375
-        width: 182
-        height: 180
+        x: 400
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,12 +316,12 @@ TextureImporter:
       name: Halongona_3
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 1375
-        width: 184
-        height: 178
+        x: 575
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,12 +338,12 @@ TextureImporter:
       name: Halongona_4
       rect:
         serializedVersion: 2
-        x: 1373
-        y: 1375
-        width: 184
-        height: 180
+        x: 750
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -369,12 +360,12 @@ TextureImporter:
       name: Halongona_5
       rect:
         serializedVersion: 2
-        x: 1694
-        y: 1376
-        width: 182
-        height: 179
+        x: 925
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -391,12 +382,12 @@ TextureImporter:
       name: Halongona_6
       rect:
         serializedVersion: 2
-        x: 2016
-        y: 1376
-        width: 180
-        height: 180
+        x: 1100
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -413,12 +404,12 @@ TextureImporter:
       name: Halongona_7
       rect:
         serializedVersion: 2
-        x: 2335
-        y: 1376
-        width: 181
-        height: 179
+        x: 1275
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -435,12 +426,12 @@ TextureImporter:
       name: Halongona_8
       rect:
         serializedVersion: 2
-        x: 2655
-        y: 1375
-        width: 179
-        height: 181
+        x: 1450
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -457,12 +448,12 @@ TextureImporter:
       name: Halongona_9
       rect:
         serializedVersion: 2
-        x: 2974
-        y: 1374
-        width: 180
-        height: 182
+        x: 1625
+        y: 749
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -479,12 +470,12 @@ TextureImporter:
       name: Halongona_10
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1052
-        width: 182
-        height: 184
+        x: 50
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -501,12 +492,12 @@ TextureImporter:
       name: Halongona_11
       rect:
         serializedVersion: 2
-        x: 413
-        y: 1052
-        width: 183
-        height: 183
+        x: 225
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -523,12 +514,12 @@ TextureImporter:
       name: Halongona_12
       rect:
         serializedVersion: 2
-        x: 734
-        y: 1053
-        width: 183
-        height: 181
+        x: 400
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -545,12 +536,12 @@ TextureImporter:
       name: Halongona_13
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 1054
-        width: 186
-        height: 179
+        x: 575
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -567,12 +558,12 @@ TextureImporter:
       name: Halongona_14
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 1055
-        width: 184
-        height: 178
+        x: 750
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -589,12 +580,12 @@ TextureImporter:
       name: Halongona_15
       rect:
         serializedVersion: 2
-        x: 1696
-        y: 1054
-        width: 182
-        height: 179
+        x: 925
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -611,12 +602,12 @@ TextureImporter:
       name: Halongona_16
       rect:
         serializedVersion: 2
-        x: 2016
-        y: 1053
-        width: 181
-        height: 181
+        x: 1100
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -633,12 +624,12 @@ TextureImporter:
       name: Halongona_17
       rect:
         serializedVersion: 2
-        x: 2336
-        y: 1054
-        width: 180
-        height: 181
+        x: 1275
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -655,12 +646,12 @@ TextureImporter:
       name: Halongona_18
       rect:
         serializedVersion: 2
-        x: 2656
-        y: 1055
-        width: 181
-        height: 180
+        x: 1450
+        y: 574
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,15 +665,37 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Halongona_19
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 574
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a3b11c86c007650800000000000000
+      internalID: 6228491928709315149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Halongona_20
       rect:
         serializedVersion: 2
-        x: 2976
-        y: 1056
-        width: 182
-        height: 179
+        x: 50
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -699,12 +712,12 @@ TextureImporter:
       name: Halongona_21
       rect:
         serializedVersion: 2
-        x: 94
-        y: 737
-        width: 181
-        height: 179
+        x: 225
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -721,12 +734,12 @@ TextureImporter:
       name: Halongona_22
       rect:
         serializedVersion: 2
-        x: 414
-        y: 736
-        width: 181
-        height: 179
+        x: 400
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -743,12 +756,12 @@ TextureImporter:
       name: Halongona_23
       rect:
         serializedVersion: 2
-        x: 734
-        y: 735
-        width: 179
-        height: 180
+        x: 575
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -765,12 +778,12 @@ TextureImporter:
       name: Halongona_24
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 735
-        width: 180
-        height: 179
+        x: 750
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -787,12 +800,12 @@ TextureImporter:
       name: Halongona_25
       rect:
         serializedVersion: 2
-        x: 1374
-        y: 734
-        width: 181
-        height: 180
+        x: 925
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -809,12 +822,12 @@ TextureImporter:
       name: Halongona_26
       rect:
         serializedVersion: 2
-        x: 1694
-        y: 734
-        width: 182
-        height: 181
+        x: 1100
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -831,12 +844,12 @@ TextureImporter:
       name: Halongona_27
       rect:
         serializedVersion: 2
-        x: 2016
-        y: 733
-        width: 180
-        height: 182
+        x: 1275
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -853,12 +866,12 @@ TextureImporter:
       name: Halongona_28
       rect:
         serializedVersion: 2
-        x: 2335
-        y: 733
-        width: 182
-        height: 182
+        x: 1450
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -875,12 +888,12 @@ TextureImporter:
       name: Halongona_29
       rect:
         serializedVersion: 2
-        x: 2654
-        y: 735
-        width: 183
-        height: 179
+        x: 1625
+        y: 399
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -897,12 +910,12 @@ TextureImporter:
       name: Halongona_30
       rect:
         serializedVersion: 2
-        x: 2974
-        y: 735
-        width: 184
-        height: 180
+        x: 50
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -919,12 +932,12 @@ TextureImporter:
       name: Halongona_31
       rect:
         serializedVersion: 2
-        x: 96
-        y: 414
-        width: 180
-        height: 178
+        x: 225
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -941,12 +954,12 @@ TextureImporter:
       name: Halongona_32
       rect:
         serializedVersion: 2
-        x: 415
-        y: 413
-        width: 181
-        height: 179
+        x: 400
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -963,12 +976,12 @@ TextureImporter:
       name: Halongona_33
       rect:
         serializedVersion: 2
-        x: 735
-        y: 414
-        width: 181
-        height: 180
+        x: 575
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -985,12 +998,12 @@ TextureImporter:
       name: Halongona_34
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 413
-        width: 180
-        height: 182
+        x: 750
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1007,12 +1020,12 @@ TextureImporter:
       name: Halongona_35
       rect:
         serializedVersion: 2
-        x: 1377
-        y: 413
-        width: 180
-        height: 181
+        x: 925
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1029,12 +1042,12 @@ TextureImporter:
       name: Halongona_36
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 413
-        width: 182
-        height: 183
+        x: 1100
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1051,12 +1064,12 @@ TextureImporter:
       name: Halongona_37
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 414
-        width: 184
-        height: 183
+        x: 1275
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1073,12 +1086,12 @@ TextureImporter:
       name: Halongona_38
       rect:
         serializedVersion: 2
-        x: 2335
-        y: 415
-        width: 183
-        height: 182
+        x: 1450
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1095,12 +1108,12 @@ TextureImporter:
       name: Halongona_39
       rect:
         serializedVersion: 2
-        x: 2653
-        y: 416
-        width: 185
-        height: 180
+        x: 1625
+        y: 224
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1117,12 +1130,12 @@ TextureImporter:
       name: Halongona_40
       rect:
         serializedVersion: 2
-        x: 2972
-        y: 416
-        width: 185
-        height: 178
+        x: 50
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1139,12 +1152,12 @@ TextureImporter:
       name: Halongona_41
       rect:
         serializedVersion: 2
-        x: 94
-        y: 95
-        width: 181
-        height: 181
+        x: 225
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1161,12 +1174,12 @@ TextureImporter:
       name: Halongona_42
       rect:
         serializedVersion: 2
-        x: 415
-        y: 95
-        width: 180
-        height: 181
+        x: 400
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1183,12 +1196,12 @@ TextureImporter:
       name: Halongona_43
       rect:
         serializedVersion: 2
-        x: 735
-        y: 94
-        width: 179
-        height: 180
+        x: 575
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1205,12 +1218,12 @@ TextureImporter:
       name: Halongona_44
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 94
-        width: 180
-        height: 180
+        x: 750
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1224,15 +1237,37 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Halongona_45
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 49
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0b0ea77a3186090800000000000000
+      internalID: -8041155524628008794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Halongona_46
       rect:
         serializedVersion: 2
-        x: 1374
-        y: 94
-        width: 181
-        height: 179
+        x: 1100
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1246,15 +1281,37 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Halongona_47
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 49
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76c823d5bffa1810800000000000000
+      internalID: 1736981762701575807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Halongona_48
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 93
-        width: 182
-        height: 178
+        x: 1450
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1271,12 +1328,12 @@ TextureImporter:
       name: Halongona_49
       rect:
         serializedVersion: 2
-        x: 2015
-        y: 94
-        width: 182
-        height: 178
+        x: 1625
+        y: 49
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1289,77 +1346,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Halongona_50
-      rect:
-        serializedVersion: 2
-        x: 2336
-        y: 95
-        width: 181
-        height: 179
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5932c76ffa006e4c0800000000000000
-      internalID: -4258715641877617771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halongona_51
-      rect:
-        serializedVersion: 2
-        x: 2658
-        y: 94
-        width: 179
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72843f34c7279d950800000000000000
-      internalID: 6474331817363327015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halongona_52
-      rect:
-        serializedVersion: 2
-        x: 2977
-        y: 94
-        width: 180
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fbeca47cd6471f6c0800000000000000
-      internalID: -4111376969968726337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a45adb81ea3609a459df19d7c5e9e5cb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1415,9 +1406,6 @@ TextureImporter:
       Halongona_48: -2972263854336889555
       Halongona_49: -151581378372481238
       Halongona_5: 7161870667849607359
-      Halongona_50: -4258715641877617771
-      Halongona_51: 6474331817363327015
-      Halongona_52: -4111376969968726337
       Halongona_6: -2470549505152121699
       Halongona_7: 8095261359881230148
       Halongona_8: 8114397963227356051
