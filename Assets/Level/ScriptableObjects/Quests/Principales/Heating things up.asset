@@ -16,11 +16,7 @@ MonoBehaviour:
   Title: Heating things up
   Description: We need to bump up those production sites!
   Objectives:
-  - rid: 6291952326318489678
-  - rid: 6291952326318489679
-  - rid: 6291952326318489681
-  - rid: 6291952326318489682
-  - rid: 6291952326318489683
+  - rid: 868283363412410486
   Rewards:
   - rid: 6291952611966058595
   - rid: 6291952611966058596
@@ -32,41 +28,13 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6291952326318489678
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
+    - rid: 868283363412410486
+      type: {class: TotalProductionObjective, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 50 Batee/cycle
+        objectiveDescription: 
         isCompleted: 0
-        resourceType: 4
-        requiredAmount: 50
-    - rid: 6291952326318489679
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: Produce 50 Paladium/cycle
-        isCompleted: 0
-        resourceType: 0
-        requiredAmount: 50
-    - rid: 6291952326318489681
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: Produce 50 Frostice each cycle
-        isCompleted: 0
-        resourceType: 1
-        requiredAmount: 50
-    - rid: 6291952326318489682
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: Produce 50 Magmavite each cycle
-        isCompleted: 0
-        resourceType: 2
-        requiredAmount: 50
-    - rid: 6291952326318489683
-      type: {class: ProduceResource, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
-      data:
-        objectiveDescription: Produce 50 Sandit each cycle
-        isCompleted: 0
-        resourceType: 3
-        requiredAmount: 50
+        targetResources: 0000000001000000020000000300000004000000
+        requiredTotalAmount: 200
     - rid: 6291952611966058595
       type: {class: UnlockCivilizationReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:

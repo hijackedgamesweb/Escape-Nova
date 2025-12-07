@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7bd636bb6e54843bf7253b43569f48, type: 3}
+  m_Name: GEMINO
+  m_EditorClassIdentifier: 
+  constellationName: GEMINO
+  nodes:
+  - {fileID: 11400000, guid: 4cc1f13d5c297c24ca32d8a0e285f4fc, type: 2}
+  - {fileID: 11400000, guid: 444519d3f0ba27b4d8ecf3eebc9504f9, type: 2}
+  - {fileID: 11400000, guid: 566cb57e7dec18b479d1d7ed9484c90a, type: 2}
+  - {fileID: 11400000, guid: 51a77344ffe76e54e9b67f36235a223d, type: 2}

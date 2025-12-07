@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Xabier L\xF3pez Aguilera"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -397,11 +397,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 189.53429, y: 52.661247}
+  scrollPos: {x: 284.4652, y: 183.7153}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 521
-  zoom: 0.9100001
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2064,8 +2064,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NARRATIVE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2200,8 +2200,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Hugo Camu\xF1as Gonz\xE1lez"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2225,8 +2225,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2368,8 +2368,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PROGRAMMING
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2688,8 +2688,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Hugo Camu\xF1as Gonz\xE1lez"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2713,8 +2713,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2824,8 +2824,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MUSIC & SFX
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3132,8 +3132,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Iv\xE1n de Castilla Guiti\xE1n (Lead)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3157,8 +3157,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3301,8 +3301,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ismael Esteban Liberal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3326,8 +3326,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3437,8 +3437,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ART
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3573,8 +3573,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ismael Esteban Liberal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3598,8 +3598,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3709,8 +3709,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Xabier L\xF3pez Aguilera"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3734,8 +3734,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3845,8 +3845,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME DESIGN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3981,8 +3981,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A GAME CREATED BY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4117,8 +4117,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SPECIAL THANKS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4253,8 +4253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Iv\xE1n de Castilla Guiti\xE1n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4278,8 +4278,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4389,8 +4389,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HIJACKED GAMES
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4525,8 +4525,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Anatoli Nichei (Lead)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4550,8 +4550,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4740,8 +4740,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NOVA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4876,8 +4876,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Javier San Juan Ledesma
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4901,8 +4901,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5012,8 +5012,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mar\xEDa de Andr\xE9s Jarandilla (Additional Art)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5037,8 +5037,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5148,8 +5148,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: And You!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
-  m_sharedMaterial: {fileID: 5913612841647133954, guid: d6c83e41ee212884c9477cadd8abdcf6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5173,8 +5173,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

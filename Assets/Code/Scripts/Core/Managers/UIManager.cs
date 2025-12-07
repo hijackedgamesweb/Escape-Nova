@@ -67,6 +67,13 @@ namespace Code.Scripts.Core.Managers
         {
             return _currentScreen;
         }
+
+        
+        public bool IsScreenActive<T>() where T : BaseUIScreen
+        {
+            var screen = screens.Find(s => s is T);
+            return screen != null && screen.gameObject.activeInHierarchy;
+        }
         
         public void ClearUIFocus()
         {
@@ -83,10 +90,8 @@ namespace Code.Scripts.Core.Managers
                 gameOverScreen.gameObject.SetActive(true);
                 gameOverScreen.StartGameOverSequence();
             }
-            else
-            {
-            }
         }
+
         public void HideGameOverScreen()
         {
             if (gameOverScreen != null)

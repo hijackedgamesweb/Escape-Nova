@@ -27,6 +27,7 @@ namespace Code.Scripts.Core.Managers
         public event Action<float> OnTimeAdvanced;
         public event Action<int> OnCycleCompleted;
         public event Action OnGameOver; 
+        public event Action<float> OnTimeScaleChanged;
 
         public void Awake()
         {
@@ -84,25 +85,28 @@ namespace Code.Scripts.Core.Managers
         public void StartTimer()
         {
             TimeScale = _lastKnownTimeScale;
+            OnTimeScaleChanged?.Invoke(TimeScale);
         }
 
         public void SetSpeed(float timeScale)
         {
             TimeScale = Mathf.Max(0f, timeScale);
             _lastKnownTimeScale = TimeScale;
+            OnTimeScaleChanged?.Invoke(TimeScale);
         }
 
         public void Pause()
         {
             TimeScale = 0f;
+            OnTimeScaleChanged?.Invoke(TimeScale);
         }
         
         public void Resume()
         {
             TimeScale = _lastKnownTimeScale;
+            OnTimeScaleChanged?.Invoke(TimeScale);
         }
         
-        //ESTE METODO EXISTE SOLO PARA DEBUGGEAR (LO USA EL SCRIPT "EscapeKeyListener.cs" HAY QUE BORRAR PARA EL RELESE
         public void SetCurrentCycle(int cycle)
         {
             CurrentCycle += cycle;

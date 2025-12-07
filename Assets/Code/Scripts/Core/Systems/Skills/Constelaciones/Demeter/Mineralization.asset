@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a152698f565314c4da8d3e1c52b2f927, type: 3}
+  m_Name: Mineralization
+  m_EditorClassIdentifier: 
+  nodeName: Mineralization
+  description: All your planets generate 100% more resources.
+  skillPointCost: 7
+  prerequisiteNodes:
+  - {fileID: 11400000, guid: 3d78696d54fd0d043935a14f2d5c8357, type: 2}
+  positionInConstellation: {x: -1, y: 3}
+  improvements:
+  - rid: 162876391971094611
+  references:
+    version: 2
+    RefIds:
+    - rid: 162876391971094611
+      type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
+      data:
+        productionBonusPercent: 100

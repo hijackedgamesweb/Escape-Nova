@@ -44,6 +44,15 @@ namespace Code.Scripts.Core.Systems.Quests.UI
         public void MarkAskCompleted()
         {
             missionTitleText.text += " (Completed)";
+            
+            Button btn = GetComponent<Button>();
+            if (btn != null)
+            {
+                ColorBlock colors = btn.colors;
+                colors.normalColor = Color.green;
+                colors.selectedColor = Color.green;
+                btn.colors = colors;
+            }
         }
         
         public string GetMissionTitle(){return missionTitleText.text;}
