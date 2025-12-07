@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab096338f8d92be49be678fcaf7bb264
+guid: c5ef46fa19642f34cb79b498091a4bf4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5520550586184687947
-    second: x2_highlight_0
+      213: -6087803603874376604
+    second: gradiente_big_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: x2_highlight_0
+      name: gradiente_big_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 7
-        width: 41
-        height: 42
+        x: 53
+        y: 53
+        width: 353
+        height: 353
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b41ec1e428fec9c40800000000000000
-      internalID: 5520550586184687947
+      spriteID: 46499b870e6c38ba0800000000000000
+      internalID: -6087803603874376604
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      x2_highlight_0: 5520550586184687947
+      gradiente_big_0: -6087803603874376604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

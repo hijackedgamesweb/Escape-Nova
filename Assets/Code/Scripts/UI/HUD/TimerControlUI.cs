@@ -1,6 +1,7 @@
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.HUD
@@ -32,7 +33,7 @@ namespace Code.Scripts.UI.HUD
             if (_gameTime != null)
             {
                 _gameTime.OnTimeScaleChanged += UpdateVisuals;
-                UpdateVisuals(_gameTime.TimeScale);
+                if (SceneManager.GetActiveScene().name == "InGame") { UpdateVisuals(_gameTime.TimeScale); }
             }
         }
 
