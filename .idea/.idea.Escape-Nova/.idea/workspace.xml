@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/pause_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/pause_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/play_highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/play_highlight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/x2_highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/x2_highlight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/x4_highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/x4_highlight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/HUD/TimerControlUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/HUD/TimerControlUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Planets/sun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Planets/sun.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
