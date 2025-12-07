@@ -19,6 +19,7 @@ public class AudioManager : Singleton<AudioManager>
 
     private int[] auxInGameMusicIndex;
     private int maxIdx = 0;
+    [SerializeField] private bool atmos = false;
 
     private void Start()
     {
@@ -44,27 +45,39 @@ public class AudioManager : Singleton<AudioManager>
     
     public void PlayInGameMusic()
     {
-        if (maxIdx == inGameMusicSounds.Length)
+        if (!atmos)
         {
-            auxInGameMusicIndex = new int[inGameMusicSounds.Length];
+            Sound s = Array.Find(inGameMusicSounds, x => x.name == "Horizon");
+
+            musicSource.clip = s.clip;
+            musicSource.Play();
+        }
+        else
+        {
+            if (maxIdx == inGameMusicSounds.Length)
+            {
+                auxInGameMusicIndex = new int[inGameMusicSounds.Length];
+            }
+        
+            int idx = Random.Range(0, inGameMusicSounds.Length);
+            while (auxInGameMusicIndex[idx] != 0)
+            {
+                idx = Random.Range(0, inGameMusicSounds.Length);
+            }
+        
+            auxInGameMusicIndex[idx] = 1;
+            maxIdx++;
+            
+            musicSource.clip = inGameMusicSounds[idx].clip;
+            musicSource.Play();
         }
         
-        int idx = Random.Range(0, inGameMusicSounds.Length);
-        while (auxInGameMusicIndex[idx] != 0)
-        {
-            idx = Random.Range(0, inGameMusicSounds.Length);
-        }
-        
-        auxInGameMusicIndex[idx] = 1;
-        maxIdx++;
-        
-        musicSource.clip = inGameMusicSounds[idx].clip;
-        musicSource.Play();
-        StartCoroutine(StartMethod(musicSource.clip.length));
+        atmos = !atmos;
+        StartCoroutine(PlayNextSong(musicSource.clip.length));
     }
     
     
-    private IEnumerator StartMethod(float clipLength)
+    private IEnumerator PlayNextSong(float clipLength)
     {
         yield return new WaitForSeconds(clipLength);
 
