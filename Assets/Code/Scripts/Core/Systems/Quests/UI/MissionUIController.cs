@@ -212,10 +212,10 @@ namespace Code.Scripts.Core.Systems.Quests.UI
         {
             selectedQuest = null;
 
-            missionNameText.text = "Sin Misiones";
+            missionNameText.text = "No missions";
             timeContentText.text = "-";
-            questDescriptionText.text = "No hay misiones disponibles en este momento.";
-            recompensaHeaderText.text = "Recompensas:";
+            questDescriptionText.text = "There are no missions available.";
+            recompensaHeaderText.text = "Rewards:";
 
             foreach (GameObject subtaskObj in activeSubtaskObjects)
             {
