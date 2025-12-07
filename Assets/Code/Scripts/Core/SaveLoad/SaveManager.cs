@@ -62,7 +62,7 @@ namespace Code.Scripts.Core.SaveLoad
         {
             EnsureSavesFolder();
 
-            var saveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>();
+            var saveables = FindObjectsOfType<MonoBehaviour>(true).OfType<ISaveable>();
             var saveData = new SaveData
             {
                 formatVersion = currentFormatVersion,
@@ -102,7 +102,7 @@ namespace Code.Scripts.Core.SaveLoad
         {
             EnsureSavesFolder();
 
-            var saveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>();
+            var saveables = FindObjectsOfType<MonoBehaviour>(true).OfType<ISaveable>();
             var saveData = new SaveData
             {
                 formatVersion = currentFormatVersion,
@@ -165,7 +165,7 @@ namespace Code.Scripts.Core.SaveLoad
                 var json = await File.ReadAllTextAsync(path);
                 var saveData = JsonConvert.DeserializeObject<SaveData>(json);
 
-                var saveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>()
+                var saveables = FindObjectsOfType<MonoBehaviour>(true).OfType<ISaveable>()
                     .ToDictionary(s => s.GetSaveId(), s => s);
 
                 foreach (var kv in saveData.objects)
@@ -212,7 +212,7 @@ namespace Code.Scripts.Core.SaveLoad
                 var json = File.ReadAllText(path);
                 var saveData = JsonConvert.DeserializeObject<SaveData>(json);
 
-                var saveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>()
+                var saveables = FindObjectsOfType<MonoBehaviour>(true).OfType<ISaveable>()
                     .ToDictionary(s => s.GetSaveId(), s => s);
 
                 foreach (var kv in saveData.objects)
@@ -246,9 +246,9 @@ namespace Code.Scripts.Core.SaveLoad
 
         public bool SlotExists() => File.Exists(GetSlotFilePath(selectedSlot));
 
-        public bool DeleteSlot(int slot)
+        public bool DeleteSlot()
         {
-            var path = GetSlotFilePath(slot);
+            var path = GetSlotFilePath(selectedSlot);
             if (!File.Exists(path)) return false;
             try
             {
@@ -260,7 +260,7 @@ namespace Code.Scripts.Core.SaveLoad
             }
             catch (Exception ex)
             {
-                Debug.LogError($"SaveManager: error deleting slot {slot}: {ex}");
+                Debug.LogError($"SaveManager: error deleting slot {selectedSlot}: {ex}");
                 return false;
             }
         }

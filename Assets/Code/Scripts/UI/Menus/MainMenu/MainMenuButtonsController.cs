@@ -1,10 +1,22 @@
+using System;
+using Code.Scripts.Core.SaveLoad;
 using Code.Scripts.Core.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenuButtonsController : MonoBehaviour
 {
+    [SerializeField] private Button continueButton;
+
+    private void Start()
+    {
+        bool hasSaveData = SaveManager.Instance.SlotExists();
+        continueButton.interactable = hasSaveData;  
+    }
+
     public void OnPlayButtonPressed()
     {
+        SaveManager.Instance.DeleteSlot();
         Loader.Load("InGame");
     }
     
@@ -26,6 +38,6 @@ public class MainMenuButtonsController : MonoBehaviour
     
     public void OnContinueButtonPressed()
     {
-        Debug.Log("Continue button pressed");
+        Loader.Load("InGame");
     }
 }

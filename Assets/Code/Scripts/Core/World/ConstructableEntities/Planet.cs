@@ -16,9 +16,11 @@ using UnityEngine.EventSystems;
 
 namespace Code.Scripts.Core.World.ConstructableEntities
 {
-    public class Planet : MonoBehaviour, ISaveable
+    public class Planet : MonoBehaviour
     {
         private SpriteRenderer _spriteRenderer;
+        private PlanetDataSO _planetData;
+        public PlanetDataSO PlanetData => _planetData;
         public int[] ResourcePerCycle { get; private set; }
         private int[] _baseResourcePerCycle;
         public List<ResourceType> ProducibleResources { get; private set; }
@@ -68,6 +70,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
         public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
         {
+            _planetData = data;
             _spriteRenderer.sprite = data.sprite;
             Name = data.constructibleName;
             this.transform.localScale = Vector3.one * data.size;
@@ -86,12 +89,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             _occupiedSatelliteSlots = new bool[_satelliteSlots];
 
             var gametTime = ServiceLocator.GetService<IGameTime>();
-            _stateManager = new PlanetStateManager(gametTime);
+            _stateManager = new PlanetStateManager(gametTime, this);
             var buildingState = new BuildingState(this, gametTime);
             buildingState.OnProgressUpdated += HandleBuildingProgress;
             _stateManager.SetState(buildingState);
         }
-        private void HandleBuildingProgress(float progress)
+        public void HandleBuildingProgress(float progress)
         {
             OnConstructionProgress?.Invoke(progress);
             
@@ -100,6 +103,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                 OnConstructionCompleted?.Invoke();
             }
         }
+
         public int GetResourceProductionOfType(ResourceType type)
         {
             for (int i = 0; i < ProducibleResources.Count; i++)
@@ -109,7 +113,14 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                     return ResourcePerCycle[i];
                 }
             }
+
             return 0;
+        }
+
+
+        public void CompleteConstructionInstantly()
+        {
+            OnConstructionCompleted?.Invoke();
         }
 
         private void ApplyExistingGlobalImprovements()
@@ -297,24 +308,28 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public JToken CaptureState()
         {
             JObject state = new JObject();
-            state["State"] = _stateManager.GetCurrentStateName();
+        
+            state["PlanetName"] = _planetData.constructibleName;
+            state["OrbitIndex"] = OrbitIndex;
+            state["PlanetIndex"] = PlanetIndex;
 
+            state["State"] = _stateManager.GetCurrentState().GetType().AssemblyQualifiedName;
+        
             JArray sateliteArray = new JArray();
             foreach (var satelite in Satelites)
-            {
-                sateliteArray.Add(satelite.GetSaveId());
-            }
+                sateliteArray.Add(satelite.CaptureState());
+        
             state["Satelites"] = sateliteArray;
-
+        
             JObject improvementsObj = new JObject();
             foreach (var improvement in _improvementPercentages)
-            {
                 improvementsObj[improvement.Key] = improvement.Value;
-            }
+        
             state["Improvements"] = improvementsObj;
-
+        
             return state;
         }
+
 
         public void RestoreState(JToken state)
         {
@@ -322,11 +337,19 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             string stateName = obj["State"].ToObject<string>();
             _stateManager.SetStateByName(stateName);
 
-            JArray sateliteArray = obj["Satelites"] as JArray;
-            foreach (var sateliteIdToken in sateliteArray)
+            JArray sateliteArray = (JArray)obj["Satelites"];
+
+            foreach (JObject satState in sateliteArray)
             {
-                string sateliteId = sateliteIdToken.ToObject<string>();
-                AddSatelite(sateliteId);
+                Satelite sat = new Satelite();
+                sat.RestoreState(satState);
+
+                // Cargar SO desde Resources
+                var satSO = Resources.Load<SateliteDataSO>($"ScriptableObjects/Satelites/{sat.Name}");
+                sat.InitializeSatelite(satSO, this);
+
+                Satelites.Add(sat);
+                AddSatelite(satSO); // también crea visual y upgrades
             }
 
             JObject improvementsObj = obj["Improvements"] as JObject;
