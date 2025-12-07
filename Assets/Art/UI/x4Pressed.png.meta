@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: de26a79188b3c8744b9fc5ef1ab8ad08
+guid: 2c19ab30efc69d945bec7278f22f6fc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4935973104315556610
-    second: play_highlight_0
+      213: 2399808062429898518
+    second: x4Pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: play_highlight_0
+      name: x4Pressed_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 4
-        width: 28
-        height: 42
+        x: 9
+        y: 7
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efc93601d96ef7bb0800000000000000
-      internalID: -4935973104315556610
+      spriteID: 617a042d7b4dd4120800000000000000
+      internalID: 2399808062429898518
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      play_highlight_0: -4935973104315556610
+      x4Pressed_0: 2399808062429898518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
