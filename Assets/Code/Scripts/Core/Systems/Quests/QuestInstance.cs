@@ -50,7 +50,6 @@ namespace Code.Scripts.Core.Systems.Quests
                     objective.UnregisterEvents();
                 }
                 NotificationManager.Instance.CreateNotification($"Quest Completed: {questData.Title}", NotificationType.Info);
-                GameInfoManager.Instance.DisplayGameInfo(questData.QuestId +"_info");
             }
         }
 

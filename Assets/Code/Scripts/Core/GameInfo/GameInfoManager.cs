@@ -5,16 +5,11 @@ using UnityEngine;
 
 public class GameInfoManager : MonoBehaviour
 {
-    
-    //Variables
+    // Variables
     public static GameInfoManager Instance { get; private set; }
 
     [SerializeField] private GameInfoPanel _gameInfoPanel;
     [SerializeField] private GameInfoSO[] gameInfos;
-    
-    private GameInfoSO _gameInfo;
-    
-    //Metodos
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -25,24 +20,29 @@ public class GameInfoManager : MonoBehaviour
         {
             Instance = this;
         }
-            
-        gameObject.SetActive(false);
+        if(_gameInfoPanel != null) _gameInfoPanel.gameObject.SetActive(false);
     }
-    
     
     public void DisplayGameInfo(String name)
     {
-        bool found = false;
+        GameInfoSO infoToDisplay = null; 
         
         foreach (var gameInfo in gameInfos)
         {
+            if (gameInfo == null) continue;
+
             if (gameInfo.name == name)
             {
-                found = true;
-                _gameInfo = gameInfo;
+                infoToDisplay = gameInfo;
+                break;
             }
         }
-        
-        if(found){_gameInfoPanel.ShowPanel(_gameInfo.titles, _gameInfo.messages, _gameInfo.images);}
+        if (infoToDisplay != null)
+        {
+            _gameInfoPanel.ShowPanel(infoToDisplay.titles, infoToDisplay.messages, infoToDisplay.images);
+        }
+        else
+        {
+        }
     }
 }

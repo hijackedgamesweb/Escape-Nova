@@ -102,6 +102,13 @@ namespace Code.Scripts.Core.Managers
                         reward.ApplyReward();
                     }
                     completedQuests.Add(q.questData);
+                    try 
+                    {
+                        GameInfoManager.Instance.DisplayGameInfo(q.questData.QuestId + "_info");
+                    }
+                    catch (Exception e)
+                    {
+                    }
                     OnQuestCompleted?.Invoke(q);
                     CheckForSetCompletion();
                 }
