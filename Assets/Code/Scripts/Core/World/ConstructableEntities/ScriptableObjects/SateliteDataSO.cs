@@ -12,9 +12,5 @@ namespace Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects
         public string desc;
         public Sprite sprite;
         [SerializeReference, SubclassSelector] public List<Upgrade> upgrades;
-
-        [Header("Animation")]
-        public Sprite[] animationFrames;
-        public float frameRate = 0.1f;
     }
 }
