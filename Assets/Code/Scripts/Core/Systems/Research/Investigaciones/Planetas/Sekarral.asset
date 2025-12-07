@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: sekarral
   category: 0
   displayName: Sekarral
-  description: Unlocks the planet 'Sekarral'.This planet generates 800 sand every
+  description: Unlocks the planet 'Sekarral'. This planet generates 800 Sandit every
     solar cycle.
   icon: {fileID: 3369094531837729759, guid: cfe8fdd31d52c1f4da9eda13b6272b58, type: 3}
   prerequisites:

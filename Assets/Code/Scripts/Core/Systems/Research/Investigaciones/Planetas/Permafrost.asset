@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: permafrost
   category: 0
   displayName: Permafrost
-  description: Unlocks the planet 'Permafrost'. This planet generates 800 ice every
-    solar cycle.
+  description: Unlocks the planet 'Permafrost'. This planet generates 800 Frostice
+    every solar cycle.
   icon: {fileID: -2915556048162738929, guid: 5a02eccae3fe4ab4e8909edf6afeed36, type: 3}
   prerequisites:
   - researchId: blocked_until_moresupplies_quest_completed

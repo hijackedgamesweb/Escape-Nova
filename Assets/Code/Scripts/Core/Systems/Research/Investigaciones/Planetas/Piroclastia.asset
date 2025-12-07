@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: piroclastia
   category: 0
   displayName: Piroclastia
-  description: Unlocks the planet 'Piroclastia'. This planet generates 35 fire and
-    stone every solar cycle.
+  description: Unlocks the planet 'Piroclastia'. This planet generates 35 Magmavite
+    and Batee every solar cycle.
   icon: {fileID: -7981415299240727443, guid: b6c0ff26a3b87d540b066194f8cdd19e, type: 3}
   prerequisites:
   - researchId: blocked_until_thestarsasguide_quest_completed
