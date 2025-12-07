@@ -42,7 +42,7 @@ MonoBehaviour:
     requirements, as well as time constraints and rewards.
   - Check out the quests menu and complete your first quest to continue.
   images:
-  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  - {fileID: -5156576276061555797, guid: 5de661fbac9960140a74489c137d1749, type: 3}
   - {fileID: 3794550611322748858, guid: c6fb43811f177d549be9a768b79ec59d, type: 3}
   - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}
   - {fileID: 2775496335295181308, guid: a8b37306a54692b419984ae24656ab85, type: 3}

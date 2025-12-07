@@ -241,10 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5aa433b1efe4df5a1c1f54a654b6f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 1, g: 0.6666667, b: 0, a: 1}
-  endColor: {r: 0.4704966, g: 0.60997826, b: 0.9150943, a: 1}
+  startColor: {r: 1, g: 0.64582115, b: 0, a: 1}
+  endColor: {r: 0.35283017, g: 0.84042776, b: 1, a: 1}
   colorChangeExponent: 1
-  sunRenderer: {fileID: 3916877276777809181}
 --- !u!1 &3944304551717238320
 GameObject:
   m_ObjectHideFlags: 0

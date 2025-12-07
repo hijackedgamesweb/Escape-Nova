@@ -452,6 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4544beb21d0cd4aaef7e7f47183e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continueButton: {fileID: 1383373645}
 --- !u!1 &363621456
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +540,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-  continueButton: {fileID: 1383373645}
 --- !u!1 &405240948
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2529, y: 1}
+  m_AnchoredPosition: {x: -2575.05, y: 1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711453269
@@ -1156,8 +1156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchoredPosition: {x: -147, y: 0}
+  m_SizeDelta: {x: 288, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226639102
 MonoBehaviour:
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -7666804335434947107, guid: f978394ccf4d03e4894953ebb1e9613c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
