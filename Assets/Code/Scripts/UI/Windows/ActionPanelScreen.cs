@@ -6,10 +6,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Code.Scripts.Core.SaveLoad.Interfaces;
+using Newtonsoft.Json.Linq;
 
 namespace Code.Scripts.UI.Windows
 {
-    public class ActionPanelScreen : BaseUIScreen
+    public class ActionPanelScreen : BaseUIScreen, ISaveable
     {
         [SerializeField] public Button returnBtn;
         [SerializeField] public Button astrariumBtn;
@@ -216,6 +218,53 @@ namespace Code.Scripts.UI.Windows
             }
             AudioManager.Instance.PlaySFX("Close");
             UIManager.Instance.ShowScreen<InGameScreen>();
+        }
+
+        public string GetSaveId()
+        {
+            return "ActionPanelScreen";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject
+            {
+                ["IsResearchUnlocked"] = SystemEvents.IsResearchUnlocked,
+                ["IsInventoryUnlocked"] = SystemEvents.IsInventoryUnlocked,
+                ["IsConstellationsUnlocked"] = SystemEvents.IsConstellationsUnlocked,
+                ["IsDiplomacyUnlocked"] = SystemEvents.IsDiplomacyUnlocked
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {            
+            if (state == null) return;
+
+            bool isResearchUnlocked = state["IsResearchUnlocked"]?.ToObject<bool>() ?? false;
+            bool isInventoryUnlocked = state["IsInventoryUnlocked"]?.ToObject<bool>() ?? false;
+            bool isConstellationsUnlocked = state["IsConstellationsUnlocked"]?.ToObject<bool>() ?? false;
+            bool isDiplomacyUnlocked = state["IsDiplomacyUnlocked"]?.ToObject<bool>() ?? false;
+
+            if (isResearchUnlocked)
+            {
+                SystemEvents.UnlockResearch();
+            }
+
+            if (isInventoryUnlocked)
+            {
+                SystemEvents.UnlockInventory();
+            }
+
+            if (isConstellationsUnlocked)
+            {
+                SystemEvents.UnlockConstellations();
+            }
+
+            if (isDiplomacyUnlocked)
+            {
+                SystemEvents.UnlockDiplomacyPanel();
+            }
         }
     }
 }

@@ -31,8 +31,9 @@ namespace Code.Scripts.UI.Windows
         
         private void Start()
         {
-            ServiceLocator.GetService<CivilizationManager>();
+            _civilizationManager = ServiceLocator.GetService<CivilizationManager>();
             UIEvents.OnUpdateCivilizationUI += UpdateUI;
+            SetCivilization(_civilizationManager.GetFirstCivilization().CivilizationData.Name);
         }
         
         private void Update()

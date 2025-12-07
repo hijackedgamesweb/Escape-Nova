@@ -14,8 +14,7 @@ namespace Code.Scripts.Environment
         [Tooltip("Un valor > 1 hará que el cambio sea más lento al principio y rápido al final.")]
         [SerializeField] private float colorChangeExponent = 3.0f; 
 
-        [Header("Referencias")]
-        [SerializeField] private Renderer sunRenderer;
+        private Material sunRenderer;
 
         private IGameTime _gameTime;
         private float _maxCycles;
@@ -24,7 +23,7 @@ namespace Code.Scripts.Environment
         {
             if (sunRenderer == null)
             {
-                sunRenderer = GetComponent<Renderer>();
+                sunRenderer = GetComponent<Material>();
             }
         }
 
@@ -50,7 +49,7 @@ namespace Code.Scripts.Environment
         {
             if (sunRenderer != null)
             {
-                sunRenderer.material.color = startColor;
+                sunRenderer.SetColor("TargetColor", startColor);
             }
         }
 
@@ -62,7 +61,7 @@ namespace Code.Scripts.Environment
             
             float t_curved = Mathf.Pow(t_linear, colorChangeExponent);
 
-            sunRenderer.material.color = Color.Lerp(startColor, endColor, t_curved);
+            sunRenderer.SetColor("TargetColor", Color.Lerp(startColor, endColor, t_curved));
         }
     }
 }

@@ -44,6 +44,19 @@ namespace Code.Scripts.Core.Managers
                 civ.AIController.UpdateAI(context, command);
             }
         }
+        
+        public Civilization GetFirstCivilization()
+        {
+            if (_civilizations.Count > 0)
+            {
+                return _civilizations[0];
+            }
+            else
+            {
+                Debug.Log("No civilizations available");
+                return null;
+            }
+        }
 
         public Civilization GetCivilization(string civilizationName)
         {
@@ -82,7 +95,10 @@ namespace Code.Scripts.Core.Managers
             _civilizations.Clear();
             foreach (var civToken in civsArray)
             {
+                var civName = civToken["CivilizationData"]["Name"].ToObject<string>();
+                var civDataSO = Resources.Load<CivilizationSO>($"Civilizations/{civName}");
                 Civilization civ = new Civilization();
+                civ.SetCivilizationData(civDataSO);
                 civ.RestoreState(civToken);
                 _civilizations.Add(civ);
             }

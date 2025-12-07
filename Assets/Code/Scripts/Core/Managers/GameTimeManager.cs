@@ -2,12 +2,15 @@ using System;
 using Code.Scripts.Config;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Patterns.ServiceLocator;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Code.Scripts.Core.Managers
 {
-    public class GameTimeManager : MonoBehaviour, IGameTime
+    public class GameTimeManager : MonoBehaviour, IGameTime, ISaveable
     {
         [Header("Configuración de Derrota")]
         [SerializeField] public int maxCycles = 1000; 
@@ -110,6 +113,35 @@ namespace Code.Scripts.Core.Managers
         public void SetCurrentCycle(int cycle)
         {
             CurrentCycle += cycle;
+        }
+
+        public string GetSaveId()
+        {
+            return "GameTimeManager";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject obj = new JObject
+            {
+                ["gameTime"] = GameTime,
+                ["currentCycle"] = CurrentCycle,
+                ["timeScale"] = TimeScale,
+                ["nextCycleTime"] = _nextCycleTime
+            };
+            return obj;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            GameTime = state["gameTime"].ToObject<float>();
+            CurrentCycle = state["currentCycle"].ToObject<int>();
+            TimeScale = state["timeScale"].ToObject<float>();
+            _nextCycleTime = state["nextCycleTime"].ToObject<float>();
+            _lastKnownTimeScale = TimeScale;
+
+            // Forzar notificación para que la UI actualice correctamente
+            OnCycleCompleted?.Invoke(CurrentCycle);
         }
     }
 }

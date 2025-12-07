@@ -2,15 +2,17 @@ using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.Systems.Time;
 using Code.Scripts.Patterns.ServiceLocator;
+using Newtonsoft.Json.Linq;
 using ResourceType = Code.Scripts.Core.Systems.Resources.ResourceType;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Skills
 {
-    public class SkillTreeManager : MonoBehaviour
+    public class SkillTreeManager : MonoBehaviour, ISaveable
     {
         [Header("Skill Point Settings")]
         [SerializeField] private int initialSkillPoints = 2;
@@ -420,6 +422,72 @@ namespace Code.Scripts.Core.Systems.Skills
                     }
                 }
             }
+        }
+
+        public string GetSaveId()
+        {
+            return "SkillTreeManager";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject
+            {
+                ["availableSkillPoints"] = availableSkillPoints,
+                ["nodeStates"] = new JObject()
+            };
+
+            JObject nodeStatesObj = (JObject)state["nodeStates"];
+
+            foreach (var kvp in nodeStates)
+            {
+                JObject nodeStateObj = new JObject
+                {
+                    ["isPurchased"] = kvp.Value.isPurchased,
+                    ["isUnlocked"] = kvp.Value.isUnlocked
+                };
+                nodeStatesObj[kvp.Key] = nodeStateObj;
+            }
+
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            availableSkillPoints = state["availableSkillPoints"]?.ToObject<int>() ?? 0;
+
+            JObject nodeStatesObj = state["nodeStates"] as JObject;
+            if (nodeStatesObj != null)
+            {
+                foreach (var kvp in nodeStatesObj)
+                {
+                    string nodeName = kvp.Key;
+                    JObject nodeStateObj = kvp.Value as JObject;
+
+                    if (nodeStateObj != null)
+                    {
+                        bool isPurchased = nodeStateObj["isPurchased"]?.ToObject<bool>() ?? false;
+                        bool isUnlocked = nodeStateObj["isUnlocked"]?.ToObject<bool>() ?? false;
+
+                        if (nodeStates.ContainsKey(nodeName))
+                        {
+                            nodeStates[nodeName].isPurchased = isPurchased;
+                            nodeStates[nodeName].isUnlocked = isUnlocked;
+                        }
+                        else
+                        {
+                            nodeStates[nodeName] = new SkillNodeState
+                            {
+                                isPurchased = isPurchased,
+                                isUnlocked = isUnlocked
+                            };
+                        }
+                    }
+                }
+            }
+
+            OnSkillPointsChanged?.Invoke(availableSkillPoints);
+            RefreshAllNodeUI();
         }
     }
 }

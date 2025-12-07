@@ -1,16 +1,18 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.UI.Menus.BuildingMenuPanel.Code.Scripts.Core.Systems.Satelites;
+using Newtonsoft.Json.Linq;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 {
-    public class SateliteListInitializer : MonoBehaviour
+    public class SateliteListInitializer : MonoBehaviour, ISaveable
     {
         [SerializeField] private List<SateliteDataSO> _sateliteDataSOs;
         [SerializeField] private SateliteListPrefab _sateliteListPrefab;
@@ -120,6 +122,35 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 _currentSateliteItem.IsSelected = false;
                 _currentSateliteItem.UpdateVisualState();
                 _currentSateliteItem = null;
+            }
+        }
+
+        public string GetSaveId()
+        {
+            return "SateliteListInitializer";
+        }
+
+        public JToken CaptureState()
+        {
+            var state = new JObject
+            {
+                ["researchedSatelites"] = new JArray(_createdSatelites.Keys) 
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {            
+            var researchedSatelites = state["researchedSatelites"] as JArray;
+            if (researchedSatelites == null) return;
+            foreach (var sateliteNameToken in researchedSatelites)
+            {
+                string sateliteName = sateliteNameToken.ToObject<string>();
+                SateliteDataSO sateliteData = Resources.Load<SateliteDataSO>($"ScriptableObjects/Satelites/{sateliteName}");
+                if (sateliteData != null)
+                {
+                    AddNewSatelite(sateliteData);
+                }
             }
         }
     }

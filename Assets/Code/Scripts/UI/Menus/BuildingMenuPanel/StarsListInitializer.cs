@@ -1,16 +1,18 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.World;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.UI.Windows;
+using Newtonsoft.Json.Linq;
 using UnityEngine.UI;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 {
-    public class StarsInitializer : MonoBehaviour
+    public class StarsInitializer : MonoBehaviour, ISaveable
     {
         [SerializeField] private List<STARSDataSO> _starsDataSOs; 
         [SerializeField] private StarsListPrefab _starsListPrefab;
@@ -23,6 +25,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
         private StorageSystem _storageSystem;
         private SolarSystem _solarSystem;
         private Dictionary<string, StarsListPrefab> _createdStars = new Dictionary<string, StarsListPrefab>();
+        private bool _isStarsBuilt = false;
 
         private void Start()
         {
@@ -153,7 +156,7 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
             if (ConsumeResourcesForStars(starsData))
             {
                 //_solarSystem.BuildSpecialPlanet(starsData);
-                
+                _isStarsBuilt = true;
                 Destroy(_currentStarsItem.gameObject);
                 _createdStars.Remove(starsData.constructibleName);
                 _currentStarsItem = null;
@@ -167,6 +170,44 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 }
 
                 UIManager.Instance.ShowScreen<InGameScreen>();
+            }
+        }
+
+        public string GetSaveId()
+        {
+            return "StarsInitializer";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject
+            {
+                ["isStarsBuilt"] = _isStarsBuilt
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            bool isStarsBuilt = state.Value<bool>("isStarsBuilt");
+            _isStarsBuilt = isStarsBuilt;
+
+            if (_isStarsBuilt)
+            {
+                var starsData = _starsDataSOs[0];
+                
+                _solarSystem = ServiceLocator.GetService<SolarSystem>();
+                _solarSystem.BuildSpecialPlanet(starsData);
+                _currentStarsItem = null;
+                
+                ClearSelection();
+                
+                var panelManager = GetComponentInParent<StarsPanelUnlocker>();
+                if (panelManager != null)
+                {
+                    panelManager.gameObject.SetActive(false);
+                }
+
             }
         }
     }

@@ -202,7 +202,7 @@ namespace Code.Scripts.Core.Systems.Research
             return Mathf.Max(1, cycles);
         }
 
-        private void CompleteResearch(string researchId)
+        public void CompleteResearch(string researchId)
         {
             if (!_researchDatabase.ContainsKey(researchId)) return;
             
@@ -224,6 +224,19 @@ namespace Code.Scripts.Core.Systems.Research
             OnResearchCompleted?.Invoke(researchId);
             Code.Scripts.Core.Events.ResearchEvents.CompleteResearch(researchNode);
             NotificationManager.Instance.CreateNotification($"Research: {researchNode.name} completed", NotificationType.Info);
+        }
+        
+        public void MarkAsCompleted(string researchId)
+        {
+            if (!_researchDatabase.ContainsKey(researchId)) return;
+            if (_researchStatus[researchId] == ResearchStatus.Completed) return;
+
+            _researchStatus[researchId] = ResearchStatus.Completed;
+            _researchProgress[researchId].progress = 1f;
+            _researchProgress[researchId].completionTime = _gameTime.GameTime;
+
+            UnlockNewResearch(researchId);
+
         }
 
         public bool CancelCurrentResearch()
@@ -287,6 +300,19 @@ namespace Code.Scripts.Core.Systems.Research
                     }
                 }
             }
+        }
+
+        public object[] GetCompletedResearches()
+        {
+            List<string> completedResearches = new List<string>();
+            foreach (var entry in _researchStatus)
+            {
+                if (entry.Value == ResearchStatus.Completed)
+                {
+                    completedResearches.Add(entry.Key);
+                }
+            }
+            return completedResearches.ToArray();
         }
 
         private bool CheckPrerequisites(ResearchNode research)

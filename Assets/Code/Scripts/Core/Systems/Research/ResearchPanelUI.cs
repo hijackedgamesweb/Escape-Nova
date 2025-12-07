@@ -4,15 +4,17 @@ using TMPro;
 using System.Collections.Generic;
 using System.Linq;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Research;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Windows;
+using Newtonsoft.Json.Linq;
 using UnityEngine.InputSystem;
 
 namespace Code.Scripts.UI.Research
 {
-    public class ResearchPanelUI : BaseUIScreen 
+    public class ResearchPanelUI : BaseUIScreen, ISaveable
     {
         [Header("Pestañas (Tabs)")]
         [SerializeField] private Button planetasTabButton;
@@ -384,6 +386,43 @@ namespace Code.Scripts.UI.Research
             {
                 _storageSystem.OnStorageUpdated -= OnStorageUpdated;
             }
+        }
+
+        public string GetSaveId()
+        {
+            return "ResearchPanelUI";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject
+            {
+                ["Items"] = new JArray(_researchUIItems.Keys),
+                ["VisibleNodes"] = new JArray(_researchSystem.GetVisibleResearch().Select(n => n.researchId)),
+                ["CompletedNodes"] = new JArray(_researchSystem.GetCompletedResearches())
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            if (state == null) return;
+            Initialize();
+            var itemsArray = state["Items"] as JArray;
+            var visibleNodesArray = state["VisibleNodes"] as JArray;
+            foreach (var visibleNodeToken in visibleNodesArray)
+            {
+                string researchId = visibleNodeToken.ToObject<string>();
+                _researchSystem.UnlockResearch(researchId);
+            }
+            var completedNodesArray = state["CompletedNodes"] as JArray;
+            foreach (var completedNodeToken in completedNodesArray)
+            {
+                string researchId = completedNodeToken.ToObject<string>();
+                _researchSystem.MarkAsCompleted(researchId);
+            }
+            
+            BuildFullResearchList();
         }
     }
 }

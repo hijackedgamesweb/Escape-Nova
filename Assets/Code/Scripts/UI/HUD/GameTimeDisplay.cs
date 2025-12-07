@@ -26,7 +26,9 @@ namespace Code.Scripts.UI.HUD
                 return;
             }
             _gameTime.OnCycleCompleted += OnTimeAdvanced;
-            UpdateLabel();
+
+            // Forzar actualización al inicio, en caso de que ya haya un valor guardado
+            OnTimeAdvanced(_gameTime.CurrentCycle);
         }
         
         private void OnDestroy()

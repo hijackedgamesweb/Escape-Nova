@@ -1,17 +1,20 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using UnityEngine;
 using UnityEngine.UI;
 using Code.Scripts.Core.World;
+using Code.Scripts.Core.World.ConstructableEntities;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.UI.Common;
 using Code.Scripts.UI.Menus.BuildingMenuPanel;
 using Code.Scripts.UI.Windows;
+using Newtonsoft.Json.Linq;
 
 namespace Code.Scripts.UI.Menus
 {
-    public class OrbitOverview : MonoBehaviour
+    public class OrbitOverview : MonoBehaviour, ISaveable
     {
         [SerializeField] private SolarSystem _solarSystem;
         [SerializeField] private Sprite _planetSlotSprite;
@@ -24,7 +27,8 @@ namespace Code.Scripts.UI.Menus
         private List<List<GameObject>> _planetSlots = new List<List<GameObject>>();
         
         private ConstructionType currentConstructionType = ConstructionType.Planet;
-
+        
+        private bool orbitInitialized = false;
         private void Awake()
         {
             ServiceLocator.RegisterService<OrbitOverview>(this);
@@ -32,7 +36,8 @@ namespace Code.Scripts.UI.Menus
         
         private void Start()
         {
-            DrawOrbit(0);
+            if (!orbitInitialized)
+                DrawOrbit(0);
             ConstructionPanelManager.OnConstructionTypeChanged += OnConstructionTypeChanged;
             if (_solarSystem != null)
             {
@@ -177,24 +182,96 @@ namespace Code.Scripts.UI.Menus
                 planetSlot.transform.SetParent(_orbitContainer, false);
 
                 Image img = planetSlot.GetComponent<Image>();
+                
+                
+                img.sprite = _planetSlotSprite;
+                img.SetNativeSize();
+                img.transform.localScale = Vector3.one * 0.1f;
+                
                 if (_solarSystem.Planets[orbitIndex][i] != null)
                 {
+                    planetSlot.AddComponent<Button>();
                     img.sprite = _solarSystem.Planets[orbitIndex][i].GetComponent<SpriteRenderer>().sprite;
                 }
                 else
                 {
-                    img.sprite = _planetSlotSprite;
                     img.color = new Color(0f, 1f, 0f, 1f);
                     PlanetSlotInitializer(planetSlot, orbitIndex, i);
                 }
 
-                img.SetNativeSize();
-                img.transform.localScale = Vector3.one * 0.1f;
 
                 Vector3 newPos = new Vector3(orbitRadius * Mathf.Cos(rad), orbitRadius * Mathf.Sin(rad), 0f);
                 planetSlot.GetComponent<RectTransform>().anchoredPosition = newPos;
 
                 _planetSlots[orbitIndex].Add(planetSlot);
+            }
+        }
+
+        public string GetSaveId()
+        {
+            return "OrbitOverview";
+        }
+
+        public JToken CaptureState()
+        {
+            var planets = new JObject();
+            for (int orbitIndex = 0; orbitIndex < _planetSlots.Count; orbitIndex++)
+            {
+                var orbit = new JObject();
+
+                for (int positionInOrbit = 0; positionInOrbit < _planetSlots[orbitIndex].Count; positionInOrbit++)
+                {
+                    var planetSlot = _planetSlots[orbitIndex][positionInOrbit];
+
+                    
+                    orbit[positionInOrbit.ToString()] = _solarSystem.Planets[orbitIndex][positionInOrbit] != null
+                        ? _solarSystem.Planets[orbitIndex][positionInOrbit].GetComponent<Planet>().PlanetData.name
+                        : "";
+                    
+                }
+
+                planets[$"Orbit{orbitIndex + 1}"] = orbit;
+            }
+            
+            JObject state = new JObject
+            {
+                ["OrbitCount"] = _planetSlots.Count,
+                ["Planets"] = planets
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            if (state == null) return;
+
+            int orbitCount = state["OrbitCount"]?.ToObject<int>()?? 0;
+            orbitInitialized = true;
+            for (int i = 0; i < orbitCount; i++)
+            {
+                AddNextOrbit();
+            }
+            var planetsData = (JObject)state["Planets"];
+            for (int orbitIndex = 0; orbitIndex < orbitCount; orbitIndex++)
+            {
+                var orbitKey = $"Orbit{orbitIndex + 1}";
+                if (planetsData[orbitKey] is JObject orbit)
+                {
+                    for (int positionInOrbit = 0; positionInOrbit < _planetSlots[orbitIndex].Count; positionInOrbit++)
+                    {
+                        var planetKey = positionInOrbit.ToString();
+                        string planetDataName = orbit[planetKey]?.ToObject<string>() ?? "";
+
+                        if (!string.IsNullOrEmpty(planetDataName))
+                        {
+                            PlanetDataSO planetDataSo = Resources.Load<PlanetDataSO>($"ScriptableObjects/Planets/{planetDataName}");
+                            if (planetDataSo != null)
+                            {
+                                AddPlanetToOverview(orbitIndex, positionInOrbit, planetDataSo);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
