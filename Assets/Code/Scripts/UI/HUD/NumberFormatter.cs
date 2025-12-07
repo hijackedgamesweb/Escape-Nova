@@ -4,99 +4,135 @@ namespace Code.Scripts.Utils
 {
     public static class NumberFormatter
     {
-        private static readonly string[] suffixes = { "", "K", "M", "B", "T" };
+        // Sufijos extendidos hasta quintillones (puedes agregar más si necesitas)
+        private static readonly string[] suffixes = { "", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "O", "N", "D", "U", "Dd", "Td" };
 
-        public static string FormatNumber(int number)
+        public static string FormatNumber(long number)
         {
             if (number == 0) return "0";
 
             bool isNegative = number < 0;
-            long absNumber = Math.Abs((long)number);
+            long absNumber = Math.Abs(number);
 
-            // Para números menores a 10000, mostrar normal
+            // Para números menores a 10,000, mostrar normal
             if (absNumber < 10000)
             {
                 return isNegative ? "-" + absNumber.ToString() : absNumber.ToString();
             }
 
-            int suffixIndex = 0;
-            double formattedNumber = absNumber;
+            // Calcular el índice del sufijo basado en log10
+            int suffixIndex = (int)Math.Log10(absNumber) / 3;
+            double formattedNumber = absNumber / Math.Pow(1000, suffixIndex);
 
-            // Convertir a la unidad apropiada
-            while (formattedNumber >= 1000 && suffixIndex < suffixes.Length - 1)
+            // Ajustar si el número está cerca de 1000 para evitar "1000K"
+            if (formattedNumber >= 999.5 && suffixIndex < suffixes.Length - 1)
             {
                 formattedNumber /= 1000;
                 suffixIndex++;
             }
 
-            // Determinar el formato basado en el número de dígitos
+            // Formatear con precisión adecuada
             string result;
             if (formattedNumber < 10)
             {
-                // Ej: 9.55K (4 caracteres numéricos)
                 result = formattedNumber.ToString("0.00");
             }
             else if (formattedNumber < 100)
             {
-                // Ej: 10.5K (4 caracteres numéricos)
                 result = formattedNumber.ToString("0.0");
             }
             else if (formattedNumber < 1000)
             {
-                // Ej: 999K (3 caracteres numéricos) o 100K (3 caracteres)
                 result = Math.Round(formattedNumber).ToString("0");
             }
             else
             {
-                // Si llegamos aquí, necesitamos el siguiente sufijo
+                // Caso extremo: si todavía es 1000+, usar el siguiente sufijo
                 formattedNumber /= 1000;
                 suffixIndex++;
                 result = formattedNumber.ToString("0.00");
             }
 
-            // Asegurar que no tengamos más de 4 caracteres numéricos
+            // Limitar a 4 caracteres numéricos
             result = LimitToFourNumericCharacters(result);
 
-            result += suffixes[suffixIndex];
+            // Agregar sufijo o notación científica si se acaban los sufijos
+            if (suffixIndex < suffixes.Length)
+            {
+                result += suffixes[suffixIndex];
+            }
+            else
+            {
+                // Notación científica para números muy grandes
+                result = formattedNumber.ToString("0.00e+00");
+            }
+
             return isNegative ? "-" + result : result;
         }
 
         private static string LimitToFourNumericCharacters(string numberString)
         {
-            // Contar solo dígitos y punto decimal
             int numericCharCount = 0;
-            foreach (char c in numberString)
+            for (int i = 0; i < numberString.Length; i++)
             {
+                char c = numberString[i];
                 if (char.IsDigit(c) || c == '.')
                 {
                     numericCharCount++;
                     if (numericCharCount > 4)
                     {
-                        // Encontrar dónde cortar
-                        for (int i = numberString.Length - 1; i >= 0; i--)
+                        // Encontrar dónde cortar y redondear
+                        if (i + 1 < numberString.Length && char.IsDigit(numberString[i + 1]))
                         {
-                            if (char.IsDigit(numberString[i]))
+                            // Verificar si necesitamos redondear
+                            int nextDigit = numberString[i + 1] - '0';
+                            if (nextDigit >= 5)
                             {
-                                // Redondear el último dígito
-                                string trimmed = numberString.Substring(0, i);
-                                if (i < numberString.Length - 1 && numberString[i + 1] == '.')
+                                // Redondear hacia arriba
+                                char[] chars = numberString.ToCharArray();
+                                bool rounded = false;
+                                for (int j = i; j >= 0; j--)
                                 {
-                                    // Si cortamos después de un punto, eliminamos el punto también
-                                    trimmed = numberString.Substring(0, i);
+                                    if (char.IsDigit(chars[j]))
+                                    {
+                                        int digit = chars[j] - '0' + 1;
+                                        if (digit < 10)
+                                        {
+                                            chars[j] = digit.ToString()[0];
+                                            rounded = true;
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            chars[j] = '0';
+                                        }
+                                    }
                                 }
-                                return trimmed;
+                                numberString = new string(chars);
                             }
                         }
+                        // Cortar a 4 caracteres numéricos
+                        return numberString.Substring(0, i);
                     }
                 }
             }
-
             return numberString;
+        }
+
+        // Sobrecargas para otros tipos numéricos
+        public static string FormatNumber(int number)
+        {
+            return FormatNumber((long)number);
         }
 
         public static string FormatNumber(float number)
         {
-            return FormatNumber((int)number);
+            return FormatNumber((long)Math.Round(number));
+        }
+
+        public static string FormatNumber(double number)
+        {
+            return FormatNumber((long)Math.Round(number));
         }
     }
 }

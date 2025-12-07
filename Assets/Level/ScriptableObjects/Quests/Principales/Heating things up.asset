@@ -15,6 +15,7 @@ MonoBehaviour:
   QuestId: heating_things_up
   Title: Heating things up
   Description: We need to bump up those production sites!
+  CompletionGameInfo: {fileID: 11400000, guid: f97bb657bb986d84ea593dc4f48cb383, type: 2}
   Objectives:
   - rid: 868283363412410486
   Rewards:
@@ -31,7 +32,7 @@ MonoBehaviour:
     - rid: 868283363412410486
       type: {class: TotalProductionObjective, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: 
+        objectiveDescription: Produce 200 resources per cycle
         isCompleted: 0
         targetResources: 0000000001000000020000000300000004000000
         requiredTotalAmount: 200

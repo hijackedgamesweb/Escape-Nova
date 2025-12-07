@@ -16,6 +16,7 @@ MonoBehaviour:
   Title: The stars as guide
   Description: Use your skill points to unlock new skills. Research and build the
     satellites "Salas" and "Caerus".
+  CompletionGameInfo: {fileID: 11400000, guid: ed5a5063c50c6954e899bd4547366511, type: 2}
   Objectives:
   - rid: 6291952326318489676
   - rid: 6291952326318489677

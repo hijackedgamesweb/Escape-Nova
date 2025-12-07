@@ -195,33 +195,58 @@ namespace Code.Scripts.Core.World
 
         public void RestoreState(JToken state)
         {
-            JObject obj = state as JObject;
-            JArray orbitsArray = obj["Planets"] as JArray;
+            JObject obj = (JObject)state;
+            JArray orbitsArray = (JArray)obj["Planets"];
 
             for (int i = 0; i < orbitsArray.Count; i++)
             {
-                JArray orbitArray = orbitsArray[i] as JArray;
+                JArray orbitArray = (JArray)orbitsArray[i];
+
                 for (int j = 0; j < orbitArray.Count; j++)
                 {
                     JToken planetToken = orbitArray[j];
+
                     if (planetToken.Type == JTokenType.Null)
                     {
                         Planets[i][j] = null;
+                        continue;
                     }
-                    else
+
+                    JObject planetObj = (JObject)planetToken;
+                    string planetName = planetObj["PlanetName"].ToString();
+
+                    PlanetDataSO planetData = Array.Find(planetDatas,
+                        pd => pd.constructibleName == planetName);
+
+                    if (planetData == null)
                     {
-                        JObject planetObj = planetToken as JObject;
-                        string planetName = planetObj["Name"].ToString();
-                        PlanetDataSO planetData = Array.Find(planetDatas, pd => pd.constructibleName == planetName);
-                        if (planetData != null)
-                        {
-                            Planet planet = planetFactory.CreatePlanet(Vector3.zero, planetData, transform, i, j);
-                            OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
-                            orbitCtrl.Initialize(planet, (i + 1) * orbitDistanceIncrement, j, planetsPerOrbit[i], rotationSpeed, i);
-                            planet.RestoreState(planetObj);
-                            Planets[i][j] = planet;
-                        }
+                        Debug.LogError($"PlanetDataSO NOT FOUND for {planetName}");
+                        continue;
                     }
+
+                    // → RECREAR EL PLANETA
+                    Planet planet = planetFactory.CreatePlanet(
+                        Vector3.zero,
+                        planetData,
+                        transform,
+                        i, j
+                    );
+
+                    // → Restaurar órbita
+                    OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
+                    orbitCtrl.Initialize(
+                        planet,
+                        (i + 1) * orbitDistanceIncrement,
+                        j,
+                        planetsPerOrbit[i],
+                        rotationSpeed,
+                        i
+                    );
+
+                    // → Restaurar estado completo del planeta
+                    planet.RestoreState(planetObj);
+
+                    Planets[i][j] = planet;
                 }
             }
         }
