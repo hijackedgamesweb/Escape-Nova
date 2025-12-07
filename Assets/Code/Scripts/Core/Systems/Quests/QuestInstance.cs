@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Code.Scripts.Core.GameInfo;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
@@ -49,8 +50,16 @@ namespace Code.Scripts.Core.Systems.Quests
                 {
                     objective.UnregisterEvents();
                 }
+        
                 NotificationManager.Instance.CreateNotification($"Quest Completed: {questData.Title}", NotificationType.Info);
-                GameInfoManager.Instance.DisplayGameInfo(questData.QuestId +"_info");
+        
+                if (questData.CompletionGameInfo != null)
+                {
+                    GameInfoManager.Instance.DisplayGameInfo(questData.CompletionGameInfo);
+                }
+                else
+                {
+                }
             }
         }
 
