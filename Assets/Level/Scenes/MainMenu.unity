@@ -539,6 +539,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  continueButton: {fileID: 1383373645}
 --- !u!1 &405240948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1413090168890004175, guid: a497b0f7c93298846bfd421d5d12003a, type: 3}
+      propertyPath: sunRenderer
+      value: 
+      objectReference: {fileID: 2100000, guid: a07c4a72bd979004e85726944f436c35, type: 2}
     - target: {fileID: 1595129752499470838, guid: a497b0f7c93298846bfd421d5d12003a, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.7564192
@@ -2156,7 +2161,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1383373643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166895953}
+        m_TargetAssemblyTypeName: MainMenuButtonsController, Assembly-CSharp
+        m_MethodName: OnContinueButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1383373646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2614,7 +2631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Load File
+  m_text: Store
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63bac80f248636544b2901a46f2a5640, type: 2}
   m_sharedMaterial: {fileID: -125483233776878214, guid: 63bac80f248636544b2901a46f2a5640, type: 2}

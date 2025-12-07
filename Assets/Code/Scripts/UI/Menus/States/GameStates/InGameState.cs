@@ -1,3 +1,4 @@
+using Code.Scripts.Core.GameInfo;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.World;
@@ -22,8 +23,8 @@ namespace Code.Scripts.UI.Menus.States.GameStates
         {
             InitializeHUD();
             ServiceLocator.GetService<SolarSystem>().Initialize();
-            AudioManager.Instance.PlayInGameMusic(); //Llama al Audiomanager y comienza la musica del juego
-            GameInfoManager.Instance.DisplayGameInfo("TutorialInfo"); //Mostrar la ventana de tutorial
+            AudioManager.Instance.PlayInGameMusic();
+            GameInfoManager.Instance.DisplayGameInfo("TutorialInfo");
             _uiObject.gameObject.SetActive(true);
             _gameTimeManager = ServiceLocator.GetService<IGameTime>();
             _gameTimeManager.StartTimer();

@@ -15,6 +15,7 @@ MonoBehaviour:
   QuestId: first_contact
   Title: First contact
   Description: "It seems like another species wants to make contact with us\u2026"
+  CompletionGameInfo: {fileID: 11400000, guid: f1e35c76ddf03a94e9d0cd306e50f4a8, type: 2}
   Objectives:
   - rid: 6291952324994662480
   Rewards:

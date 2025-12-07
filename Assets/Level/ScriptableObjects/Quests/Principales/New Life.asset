@@ -15,6 +15,7 @@ MonoBehaviour:
   QuestId: new_life
   Title: New Life
   Description: Your very first planet. This unlocks the abiility to build "S.T.A.R.S.".
+  CompletionGameInfo: {fileID: 11400000, guid: df8aadd391ec8c64696ad7dce946f67f, type: 2}
   Objectives:
   - rid: 967674831443067134
   Rewards:

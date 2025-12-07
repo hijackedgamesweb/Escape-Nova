@@ -15,6 +15,7 @@ MonoBehaviour:
   QuestId: expansion
   Title: Expansion
   Description: Research is the key to success.
+  CompletionGameInfo: {fileID: 11400000, guid: fc94213f2070b204ca85871d9396a833, type: 2}
   Objectives:
   - rid: 5265271264873545974
   - rid: 6291952324994662400

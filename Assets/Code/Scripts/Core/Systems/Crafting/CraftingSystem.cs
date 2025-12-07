@@ -34,10 +34,13 @@ namespace Code.Scripts.Core.Systems.Crafting
         private const float STANDARD_SECONDS_PER_CYCLE = 5.0f;
         
         private CraftingData _currentCraftingData;
+        
+        private float _lastNotificationRealTime;
+        private const float NOTIFICATION_MIN_INTERVAL = 2.0f;
 
         public event Action<string> OnRecipeUnlocked;
         public event Action<string> OnCraftingStarted;
-        public event Action<string, float> OnCraftingProgress;
+        // Eliminado OnCraftingProgress para evitar sobrecarga (Usaremos Polling en la UI)
         public event Action<string> OnCraftingCompleted;
         public event Action<string, int> OnItemCrafted;
 
@@ -84,19 +87,14 @@ namespace Code.Scripts.Core.Systems.Crafting
                 _gameTime.OnCycleCompleted -= OnCycleCompleted;
             }
         }
+        
         private void OnCycleCompleted(int currentCycle)
         {
             if (!IsAnyCraftingInProgress()) return;
 
+            // Lógica pura, sin eventos intermedios para no saturar
             _currentCraftingData.cyclesCompleted++;
-            float progress = 0f;
-            if (_currentCraftingData.cyclesNeeded > 0)
-            {
-                progress = Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
-            }
             
-            OnCraftingProgress?.Invoke(_currentCraftingData.recipeId, progress);
-
             if (_currentCraftingData.cyclesCompleted >= _currentCraftingData.cyclesNeeded)
             {
                 CompleteCrafting();
@@ -205,6 +203,7 @@ namespace Code.Scripts.Core.Systems.Crafting
             OnCraftingStarted?.Invoke(recipeId);
             return true;
         }
+
         private int CalculateCyclesNeeded(float craftingTimeInSeconds)
         {
             int cycles = Mathf.CeilToInt(craftingTimeInSeconds / STANDARD_SECONDS_PER_CYCLE);
@@ -220,7 +219,6 @@ namespace Code.Scripts.Core.Systems.Crafting
             var output = recipe.output;
             _storageSystem.AddInventoryItem(output.itemName, output.amount * amount);
 
-            var completedData = _currentCraftingData;
             _currentCraftingData = null;
 
             OnItemCrafted?.Invoke(recipeId, output.amount * amount);
@@ -235,7 +233,12 @@ namespace Code.Scripts.Core.Systems.Crafting
                 }
             }
             CraftingEvents.OnItemCrafted?.Invoke(GetItemData(output.itemName));
-            NotificationManager.Instance.CreateNotification($"Crafting: {craftedItemData.itemName} completed", NotificationType.Info);
+            
+            if (UnityEngine.Time.unscaledTime >= _lastNotificationRealTime + NOTIFICATION_MIN_INTERVAL)
+            {
+                NotificationManager.Instance.CreateNotification($"Crafting: {craftedItemData.itemName} completed", NotificationType.Info);
+                _lastNotificationRealTime = UnityEngine.Time.unscaledTime;
+            }
         }
 
         public CraftingRecipe GetRecipe(string recipeId)
@@ -266,7 +269,7 @@ namespace Code.Scripts.Core.Systems.Crafting
         public float GetCurrentCraftingProgress()
         {
             if (!IsAnyCraftingInProgress()) return 0f;
-            if (_currentCraftingData.cyclesNeeded == 0) return 0f; // Seguridad extra
+            if (_currentCraftingData.cyclesNeeded == 0) return 0f;
 
             return Mathf.Clamp01((float)_currentCraftingData.cyclesCompleted / _currentCraftingData.cyclesNeeded);
         }

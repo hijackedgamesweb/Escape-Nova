@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Code.Scripts.Core.Systems.Crafting;
+using Code.Scripts.UI.Crafting;
 
 
 namespace Code.Scripts.Core.Systems.Crafting

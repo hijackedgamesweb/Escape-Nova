@@ -1,4 +1,6 @@
+using System;
 using Code.Scripts.Core.Managers.Interfaces;
+using Code.Scripts.Core.World.ConstructableEntities.States;
 using Code.Scripts.Patterns.State.Interfaces;
 using Newtonsoft.Json.Linq;
 
@@ -13,10 +15,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         {
             return _currentState;
         }
-        
-        public PlanetStateManager(IGameTime gameTime)
+        private Planet _planet;
+
+        public PlanetStateManager(IGameTime gameTime, Planet planet)
         {
             _gameTime = gameTime;
+            _planet = planet;
         }
 
         public void SetState(IState state)
@@ -33,19 +37,29 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
         public void SetStateByName(string stateName)
         {
-            var stateType = System.Type.GetType(stateName);
-            if (stateType == null)
-            {
-                throw new System.Exception($"State type '{stateName}' not found.");
-            }
+            var type = Type.GetType(stateName);
+            if (type == null)
+                throw new Exception($"State type '{stateName}' not found.");
 
-            var stateInstance = System.Activator.CreateInstance(stateType, _gameTime) as IState;
-            if (stateInstance == null)
-            {
-                throw new System.Exception($"Could not create instance of state type '{stateName}'.");
-            }
+            IState state;
 
-            SetState(stateInstance);
+            // crear siempre con Planet y GameTime
+            state = Activator.CreateInstance(type, _planet, _gameTime) as IState;
+
+            if (state == null)
+                throw new Exception($"Could not create instance of state type '{stateName}'.");
+
+            SetState(state);
+
+            // reconectar eventos si es un BuildingState restaurado
+            if (state is BuildingState bs)
+            {
+                bs.OnProgressUpdated += _planet.HandleBuildingProgress;
+            }
+            else
+            {
+                _planet.CompleteConstructionInstantly();
+            }
         }
     }
 }

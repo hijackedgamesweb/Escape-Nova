@@ -37,6 +37,17 @@ namespace Code.Scripts.Core.Entity.Civilization
             CivilizationState = new CivilizationState();
             StorageSystem = new StorageSystem();
         }
+        
+        public void SetCivilizationData(CivilizationSO civilizationSO)
+        {
+            CivilizationData = new CivilizationData(civilizationSO);
+            CivilizationState = new CivilizationState(civilizationSO);
+            ItemPreferences = new EntityItemPreferences(civilizationSO.itemPreferences);
+            StorageSystem = new StorageSystem(civilizationSO.startingResources, civilizationSO.startingInventory);
+            StorageSystem.SetResourceAmounts(civilizationSO.startingResources, civilizationSO.startingResourceAmounts);
+            AIController = AIControllerFactory.CreateAIController(civilizationSO.aiController, this, _invoker);
+            AIControllerType = civilizationSO.aiController;
+        }
 
         public string GetSaveId()
         {

@@ -16,6 +16,7 @@ MonoBehaviour:
   Title: More supplies
   Description: "With all of these resources at our hands, it\u2019d be interesting
     to see what we can build with them."
+  CompletionGameInfo: {fileID: 0}
   Objectives:
   - rid: 6291952611966058578
   - rid: 6291952611966058579
