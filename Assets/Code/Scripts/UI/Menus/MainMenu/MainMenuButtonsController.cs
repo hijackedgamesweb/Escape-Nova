@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MainMenuButtonsController : MonoBehaviour
 {
     [SerializeField] private Button continueButton;
-
+    [SerializeField] private GameObject settingsPanel;
     private void Start()
     {
         bool hasSaveData = SaveManager.Instance.SlotExists();
@@ -39,5 +39,10 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnContinueButtonPressed()
     {
         Loader.Load("InGame");
+    }
+    
+    public void OnSettingsButtonPressed()
+    {
+        settingsPanel.SetActive(!settingsPanel.activeSelf);
     }
 }
