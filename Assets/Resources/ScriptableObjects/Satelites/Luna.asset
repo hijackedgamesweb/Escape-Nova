@@ -25,7 +25,14 @@ MonoBehaviour:
   size: 1
   desc: Every 100 solar cycles, it provides 1 skill point.
   sprite: {fileID: 1891900035898640601, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
-  upgrades: []
+  upgrades:
+  - rid: 7319165402231865421
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7319165402231865421
+      type: {class: MoonUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+      data:
+        skillPointsPerCycle: 1
+        cyclesRequired: 50
+        upgradeId: moon_upgrade

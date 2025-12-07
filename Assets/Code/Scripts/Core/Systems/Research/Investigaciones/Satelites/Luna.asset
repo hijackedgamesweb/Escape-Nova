@@ -52,4 +52,4 @@ MonoBehaviour:
     - rid: 6291952326318489706
       type: {class: RewardUnlockSatelite, ns: Code.Scripts.Core.Systems.Research.Rewards, asm: Assembly-CSharp}
       data:
-        sateliteData: {fileID: 0}
+        sateliteData: {fileID: 11400000, guid: 292042bcacb9a144b93921b1fc30d255, type: 2}

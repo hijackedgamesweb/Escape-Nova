@@ -20,8 +20,14 @@ MonoBehaviour:
   buildCostAmounts: f4010000
   size: 0
   desc: Research time is reduced by 35%.
+  sprite: {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   upgrades:
   - rid: 6291952592291364864
+  animationFrames:
+  - {fileID: -4083543167136710652, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
+  - {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
+  - {fileID: -3218858259719252710, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
+  frameRate: 0.1
   references:
     version: 2
     RefIds:

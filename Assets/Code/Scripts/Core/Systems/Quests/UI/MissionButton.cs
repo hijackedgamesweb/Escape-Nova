@@ -51,6 +51,7 @@ namespace Code.Scripts.Core.Systems.Quests.UI
                 ColorBlock colors = btn.colors;
                 colors.normalColor = Color.green;
                 colors.selectedColor = Color.green;
+                colors.highlightedColor = new Color(0,1,0,0.9f);
                 btn.colors = colors;
             }
         }
