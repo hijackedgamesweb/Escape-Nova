@@ -24,7 +24,7 @@ public class IngredientSlotUI : MonoBehaviour
         
         if (detailsText != null)
         {
-            detailsText.text = $"{formattedOwned}/{formattedNeeded} {itemName}\n";
+            detailsText.text = $"{formattedOwned}/{formattedNeeded}\n {itemName}\n";
         
             if (amountOwned >= amountNeeded)
             {

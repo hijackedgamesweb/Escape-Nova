@@ -1,15 +1,17 @@
 using System.Collections.Generic;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using UnityEngine;
 using Code.Scripts.Patterns.ServiceLocator;
 using Code.Scripts.Core.Systems.Planets;
 using Code.Scripts.Core.Systems.Storage;
+using Newtonsoft.Json.Linq;
 
 namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 {
-    public class PlanetListInitializer : MonoBehaviour
+    public class PlanetListInitializer : MonoBehaviour, ISaveable
     {
         [SerializeField] private List<PlanetDataSO> _planetDataSOs; 
         [SerializeField] private PlanetListPrefab _planetListPrefab;
@@ -117,6 +119,35 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
                 _currentPlanetItem.IsSelected = false;
                 _currentPlanetItem.UpdateVisualState();
                 _currentPlanetItem = null;
+            }
+        }
+
+        public string GetSaveId()
+        {
+            return "PlanetListInitializer";
+        }
+
+        public JToken CaptureState()
+        {
+            var state = new JObject
+            {
+                ["researchedPlanets"] = new JArray(_createdPlanets.Keys) 
+            };
+            return state;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            JArray researchedPlanetsArray = (JArray)state["researchedPlanets"];
+            if (researchedPlanetsArray == null) return;
+            foreach (var planetNameToken in researchedPlanetsArray)
+            {
+                string planetName = planetNameToken.ToObject<string>();
+                PlanetDataSO planetData = Resources.Load<PlanetDataSO>($"ScriptableObjects/Planets/{planetName}");
+                if (planetData != null)
+                {
+                    AddNewPlanet(planetData);
+                }
             }
         }
     }

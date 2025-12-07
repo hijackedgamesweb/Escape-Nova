@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq; // Necesario para .All()
+using System.Linq;
+using Code.Scripts.Core.SaveLoad.Interfaces; // Necesario para .All()
 using Code.Scripts.Core.Systems.Quests;
 using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
 using Code.Scripts.Patterns.ServiceLocator;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace Code.Scripts.Core.Managers
@@ -15,7 +17,7 @@ namespace Code.Scripts.Core.Managers
         public List<QuestData> quests;
     }
 
-    public class QuestManager : MonoBehaviour
+    public class QuestManager : MonoBehaviour, ISaveable
     {
         [SerializeField] private List<QuestSet> allQuestSets = new();
         
@@ -27,7 +29,7 @@ namespace Code.Scripts.Core.Managers
 
         public List<QuestData> VisibleQuests => visibleQuests;
         public List<QuestData> CompletedQuests => completedQuests;
-        
+         
         public event Action OnVisibleQuestsChanged;
         public event Action<QuestInstance> OnQuestCompleted;
 
@@ -37,7 +39,7 @@ namespace Code.Scripts.Core.Managers
             LoadCurrentQuestSet();
         }
 
-        public void StartQuest(string questId)
+        public void StartQuest(string questId, bool[] isObjectiveCompleted = null)
         {
             QuestData questData = null;
             
@@ -56,6 +58,23 @@ namespace Code.Scripts.Core.Managers
                 
                 var questInstance = new QuestInstance(questData);
                 questInstance.isActive = true;
+                
+                if(isObjectiveCompleted != null)
+                {
+                    for (int i = 0; i < isObjectiveCompleted.Length && i < questInstance.RuntimeObjectives.Count; i++)
+                    {
+                        questInstance.RuntimeObjectives[i].isCompleted = isObjectiveCompleted[i];
+                    }
+                }
+                
+                if (completedQuests.Contains(questData))
+                {
+                    questInstance.isCompleted = true;
+                    foreach (var objective in questInstance.RuntimeObjectives)
+                    {
+                        objective.isCompleted = true;
+                    }
+                }
                 activeQuests.Add(questInstance);
             }
             else
@@ -109,6 +128,50 @@ namespace Code.Scripts.Core.Managers
             OnVisibleQuestsChanged?.Invoke();
         }
 
+        private void LoadQuests(JArray completedObjectivesArray)
+        {
+            visibleQuests.Clear();
+            activeQuests.Clear();
+            for (int i = currentQuestSetIndex; i >= 0; i--)
+            {
+                var questsInSet = allQuestSets[i].quests;
+                if (i != currentQuestSetIndex)
+                {
+                    foreach (var quest in questsInSet)
+                    {
+                        completedQuests.Add(quest);
+                        StartQuest(quest.QuestId);
+                    }
+                }
+                else
+                {
+                    foreach (var quest in questsInSet)
+                    {
+                        JToken questState = null;
+                        foreach (var item in completedObjectivesArray)
+                        {
+                            if (item["questName"].ToObject<string>() == quest.QuestId)
+                            {
+                                questState = item;
+                                break;
+                            }
+                        }
+                        if (questState != null)
+                        {
+                            JArray objectivesArray = (JArray)questState["objectives"];
+                            bool[] isObjectiveCompleted = new bool[objectivesArray.Count];
+                            for (int j = 0; j < objectivesArray.Count; j++)
+                            {
+                                isObjectiveCompleted[j] = objectivesArray[j]["data"]["isCompleted"].ToObject<bool>();
+                            }
+                            StartQuest(quest.QuestId, isObjectiveCompleted);
+                        }
+                        visibleQuests.Add(quest);
+                    }
+                }
+            }
+        }
+
         private void CheckForSetCompletion()
         {
             if (currentQuestSetIndex >= allQuestSets.Count)
@@ -146,6 +209,35 @@ namespace Code.Scripts.Core.Managers
             }
             
             return new List<QuestObjective>();
+        }
+
+        public string GetSaveId()
+        {
+            return "QuestManager";
+        }
+
+        public JToken CaptureState()
+        {
+            JObject obj = new JObject
+            {
+                ["currentQuestSetIndex"] = currentQuestSetIndex,
+                ["activeQuests"] = new JArray(activeQuests.Select(q => q.CaptureState())),
+                ["completedQuests"] = new JArray(completedQuests.Select(q => q.QuestId))
+            };
+            return obj;
+        }
+
+        public void RestoreState(JToken state)
+        {
+            currentQuestSetIndex = state["currentQuestSetIndex"].ToObject<int>();
+            var completedObjectivesArray = state["activeQuests"] as JArray;
+
+            LoadQuests(completedObjectivesArray);
+        }
+
+        private void InitializeLoadQuest()
+        {
+            
         }
     }
 }
