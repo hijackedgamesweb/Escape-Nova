@@ -32008,16 +32008,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseButton: {fileID: 1948556963}
   _basePauseButtonSprite: {fileID: 21300000, guid: bae8a9352ff738e40b8f434ef4dbd6b5, type: 3}
-  _highlightedPauseButtonSprite: {fileID: -6094710543449696968, guid: 7bdc6ebab20a4394a89b74ffb0590589, type: 3}
+  _highlightedPauseButtonSprite: {fileID: -2608981321835317509, guid: ecf5b10d03cea8b459b9f9a8ff8aba4b, type: 3}
   _baseSpeedButton: {fileID: 55586736}
   _baseBaseSpeedButtonSprite: {fileID: 3794550611322748858, guid: c6fb43811f177d549be9a768b79ec59d, type: 3}
-  _hightlightedBaseButtonSprite: {fileID: -4935973104315556610, guid: de26a79188b3c8744b9fc5ef1ab8ad08, type: 3}
+  _hightlightedBaseButtonSprite: {fileID: -8802017846085776307, guid: be9a34771dde9dd42a63c99b6ba7a197, type: 3}
   _doubleSpeedButton: {fileID: 1098293134}
   _baseDoubleSpeedButtonSprite: {fileID: -8366067564511975507, guid: 66f156bdeebf4274385d8d78390febf8, type: 3}
-  _highlightedDoubleSpeedButtonSprite: {fileID: 5520550586184687947, guid: ab096338f8d92be49be678fcaf7bb264, type: 3}
+  _highlightedDoubleSpeedButtonSprite: {fileID: -6247344841354553161, guid: 50926f653ca17014b927fed7dad33c45, type: 3}
   _fourthSpeedButton: {fileID: 275184803}
   _baseFourthSpeedButtonSprite: {fileID: 8321528207803008786, guid: fa69e7d8e9ad06b478f3530ccf570a46, type: 3}
-  _highlightedFourthSpeedButtonSprite: {fileID: 7033763837043333686, guid: 82b4f10375f9f4d4dbbe4e814b69cfde, type: 3}
+  _highlightedFourthSpeedButtonSprite: {fileID: 2399808062429898518, guid: 2c19ab30efc69d945bec7278f22f6fc4, type: 3}
 --- !u!114 &1251641543
 MonoBehaviour:
   m_ObjectHideFlags: 0
