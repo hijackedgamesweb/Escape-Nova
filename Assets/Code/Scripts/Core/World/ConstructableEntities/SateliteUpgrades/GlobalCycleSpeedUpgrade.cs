@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Managers;
 using System;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ namespace Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades
         public override void ApplyUpgrade(Planet planet)
         {
             Planet.AddGlobalImprovement(globalImprovementKey, globalSpeedBonusPercent);
+
+            NotificationManager.Instance.CreateNotification(
+                $"Global research and crafting speed has improved {globalSpeedBonusPercent}%",
+                NotificationType.Info);
         }
     }
 }
