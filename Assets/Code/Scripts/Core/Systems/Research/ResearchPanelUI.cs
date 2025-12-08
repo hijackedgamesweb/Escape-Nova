@@ -54,6 +54,8 @@ namespace Code.Scripts.UI.Research
         private ResearchNode _selectedNode;
         private ResearchUIItem _selectedItemButton;
         private Button _currentSelectedTab;
+        
+        private Dictionary<ResearchCategory, string> _lastSelectedIds = new Dictionary<ResearchCategory, string>();
 
         public override void Show(object parameter = null)
         {
@@ -142,15 +144,6 @@ namespace Code.Scripts.UI.Research
         {
             _currentCategory = category;
             
-            detailsPanel.SetActive(false);
-            _selectedNode = null;
-            
-            if (_selectedItemButton != null)
-            {
-                _selectedItemButton.SetSelected(false);
-                _selectedItemButton = null;
-            }
-            
             if (planetasTabButton != null) planetasTabButton.GetComponent<Image>().color = tabNormalColor;
             if (objetosTabButton != null) objetosTabButton.GetComponent<Image>().color = tabNormalColor;
             if (satelitesTabButton != null) satelitesTabButton.GetComponent<Image>().color = tabNormalColor;
@@ -169,6 +162,13 @@ namespace Code.Scripts.UI.Research
                 _currentSelectedTab.GetComponent<Image>().color = tabSelectedColor;
             }
 
+            string savedIdForThisCategory = "";
+            if (_lastSelectedIds.ContainsKey(category))
+            {
+                savedIdForThisCategory = _lastSelectedIds[category];
+            }
+
+            ResearchUIItem itemToSelect = null;
             ResearchUIItem firstItemInThisCategory = null;
 
             foreach (var pair in _researchUIItems)
@@ -179,9 +179,15 @@ namespace Code.Scripts.UI.Research
                 if (node.category == _currentCategory)
                 {
                     item.gameObject.SetActive(true);
+                    
                     if (firstItemInThisCategory == null)
                     {
                         firstItemInThisCategory = item;
+                    }
+
+                    if (!string.IsNullOrEmpty(savedIdForThisCategory) && node.researchId == savedIdForThisCategory)
+                    {
+                        itemToSelect = item;
                     }
                 }
                 else
@@ -190,9 +196,23 @@ namespace Code.Scripts.UI.Research
                 }
             }
             
-            if (firstItemInThisCategory != null)
+            if (itemToSelect != null)
+            {
+                OnItemClicked(itemToSelect);
+            }
+            else if (firstItemInThisCategory != null)
             {
                 OnItemClicked(firstItemInThisCategory);
+            }
+            else
+            {
+                detailsPanel.SetActive(false);
+                _selectedNode = null;
+                if (_selectedItemButton != null)
+                {
+                    _selectedItemButton.SetSelected(false);
+                    _selectedItemButton = null;
+                }
             }
         }
         
@@ -208,7 +228,11 @@ namespace Code.Scripts.UI.Research
             _selectedItemButton = item;
             _selectedItemButton.SetSelected(true);
             
-            ShowDetails(item.GetNodeData());
+            var node = item.GetNodeData();
+            
+            _lastSelectedIds[_currentCategory] = node.researchId;
+            
+            ShowDetails(node);
         }
 
         private void ShowDetails(ResearchNode node)
