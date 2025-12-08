@@ -22,15 +22,9 @@ MonoBehaviour:
   buildCostAmounts: e8030000fa00000064000000
   size: 0.5
   desc: Research time is reduced by 50%.
-  sprite: {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
+  sateliteIcon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   upgrades:
   - rid: 6291952592291364865
-  animationFrames:
-  - {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: 8123192163440836270, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: -1040247118585427430, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  frameRate: 0.1
   references:
     version: 2
     RefIds:
