@@ -18,6 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: 983a0000
+  loreDescription: The enormous layers of Frostice on this planet mean that temperatures
+    are constantly at absolute zero, making it impossible for life to develop. It
+    has taken many solar cycles to extract resources.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

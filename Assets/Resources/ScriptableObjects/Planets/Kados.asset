@@ -18,6 +18,10 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: This small planet has a core covered by Frostice, which leads
+    to heavy snowfall that ends up covering everything with frost. This has forced
+    its civilizations to develop a resistance to extreme climates, relying on a thick
+    coat of fur covering their skin.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

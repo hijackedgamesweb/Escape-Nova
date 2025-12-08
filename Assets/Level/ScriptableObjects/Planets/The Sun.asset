@@ -17,6 +17,9 @@ MonoBehaviour:
   timeToBuild: 0
   buildCostResources: []
   buildCostAmounts: 
+  loreDescription: The center of your system, providing energy and life for eons.
+    This star has seen better days and has now entered the final phase of its life.
+    It often shows signs that its energy is beginning to wane.
   size: 0
   producibleResources: []
   resourcePerCycle: 
@@ -72,3 +75,4 @@ MonoBehaviour:
   - {fileID: 7990850664247307625, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
   - {fileID: -4530950513320135678, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
   frameRate: 0.1
+  maxSatellites: 0

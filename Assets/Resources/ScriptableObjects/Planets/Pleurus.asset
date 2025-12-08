@@ -20,6 +20,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   buildCostAmounts: 401f0000401f0000401f0000
+  loreDescription: Two primal forces of nature mixed with the most basic resource.
+    A nature wonder that we can benefit from.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

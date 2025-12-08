@@ -22,6 +22,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: b8880000b8880000b8880000b8880000b8880000
+  loreDescription: "A breathtaking, world-spanning mosaic of every biome: mountains
+    of metal, frozen oceans, molten seas and endless dunes. Utopia\u2019s unparalleled
+    material diversity makes it the richest resource planet and a hopeful place to
+    achieve your mission."
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}

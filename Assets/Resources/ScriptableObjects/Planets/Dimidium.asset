@@ -19,6 +19,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   buildCostAmounts: c4090000c4090000
+  loreDescription: The mixture of Frostice and Magmavite has led to a strange equilibrium
+    in which both extreme climates coexist. No scientific explanation has been found
+    to justify this phenomenon, and all studies indicate that this calm could be
+    broken at any moment.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

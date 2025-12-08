@@ -18,4 +18,6 @@ MonoBehaviour:
   Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
   MaxStack: 100000000
   VisualPrefab: {fileID: 0}
-  astrariumDescription: Siderurgia se queda corta en este contexto
+  astrariumDescription: A very hard and highly prized metal, thanks to its unique
+    properties. Its origin is unknown, but it is believed to come from a distant
+    galaxy.

@@ -18,6 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   buildCostAmounts: ac0d0000
+  loreDescription: The coarse sands of this planet, combined with erosion from strong
+    winds, have created canyons with unique shapes. Could they be hiding some mysterious
+    secret waiting to be explored?
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
