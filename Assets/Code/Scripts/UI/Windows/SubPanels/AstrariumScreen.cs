@@ -46,7 +46,7 @@ namespace Code.Scripts.UI.Windows
                 _astrariumManager.OnEntryUpdated += HandleEntryUpdated;
             }
         }
-
+        
         private void OnDestroy()
         {
             if (_astrariumManager != null)
@@ -86,6 +86,7 @@ namespace Code.Scripts.UI.Windows
         {
             _currentCategory = category;
             _detailsContainer.SetActive(false);
+            AudioManager.Instance.PlaySFX("Astrarium");
             RefreshList();
         }
 
@@ -154,6 +155,8 @@ namespace Code.Scripts.UI.Windows
                 _detailImage.preserveAspect = true;
                 _detailDescription.text = entry.GetDescription();
             }
+            
+            AudioManager.Instance.PlaySFX("Astrarium");
         }
 
         private string GetLockedMessage(AstrariumCategory category)

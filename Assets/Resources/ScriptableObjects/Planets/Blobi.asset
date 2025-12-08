@@ -20,6 +20,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   buildCostAmounts: d0070000d0070000d0070000
+  loreDescription: The arid areas of this planet have greatly complicated the settlement
+    of civilization on it, giving rise to wild fauna that hinders the extraction
+    of resources.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

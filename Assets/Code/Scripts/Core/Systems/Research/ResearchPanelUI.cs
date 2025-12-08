@@ -144,6 +144,8 @@ namespace Code.Scripts.UI.Research
         {
             _currentCategory = category;
             
+            AudioManager.Instance.PlaySFX("ResearchTabButton");
+            
             if (planetasTabButton != null) planetasTabButton.GetComponent<Image>().color = tabNormalColor;
             if (objetosTabButton != null) objetosTabButton.GetComponent<Image>().color = tabNormalColor;
             if (satelitesTabButton != null) satelitesTabButton.GetComponent<Image>().color = tabNormalColor;

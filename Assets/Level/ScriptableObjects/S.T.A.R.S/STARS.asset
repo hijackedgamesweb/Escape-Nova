@@ -19,8 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: 1e000000
   size: 0.25
-  desc: S.T.A.R.S. project
-  sprite: {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}
+  desc: Built by order of our Empergod, The Storage Terminal And Research Station
+    (S.T.A.R.S.) is one of the vital parts of the solar system. It is the main center
+    of activities.
   material: {fileID: 0}
   orbitDistance: 2
   orbitSpeed: 5

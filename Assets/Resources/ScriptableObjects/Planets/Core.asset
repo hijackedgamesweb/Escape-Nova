@@ -18,6 +18,8 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: The most basic form a planet can take, the minimum required for
+    it to be habitable and for the extraction of elemental Batee.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

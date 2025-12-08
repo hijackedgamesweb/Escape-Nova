@@ -18,6 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: This small planet is composed mainly of Paladium, which, combined
+    with its powerful electrical storms, has charged the surface with strong static
+    electricity.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}

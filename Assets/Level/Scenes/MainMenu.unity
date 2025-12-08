@@ -244,18 +244,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
-      propertyPath: inGameMusicSounds.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
-      propertyPath: inGameMusicSounds.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2ba74548f2f66e641a625262692d9711, type: 3}
-    - target: {fileID: 5251533381192110312, guid: a99658b76a8c80f4e91868da1fa684fd, type: 3}
-      propertyPath: inGameMusicSounds.Array.data[5].name
-      value: Ocean
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -547,6 +535,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166895953}
+        m_TargetAssemblyTypeName: MainMenuButtonsController, Assembly-CSharp
+        m_MethodName: OnStoreExitButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &266522354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,7 +660,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6a0ed0f72ed2225429b7cc5dab8d4284, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2046,7 +2046,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -7249197610883570905, guid: f6425ede4101418449a03141339ed639, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3319,7 +3319,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1957786939}
-  - {fileID: 1382856403}
   - {fileID: 147186760}
   - {fileID: 1208694180}
   - {fileID: 1373425269}
@@ -3335,3 +3334,4 @@ SceneRoots:
   - {fileID: 1858127271}
   - {fileID: 62536555}
   - {fileID: 1257282492}
+  - {fileID: 1382856403}
