@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quintessence
   description: Natural planets generate 100% more resources.
-  skillPointCost: 5
+  skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 8c8faf561cd8a834b852d49ecbf6a23a, type: 2}
   positionInConstellation: {x: -7, y: 1}
