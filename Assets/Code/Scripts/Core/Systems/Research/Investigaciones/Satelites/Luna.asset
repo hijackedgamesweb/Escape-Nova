@@ -19,7 +19,7 @@ MonoBehaviour:
     every 100 solar cycles.
   icon: {fileID: 4125636645744980110, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
   prerequisites: []
-  researchTimeInSeconds: 750
+  researchTimeInSeconds: 200
   resourceCosts:
   - resourceType: 0
     amount: 2000

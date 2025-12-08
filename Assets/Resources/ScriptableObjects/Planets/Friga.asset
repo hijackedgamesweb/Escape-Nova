@@ -18,7 +18,7 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: f4010000f4010000
+  buildCostAmounts: d0070000d0070000
   loreDescription: Large quantities of Frostice have coated the Paladium ores on
     this planet, changing their composition and altering the properties of this metal.
     However, after years of research, it has been possible to separate the two elements
