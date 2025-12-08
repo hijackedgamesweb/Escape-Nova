@@ -25,6 +25,10 @@ namespace Code.Scripts.Core.Managers
 
         public void AddCivilization(Civilization civ)
         {
+            if (_civilizations.Exists(x => x.CivilizationData.Name == civ.CivilizationData.Name))
+            {
+                return;
+            }
             _civilizations.Add(civ);
             OnNewCivilizationDiscovered?.Invoke(civ);
         }
@@ -97,6 +101,10 @@ namespace Code.Scripts.Core.Managers
             {
                 var civName = civToken["CivilizationData"]["Name"].ToObject<string>();
                 var civDataSO = Resources.Load<CivilizationSO>($"Civilizations/{civName}");
+                if (civDataSO == null)
+                {
+                    continue;
+                }
                 Civilization civ = new Civilization();
                 civ.SetCivilizationData(civDataSO);
                 civ.RestoreState(civToken);
