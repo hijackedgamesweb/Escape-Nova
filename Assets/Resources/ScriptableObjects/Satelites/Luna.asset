@@ -34,5 +34,5 @@ MonoBehaviour:
       type: {class: MoonUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
         skillPointsPerCycle: 1
-        cyclesRequired: 50
+        cyclesRequired: 100
         upgradeId: moon_upgrade
