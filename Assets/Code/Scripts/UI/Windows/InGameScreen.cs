@@ -2,6 +2,7 @@ using System;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.SaveLoad.Interfaces;
+using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
@@ -33,8 +34,8 @@ namespace Code.Scripts.UI.Windows
                 OnButtonPressed("Objectives"));
             storageBtn.onClick.AddListener(() => 
                 OnButtonPressed("Storage"));
-            constructionBtn.onClick.AddListener(() =>
-                OnConstructionButtonPressed());
+            constructionBtn.onClick.AddListener(() => 
+                UIManager.Instance.ShowScreen<PerfectViewScreen>());
             researchBtn.onClick.AddListener(() => 
                 OnButtonPressed("Research"));
             returnBtn.onClick.AddListener(() => 
@@ -78,7 +79,6 @@ namespace Code.Scripts.UI.Windows
         private void OpenPauseMenu()
         {
             Time.timeScale = 0f;
-            AudioManager.Instance.PlaySFX("MainMenuButton");
             UIManager.Instance.ShowOverlay<PauseMenuScreen>();
         }
 
@@ -94,12 +94,6 @@ namespace Code.Scripts.UI.Windows
         {
             AudioManager.Instance.PlaySFX("ButtonClick");
             UIManager.Instance.ShowScreen<ActionPanelScreen>(interf);
-        }
-
-        private void OnConstructionButtonPressed()
-        {
-            AudioManager.Instance.PlaySFX("ButtonClick");
-            UIManager.Instance.ShowScreen<PerfectViewScreen>();
         }
 
         public void OnMenuPressed(String interf)

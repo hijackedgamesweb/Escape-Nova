@@ -287,8 +287,6 @@ namespace Code.Scripts.Camera
                 _minZoom,
                 0.8f
             ).SetEase(Ease.OutCirc);
-            
-            AudioManager.Instance.PlaySFX("PlanetZoom");
         }
 
         public void ClearTarget()

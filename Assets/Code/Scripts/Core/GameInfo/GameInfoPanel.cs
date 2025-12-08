@@ -99,7 +99,6 @@ namespace Code.Scripts.UI.Menus
         
         private void OnCloseButtonClicked()
         {
-            AudioManager.Instance.PlaySFX("Close");
             gameObject.SetActive(false);
         }
     }

@@ -21,7 +21,7 @@ namespace Code.Scripts.UI
         private IEnumerator PlayAnimation()
         {
             AudioManager.Instance.StopMusic();
-            AudioManager.Instance.PlaySFX("GameOverSFX");
+            AudioManager.Instance.PlaySFX("NovaSfx");
             if (gameOverTextObject != null)
             {
                 gameOverTextObject.SetActive(false);

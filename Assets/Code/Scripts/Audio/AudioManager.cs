@@ -4,7 +4,6 @@ using Code.Scripts.Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.Audio;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class AudioManager : Singleton<AudioManager>
@@ -25,11 +24,6 @@ public class AudioManager : Singleton<AudioManager>
     private void Start()
     {
         auxInGameMusicIndex = new int[inGameMusicSounds.Length];
-
-        if (SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            PlayMusic("MainMenuMusic");
-        }
     }
     
     
@@ -51,7 +45,13 @@ public class AudioManager : Singleton<AudioManager>
     
     public void PlayInGameMusic()
     {
-        if (!atmos) { PlayMusic("Horizon"); }
+        if (!atmos)
+        {
+            Sound s = Array.Find(inGameMusicSounds, x => x.name == "Horizon");
+
+            musicSource.clip = s.clip;
+            musicSource.Play();
+        }
         else
         {
             if (maxIdx == inGameMusicSounds.Length)

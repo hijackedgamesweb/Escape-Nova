@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.Factory;

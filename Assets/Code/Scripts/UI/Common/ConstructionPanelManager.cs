@@ -31,7 +31,6 @@ namespace Code.Scripts.UI.Common
             planetButton.GetComponent<Image>().color = activeColor;
             sateliteButton.GetComponent<Image>().color = inactiveColor;
             OnConstructionTypeChanged?.Invoke(ConstructionType.Planet);
-            AudioManager.Instance.PlaySFX("ResearchTabButton");
         }
     
         public void ShowSateliteContent()
@@ -41,7 +40,6 @@ namespace Code.Scripts.UI.Common
             planetButton.GetComponent<Image>().color = inactiveColor;
             sateliteButton.GetComponent<Image>().color = activeColor;
             OnConstructionTypeChanged?.Invoke(ConstructionType.Satelite);
-            AudioManager.Instance.PlaySFX("ResearchTabButton");
         }
     
     }
