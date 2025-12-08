@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7bd636bb6e54843bf7253b43569f48, type: 3}
   m_Name: ATENEA
   m_EditorClassIdentifier: 
-  constellationName: ATENEA
+  constellationName: ATHENA
   description: The goddess of wisdom has decided to offer her assistance to you,
     our Empergod, to help you succeed in your mission by increasing the production
     output of your satellites.
