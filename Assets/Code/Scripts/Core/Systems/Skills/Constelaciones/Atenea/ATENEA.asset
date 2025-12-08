@@ -16,7 +16,7 @@ MonoBehaviour:
   description: The goddess of wisdom has decided to offer her assistance to you,
     our Empergod, to help you succeed in your mission by increasing the production
     output of your satellites.
-  icon: {fileID: 0}
+  icon: {fileID: 3970945367065920348, guid: f63358944630dc54fb127f37cc8363e1, type: 3}
   nodes:
   - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}
   - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
