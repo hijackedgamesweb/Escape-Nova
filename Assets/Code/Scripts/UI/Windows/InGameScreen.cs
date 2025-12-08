@@ -2,7 +2,6 @@ using System;
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.SaveLoad.Interfaces;
-using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Construction;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
