@@ -18,9 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  buildCostAmounts: b80b0000b80b0000
+  buildCostAmounts: d0070000d0070000
   size: 1.5
-  desc: This planet produces 25% more resources.
+  desc: This planet produces 15% more resources.
   sateliteIcon: {fileID: 0}
   upgrades:
   - rid: 5265271245964312748
@@ -31,7 +31,7 @@ MonoBehaviour:
       type: {class: LocalSynergyUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
         baseImprovementType: BonoSalasBase
-        basePercentage: 25
+        basePercentage: 15
         synergySkillId: SinergiaSalas50
         synergyImprovementType: BonoSalasSinergia
         synergyPercentage: 50
