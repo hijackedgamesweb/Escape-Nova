@@ -69,14 +69,16 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             return value;
         }
 
-        public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
+       public void InitializePlanet(PlanetDataSO data, int orbit, int positionInOrbit)
         {
             _planetData = data;
             _spriteRenderer.sprite = data.sprite;
             Name = data.constructibleName;
             this.transform.localScale = Vector3.one * data.size;
+            
             ResourcePerCycle = (int[])data.resourcePerCycle.Clone();
             _baseResourcePerCycle = (int[])data.resourcePerCycle.Clone();
+            
             ProducibleResources = new List<ResourceType>();
             foreach (var resourceData in data.producibleResources)
             {
@@ -94,6 +96,28 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             var buildingState = new BuildingState(this, gametTime);
             buildingState.OnProgressUpdated += HandleBuildingProgress;
             _stateManager.SetState(buildingState);
+
+            RecalculateProduction(); 
+        }
+        private void RecalculateProduction()
+        {
+            if (ResourcePerCycle == null || _baseResourcePerCycle == null) return;
+
+            for (int i = 0; i < ResourcePerCycle.Length; i++)
+            {
+                ResourcePerCycle[i] = _baseResourcePerCycle[i];
+            }
+            
+            float totalImprovement = GetTotalImprovementPercentage();
+            if (totalImprovement > 0f)
+            {
+                for (int i = 0; i < ResourcePerCycle.Length; i++)
+                {
+                    float baseValue = _baseResourcePerCycle[i];
+                    float newValue = baseValue * (1 + totalImprovement / 100f);
+                    ResourcePerCycle[i] = Mathf.RoundToInt(newValue);
+                }
+            }
         }
         public void HandleBuildingProgress(float progress)
         {
@@ -157,24 +181,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             }
             return false;
         }
-        private void RecalculateProduction()
-        {
-            for (int i = 0; i < ResourcePerCycle.Length; i++)
-            {
-                ResourcePerCycle[i] = _baseResourcePerCycle[i];
-            }
-            float totalImprovement = GetTotalImprovementPercentage();
-            if (totalImprovement > 0f)
-            {
-                for (int i = 0; i < ResourcePerCycle.Length; i++)
-                {
-                    float baseValue = _baseResourcePerCycle[i];
-                    float newValue = baseValue * (1 + totalImprovement / 100f);
-                    ResourcePerCycle[i] = Mathf.RoundToInt(newValue);
-                }
-            }
-        }
-
         public float GetTotalImprovementPercentage()
         {
             float total = 0f;

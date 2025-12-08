@@ -71,7 +71,9 @@ namespace Code.Scripts.UI.HUD
             _baseSpeedButton.sprite = _baseBaseSpeedButtonSprite;
             _doubleSpeedButton.sprite = _baseDoubleSpeedButtonSprite;
             _fourthSpeedButton.sprite = _baseFourthSpeedButtonSprite;
-
+            
+            AudioManager.Instance.PlaySFX("GameSpeedChanged");
+            
             if (Mathf.Approximately(currentScale, 0f))
             {
                 _pauseButton.sprite = _highlightedPauseButtonSprite;

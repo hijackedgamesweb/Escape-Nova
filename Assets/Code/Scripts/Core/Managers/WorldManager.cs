@@ -99,6 +99,7 @@ namespace Code.Scripts.Core.Managers
                     Civilization newCiv = new Civilization(_invoker, civSO);
                     _civilizationManager.AddCivilization(newCiv);
                     _civilizationSOs.Remove(civSO);
+                    DiplomacyEvents.OnCivilizationMet?.Invoke(civSO);
                     return;
                 }
             }

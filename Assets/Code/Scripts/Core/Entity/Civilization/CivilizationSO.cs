@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Code.Scripts.Core.Systems.Astrarium;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -17,8 +18,10 @@ namespace Code.Scripts.Core.Entity.Civilization
         SkulgBehaviour,
         HandoullBehaviour
     }
-    public class CivilizationSO : EntitySO
+    public class CivilizationSO : EntitySO, IAstrariumEntry
     {
+        public string civName;
+
         [Header("Civilization Info")]
         [TextArea(3, 10)]
         public string civilizationDescription;
@@ -41,6 +44,13 @@ namespace Code.Scripts.Core.Entity.Civilization
         
         [Header("Civilization Prefs")]
         public PlanetDataSO preferredPlanet;
-        
+
+        // --- INTERFAZ ---
+        public string GetAstrariumID() => $"civ_{civName.ToLower().Replace(" ", "_")}";
+        public string GetDisplayName() => civName;
+        public string GetDescription() => civilizationDescription;
+        public Sprite GetIcon() => civilizationIcon; 
+        public AstrariumCategory GetCategory() => AstrariumCategory.Species;
+        public GameObject Get3DModel() => null;
     }
 }
