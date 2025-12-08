@@ -3,353 +3,375 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using Code.Scripts.Core.Managers;
+using Code.Scripts.Core.SaveLoad.Interfaces;
 using Code.Scripts.Core.Systems.Crafting;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.Crafting;
+using Newtonsoft.Json.Linq;
 
-namespace Code.Scripts.UI.Crafting
+public class CraftingPanelUI : MonoBehaviour, ISaveable
 {
-    public class CraftingPanelUI : MonoBehaviour
+    private CraftingSystem _craftingSystem;
+    private StorageSystem _storageSystem;
+
+    [Header("Prefabs")]
+    [SerializeField] private GameObject recipeButtonPrefab;
+    [SerializeField] private GameObject ingredientSlotPrefab;
+
+    [Header("Containers")]
+    [SerializeField] private Transform recipeListContainer;
+    [SerializeField] private Transform ingredientsContainer;
+    
+    [Header("Recipe Details")]
+    [SerializeField] private Image detailIcon;
+    [SerializeField] private TextMeshProUGUI detailName;
+    [SerializeField] private TextMeshProUGUI detailDescription;
+    
+    [Tooltip("Texto para mostrar el tiempo total estimado (ej: 15s)")]
+    [SerializeField] private TextMeshProUGUI craftingTimeText; 
+
+    [Header("Controls")]
+    [SerializeField] private Button craftButton;
+    [SerializeField] private TMP_InputField craftAmountInput;
+    [SerializeField] private Slider craftingProgressBar;
+    [SerializeField] private GameObject placeholderTextObject;
+
+    private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
+    private List<IngredientSlotUI> _activeIngredientSlots = new List<IngredientSlotUI>();
+    
+    private CraftingRecipe _selectedRecipe;
+    private bool _isCrafting = false;
+    void Start()
     {
-        private CraftingSystem _craftingSystem;
-        private StorageSystem _storageSystem;
-
-        [Header("Referencias UI")]
-        [SerializeField] private GameObject recipeButtonPrefab;
-        [SerializeField] private GameObject ingredientSlotPrefab;
-        [SerializeField] private Transform recipeListContainer;
-        [SerializeField] private Transform ingredientsContainer;
+        _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
         
-        [Header("Detalles Receta")]
-        [SerializeField] private Image detailIcon;
-        [SerializeField] private TextMeshProUGUI detailName;
-        [SerializeField] private TextMeshProUGUI detailDescription;
-        [SerializeField] private TextMeshProUGUI detailTimeText;
-        [SerializeField] private Button craftButton;
-        [SerializeField] private TMP_InputField craftAmountInput;
-        
-        [SerializeField] private Slider craftingProgressBar;
-        [SerializeField] private GameObject placeholderTextObject;
-
-        private List<CraftingRecipeUIItem> _recipeButtons = new List<CraftingRecipeUIItem>();
-        private List<IngredientSlotUI> _activeIngredientSlots = new List<IngredientSlotUI>();
-        
-        private CraftingRecipe _selectedRecipe;
-
-        private bool _shouldUpdateButtons;
-        private bool _shouldRefreshRecipeList;
-        private bool _shouldUpdateDetails;
-        
-        private float _lastButtonUpdateTime;
-        private const float BUTTON_UPDATE_INTERVAL = 0.2f;
-        
-        void Start()
+        if (WorldManager.Instance != null && WorldManager.Instance.Player != null)
         {
-            _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
-            if (WorldManager.Instance != null && WorldManager.Instance.Player != null)
-            {
-                _storageSystem = WorldManager.Instance.Player.StorageSystem;
-            }
-            
-            if (_craftingSystem == null || _storageSystem == null) return;
-
-            _craftingSystem.OnRecipeUnlocked += OnRecipeUnlocked;
-            _craftingSystem.OnItemCrafted += OnItemCrafted;
-            _storageSystem.OnStorageUpdated += OnStorageUpdated;
-            _craftingSystem.OnCraftingStarted += OnCraftingStarted;
-            _craftingSystem.OnCraftingCompleted += OnCraftingCompleted;
-            
-            craftButton.onClick.AddListener(OnCraftButtonClicked);
-            
-            if (craftAmountInput != null)
-            {
-                craftAmountInput.onValueChanged.AddListener(OnAmountInputChanged);
-                craftAmountInput.onEndEdit.AddListener(OnAmountInputChanged);
-            }
-            
-            if (craftingProgressBar != null) craftingProgressBar.gameObject.SetActive(false);
-            if (placeholderTextObject != null) placeholderTextObject.SetActive(false);
-
-            RefreshRecipeList();
-            UpdateCraftButtonState();
-        }
-
-        private void OnDestroy()
-        {
-            if (_craftingSystem != null)
-            {
-                _craftingSystem.OnRecipeUnlocked -= OnRecipeUnlocked;
-                _craftingSystem.OnItemCrafted -= OnItemCrafted;
-                _craftingSystem.OnCraftingStarted -= OnCraftingStarted;
-                _craftingSystem.OnCraftingCompleted -= OnCraftingCompleted;
-            }
-            if (_storageSystem != null)
-            {
-                _storageSystem.OnStorageUpdated -= OnStorageUpdated;
-            }
-            
-            if (craftAmountInput != null)
-            {
-                craftAmountInput.onValueChanged.RemoveListener(OnAmountInputChanged);
-                craftAmountInput.onEndEdit.RemoveListener(OnAmountInputChanged);
-            }
-        }
-
-        private void LateUpdate()
-        {
-            float realTime = Time.unscaledTime;
-
-            if (_shouldRefreshRecipeList)
-            {
-                RefreshRecipeList();
-                _shouldRefreshRecipeList = false;
-            }
-
-            if (_shouldUpdateDetails && _selectedRecipe != null)
-            {
-                UpdateRecipeTimeText(_selectedRecipe);
-                RefreshIngredientValuesOnly(_selectedRecipe);
-                UpdateCraftButtonState();
-                _shouldUpdateDetails = false;
-            }
-
-            if (_shouldUpdateButtons)
-            {
-                if (realTime - _lastButtonUpdateTime > BUTTON_UPDATE_INTERVAL || !_craftingSystem.IsAnyCraftingInProgress())
-                {
-                    UpdateAllButtonCraftableStatus();
-                    UpdateCraftButtonState();
-                    
-                    if (!_craftingSystem.IsAnyCraftingInProgress() && craftingProgressBar != null)
-                    {
-                        craftingProgressBar.gameObject.SetActive(false);
-                    }
-
-                    if (_selectedRecipe != null && !_shouldUpdateDetails)
-                    {
-                        RefreshIngredientValuesOnly(_selectedRecipe);
-                    }
-                    
-                    _lastButtonUpdateTime = realTime;
-                    _shouldUpdateButtons = false;
-                }
-            }
-
-            if (craftingProgressBar != null && _selectedRecipe != null)
-            {
-                bool isRecipeActive = _craftingSystem.GetCurrentCraftingRecipeId() == _selectedRecipe.recipeId;
-                
-                if (isRecipeActive)
-                {
-                    if (!craftingProgressBar.gameObject.activeSelf) 
-                        craftingProgressBar.gameObject.SetActive(true);
-                    
-                    craftingProgressBar.value = _craftingSystem.GetCurrentCraftingProgress();
-                }
-            }
+            _storageSystem = WorldManager.Instance.Player.StorageSystem;
         }
         
-        private void OnAmountInputChanged(string value)
+        if (_craftingSystem == null || _storageSystem == null)
         {
-            _shouldUpdateDetails = true;
+            Debug.LogError("[CraftingPanelUI] Sistemas no encontrados.");
+            return;
         }
 
-        private void OnRecipeUnlocked(string recipeId) => _shouldRefreshRecipeList = true;
-        private void OnItemCrafted(string recipeId, int amount) => _shouldUpdateButtons = true;
-        private void OnStorageUpdated() => _shouldUpdateButtons = true;
-        private void OnCraftingStarted(string recipeId)
+        SubscribeEvents();
+        InitializeUI();
+        RefreshRecipeList();
+        UpdateCraftButtonState();
+    }
+
+    private void OnDestroy()
+    {
+        UnsubscribeEvents();
+    }
+
+    void Update()
+    {
+        if (_craftingSystem == null) return;
+
+        if (_isCrafting)
         {
-            _shouldUpdateButtons = true;
-            if (craftingProgressBar != null) craftingProgressBar.value = 0;
-        }
-        private void OnCraftingCompleted(string recipeId)
-        {
-            _lastButtonUpdateTime = 0; 
-            _shouldUpdateButtons = true;
-        }
-
-        // --- Lógica de UI ---
-
-        private void RefreshRecipeList()
-        {
-            foreach (Transform child in recipeListContainer) Destroy(child.gameObject);
-            _recipeButtons.Clear();
-
-            if (_craftingSystem == null) return;
-            var unlockedRecipes = _craftingSystem.GetAllUnlockedRecipes();
-            
-            if (placeholderTextObject != null) placeholderTextObject.SetActive(unlockedRecipes.Count == 0);
-            
-            foreach (var recipe in unlockedRecipes)
-            {
-                var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
-                var buttonUI = buttonGO.GetComponent<CraftingRecipeUIItem>();
-                buttonUI.Initialize(recipe, this, _craftingSystem);
-                _recipeButtons.Add(buttonUI);
-            }
-
-            if (_selectedRecipe != null) SelectRecipe(_selectedRecipe);
-        }
-        
-        private void UpdateAllButtonCraftableStatus()
-        {
-            foreach(var button in _recipeButtons) button.UpdateCraftableStatus();
-        }
-
-        public void SelectRecipe(CraftingRecipe recipe)
-        {
-            _selectedRecipe = recipe;
-            
-            foreach (var button in _recipeButtons)
-            {
-                button.SetSelected(button.RecipeId == recipe.recipeId);
-            }
-            
-            if (placeholderTextObject != null) placeholderTextObject.SetActive(false);
-
-            var outputItemData = _craftingSystem.GetItemData(recipe.output.itemName);
-            if (outputItemData != null)
-            {
-                detailIcon.sprite = outputItemData.icon;
-                detailName.text = outputItemData.displayName;
-                detailDescription.text = outputItemData.description;
-            }
-            
-            // Actualizamos tiempo y slots
-            UpdateRecipeTimeText(recipe);
-            RebuildIngredientSlots(recipe);
-            
-            UpdateCraftButtonState();
-            
             if (craftingProgressBar != null)
             {
-                if (_craftingSystem.IsAnyCraftingInProgress() && _craftingSystem.GetCurrentCraftingRecipeId() == recipe.recipeId)
-                {
-                    craftingProgressBar.gameObject.SetActive(true);
-                    craftingProgressBar.value = _craftingSystem.GetCurrentCraftingProgress();
-                }
-                else
-                {
-                    craftingProgressBar.gameObject.SetActive(false);
-                }
+                craftingProgressBar.value = _craftingSystem.GetCurrentCraftingProgress();
             }
         }
+    }
 
-        private void UpdateRecipeTimeText(CraftingRecipe recipe)
+    private void SubscribeEvents()
+    {
+        _craftingSystem.OnRecipeUnlocked += OnRecipeUnlocked;
+        _craftingSystem.OnItemCrafted += OnItemCrafted;
+        _storageSystem.OnStorageUpdated += OnStorageUpdated;
+        
+        _craftingSystem.OnCraftingStarted += OnCraftingStarted;
+        _craftingSystem.OnCraftingCompleted += OnCraftingCompleted;
+        
+        craftButton.onClick.AddListener(OnCraftButtonClicked);
+        
+        if (craftAmountInput != null)
         {
-            if (detailTimeText != null)
+            craftAmountInput.onValueChanged.AddListener(OnCraftAmountInputChanged);
+        }
+    }
+
+    private void UnsubscribeEvents()
+    {
+        if (_craftingSystem != null)
+        {
+            _craftingSystem.OnRecipeUnlocked -= OnRecipeUnlocked;
+            _craftingSystem.OnItemCrafted -= OnItemCrafted;
+            _craftingSystem.OnCraftingStarted -= OnCraftingStarted;
+            _craftingSystem.OnCraftingCompleted -= OnCraftingCompleted;
+        }
+        if (_storageSystem != null)
+        {
+            _storageSystem.OnStorageUpdated -= OnStorageUpdated;
+        }
+        if (craftAmountInput != null)
+        {
+            craftAmountInput.onValueChanged.RemoveListener(OnCraftAmountInputChanged);
+        }
+    }
+
+    private void InitializeUI()
+    {
+        if (craftingProgressBar != null) craftingProgressBar.gameObject.SetActive(false);
+        if (placeholderTextObject != null) placeholderTextObject.SetActive(false);
+        if (craftingTimeText != null) craftingTimeText.text = "";
+        
+        if (_craftingSystem != null && _craftingSystem.IsAnyCraftingInProgress())
+        {
+            _isCrafting = true;
+            if (craftingProgressBar != null) craftingProgressBar.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnRecipeUnlocked(string recipeId) => RefreshRecipeList();
+
+    private void OnItemCrafted(string recipeId, int amount)
+    {
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
+        {
+            UpdateDynamicRecipeData();
+        }
+        UpdateAllButtonCraftableStatus();
+        UpdateCraftButtonState();
+    }
+    
+    private void OnStorageUpdated()
+    {
+        if (_selectedRecipe != null) UpdateDynamicRecipeData();
+        UpdateAllButtonCraftableStatus();
+        UpdateCraftButtonState();
+    }
+
+    private void OnCraftingStarted(string recipeId)
+    {
+        _isCrafting = true;
+        
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
+        {
+            if (craftingProgressBar != null)
             {
-                const float secondsPerCycle = 5.0f;
-                int amount = GetCraftAmount();
-                
-                // Calculamos tiempo total basado en la cantidad
-                float totalSeconds = recipe.craftingTimeInSeconds * amount;
-                float cyclesAsFloat = totalSeconds / secondsPerCycle;
-                int displayCycles = Mathf.CeilToInt(cyclesAsFloat);
-                
-                detailTimeText.text = $"Time: {displayCycles} cycles";
+                craftingProgressBar.gameObject.SetActive(true);
+                craftingProgressBar.value = 0;
             }
         }
+        UpdateCraftButtonState();
+        UpdateAllButtonCraftableStatus();
+    }
 
-        private void RebuildIngredientSlots(CraftingRecipe recipe)
+    private void OnCraftingCompleted(string recipeId)
+    {
+        _isCrafting = false;
+        
+        if (_selectedRecipe != null && _selectedRecipe.recipeId == recipeId)
         {
-            foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
-            _activeIngredientSlots.Clear();
-
-            foreach (var ingredient in recipe.ingredients)
+            if (craftingProgressBar != null)
             {
-                var slotGO = Instantiate(ingredientSlotPrefab, ingredientsContainer);
-                var slotUI = slotGO.GetComponent<IngredientSlotUI>();
-                _activeIngredientSlots.Add(slotUI);
-                
-                SetSlotData(slotUI, ingredient);
+                craftingProgressBar.gameObject.SetActive(false);
+                craftingProgressBar.value = 0;
             }
         }
+        UpdateCraftButtonState();
+        UpdateAllButtonCraftableStatus();
+    }
 
-        private void RefreshIngredientValuesOnly(CraftingRecipe recipe)
+    private void OnCraftAmountInputChanged(string value)
+    {
+        if (_selectedRecipe != null)
         {
-            if (_activeIngredientSlots.Count != recipe.ingredients.Count)
-            {
-                RebuildIngredientSlots(recipe);
-                return;
-            }
+            UpdateDynamicRecipeData();
+            UpdateCraftButtonState();
+        }
+    }
 
-            for (int i = 0; i < recipe.ingredients.Count; i++)
-            {
-                if (_activeIngredientSlots[i] != null)
-                {
-                    SetSlotData(_activeIngredientSlots[i], recipe.ingredients[i]);
-                }
-            }
+
+    private void RefreshRecipeList()
+    {
+        foreach (Transform child in recipeListContainer) Destroy(child.gameObject);
+        _recipeButtons.Clear();
+        
+        if (_craftingSystem == null) return;
+        var unlockedRecipes = _craftingSystem.GetAllUnlockedRecipes();
+        
+        if (placeholderTextObject != null)
+            placeholderTextObject.SetActive(unlockedRecipes.Count == 0);
+        
+        foreach (var recipe in unlockedRecipes)
+        {
+            var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
+            var buttonUI = buttonGO.GetComponent<CraftingRecipeUIItem>();
+            buttonUI.Initialize(recipe, this, _craftingSystem);
+            _recipeButtons.Add(buttonUI);
+        }
+    }
+
+    private void UpdateAllButtonCraftableStatus()
+    {
+        foreach(var button in _recipeButtons) button.UpdateCraftableStatus();
+    }
+
+    public void SelectRecipe(CraftingRecipe recipe)
+    {
+        _selectedRecipe = recipe;
+        
+        foreach (var button in _recipeButtons)
+        {
+            button.SetSelected(button.RecipeId == recipe.recipeId);
+        }
+        
+        if (placeholderTextObject != null) placeholderTextObject.SetActive(false);
+
+        var outputItemData = _craftingSystem.GetItemData(recipe.output.itemName);
+        if (outputItemData != null)
+        {
+            detailIcon.sprite = outputItemData.icon;
+            detailName.text = outputItemData.displayName;
+            detailDescription.text = outputItemData.description;
         }
 
-        private void SetSlotData(IngredientSlotUI slotUI, CraftingIngredient ingredient)
+        SetupIngredientSlots(recipe);
+        
+        UpdateDynamicRecipeData();
+
+        if (craftingProgressBar != null)
         {
-            Sprite ingredientIcon = null;
-            string ingredientName = "";
-            int amountOwned = 0;
+            bool isCurrentRecipe = _craftingSystem.IsAnyCraftingInProgress() && 
+                                   _craftingSystem.GetCurrentCraftingRecipeId() == recipe.recipeId;
+            
+            craftingProgressBar.gameObject.SetActive(isCurrentRecipe);
+            if(isCurrentRecipe) craftingProgressBar.value = _craftingSystem.GetCurrentCraftingProgress();
+        }
+        
+        UpdateCraftButtonState();
+    }
+
+    private void SetupIngredientSlots(CraftingRecipe recipe)
+    {
+        foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
+        _activeIngredientSlots.Clear();
+
+        foreach (var ingredient in recipe.ingredients)
+        {
+            var slotGO = Instantiate(ingredientSlotPrefab, ingredientsContainer);
+            var slotUI = slotGO.GetComponent<IngredientSlotUI>();
+            _activeIngredientSlots.Add(slotUI);
+        }
+    }
+
+    private void UpdateDynamicRecipeData()
+    {
+        if (_selectedRecipe == null) return;
+
+        int multiplier = GetCraftAmount();
+
+        for (int i = 0; i < _selectedRecipe.ingredients.Count; i++)
+        {
+            if (i >= _activeIngredientSlots.Count) break;
+
+            var ingredient = _selectedRecipe.ingredients[i];
+            var slotUI = _activeIngredientSlots[i];
+
+            Sprite icon = null;
+            string name = "";
+            int owned = 0;
 
             if (ingredient.useInventoryItem)
             {
                 var itemData = _craftingSystem.GetItemData(ingredient.itemName);
-                if (itemData != null) { ingredientIcon = itemData.icon; ingredientName = itemData.displayName; }
-                amountOwned = _storageSystem.GetInventoryItemQuantity(ingredient.itemName);
+                if (itemData != null) { icon = itemData.icon; name = itemData.displayName; }
+                owned = _storageSystem.GetInventoryItemQuantity(ingredient.itemName);
             }
             else
             {
-                var resourceData = _storageSystem.GetResourceData(ingredient.resourceType);
-                if (resourceData != null) { ingredientIcon = resourceData.Icon; ingredientName = resourceData.DisplayName; }
-                amountOwned = _storageSystem.GetResourceAmount(ingredient.resourceType);
+                var resData = _storageSystem.GetResourceData(ingredient.resourceType);
+                if (resData != null) { icon = resData.Icon; name = resData.DisplayName; }
+                owned = _storageSystem.GetResourceAmount(ingredient.resourceType);
             }
+
+            int totalNeeded = ingredient.amount * multiplier;
             
-            int currentMultiplier = GetCraftAmount();
-            int totalRequired = ingredient.amount * currentMultiplier;
-            
-            slotUI.SetData(ingredientIcon, ingredientName, amountOwned, totalRequired);
+            slotUI.SetData(icon, name, owned, totalNeeded);
+        }
+
+        if (craftingTimeText != null)
+        {
+            float totalSeconds = _selectedRecipe.craftingTimeInSeconds * multiplier;
+            float secondsPerCycle = 5.0f;
+            int totalCycles = Mathf.CeilToInt(totalSeconds / secondsPerCycle);
+            if (totalCycles < 1) totalCycles = 1;
+            craftingTimeText.text = $"{totalCycles} Ciclos"; 
+        }
+    }
+    
+    private int GetCraftAmount()
+    {
+        if (craftAmountInput == null) return 1;
+        if (int.TryParse(craftAmountInput.text, out int amount))
+        {
+            return amount > 0 ? amount : 1;
+        }
+        return 1;
+    }
+
+    private void UpdateCraftButtonState()
+    {
+        if (_selectedRecipe == null)
+        {
+            craftButton.gameObject.SetActive(false);
+            return;
+        }
+        craftButton.gameObject.SetActive(true);
+        
+        if (_craftingSystem.IsAnyCraftingInProgress())
+        {
+            craftButton.interactable = false;
+            return;
         }
         
-        private int GetCraftAmount()
+        int amountToCraft = GetCraftAmount(); 
+        bool canCraft = _craftingSystem.CanCraft(_selectedRecipe.recipeId, amountToCraft);
+        
+        craftButton.interactable = canCraft;
+    }
+
+    private void OnCraftButtonClicked()
+    {
+        if (_selectedRecipe == null) return;
+        int amountToCraft = GetCraftAmount();
+        
+        bool didCraftStart = _craftingSystem.Craft(_selectedRecipe.recipeId, amountToCraft);
+
+        if (didCraftStart)
         {
-            if (craftAmountInput == null) return 1;
-            if (int.TryParse(craftAmountInput.text, out int amount))
-            {
-                if (amount <= 0) return 1;
-                return amount;
-            }
-            return 1;
+            UpdateCraftButtonState(); 
         }
+    }
 
-        private void UpdateCraftButtonState()
+    public string GetSaveId() => "CraftingPanelUI";
+
+    public JToken CaptureState()
+    {
+        var recipes = new JArray();
+        foreach (var button in _recipeButtons) recipes.Add(button.RecipeId);
+        return new JObject() { ["UnlockedRecipes"] = recipes };
+    }
+
+    public void RestoreState(JToken state)
+    {
+        JObject obj = state as JObject;
+        if (obj == null) return;
+        JArray recipes = obj["UnlockedRecipes"] as JArray;
+        
+        if (recipes != null && _craftingSystem != null)
         {
-            if (_selectedRecipe == null)
-            {
-                craftButton.gameObject.SetActive(false);
-                return;
-            }
-            craftButton.gameObject.SetActive(true);
-            
-            if (_craftingSystem.IsAnyCraftingInProgress())
-            {
-                craftButton.interactable = false;
-                return;
-            }
-
-            int amountToCraft = GetCraftAmount(); 
-            bool canCraft = _craftingSystem.CanCraft(_selectedRecipe.recipeId, amountToCraft);
-            craftButton.interactable = canCraft;
-        }
-
-        private void OnCraftButtonClicked()
-        {
-            if (_selectedRecipe == null) return;
-            int amountToCraft = GetCraftAmount();
-            
-            bool didCraftStart = _craftingSystem.Craft(_selectedRecipe.recipeId, amountToCraft);
-
-            if (didCraftStart)
-            {
-                UpdateCraftButtonState(); 
-            }
+            foreach (var r in recipes) _craftingSystem.UnlockRecipe(r.ToObject<string>());
+            RefreshRecipeList();
         }
     }
 }

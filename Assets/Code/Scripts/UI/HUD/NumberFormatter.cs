@@ -4,8 +4,7 @@ namespace Code.Scripts.Utils
 {
     public static class NumberFormatter
     {
-        // Sufijos extendidos hasta quintillones (puedes agregar más si necesitas)
-        private static readonly string[] suffixes = { "", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "O", "N", "D", "U", "Dd", "Td" };
+        private static readonly string[] suffixes = { "", "K", "M" };
 
         public static string FormatNumber(long number)
         {
@@ -14,108 +13,130 @@ namespace Code.Scripts.Utils
             bool isNegative = number < 0;
             long absNumber = Math.Abs(number);
 
-            // Para números menores a 10,000, mostrar normal
+            // Para números menores a 10000, mostrar normal
             if (absNumber < 10000)
             {
                 return isNegative ? "-" + absNumber.ToString() : absNumber.ToString();
             }
 
-            // Calcular el índice del sufijo basado en log10
-            int suffixIndex = (int)Math.Log10(absNumber) / 3;
-            double formattedNumber = absNumber / Math.Pow(1000, suffixIndex);
+            int suffixIndex = 0;
+            double formattedNumber = absNumber;
 
-            // Ajustar si el número está cerca de 1000 para evitar "1000K"
-            if (formattedNumber >= 999.5 && suffixIndex < suffixes.Length - 1)
+            // Determinar el sufijo (K o M)
+            while (formattedNumber >= 1000 && suffixIndex < suffixes.Length - 1)
             {
                 formattedNumber /= 1000;
                 suffixIndex++;
             }
 
-            // Formatear con precisión adecuada
             string result;
-            if (formattedNumber < 10)
+
+            // Lógica específica para cada rango
+            if (suffixIndex == 1) // Miles (K)
             {
-                result = formattedNumber.ToString("0.00");
+                if (absNumber < 100000) // 10,000 a 99,999
+                {
+                    if (absNumber % 1000 == 0) // Múltiplos exactos de 1000
+                    {
+                        result = formattedNumber.ToString("0");
+                    }
+                    else
+                    {
+                        // Redondear a 1 decimal y quitar .0 si es necesario
+                        double rounded = Math.Round(formattedNumber, 1);
+                        result = rounded.ToString("0.#");
+                    }
+                }
+                else // 100,000 a 999,999
+                {
+                    // Redondear al entero más cercano
+                    result = Math.Round(formattedNumber).ToString("0");
+
+                    // Si redondea a 1000, convertir a 1M
+                    if (formattedNumber >= 999.5)
+                    {
+                        formattedNumber /= 1000;
+                        suffixIndex++;
+                        result = formattedNumber.ToString("0.00");
+                    }
+                }
             }
-            else if (formattedNumber < 100)
+            else if (suffixIndex == 2) // Millones (M)
             {
-                result = formattedNumber.ToString("0.0");
-            }
-            else if (formattedNumber < 1000)
-            {
-                result = Math.Round(formattedNumber).ToString("0");
+                if (formattedNumber < 10)
+                {
+                    result = formattedNumber.ToString("0.00");
+                }
+                else if (formattedNumber < 100)
+                {
+                    result = formattedNumber.ToString("0.0");
+                }
+                else // 100M o más
+                {
+                    result = Math.Round(formattedNumber).ToString("0");
+                }
             }
             else
             {
-                // Caso extremo: si todavía es 1000+, usar el siguiente sufijo
-                formattedNumber /= 1000;
-                suffixIndex++;
-                result = formattedNumber.ToString("0.00");
+                // Para otros casos (no debería ocurrir con los sufijos actuales)
+                result = formattedNumber.ToString("0");
             }
 
-            // Limitar a 4 caracteres numéricos
+            // Quitar .0 o .00 innecesarios
+            result = CleanDecimalZeros(result);
+
+            // Limitar a máximo 4 caracteres numéricos (dígitos + punto)
             result = LimitToFourNumericCharacters(result);
 
-            // Agregar sufijo o notación científica si se acaban los sufijos
-            if (suffixIndex < suffixes.Length)
-            {
-                result += suffixes[suffixIndex];
-            }
-            else
-            {
-                // Notación científica para números muy grandes
-                result = formattedNumber.ToString("0.00e+00");
-            }
-
+            result += suffixes[suffixIndex];
             return isNegative ? "-" + result : result;
+        }
+
+        private static string CleanDecimalZeros(string numberString)
+        {
+            if (numberString.Contains("."))
+            {
+                numberString = numberString.TrimEnd('0');
+                if (numberString.EndsWith("."))
+                {
+                    numberString = numberString.TrimEnd('.');
+                }
+            }
+            return numberString;
         }
 
         private static string LimitToFourNumericCharacters(string numberString)
         {
             int numericCharCount = 0;
+            int lastValidIndex = 0;
+
             for (int i = 0; i < numberString.Length; i++)
             {
                 char c = numberString[i];
                 if (char.IsDigit(c) || c == '.')
                 {
                     numericCharCount++;
-                    if (numericCharCount > 4)
+                    if (numericCharCount <= 4)
                     {
-                        // Encontrar dónde cortar y redondear
-                        if (i + 1 < numberString.Length && char.IsDigit(numberString[i + 1]))
-                        {
-                            // Verificar si necesitamos redondear
-                            int nextDigit = numberString[i + 1] - '0';
-                            if (nextDigit >= 5)
-                            {
-                                // Redondear hacia arriba
-                                char[] chars = numberString.ToCharArray();
-                                bool rounded = false;
-                                for (int j = i; j >= 0; j--)
-                                {
-                                    if (char.IsDigit(chars[j]))
-                                    {
-                                        int digit = chars[j] - '0' + 1;
-                                        if (digit < 10)
-                                        {
-                                            chars[j] = digit.ToString()[0];
-                                            rounded = true;
-                                            break;
-                                        }
-                                        else
-                                        {
-                                            chars[j] = '0';
-                                        }
-                                    }
-                                }
-                                numberString = new string(chars);
-                            }
-                        }
-                        // Cortar a 4 caracteres numéricos
-                        return numberString.Substring(0, i);
+                        lastValidIndex = i;
                     }
                 }
             }
+
+            if (numericCharCount > 4)
+            {
+                // Redondear el último dígito visible
+                string trimmed = numberString.Substring(0, lastValidIndex + 1);
+
+                // Si cortamos en medio de un decimal, ajustar
+                if (trimmed.EndsWith("."))
+                {
+                    trimmed = trimmed.Substring(0, trimmed.Length - 1);
+                }
+
+                return trimmed;
+            }
+
             return numberString;
         }
 
