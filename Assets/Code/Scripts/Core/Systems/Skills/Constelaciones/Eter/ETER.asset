@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: ETER
   m_EditorClassIdentifier: 
   constellationName: ETER
+  description: 
+  icon: {fileID: 0}
   nodes:
   - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
   - {fileID: 11400000, guid: e3da1c1b4ea3656449608e9e5329ac43, type: 2}
