@@ -20,7 +20,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   buildCostAmounts: 401f0000401f0000401f0000
-  loreDescription: 
+  loreDescription: The frigid wind on this planet has created Sandit crystals in
+    the deserts. Some civilizations on this planet have used them to manufacture
+    weapons, due to their great resistance, despite their fragile appearance.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}

@@ -19,7 +19,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: f4010000f4010000
-  loreDescription: 
+  loreDescription: The combination of Sandit and Frostice has resulted in the coldest
+    frozen deserts in the entire solar system, creating unique biomes.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}

@@ -18,6 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: The planet's sand has created small dunes surrounded by water,
+    so the planet's different species have evolved to adapt to a hybrid life between
+    both environments.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}

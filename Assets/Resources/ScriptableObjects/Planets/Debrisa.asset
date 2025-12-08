@@ -18,7 +18,9 @@ MonoBehaviour:
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: 983a0000
-  loreDescription: 
+  loreDescription: Debrisa hides beautiful underground caves that are the main tourist
+    attraction in the solar system. However, the wealth of Batee in these caves is
+    leading to its massive extraction, which is slowly destroying the planet's ecosystem.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

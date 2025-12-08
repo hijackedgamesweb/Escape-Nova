@@ -19,6 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   buildCostAmounts: f4010000f4010000
+  loreDescription: This planet has extremely hard mines, which has made it very difficult
+    to extract materials for many solar cycles, slowing down the progress of its
+    civilizations and forcing them to live underground.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
