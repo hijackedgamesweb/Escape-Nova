@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titles:
   - Contact
+  - Research
   messages:
   - An alien species seems to want to contact with us, but their language is too
     different from ours. Perhaps we could craft a translator to understand them...
+  - You should check the research menu, our Empergod.
   images:
-  - {fileID: 0}
+  - {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
