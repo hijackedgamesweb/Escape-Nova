@@ -22,14 +22,14 @@ MonoBehaviour:
   - researchId: blocked_until_thestarsasguide_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 100
+  researchTimeInSeconds: 40
   resourceCosts:
   - resourceType: 2
-    amount: 125
+    amount: 1000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 125
+    amount: 1000
     itemName: 
     useInventoryItem: 0
   rewards:

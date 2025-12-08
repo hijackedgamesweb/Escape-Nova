@@ -24,23 +24,23 @@ MonoBehaviour:
   researchTimeInSeconds: 40
   resourceCosts:
   - resourceType: 0
-    amount: 500
+    amount: 400
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 500
+    amount: 400
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 500
+    amount: 400
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 500
+    amount: 400
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 500
+    amount: 400
     itemName: 
     useInventoryItem: 0
   rewards:
