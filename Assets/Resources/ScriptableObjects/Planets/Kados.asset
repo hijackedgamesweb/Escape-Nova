@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Kados
   sprite: {fileID: 5952062814256451239, guid: 3008f88173d7fae42a6a68a5c9332908, type: 3}
-  timeToBuild: 5
+  timeToBuild: 1
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: 64000000

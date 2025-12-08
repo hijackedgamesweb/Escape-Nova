@@ -17,6 +17,7 @@ namespace Code.Scripts.Core.Entity
         public List<InventoryItem> tier2Items;
         public List<InventoryItem> tier3Items;
         public List<InventoryItem> tier4Items;
+        public List<InventoryItem> tier5Items;
         
     }
 }

@@ -23,15 +23,18 @@ namespace Code.Scripts.UI.Menus.Trading
                 }
                 else if (entity.ItemPreferences.tier2Items.Contains(item))
                 {
-                    totalValue += 20; 
+                    totalValue += 100; 
                 }
                 else if (entity.ItemPreferences.tier3Items.Contains(item))
                 {
-                    totalValue += 30; 
+                    totalValue += 750; 
                 }
                 else if (entity.ItemPreferences.tier4Items.Contains(item))
                 {
-                    totalValue += 40; 
+                    totalValue += 2500; 
+                }else if (entity.ItemPreferences.tier5Items.Contains(item))
+                {
+                    totalValue += 15000; 
                 }
             }
             return totalValue;

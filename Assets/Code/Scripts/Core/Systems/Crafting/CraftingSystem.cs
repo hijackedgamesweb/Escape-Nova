@@ -31,7 +31,7 @@ namespace Code.Scripts.Core.Systems.Crafting
         private Dictionary<string, ItemData> _itemDataLookup;
 
         private IGameTime _gameTime;
-        private const float STANDARD_SECONDS_PER_CYCLE = 5.0f;
+        private const float STANDARD_SECONDS_PER_CYCLE = 4.0f;
         
         private CraftingData _currentCraftingData;
         

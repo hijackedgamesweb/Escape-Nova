@@ -12,14 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713fa624fc4b42e3953b5306a3db65f7, type: 3}
   m_Name: MippipPrefs
   m_EditorClassIdentifier: 
-  stoneWorth: 1
-  metalWorth: 2
-  fireWorth: 3
-  iceWorth: 3
+  stoneWorth: 3
+  metalWorth: 3
+  fireWorth: 1.5
+  iceWorth: 1
   sandWorth: 1.5
-  tier0Items:
+  tier0Items: []
+  tier2Items:
   - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 0
-  tier2Items: []
-  tier3Items: []
-  tier4Items: []
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: a1d8845b4c03a9a45b9685907263c037, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: a3d1e44d4a3bd1d42aa7ef286abf0a07, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 9de089f136c7a9d46a3654a43684ee3e, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 6471c1e69c7c2b348b0f1bac5bf5884f, type: 2}
+    quantity: 1
+  tier3Items:
+  - itemData: {fileID: 11400000, guid: 485f61ce26e99484b8f1d0106fa9a107, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 1febadfd0878f294aaec439ea08a4717, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: f11e1b5ea3ddc4b49ab6d23effe4a893, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 9d0d9428cf0217e4ca458616df38de8e, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 2dd208a6d06c7be43bd34427aad5e1eb, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: c1f7b9d5fb0763941b629964dd990abe, type: 2}
+    quantity: 1
+  tier4Items:
+  - itemData: {fileID: 11400000, guid: 5d2a94a5bf7852346a7669e75421665e, type: 2}
+    quantity: 1
+  tier5Items:
+  - itemData: {fileID: 11400000, guid: bf05e67ae36aa95489fb1b43dfac6e08, type: 2}
+    quantity: 1

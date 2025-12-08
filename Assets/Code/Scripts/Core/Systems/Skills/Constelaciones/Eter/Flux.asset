@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Flux
   description: Natural planets generate 5% more resources.
-  skillPointCost: 0
+  skillPointCost: 1
   prerequisiteNodes: []
   positionInConstellation: {x: -7, y: 5}
   improvements:

@@ -302,10 +302,10 @@ public class CraftingPanelUI : MonoBehaviour, ISaveable
         if (craftingTimeText != null)
         {
             float totalSeconds = _selectedRecipe.craftingTimeInSeconds * multiplier;
-            float secondsPerCycle = 5.0f;
+            float secondsPerCycle = 4.0f;
             int totalCycles = Mathf.CeilToInt(totalSeconds / secondsPerCycle);
             if (totalCycles < 1) totalCycles = 1;
-            craftingTimeText.text = $"{totalCycles} Ciclos"; 
+            craftingTimeText.text = $"{totalCycles} cycles"; 
         }
     }
     
