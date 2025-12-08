@@ -24,7 +24,7 @@ MonoBehaviour:
   buildCostAmounts: e8030000e8030000e8030000e8030000e8030000
   size: 0.5
   desc: Every 300 solar cycles, it provides 1 skill point.
-  sprite: {fileID: 1891900035898640601, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
+  sateliteIcon: {fileID: 4125636645744980110, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
   upgrades:
   - rid: 7319165402231865421
   references:
