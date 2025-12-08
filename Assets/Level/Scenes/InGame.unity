@@ -9241,7 +9241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   header: 
-  content: Missions
+  content: Quests
 --- !u!1 &494175426
 GameObject:
   m_ObjectHideFlags: 0
@@ -11381,7 +11381,7 @@ GameObject:
   - component: {fileID: 614672792}
   - component: {fileID: 614672791}
   m_Layer: 5
-  m_Name: Button
+  m_Name: QuestsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11404,8 +11404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 480, y: -32.67865}
-  m_SizeDelta: {x: 960, y: 75}
+  m_AnchoredPosition: {x: 960, y: -32.67865}
+  m_SizeDelta: {x: 1920, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614672791
 MonoBehaviour:
@@ -11502,12 +11502,12 @@ GameObject:
   - component: {fileID: 617321622}
   - component: {fileID: 617321621}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: MilestonesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &617321620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27990,7 +27990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mission
+  m_text: QUESTS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63bac80f248636544b2901a46f2a5640, type: 2}
   m_sharedMaterial: {fileID: -125483233776878214, guid: 63bac80f248636544b2901a46f2a5640, type: 2}
