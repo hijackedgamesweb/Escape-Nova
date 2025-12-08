@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MippipInventory
   m_EditorClassIdentifier: 
   items:
-  - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 5
+  - itemData: {fileID: 11400000, guid: 2dd208a6d06c7be43bd34427aad5e1eb, type: 2}
+    quantity: 1
