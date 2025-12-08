@@ -15,6 +15,7 @@ namespace Code.Scripts.Core.Entity
         public List<InventoryItem> tier2Items;
         public List<InventoryItem> tier3Items;
         public List<InventoryItem> tier4Items;
+        public List<InventoryItem> tier5Items;
         
         public EntityItemPreferences(EntityItemPreferencesSO eipSO)
         {
@@ -28,6 +29,7 @@ namespace Code.Scripts.Core.Entity
             tier2Items = eipSO.tier2Items;
             tier3Items = eipSO.tier3Items;
             tier4Items = eipSO.tier4Items;
+            tier5Items = eipSO.tier5Items;
         }
     }
 }

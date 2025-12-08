@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Oasis
   sprite: {fileID: -7806321462082819641, guid: 6dbdca9ebdad39348a421404a5c05469, type: 3}
-  timeToBuild: 5
+  timeToBuild: 1
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   buildCostAmounts: 64000000

@@ -46,8 +46,10 @@ namespace Code.Scripts.Core.Managers
                 ServiceLocator.RegisterService<TimeConfig>(timeConfig);
             }
             
-            if (!StartPaused)
+            if (!StartPaused) {
                 StartTimer();
+            }
+                
 
             _nextCycleTime = timeConfig.secondsPerCycle;
         }
@@ -89,6 +91,7 @@ namespace Code.Scripts.Core.Managers
         {
             TimeScale = _lastKnownTimeScale;
             OnTimeScaleChanged?.Invoke(TimeScale);
+            Pause();
         }
 
         public void SetSpeed(float timeScale)
