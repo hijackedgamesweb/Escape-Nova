@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Nyx
   description: Natural planets generate 50% more resources.
-  skillPointCost: 3
+  skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: e3da1c1b4ea3656449608e9e5329ac43, type: 2}
   positionInConstellation: {x: -7.5, y: 3}

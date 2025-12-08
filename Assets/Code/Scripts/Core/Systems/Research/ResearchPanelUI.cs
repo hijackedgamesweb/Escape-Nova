@@ -246,11 +246,11 @@ namespace Code.Scripts.UI.Research
             detailName.text = node.displayName;
             detailDescription.text = node.description;
 
-            const float secondsPerCycle = 5.0f;
+            const float secondsPerCycle = 4.0f;
             float cyclesAsFloat = node.researchTimeInSeconds / secondsPerCycle;
             int displayCycles = Mathf.CeilToInt(cyclesAsFloat);
             
-            detailTimeText.text = $"Time: {displayCycles} cicles";
+            detailTimeText.text = $"Time: {displayCycles} cycles";
 
             foreach (Transform child in ingredientsContainer) Destroy(child.gameObject);
             foreach (var cost in node.resourceCosts)

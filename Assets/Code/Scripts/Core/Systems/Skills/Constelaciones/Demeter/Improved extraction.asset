@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Improved extraction
   description: All your planets generate 5% more resources.
-  skillPointCost: 2
+  skillPointCost: 1
   prerequisiteNodes:
   - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
   positionInConstellation: {x: -1, y: 1}
