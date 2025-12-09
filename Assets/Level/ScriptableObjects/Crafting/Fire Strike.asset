@@ -19,14 +19,14 @@ MonoBehaviour:
   icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
   ingredients:
   - resourceType: 2
-    amount: 550
+    amount: 25000
     itemName: 
     useInventoryItem: 0
   - resourceType: 0
-    amount: 200
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Fire Strike
     amount: 1
-  craftingTimeInSeconds: 150
+  craftingTimeInSeconds: 40

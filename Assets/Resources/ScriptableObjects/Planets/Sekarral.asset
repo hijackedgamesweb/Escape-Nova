@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Sekarral
   sprite: {fileID: 3609758695454692228, guid: cfe8fdd31d52c1f4da9eda13b6272b58, type: 3}
-  timeToBuild: 400
+  timeToBuild: 10
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 983a0000
+  buildCostAmounts: 50c30000
   loreDescription: Settlers of this planet have adapted themsevles to the hars nature
     of this dry world. Life finds its way even in the thoughest of enviroments.
   size: 0.5

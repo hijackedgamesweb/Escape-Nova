@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HandoullInventory
   m_EditorClassIdentifier: 
   items:
-  - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 5
+  - itemData: {fileID: 11400000, guid: 485f61ce26e99484b8f1d0106fa9a107, type: 2}
+    quantity: 4

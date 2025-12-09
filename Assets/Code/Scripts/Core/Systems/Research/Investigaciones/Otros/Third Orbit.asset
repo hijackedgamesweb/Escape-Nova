@@ -21,7 +21,7 @@ MonoBehaviour:
   - researchId: second_orbit
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 325
+  researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 0
     amount: 5000

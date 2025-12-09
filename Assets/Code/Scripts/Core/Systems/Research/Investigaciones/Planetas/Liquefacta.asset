@@ -22,18 +22,18 @@ MonoBehaviour:
   - researchId: blocked_until_heatingthingsup_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 250
+  researchTimeInSeconds: 40
   resourceCosts:
   - resourceType: 0
-    amount: 500
+    amount: 2000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 500
+    amount: 2000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 500
+    amount: 2000
     itemName: 
     useInventoryItem: 0
   rewards:

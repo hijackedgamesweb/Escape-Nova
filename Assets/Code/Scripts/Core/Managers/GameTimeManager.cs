@@ -91,7 +91,6 @@ namespace Code.Scripts.Core.Managers
         {
             TimeScale = _lastKnownTimeScale;
             OnTimeScaleChanged?.Invoke(TimeScale);
-            Pause();
         }
 
         public void SetSpeed(float timeScale)
