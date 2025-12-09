@@ -146,7 +146,7 @@ Nova hace referencia a una explosión estelar en un sistema solar, suceso que te
 
 ## Identidad del Juego
 
-*Nova* es un juego de **gestión de recursos **con una ambientación espacial, donde el jugador debe expandir su propio sistema solar para conseguir escapar del mismo previamente a que este colapse y explote. Para ello, puede construir planetas para conseguir recursos o para conseguir interactuar con otras especies que ayudarán al jugador en su objetivo.
+*Nova* es un juego de **gestión de recursos** con una ambientación espacial, donde el jugador debe expandir su propio sistema solar para conseguir escapar del mismo previamente a que este colapse y explote. Para ello, puede construir planetas para conseguir recursos o para conseguir interactuar con otras especies que ayudarán al jugador en su objetivo.
 
 
 ## Pilares del Diseño
@@ -155,7 +155,7 @@ El juego se ha diseñado en base a estos tres pilares:
 
 * **Gestión de recursos:** Construcción de planetas para obtener recursos, intercambio de materiales, mejoras de diferentes tipos, etc.
 * **Toma de decisiones:** A lo largo del juego sucederán eventos (tanto aleatorios, como programados) que conllevarán la toma de decisiones por parte del jugador, teniendo estas repercusiones directas en el transcurso del juego. Ej. Cambios en la relación con otras especies, destrucción de planetas…
-* **Sensación de urgencia: **Debido a la inminente destrucción del sistema solar, el jugador se encontrará constantemente bajo una sensación de urgencia. Otras misiones y encargos del juego también contarán con un tiempo límite para ser completadas, pudiendo conllevar también consecuencias negativas en caso de no completarlas, reforzando esa sensación.
+* **Sensación de urgencia:** Debido a la inminente destrucción del sistema solar, el jugador se encontrará constantemente bajo una sensación de urgencia. Otras misiones y encargos del juego también contarán con un tiempo límite para ser completadas, pudiendo conllevar también consecuencias negativas en caso de no completarlas, reforzando esa sensación.
 
 ## Resumen de Género/Historia/Mecánicas
 
