@@ -1,6 +1,6 @@
 # GDD - Nova
 
-![PORTADA]()
+<img width="771" height="1081" alt="Portada" src="https://github.com/user-attachments/assets/56f7a131-fa91-4532-8843-195adf781312" />
 
 ## ÍNDICE
 
@@ -214,7 +214,8 @@ A continuación se recogerán artes conceptuales de los diferentes elementos del
 
 ### Sistema solar y planetas
 
-![IMAGEN]()
+<img width="430" height="429" alt="concept art espacio" src="https://github.com/user-attachments/assets/8e662147-f753-4fee-90ab-8997f82edad9" />
+
 
 Arte conceptual del entorno del juego, ofreciendo al jugador en todo momento una visión general de todo el sistema solar que permita, de un vistazo, analizar toda la situación y acciones posibles.
 
@@ -222,39 +223,39 @@ Arte conceptual del entorno del juego, ofreciendo al jugador en todo momento una
 
 Aquí se recogen los artes conceptuales de las diferentes especies con las que el jugador podrá interactuar en el videojuego. Con cada diseño se buscaba dotar a cada especie de una identidad única y diferenciadora del resto de especies, así como mantener la ambientación y coherencia espacial.
 
-![ESPECE1]()
-![IMAGEN2]()
-![IMAGEN3]()
-![IMAGEN4]()
-![IMAGEN5]()
+<img width="282" height="273" alt="Skulg Concept Art" src="https://github.com/user-attachments/assets/08df63a0-7d1f-4994-a369-2b8f0620f7b2" />
+<img width="269" height="265" alt="Mippip Concept Art" src="https://github.com/user-attachments/assets/be465e80-2a6a-4ad9-b7de-18ae94a3f9a8" />
+<img width="222" height="314" alt="Handoull Concept Art" src="https://github.com/user-attachments/assets/7cc4188e-41dd-4d08-8504-272f6258d92b" />
+<img width="244" height="248" alt="Halxi Concept Art" src="https://github.com/user-attachments/assets/6d8d2798-7514-472d-850b-82dac32cd9ca" />
+<img width="236" height="257" alt="Akki Concept Art" src="https://github.com/user-attachments/assets/b7cfe102-7006-4f83-b6a6-da86f4930b99" />
 
 ### Interfaces
 
 
 #### Menú de inicio
 
-![IMAGEN]()
+<img width="602" height="595" alt="Main Menu Concept" src="https://github.com/user-attachments/assets/0735ab20-24d8-49ed-9014-a74d74251a08" />
 
 Según la partida guardada del jugador, cambiarán los planetas mostrados en la pantalla de inicio.
 
 
 #### Menú de opciones
 
-![IMAGEN]()
+<img width="600" height="600" alt="Menu Opciones Concept" src="https://github.com/user-attachments/assets/d6ac14a8-8cfb-42f6-b783-a0fb9d911220" />
 
 Arte conceptual del menú de opciones.
 
 
 #### Overview Sistema Solar
 
-![IMAGEN]()
+<img width="601" height="601" alt="Main UI concept" src="https://github.com/user-attachments/assets/59e8f06a-ea91-4e4f-b886-6aa35c086ad1" />
 
 Arte conceptual de una visión general del sistema solar.
 
 
 #### Visión “Perfecta” del sistema solar
 
-![IMAGEN]()
+<img width="601" height="604" alt="Vision perfecta UI" src="https://github.com/user-attachments/assets/ecd8ebf0-cbcb-44ab-a813-5a58ae4bfff0" />
 
 Arte conceptual de una visión general perfecta del sistema solar. Se mostrará durante la construcción de un elemento. Al estar en esta visión el movimiento del sistema solar se detendrá.
 
@@ -265,8 +266,7 @@ El *Astrario* recogerá información detallada y ampliada de todos los elementos
 
 Referencias
 
-![IMAGEN]()
-
+<img width="559" height="330" alt="Hades 2 bestiario" src="https://github.com/user-attachments/assets/0af62ffe-581b-482d-8bd2-cbf0a06d18e5" />
 
 Bestiario del videojuego “Hades II”.
 
@@ -277,42 +277,40 @@ En este menú se refleja la interacción con otras razas, incluyendo la relació
 
 Referencias
 
-![IMAGEN]()
-![IMAGEN]()
+<img width="244" height="277" alt="Menu civilication VI 2" src="https://github.com/user-attachments/assets/87fe940f-de70-42c3-9f43-c0a56f85a63d" />
+<img width="340" height="189" alt="Menu civilication VI 1" src="https://github.com/user-attachments/assets/cb8f3f7c-858a-4528-a51f-1cf10aa7fbee" />
 
 Concept
 
-![IMAGEN]()
-![IMAGEN]()
+<img width="275" height="274" alt="Menu diplomacia concept" src="https://github.com/user-attachments/assets/86657f60-ab94-4b0c-8dd2-9ae337fd615e" />
+<img width="285" height="197" alt="Menu diplomacia concept 2" src="https://github.com/user-attachments/assets/1b244d93-4888-4113-879c-43b6a9a41998" />
 
 Arte conceptual de la interfaz de diplomacia.
 
 
 #### Menú de misiones
 
-![IMAGEN]()
+<img width="598" height="339" alt="Menu misiones concept 4" src="https://github.com/user-attachments/assets/a68cbced-a6ec-48f6-8a01-7379643f71fb" />
+<img width="565" height="312" alt="Menu misiones concept 3" src="https://github.com/user-attachments/assets/fb871565-b670-4980-87b0-0c899b122446" />
+<img width="601" height="333" alt="Menu misiones concept 2" src="https://github.com/user-attachments/assets/9ac693bf-c10d-4488-bef4-b4c7487a5a06" />
+<img width="601" height="337" alt="Menu misiones concept 1" src="https://github.com/user-attachments/assets/a55e2f62-c05d-4069-9509-a29f0cb7726e" />
 
-![IMAGEN]()
-
-![IMAGEN]()
-
-![IMAGEN]()
 
 #### Menú de investigación
 
-![IMAGEN]()
+<img width="600" height="325" alt="Menu investigacion concept" src="https://github.com/user-attachments/assets/7dc61984-0bf0-419e-86f3-94c976e620ab" />
 
 
 #### Menú de almacén
 
-![IMAGEN]()
+<img width="505" height="475" alt="menu almacen concept" src="https://github.com/user-attachments/assets/55099d50-51c0-40f5-95fb-a2b23d1a8a6e" />
 
 
 #### Menú de Habilidades
 
-![IMAGEN]()
+<img width="600" height="335" alt="Menu de habilidades concept 2" src="https://github.com/user-attachments/assets/6478d17c-3a36-4ccf-9b17-f45a0a47f5ee" />
+<img width="599" height="330" alt="Menu de habilidades concept 1" src="https://github.com/user-attachments/assets/d38c95f6-6dd5-4226-9557-b411e2b22ef4" />
 
-![IMAGEN]()
 
 # Música
 
@@ -1067,8 +1065,6 @@ El jugador tendrá la opción de entrar en guerra con otras civilizaciones (y vi
 
 Para determinar el desenlace de las guerras y sus consecuencias, se comparará el valor del “Poder” bélico de las civilizaciones enfrentadas. Cada especie tendrá un valor de “Poder”. Este valor puede ser modificado por:
 
-
-
 * Número de planetas de tipo “Roca” y/o “Metal”
 * Satélites que aumenten el “Poder”
 * Habilidades que mejoren el “Poder”
@@ -1317,12 +1313,13 @@ Las creencias de cada especie también determinarán su manera de actuar ante di
 
 ### Menú de inicio
 
-![IMAGEN]()
+<img width="601" height="460" alt="Diagrama menu inicio" src="https://github.com/user-attachments/assets/008925ab-0538-4487-a524-e9a4fb27a023" />
 
 
 ### Partida
 
-![IMAGEN]()
+<img width="599" height="650" alt="Diagrama partida" src="https://github.com/user-attachments/assets/fb4f9645-17d8-4bc4-a328-d77de2cc47fc" />
+
 
 # Interfaces
 
@@ -1781,38 +1778,32 @@ Tienen ‘ll al final del nombre.
 
 # Mapa de sistemas
 
-A lo largo de esta secciónse definirá el mapa de sistemas principales del juego y luego se desglosan los subsistemas de cada sistema principal.
+A lo largo de esta sección se definirá el mapa de sistemas principales del juego y luego se desglosan los subsistemas de cada sistema principal.
 
 
 ## Mapa de sistemas General
 
-![IMAGEN]()
+<img width="619" height="500" alt="Mapa de sistemas general" src="https://github.com/user-attachments/assets/e5083861-4707-4a73-aed1-cd62d41654cb" />
 
 
 ## Sistema de Gestión y Recursos
 
-![IMAGEN]()
-
+<img width="640" height="495" alt="Mapa de sistema de gestion y recursos" src="https://github.com/user-attachments/assets/fdcf9d84-7d0e-4483-a281-b24abb9d4054" />
 
 
 ## Sistema de Construcción y Expansión
 
-![IMAGEN]()
+<img width="600" height="311" alt="Mapa de sistema de construccion y expansion" src="https://github.com/user-attachments/assets/80e61193-5c52-4ff0-9a8d-0ab925776dd9" />
+
 
 ## Sistema de progresión y habilidades
 
-![IMAGEN]()
-
-# 
+<img width="597" height="510" alt="Mapa de sistema de progresion y habilidades" src="https://github.com/user-attachments/assets/83dcff27-f29d-4cd1-9b46-e056fba99e5c" />
 
 
 ## Sistema de eventos
 
-
-# 
-
-![IMAGEN]()
-
+<img width="608" height="486" alt="Mapa de sistema de eventos" src="https://github.com/user-attachments/assets/ccb6f558-d382-4a4a-8f47-140859022ff2" />
 
 # Sistema de interfaces
 
