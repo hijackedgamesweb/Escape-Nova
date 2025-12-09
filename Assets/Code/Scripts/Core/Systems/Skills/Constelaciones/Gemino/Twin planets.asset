@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Twin planets
   m_EditorClassIdentifier: 
   nodeName: Twin planets
-  description: Planets of the same type in the same orbit generate 50% more resources.
+  description: Planets of the same type that are close together in the same orbit
+    generate 50% more resources.
   skillPointCost: 3
   prerequisiteNodes: []
   positionInConstellation: {x: 4.5, y: 3.33}

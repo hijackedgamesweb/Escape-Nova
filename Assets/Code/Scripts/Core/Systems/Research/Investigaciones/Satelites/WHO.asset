@@ -15,8 +15,8 @@ MonoBehaviour:
   researchId: who
   category: 2
   displayName: WHO
-  description: Unlocks the satellite 'WHO'. This satellite reduces research time
-    by 10%.
+  description: Unlocks the satellite 'WHO'. This satellite reduces research and crafting
+    time by 10%.
   icon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   prerequisites:
   - researchId: chronos

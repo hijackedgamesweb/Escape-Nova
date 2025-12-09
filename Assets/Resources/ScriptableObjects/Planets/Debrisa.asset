@@ -17,13 +17,13 @@ MonoBehaviour:
   timeToBuild: 10
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  buildCostAmounts: 50c30000
+  buildCostAmounts: 80841e00
   loreDescription: A tough one to crack. Researchers had to really crank up the size
     of those drills in order to scratch the toughest surface we've known.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  resourcePerCycle: 20030000
+  resourcePerCycle: e8030000
   animationFrames:
   - {fileID: -7929207441958037050, guid: c5e3bf4c7a15ef54f842be629308fd32, type: 3}
   - {fileID: -1744549261551345811, guid: c5e3bf4c7a15ef54f842be629308fd32, type: 3}

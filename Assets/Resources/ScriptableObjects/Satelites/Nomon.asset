@@ -24,11 +24,15 @@ MonoBehaviour:
   desc: This planet produces 15% more resources.
   sateliteIcon: {fileID: -7014793757582525354, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
   upgrades:
-  - rid: 2167832615999504385
+  - rid: 7319165446800801872
   references:
     version: 2
     RefIds:
-    - rid: 2167832615999504385
-      type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+    - rid: 7319165446800801872
+      type: {class: LocalSynergyUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        productionIncrement: 15
+        baseImprovementType: SinergiaNomon50
+        basePercentage: 15
+        synergySkillId: SinergiaNomon50
+        synergyImprovementType: BonoNomonSinergia
+        synergyPercentage: 50

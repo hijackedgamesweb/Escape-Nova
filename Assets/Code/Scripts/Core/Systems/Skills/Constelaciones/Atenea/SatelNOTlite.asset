@@ -13,20 +13,12 @@ MonoBehaviour:
   m_Name: SatelNOTlite
   m_EditorClassIdentifier: 
   nodeName: Satel-NOT-lite
-  description: Production satellites generate 100% more resources.
+  description: This does nothing to satellites... Or maybe it does...
   skillPointCost: 5
   prerequisiteNodes:
   - {fileID: 11400000, guid: 5face63996c4ea348ad52fe7ef5c3e59, type: 2}
   positionInConstellation: {x: 1, y: 3}
-  improvements:
-  - rid: 5265271245964312749
+  improvements: []
   references:
     version: 2
-    RefIds:
-    - rid: 5265271245964312749
-      type: {class: LocalSynergySkill, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
-      data:
-        skillIdToUnlock: SinergiaSalas50
-        requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
-        synergyImprovementType: BonoSalasSinergia
-        synergyPercentage: 100
+    RefIds: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mineralization
   m_EditorClassIdentifier: 
   nodeName: Mineralization
-  description: All your planets generate 100% more resources.
+  description: All your planets generate 25% more resources.
   skillPointCost: 6
   prerequisiteNodes:
   - {fileID: 11400000, guid: 3d78696d54fd0d043935a14f2d5c8357, type: 2}
@@ -26,4 +26,4 @@ MonoBehaviour:
     - rid: 162876391971094611
       type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 100
+        productionBonusPercent: 25

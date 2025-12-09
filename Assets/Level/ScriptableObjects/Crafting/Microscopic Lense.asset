@@ -19,11 +19,11 @@ MonoBehaviour:
   icon: {fileID: 2409427332185054617, guid: 5c229af0763188c48b9f02fac21d26d1, type: 3}
   ingredients:
   - resourceType: 3
-    amount: 25000
+    amount: 50000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 20000
+    amount: 40000
     itemName: 
     useInventoryItem: 0
   output:

@@ -19,16 +19,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 204e0000204e0000204e0000
+  buildCostAmounts: 50c3000050c3000050c30000
   size: 0.7
   desc: This planet produces 25% more resources.
   sateliteIcon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   upgrades:
-  - rid: 2167832615999504385
+  - rid: 7319165446800801874
   references:
     version: 2
     RefIds:
-    - rid: 2167832615999504385
-      type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
+    - rid: 7319165446800801874
+      type: {class: LocalSynergyUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        productionIncrement: 25
+        baseImprovementType: BonoNishimBase
+        basePercentage: 25
+        synergySkillId: SinergiaNishim50
+        synergyImprovementType: BonoNishimSinergia
+        synergyPercentage: 50
