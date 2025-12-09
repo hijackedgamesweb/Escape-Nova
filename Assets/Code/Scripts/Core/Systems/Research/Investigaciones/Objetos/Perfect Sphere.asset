@@ -34,7 +34,7 @@ MonoBehaviour:
     useInventoryItem: 1
   - resourceType: 0
     amount: 1
-    itemName: Microscopic Lense
+    itemName: Microscopic Lens
     useInventoryItem: 1
   - resourceType: 0
     amount: 1
