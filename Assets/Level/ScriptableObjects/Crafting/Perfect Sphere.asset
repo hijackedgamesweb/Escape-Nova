@@ -18,23 +18,23 @@ MonoBehaviour:
   icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 3
+    amount: 2
     itemName: Matter Condenser
     useInventoryItem: 1
   - resourceType: 4
-    amount: 3
+    amount: 2
     itemName: Modular Spectrometer
     useInventoryItem: 1
   - resourceType: 2
-    amount: 3
+    amount: 2
     itemName: Microscopic Lens
     useInventoryItem: 1
   - resourceType: 1
-    amount: 3
+    amount: 2
     itemName: Multicore Chip
     useInventoryItem: 1
   - resourceType: 1
-    amount: 3
+    amount: 2
     itemName: Freezed Core
     useInventoryItem: 1
   output:

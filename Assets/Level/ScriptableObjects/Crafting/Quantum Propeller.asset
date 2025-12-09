@@ -18,7 +18,7 @@ MonoBehaviour:
   icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 4
+    amount: 3
     itemName: Perfect Sphere
     useInventoryItem: 1
   output:
