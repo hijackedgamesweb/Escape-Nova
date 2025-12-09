@@ -19,18 +19,18 @@ MonoBehaviour:
   icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
   ingredients:
   - resourceType: 1
-    amount: 45000
+    amount: 450000
     itemName: 
     useInventoryItem: 0
   - resourceType: 0
-    amount: 40000
+    amount: 400000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 40000
+    amount: 400000
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Freezed Core
     amount: 1
-  craftingTimeInSeconds: 16
+  craftingTimeInSeconds: 8
