@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   buildCostAmounts: e8030000e8030000
   size: 0.5
-  desc: Research time is reduced by 10%.
+  desc: Research time is reduced by 2%.
   sateliteIcon: {fileID: -4481016797531701806, guid: 5957a7c775786ba4f94b4bcc3451d074, type: 3}
   upgrades:
   - rid: 5265271264873546022
@@ -30,5 +30,5 @@ MonoBehaviour:
     - rid: 5265271264873546022
       type: {class: GlobalCycleSpeedUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        globalSpeedBonusPercent: 1
+        globalSpeedBonusPercent: 2
         globalImprovementKey: GlobalCycleSpeed
