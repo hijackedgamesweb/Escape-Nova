@@ -11,7 +11,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects
         public string desc;
         
         [Header("Visual & Orbit")]
-        public Sprite sprite;
         public Material material;
         public float orbitDistance = 45f;
         public float orbitSpeed = 5f;

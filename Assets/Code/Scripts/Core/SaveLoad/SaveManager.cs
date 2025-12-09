@@ -8,6 +8,7 @@ using Code.Scripts.Patterns.Singleton;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
+using System.Runtime.InteropServices;
 
 namespace Code.Scripts.Core.SaveLoad
 {
