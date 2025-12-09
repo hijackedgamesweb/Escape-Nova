@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: DEMETER
   m_EditorClassIdentifier: 
   constellationName: DEMETER
+  description: The goddess of the seasons is sharing her abilities with your solar
+    system to increase its production.
+  icon: {fileID: 315663384221001520, guid: 0b67b98148f10654791de701187834a8, type: 3}
   nodes:
   - {fileID: 11400000, guid: e26a9c78c996dfc448b444dfbce8c342, type: 2}
   - {fileID: 11400000, guid: d5a808fe21d3ad34f8bf9de3ca3078c1, type: 2}

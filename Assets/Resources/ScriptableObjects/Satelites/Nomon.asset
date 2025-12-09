@@ -19,10 +19,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  buildCostAmounts: 9001000032000000c8000000
+  buildCostAmounts: 881300008813000088130000
   size: 1
-  desc: This planet produces 50% more resources.
-  sprite: {fileID: -3782125344057952254, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
+  desc: This planet produces 15% more resources.
+  sateliteIcon: {fileID: -7014793757582525354, guid: 8066fe64c019bc8438e21b0591de2835, type: 3}
   upgrades:
   - rid: 2167832615999504385
   references:
@@ -31,4 +31,4 @@ MonoBehaviour:
     - rid: 2167832615999504385
       type: {class: ProductionIncrementUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        productionIncrement: 50
+        productionIncrement: 15

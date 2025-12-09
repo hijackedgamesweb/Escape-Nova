@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Leyev
   sprite: {fileID: -1283102832548966608, guid: 2b497a5ead828334fa43390cad1d7a09, type: 3}
-  timeToBuild: 5
+  timeToBuild: 1
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: This small planet is composed mainly of Paladium, which, combined
+    with its powerful electrical storms, has charged the surface with strong static
+    electricity.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}

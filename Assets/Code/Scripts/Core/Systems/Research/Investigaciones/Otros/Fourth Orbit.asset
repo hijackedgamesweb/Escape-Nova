@@ -21,26 +21,26 @@ MonoBehaviour:
   - researchId: third_orbit
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 625
+  researchTimeInSeconds: 70
   resourceCosts:
   - resourceType: 0
-    amount: 2000
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 2000
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 2000
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 2000
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 2000
+    amount: 20000
     itemName: 
     useInventoryItem: 0
   rewards:

@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Antar
   sprite: {fileID: -7143710984428089595, guid: 212db910e48e26d4dafc8c7ec7f585bc, type: 3}
-  timeToBuild: 15
+  timeToBuild: 3
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
-  buildCostAmounts: f4010000f4010000
+  buildCostAmounts: d0070000d0070000
+  loreDescription: The combination of Sandit and Frostice has resulted in the coldest
+    frozen deserts in the entire solar system, creating unique biomes.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}

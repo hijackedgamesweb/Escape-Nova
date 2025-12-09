@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titles:
   - Constellations
+  - Star points
   messages:
-  - You have unlocked the "Constellations" menu. You can use star points to unlock
-    nodes that will upgrade your solar system, or unlock new researches.
+  - You have unlocked the "Constellations" menu. Through here, you can use star points
+    to unlock stars that will upgrade your solar system, or even unlock new researches.
+  - These star points will be delivered to you periodically every 150 solar cycles,
+    so use them carefully! Though, researchers believe we might be able to find a
+    way to get more of those down the line...
   images:
   - {fileID: 7255457626301636360, guid: a12f032a61b59e342a042cf71dbad8e5, type: 3}
+  - {fileID: -899786895826161562, guid: e1ea5d995ee8de94eb3c8ab43be7a5c5, type: 3}

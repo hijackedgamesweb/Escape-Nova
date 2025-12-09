@@ -16,24 +16,32 @@ MonoBehaviour:
   category: 2
   displayName: WHO
   description: Unlocks the satellite 'WHO'. This satellite reduces research time
-    by 5%.
+    by 10%.
   icon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   prerequisites:
   - researchId: chronos
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 425
+  researchTimeInSeconds: 52
   resourceCosts:
-  - resourceType: 3
-    amount: 1200
+  - resourceType: 0
+    amount: 5000
     itemName: 
     useInventoryItem: 0
-  - resourceType: 0
-    amount: 400
+  - resourceType: 4
+    amount: 5000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 3
+    amount: 1500
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 250
+    amount: 500
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 1
+    amount: 500
     itemName: 
     useInventoryItem: 0
   rewards:

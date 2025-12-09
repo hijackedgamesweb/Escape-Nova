@@ -16,24 +16,24 @@ MonoBehaviour:
   category: 2
   displayName: Nishim
   description: Unlocks the satellite 'Nishim'. This satellite makes a planet produce
-    75% more resources.
+    25% more resources.
   icon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   prerequisites:
   - researchId: nomon
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 75
+  researchTimeInSeconds: 48
   resourceCosts:
   - resourceType: 4
-    amount: 800
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 400
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 200
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   rewards:

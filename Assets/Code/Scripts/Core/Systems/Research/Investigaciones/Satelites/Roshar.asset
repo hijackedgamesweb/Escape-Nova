@@ -16,28 +16,28 @@ MonoBehaviour:
   category: 2
   displayName: Roshar
   description: Unlocks the satellite 'Roshar'. This satellite makes a planet produce
-    100% more resources.
+    50% more resources.
   icon: {fileID: -7353351216649529681, guid: e71b41a6faa3f5c49b8adda85992c7eb, type: 3}
   prerequisites:
   - researchId: nishim
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 225
+  researchTimeInSeconds: 52
   resourceCosts:
   - resourceType: 4
-    amount: 1200
+    amount: 25000
     itemName: 
     useInventoryItem: 0
   - resourceType: 0
-    amount: 300
+    amount: 25000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 550
+    amount: 25000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 150
+    amount: 25000
     itemName: 
     useInventoryItem: 0
   rewards:

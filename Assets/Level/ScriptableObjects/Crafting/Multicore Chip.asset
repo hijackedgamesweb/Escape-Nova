@@ -19,22 +19,22 @@ MonoBehaviour:
   icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 300
+    amount: 15000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 200
+    amount: 15000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 50
+    amount: 15000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 50
+    amount: 15000
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Multicore Chip
     amount: 1
-  craftingTimeInSeconds: 150
+  craftingTimeInSeconds: 16

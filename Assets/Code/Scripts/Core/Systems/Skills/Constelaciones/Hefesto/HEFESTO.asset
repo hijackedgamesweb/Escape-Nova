@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7bd636bb6e54843bf7253b43569f48, type: 3}
   m_Name: HEFESTO
   m_EditorClassIdentifier: 
-  constellationName: HEFESTO
+  constellationName: HEPHAESTUS
+  description: The god of forging likes to optimize his work, so he has decided to
+    offer you his help by increasing the production of those planets that generate
+    several resources at once.
+  icon: {fileID: -8312044539427248464, guid: c6911e4f954c6eb408fd20257b7c97c1, type: 3}
   nodes:
   - {fileID: 11400000, guid: 0d90014e62abe224b9a53fab47cd938e, type: 2}
   - {fileID: 11400000, guid: d58c0b8d2061cc848b36be91cc0f28ab, type: 2}

@@ -22,10 +22,10 @@ MonoBehaviour:
   - researchId: blocked_until_moresupplies_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 875
+  researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 2
-    amount: 2000
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   rewards:

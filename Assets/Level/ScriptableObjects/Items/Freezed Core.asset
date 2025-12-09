@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Freezed Core
   displayName: Freezed Core
   icon: {fileID: -1641436563501588733, guid: 9dbb92bab89febb4a9ddf7890ed8248a, type: 3}
-  maxStack: 9
+  maxStack: 12
   description: This item can be used to build and trade.
   itemToUnlock: {fileID: 0}

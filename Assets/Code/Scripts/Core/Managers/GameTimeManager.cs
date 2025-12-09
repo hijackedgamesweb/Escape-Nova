@@ -46,8 +46,10 @@ namespace Code.Scripts.Core.Managers
                 ServiceLocator.RegisterService<TimeConfig>(timeConfig);
             }
             
-            if (!StartPaused)
+            if (!StartPaused) {
                 StartTimer();
+            }
+                
 
             _nextCycleTime = timeConfig.secondsPerCycle;
         }

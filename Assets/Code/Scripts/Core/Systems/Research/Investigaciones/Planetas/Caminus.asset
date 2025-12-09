@@ -15,17 +15,17 @@ MonoBehaviour:
   researchId: caminus
   category: 0
   displayName: Caminus
-  description: Unlocks the planet 'Caminus'. This planet generates 275 Sandit every
+  description: Unlocks the planet 'Caminus'. This planet generates 200 Sandit every
     solar cycle.
   icon: {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   prerequisites:
   - researchId: blocked_until_heatingthingsup_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 250
+  researchTimeInSeconds: 40
   resourceCosts:
   - resourceType: 3
-    amount: 600
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   rewards:

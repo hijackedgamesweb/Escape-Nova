@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: GEMINO
   m_EditorClassIdentifier: 
   constellationName: GEMINO
+  description: There are some planets whose beauty is so astonishing that it may
+    be worth building them several times in the same orbit, and even more so if a
+    constellation can increase the productivity of the repeated planets.
+  icon: {fileID: 602635773524317618, guid: de66bbc22b53c464ba9d9ac935f73338, type: 3}
   nodes:
   - {fileID: 11400000, guid: 4cc1f13d5c297c24ca32d8a0e285f4fc, type: 2}
   - {fileID: 11400000, guid: 444519d3f0ba27b4d8ecf3eebc9504f9, type: 2}

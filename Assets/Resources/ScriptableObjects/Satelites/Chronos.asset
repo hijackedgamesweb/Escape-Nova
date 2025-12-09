@@ -16,23 +16,20 @@ MonoBehaviour:
   sprite: {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   timeToBuild: 50
   buildCostResources:
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: f4010000
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  buildCostAmounts: b80b0000c4090000d0070000
   size: 0.5
-  desc: Research time is reduced by 35%.
-  sprite: {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
+  desc: Research time is reduced by 4%.
+  sateliteIcon: {fileID: -4083543167136710652, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   upgrades:
   - rid: 6291952592291364864
-  animationFrames:
-  - {fileID: -4083543167136710652, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
-  - {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
-  - {fileID: -3218858259719252710, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
-  frameRate: 0.1
   references:
     version: 2
     RefIds:
     - rid: 6291952592291364864
       type: {class: GlobalCycleSpeedUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
-        globalSpeedBonusPercent: 3
+        globalSpeedBonusPercent: 4
         globalImprovementKey: GlobalCycleSpeed
