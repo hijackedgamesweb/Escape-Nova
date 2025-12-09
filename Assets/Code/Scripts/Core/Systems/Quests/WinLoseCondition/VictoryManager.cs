@@ -85,6 +85,7 @@ public class VictoryManager : MonoBehaviour
         {
             yield return new WaitForSeconds(duracionFadeOut);
         }
+        AudioManager.Instance.StopMusic();
         SceneManager.LoadScene(nombreEscenaCreditos);
     }
 }
