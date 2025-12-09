@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   buildCostAmounts: 102700001027000088130000b80b0000b80b0000
   size: 0.5
-  desc: Research time is reduced by 10%.
+  desc: Research and crafting time is reduced by 10%.
   sateliteIcon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   upgrades:
   - rid: 6291952592291364865

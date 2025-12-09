@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Perfect Connection
   m_EditorClassIdentifier: 
   nodeName: Perfect Connection
-  description: Planets of the same type in the same orbit generate 100% more resources.
+  description: Planets of the same type that are close together in the same orbit
+    generate 100% more resources.
   skillPointCost: 4
   prerequisiteNodes:
   - {fileID: 11400000, guid: 566cb57e7dec18b479d1d7ed9484c90a, type: 2}

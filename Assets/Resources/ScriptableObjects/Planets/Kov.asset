@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: 204e0000204e0000204e0000
+  buildCostAmounts: 20a1070020a1070020a10700
   loreDescription: 
   size: 0.5
   producibleResources:

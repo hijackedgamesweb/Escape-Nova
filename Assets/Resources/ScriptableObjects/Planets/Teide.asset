@@ -17,13 +17,13 @@ MonoBehaviour:
   timeToBuild: 10
   buildCostResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  buildCostAmounts: 50c30000
+  buildCostAmounts: 80841e00
   loreDescription: A primal blaze whose heat can be felt from kilometers away. Perhaps
     not as bright as our decaying sun, but definitvely just as beautiful.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  resourcePerCycle: 20030000
+  resourcePerCycle: e8030000
   animationFrames:
   - {fileID: -6087812442637709819, guid: c4f4d3b324eae084bb62807cf59e57fb, type: 3}
   - {fileID: -4039297776187341227, guid: c4f4d3b324eae084bb62807cf59e57fb, type: 3}

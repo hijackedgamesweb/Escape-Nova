@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
-  buildCostAmounts: 342100003421000034210000
+  buildCostAmounts: a0860100a0860100a0860100
   loreDescription: The Paladium on this planet has fused perfectly with equal parts
     magmavite and frostice. The fusion of both elements through metal subjects it
     to constant extreme temperature changes, which has been exploited to make it
