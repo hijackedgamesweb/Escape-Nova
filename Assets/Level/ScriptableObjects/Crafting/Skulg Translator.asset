@@ -34,10 +34,10 @@ MonoBehaviour:
     amount: 3500
     itemName: 
     useInventoryItem: 0
-  - resourceType: 3
-    amount: 3500
-    itemName: 
-    useInventoryItem: 0
+  - resourceType: 1
+    amount: 2
+    itemName: Fire Strike
+    useInventoryItem: 1
   output:
     itemName: Skulg Translator
     amount: 1

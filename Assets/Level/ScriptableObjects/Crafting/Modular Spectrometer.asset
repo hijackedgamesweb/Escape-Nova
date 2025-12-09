@@ -19,18 +19,18 @@ MonoBehaviour:
   icon: {fileID: 5554003434574828865, guid: 5cbd70e74bc9d814681b2edbeb3f997c, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 45000
+    amount: 400000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 40000
+    amount: 400000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 35000
+    amount: 350000
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Modular Spectrometer
     amount: 1
-  craftingTimeInSeconds: 16
+  craftingTimeInSeconds: 8
