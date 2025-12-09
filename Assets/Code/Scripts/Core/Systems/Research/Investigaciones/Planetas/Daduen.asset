@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: daduen
   category: 0
   displayName: Daduen
-  description: Unlocks the planet 'Daduen'. This planet generates 800 Paladium every
+  description: Unlocks the planet 'Daduen'. This planet generates 1000 Paladium every
     solar cycle.
   icon: {fileID: 6533525794168272614, guid: c6844dc1c1c4624438d7821f63a30727, type: 3}
   prerequisites:
@@ -25,7 +25,7 @@ MonoBehaviour:
   researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 0
-    amount: 10000
+    amount: 1000000
     itemName: 
     useInventoryItem: 0
   rewards:

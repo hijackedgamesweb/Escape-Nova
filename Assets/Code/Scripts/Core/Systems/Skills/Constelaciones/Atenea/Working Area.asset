@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Working Area
   m_EditorClassIdentifier: 
   nodeName: Working Area
-  description: Production satellites generate 50% more resources.
-  skillPointCost: 3
+  description: Roshar satellite generate 50% more resources.
+  skillPointCost: 4
   prerequisiteNodes:
   - {fileID: 11400000, guid: b9432b2b69fcbf34fbf2e494b2220966, type: 2}
   positionInConstellation: {x: 0, y: 6}
@@ -26,7 +26,7 @@ MonoBehaviour:
     - rid: 5265271245964312749
       type: {class: LocalSynergySkill, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        skillIdToUnlock: SinergiaSalas50
-        requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
-        synergyImprovementType: BonoSalasSinergia
+        skillIdToUnlock: SinergiaRoshar50
+        requiredSatelite: {fileID: 11400000, guid: 4f0fe4d69cb718841a944694dbc0be83, type: 2}
+        synergyImprovementType: BonoRosharSinergia
         synergyPercentage: 50

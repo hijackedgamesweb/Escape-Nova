@@ -17,13 +17,13 @@ MonoBehaviour:
   timeToBuild: 10
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 50c30000
+  buildCostAmounts: 80841e00
   loreDescription: Settlers of this planet have adapted themsevles to the hars nature
     of this dry world. Life finds its way even in the thoughest of enviroments.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  resourcePerCycle: 20030000
+  resourcePerCycle: e8030000
   animationFrames:
   - {fileID: 3369094531837729759, guid: cfe8fdd31d52c1f4da9eda13b6272b58, type: 3}
   - {fileID: 2451042201881035334, guid: cfe8fdd31d52c1f4da9eda13b6272b58, type: 3}

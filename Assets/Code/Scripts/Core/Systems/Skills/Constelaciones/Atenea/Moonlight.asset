@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Moonlight
   m_EditorClassIdentifier: 
   nodeName: Moonlight
-  description: Production satellites generate 15% more resources.
-  skillPointCost: 1
+  description: Nomon satellite generate 50% more resources.
+  skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
   positionInConstellation: {x: 3, y: 4}
@@ -26,7 +26,7 @@ MonoBehaviour:
     - rid: 5265271245964312749
       type: {class: LocalSynergySkill, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        skillIdToUnlock: SinergiaSalas50
-        requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
-        synergyImprovementType: BonoSalasSinergia
-        synergyPercentage: 15
+        skillIdToUnlock: SinergiaNomon50
+        requiredSatelite: {fileID: 11400000, guid: 4b402e7fbcbcf034a8e1b98a21366b6e, type: 2}
+        synergyImprovementType: BonoNomonSinergia
+        synergyPercentage: 50

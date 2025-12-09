@@ -15,7 +15,7 @@ MonoBehaviour:
   researchId: debrisa
   category: 0
   displayName: Debrisa
-  description: Unlocks the planet 'Debrisa'. This planet generates 800 Batee every
+  description: Unlocks the planet 'Debrisa'. This planet generates 1000 Batee every
     solar cycle.
   icon: {fileID: -7929207441958037050, guid: c5e3bf4c7a15ef54f842be629308fd32, type: 3}
   prerequisites:
@@ -25,7 +25,7 @@ MonoBehaviour:
   researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 4
-    amount: 10000
+    amount: 1000000
     itemName: 
     useInventoryItem: 0
   rewards:

@@ -17,14 +17,14 @@ MonoBehaviour:
   timeToBuild: 5
   buildCostResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  buildCostAmounts: 10270000
+  buildCostAmounts: c0d40100
   loreDescription: Saxum hides beautiful underground caves that are the main tourist
     attraction in the solar system. However, the wealth of Batee in these caves is
     leading to its massive extraction, which is slowly destroying the planet's ecosystem.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  resourcePerCycle: fa000000
+  resourcePerCycle: c8000000
   animationFrames:
   - {fileID: 3433697384172529073, guid: 08ed824dd8f246343bc0dadd152ed85e, type: 3}
   - {fileID: -2575184072039500772, guid: 08ed824dd8f246343bc0dadd152ed85e, type: 3}

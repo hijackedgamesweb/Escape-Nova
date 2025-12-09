@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Artificial Improvement
   m_EditorClassIdentifier: 
   nodeName: Artificial Improvement
-  description: Production satellites generate 25% more resources.
-  skillPointCost: 2
+  description: Nishim satellite generate 50% more resources.
+  skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 2837ca62aed57f54f82d7ae7a40a94be, type: 2}
   positionInConstellation: {x: 2, y: 5}
@@ -26,7 +26,7 @@ MonoBehaviour:
     - rid: 5265271245964312749
       type: {class: LocalSynergySkill, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        skillIdToUnlock: SinergiaSalas50
-        requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
-        synergyImprovementType: BonoSalasSinergia
-        synergyPercentage: 25
+        skillIdToUnlock: SinergiaNishim50
+        requiredSatelite: {fileID: 11400000, guid: a701128b8e7762f42962c67e1cb211d1, type: 2}
+        synergyImprovementType: BonoNishimSinergia
+        synergyPercentage: 50
