@@ -87,7 +87,7 @@ MonoBehaviour:
   - name: Spaceship
     clip: {fileID: 8300000, guid: 5e47d2c35ef703f4781e9f74e5bd4495, type: 3}
   - name: PlanetZoom
-    clip: {fileID: 8300000, guid: ee781cfaef8f304458e64844bda8dd59, type: 3}
+    clip: {fileID: 8300000, guid: 41d10b7f0e75a104295e4873eb78fc81, type: 3}
   - name: Astrarium
     clip: {fileID: 8300000, guid: d5300139a0ee6174aa17690cd81a281a, type: 3}
   - name: MainMenuButton
