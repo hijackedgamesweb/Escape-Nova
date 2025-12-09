@@ -73,12 +73,12 @@ namespace Code.Scripts.UI.Menus.BuildingMenuPanel
 
             if (!IsSelected)
             {
-                _planetSprite.color = canAfford ? _availableColor : _unavailableColor;
+                GetComponent<SpriteRenderer>().color = canAfford ? _availableColor : _unavailableColor;
                 IsAffordable = canAfford;
             } else if (IsSelected && !canAfford)
             {
                 IsSelected = false;
-                _planetSprite.color = _unavailableColor;
+                GetComponent<SpriteRenderer>().color = _unavailableColor;
                 IsAffordable = false;
             }
         }

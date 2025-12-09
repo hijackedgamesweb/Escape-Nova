@@ -19,6 +19,7 @@ MonoBehaviour:
   baseInterest: 0.6
   baseTrust: 0.3
   itemPreferences: {fileID: 11400000, guid: 994bc3f15cc66f644a50ac3100413acc, type: 2}
+  civName: Skulg
   civilizationDescription: "The Skulg are defined by their industrial precision and
     a rigid military dictatorship. Their society is organized not around culture,
     but around function and \"integration,\" viewing planetary systems as logistical
@@ -28,7 +29,7 @@ MonoBehaviour:
     efficiency, showing interest only in things, and people, that can serve a tangible
     purpose in their grand design"
   civilizationIcon: {fileID: 21300000, guid: 02a8b7a3690c2524aafb899824a3d008, type: 3}
-  civilizationFlag: {fileID: 0}
+  civilizationFlag: {fileID: 6314448941138272413, guid: e2fb70d4a634c924896ff8754d3a0b0f, type: 3}
   aiController: 4
   angerTolerance: 2
   leaderPortrait: {fileID: -7368006706622409379, guid: 3c35c54865c02c644ad9313ecec794d2, type: 3}

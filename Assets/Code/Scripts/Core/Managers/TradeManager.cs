@@ -17,6 +17,7 @@ namespace Code.Scripts.Core.Managers
         
         [SerializeField] private Image _leaderPortrait;
         [SerializeField] private TMP_Text _civilizationName;
+        [SerializeField] private Image _background;
         
         public void InitializeTrade(Entity.Entity playerEntity, Civilization targetEntity)
         {
@@ -24,6 +25,7 @@ namespace Code.Scripts.Core.Managers
             _targetEntity = targetEntity;
             _leaderPortrait.sprite = targetEntity.CivilizationData.LeaderPortrait;
             _civilizationName.text = targetEntity.CivilizationData.Name;
+            _background.sprite = targetEntity.CivilizationData.CivilizationFlag;
             _playerTradingPanel.InitializePanel(_playerEntity.StorageSystem);
             _targetTradingPanel.InitializePanel(_targetEntity.StorageSystem);
         }

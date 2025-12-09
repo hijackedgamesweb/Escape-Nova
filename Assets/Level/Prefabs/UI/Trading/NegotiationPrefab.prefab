@@ -7957,6 +7957,7 @@ MonoBehaviour:
   _targetTradingPanel: {fileID: 4149850804754635354}
   _leaderPortrait: {fileID: 1105836861031516984}
   _civilizationName: {fileID: 8944647092785228032}
+  _background: {fileID: 1134687766801915271}
 --- !u!1 &7840623476627058239
 GameObject:
   m_ObjectHideFlags: 0

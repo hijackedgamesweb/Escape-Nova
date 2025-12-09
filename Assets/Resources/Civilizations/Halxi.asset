@@ -19,6 +19,7 @@ MonoBehaviour:
   baseInterest: 0.4
   baseTrust: 0.3
   itemPreferences: {fileID: 11400000, guid: 3587325db2c04d647a8a710277a3c6f1, type: 2}
+  civName: Halxi
   civilizationDescription: "The Halxi civilization developed in an environment highly
     toxic to most other species, who need a life of biological isolation. \n\nThey
     operate under a unique democracy of total neural unanimity, where no action is
@@ -28,7 +29,7 @@ MonoBehaviour:
     of silence, as their debates happen internally and instantaneously, presenting
     a consensus that is often impossible to sway"
   civilizationIcon: {fileID: 21300000, guid: d76d43f413af86c49931c4468afcb907, type: 3}
-  civilizationFlag: {fileID: 0}
+  civilizationFlag: {fileID: -5727858009273786591, guid: e0d21430b7b0ff3489a0c37e53d749fb, type: 3}
   aiController: 2
   angerTolerance: 10
   leaderPortrait: {fileID: -5612916301264726696, guid: 33904318cf0b5e94884142a9ebcca063, type: 3}

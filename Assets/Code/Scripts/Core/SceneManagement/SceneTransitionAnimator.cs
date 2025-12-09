@@ -38,5 +38,11 @@ public class SceneTransitionAnimator : Singleton<SceneTransitionAnimator>
                 .SetEase(Ease.InQuad)
         );
         
+        // Al acabar vuelve a la posicion oriniginal
+        s.AppendCallback(() =>
+        {
+            rocket.anchoredPosition = new Vector2(-147, rocket.anchoredPosition.y);
+        });
+        
     }
 }
