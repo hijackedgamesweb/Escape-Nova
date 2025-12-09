@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: escape
   Title: Escape
   Description: 'Extinction is coming. Save yourself no matter the cost. '
-  CompletionGameInfo: {fileID: 0}
+  CompletionGameInfo: {fileID: 11400000, guid: 81aa9aa61cfcd8c4cb11eecd7b5e146b, type: 2}
   Objectives:
   - rid: 5265271182149550176
   - rid: 6291952346365689938

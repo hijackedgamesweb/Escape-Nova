@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: scientific_peak
   Title: Scientific peak
   Description: "With all of these items combined\u2026 Could we make something perfect?"
-  CompletionGameInfo: {fileID: 0}
+  CompletionGameInfo: {fileID: 11400000, guid: 36aa73d5e82271a4c9d819d7bc8a8bc4, type: 2}
   Objectives:
   - rid: 6291952611966058592
   Rewards:
