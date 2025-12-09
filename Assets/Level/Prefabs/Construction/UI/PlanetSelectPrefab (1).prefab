@@ -185,7 +185,7 @@ MonoBehaviour:
   _planetName: {fileID: 8616053410803243100}
   _planetProductionResource: {fileID: 3420660800528141555}
   _resourceCostInitializer: {fileID: 7510557941215057270}
-  _selectedColor: {r: 0.9490196, g: 0.92941177, b: 0.15686275, a: 1}
+  _selectedColor: {r: 0.5246463, g: 0.9490196, b: 0.15686272, a: 1}
   _availableColor: {r: 1, g: 1, b: 1, a: 1}
   _unavailableColor: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 1}
 --- !u!1 &4330329035407218179
