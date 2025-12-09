@@ -21,10 +21,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  buildCostAmounts: e8030000e8030000e8030000e8030000e8030000
+  buildCostAmounts: 204e0000204e0000204e0000204e0000204e0000
   size: 0.5
-  desc: Every 100 solar cycles, it provides 1 skill point.
-  sprite: {fileID: 1891900035898640601, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
+  desc: Every 300 solar cycles, it provides 1 skill point.
+  sateliteIcon: {fileID: 4125636645744980110, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
   upgrades:
   - rid: 7319165402231865421
   references:
@@ -34,5 +34,5 @@ MonoBehaviour:
       type: {class: MoonUpgrade, ns: Code.Scripts.Core.World.ConstructableEntities.SateliteUpgrades, asm: Assembly-CSharp}
       data:
         skillPointsPerCycle: 1
-        cyclesRequired: 100
+        cyclesRequired: 300
         upgradeId: moon_upgrade

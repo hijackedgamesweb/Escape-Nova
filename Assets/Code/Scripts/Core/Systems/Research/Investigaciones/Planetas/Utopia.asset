@@ -22,26 +22,26 @@ MonoBehaviour:
   - researchId: blocked_until_scientificpeak_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 500
+  researchTimeInSeconds: 80
   resourceCosts:
   - resourceType: 0
-    amount: 4000
+    amount: 100000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 4000
+    amount: 100000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 4000
+    amount: 100000
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 4000
+    amount: 100000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 4000
+    amount: 100000
     itemName: 
     useInventoryItem: 0
   rewards:

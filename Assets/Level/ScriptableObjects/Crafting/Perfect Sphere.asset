@@ -40,4 +40,4 @@ MonoBehaviour:
   output:
     itemName: Perfect Sphere
     amount: 1
-  craftingTimeInSeconds: 250
+  craftingTimeInSeconds: 40

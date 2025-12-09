@@ -19,10 +19,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 580200002c01000064000000
+  buildCostAmounts: 581b0000581b0000581b0000
   size: 0.7
   desc: This planet produces 75% more resources.
-  sprite: {fileID: 976869767625186470, guid: b98b5f467971df44281ad822f1357722, type: 3}
+  sateliteIcon: {fileID: -786399054217615434, guid: b98b5f467971df44281ad822f1357722, type: 3}
   upgrades:
   - rid: 2167832615999504385
   references:

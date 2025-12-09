@@ -14,14 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Caminus
   sprite: {fileID: 2490480118359593054, guid: e89076f9ce401934db663a953968a596, type: 3}
-  timeToBuild: 100
+  timeToBuild: 5
   buildCostResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: ac0d0000
+  buildCostAmounts: 10270000
+  loreDescription: The coarse sands of this planet, combined with erosion from strong
+    winds, have created canyons with unique shapes. Could they be hiding some mysterious
+    secret waiting to be explored?
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  resourcePerCycle: 13010000
+  resourcePerCycle: fa000000
   animationFrames:
   - {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   - {fileID: 10399939647931098, guid: e89076f9ce401934db663a953968a596, type: 3}

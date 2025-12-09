@@ -19,26 +19,26 @@ MonoBehaviour:
   icon: {fileID: 2422893713231291061, guid: 36f34799241d5fc48b31dc5c1bc0e533, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 250
+    amount: 2500
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 250
+    amount: 2500
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 250
+    amount: 2500
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 250
+    amount: 2500
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 250
+    amount: 2500
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Mippip Translator
     amount: 1
-  craftingTimeInSeconds: 75
+  craftingTimeInSeconds: 40

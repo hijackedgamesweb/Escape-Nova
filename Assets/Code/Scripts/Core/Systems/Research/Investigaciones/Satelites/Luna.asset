@@ -19,22 +19,22 @@ MonoBehaviour:
     every 100 solar cycles.
   icon: {fileID: 4125636645744980110, guid: cbb3e27df303d464981cc1bca573f645, type: 3}
   prerequisites: []
-  researchTimeInSeconds: 750
+  researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 0
-    amount: 2000
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 2000
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 2000
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 2000
+    amount: 10000
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
@@ -43,7 +43,7 @@ MonoBehaviour:
     useInventoryItem: 0
   rewards:
   - rid: 6291952326318489706
-  tier: 1
+  tier: 4
   treePosition: {x: 0, y: 0}
   unlocksResearchIds: []
   references:

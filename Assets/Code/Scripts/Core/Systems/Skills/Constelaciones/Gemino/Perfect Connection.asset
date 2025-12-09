@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Perfect Connection
   description: Planets of the same type in the same orbit generate 100% more resources.
-  skillPointCost: 5
+  skillPointCost: 4
   prerequisiteNodes:
   - {fileID: 11400000, guid: 566cb57e7dec18b479d1d7ed9484c90a, type: 2}
   - {fileID: 11400000, guid: 51a77344ffe76e54e9b67f36235a223d, type: 2}

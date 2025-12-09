@@ -16,21 +16,17 @@ MonoBehaviour:
   sprite: {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   timeToBuild: 85
   buildCostResources:
-  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
+  - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
-  buildCostAmounts: e8030000fa00000064000000
+  - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
+  buildCostAmounts: 8813000088130000c4090000dc050000dc050000
   size: 0.5
-  desc: Research time is reduced by 50%.
-  sprite: {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
+  desc: Research time is reduced by 5%.
+  sateliteIcon: {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
   upgrades:
   - rid: 6291952592291364865
-  animationFrames:
-  - {fileID: 9145708643358188561, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: -7008495247330836973, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: 8123192163440836270, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  - {fileID: -1040247118585427430, guid: 3425e33327f11bf41b7f4c0b7c8a9c1b, type: 3}
-  frameRate: 0.1
   references:
     version: 2
     RefIds:

@@ -19,26 +19,26 @@ MonoBehaviour:
   icon: {fileID: -7877341826017078353, guid: e2d5ace7c64c7f04dbc786c231d49a20, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Skulg Translator
     amount: 1
-  craftingTimeInSeconds: 75
+  craftingTimeInSeconds: 40

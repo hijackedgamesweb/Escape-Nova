@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Krista
   sprite: {fileID: -3756213273680713097, guid: ec4049cffa4792649bae3988d698145b, type: 3}
-  timeToBuild: 15
+  timeToBuild: 3
   buildCostResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: f4010000f4010000
+  buildCostAmounts: d0070000d0070000
+  loreDescription: The combination of Magmavite and Sandit in the vast valleys of
+    this planet has created a strange layer of highly resistant crystal on the surface,
+    creating the illusion of walking a few inches above the ground.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}

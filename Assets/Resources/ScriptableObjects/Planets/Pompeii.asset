@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Pompeii
   sprite: {fileID: -4888571258704630484, guid: 1a301e8e16a3b474cb10c6cdb5aa6437, type: 3}
-  timeToBuild: 5
+  timeToBuild: 1
   buildCostResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   buildCostAmounts: 64000000
+  loreDescription: With rich Magmavite extraction sites, Pompeii takes the name of
+    a tragedy, but it points in a bright, promising direction.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}

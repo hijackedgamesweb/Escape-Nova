@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Lahar
   sprite: {fileID: 8556194511326198517, guid: 12f970e8d59067841ac0f0a4528ddee7, type: 3}
-  timeToBuild: 250
+  timeToBuild: 8
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 6e3da8e715ce50c4d858f4f0d32356e1, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: 401f0000401f0000401f0000
+  buildCostAmounts: 204e0000204e0000204e0000
+  loreDescription: The deserts of this planet tend to hide caves full of Paladium
+    which, combined with reserves of magmavite, has greatly aided the progress of
+    civilizations, focusing their research on forging.
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}

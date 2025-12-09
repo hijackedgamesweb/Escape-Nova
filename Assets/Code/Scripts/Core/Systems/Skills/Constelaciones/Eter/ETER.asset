@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ETER
   m_EditorClassIdentifier: 
   constellationName: ETER
-  description: 
-  icon: {fileID: 0}
+  description: Research quintessence to make your planets produce more resources.
+    This element, as old as the universe itself, may be key to your mission.
+  icon: {fileID: 3709896987899669581, guid: b6c47324c1eadd94f88e95fbc18e566c, type: 3}
   nodes:
   - {fileID: 11400000, guid: 52f0d06064f51d345b8c9d95cc1695ae, type: 2}
   - {fileID: 11400000, guid: e3da1c1b4ea3656449608e9e5329ac43, type: 2}

@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Perfect Sphere
   displayName: Perfect Sphere
   icon: {fileID: 5586912863945003853, guid: 647648b796abf7c44b4195fa65dcd3cc, type: 3}
-  maxStack: 9
+  maxStack: 8
   description: Perfection. This item can be used to build and trade.
   itemToUnlock: {fileID: 0}
