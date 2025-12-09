@@ -19,6 +19,7 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnPlayButtonPressed()
     {
         AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
+        AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX("Spaceship");
         SaveManager.Instance.DeleteSlot();
         SystemEvents.LockAll();
@@ -35,6 +36,7 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnCreditsButtonPressed()
     {
         AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
+        AudioManager.Instance.StopMusic();
         Loader.Load("CreditsScene");
     }
     
@@ -47,6 +49,8 @@ public class MainMenuButtonsController : MonoBehaviour
     public void OnContinueButtonPressed()
     {
         AudioManager.Instance.PlaySFX("MainMenuButtonPressed");
+        AudioManager.Instance.PlaySFX("Spaceship");
+        AudioManager.Instance.StopMusic();
         Loader.Load("InGame");
     }
     
