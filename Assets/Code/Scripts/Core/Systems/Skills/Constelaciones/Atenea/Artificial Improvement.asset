@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Artificial Improvement
   description: Production satellites generate 25% more resources.
-  skillPointCost: 2
+  skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 2837ca62aed57f54f82d7ae7a40a94be, type: 2}
   positionInConstellation: {x: 2, y: 5}

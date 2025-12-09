@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Balanced Fusion
   description: Mixed planets generate 50% more resources.
-  skillPointCost: 2
+  skillPointCost: 4
   prerequisiteNodes:
   - {fileID: 11400000, guid: d58c0b8d2061cc848b36be91cc0f28ab, type: 2}
   positionInConstellation: {x: 2, y: 5.5}

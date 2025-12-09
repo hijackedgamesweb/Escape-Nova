@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Multiple Extracion
   description: Mixed planets generate 75% more resources.
-  skillPointCost: 2
+  skillPointCost: 5
   prerequisiteNodes:
   - {fileID: 11400000, guid: 53aa769dcd3944c49a535132958c770f, type: 2}
   positionInConstellation: {x: 4, y: 7}

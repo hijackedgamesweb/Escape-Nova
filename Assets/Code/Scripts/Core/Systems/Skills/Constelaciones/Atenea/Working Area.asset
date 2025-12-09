@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Working Area
   description: Production satellites generate 50% more resources.
-  skillPointCost: 3
+  skillPointCost: 4
   prerequisiteNodes:
   - {fileID: 11400000, guid: b9432b2b69fcbf34fbf2e494b2220966, type: 2}
   positionInConstellation: {x: 0, y: 6}
