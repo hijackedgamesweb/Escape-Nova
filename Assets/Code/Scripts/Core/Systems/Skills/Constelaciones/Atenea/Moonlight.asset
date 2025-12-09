@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Moonlight
   description: Production satellites generate 15% more resources.
-  skillPointCost: 1
+  skillPointCost: 2
   prerequisiteNodes:
   - {fileID: 11400000, guid: 1ab56a4a31f8f38438df554eb692605e, type: 2}
   positionInConstellation: {x: 3, y: 4}

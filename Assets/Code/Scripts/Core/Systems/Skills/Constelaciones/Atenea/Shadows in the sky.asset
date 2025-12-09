@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Shadows in the sky
   description: Production satellites generate 5% more resources.
-  skillPointCost: 0
+  skillPointCost: 1
   prerequisiteNodes:
   - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}
   positionInConstellation: {x: 2, y: 3}

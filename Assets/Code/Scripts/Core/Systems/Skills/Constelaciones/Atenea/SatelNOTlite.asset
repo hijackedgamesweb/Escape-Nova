@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Satel-NOT-lite
   description: Production satellites generate 100% more resources.
-  skillPointCost: 4
+  skillPointCost: 5
   prerequisiteNodes:
   - {fileID: 11400000, guid: 5face63996c4ea348ad52fe7ef5c3e59, type: 2}
   positionInConstellation: {x: 1, y: 3}
