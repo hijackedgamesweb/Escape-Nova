@@ -21,9 +21,11 @@ MonoBehaviour:
   - Planets
   - Menu Icons
   - Quest Menu
+  - Supernova
+  - Supernova
   - First quest
   messages:
-  - Welcome, our empergod, to NOVA! We're going to give you teach you the basics
+  - Welcome, our Empergod, to NOVA! We're going to give you teach you the basics
     to expand and rule over your new solar system.
   - Time is measured in "solar cycles". You can pause time, or swap between x1, x2
     or x4 speed through the icons on the bottom left corner.
@@ -33,13 +35,18 @@ MonoBehaviour:
   - On the bottom right corner you have the "Building" menu. Through here, you can
     build planets and Satellites. For planets, first pick the one you want to build
     and then select a free spot on your solar system. For satellites, you'll have
-    to select a planet to build it on its orbit.
-  - Planets cost resources. Once paid, you'll start building the planet, which will
-    take a number of solar cycles. Once built, the planet will generate the same
-    resource types it cost you to build it.
+    to select a planet with free space on its orbit.
+  - Planets cost resources to build. Once paid, you'll start building said planet,
+    which will take a number of solar cycles to be complete. Once built, the planet
+    will generate the same resource types it cost you to build it.
   - On the bottom of the screen you have a few icons that represent different menus.
-  - One of these menus is the quest menu, which will display available quests, their
-    requirements, as well as time constraints and rewards.
+  - One of these menus is the "Quest" menu, which will display available quests,
+    their requirements and rewards.
+  - Time is running out, our Empergod. We are certain that in about 5000 solar cycles,
+    the sun will turn into a supernova that will eradicate life on this solar system.
+    We have to figure out a way out of here.
+  - We are not sure on how to acomplish this yet, but we are certain that if you
+    follow the main questiline, you will reach a solution.
   - Check out the quests menu and complete your first quest to continue.
   images:
   - {fileID: -5156576276061555797, guid: 5de661fbac9960140a74489c137d1749, type: 3}
@@ -50,4 +57,6 @@ MonoBehaviour:
   - {fileID: 1170115753450382605, guid: 075ac4ada67a7934d8575bbf5e1fe7bc, type: 3}
   - {fileID: 0}
   - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
   - {fileID: 4245121430607293202, guid: 323cd1cdcacd3054589687f29c64a1a7, type: 3}

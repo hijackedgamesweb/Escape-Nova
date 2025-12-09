@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: the_stars_as_guide_info
   m_EditorClassIdentifier: 
   titles:
+  - Details
+  - Planets
   - Production
   messages:
-  - Time to get production flowing! You can check the total production of your solar
-    system by clicking the Sun.
+  - You can see the details of your planets by clicking on them, and check the total
+    production of your solar system by clicking the sun.
+  - Planets can be easily destroyed and rebuilt, though be sure not to run out of
+    any resources you might need to build them.
+  - Time to get production flowing!
   images:
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  - {fileID: -9201315229162653171, guid: 2b497a5ead828334fa43390cad1d7a09, type: 3}
   - {fileID: -5156576276061555797, guid: 5de661fbac9960140a74489c137d1749, type: 3}

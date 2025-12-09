@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Multicore Chip
   displayName: Multicore Chip
   icon: {fileID: 1318175550342487986, guid: 323d1c4be65a4b647a41ba1d1408ee25, type: 3}
-  maxStack: 9
+  maxStack: 12
   description: This item can be used to build and trade.
   itemToUnlock: {fileID: 0}

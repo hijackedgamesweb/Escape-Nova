@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Pangaea
   m_EditorClassIdentifier: 
   nodeName: Pangaea
-  description: All your planets generate 25% more resources.
-  skillPointCost: 2
+  description: All your planets generate 15% more resources.
+  skillPointCost: 3
   prerequisiteNodes:
   - {fileID: 11400000, guid: 75662143070b18e4391ddde9a57f6fcb, type: 2}
   positionInConstellation: {x: -4, y: 4.5}
@@ -26,4 +26,4 @@ MonoBehaviour:
     - rid: 162876391971094611
       type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 25
+        productionBonusPercent: 15

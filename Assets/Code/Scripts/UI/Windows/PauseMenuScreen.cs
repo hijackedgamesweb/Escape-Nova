@@ -37,8 +37,10 @@ namespace Code.Scripts.UI.Windows
         {
             await SaveManager.Instance.SaveAsync();
             Time.timeScale = 1f;
+            AudioManager.Instance.StopMusic();
             AudioManager.Instance.PlaySFX("ButtonClick");
             AudioManager.Instance.PlaySFX("Spaceship");
+            AudioManager.Instance.PlayMusic("MainMenuMusic");
             this.Hide();
             Loader.Load("MainMenu");
         }

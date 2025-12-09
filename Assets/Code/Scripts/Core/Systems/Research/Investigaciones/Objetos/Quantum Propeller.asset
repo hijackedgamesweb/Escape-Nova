@@ -15,19 +15,19 @@ MonoBehaviour:
   researchId: quantum_propeller
   category: 1
   displayName: Quantum Propeller
-  description: Unlocks the item 'Quantum Propeller'. This item can be used to build
-    and trade.
+  description: Unlocks the item 'Quantum Propeller'. This item can be used to escape
+    this solar system.
   icon: {fileID: -7858337553478693670, guid: a92fe43c70b95e5479beb02a3227b8ff, type: 3}
   prerequisites:
   - researchId: blocked_until_scientificpeak_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 1250
+  researchTimeInSeconds: 80
   resourceCosts:
   - resourceType: 0
-    amount: 4
+    amount: 2
     itemName: Perfect Sphere
-    useInventoryItem: 0
+    useInventoryItem: 1
   rewards:
   - rid: 6291952326318489707
   tier: 1

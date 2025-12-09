@@ -22,18 +22,18 @@ MonoBehaviour:
   - researchId: blocked_until_firstcontact_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 300
+  researchTimeInSeconds: 40
   resourceCosts:
   - resourceType: 0
-    amount: 600
+    amount: 250000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 100
+    amount: 225000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 125
+    amount: 200000
     itemName: 
     useInventoryItem: 0
   rewards:

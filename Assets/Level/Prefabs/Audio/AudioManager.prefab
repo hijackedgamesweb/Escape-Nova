@@ -67,7 +67,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 2ba74548f2f66e641a625262692d9711, type: 3}
   sfxSounds:
   - name: ButtonClick
-    clip: {fileID: 8300000, guid: 5ac25c2c52155e6469cd01d5cea696f8, type: 3}
+    clip: {fileID: 8300000, guid: 2c404eb44087b924caa835992d1d35c1, type: 3}
   - name: Confirmation
     clip: {fileID: 8300000, guid: 03eb10d0acfd7564383a6816e4af0749, type: 3}
   - name: Notification
@@ -80,8 +80,6 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 38de32430c7d6364c8eca0c5a968f9c1, type: 3}
   - name: ResearchFinished
     clip: {fileID: 8300000, guid: 953bb0005375afb469534645e798eb94, type: 3}
-  - name: ConstructionMenuOpen
-    clip: {fileID: 8300000, guid: fe4ada29c3dc75342a2bc07b84c3caa2, type: 3}
   - name: MainMenuButtonPressed
     clip: {fileID: 8300000, guid: 8ddac29adba3bd446a4a129024eb689d, type: 3}
   - name: GameOverSFX
@@ -89,15 +87,15 @@ MonoBehaviour:
   - name: Spaceship
     clip: {fileID: 8300000, guid: 5e47d2c35ef703f4781e9f74e5bd4495, type: 3}
   - name: PlanetZoom
-    clip: {fileID: 8300000, guid: 41d10b7f0e75a104295e4873eb78fc81, type: 3}
+    clip: {fileID: 8300000, guid: ee781cfaef8f304458e64844bda8dd59, type: 3}
   - name: Astrarium
     clip: {fileID: 8300000, guid: d5300139a0ee6174aa17690cd81a281a, type: 3}
   - name: MainMenuButton
     clip: {fileID: 8300000, guid: e5b6ef6414af3e8498f7c3d65bae2604, type: 3}
   - name: ResearchTabButton
-    clip: {fileID: 8300000, guid: e909c402f76b0bc469049e795b55b64f, type: 3}
+    clip: {fileID: 8300000, guid: d5300139a0ee6174aa17690cd81a281a, type: 3}
   - name: GameSpeedChanged
-    clip: {fileID: 8300000, guid: 3a125170c390b30438f38bed66832d49, type: 3}
+    clip: {fileID: 8300000, guid: 2c404eb44087b924caa835992d1d35c1, type: 3}
   musicSource: {fileID: 5978876574385758183}
   sfxSource: {fileID: 6055554818733778738}
   atmos: 0

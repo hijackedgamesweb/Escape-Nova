@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
   m_Name: scientific_peak_info
   m_EditorClassIdentifier: 
-  titles: []
-  messages: []
-  images: []
+  titles:
+  - Salvation
+  - The End
+  - In you we trust
+  messages:
+  - We found it... Our Empergod, we could be close to salvation!
+  - We need to build "Utopia" and a "Quantum Propellert" to escape.
+  - We're so close, but we can still find salvation. In you we trust, our Empergod
+  images:
+  - {fileID: 605162050437240712, guid: 59bc3add9b3ffc847b520debf9b74162, type: 3}
+  - {fileID: -1803372714748242454, guid: b82d76b630145da4f8722b1829650d1c, type: 3}
+  - {fileID: 0}

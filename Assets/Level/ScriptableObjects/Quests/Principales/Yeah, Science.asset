@@ -16,7 +16,7 @@ MonoBehaviour:
   Title: Yeah, Science!
   Description: "Build the Storage Terminal and Research Station (S.T.A.R.S). \nWe
     need a place for scientific excellence.\n"
-  CompletionGameInfo: {fileID: 0}
+  CompletionGameInfo: {fileID: 11400000, guid: 8790ae79b03c27f499f38b4528909385, type: 2}
   Objectives:
   - rid: 5265271264873545832
   Rewards:

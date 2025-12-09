@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HalxiInventory
   m_EditorClassIdentifier: 
   items:
-  - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 5
+  - itemData: {fileID: 11400000, guid: 1febadfd0878f294aaec439ea08a4717, type: 2}
+    quantity: 3

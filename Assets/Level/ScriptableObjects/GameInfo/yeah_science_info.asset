@@ -12,6 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea4a0ec54d479e4892cca272fd57da8, type: 3}
   m_Name: yeah_science_info
   m_EditorClassIdentifier: 
-  titles: []
-  messages: []
-  images: []
+  titles:
+  - New menus
+  - Storage
+  - Research
+  - Research
+  - Primal Planets
+  messages:
+  - 'Now that the S.T.A.R.S has been built, you have unlocked two new menus: the
+    "Research" and "Storage" menu. '
+  - Through the storage menu you cann craft and check out your available objects.
+    You don't seem to have any as of yet, but they will come in handy very soon...
+  - The research menu allows you to unlock new planets, objects, satellites, and
+    much more!
+  - To research anything you will have to pay a certain ammount of  resources and
+    wait for the research to be complete. Once finished, said research will be unlocked
+    forever.
+  - To complete your next quest you have to research "Primal Planets", so you should
+    check the menu right now, our Empergod.
+  images:
+  - {fileID: 4055505338075861804, guid: cfc624bc6fd94f2449e585c52ee914b6, type: 3}
+  - {fileID: -3511662136145019918, guid: 1b269d12507f5cf4cb8f02281394007c, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
+  - {fileID: -5567786340579507571, guid: 4dcc560ad0af46547870bd9bb44fd2a6, type: 3}
+  - {fileID: -8691266674337138276, guid: 01896e080012cf84ca4d7aa45664acce, type: 3}

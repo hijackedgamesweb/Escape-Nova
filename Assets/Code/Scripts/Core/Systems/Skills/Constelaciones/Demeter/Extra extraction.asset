@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Extra extraction
   m_EditorClassIdentifier: 
   nodeName: Extra extraction
-  description: All your planets generate 50% more resources.
-  skillPointCost: 4
+  description: All your planets generate 20% more resources.
+  skillPointCost: 5
   prerequisiteNodes:
   - {fileID: 11400000, guid: 8767d116211041349a89c5522f5a0ae6, type: 2}
   positionInConstellation: {x: -3, y: 6}
@@ -26,4 +26,4 @@ MonoBehaviour:
     - rid: 162876391971094611
       type: {class: ProductionSpeedImprovement, ns: Code.Scripts.Core.Systems.Skills.SkillImprovements, asm: Assembly-CSharp}
       data:
-        productionBonusPercent: 50
+        productionBonusPercent: 20

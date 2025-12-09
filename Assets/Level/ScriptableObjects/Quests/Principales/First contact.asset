@@ -64,8 +64,8 @@ MonoBehaviour:
     - rid: 6291952611966058606
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
-        Description: Unlock the "Plerus" research
-        researchIdToUnlock: plerus
+        Description: Unlock the "Pleurus" research
+        researchIdToUnlock: pleurus
     - rid: 6291952611966058607
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
@@ -85,7 +85,7 @@ MonoBehaviour:
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:
         Description: Unlock the "Istoovi" research
-        researchIdToUnlock: istoovi
+        researchIdToUnlock: istoovii
     - rid: 6291952611966058616
       type: {class: UnlockResearchReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:

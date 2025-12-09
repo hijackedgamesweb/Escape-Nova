@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: SkulgInventory
   m_EditorClassIdentifier: 
   items:
-  - itemData: {fileID: 11400000, guid: b3dd1a7de336a9d458bed6772472f221, type: 2}
-    quantity: 5
+  - itemData: {fileID: 11400000, guid: 5d2a94a5bf7852346a7669e75421665e, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: 9d0d9428cf0217e4ca458616df38de8e, type: 2}
+    quantity: 1

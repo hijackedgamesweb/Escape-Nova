@@ -22,28 +22,28 @@ MonoBehaviour:
   - researchId: blocked_until_moresupplies_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 300
+  researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 0
     amount: 1
     itemName: Matter Condenser
-    useInventoryItem: 0
+    useInventoryItem: 1
   - resourceType: 0
     amount: 1
     itemName: Modular Spectrometer
-    useInventoryItem: 0
+    useInventoryItem: 1
   - resourceType: 0
     amount: 1
-    itemName: Microscopic Lense
-    useInventoryItem: 0
+    itemName: Microscopic Lens
+    useInventoryItem: 1
   - resourceType: 0
     amount: 1
     itemName: Multicore Chip
-    useInventoryItem: 0
+    useInventoryItem: 1
   - resourceType: 0
     amount: 1
     itemName: Freezed Core
-    useInventoryItem: 0
+    useInventoryItem: 1
   rewards:
   - rid: 6291952326318489707
   tier: 1
