@@ -20,7 +20,6 @@ namespace Code.Scripts.Core.Entity.Civilization
     }
     public class CivilizationSO : EntitySO, IAstrariumEntry
     {
-        public string civName;
 
         [Header("Civilization Info")]
         [TextArea(3, 10)]
