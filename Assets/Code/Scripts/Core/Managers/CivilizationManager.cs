@@ -17,7 +17,7 @@ namespace Code.Scripts.Core.Managers
         public List<Civilization> GetCivilizations => _civilizations;
         
         // EVENTS
-        public Action<Civilization> OnNewCivilizationDiscovered;
+        public Action<Civilization, bool> OnNewCivilizationDiscovered;
         private void Awake()
         {
             ServiceLocator.RegisterService(this);
@@ -26,7 +26,7 @@ namespace Code.Scripts.Core.Managers
         public void AddCivilization(Civilization civ)
         {
             _civilizations.Add(civ);
-            OnNewCivilizationDiscovered?.Invoke(civ);
+            OnNewCivilizationDiscovered?.Invoke(civ, true);
         }
         
         public void UpdateCivilizations(WorldContext context)
@@ -100,6 +100,7 @@ namespace Code.Scripts.Core.Managers
                 Civilization civ = new Civilization();
                 civ.SetCivilizationData(civDataSO);
                 civ.RestoreState(civToken);
+                OnNewCivilizationDiscovered?.Invoke(civ, false);
                 _civilizations.Add(civ);
             }
         }

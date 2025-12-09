@@ -13,6 +13,7 @@ namespace Code.Scripts.UI.Windows.SubPanels
         {
             _civilizationImage.sprite = civilizationCivilizationData.CivilizationIcon;
             var civScreen = GetComponentInParent<CivilizationScreen>();
+            Debug.Log($"Initialize for {civilizationCivilizationData.Name}: civScreen = {civScreen}");
             _button.onClick.AddListener(() => 
                 civScreen.SetCivilization(civilizationCivilizationData.Name));
         }

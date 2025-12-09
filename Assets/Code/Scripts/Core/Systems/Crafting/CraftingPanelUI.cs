@@ -368,6 +368,7 @@ public class CraftingPanelUI : MonoBehaviour, ISaveable
         if (obj == null) return;
         JArray recipes = obj["UnlockedRecipes"] as JArray;
         
+        _craftingSystem = ServiceLocator.GetService<CraftingSystem>();
         if (recipes != null && _craftingSystem != null)
         {
             foreach (var r in recipes) _craftingSystem.UnlockRecipe(r.ToObject<string>());

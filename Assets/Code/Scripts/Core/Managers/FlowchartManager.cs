@@ -35,8 +35,9 @@ namespace Code.Scripts.Core.Managers
             DiplomacyEvents.OnTradeProposed -= OnTradeOffered;
         }
 
-        private void OnNewCivilizationDiscovered(Civilization obj)
+        private void OnNewCivilizationDiscovered(Civilization obj, bool isNew)
         {
+            if(!isNew) return;
             switch (obj.CivilizationData.Name)
             {
                 case "Mippip":
