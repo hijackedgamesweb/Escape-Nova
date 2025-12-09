@@ -61,7 +61,7 @@ namespace Code.Scripts.UI.Controls
             if (actionToRebind == null || actionToRebind.bindings.Count <= bindingIndex) return;
 
             waitingForInputOverlay.SetActive(true);
-            if(waitingText) waitingText.text = $"Esperando input para: {actionName.ToUpper()}... (ESC para cancelar)";
+            if(waitingText) waitingText.text = $"Waiting for input: {actionName.ToUpper()}... (ESC to cancel)";
             statusTextComponent.text = "...";
             inputActionAsset.Disable();
 

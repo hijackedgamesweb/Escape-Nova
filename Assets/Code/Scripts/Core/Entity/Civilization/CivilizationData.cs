@@ -12,6 +12,7 @@ namespace Code.Scripts.Core.Entity.Civilization
         public Sprite CivilizationIcon;
         public Sprite CivilizationFlag;
         
+        
         public Sprite LeaderPortrait;
 
         public float AngerTolerance;

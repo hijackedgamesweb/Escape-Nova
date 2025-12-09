@@ -70,15 +70,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ToggleMenu",
-                    "type": "Button",
-                    "id": "e5bc1166-183a-4d29-a815-655e6a9e2a02",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "TimePause",
                     "type": "Button",
                     "id": "a875d97a-6111-497d-ac08-1458bbf60520",
@@ -109,42 +100,6 @@
                     "name": "TimeSpeed3",
                     "type": "Button",
                     "id": "c601c5ad-a6c6-48b4-821d-ba620cf4e49a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "DebugWin",
-                    "type": "Button",
-                    "id": "8e763a76-6a54-4bcb-95de-4851b6de6286",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "DebugLose",
-                    "type": "Button",
-                    "id": "5d851b4d-c3f5-45ce-85ef-0576b9da22da",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "AddResource",
-                    "type": "Button",
-                    "id": "dd752c7f-71c8-46c9-bb4a-56b16ce47a55",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "UnlockAll",
-                    "type": "Button",
-                    "id": "b02ea110-e1a8-458a-ad42-945d0cf49406",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -231,17 +186,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6020efb1-95df-4615-86c3-5be2ea2cc8cb",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ToggleMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b7b847fe-a9c8-43ca-b1ee-37cb7220a1a7",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -281,50 +225,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "TimeSpeed3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5fc7e62e-9490-44e3-8836-648a3c6b965d",
-                    "path": "<Keyboard>/f1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "DebugWin",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "aec0b0b2-1200-4b68-9aaf-1e8ea85682a7",
-                    "path": "<Keyboard>/f2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "DebugLose",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a178d9db-7c05-43d3-bcac-e87943a587e1",
-                    "path": "<Keyboard>/f3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AddResource",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "21d259d8-4c85-4816-9bc9-e14577a599eb",
-                    "path": "<Keyboard>/leftAlt",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UnlockAll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

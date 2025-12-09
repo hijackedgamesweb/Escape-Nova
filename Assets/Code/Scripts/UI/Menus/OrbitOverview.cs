@@ -250,6 +250,8 @@ namespace Code.Scripts.UI.Menus
             if (state == null) return;
 
             int orbitCount = state["OrbitCount"]?.ToObject<int>()?? 0;
+            
+            if (orbitCount == 0) orbitCount = 1;
             orbitInitialized = true;
             for (int i = 0; i < orbitCount; i++)
             {

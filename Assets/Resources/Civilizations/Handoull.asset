@@ -19,6 +19,7 @@ MonoBehaviour:
   baseInterest: 0.6
   baseTrust: 0.7
   itemPreferences: {fileID: 11400000, guid: f44d784bc97707643aaf980414c6f3c1, type: 2}
+  civName: Handoull
   civilizationDescription: "As the primary suppliers of the rare quartz crystals
     essential for space travel, the Handoull are the cornerstones of the galactic
     economy. \n\nWhile they present themselves as a democracy, their governance appears
@@ -28,7 +29,7 @@ MonoBehaviour:
     detail and length, often requiring a sharp eye to understand the full scope of
     the exchange"
   civilizationIcon: {fileID: 21300000, guid: 505f4e0c77703794188a084682c3c5c6, type: 3}
-  civilizationFlag: {fileID: 0}
+  civilizationFlag: {fileID: -3767948754453923514, guid: 91b6e693d97cf944a928875faf2f6fb3, type: 3}
   aiController: 5
   angerTolerance: 32
   leaderPortrait: {fileID: 3026952216567731805, guid: c0c3868c32ee93b42a1880be967141dd, type: 3}
