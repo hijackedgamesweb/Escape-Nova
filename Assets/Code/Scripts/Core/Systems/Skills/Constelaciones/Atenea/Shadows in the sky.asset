@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Shadows in the sky
   description: Production satellites generate 5% more resources.
-  skillPointCost: 1
+  skillPointCost: 0
   prerequisiteNodes:
   - {fileID: 11400000, guid: ddced100377ad68429fdac1b1aeaf46a, type: 2}
   positionInConstellation: {x: 2, y: 3}
@@ -29,4 +29,4 @@ MonoBehaviour:
         skillIdToUnlock: SinergiaSalas50
         requiredSatelite: {fileID: 11400000, guid: 5ff76d304bc799647a485de95e1993d7, type: 2}
         synergyImprovementType: BonoSalasSinergia
-        synergyPercentage: 50
+        synergyPercentage: 5

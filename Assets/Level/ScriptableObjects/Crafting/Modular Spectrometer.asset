@@ -33,4 +33,4 @@ MonoBehaviour:
   output:
     itemName: Modular Spectrometer
     amount: 1
-  craftingTimeInSeconds: 40
+  craftingTimeInSeconds: 16

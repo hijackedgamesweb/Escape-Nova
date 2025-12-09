@@ -40,4 +40,4 @@ MonoBehaviour:
   output:
     itemName: Akki Translator
     amount: 1
-  craftingTimeInSeconds: 40
+  craftingTimeInSeconds: 16

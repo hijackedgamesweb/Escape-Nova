@@ -24,7 +24,7 @@ MonoBehaviour:
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  resourcePerCycle: fa000000
+  resourcePerCycle: c8000000
   animationFrames:
   - {fileID: -8702481631172917241, guid: e89076f9ce401934db663a953968a596, type: 3}
   - {fileID: 10399939647931098, guid: e89076f9ce401934db663a953968a596, type: 3}

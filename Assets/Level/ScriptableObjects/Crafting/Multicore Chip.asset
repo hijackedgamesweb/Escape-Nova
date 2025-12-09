@@ -37,4 +37,4 @@ MonoBehaviour:
   output:
     itemName: Multicore Chip
     amount: 1
-  craftingTimeInSeconds: 40
+  craftingTimeInSeconds: 16

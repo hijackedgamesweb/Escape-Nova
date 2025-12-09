@@ -29,4 +29,4 @@ MonoBehaviour:
   output:
     itemName: Microscopic Lens
     amount: 1
-  craftingTimeInSeconds: 40
+  craftingTimeInSeconds: 16
