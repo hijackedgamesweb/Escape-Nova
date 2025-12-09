@@ -22,10 +22,18 @@ MonoBehaviour:
   - researchId: caerus
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 375
+  researchTimeInSeconds: 50
   resourceCosts:
+  - resourceType: 4
+    amount: 1500
+    itemName: 
+    useInventoryItem: 0
   - resourceType: 3
-    amount: 750
+    amount: 1000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 0
+    amount: 500
     itemName: 
     useInventoryItem: 0
   rewards:

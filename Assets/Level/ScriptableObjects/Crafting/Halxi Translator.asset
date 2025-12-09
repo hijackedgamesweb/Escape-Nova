@@ -19,26 +19,26 @@ MonoBehaviour:
   icon: {fileID: -6657923694154243408, guid: c544afcce22888343abd1144cf0c910f, type: 3}
   ingredients:
   - resourceType: 0
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 4
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 500
+    amount: 3500
     itemName: 
     useInventoryItem: 0
   output:
     itemName: Halxi Translator
     amount: 1
-  craftingTimeInSeconds: 75
+  craftingTimeInSeconds: 40

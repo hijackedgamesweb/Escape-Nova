@@ -22,7 +22,7 @@ MonoBehaviour:
   - researchId: salas_sat
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 40
+  researchTimeInSeconds: 30
   resourceCosts:
   - resourceType: 4
     amount: 750

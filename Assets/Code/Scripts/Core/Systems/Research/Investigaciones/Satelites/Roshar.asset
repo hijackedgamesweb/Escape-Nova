@@ -22,22 +22,22 @@ MonoBehaviour:
   - researchId: nishim
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 225
+  researchTimeInSeconds: 60
   resourceCosts:
   - resourceType: 4
-    amount: 1200
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   - resourceType: 0
-    amount: 300
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 550
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   - resourceType: 1
-    amount: 150
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   rewards:

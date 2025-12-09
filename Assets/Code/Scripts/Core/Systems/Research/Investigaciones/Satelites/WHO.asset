@@ -24,16 +24,24 @@ MonoBehaviour:
     playerLevel: 0
   researchTimeInSeconds: 425
   resourceCosts:
-  - resourceType: 3
-    amount: 1200
+  - resourceType: 0
+    amount: 3000
     itemName: 
     useInventoryItem: 0
-  - resourceType: 0
-    amount: 400
+  - resourceType: 4
+    amount: 3000
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 3
+    amount: 1500
     itemName: 
     useInventoryItem: 0
   - resourceType: 2
-    amount: 250
+    amount: 500
+    itemName: 
+    useInventoryItem: 0
+  - resourceType: 1
+    amount: 500
     itemName: 
     useInventoryItem: 0
   rewards:

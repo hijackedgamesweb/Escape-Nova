@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Daduen
   sprite: {fileID: -6288420948058026739, guid: c6844dc1c1c4624438d7821f63a30727, type: 3}
-  timeToBuild: 400
+  timeToBuild: 10
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: 983a0000
+  buildCostAmounts: 50c30000
   loreDescription: The different pillars of Paladium on this planet have strange
     shapes which, combined with strong earthquakes, cause them to vibrate at anomalous
     frequencies, making sounds similar to the voices of some strange civilization.

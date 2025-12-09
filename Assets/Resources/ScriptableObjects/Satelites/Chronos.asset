@@ -16,10 +16,12 @@ MonoBehaviour:
   sprite: {fileID: -3336299289053128341, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   timeToBuild: 50
   buildCostResources:
+  - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: 9d5b5e4a10b93d14a8bd4a6ea4634d3a, type: 2}
-  buildCostAmounts: f4010000
+  - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
+  buildCostAmounts: b80b0000c4090000d0070000
   size: 0.5
-  desc: Research time is reduced by 35%.
+  desc: Research time is reduced by 3%.
   sateliteIcon: {fileID: -4083543167136710652, guid: f770783e0e2ad884289e62e322a149b8, type: 3}
   upgrades:
   - rid: 6291952592291364864

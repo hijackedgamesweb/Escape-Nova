@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Litosidera
   sprite: {fileID: 1892013316916492370, guid: 6032bbd763bab3a4e94866392205cd05, type: 3}
-  timeToBuild: 15
+  timeToBuild: 3
   buildCostResources:
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}

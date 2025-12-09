@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   researchId: halangona
   category: 0
-  displayName: Halangona
+  displayName: Halongona
   description: Unlocks the planet 'Halangona'. This planet generates 500 Frostice,
     Sandit and Paladium every solar cycle.
   icon: {fileID: -5060925952560270938, guid: 3b35bbe28ef016b4c934dc71c83880c3, type: 3}
@@ -22,18 +22,18 @@ MonoBehaviour:
   - researchId: blocked_until_firstcontact_quest_completed
     buildingId: 
     playerLevel: 0
-  researchTimeInSeconds: 500
+  researchTimeInSeconds: 50
   resourceCosts:
   - resourceType: 1
-    amount: 1250
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   - resourceType: 0
-    amount: 1250
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   - resourceType: 3
-    amount: 1250
+    amount: 5000
     itemName: 
     useInventoryItem: 0
   rewards:

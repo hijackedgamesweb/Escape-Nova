@@ -32,10 +32,10 @@ MonoBehaviour:
     - rid: 868283363412410486
       type: {class: TotalProductionObjective, ns: Code.Scripts.Core.Systems.Quests.Objectives, asm: Assembly-CSharp}
       data:
-        objectiveDescription: Produce 200 resources per cycle
+        objectiveDescription: Produce 300 resources per cycle
         isCompleted: 0
         targetResources: 0000000001000000020000000300000004000000
-        requiredTotalAmount: 200
+        requiredTotalAmount: 300
     - rid: 6291952611966058595
       type: {class: UnlockCivilizationReward, ns: Code.Scripts.Core.Systems.Quests.Rewards, asm: Assembly-CSharp}
       data:

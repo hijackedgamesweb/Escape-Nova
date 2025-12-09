@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constructibleName: Kov
   sprite: {fileID: -5574640928201531776, guid: e4ccb77eb56d2f6419116c69b15a5fe8, type: 3}
-  timeToBuild: 250
+  timeToBuild: 8
   buildCostResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
-  buildCostAmounts: 401f0000401f0000401f0000
+  buildCostAmounts: 204e0000204e0000204e0000
+  loreDescription: 
   size: 0.5
   producibleResources:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
