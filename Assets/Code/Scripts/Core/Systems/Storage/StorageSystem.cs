@@ -181,6 +181,11 @@ namespace Code.Scripts.Core.Systems.Storage
             
         }
         
+        public int GetItemCount(string itemName)
+        {
+            return GetInventoryItemQuantity(itemName);
+        }
+        
         public bool AddResource(ResourceType type, int amount)
         {
             if (!_resourceDatabase.ContainsKey(type))

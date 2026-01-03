@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using BehaviourAPI.Core;
 using BehaviourAPI.Core.Actions;
 using BehaviourAPI.UtilitySystems;
+using BehaviourAPI.BehaviourTrees;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
+using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
 using Code.Scripts.Patterns.Command.Interfaces;
@@ -23,11 +26,24 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         protected Dictionary<string, CurveFactor> _curveFactors = new Dictionary<string, CurveFactor>();
         protected Dictionary<string, FunctionalAction> _actions = new Dictionary<string, FunctionalAction>();
         
+        // --- VARIABLES NUEVAS PARA LA GUERRA ---
+        private BehaviourTree _warTree;
+        private int _warHealth = 100;
+        private bool _isAtWarWithPlayer = false;
+        
+        private const int COST_FIRE_STRIKE = 50;   // Cuánto cuesta hacer una bala
+        private const int GATHER_AMOUNT = 10;
+
+        public static event Action<Entity.Civilization.Civilization> OnWarDeclaredToPlayer; 
+        public static event Action<Entity.Civilization.Civilization> OnPeaceSigned;
+        // ---------------------------------------
+
         public BaseBehaviour(Entity.Civilization.Civilization civ, CommandInvoker invoker)
         {
             _civilization = civ;
             _invoker = invoker;
             InitializeUtilitySystem();
+            InitializeBehaviourTree();
             UtilitySystem.Start();
         }
 
@@ -139,7 +155,16 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             FunctionalAction setNegotiation = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Negotiation); return Status.Success; }, () => { });
             _actions["SetNegotiation"] = setNegotiation;
             
-            FunctionalAction setBelligerent = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent); return Status.Success; }, () => { });
+            // MODIFICADO: Añadido el trigger de guerra aquí
+            FunctionalAction setBelligerent = new FunctionalAction(
+                () => { }, 
+                () => { 
+                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent);
+                    TryTriggerWarDeclaration(); // <--- GATILLO DE GUERRA AÑADIDO
+                    return Status.Success; 
+                }, 
+                () => { }
+            );
             _actions["SetBelligerent"] = setBelligerent;
             
             FunctionalAction setPeaceful = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Peaceful); return Status.Success; }, () => { });
@@ -277,13 +302,120 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             );
             _actions["GiveAid"] = giveAid;
         }
+
+        // MÉTODO DE INICIALIZACIÓN DEL ÁRBOL DE COMPORTAMIENTO
+        private void InitializeBehaviourTree()
+        {
+            _warTree = new BehaviourTree();
+
+            // --- RAMA 1: SUPERVIVENCIA
+            var actCheckHealth = new FunctionalAction(() => {}, () => (_warHealth <= 0) ? Status.Success : Status.Failure, () => {});
+            var actSurrender = new FunctionalAction(() => {}, () => { Debug.Log($"[BT] {_civilization.CivilizationData.Name} se rinde."); StopWar(); return Status.Success; }, () => {});
+
+            // --- RAMA 2: ATAQUE
+            var actCheckAmmo = new FunctionalAction(() => {}, () => CheckInventoryForFireStrike() ? Status.Success : Status.Failure, () => {});
+            var actFire = new FunctionalAction(() => {}, () => { Debug.Log($"[BT] {_civilization.CivilizationData.Name} dispara."); ConsumeFireStrike(); return Status.Success; }, () => {});
+            var actCheckHit = new FunctionalAction(() => {}, () => (UnityEngine.Random.value > 0.3f) ? Status.Success : Status.Failure, () => {}); // 70% acierto
+            var actDamage = new FunctionalAction(() => {}, () => { DamagePlayerPlanet(); return Status.Success; }, () => {});
+
+            // --- RAMA 3: LOGÍSTICA (Crafteo y Recolección)
+            var actCheckResources = new FunctionalAction(() => {}, () => {
+                return _civilization.StorageSystem.HasResource(ResourceType.Magmavite, COST_FIRE_STRIKE) ? Status.Success : Status.Failure;
+            }, () => {});
+
+            // Acción: Crear munición (Consumir recursos -> Dar bala)
+            var actCraftAmmo = new FunctionalAction(() => {}, () => {
+                Debug.Log($"[BT] Fabricando 'Fire Strike'...");
+                _civilization.StorageSystem.ConsumeResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
+                _civilization.StorageSystem.AddInventoryItem("Fire Strike", 1);
+                return Status.Success;
+            }, () => {});
+
+            // Acción: Recolectar (Nunca falla, siempre produce)
+            var actGather = new FunctionalAction(() => {}, () => {
+                Debug.Log($"[BT] Recolectando recursos...");
+                _civilization.StorageSystem.AddResource(ResourceType.Magmavite, GATHER_AMOUNT);
+                return Status.Failure;
+            }, () => {});
+
+
+            //
+            // CONSTRUCCIÓN DEL ÁRBOL
+            //
+
+            // Nodos Hoja
+            var nCheckHealth = _warTree.CreateLeafNode("CheckHealth", actCheckHealth);
+            var nSurrender = _warTree.CreateLeafNode("Surrender", actSurrender);
+            
+            var nCheckAmmo = _warTree.CreateLeafNode("CheckAmmo", actCheckAmmo);
+            var nFire = _warTree.CreateLeafNode("Fire", actFire);
+            var nCheckHit = _warTree.CreateLeafNode("CheckHit", actCheckHit);
+            var nDamage = _warTree.CreateLeafNode("Damage", actDamage);
+
+            // Nodos Logística
+            var nCheckRes = _warTree.CreateLeafNode("CheckRes", actCheckResources);
+            var nCraft = _warTree.CreateLeafNode("CraftAmmo", actCraftAmmo);
+            var nGather = _warTree.CreateLeafNode("Gather", actGather);
+            
+            // Secuencias (Estructura Vertical)
+            var seqPreservation = _warTree.CreateComposite<SequencerNode>("SelfPreservation", false, nCheckHealth, nSurrender);
+            var seqAttack = _warTree.CreateComposite<SequencerNode>("Attack", false, nCheckAmmo, nFire, nCheckHit, nDamage);
+
+            // LOGÍSTICA: Es una Secuencia (Tengo materiales -> Fabrico)
+            var seqCrafting = _warTree.CreateComposite<SequencerNode>("Crafting", false, nCheckRes, nCraft);
+            var selLogistics = _warTree.CreateComposite<SelectorNode>("LogisticsSelector", false, seqCrafting, nGather);
+            var rootSelector = _warTree.CreateComposite<SelectorNode>("RootSelector", false, seqPreservation, seqAttack, selLogistics);
+
+            _warTree.SetRootNode(rootSelector);
+        }
         
+
+        private void TryTriggerWarDeclaration()
+        {
+            if (_isAtWarWithPlayer) return;
+
+            if (CheckInventoryForFireStrike())
+            {
+                Debug.Log($"[US-Personality] {_civilization.CivilizationData.Name} decide declarar la guerra.");
+                OnWarDeclaredToPlayer?.Invoke(_civilization);
+            }
+        }
+
+        public void StartWar()
+        {
+            _isAtWarWithPlayer = true;
+            _warHealth = 100;
+        }
+
+        public void StopWar()
+        {
+            _isAtWarWithPlayer = false;
+            OnPeaceSigned?.Invoke(_civilization);
+        }
+
+        public void TakeDamage(int amount)
+        {
+            _warHealth -= amount;
+        }
+
+        private bool CheckInventoryForFireStrike()
+        {
+            return _civilization.StorageSystem.GetItemCount("Fire Strike") > 0;
+        }
+
+        private void ConsumeFireStrike()
+        {
+            _civilization.StorageSystem.ConsumeInventoryItem("Fire Strike", 1);
+        }
+
+        private void DamagePlayerPlanet()
+        {
+            Debug.Log($"[WAR] {_civilization.CivilizationData.Name} ha dañado un planeta del jugador.");
+        }
 
         public void UpdateAI(WorldContext context)
         {
-            _worldContext = context;
-            if((int) context.CurrentTurn % 5 == 0)    
-                UtilitySystem.Update();
+            throw new NotImplementedException();
         }
 
         public void UpdateAI(WorldContext context, ICommand command)
@@ -294,7 +426,5 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         {
             _invoker = invoker;
         }
-
-        
     }
 }
