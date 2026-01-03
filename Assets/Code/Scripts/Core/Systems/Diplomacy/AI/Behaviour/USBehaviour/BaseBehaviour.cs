@@ -303,47 +303,76 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             _actions["GiveAid"] = giveAid;
         }
 
-        // MÉTODO DE INICIALIZACIÓN DEL ÁRBOL DE COMPORTAMIENTO
-        private void InitializeBehaviourTree()
+        // INICIALIZACIÓN DEL ÁRBOL DE COMPORTAMIENTO
+        protected virtual void InitializeBehaviourTree()
         {
+            Debug.Log("<color=yellow>[BT SETUP] Inicializando Árbol con SequencerNode/SelectorNode...</color>");
             _warTree = new BehaviourTree();
-
-            // --- RAMA 1: SUPERVIVENCIA
-            var actCheckHealth = new FunctionalAction(() => {}, () => (_warHealth <= 0) ? Status.Success : Status.Failure, () => {});
-            var actSurrender = new FunctionalAction(() => {}, () => { Debug.Log($"[BT] {_civilization.CivilizationData.Name} se rinde."); StopWar(); return Status.Success; }, () => {});
-
-            // --- RAMA 2: ATAQUE
-            var actCheckAmmo = new FunctionalAction(() => {}, () => CheckInventoryForFireStrike() ? Status.Success : Status.Failure, () => {});
-            var actFire = new FunctionalAction(() => {}, () => { Debug.Log($"[BT] {_civilization.CivilizationData.Name} dispara."); ConsumeFireStrike(); return Status.Success; }, () => {});
-            var actCheckHit = new FunctionalAction(() => {}, () => (UnityEngine.Random.value > 0.3f) ? Status.Success : Status.Failure, () => {}); // 70% acierto
-            var actDamage = new FunctionalAction(() => {}, () => { DamagePlayerPlanet(); return Status.Success; }, () => {});
-
-            // --- RAMA 3: LOGÍSTICA (Crafteo y Recolección)
-            var actCheckResources = new FunctionalAction(() => {}, () => {
-                return _civilization.StorageSystem.HasResource(ResourceType.Magmavite, COST_FIRE_STRIKE) ? Status.Success : Status.Failure;
+        
+            // --- ACCIONES (Mantengo los logs "chivatos") ---
+            
+            // RAMA 1: SUPERVIVENCIA
+            var actCheckHealth = new FunctionalAction(() => {}, () => {
+                bool dying = _warHealth <= 0;
+                if(dying) Debug.Log($"<color=red>[BT] CheckHealth: {_warHealth} <= 0? SI (Success)</color>");
+                // else Debug.Log($"[BT] CheckHealth: {_warHealth} > 0? NO (Failure) -> Sigue vivo");
+                return dying ? Status.Success : Status.Failure; 
             }, () => {});
-
-            // Acción: Crear munición (Consumir recursos -> Dar bala)
-            var actCraftAmmo = new FunctionalAction(() => {}, () => {
-                Debug.Log($"[BT] Fabricando 'Fire Strike'...");
+        
+            var actSurrender = new FunctionalAction(() => {}, () => { 
+                Debug.Log($"<color=magenta>[BT] RENDICIÓN</color>"); 
+                StopWar(); 
+                return Status.Success; 
+            }, () => {});
+        
+            // RAMA 2: ATAQUE
+            var actCheckAmmo = new FunctionalAction(() => {}, () => {
+                bool hasAmmo = CheckInventoryForFireStrike();
+                if(hasAmmo) Debug.Log($"<color=green>[BT] CheckAmmo: TIENE MUNICIÓN.</color>");
+                else Debug.Log($"[BT] CheckAmmo: NO tiene munición. (Failure)");
+                return hasAmmo ? Status.Success : Status.Failure; 
+            }, () => {});
+        
+            var actFire = new FunctionalAction(() => {}, () => { 
+                Debug.Log($"<color=red>[BT] ¡DISPARANDO!</color>"); 
+                ConsumeFireStrike(); 
+                return Status.Success; 
+            }, () => {});
+        
+            var actCheckHit = new FunctionalAction(() => {}, () => {
+                return (UnityEngine.Random.value > 0.3f) ? Status.Success : Status.Failure; 
+            }, () => {}); 
+        
+            var actDamage = new FunctionalAction(() => {}, () => { 
+                Debug.Log($"[BT] Dañando jugador..."); 
+                DamagePlayerPlanet(); 
+                return Status.Success; 
+            }, () => {});
+        
+            // RAMA 3: LOGÍSTICA
+            var actCheckResources = new FunctionalAction(() => {}, () => {
+                // CAMBIO: ResourceType.Science (o el que uses)
+                bool hasRes = _civilization.StorageSystem.HasResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
+                if(hasRes) Debug.Log($"<color=cyan>[BT] CheckResources: PUEDO fabricar.</color>");
+                else Debug.Log($"<color=orange>[BT] CheckResources: NO tengo recursos.</color>");
+                return hasRes ? Status.Success : Status.Failure;
+            }, () => {});
+        
+            var actCraftAmmo = new FunctionalAction(() => Debug.Log("[BT] START Crafting"), () => {
+                Debug.Log($"<color=cyan>[BT] 🔨 FABRICANDO...</color>");
                 _civilization.StorageSystem.ConsumeResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
                 _civilization.StorageSystem.AddInventoryItem("Fire Strike", 1);
                 return Status.Success;
             }, () => {});
-
-            // Acción: Recolectar (Nunca falla, siempre produce)
-            var actGather = new FunctionalAction(() => {}, () => {
-                Debug.Log($"[BT] Recolectando recursos...");
+        
+            var actGather = new FunctionalAction(() => Debug.Log("[BT] START Gathering"), () => {
+                Debug.Log($"<color=blue>[BT] 🌾 RECOLECTANDO...</color>");
                 _civilization.StorageSystem.AddResource(ResourceType.Magmavite, GATHER_AMOUNT);
-                return Status.Failure;
+                return Status.Failure; 
             }, () => {});
-
-
-            //
-            // CONSTRUCCIÓN DEL ÁRBOL
-            //
-
-            // Nodos Hoja
+        
+        
+            // --- CONSTRUCCIÓN DE NODOS (Usando CreateLeafNode como en tu ejemplo) ---
             var nCheckHealth = _warTree.CreateLeafNode("CheckHealth", actCheckHealth);
             var nSurrender = _warTree.CreateLeafNode("Surrender", actSurrender);
             
@@ -351,25 +380,40 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var nFire = _warTree.CreateLeafNode("Fire", actFire);
             var nCheckHit = _warTree.CreateLeafNode("CheckHit", actCheckHit);
             var nDamage = _warTree.CreateLeafNode("Damage", actDamage);
-
-            // Nodos Logística
+        
             var nCheckRes = _warTree.CreateLeafNode("CheckRes", actCheckResources);
             var nCraft = _warTree.CreateLeafNode("CraftAmmo", actCraftAmmo);
             var nGather = _warTree.CreateLeafNode("Gather", actGather);
             
-            // Secuencias (Estructura Vertical)
+            // --- COMPOSITES (¡AQUÍ USAMOS TUS CLASES CORRECTAS!) ---
+            // Usamos SequencerNode y SelectorNode porque tu librería así lo exige.
+        
+            // 1. Supervivencia (Sequence)
             var seqPreservation = _warTree.CreateComposite<SequencerNode>("SelfPreservation", false, nCheckHealth, nSurrender);
+        
+            // 2. Ataque (Sequence)
             var seqAttack = _warTree.CreateComposite<SequencerNode>("Attack", false, nCheckAmmo, nFire, nCheckHit, nDamage);
-
-            // LOGÍSTICA: Es una Secuencia (Tengo materiales -> Fabrico)
+        
+            // 3. Logística (Selector dentro de Sequence)
             var seqCrafting = _warTree.CreateComposite<SequencerNode>("Crafting", false, nCheckRes, nCraft);
             var selLogistics = _warTree.CreateComposite<SelectorNode>("LogisticsSelector", false, seqCrafting, nGather);
+        
+            // ROOT (Selector Principal)
             var rootSelector = _warTree.CreateComposite<SelectorNode>("RootSelector", false, seqPreservation, seqAttack, selLogistics);
-
+        
             _warTree.SetRootNode(rootSelector);
+            Debug.Log("<color=yellow>[BT SETUP] Árbol Construido. Esperando ejecución...</color>");
         }
         
-
+        public void DEBUG_ForceWarSituation()
+        {
+            Debug.Log($"[DEBUG] Forzando situación de guerra para {_civilization.CivilizationData.Name}...");
+            _civilization.StorageSystem.AddInventoryItem("Fire Strike", 5);
+            Debug.Log("[DEBUG] Munición 'Fire Strike' añadida (5 unidades).");
+            _civilization.StorageSystem.AddResource(ResourceType.Magmavite, 500);
+            OnWarDeclaredToPlayer?.Invoke(_civilization);
+        }
+        
         private void TryTriggerWarDeclaration()
         {
             if (_isAtWarWithPlayer) return;
@@ -384,6 +428,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void StartWar()
         {
             _isAtWarWithPlayer = true;
+            _warTree.Start();
             _warHealth = 100;
         }
 
@@ -415,7 +460,11 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
 
         public void UpdateAI(WorldContext context)
         {
-            throw new NotImplementedException();
+            if (_isAtWarWithPlayer)
+            {
+                Debug.Log(">>> [UPDATE] El árbol está procesando un Tick..."); 
+                _warTree.Update();
+            }
         }
 
         public void UpdateAI(WorldContext context, ICommand command)
