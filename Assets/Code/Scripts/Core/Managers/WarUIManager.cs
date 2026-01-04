@@ -1,3 +1,4 @@
+using System.Collections;
 using Code.Scripts.Core.Entity.Civilization;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 using Code.Scripts.Core.World;
@@ -10,25 +11,34 @@ namespace Code.Scripts.Core.Managers
     public class WarUIManager : MonoBehaviour
     {
         [Header("Paneles Principales")]
-        [SerializeField] private GameObject proposalPanel;      // Panel de "Aceptar con 'A' / Rechazar"
-        [SerializeField] private GameObject consequencePanel;   // Panel de "Has perdido recursos"
-        [SerializeField] private GameObject battlePanel;        // Panel de la Guerra activa
+        [SerializeField] private GameObject proposalPanel;      
+        [SerializeField] private GameObject consequencePanel;   
+        [SerializeField] private GameObject battlePanel;        
 
         [Header("Battle UI Elements")]
         [SerializeField] private GameObject noAmmoPanel;        
         [SerializeField] private Transform logContent;          
         [SerializeField] private GameObject logTextPrefab;      
         
+        [Header("Cooldown Settings")]
+        [SerializeField] private Button fireButton;
+        [SerializeField] private Image cooldownOverlay;
+        [SerializeField] private TextMeshProUGUI cooldownText;
+        [SerializeField] private float attackCooldownDuration = 8f;
+
         [Header("Configuración")]
         [SerializeField] private int playerDamageAmount = 25;
 
         private Civilization _currentAggressor;
         private BaseBehaviour _activeBehaviour;
+        private bool _isCooldownActive = false;
 
         private void OnEnable()
         {
             BaseBehaviour.OnWarDeclaredToPlayer += ShowProposal;
             BaseBehaviour.OnPeaceSigned += HandlePeaceSigned;
+            
+            ResetCooldownUI();
         }
 
         private void OnDisable()
@@ -40,10 +50,8 @@ namespace Code.Scripts.Core.Managers
                 _activeBehaviour.OnBattleLog -= AddLogToPanel;
         }
 
-        // --- NUEVO: INPUT POR TECLADO ---
         private void Update()
         {
-            // Solo funciona si el panel de propuesta está abierto
             if (proposalPanel.activeSelf)
             {
                 if (Input.GetKeyDown(KeyCode.A))
@@ -63,7 +71,6 @@ namespace Code.Scripts.Core.Managers
 
         public void OnAcceptWar()
         {
-
             if (_currentAggressor != null)
             {
                 var behaviour = _currentAggressor.AIController as BaseBehaviour;
@@ -76,7 +83,7 @@ namespace Code.Scripts.Core.Managers
                     _activeBehaviour.OnBattleLog += AddLogToPanel;
                     behaviour.StartWar();
                     
-                    AddLogToPanel($"<color=green>JUGADOR: War accepted. ¡To weapons against {_currentAggressor.CivilizationData.Name}!</color>");
+                    AddLogToPanel($"<color=green>EMPERGOD: War started. ¡To weapons against {_currentAggressor.CivilizationData.Name}!</color>");
                 } 
             }
         }
@@ -90,20 +97,25 @@ namespace Code.Scripts.Core.Managers
 
         public void OnPlayerFireStrikeButton()
         {
+            if (_isCooldownActive) return;
+
             var playerStorage = WorldManager.Instance.Player.StorageSystem;
             if (playerStorage == null) return;
 
             string itemName = "Fire Strike"; 
             if (playerStorage.GetItemCount(itemName) > 0)
             {
+                // Consumir item
                 playerStorage.ConsumeInventoryItem(itemName, 1);
                 
-                AddLogToPanel($"<color=green><b>[TÚ]</b> ¡Successful Launch! -1 {itemName}</color>");
+                AddLogToPanel($"<color=yellow><b>[YOU]</b> ¡Successful Launch!</color>");
                 
                 if (_activeBehaviour != null)
                 {
                     _activeBehaviour.TakeDamageFromPlayer(playerDamageAmount);
                 }
+
+                StartCoroutine(CooldownRoutine());
             }
             else
             {
@@ -111,13 +123,47 @@ namespace Code.Scripts.Core.Managers
             }
         }
 
+        private IEnumerator CooldownRoutine()
+        {
+            _isCooldownActive = true;
+            if (fireButton != null) fireButton.interactable = false;
+
+            float timer = attackCooldownDuration;
+
+            while (timer > 0)
+            {
+                timer -= Time.deltaTime;
+
+                if (cooldownOverlay != null)
+                {
+                    cooldownOverlay.fillAmount = timer / attackCooldownDuration;
+                }
+
+                if (cooldownText != null)
+                {
+                    cooldownText.text = Mathf.CeilToInt(timer).ToString();
+                }
+
+                yield return null;
+            }
+
+            ResetCooldownUI();
+        }
+
+        private void ResetCooldownUI()
+        {
+            _isCooldownActive = false;
+            if (fireButton != null) fireButton.interactable = true;
+            if (cooldownOverlay != null) cooldownOverlay.fillAmount = 0;
+            if (cooldownText != null) cooldownText.text = "";
+        }
+
         private void AddLogToPanel(string message)
         {
-            // Verificamos si el panel está activo para evitar errores
             if (battlePanel.activeSelf && logTextPrefab != null && logContent != null)
             {
                 GameObject newLog = Instantiate(logTextPrefab, logContent);
-                newLog.transform.localScale = Vector3.one; // Asegurar escala
+                newLog.transform.localScale = Vector3.one; 
                 
                 var tmp = newLog.GetComponentInChildren<TextMeshProUGUI>();
                 if (tmp != null)
@@ -143,6 +189,7 @@ namespace Code.Scripts.Core.Managers
         private void HandlePeaceSigned(Civilization civ)
         {
             battlePanel.SetActive(false);
+            ResetCooldownUI();
             
             if (_activeBehaviour != null)
             {

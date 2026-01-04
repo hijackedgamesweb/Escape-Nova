@@ -47,7 +47,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public static event Action<Entity.Civilization.Civilization> OnPeaceSigned;
         public static event Action<int, int> OnWarHealthUpdated;
         public event Action<string> OnBattleLog;
-        // ---------------------------------------
 
         public BaseBehaviour(Entity.Civilization.Civilization civ, CommandInvoker invoker)
         {
@@ -145,7 +144,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 }, 
                 () => { }
             );
-            _actions["SetBelligerent"] = _actions["SetBelligerent"]; // (Redundante pero mantiene estructura)
+            _actions["SetBelligerent"] = _actions["SetBelligerent"];
             
             _actions["SetPeaceful"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Peaceful); return Status.Success; }, () => { });
             _actions["SetGenerous"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Generous); return Status.Success; }, () => { });
@@ -172,19 +171,16 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void TakeDamageFromPlayer(int damage)
         {
             _warHealth -= damage;
-            // Notificamos a la UI
             OnWarHealthUpdated?.Invoke(_warHealth, _enemySimulatedHealth);
     
-            // Log actualizado a inglés y formato pedido
             LogBattle($"<color=green>[SYSTEM] {_civilization.CivilizationData.Name} took direct hit! Remaining Integrity: {_warHealth}%</color>");
         }
         
         private FunctionalAction CreateWaitAction()
         {
             return new FunctionalAction(
-                () => { _waitTimer = 0f; }, // OnStart
-                () => { 
-                    // SOLUCIÓN ERROR 1: Usamos UnityEngine.Time explícitamente
+                () => { _waitTimer = 0f; },
+                () => {
                     _waitTimer += UnityEngine.Time.deltaTime;
                     if (_waitTimer >= 1.5f) return Status.Success; 
                     return Status.Running; 
@@ -200,9 +196,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             Debug.Log($"<color=green>[BT SETUP] Initializing War Tree for {civName}...</color>");
             _warTree = new BehaviourTree();
         
-            // ==========================================================================================
             // RAMA 1: SURVIVAL
-            // ==========================================================================================
             
             var actCheckHealth = new FunctionalAction(() => {}, () => {
                 bool dying = _warHealth <= 0;
@@ -219,12 +213,9 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var nCheckHealth = _warTree.CreateLeafNode("CheckHealth", actCheckHealth);
             var nSurrender = _warTree.CreateLeafNode("Surrender", actSurrender);
             
-            // SIN DELAYS: Si tiene poca vida, se rinde inmediatamente.
             var seqSurvival = _warTree.CreateComposite<SequencerNode>("SurvivalSequence", false, nCheckHealth, nSurrender);
         
-            // ==========================================================================================
             // RAMA 2: ATTACK
-            // ==========================================================================================
         
             var actCheckAmmo = new FunctionalAction(() => {}, () => {
                 bool hasAmmo = CheckInventoryForFireStrike();
@@ -241,7 +232,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 float hitChance = 1f; 
                 bool hit = UnityEngine.Random.value <= hitChance;
                 if(hit) LogBattle($"<color=red>[{civName}] Impact confirmed!</color>");
-                else LogBattle($"<color=white>[{civName}] Missed target.</color>");
+                else LogBattle($"<color=orange>[{civName}] Missed target.</color>");
                 return hit ? Status.Success : Status.Failure; 
             }, () => {});
         
@@ -255,7 +246,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actWin = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=yellow>[{civName}] VICTORY.</color>");
+                LogBattle($"<color=red>[{civName}] VICTORY.</color>");
                 StopWar();
                 return Status.Success;
             }, () => {});
@@ -273,13 +264,10 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var seqVictory = _warTree.CreateComposite<SequencerNode>("VictorySeq", false, nCheckEnemyDead, nWin);
             var selVictoryOutcome = _warTree.CreateComposite<SelectorNode>("VictorySelector", false, seqVictory, nContinue);
             
-            // SIN DELAYS: Ataca tan rápido como tenga munición en el mismo frame.
             var seqAttack = _warTree.CreateComposite<SequencerNode>("AttackSequence", false, 
                 nCheckAmmo, nFire, nCheckHit, nDamage, selVictoryOutcome);
         
-            // ==========================================================================================
             // RAMA 3: LOGISTICS
-            // ==========================================================================================
         
             var actCheckResources = new FunctionalAction(() => {}, () => {
                 bool hasRes = _civilization.StorageSystem.HasResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
@@ -304,20 +292,15 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var nCraft = _warTree.CreateLeafNode("Craft", actCraftAmmo);
             var nGather = _warTree.CreateLeafNode("Gather", actGather);
         
-            // SIN DELAYS: Craftea y Recolecta instantáneamente.
             var seqCrafting = _warTree.CreateComposite<SequencerNode>("TryCraftSequence", false, nCheckRes, nCraft);
             var seqGathering = _warTree.CreateComposite<SequencerNode>("GatherSeq", false, nGather);
             
             var selLogistics = _warTree.CreateComposite<SelectorNode>("LogisticsSelector", false, seqCrafting, seqGathering);
         
-            // ==========================================================================================
             // RAÍZ
-            // ==========================================================================================
         
             var rootSelector = _warTree.CreateComposite<SelectorNode>("MainSelector", false, seqSurvival, seqAttack, selLogistics);
         
-            // IMPORTANTE: LoopNode configurado para iteraciones infinitas (-1).
-            // Como hemos quitado los delays, este bucle se ejecutará cada vez que se llame a Update().
             var rootLoop = _warTree.CreateDecorator<LoopNode>("RootLoop", rootSelector);
             rootLoop.SetIterations(-1);
         
@@ -328,8 +311,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void DEBUG_ForceWarSituation()
         {
             Debug.Log($"[DEBUG] Forzando situación de guerra para {_civilization.CivilizationData.Name}...");
-            _civilization.StorageSystem.AddInventoryItem(ITEM_FIRE_STRIKE, 2);
-            _civilization.StorageSystem.AddResource(ResourceType.Magmavite, 500);
             OnWarDeclaredToPlayer?.Invoke(_civilization);
         }
         
@@ -385,7 +366,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         {
             if (_isAtWarWithPlayer)
             {
-                // El Update del árbol se encarga de procesar el LoopNode.
                 _warTree.Update();
             }
         }

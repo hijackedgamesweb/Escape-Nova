@@ -142,6 +142,8 @@ namespace Code.Scripts.Camera
 
         private void HandleMouseZoom()
         {
+            if (IsPointerOverUI(-1)) return;
+
             float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (scroll != 0f)
             {
