@@ -76,14 +76,14 @@ namespace Code.Scripts.Core.Managers
                     _activeBehaviour.OnBattleLog += AddLogToPanel;
                     behaviour.StartWar();
                     
-                    AddLogToPanel($"<color=green>JUGADOR: Guerra aceptada (Tecla A). ¡A las armas contra {_currentAggressor.CivilizationData.Name}!</color>");
-                }
+                    AddLogToPanel($"<color=green>JUGADOR: War accepted. ¡To weapons against {_currentAggressor.CivilizationData.Name}!</color>");
+                } 
             }
         }
 
         public void OnDeclineWar()
         {
-            Debug.Log("JUGADOR: Guerra rechazada.");
+            Debug.Log("PLAYER: War rejected.");
             proposalPanel.SetActive(false);
             consequencePanel.SetActive(true);
         }
@@ -98,7 +98,7 @@ namespace Code.Scripts.Core.Managers
             {
                 playerStorage.ConsumeInventoryItem(itemName, 1);
                 
-                AddLogToPanel($"<color=green><b>[TÚ]</b> ¡Lanzamiento exitoso! -1 {itemName}</color>");
+                AddLogToPanel($"<color=green><b>[TÚ]</b> ¡Successful Launch! -1 {itemName}</color>");
                 
                 if (_activeBehaviour != null)
                 {
