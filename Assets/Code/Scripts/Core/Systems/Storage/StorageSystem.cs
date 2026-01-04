@@ -99,14 +99,27 @@ namespace Code.Scripts.Core.Systems.Storage
         
         public bool AddInventoryItem(string itemName, int quantity)
         {
-            if (!_inventoryItems.ContainsKey(itemName))
-            {
-                return false;
-            }
+            
             if (!_itemDatabase.TryGetValue(itemName, out ItemData data))
             {
+                Debug.LogWarning($"[StorageSystem] ERROR CRÍTICO: Intentando añadir '{itemName}' pero no existe en la ItemDatabase.");
+    
+                // --- AÑADE ESTO PARA VER LOS NOMBRES REALES ---
+                Debug.Log("--- LISTA DE NOMBRES VÁLIDOS EN TU JUEGO ---");
+                foreach (var key in _itemDatabase.Keys)
+                {
+                    Debug.Log($"-> '{key}'");
+                }
+                // --------------------------------------------------
+
                 return false;
             }
+            
+            if (!_inventoryItems.ContainsKey(itemName))
+            {
+                _inventoryItems[itemName] = 0;
+            }
+            
             int maxStack = data.maxStack; 
             int currentAmount = _inventoryItems[itemName];
             int newAmount = currentAmount + quantity;

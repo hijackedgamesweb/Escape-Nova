@@ -4,7 +4,8 @@ using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 
 public class WarTester : MonoBehaviour
 {
-    public CivilizationManager civManager; 
+    public CivilizationManager civManager;
+    private BaseBehaviour baseBehaviour;
 
     void Update()
     {
