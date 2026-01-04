@@ -219,10 +219,8 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var nCheckHealth = _warTree.CreateLeafNode("CheckHealth", actCheckHealth);
             var nSurrender = _warTree.CreateLeafNode("Surrender", actSurrender);
             
-            // SOLUCIÓN ERROR 2: Creamos un nodo de espera ÚNICO para esta rama
-            var nWaitSurvival = _warTree.CreateLeafNode("WaitSurvival", CreateWaitAction());
-        
-            var seqSurvival = _warTree.CreateComposite<SequencerNode>("SurvivalSequence", false, nCheckHealth, nSurrender, nWaitSurvival);
+            // SIN DELAYS: Si tiene poca vida, se rinde inmediatamente.
+            var seqSurvival = _warTree.CreateComposite<SequencerNode>("SurvivalSequence", false, nCheckHealth, nSurrender);
         
             // ==========================================================================================
             // RAMA 2: ATTACK
@@ -240,7 +238,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actCheckHit = new FunctionalAction(() => {}, () => {
-                float hitChance = 0.6f; 
+                float hitChance = 1f; 
                 bool hit = UnityEngine.Random.value <= hitChance;
                 if(hit) LogBattle($"<color=red>[{civName}] Impact confirmed!</color>");
                 else LogBattle($"<color=white>[{civName}] Missed target.</color>");
@@ -275,11 +273,9 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var seqVictory = _warTree.CreateComposite<SequencerNode>("VictorySeq", false, nCheckEnemyDead, nWin);
             var selVictoryOutcome = _warTree.CreateComposite<SelectorNode>("VictorySelector", false, seqVictory, nContinue);
             
-            // SOLUCIÓN ERROR 2: Otro nodo de espera ÚNICO para esta rama
-            var nWaitAttack = _warTree.CreateLeafNode("WaitAttack", CreateWaitAction());
-        
+            // SIN DELAYS: Ataca tan rápido como tenga munición en el mismo frame.
             var seqAttack = _warTree.CreateComposite<SequencerNode>("AttackSequence", false, 
-                nCheckAmmo, nFire, nCheckHit, nDamage, selVictoryOutcome, nWaitAttack);
+                nCheckAmmo, nFire, nCheckHit, nDamage, selVictoryOutcome);
         
             // ==========================================================================================
             // RAMA 3: LOGISTICS
@@ -308,12 +304,9 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var nCraft = _warTree.CreateLeafNode("Craft", actCraftAmmo);
             var nGather = _warTree.CreateLeafNode("Gather", actGather);
         
-            // SOLUCIÓN ERROR 2: Nodos de espera únicos
-            var nWaitCraft = _warTree.CreateLeafNode("WaitCraft", CreateWaitAction());
-            var nWaitGather = _warTree.CreateLeafNode("WaitGather", CreateWaitAction());
-
-            var seqCrafting = _warTree.CreateComposite<SequencerNode>("TryCraftSequence", false, nCheckRes, nCraft, nWaitCraft);
-            var seqGathering = _warTree.CreateComposite<SequencerNode>("GatherSeq", false, nGather, nWaitGather);
+            // SIN DELAYS: Craftea y Recolecta instantáneamente.
+            var seqCrafting = _warTree.CreateComposite<SequencerNode>("TryCraftSequence", false, nCheckRes, nCraft);
+            var seqGathering = _warTree.CreateComposite<SequencerNode>("GatherSeq", false, nGather);
             
             var selLogistics = _warTree.CreateComposite<SelectorNode>("LogisticsSelector", false, seqCrafting, seqGathering);
         
@@ -323,6 +316,8 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
             var rootSelector = _warTree.CreateComposite<SelectorNode>("MainSelector", false, seqSurvival, seqAttack, selLogistics);
         
+            // IMPORTANTE: LoopNode configurado para iteraciones infinitas (-1).
+            // Como hemos quitado los delays, este bucle se ejecutará cada vez que se llame a Update().
             var rootLoop = _warTree.CreateDecorator<LoopNode>("RootLoop", rootSelector);
             rootLoop.SetIterations(-1);
         
@@ -390,8 +385,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         {
             if (_isAtWarWithPlayer)
             {
-                // Solo logueamos de vez en cuando para no saturar consola, o lo quitamos
-                // Debug.Log(">>> [UPDATE] Tick..."); 
+                // El Update del árbol se encarga de procesar el LoopNode.
                 _warTree.Update();
             }
         }
