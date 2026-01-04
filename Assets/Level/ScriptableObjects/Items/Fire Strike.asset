@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Fire Strike
   displayName: Fire Strike
   icon: {fileID: 2412880892601369158, guid: 31e7502c6653fe14589f1d471836930e, type: 3}
-  maxStack: 20
+  maxStack: 12
   description: This item will grant you combat points. It can also be used to trade.
   itemToUnlock: {fileID: 0}
