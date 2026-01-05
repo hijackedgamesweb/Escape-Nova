@@ -153,15 +153,15 @@ namespace Code.Scripts.Core.Managers
             switch (result)
             {
                 case AttackSkillCheckUI.SkillCheckResult.Miss:
-                    AddLogToPanel($"<color=yellow><b>[FAILURE]</b> Missile wasted! [0 damage]</color>");
+                    AddLogToPanel($"<color=yellow><b>[FAILURE]</b> Missile wasted!</color>");
                     break;
                 case AttackSkillCheckUI.SkillCheckResult.Chance50:
                     bool isHit = UnityEngine.Random.value > 0.5f;
                     if (isHit) {
                         _activeBehaviour.TakeDamageFromPlayer(playerDamageAmount);
-                        AddLogToPanel($"<color=yellow><b>[BORDERING]</b> Unstable impact! [Damage applied]</color>");
+                        AddLogToPanel($"<color=orange><b>[BORDERING]</b> Unstable impact! [Damage applied]</color>");
                     } else {
-                        AddLogToPanel($"<color=yellow><b>[BORDERING]</b> The missile missed.</color>");
+                        AddLogToPanel($"<color=red><b>[BORDERING]</b> The missile missed.</color>");
                     }
                     break;
                 case AttackSkillCheckUI.SkillCheckResult.Hit100:
