@@ -19,7 +19,6 @@ MonoBehaviour:
   baseInterest: 1
   baseTrust: 1
   itemPreferences: {fileID: 11400000, guid: 469b955a8ac39c74e946df55f2382357, type: 2}
-  civName: Mippip
   civilizationDescription: "Famous for their communist social structure and deep
     empathetic bonds, the Mippip are the galaxy's most outwardly welcoming species.
     \n\nTheir society is built on shared emotion and the distribution of resources,
@@ -39,6 +38,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319fd92b2a15dc4a83d8b53f2dbe1bb, type: 2}
   - {fileID: 11400000, guid: ce551d0c6dc4b224ba87bf7b918436f5, type: 2}
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
-  startingResourceAmounts: e8030000204e0000e8030000e8030000e8030000
+  startingResourceAmounts: e803000096000000e8030000e8030000e8030000
   startingInventory: {fileID: 11400000, guid: 06f3f096ac23bc44fa2d93139e9396e2, type: 2}
   preferredPlanet: {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}
