@@ -37,10 +37,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         // Simulación de vida del enemigo (Jugador) para la lógica de victoria de la IA
         private int _enemySimulatedHealth = 100; 
 
-        private const int COST_FIRE_STRIKE = 500;   
-        private const int GATHER_AMOUNT = 10;
+        private const int COST_FIRE_STRIKE = 300;   
+        private const int GATHER_AMOUNT = 30;
         private const string ITEM_FIRE_STRIKE = "Fire Strike";
         private const string RES_MAGMAVITE = "Magmavite";
+        
+        private const ResourceType TYPE_MAGMAVITE = ResourceType.Magmavite;
 
         // --- EVENTOS ---
         public static event Action<Entity.Civilization.Civilization> OnWarDeclaredToPlayer; 
@@ -173,7 +175,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             _warHealth -= damage;
             OnWarHealthUpdated?.Invoke(_warHealth, _enemySimulatedHealth);
     
-            LogBattle($"<color=green>[SYSTEM] {_civilization.CivilizationData.Name} took direct hit! Remaining Integrity: {_warHealth}%</color>");
+            LogBattle($"<color=yellow> {_civilization.CivilizationData.Name} took direct hit!</color>");
         }
         
         private FunctionalAction CreateWaitAction()
@@ -200,12 +202,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             
             var actCheckHealth = new FunctionalAction(() => {}, () => {
                 bool dying = _warHealth <= 0;
-                if(dying) LogBattle($"<color=green>[{civName}] Critical systems failure. Surrendering.</color>");
+                if(dying) LogBattle($"<color=orange> Critical systems failure.  Surrendering.</color>");
                 return dying ? Status.Success : Status.Failure; 
             }, () => {});
         
             var actSurrender = new FunctionalAction(() => {}, () => { 
-                LogBattle($"<color=green>[{civName}] SURRENDER signal sent.</color>"); 
+                LogBattle($"<color=red> SURRENDER signal sent.</color>"); 
                 StopWar(); 
                 return Status.Success; 
             }, () => {});
@@ -223,16 +225,16 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actFire = new FunctionalAction(() => {}, () => { 
-                LogBattle($"<color=red>[{civName}] Firing missile!</color>"); 
+                LogBattle($"<color=red> Firing missile!</color>"); 
                 ConsumeFireStrike(); 
                 return Status.Success; 
             }, () => {});
         
             var actCheckHit = new FunctionalAction(() => {}, () => {
-                float hitChance = 1f; 
+                float hitChance = 0.25f;
                 bool hit = UnityEngine.Random.value <= hitChance;
-                if(hit) LogBattle($"<color=red>[{civName}] Impact confirmed!</color>");
-                else LogBattle($"<color=orange>[{civName}] Missed target.</color>");
+                if(hit) LogBattle($"<color=orange> Impact confirmed!</color>");
+                else LogBattle($"<color=orange> Fire Strike Missed Target.</color>");
                 return hit ? Status.Success : Status.Failure; 
             }, () => {});
         
@@ -246,7 +248,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actWin = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=red>[{civName}] VICTORY.</color>");
+                LogBattle($"<color=red> [{civName}] VICTORY.</color>");
                 StopWar();
                 return Status.Success;
             }, () => {});
@@ -271,20 +273,21 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
             var actCheckResources = new FunctionalAction(() => {}, () => {
                 bool hasRes = _civilization.StorageSystem.HasResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
-                if(!hasRes) LogBattle($"<color=orange>[{civName}] Low resources. Gathering...</color>");
                 return hasRes ? Status.Success : Status.Failure;
             }, () => {});
         
             var actCraftAmmo = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=blue>[{civName}] Crafting ammo...</color>");
+                LogBattle($"<color=red> Crafting Fire Strike...</color>");
                 _civilization.StorageSystem.ConsumeResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
                 _civilization.StorageSystem.AddInventoryItem(ITEM_FIRE_STRIKE, 1);
                 return Status.Success;
             }, () => {});
         
             var actGather = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=blue>[{civName}] Gathering Magmavite...</color>");
-                _civilization.StorageSystem.AddResource(ResourceType.Magmavite, GATHER_AMOUNT);
+                _civilization.StorageSystem.AddResource(TYPE_MAGMAVITE, GATHER_AMOUNT);
+                int current = _civilization.StorageSystem.GetResourceAmount(TYPE_MAGMAVITE);
+                LogBattle($"<color=red> Fire Strike Charge [{current}/{COST_FIRE_STRIKE}]</color>");
+                
                 return Status.Success; 
             }, () => {});
         

@@ -83,7 +83,7 @@ namespace Code.Scripts.Core.Managers
                     _activeBehaviour.OnBattleLog += AddLogToPanel;
                     behaviour.StartWar();
                     
-                    AddLogToPanel($"<color=green>EMPERGOD: War started. ¡To weapons against {_currentAggressor.CivilizationData.Name}!</color>");
+                    AddLogToPanel($"<color=yellow> War started against {_currentAggressor.CivilizationData.Name}!</color>");
                 } 
             }
         }
@@ -108,7 +108,7 @@ namespace Code.Scripts.Core.Managers
                 // Consumir item
                 playerStorage.ConsumeInventoryItem(itemName, 1);
                 
-                AddLogToPanel($"<color=yellow><b>[YOU]</b> ¡Successful Launch!</color>");
+                AddLogToPanel($"<color=white> ¡Successful Launch!</color>");
                 
                 if (_activeBehaviour != null)
                 {

@@ -16,7 +16,7 @@ public class WarTester : MonoBehaviour
             var civs = civManager.GetCivilizations;
             if (civs.Count > 0)
             {
-                var alien = civs[0];
+                var alien = civs[1];
                 var ai = alien.AIController as BaseBehaviour;
                 
                 if (ai != null)
