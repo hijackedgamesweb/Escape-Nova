@@ -1,3 +1,4 @@
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 using Code.Scripts.Core.World; // Necesario para acceder al Player
@@ -24,18 +25,18 @@ namespace Code.Scripts.UI.World
 
         private void Awake()
         {
-            BaseBehaviour.OnWarHealthUpdated += UpdateUI;
-            BaseBehaviour.OnWarDeclaredToPlayer += ShowPanel;
-            BaseBehaviour.OnPeaceSigned += HidePanel;
+            SystemEvents.OnWarHealthUpdated += UpdateUI;
+            SystemEvents.OnWarDeclaredToPlayer += ShowPanel;
+            SystemEvents.OnPeaceSigned += HidePanel;
         
             if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void OnDestroy()
         {
-            BaseBehaviour.OnWarHealthUpdated -= UpdateUI;
-            BaseBehaviour.OnWarDeclaredToPlayer -= ShowPanel;
-            BaseBehaviour.OnPeaceSigned -= HidePanel;
+            SystemEvents.OnWarHealthUpdated -= UpdateUI;
+            SystemEvents.OnWarDeclaredToPlayer -= ShowPanel;
+            SystemEvents.OnPeaceSigned -= HidePanel;
         }
 
         private void Update()

@@ -1,7 +1,13 @@
 using System.Collections;
+using Code.Scripts.Config;
 using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 using Code.Scripts.Core.World;
+using Code.Scripts.Core.World.ConstructableEntities;
+using Code.Scripts.Patterns.ServiceLocator;
+using Code.Scripts.UI.World;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -22,29 +28,42 @@ namespace Code.Scripts.Core.Managers
         
         [Header("Cooldown Settings")]
         [SerializeField] private Button fireButton;
+        [SerializeField] private GameObject acceptButton;
         [SerializeField] private Image cooldownOverlay;
         [SerializeField] private TextMeshProUGUI cooldownText;
         [SerializeField] private float attackCooldownDuration = 8f;
 
         [Header("Configuración")]
         [SerializeField] private int playerDamageAmount = 25;
+        
+        [Header("Skill Check System")]
+        [SerializeField] private AttackSkillCheckUI skillCheckSystem;
 
         private Civilization _currentAggressor;
         private BaseBehaviour _activeBehaviour;
         private bool _isCooldownActive = false;
 
+        private IGameTime _gameTime;
+        private TimeConfig _timeConfig;
+
+        private void Start()
+        {
+            _gameTime = ServiceLocator.GetService<IGameTime>();
+            _timeConfig = ServiceLocator.GetService<TimeConfig>();
+        }
+
         private void OnEnable()
         {
-            BaseBehaviour.OnWarDeclaredToPlayer += ShowProposal;
-            BaseBehaviour.OnPeaceSigned += HandlePeaceSigned;
+            SystemEvents.OnWarDeclaredToPlayer += ShowProposal;
+            SystemEvents.OnPeaceSigned += HandlePeaceSigned;
             
             ResetCooldownUI();
         }
 
         private void OnDisable()
         {
-            BaseBehaviour.OnWarDeclaredToPlayer -= ShowProposal;
-            BaseBehaviour.OnPeaceSigned -= HandlePeaceSigned;
+            SystemEvents.OnWarDeclaredToPlayer -= ShowProposal;
+            SystemEvents.OnPeaceSigned -= HandlePeaceSigned;
             
             if (_activeBehaviour != null)
                 _activeBehaviour.OnBattleLog -= AddLogToPanel;
@@ -61,12 +80,13 @@ namespace Code.Scripts.Core.Managers
             }
         }
 
+        
         private void ShowProposal(Civilization aggressor)
         {
             _currentAggressor = aggressor;
             proposalPanel.SetActive(true);
             consequencePanel.SetActive(false);
-            battlePanel.SetActive(false);
+            acceptButton.SetActive(true);
         }
 
         public void OnAcceptWar()
@@ -77,17 +97,23 @@ namespace Code.Scripts.Core.Managers
                 if (behaviour != null)
                 {
                     _activeBehaviour = behaviour;
-                    
                     proposalPanel.SetActive(false);
                     battlePanel.SetActive(true);
                     _activeBehaviour.OnBattleLog += AddLogToPanel;
                     behaviour.StartWar();
-                    
-                    AddLogToPanel($"<color=yellow> War started against {_currentAggressor.CivilizationData.Name}!</color>");
+                    acceptButton.SetActive(false);
+                    AddLogToPanel($"<color=yellow>War started against {_currentAggressor.CivilizationData.Name}!</color>");
                 } 
             }
         }
 
+        public void OpenBattlePanelForPlanet(Planet planet, BaseBehaviour behaviour)
+        {
+            battlePanel.SetActive(true);
+            proposalPanel.SetActive(false);
+            _activeBehaviour = behaviour;
+        }
+        
         public void OnDeclineWar()
         {
             Debug.Log("PLAYER: War rejected.");
@@ -98,6 +124,10 @@ namespace Code.Scripts.Core.Managers
         public void OnPlayerFireStrikeButton()
         {
             if (_isCooldownActive) return;
+            
+            if (_activeBehaviour == null || !_activeBehaviour._isAtWarWithPlayer) return;
+
+            if (_activeBehaviour.WarHealth <= 0) return;
 
             var playerStorage = WorldManager.Instance.Player.StorageSystem;
             if (playerStorage == null) return;
@@ -105,21 +135,39 @@ namespace Code.Scripts.Core.Managers
             string itemName = "Fire Strike"; 
             if (playerStorage.GetItemCount(itemName) > 0)
             {
-                // Consumir item
-                playerStorage.ConsumeInventoryItem(itemName, 1);
-                
-                AddLogToPanel($"<color=white> ¡Successful Launch!</color>");
-                
-                if (_activeBehaviour != null)
-                {
-                    _activeBehaviour.TakeDamageFromPlayer(playerDamageAmount);
-                }
-
-                StartCoroutine(CooldownRoutine());
+                skillCheckSystem.StartSkillCheck(HandleAttackResult);
             }
             else
             {
                 noAmmoPanel.SetActive(true);
+            }
+        }
+
+        private void HandleAttackResult(AttackSkillCheckUI.SkillCheckResult result)
+        {
+            var playerStorage = WorldManager.Instance.Player.StorageSystem;
+            playerStorage.ConsumeInventoryItem("Fire Strike", 1);
+            
+            StartCoroutine(CooldownRoutine());
+            
+            switch (result)
+            {
+                case AttackSkillCheckUI.SkillCheckResult.Miss:
+                    AddLogToPanel($"<color=yellow><b>[FAILURE]</b> Missile wasted! [0 damage]</color>");
+                    break;
+                case AttackSkillCheckUI.SkillCheckResult.Chance50:
+                    bool isHit = UnityEngine.Random.value > 0.5f;
+                    if (isHit) {
+                        _activeBehaviour.TakeDamageFromPlayer(playerDamageAmount);
+                        AddLogToPanel($"<color=yellow><b>[BORDERING]</b> Unstable impact! [Damage applied]</color>");
+                    } else {
+                        AddLogToPanel($"<color=yellow><b>[BORDERING]</b> The missile missed.</color>");
+                    }
+                    break;
+                case AttackSkillCheckUI.SkillCheckResult.Hit100:
+                    _activeBehaviour.TakeDamageFromPlayer(playerDamageAmount);
+                    AddLogToPanel($"<color=green><b>[PERFECT]</b> Critical impact confirmed!</color>");
+                    break;
             }
         }
 
@@ -128,23 +176,28 @@ namespace Code.Scripts.Core.Managers
             _isCooldownActive = true;
             if (fireButton != null) fireButton.interactable = false;
 
-            float timer = attackCooldownDuration;
+            float secondsPerCycle = _timeConfig.secondsPerCycle;
+            
+            float startTime = _gameTime.GameTime;
+            float duration = attackCooldownDuration;
+            float endTime = startTime + duration;
 
-            while (timer > 0)
+            while (_gameTime.GameTime < endTime)
             {
-                timer -= Time.deltaTime;
+                yield return null; 
 
+                float timeRemaining = endTime - _gameTime.GameTime;
                 if (cooldownOverlay != null)
                 {
-                    cooldownOverlay.fillAmount = timer / attackCooldownDuration;
+                    cooldownOverlay.fillAmount = timeRemaining / duration;
                 }
-
                 if (cooldownText != null)
                 {
-                    cooldownText.text = Mathf.CeilToInt(timer).ToString();
+                    int cyclesRemaining = Mathf.CeilToInt(timeRemaining / secondsPerCycle);
+                    if (cyclesRemaining < 1 && timeRemaining > 0) cyclesRemaining = 1;
+                    
+                    cooldownText.text = cyclesRemaining.ToString() + " cycles";
                 }
-
-                yield return null;
             }
 
             ResetCooldownUI();
@@ -164,33 +217,20 @@ namespace Code.Scripts.Core.Managers
             {
                 GameObject newLog = Instantiate(logTextPrefab, logContent);
                 newLog.transform.localScale = Vector3.one; 
-                
                 var tmp = newLog.GetComponentInChildren<TextMeshProUGUI>();
-                if (tmp != null)
-                {
-                    tmp.text = message;
-                }
-                
+                if (tmp != null) tmp.text = message;
                 Canvas.ForceUpdateCanvases();
                 logContent.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 0f;
             }
         }
 
-        public void OnCloseNoAmmoPanel()
-        {
-            noAmmoPanel.SetActive(false);
-        }
-
-        public void OnCloseConsequences()
-        {
-            consequencePanel.SetActive(false);
-        }
+        public void OnCloseNoAmmoPanel() { noAmmoPanel.SetActive(false); }
+        public void OnCloseConsequences() { consequencePanel.SetActive(false); }
 
         private void HandlePeaceSigned(Civilization civ)
         {
             battlePanel.SetActive(false);
             ResetCooldownUI();
-            
             if (_activeBehaviour != null)
             {
                 _activeBehaviour.OnBattleLog -= AddLogToPanel;

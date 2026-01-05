@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/World/AttackSkillCheckUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/World/AttackSkillCheckUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/WarTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/WarTester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Events/SystemEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Events/SystemEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/WarUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Managers/WarUIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Diplomacy/AI/Behaviour/USBehaviour/BaseBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Diplomacy/AI/Behaviour/USBehaviour/BaseBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/UI/PropuestaText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/UI/PropuestaText.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/World/WarStatusPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/World/WarStatusPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Civilizations/Mippip.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Civilizations/Mippip.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/Quests/Rewards/GiveSkillPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Core/Systems/UI/DiplomacyUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/UI/Controls/RebindUIElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/UI/World/AttackSkillCheckUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/UI/World/WarStatusPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Utilities/NumberFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mackysoft.serializereference-extensions@d39bdc381954/Runtime/SubclassSelectorAttribute.cs" root0="SKIP_HIGHLIGHTING" />
@@ -189,7 +190,8 @@
       <workItem from="1767374998805" duration="6613000" />
       <workItem from="1767443076233" duration="6264000" />
       <workItem from="1767539267457" duration="21972000" />
-      <workItem from="1767567821335" duration="4305000" />
+      <workItem from="1767567821335" duration="5077000" />
+      <workItem from="1767613469624" duration="7816000" />
     </task>
     <servers />
   </component>

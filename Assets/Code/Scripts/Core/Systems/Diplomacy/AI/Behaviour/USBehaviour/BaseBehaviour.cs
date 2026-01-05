@@ -5,6 +5,7 @@ using BehaviourAPI.Core;
 using BehaviourAPI.Core.Actions;
 using BehaviourAPI.UtilitySystems;
 using BehaviourAPI.BehaviourTrees;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.UI;
@@ -27,14 +28,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         protected Dictionary<string, CurveFactor> _curveFactors = new Dictionary<string, CurveFactor>();
         protected Dictionary<string, FunctionalAction> _actions = new Dictionary<string, FunctionalAction>();
         
-        // --- VARIABLES DE GUERRA ---
         private BehaviourTree _warTree;
-        private Node _rootNode; // Referencia para el Loop
+        private Node _rootNode;
         private int _warHealth = 100;
-        private bool _isAtWarWithPlayer = false;
+        public bool _isAtWarWithPlayer { get; private set; } = false;
         private float _waitTimer = 0f;
         
-        // Simulación de vida del enemigo (Jugador) para la lógica de victoria de la IA
         private int _enemySimulatedHealth = 100; 
 
         private const int COST_FIRE_STRIKE = 300;   
@@ -43,11 +42,10 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         private const string RES_MAGMAVITE = "Magmavite";
         
         private const ResourceType TYPE_MAGMAVITE = ResourceType.Magmavite;
-
-        // --- EVENTOS ---
-        public static event Action<Entity.Civilization.Civilization> OnWarDeclaredToPlayer; 
-        public static event Action<Entity.Civilization.Civilization> OnPeaceSigned;
-        public static event Action<int, int> OnWarHealthUpdated;
+        
+        public int WarHealth => _warHealth; 
+        public int PlayerSimulatedHealth => _enemySimulatedHealth;
+        
         public event Action<string> OnBattleLog;
 
         public BaseBehaviour(Entity.Civilization.Civilization civ, CommandInvoker invoker)
@@ -173,9 +171,9 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void TakeDamageFromPlayer(int damage)
         {
             _warHealth -= damage;
-            OnWarHealthUpdated?.Invoke(_warHealth, _enemySimulatedHealth);
+            SystemEvents.TriggerWarHealthUpdated(_warHealth, _enemySimulatedHealth);
     
-            LogBattle($"<color=yellow> {_civilization.CivilizationData.Name} took direct hit!</color>");
+            LogBattle($"<color=yellow>{_civilization.CivilizationData.Name} took direct hit!</color>");
         }
         
         private FunctionalAction CreateWaitAction()
@@ -187,7 +185,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                     if (_waitTimer >= 1.5f) return Status.Success; 
                     return Status.Running; 
                 }, 
-                () => {} // OnStop
+                () => {}
             );
         }
 
@@ -202,12 +200,12 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             
             var actCheckHealth = new FunctionalAction(() => {}, () => {
                 bool dying = _warHealth <= 0;
-                if(dying) LogBattle($"<color=orange> Critical systems failure.  Surrendering.</color>");
+                if(dying) LogBattle($"<color=orange>Critical systems failure.  Surrendering.</color>");
                 return dying ? Status.Success : Status.Failure; 
             }, () => {});
         
             var actSurrender = new FunctionalAction(() => {}, () => { 
-                LogBattle($"<color=red> SURRENDER signal sent.</color>"); 
+                LogBattle($"<color=red>SURRENDER signal sent.</color>"); 
                 StopWar(); 
                 return Status.Success; 
             }, () => {});
@@ -225,7 +223,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actFire = new FunctionalAction(() => {}, () => { 
-                LogBattle($"<color=red> Firing missile!</color>"); 
+                LogBattle($"<color=red>Firing missile!</color>"); 
                 ConsumeFireStrike(); 
                 return Status.Success; 
             }, () => {});
@@ -233,8 +231,8 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var actCheckHit = new FunctionalAction(() => {}, () => {
                 float hitChance = 0.25f;
                 bool hit = UnityEngine.Random.value <= hitChance;
-                if(hit) LogBattle($"<color=orange> Impact confirmed!</color>");
-                else LogBattle($"<color=orange> Fire Strike Missed Target.</color>");
+                if(hit) LogBattle($"<color=orange>Impact confirmed!</color>");
+                else LogBattle($"<color=orange>Fire Strike Missed Target.</color>");
                 return hit ? Status.Success : Status.Failure; 
             }, () => {});
         
@@ -248,7 +246,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actWin = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=red> [{civName}] VICTORY.</color>");
+                LogBattle($"<color=red>[{civName}] VICTORY.</color>");
                 StopWar();
                 return Status.Success;
             }, () => {});
@@ -277,7 +275,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actCraftAmmo = new FunctionalAction(() => {}, () => {
-                LogBattle($"<color=red> Crafting Fire Strike...</color>");
+                LogBattle($"<color=red>Crafting Fire Strike...</color>");
                 _civilization.StorageSystem.ConsumeResource(ResourceType.Magmavite, COST_FIRE_STRIKE);
                 _civilization.StorageSystem.AddInventoryItem(ITEM_FIRE_STRIKE, 1);
                 return Status.Success;
@@ -286,7 +284,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             var actGather = new FunctionalAction(() => {}, () => {
                 _civilization.StorageSystem.AddResource(TYPE_MAGMAVITE, GATHER_AMOUNT);
                 int current = _civilization.StorageSystem.GetResourceAmount(TYPE_MAGMAVITE);
-                LogBattle($"<color=red> Fire Strike Charge [{current}/{COST_FIRE_STRIKE}]</color>");
+                LogBattle($"<color=red>Fire Strike Charge [{current}/{COST_FIRE_STRIKE}]</color>");
                 
                 return Status.Success; 
             }, () => {});
@@ -313,19 +311,13 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
         public void DEBUG_ForceWarSituation()
         {
-            Debug.Log($"[DEBUG] Forzando situación de guerra para {_civilization.CivilizationData.Name}...");
-            OnWarDeclaredToPlayer?.Invoke(_civilization);
+            SystemEvents.TriggerWarDeclared(_civilization);
         }
         
         private void TryTriggerWarDeclaration()
         {
             if (_isAtWarWithPlayer) return;
-
-            if (CheckInventoryForFireStrike())
-            {
-                Debug.Log($"[US-Personality] {_civilization.CivilizationData.Name} decide declarar la guerra.");
-                OnWarDeclaredToPlayer?.Invoke(_civilization);
-            }
+            SystemEvents.TriggerWarDeclared(_civilization);
         }
 
         public void StartWar()
@@ -339,7 +331,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void StopWar()
         {
             _isAtWarWithPlayer = false;
-            OnPeaceSigned?.Invoke(_civilization);
+            SystemEvents.TriggerPeaceSigned(_civilization);
         }
 
         public void TakeDamage(int amount)
@@ -360,7 +352,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         private void DamagePlayerPlanet()
         {
             _enemySimulatedHealth -= 25;
-            OnWarHealthUpdated?.Invoke(_warHealth, _enemySimulatedHealth);
+            SystemEvents.TriggerWarHealthUpdated(_warHealth, _enemySimulatedHealth);
 
             Debug.Log($"[WAR] Player damaged. Remaining Health: {_enemySimulatedHealth}");
         }
