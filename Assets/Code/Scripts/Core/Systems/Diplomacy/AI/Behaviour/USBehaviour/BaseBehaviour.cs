@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using BehaviourAPI.Core;
 using BehaviourAPI.Core.Actions;
 using BehaviourAPI.UtilitySystems;
+using Code.Scripts.Core.Events;
+using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.Interfaces;
 using Code.Scripts.Core.World;
 using Code.Scripts.Patterns.Command;
@@ -145,33 +147,37 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             FunctionalAction setPeaceful = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Peaceful); return Status.Success; }, () => { });
             _actions["SetPeaceful"] = setPeaceful;
             
-            FunctionalAction setGenerous = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Generous); return Status.Success; }, () => { });
-            _actions["SetGenerous"] = setGenerous;
+            FunctionalAction demandTribute = new FunctionalAction(
+                () => { },
+                () =>
+                {
+                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Offended); 
+                    QuickTradeManager.Instance.CreateTributeOffer(_civilization);
+                    return Status.Success;
+                }, 
+                () => { });
+            _actions["DemandTribute"] = demandTribute;
+            FunctionalAction offerGift = new FunctionalAction(
+                () => { },
+                () =>
+                {
+                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Generous);
+                    QuickTradeManager.Instance.CreateGiftOffer(_civilization);
+                    return Status.Success;
+                }, 
+                () => { });
+            _actions["OfferGift"] = offerGift;
             
             FunctionalAction setOffended = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Offended); return Status.Success; }, () => { });
             _actions["SetOffended"] = setOffended;
-            
-            
-            
-            
-             FunctionalAction offerPeace = new FunctionalAction(
-                
-                () => Debug.Log("Offer Peace"),
-                () =>
-                {
-                    Debug.Log("Offering Peace");
-                    return Status.Success;
-                },
-                () => Debug.Log("Offered Peace")
-            );
-             _actions["OfferPeace"] = offerPeace;
             
             FunctionalAction declareWar = new FunctionalAction(
                 
                 () => Debug.Log("Declare War"),
                 () =>
                 {
-                    Debug.Log("Declaring War");
+                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent); 
+                    SystemEvents.OnWarDeclaredToPlayer?.Invoke(_civilization);
                     return Status.Success;
                 },
                 () => Debug.Log("Declared War")
@@ -190,25 +196,13 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             );
             _actions["ProposeAlliance"] = proposeAlliance;
             
-            
-            FunctionalAction proposeMarriage = new FunctionalAction(
-                
-                () => Debug.Log("Propose Marriage"),
-                () =>
-                {
-                    Debug.Log("Proposing Marriage");
-                    return Status.Success;
-                },
-                () => Debug.Log("Proposed Marriage")
-            );
-            _actions["ProposeMarriage"] = proposeMarriage;
-            
             FunctionalAction seekHelp = new FunctionalAction(
                 
                 () => Debug.Log("Seek Help"),
                 () =>
                 {
-                    Debug.Log("Seeking Help");
+                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Needed); 
+                    QuickTradeManager.Instance.CreateQuestOffer(_civilization);
                     return Status.Success;
                 },
                 () => Debug.Log("Sought Help")

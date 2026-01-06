@@ -1,10 +1,12 @@
 using System;
+using Code.Scripts.Core.Entity.Civilization;
 
 namespace Code.Scripts.Core.Events
 {
     public static class SystemEvents
     {
         public static event Action OnResearchUnlocked;
+        public static Action<Civilization> OnWarDeclaredToPlayer;
         public static event Action OnInventoryUnlocked;
         public static event Action OnConstellationsUnlocked;
         public static event Action OnDiplomacyUnlocked;
