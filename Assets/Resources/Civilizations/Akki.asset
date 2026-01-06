@@ -19,7 +19,6 @@ MonoBehaviour:
   baseInterest: 0
   baseTrust: 0
   itemPreferences: {fileID: 11400000, guid: 71307f0101db2c04f9e66df6b8a9e5b9, type: 2}
-  civName: Akki
   civilizationDescription: "Originating from the distant sector of Kepler 452b, the
     Akki are an elusive presence in the stellar charts. Their political structure
     is undefined, though their erratic behavior suggests a form of anarchy governed
@@ -42,3 +41,7 @@ MonoBehaviour:
   startingResourceAmounts: e8030000204e0000e8030000e8030000e8030000
   startingInventory: {fileID: 11400000, guid: 3cb353dddcaeb4b47aa07ee83aa2bb66, type: 2}
   preferredPlanet: {fileID: 11400000, guid: 1b3c923b64d16264cac2283ae7b04755, type: 2}
+  offrendItem: {fileID: 11400000, guid: 9de089f136c7a9d46a3654a43684ee3e, type: 2}
+  offrendAmount: 1
+  tributeItem: {fileID: 11400000, guid: c1f7b9d5fb0763941b629964dd990abe, type: 2}
+  tributeAmount: 1

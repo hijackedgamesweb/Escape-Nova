@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Code.Scripts.Core.Systems.Astrarium;
+using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.Systems.Storage;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
@@ -44,6 +45,13 @@ namespace Code.Scripts.Core.Entity.Civilization
         
         [Header("Civilization Prefs")]
         public PlanetDataSO preferredPlanet;
+        public ItemData offrendItem;
+        public int offrendAmount;
+        public ItemData tributeItem;
+        public int tributeAmount;
+        
+        [Header("Quests")]
+        public QuestData quest;
 
         // --- INTERFAZ ---
         public string GetAstrariumID() => $"civ_{civName.ToLower().Replace(" ", "_")}";

@@ -19,7 +19,6 @@ MonoBehaviour:
   baseInterest: 1
   baseTrust: 1
   itemPreferences: {fileID: 11400000, guid: 469b955a8ac39c74e946df55f2382357, type: 2}
-  Name: 
   civilizationDescription: "Famous for their communist social structure and deep
     empathetic bonds, the Mippip are the galaxy's most outwardly welcoming species.
     \n\nTheir society is built on shared emotion and the distribution of resources,
@@ -30,7 +29,7 @@ MonoBehaviour:
     to keeping their thoughts to themselves"
   civilizationIcon: {fileID: 21300000, guid: 59809e53e9dc1a94f82e21f1a493056a, type: 3}
   civilizationFlag: {fileID: 5819396936593490345, guid: ed8fa57d75d09b14c8cfe092a44be3ee, type: 3}
-  aiController: 3
+  aiController: 4
   angerTolerance: 10
   leaderPortrait: {fileID: 7455233923170213856, guid: 4e51028b67e9a754fb39549b48393798, type: 3}
   startingResources:
@@ -41,4 +40,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   startingResourceAmounts: e803000096000000e8030000e8030000e8030000
   startingInventory: {fileID: 11400000, guid: 06f3f096ac23bc44fa2d93139e9396e2, type: 2}
-  preferredPlanet: {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}
+  offrendItem: {fileID: 11400000, guid: bf05e67ae36aa95489fb1b43dfac6e08, type: 2}
+  offrendAmount: 1
+  tributeItem: {fileID: 11400000, guid: 5d2a94a5bf7852346a7669e75421665e, type: 2}
+  tributeAmount: 1
+  quest: {fileID: 11400000, guid: 2d5a2239a1a579f46b22ae7fd157c60e, type: 2}

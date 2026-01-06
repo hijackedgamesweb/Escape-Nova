@@ -1,4 +1,5 @@
 using Code.Scripts.Core.SaveLoad.Interfaces;
+using Code.Scripts.Core.Systems.Quests.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
@@ -17,6 +18,13 @@ namespace Code.Scripts.Core.Entity.Civilization
 
         public float AngerTolerance;
         public PlanetDataSO HomePlanetData;
+        
+        public ItemData OffrendItem;
+        public int OffrendAmount;
+        public ItemData TributeItem;
+        public int TributeAmount;
+        
+        public QuestData CivilizationQuest;
 
         public CivilizationData(CivilizationSO entitySO) : base(entitySO)
         {
@@ -26,6 +34,11 @@ namespace Code.Scripts.Core.Entity.Civilization
             LeaderPortrait = entitySO.leaderPortrait;
             AngerTolerance = entitySO.angerTolerance;
             HomePlanetData = entitySO.preferredPlanet;
+            OffrendItem = entitySO.offrendItem;
+            OffrendAmount = entitySO.offrendAmount;
+            TributeItem = entitySO.tributeItem;
+            TributeAmount = entitySO.tributeAmount;
+            CivilizationQuest = entitySO.quest;
         }
         
         public CivilizationData() : base()
