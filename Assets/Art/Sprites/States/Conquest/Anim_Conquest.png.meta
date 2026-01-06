@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: 2ff951270de25054b810bfb2fbb39a8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6867917245072246947
+    second: Anim_Conquest_0
+  - first:
+      213: -1163225581534963355
+    second: Anim_Conquest_1
+  - first:
+      213: 2526537510731080514
+    second: Anim_Conquest_2
+  - first:
+      213: 6848107549280037228
+    second: Anim_Conquest_3
+  - first:
+      213: 8053490596372982771
+    second: Anim_Conquest_4
+  - first:
+      213: -3246486794350191816
+    second: Anim_Conquest_5
+  - first:
+      213: -6136857262820388556
+    second: Anim_Conquest_6
+  - first:
+      213: 3520439265485494632
+    second: Anim_Conquest_7
+  - first:
+      213: -1081314870309167301
+    second: Anim_Conquest_8
+  - first:
+      213: 1841116226978156301
+    second: Anim_Conquest_9
+  - first:
+      213: 6004067585390209145
+    second: Anim_Conquest_10
+  - first:
+      213: -2765066961765702053
+    second: Anim_Conquest_11
+  - first:
+      213: 5936571235856265610
+    second: Anim_Conquest_12
+  - first:
+      213: -7105083220645665014
+    second: Anim_Conquest_13
+  - first:
+      213: -1496286866073081138
+    second: Anim_Conquest_14
+  - first:
+      213: 5580624113889357560
+    second: Anim_Conquest_15
+  - first:
+      213: -5184052303994392743
+    second: Anim_Conquest_16
+  - first:
+      213: -302438502418148319
+    second: Anim_Conquest_17
+  - first:
+      213: 1820614595805722102
+    second: Anim_Conquest_18
+  - first:
+      213: 2533295780872443487
+    second: Anim_Conquest_19
+  - first:
+      213: -1049811156663297823
+    second: Anim_Conquest_20
+  - first:
+      213: -7133836300497934151
+    second: Anim_Conquest_21
+  - first:
+      213: 8972589015569173290
+    second: Anim_Conquest_22
+  - first:
+      213: 126668254632622353
+    second: Anim_Conquest_23
+  - first:
+      213: 2777856360660395015
+    second: Anim_Conquest_24
+  - first:
+      213: 8511704637587307997
+    second: Anim_Conquest_25
+  - first:
+      213: 5206358440927951645
+    second: Anim_Conquest_26
+  - first:
+      213: 7932644115301829344
+    second: Anim_Conquest_27
+  - first:
+      213: 4123010713995541177
+    second: Anim_Conquest_28
+  - first:
+      213: -3041845407234601925
+    second: Anim_Conquest_29
+  - first:
+      213: -2021347273615797251
+    second: Anim_Conquest_30
+  - first:
+      213: -116789890320355096
+    second: Anim_Conquest_31
+  - first:
+      213: 8958328754200193722
+    second: Anim_Conquest_32
+  - first:
+      213: 5344318387692163199
+    second: Anim_Conquest_33
+  - first:
+      213: -7593185306489462044
+    second: Anim_Conquest_34
+  - first:
+      213: 7524415414246856636
+    second: Anim_Conquest_35
+  - first:
+      213: 4875605596121231493
+    second: Anim_Conquest_36
+  - first:
+      213: -1718655674637112976
+    second: Anim_Conquest_37
+  - first:
+      213: 1594467426342417664
+    second: Anim_Conquest_38
+  - first:
+      213: 8842287625895847676
+    second: Anim_Conquest_39
+  - first:
+      213: 5076643490338541380
+    second: Anim_Conquest_40
+  - first:
+      213: 1057592976920545432
+    second: Anim_Conquest_41
+  - first:
+      213: 4445476269038300054
+    second: Anim_Conquest_42
+  - first:
+      213: 5035095105151260996
+    second: Anim_Conquest_43
+  - first:
+      213: 8061175023558038751
+    second: Anim_Conquest_44
+  - first:
+      213: -6890047513525159418
+    second: Anim_Conquest_45
+  - first:
+      213: -8049034051883392438
+    second: Anim_Conquest_46
+  - first:
+      213: -1758328246273424419
+    second: Anim_Conquest_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Conquest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a88f4bb85ebf4f50800000000000000
+      internalID: 6867917245072246947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56916f22f746bdfe0800000000000000
+      internalID: -1163225581534963355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_2
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24363d6da70101320800000000000000
+      internalID: 2526537510731080514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_3
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69e182888d590f50800000000000000
+      internalID: 6848107549280037228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_4
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fba2c6370fb3cf60800000000000000
+      internalID: 8053490596372982771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_5
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b92ce067922f2d0800000000000000
+      internalID: -3246486794350191816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_6
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431905c75d085daa0800000000000000
+      internalID: -6136857262820388556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_7
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86999902cdc1bd030800000000000000
+      internalID: 3520439265485494632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_8
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fdfd0cad56ef0f0800000000000000
+      internalID: -1081314870309167301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_9
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f8d3b2475fc8910800000000000000
+      internalID: 1841116226978156301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_10
+      rect:
+        serializedVersion: 2
+        x: 4490
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978ee9278abb25350800000000000000
+      internalID: 6004067585390209145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_11
+      rect:
+        serializedVersion: 2
+        x: 4939
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5669cb8f3280a9d0800000000000000
+      internalID: -2765066961765702053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_12
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81b301f510f26250800000000000000
+      internalID: 5936571235856265610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_13
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07a3d5847ca56d90800000000000000
+      internalID: -7105083220645665014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_14
+      rect:
+        serializedVersion: 2
+        x: 6286
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecaa1a1e50f1c3be0800000000000000
+      internalID: -1496286866073081138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_15
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8feaa5d601c527d40800000000000000
+      internalID: 5580624113889357560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_16
+      rect:
+        serializedVersion: 2
+        x: 7184
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f6e5355eb8e08b0800000000000000
+      internalID: -5184052303994392743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_17
+      rect:
+        serializedVersion: 2
+        x: 7633
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12417f0d8c58dcbf0800000000000000
+      internalID: -302438502418148319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_18
+      rect:
+        serializedVersion: 2
+        x: 8082
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f534ef245f144910800000000000000
+      internalID: 1820614595805722102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_19
+      rect:
+        serializedVersion: 2
+        x: 8531
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d5e93713182320800000000000000
+      internalID: 2533295780872443487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_20
+      rect:
+        serializedVersion: 2
+        x: 8980
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e897dda0525e61f0800000000000000
+      internalID: -1049811156663297823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_21
+      rect:
+        serializedVersion: 2
+        x: 9429
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8a80f6ea58ffc90800000000000000
+      internalID: -7133836300497934151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_22
+      rect:
+        serializedVersion: 2
+        x: 9878
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b829cbb2a058c70800000000000000
+      internalID: 8972589015569173290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_23
+      rect:
+        serializedVersion: 2
+        x: 10327
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11932b14b1402c100800000000000000
+      internalID: 126668254632622353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Conquest_24
+      rect:
+        serializedVersion: 2
+        x: 10776
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704e83e64adec8620800000000000000
+      internalID: 2777856360660395015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9825f365fa1d7d943a6d44c68d595461
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Conquest_0: 6867917245072246947
+      Anim_Conquest_1: -1163225581534963355
+      Anim_Conquest_10: 6004067585390209145
+      Anim_Conquest_11: -2765066961765702053
+      Anim_Conquest_12: 5936571235856265610
+      Anim_Conquest_13: -7105083220645665014
+      Anim_Conquest_14: -1496286866073081138
+      Anim_Conquest_15: 5580624113889357560
+      Anim_Conquest_16: -5184052303994392743
+      Anim_Conquest_17: -302438502418148319
+      Anim_Conquest_18: 1820614595805722102
+      Anim_Conquest_19: 2533295780872443487
+      Anim_Conquest_2: 2526537510731080514
+      Anim_Conquest_20: -1049811156663297823
+      Anim_Conquest_21: -7133836300497934151
+      Anim_Conquest_22: 8972589015569173290
+      Anim_Conquest_23: 126668254632622353
+      Anim_Conquest_24: 2777856360660395015
+      Anim_Conquest_3: 6848107549280037228
+      Anim_Conquest_4: 8053490596372982771
+      Anim_Conquest_5: -3246486794350191816
+      Anim_Conquest_6: -6136857262820388556
+      Anim_Conquest_7: 3520439265485494632
+      Anim_Conquest_8: -1081314870309167301
+      Anim_Conquest_9: 1841116226978156301
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
