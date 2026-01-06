@@ -166,6 +166,21 @@ namespace Code.Scripts.Core.Managers
                     Debug.Log($"[AUTO-WAR] Started against {aggressor.CivilizationData.Name}");
                 }
             }
+            
+            string planetName = "Unknown Planet";
+    
+            if (aggressor != null)
+            {
+                Planet[] allPlanets = FindObjectsOfType<Planet>();
+                foreach (var p in allPlanets)
+                {
+                    if (p.Owner == aggressor)
+                    {
+                        planetName = p.Name;
+                        break;
+                    }
+                }
+            }
 
             if (notificationPanel != null)
             {

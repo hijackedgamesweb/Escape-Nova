@@ -20,6 +20,7 @@ namespace Code.Scripts.UI.Menus
         [SerializeField] private TextMeshProUGUI _planetNameText;
         [SerializeField] private TextMeshProUGUI _productionText;
         [SerializeField] private Transform _satelliteListContainer;
+        [SerializeField] private TextMeshProUGUI _civilizationInfoText;
         [SerializeField] private GameObject _satelliteListItemPrefab;
         [SerializeField] private Button _deletePlanetButton;
         [SerializeField] private Button _closeButton;
@@ -73,6 +74,19 @@ namespace Code.Scripts.UI.Menus
             
             _planetNameText.text = _currentPlanet.Name;
             
+            if (_civilizationInfoText != null)
+            {
+                if (_currentPlanet.Owner != null)
+                {
+                    _civilizationInfoText.gameObject.SetActive(true);
+                    string civName = _currentPlanet.Owner.CivilizationData.Name;
+                    _civilizationInfoText.text = $"Occupied by: <color=red>{civName}</color>";
+                }
+                else
+                {
+                    _civilizationInfoText.gameObject.SetActive(false); 
+                }
+            }
             
             StringBuilder productionString = new StringBuilder("Production per cicle\n");
             
