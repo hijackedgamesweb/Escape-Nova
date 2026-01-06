@@ -19,6 +19,8 @@ namespace Code.Scripts.Core.Managers
         [Header("Input Configuration")]
         [SerializeField] private InputActionAsset inputActionAsset;
         [SerializeField] private string actionMapName = "Shortcuts";
+        
+        [SerializeField] private GameObject panelProposal;
 
         // Actions
         private InputAction _toggleMenuAction;
@@ -37,7 +39,6 @@ namespace Code.Scripts.Core.Managers
 
         private void Awake()
         {
-            // 1. Inicializar las acciones
             var map = inputActionAsset.FindActionMap(actionMapName);
 
             if (map == null)
@@ -94,7 +95,6 @@ namespace Code.Scripts.Core.Managers
 
         private void Update()
         {
-            
             if (_toggleMenuAction != null && _toggleMenuAction.WasPerformedThisFrame())
             {
                 HandleTabPress();
@@ -117,14 +117,26 @@ namespace Code.Scripts.Core.Managers
                 }
             }
 
+            
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                panelProposal.SetActive(true);
+            }
+
+            // --- AQUÍ ESTÁ EL CAMBIO ---
             if (_addResource != null && _addResource.WasPerformedThisFrame())
             {
                 StorageSystem storage = ServiceLocator.GetService<StorageSystem>();
+                
+                // 1. Añadir Recursos masivos (Lo que ya tenías)
                 storage.AddResource(ResourceType.Sandit, 100000000);
                 storage.AddResource(ResourceType.Batee, 100000000);
                 storage.AddResource(ResourceType.Paladium, 100000000);
                 storage.AddResource(ResourceType.Frostice, 100000000);
                 storage.AddResource(ResourceType.Magmavite, 100000000);
+                storage.AddInventoryItem("Fire Strike", 5);
+                
+                Debug.Log("<color=green>[CHEAT] Recursos infinitos + 5 Fire Strikes añadidos al inventario.</color>");
             }
             
             if (_unlockAll != null && _unlockAll.WasPerformedThisFrame())

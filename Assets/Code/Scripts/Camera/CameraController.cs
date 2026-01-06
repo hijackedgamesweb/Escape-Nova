@@ -47,7 +47,6 @@ namespace Code.Scripts.Camera
         {
             _mainCamera = GetComponent<UnityEngine.Camera>();
             ServiceLocator.RegisterService<CameraController2D>(this);
-            EnhancedTouchSupport.Enable();
         }
 
         void Start()
@@ -58,11 +57,22 @@ namespace Code.Scripts.Camera
                 _initialSolarPos = _solarSystem.transform.position;
             _initialCameraPos = transform.position;
         }
+        
+        void OnEnable()
+        {
+            EnhancedTouchSupport.Enable();
+        }
+        
+        void OnDisable()
+        {
+            EnhancedTouchSupport.Disable();
+            _zoomTween?.Kill();
+            _moveTween?.Kill();
+        }
 
         void OnDestroy()
         {
             ServiceLocator.UnregisterService<CameraController2D>();
-            EnhancedTouchSupport.Disable();
         }
 
         void Update()
@@ -142,6 +152,8 @@ namespace Code.Scripts.Camera
 
         private void HandleMouseZoom()
         {
+            if (IsPointerOverUI(-1)) return;
+
             float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (scroll != 0f)
             {

@@ -29,4 +29,4 @@ MonoBehaviour:
   output:
     itemName: Fire Strike
     amount: 1
-  craftingTimeInSeconds: 4
+  craftingTimeInSeconds: 12
