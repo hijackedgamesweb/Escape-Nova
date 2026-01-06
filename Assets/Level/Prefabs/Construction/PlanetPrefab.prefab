@@ -153,6 +153,8 @@ GameObject:
   - component: {fileID: 6608905795044154727}
   - component: {fileID: 5986564092895029116}
   - component: {fileID: 7001912756886517866}
+  - component: {fileID: -8638929774476640603}
+  - component: {fileID: 1804378198337177356}
   m_Layer: 0
   m_Name: PlanetPrefab
   m_TagString: Untagged
@@ -322,6 +324,32 @@ MonoBehaviour:
   _progressSlider: {fileID: 7889943629155754394}
   _uiContainer: {fileID: 684061031994062262}
   _hideOnComplete: 1
+--- !u!114 &-8638929774476640603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458581737239859557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589566a7fb694e47b3a2c3e7a7e8ebd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeOnLoop: 0
+  interruptOptions: 0
+--- !u!114 &1804378198337177356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458581737239859557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a52063e43a4357a4c8f8e15fdae7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6722570669041737346
 GameObject:
   m_ObjectHideFlags: 0

@@ -469,14 +469,6 @@ namespace BehaviourAPI.UtilitySystems
                 {
                     newBestElement = currentCandidate;
                     currentHigherUtility = utility;
-                } else if (utility == currentHigherUtility)
-                {
-                    // If equal utility, randomly choose one of them.
-                    if (UnityEngine.Random.value > 0.5f)
-                    {
-                        newBestElement = currentCandidate;
-                        currentHigherUtility = utility;
-                    }
                 }
 
                 // If the current candidate is a locked bucket:

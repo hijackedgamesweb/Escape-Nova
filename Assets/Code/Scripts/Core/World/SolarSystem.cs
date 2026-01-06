@@ -104,6 +104,11 @@ namespace Code.Scripts.Core.World
             Planets[orbit][positionInOrbit] = planet;
             ConstructionEvents.OnConstructibleCreated?.Invoke(data);
             ConstructionEvents.OnPlanetAdded?.Invoke(planet);
+            var civManager = ServiceLocator.GetService<CivilizationManager>();
+            if (civManager != null)
+            {
+                civManager.TryAssignPlanetToCivilization(planet);
+            }
         }
 
         public void AddSateliteToPlanet(int orbitIndex, int positionInOrbit, SateliteDataSO sateliteDataSo)
@@ -134,6 +139,11 @@ namespace Code.Scripts.Core.World
             }
 
             Planet planet = Planets[orbit][positionInOrbit];
+            if (planet.Owner != null)
+            {
+                NotificationManager.Instance.CreateNotification($"Cannot destroy {planet.Name}: inhabited by {planet.Owner.CivilizationData.Name}!", NotificationType.Warning);
+                return; 
+            }
             string planetName = planet.Name;
             Destroy(planet.gameObject);
             Planets[orbit][positionInOrbit] = null;

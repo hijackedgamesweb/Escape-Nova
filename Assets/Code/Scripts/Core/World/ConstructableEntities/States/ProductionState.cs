@@ -86,7 +86,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
                     if (_storageSystem != null)
                     {
                         _storageSystem.AddResource(resourceType, amount);
-                        Debug.Log($"ProductionState: {_planetData.Name} produced {amount} {resourceType}");
                     }
                 }
             }
