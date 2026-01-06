@@ -1,5 +1,6 @@
 using System;
 using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.World.ConstructableEntities;
 
 namespace Code.Scripts.Core.Events
 {
@@ -16,6 +17,9 @@ namespace Code.Scripts.Core.Events
         public static event Action<Civilization> OnWarDeclaredToPlayer;
         public static event Action<Civilization> OnPeaceSigned;
         public static event Action<int, int> OnWarHealthUpdated;
+        public static event Action<Planet> OnWarStarted;
+        public static event Action<Planet> OnWarWon;
+        public static event Action<Planet> OnWarLost;
 
         public static bool IsResearchUnlocked { get; private set; }
         public static bool IsInventoryUnlocked { get; private set; }
@@ -92,6 +96,20 @@ namespace Code.Scripts.Core.Events
         public static void TriggerWarHealthUpdated(int enemyHealth, int playerHealth) 
         {
             OnWarHealthUpdated?.Invoke(enemyHealth, playerHealth);
+        }
+        public static void TriggerWarStarted(Planet planet)
+        {
+            OnWarStarted?.Invoke(planet);
+        }
+
+        public static void TriggerWarWon(Planet planet)
+        {
+            OnWarWon?.Invoke(planet);
+        }
+
+        public static void TriggerWarLost(Planet planet)
+        {
+            OnWarLost?.Invoke(planet);
         }
     }
 }

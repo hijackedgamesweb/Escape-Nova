@@ -1,6 +1,6 @@
 using Code.Scripts.Core.World.ConstructableEntities;
 using UnityEngine;
-using Code.Scripts.Core.World.ConstructableEntities;
+using Code.Scripts.Core.Events;
 
 public class PlanetStateManager : MonoBehaviour
 {
@@ -32,6 +32,9 @@ public class PlanetStateManager : MonoBehaviour
         if (_planet != null)
         {
             _planet.OnConstructionCompleted += FinConstruido;
+            SystemEvents.OnWarStarted += OnWarStarted;
+            SystemEvents.OnWarWon += OnWarWon;
+            SystemEvents.OnWarLost += OnWarLost;
         }
     }
 
@@ -40,6 +43,9 @@ public class PlanetStateManager : MonoBehaviour
         if (_planet != null)
         {
             _planet.OnConstructionCompleted -= FinConstruido;
+            SystemEvents.OnWarStarted -= OnWarStarted;
+            SystemEvents.OnWarWon -= OnWarWon;
+            SystemEvents.OnWarLost -= OnWarLost;
         }
     }
 
@@ -51,6 +57,23 @@ public class PlanetStateManager : MonoBehaviour
     {
         
     }
+    void OnWarStarted(Planet planet)
+    {
+        if (planet != GetComponent<Planet>()) return;
+        DeclararGuerra();
+    }
+
+    void OnWarWon(Planet planet)
+    {
+        if (planet != GetComponent<Planet>()) return;
+        VencerGuerra();
+    }
+
+    void OnWarLost(Planet planet)
+    {
+        if (planet != GetComponent<Planet>()) return;
+        PerderGuerra();
+    }
 
     void CambiarEstado(Estado nuevoEstado)
     {
@@ -60,6 +83,7 @@ public class PlanetStateManager : MonoBehaviour
         {
             animator.SetInteger("Estado", (int)estadoActual);
         }
+        
 
         Debug.Log("Estado cambiado a: " + estadoActual);
     }
