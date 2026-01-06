@@ -24,6 +24,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
     {
         protected UtilitySystem UtilitySystem = new UtilitySystem();
         protected Entity.Civilization.Civilization _civilization;
+        public Entity.Civilization.CivilizationData CivilizationData => _civilization.CivilizationData;
         protected WorldContext _worldContext;
         protected CommandInvoker _invoker;
         

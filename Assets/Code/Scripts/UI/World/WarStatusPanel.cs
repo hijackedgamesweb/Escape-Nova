@@ -1,7 +1,7 @@
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
-using Code.Scripts.Core.World; // Necesario para acceder al Player
+using Code.Scripts.Core.World;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,8 +26,6 @@ namespace Code.Scripts.UI.World
         private void Awake()
         {
             SystemEvents.OnWarHealthUpdated += UpdateUI;
-        
-            //if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void OnDestroy()
@@ -37,10 +35,17 @@ namespace Code.Scripts.UI.World
 
         private void Update()
         {
-            if (panelContainer.activeSelf && playerAmmoText != null)
+            if ((panelContainer != null && panelContainer.activeSelf) || gameObject.activeInHierarchy)
             {
-                UpdatePlayerAmmoText();
+                if (playerAmmoText != null) UpdatePlayerAmmoText();
             }
+        }
+
+        public void SetupBattle(string enemyName, int currentEnemyHealth, int currentPlayerHealth)
+        {
+            if (enemyNameText != null) 
+                enemyNameText.text = enemyName;
+            UpdateUI(currentEnemyHealth, currentPlayerHealth);
         }
 
         private void UpdatePlayerAmmoText()

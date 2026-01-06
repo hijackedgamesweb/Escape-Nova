@@ -18,7 +18,6 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         public override void Start()
         {
             Debug.Log($"<color=red>[{_planet.Name}] FSM: ¡GUERRA INICIADA contra {_planet.Aggressor?.CivilizationData.Name}!</color>");
-            // Visual: Activar alarmas, escudos rojos, partículas
             var animator = _planet.GetComponent<Animator>();
             if (animator != null)
             {
@@ -30,8 +29,6 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         {
             if (_planet.AssociatedAI != null && _planet.AssociatedAI.WarHealth <= 0)
             {
-                // Podríamos devolver Failure para indicar derrota, 
-                // pero lo gestionaremos mejor con una Transición y Percepción.
             }
             return Status.Running;
         }

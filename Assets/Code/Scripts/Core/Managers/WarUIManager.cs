@@ -16,10 +16,19 @@ namespace Code.Scripts.Core.Managers
 {
     public class WarUIManager : MonoBehaviour
     {
+        [Header("Main Close Button")]
+        [SerializeField] private Button closeWarWindowButton;
+        
+        [Header("Notification Panel (New)")]
+        [SerializeField] private GameObject notificationPanel;
+        [SerializeField] private TextMeshProUGUI notificationText; // El texto del mensaje
+        [SerializeField] private Button closeNotificationButton;
+        
         [Header("Paneles Principales")]
         [SerializeField] private GameObject proposalPanel;      
         [SerializeField] private GameObject consequencePanel;   
-        [SerializeField] private GameObject battlePanel;        
+        [SerializeField] private GameObject battlePanel;   
+        [SerializeField] private WarStatusPanel warStatusPanelScript;
 
         [Header("Battle UI Elements")]
         [SerializeField] private GameObject noAmmoPanel;        
@@ -50,11 +59,22 @@ namespace Code.Scripts.Core.Managers
         {
             _gameTime = ServiceLocator.GetService<IGameTime>();
             _timeConfig = ServiceLocator.GetService<TimeConfig>();
+            if (closeNotificationButton != null)
+            {
+                closeNotificationButton.onClick.RemoveAllListeners();
+                closeNotificationButton.onClick.AddListener(CloseNotification);
+            }
+
+            if (closeWarWindowButton != null)
+            {
+                closeWarWindowButton.onClick.RemoveAllListeners();
+                closeWarWindowButton.onClick.AddListener(OnCloseWarWindowClicked);
+            }
         }
 
         private void OnEnable()
         {
-            SystemEvents.OnWarDeclaredToPlayer += ShowProposal;
+            SystemEvents.OnWarDeclaredToPlayer += HandleWarDeclared;
             SystemEvents.OnPeaceSigned += HandlePeaceSigned;
             
             ResetCooldownUI();
@@ -62,7 +82,7 @@ namespace Code.Scripts.Core.Managers
 
         private void OnDisable()
         {
-            SystemEvents.OnWarDeclaredToPlayer -= ShowProposal;
+            SystemEvents.OnWarDeclaredToPlayer -= HandleWarDeclared;
             SystemEvents.OnPeaceSigned -= HandlePeaceSigned;
             
             if (_activeBehaviour != null)
@@ -79,14 +99,41 @@ namespace Code.Scripts.Core.Managers
                 }
             }
         }
+        
+        private void CloseWarInterface()
+        {
+            if (UnityEngine.Camera.main != null)
+            {
+                var camController = UnityEngine.Camera.main.GetComponent<Code.Scripts.Camera.CameraController2D>();
+                if (camController != null) 
+                    camController.ClearTarget();
+            }
+    
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX("Close");
+            }
 
+            battlePanel.SetActive(false);
+            proposalPanel.SetActive(false);
+            consequencePanel.SetActive(false);
+            noAmmoPanel.SetActive(false);
+            ResetCooldownUI();
+            if (_activeBehaviour != null)
+            {
+                _activeBehaviour.OnBattleLog -= AddLogToPanel;
+                _activeBehaviour = null;
+            }
+        }
+
+        private void OnCloseWarWindowClicked()
+        {
+            CloseWarInterface();
+        }
         
         private void ShowProposal(Civilization aggressor)
         {
             _currentAggressor = aggressor;
-            proposalPanel.SetActive(true);
-            consequencePanel.SetActive(false);
-            acceptButton.SetActive(true);
         }
 
         public void OnAcceptWar()
@@ -107,11 +154,65 @@ namespace Code.Scripts.Core.Managers
             }
         }
 
+        private void HandleWarDeclared(Civilization aggressor)
+        {
+            _currentAggressor = aggressor;
+            if (aggressor != null)
+            {
+                var behaviour = aggressor.AIController as BaseBehaviour;
+                if (behaviour != null)
+                {
+                    behaviour.StartWar();
+                    Debug.Log($"[AUTO-WAR] Started against {aggressor.CivilizationData.Name}");
+                }
+            }
+
+            if (notificationPanel != null)
+            {
+                notificationPanel.SetActive(true);
+                
+                if (notificationText != null)
+                {
+                    notificationText.text = $"WAR DECLARED!\nThe {aggressor.CivilizationData.Name} civilization is attacking us.\nCheck your borders immediately.";
+                }
+            }
+        }
+        
+        private void CloseNotification()
+        {
+            if (notificationPanel != null)
+            {
+                notificationPanel.SetActive(false);
+            }
+        }
+        
         public void OpenBattlePanelForPlanet(Planet planet, BaseBehaviour behaviour)
         {
-            battlePanel.SetActive(true);
-            proposalPanel.SetActive(false);
+            if (_activeBehaviour != null && _activeBehaviour != behaviour)
+            {
+                _activeBehaviour.OnBattleLog -= AddLogToPanel;
+            }
+
             _activeBehaviour = behaviour;
+            battlePanel.SetActive(true);
+            
+            if (warStatusPanelScript != null && _activeBehaviour != null)
+            {
+                string enemyName = _activeBehaviour.CivilizationData.Name;
+                int enemyHP = _activeBehaviour.WarHealth;
+                int playerHP = _activeBehaviour.PlayerSimulatedHealth;
+
+                warStatusPanelScript.SetupBattle(enemyName, enemyHP, playerHP);
+            }
+            if (notificationPanel.activeSelf) notificationPanel.SetActive(false);
+
+            if (_activeBehaviour != null)
+            {
+                _activeBehaviour.OnBattleLog -= AddLogToPanel;
+                _activeBehaviour.OnBattleLog += AddLogToPanel;
+                
+                AddLogToPanel($"<color=yellow>Interface linked to conflict with {_activeBehaviour.CivilizationData.Name}.</color>");
+            }
         }
         
         public void OnDeclineWar()
@@ -229,12 +330,15 @@ namespace Code.Scripts.Core.Managers
 
         private void HandlePeaceSigned(Civilization civ)
         {
-            battlePanel.SetActive(false);
-            ResetCooldownUI();
-            if (_activeBehaviour != null)
+            if (_activeBehaviour != null && _activeBehaviour.CivilizationData == civ.CivilizationData)
             {
-                _activeBehaviour.OnBattleLog -= AddLogToPanel;
-                _activeBehaviour = null;
+                Debug.Log($"[WAR UI] Victory/Peace with {civ.CivilizationData.Name}. Closing view.");
+                CloseWarInterface(); 
+            }
+            else if (_activeBehaviour == null)
+            {
+                ResetCooldownUI();
+                battlePanel.SetActive(false);
             }
         }
     }
