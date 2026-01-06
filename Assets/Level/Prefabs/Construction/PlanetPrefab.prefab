@@ -338,6 +338,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeOnLoop: 0
   interruptOptions: 0
+  producingAnim: Produciendo
+  colonizedAnim: Colonizado
+  conflictAnim: EnConflicto
+  conqueredAnim: Conquistado
+  destroyedAnim: Destruido
 --- !u!114 &1804378198337177356
 MonoBehaviour:
   m_ObjectHideFlags: 0

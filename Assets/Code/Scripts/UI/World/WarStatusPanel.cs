@@ -26,17 +26,13 @@ namespace Code.Scripts.UI.World
         private void Awake()
         {
             SystemEvents.OnWarHealthUpdated += UpdateUI;
-            SystemEvents.OnWarDeclaredToPlayer += ShowPanel;
-            SystemEvents.OnPeaceSigned += HidePanel;
         
-            if(panelContainer != null) panelContainer.SetActive(false);
+            //if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void OnDestroy()
         {
             SystemEvents.OnWarHealthUpdated -= UpdateUI;
-            SystemEvents.OnWarDeclaredToPlayer -= ShowPanel;
-            SystemEvents.OnPeaceSigned -= HidePanel;
         }
 
         private void Update()
@@ -54,19 +50,6 @@ namespace Code.Scripts.UI.World
                 int ammo = WorldManager.Instance.Player.StorageSystem.GetItemCount("Fire Strike");
                 playerAmmoText.text = $"Fire Strikes: {ammo}";
             }
-        }
-
-        private void ShowPanel(Code.Scripts.Core.Entity.Civilization.Civilization civ)
-        {
-            if(panelContainer != null) panelContainer.SetActive(true);
-            if(enemyNameText != null) enemyNameText.text = civ.CivilizationData.Name;
-        
-            UpdateUI(100, 100);
-        }
-
-        private void HidePanel(Code.Scripts.Core.Entity.Civilization.Civilization civ)
-        {
-            if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void UpdateUI(int enemyHealth, int playerHealth)

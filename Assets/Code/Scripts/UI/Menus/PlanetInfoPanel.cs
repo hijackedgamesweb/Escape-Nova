@@ -147,13 +147,14 @@ namespace Code.Scripts.UI.Menus
         private void OnDeletePlanetClicked()
         {
             if (_currentPlanet == null) return;
-
-            SolarSystem solarSystem = ServiceLocator.GetService<SolarSystem>();
-            if (solarSystem != null)
+            if (!_currentPlanet.CanBeDestroyedByPlayer(out string reason))
             {
-                solarSystem.RemovePlanet(_currentPlanet.OrbitIndex, _currentPlanet.PlanetIndex);
+                NotificationManager.Instance.CreateNotification(reason, NotificationType.Error);
+                Debug.Log($"<color=yellow>[UI] Deleting try blocked: {reason}</color>");
+                return; 
             }
-            
+
+            _currentPlanet.DestroyPlanet();
             OnCloseButtonClicked();
         }
     }

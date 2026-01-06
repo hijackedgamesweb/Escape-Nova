@@ -8,8 +8,9 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
     public class ConflictAction : Action
     {
         private Planet _planet;
+        private string _animName;
 
-        public ConflictAction(Planet planet)
+        public ConflictAction(Planet planet,  string animName)
         {
             _planet = planet;
         }
@@ -18,6 +19,11 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         {
             Debug.Log($"<color=red>[{_planet.Name}] FSM: ¡GUERRA INICIADA contra {_planet.Aggressor?.CivilizationData.Name}!</color>");
             // Visual: Activar alarmas, escudos rojos, partículas
+            var animator = _planet.GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.Play(_animName);
+            }
         }
 
         public override Status Update()
