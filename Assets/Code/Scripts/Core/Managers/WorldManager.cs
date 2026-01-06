@@ -156,5 +156,10 @@ namespace Code.Scripts.Core.Managers
                 if(obj["Civilizations"] != null) _civilizationManager.RestoreState(obj["Civilizations"]);
             }
         }
+
+        public void RemoveCivilization(Civilization civilization)
+        {
+            _civilizationManager.RemoveCivilization(civilization);
+        }
     }
 }

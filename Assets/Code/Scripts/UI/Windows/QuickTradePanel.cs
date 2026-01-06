@@ -13,7 +13,8 @@ namespace Code.Scripts.UI.Windows
     {
         Offrend,
         Tribute,
-        Quest
+        Quest,
+        Message
     }
     
     public class QuickTradePanel : MonoBehaviour
@@ -59,6 +60,21 @@ namespace Code.Scripts.UI.Windows
             UpdatePanel();
             gameObject.SetActive(true);
         }
+        
+        
+        public void InitializeMessage(Civilization civilization, string message)
+        {
+            _currentCivilization = civilization;
+            tradeType = QuickTradeType.Message;
+            UpdatePanel();
+            UpdateMessage(message);
+            gameObject.SetActive(true);
+        }
+        
+        private void UpdateMessage(string message)
+        {
+            _tradeText.text = message;
+        }
 
         private void UpdatePanel()
         {
@@ -68,6 +84,7 @@ namespace Code.Scripts.UI.Windows
 
             _civilizationIcon.sprite = _currentCivilization.CivilizationData.CivilizationIcon;
 
+            _declineButton.gameObject.SetActive(true);
             switch (tradeType)
             {
                 case QuickTradeType.Tribute:
@@ -93,6 +110,13 @@ namespace Code.Scripts.UI.Windows
                     _resourceAmountText.alignment = TextAlignmentOptions.Center;
                     _resourceIcon.color = Color.clear;
                     break;
+                case QuickTradeType.Message:
+                    _tradeText.text =
+                        $"The {_currentCivilization.CivilizationData.Name} civilization decided to leave your solar system due to some ethical disagreements. ";
+                    _resourceAmountText.text = "";
+                    _resourceIcon.color = Color.clear;
+                    _declineButton.gameObject.SetActive(false);
+                    break;
             }
             _acceptButton.onClick.AddListener(AcceptTrade);
             _declineButton.onClick.AddListener(DeclineTrade);
@@ -112,6 +136,10 @@ namespace Code.Scripts.UI.Windows
                 case QuickTradeType.Quest:
                     Debug.Log("Quest declined.");
                     break;
+                case QuickTradeType.Message:
+                    Debug.Log($"Quest {_currentCivilization.CivilizationData.CivilizationQuest.Title} accepted.");
+                    _questManager.StartSecondaryQuest(_currentCivilization.CivilizationData.CivilizationQuest);
+                    break;
             }
             gameObject.SetActive(false);
         }
@@ -129,6 +157,8 @@ namespace Code.Scripts.UI.Windows
                 case QuickTradeType.Quest:
                     Debug.Log($"Quest {_currentCivilization.CivilizationData.CivilizationQuest.Title} accepted.");
                     _questManager.StartSecondaryQuest(_currentCivilization.CivilizationData.CivilizationQuest);
+                    break;
+                case QuickTradeType.Message:
                     break;
             }
             gameObject.SetActive(false);

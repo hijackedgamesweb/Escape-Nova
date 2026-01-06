@@ -41,16 +41,16 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             
             
             //Ofendidos
-            UtilitySystem.CreateAction(disgustedFusion, _actions["SeekHelp"]);
+            UtilitySystem.CreateAction(disgustedFusion, _actions["Runaway"]);
             
             //Generosos
-            UtilitySystem.CreateAction(loveFusion, _actions["SeekHelp"]);
+            UtilitySystem.CreateAction(loveFusion, _actions["Runaway"]);
             
             //Beligerantes
-            UtilitySystem.CreateAction(enemyFusion, _actions["DeclareWar"]);
+            UtilitySystem.CreateAction(enemyFusion, _actions["Runaway"]);
             
             //Necesitados
-            UtilitySystem.CreateAction(neededFusion, _actions["SeekHelp"]);
+            UtilitySystem.CreateAction(neededFusion, _actions["Runaway"]);
             
         }
 

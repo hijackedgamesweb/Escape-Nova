@@ -15,7 +15,7 @@ MonoBehaviour:
   QuestId: MisionMippip
   Title: Mippip Quest
   Description: Build a new Litosidera planet
-  CompletionGameInfo: {fileID: 11400000, guid: f1e35c76ddf03a94e9d0cd306e50f4a8, type: 2}
+  CompletionGameInfo: {fileID: 11400000, guid: ccddb80683977dd4ca442e4410b07e39, type: 2}
   Objectives:
   - rid: 1576003810842640461
   Rewards:

@@ -14,7 +14,6 @@ namespace Code.Scripts.Core.Events
         public static event Action OnRequestMainMenu;
         public static event Action OnGameOver; 
         
-        public static event Action<Civilization> OnWarDeclaredToPlayer;
         public static event Action<Civilization> OnPeaceSigned;
         public static event Action<int, int> OnWarHealthUpdated;
 

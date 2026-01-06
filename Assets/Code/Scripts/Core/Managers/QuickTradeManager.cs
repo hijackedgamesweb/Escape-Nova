@@ -24,6 +24,11 @@ namespace Code.Scripts.Core.Managers
         {
             _currentQuickTradePanel.InitializeQuest(civilization);
         }
+        
+        public void CreateMessage(Civilization civilization, string message)
+        {
+            _currentQuickTradePanel.InitializeMessage(civilization, message);
+        }
 
     }
 }

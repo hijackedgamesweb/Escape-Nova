@@ -24,6 +24,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
     {
         protected UtilitySystem UtilitySystem = new UtilitySystem();
         protected Entity.Civilization.Civilization _civilization;
+        protected WorldContext _worldContext;
         protected CommandInvoker _invoker;
         
         protected Dictionary<string, CurveFactor> _curveFactors = new Dictionary<string, CurveFactor>();
@@ -127,39 +128,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             };
             _curveFactors["FaithCurve"] = faithCurve;
             
-            // ACCIONES DEL UTILITY SYSTEM
-            _actions["SetDisgusted"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Disgusted); return Status.Success; }, () => { });
-            _actions["SetProgressive"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Progressive); return Status.Success; }, () => { });
-            _actions["SetNeeded"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Needed); return Status.Success; }, () => { });
-            _actions["SetAlly"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Ally); return Status.Success; }, () => { });
-            _actions["SetCommerce"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Commerce); return Status.Success; }, () => { });
-            _actions["SetLove"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Love); return Status.Success; }, () => { });
-            _actions["SetNegotiation"] = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Negotiation); return Status.Success; }, () => { });
-            
-            FunctionalAction setProgressive = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Progressive); return Status.Success; }, () => { });
-            _actions["SetProgressive"] = setProgressive;
-            
-            FunctionalAction setNeeded = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Needed); return Status.Success; }, () => { });
-            _actions["SetNeeded"] = setNeeded;
-            
-            FunctionalAction setAlly = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Ally); return Status.Success; }, () => { });
-            _actions["SetAlly"] = setAlly;
-            
-            FunctionalAction setCommerce = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Commerce); return Status.Success; }, () => { });
-            _actions["SetCommerce"] = setCommerce;
-            
-            FunctionalAction setLove = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Love); return Status.Success; }, () => { });
-            _actions["SetLove"] = setLove;
-            
-            FunctionalAction setNegotiation = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Negotiation); return Status.Success; }, () => { });
-            _actions["SetNegotiation"] = setNegotiation;
-            
-            FunctionalAction setBelligerent = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent); return Status.Success; }, () => { });
-            _actions["SetBelligerent"] = setBelligerent;
-            
-            FunctionalAction setPeaceful = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Peaceful); return Status.Success; }, () => { });
-            _actions["SetPeaceful"] = setPeaceful;
-            
             FunctionalAction demandTribute = new FunctionalAction(
                 () => { },
                 () =>
@@ -170,6 +138,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 }, 
                 () => { });
             _actions["DemandTribute"] = demandTribute;
+            
             FunctionalAction offerGift = new FunctionalAction(
                 () => { },
                 () =>
@@ -180,34 +149,6 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
                 }, 
                 () => { });
             _actions["OfferGift"] = offerGift;
-            
-            FunctionalAction setOffended = new FunctionalAction(() => { }, () => { _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Offended); return Status.Success; }, () => { });
-            _actions["SetOffended"] = setOffended;
-            
-            FunctionalAction declareWar = new FunctionalAction(
-                
-                () => Debug.Log("Declare War"),
-                () =>
-                {
-                    _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent); 
-                    SystemEvents.OnWarDeclaredToPlayer?.Invoke(_civilization);
-                    return Status.Success;
-                },
-                () => Debug.Log("Declared War")
-            );
-            _actions["DeclareWar"] = declareWar;
-            
-            FunctionalAction proposeAlliance = new FunctionalAction(
-                
-                () => Debug.Log("Propose Alliance"),
-                () =>
-                {
-                    Debug.Log("Proposing Alliance");
-                    return Status.Success;
-                },
-                () => Debug.Log("Proposed Alliance")
-            );
-            _actions["ProposeAlliance"] = proposeAlliance;
             
             FunctionalAction seekHelp = new FunctionalAction(
                 
@@ -222,78 +163,31 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             );
             _actions["SeekHelp"] = seekHelp;
             
-            FunctionalAction increaseTrade = new FunctionalAction(
-                
-                () => Debug.Log("Increase Trade"),
-                () =>
-                {
-                    Debug.Log("Increase Trade");
-                    return Status.Success;
-                },
-                () => Debug.Log("Increased Trade")
-            );
-            _actions["IncreaseTrade"] = increaseTrade;
-            
             FunctionalAction runaway = new FunctionalAction(
                 
                 () => Debug.Log("Run Away"),
                 () =>
                 {
                     Debug.Log("Running Away");
-                    _civilization.CivilizationState.FriendlinessLevel = 1f;
-                    _civilization.CivilizationState.InterestLevel = 1f;
+                    QuickTradeManager.Instance.CreateMessage(_civilization, $"The {_civilization.CivilizationData.Name} civilization decided to leave your solar system due to some ethical disagreements.");
+                    WorldManager.Instance.RemoveCivilization(_civilization);
                     return Status.Success;
                 },
                 () => Debug.Log("Ran Away")
             );
             _actions["Runaway"] = runaway;
-            
-            FunctionalAction proposeInvestigation = new FunctionalAction(
-                
-                () => Debug.Log("Propose Investigation"),
-                () =>
-                {
-                    Debug.Log("Proposing Investigation");
-                    return Status.Success;
-                },
-                () => Debug.Log("Proposed Investigation")
-            );
-            _actions["ProposeInvestigation"] = proposeInvestigation;
-            
-            FunctionalAction exchangeTreaty = new FunctionalAction(
-                
-                () => Debug.Log("Exchange Treaty"),
-                () =>
-                {
-                    Debug.Log("Exchanging Treaty");
-                    return Status.Success;
-                },
-                () => Debug.Log("Exchanged Treaty")
-            );
-            _actions["ExchangeTreaty"] = exchangeTreaty;
-            
-            FunctionalAction giveAid = new FunctionalAction(
-                
-                () => Debug.Log("Give Aid"),
-                () =>
-                {
-                    Debug.Log("Giving Aid");
-                    return Status.Success;
-                },
-                () => Debug.Log("Gave Aid")
-            );
-            _actions["GiveAid"] = giveAid;
-
-            _actions["SetBelligerent"] = new FunctionalAction(
+         
+            FunctionalAction declareWar = new FunctionalAction(
                 () => { }, 
                 () => { 
+                    Debug.Log("Declaring War");
                     _civilization.CivilizationState.SetCurrentMood(Entity.EntityMood.Belligerent);
                     TryTriggerWarDeclaration(); 
                     return Status.Success; 
                 }, 
                 () => { }
             );
-            _actions["SetBelligerent"] = _actions["SetBelligerent"];
+            _actions["DeclareWar"] = declareWar;
         }
 
         private void LogBattle(string message)
@@ -450,6 +344,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
         private void TryTriggerWarDeclaration()
         {
+            Debug.Log("[WAR] Trying to declare war...");
             if (_isAtWarWithPlayer) return;
             SystemEvents.TriggerWarDeclared(_civilization);
         }
@@ -493,6 +388,11 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
 
         public void UpdateAI(WorldContext context)
         {
+            
+            _worldContext = context;
+            if((int) context.CurrentTurn % 5 == 0)    
+                UtilitySystem.Update();
+            
             if (_isAtWarWithPlayer)
             {
                 _warTree.Update();
