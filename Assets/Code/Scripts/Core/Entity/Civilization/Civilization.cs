@@ -71,8 +71,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 case "Akki":
                     CivilizationState.AddInterest(0.05f);
                     break;
-                    
             }
+            
         }
 
         public void DenyTradeOffer()

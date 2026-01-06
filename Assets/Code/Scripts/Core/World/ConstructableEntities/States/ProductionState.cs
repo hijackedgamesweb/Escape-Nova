@@ -43,7 +43,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
                 ConstructionEvents.OnResourceProductionAdded?.Invoke(_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
             }
 
-            Debug.Log($"ProductionState: {_planetData.Name} started production (cycles)");
         }
 
         public void Exit(IStateManager gameManager)
@@ -57,7 +56,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
                 ConstructionEvents.OnResourceProductionAdded?.Invoke(-_planetData.ResourcePerCycle[i], _planetData.ProducibleResources[i]);
             }
 
-            Debug.Log($"ProductionState: {_planetData.Name} stopped production");
         }
 
         private void OnCycleCompleted(int currentCycle)
@@ -86,7 +84,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
                     if (_storageSystem != null)
                     {
                         _storageSystem.AddResource(resourceType, amount);
-                        Debug.Log($"ProductionState: {_planetData.Name} produced {amount} {resourceType}");
                     }
                 }
             }

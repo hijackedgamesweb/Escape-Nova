@@ -30,6 +30,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 FriendlinessLevel = 0f;
             if (FriendlinessLevel > 1)
                 FriendlinessLevel = 1;
+            
+            UIEvents.OnUpdateCivilizationUI?.Invoke();
         }
         
         public void AddDependency(float amount)
@@ -39,6 +41,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 DependencyLevel = 0f;
             if (DependencyLevel > 1)
                 DependencyLevel = 1;
+            
+            UIEvents.OnUpdateCivilizationUI?.Invoke();
         }
         
         public void AddInterest(float amount)
@@ -48,6 +52,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 InterestLevel = 0f;
             if (InterestLevel > 1)
                 InterestLevel = 1;
+            
+            UIEvents.OnUpdateCivilizationUI?.Invoke();
         }
         
         public void AddTrust(float amount)
@@ -57,6 +63,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 TrustLevel = 0f;
             if (TrustLevel > 1)
                 TrustLevel = 1;
+            
+            UIEvents.OnUpdateCivilizationUI?.Invoke();
         }
 
         public string GetSaveId()
