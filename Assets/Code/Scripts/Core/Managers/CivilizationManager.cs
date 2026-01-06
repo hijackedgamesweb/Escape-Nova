@@ -132,5 +132,14 @@ namespace Code.Scripts.Core.Managers
                 _civilizations.Add(civ);
             }
         }
+
+        public void RemoveCivilization(Civilization civilization)
+        {
+            if (_civilizations.Contains(civilization))
+            {
+                _civilizations.Remove(civilization);
+                OnNewCivilizationDiscovered?.Invoke(civilization, false);
+            }
+        }
     }
 }

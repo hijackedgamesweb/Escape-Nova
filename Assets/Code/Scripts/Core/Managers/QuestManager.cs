@@ -82,6 +82,20 @@ namespace Code.Scripts.Core.Managers
             }
         }
         
+        public void StartSecondaryQuest(QuestData questData)
+        {
+            if (activeQuests.Any(q => q.questData.QuestId == questData.QuestId))
+            {
+                return;
+            }
+                
+            var questInstance = new QuestInstance(questData);
+            questInstance.isActive = true;
+            activeQuests.Add(questInstance);
+            visibleQuests.Add(questData);
+            OnVisibleQuestsChanged?.Invoke();
+        }
+        
         private void Start()
         {
         }
@@ -102,6 +116,7 @@ namespace Code.Scripts.Core.Managers
                         reward.ApplyReward();
                     }
                     completedQuests.Add(q.questData);
+                    visibleQuests.Remove(q.questData);
                     OnQuestCompleted?.Invoke(q);
                     CheckForSetCompletion();
                 }
@@ -110,8 +125,6 @@ namespace Code.Scripts.Core.Managers
 
         private void LoadCurrentQuestSet()
         {
-            visibleQuests.Clear();
-
             if (currentQuestSetIndex < allQuestSets.Count)
             {
                 var questsInSet = allQuestSets[currentQuestSetIndex].quests;

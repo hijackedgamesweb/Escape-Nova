@@ -7,6 +7,7 @@ namespace Code.Scripts.Core.Events
     public static class SystemEvents
     {
         public static event Action OnResearchUnlocked;
+        public static Action<Civilization> OnWarDeclaredToPlayer;
         public static event Action OnInventoryUnlocked;
         public static event Action OnConstellationsUnlocked;
         public static event Action OnDiplomacyUnlocked;
@@ -14,7 +15,6 @@ namespace Code.Scripts.Core.Events
         public static event Action OnRequestMainMenu;
         public static event Action OnGameOver; 
         
-        public static event Action<Civilization> OnWarDeclaredToPlayer;
         public static event Action<Civilization> OnPeaceSigned;
         public static event Action<int, int> OnWarHealthUpdated;
         public static event Action<Planet> OnWarStarted;
