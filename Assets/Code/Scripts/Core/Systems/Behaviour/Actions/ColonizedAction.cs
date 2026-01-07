@@ -9,15 +9,23 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
     public class ColonizedAction : Action
     {
         private Planet _planet;
+        private string _animName;
 
-        public ColonizedAction(Planet planet)
+        public ColonizedAction(Planet planet, string animName)
         {
             _planet = planet;
+            _animName = animName;
         }
 
         public override void Start()
         {
             Debug.Log($"[{_planet.Name}] FSM: Estado COLONIZADO por {_planet.Owner?.CivilizationData.Name}");
+            _planet.WinWar();
+            var animator = _planet.GetComponentInChildren<Animator>();
+            if (animator != null)
+            {
+                animator.Play(_animName);
+            }
         }
 
         public override Status Update()

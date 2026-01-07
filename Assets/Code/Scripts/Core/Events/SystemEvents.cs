@@ -4,6 +4,11 @@ using Code.Scripts.Core.World.ConstructableEntities;
 
 namespace Code.Scripts.Core.Events
 {
+    public enum WarResult
+    {
+        Victory, // Ganamos nosotros
+        Defeat   // Gana la IA (nos conquista)
+    }
     public static class SystemEvents
     {
         public static event Action OnResearchUnlocked;
@@ -15,7 +20,7 @@ namespace Code.Scripts.Core.Events
         public static event Action OnRequestMainMenu;
         public static event Action OnGameOver; 
         
-        public static event Action<Civilization> OnPeaceSigned;
+        public static event Action<Civilization, WarResult> OnPeaceSigned;
         public static event Action<int, int> OnWarHealthUpdated;
         public static event Action<Planet> OnWarStarted;
         public static event Action<Planet> OnWarWon;
@@ -88,9 +93,9 @@ namespace Code.Scripts.Core.Events
             OnWarDeclaredToPlayer?.Invoke(aggressor);
         }
 
-        public static void TriggerPeaceSigned(Civilization civ) 
+        public static void TriggerPeaceSigned(Civilization civ, WarResult result) 
         {
-            OnPeaceSigned?.Invoke(civ);
+            OnPeaceSigned?.Invoke(civ, result); 
         }
 
         public static void TriggerWarHealthUpdated(int enemyHealth, int playerHealth) 

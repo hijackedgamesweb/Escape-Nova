@@ -4,72 +4,71 @@ using BehaviourAPI.StateMachines;
 using Code.Scripts.Core.Systems.Behaviour.Actions;
 using Code.Scripts.Core.Systems.Behaviour.Perceptions;
 using Code.Scripts.Core.World.ConstructableEntities;
+using UnityEngine;
 
 namespace Code.Scripts.Core.Systems.Behaviour
 {
     public class PlanetFSM : FSM
     {
-        // Exponemos los estados para que el Runner y el Planet puedan leerlos
         public State ProducingState { get; private set; }
         public State ColonizedState { get; private set; }
         public State ConflictState { get; private set; }
         public State ConqueredState { get; private set; }
         public State DestroyedState { get; private set; }
 
-        public PlanetFSM(Planet planet)
+        public PlanetFSM(Planet planet, PlanetBehaviourRunner config)
         {
-            // 1. CREAR NODOS (ESTADOS)
-            
             ProducingState = CreateNode<State>("Producing");
-            ProducingState.Action = new ProducingAction(planet);
+            ProducingState.Action = new ProducingAction(planet, config.producingAnim);
 
             ColonizedState = CreateNode<State>("Colonized");
-            ColonizedState.Action = new ColonizedAction(planet);
+            ColonizedState.Action = new ColonizedAction(planet, config.colonizedAnim);
 
             ConflictState = CreateNode<State>("Conflict");
-            ConflictState.Action = new ConflictAction(planet);
+            ConflictState.Action = new ConflictAction(planet, config.conflictAnim);
 
             ConqueredState = CreateNode<State>("Conquered");
-            ConqueredState.Action = new ConqueredAction(planet);
+            ConqueredState.Action = new ConqueredAction(planet, config.conqueredAnim);
 
             DestroyedState = CreateNode<State>("Destroyed");
-            DestroyedState.Action = new DestroyedAction(planet);
+            DestroyedState.Action = new DestroyedAction(planet, config.destroyedAnim);
 
-            // Source -> Transition -> Target
-
-            // A. Producing -> Colonized
             CreateTransition(ProducingState, ColonizedState, new HasOwnerPerception(planet));
-
-            // B. Colonized -> Conflict
             CreateTransition(ColonizedState, ConflictState, new WarDeclaredPerception(planet));
-
-            // C. Conflict -> Conquered
             CreateTransition(ConflictState, ConqueredState, new WarLostPerception(planet));
-
-            // D. Conflict -> Colonized (Paz)
             CreateTransition(ConflictState, ColonizedState, new WarWonPerception(planet));
 
-            // E. Transiciones a Destroyed
-            CreateTransition(ConflictState, DestroyedState, new PlanetDestroyedPerception(planet));
+            CreateTransition(ProducingState, DestroyedState, new PlanetDestroyedPerception(planet));
             CreateTransition(ColonizedState, DestroyedState, new PlanetDestroyedPerception(planet));
-            CreateTransition(ConqueredState, DestroyedState, new PlanetDestroyedPerception(planet));
+        }
 
-            // 3. ESTADO INICIAL
-            SetCurrentState(ProducingState, null);
+        protected override void OnStarted()
+        {
+            if (_currentState == null)
+            {
+                SetCurrentState(ProducingState, null);
+            }
         }
 
         private void CreateTransition(State from, State to, Perception perception)
         {
-            // Creamos el nodo de transición
-            var transition = CreateNode<StateTransition>();
-            transition.Perception = perception;
-
-            // Origen -> Transición
-            Connect(from, transition);
-
-            // Transición -> Destino
-            // StateTransition.BuildConnections usa el primer hijo como target
-            Connect(transition, to);
+            base.CreateTransition(
+                from, 
+                to, 
+                perception, 
+                null,
+                StatusFlags.Running | StatusFlags.Success | StatusFlags.Failure
+            );
+        }
+        
+        public string GetCurrentStateName()
+        {
+            if (_currentState == null) return "NULL";
+            foreach (var pair in GetNodeNames())
+            {
+                if (pair.Key == _currentState) return pair.Value;
+            }
+            return "Unknown";
         }
     }
 }

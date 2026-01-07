@@ -73,20 +73,25 @@ namespace Code.Scripts.UI.Menus
         private void CalculateAndDisplayTotalProduction()
         {
             Dictionary<ResourceType, int> totalProduction = new Dictionary<ResourceType, int>();
-
+        
             foreach (var orbit in _solarSystem.Planets)
             {
                 foreach (var planet in orbit)
                 {
                     if (planet != null && planet.ProducibleResources != null)
                     {
+                        if (planet.IsConquered) 
+                        {
+                            continue; 
+                        }
+        
                         for (int i = 0; i < planet.ProducibleResources.Count; i++)
                         {
                             if (i < planet.ResourcePerCycle.Length)
                             {
                                 ResourceType type = planet.ProducibleResources[i];
                                 int amount = planet.ResourcePerCycle[i];
-
+        
                                 if (!totalProduction.ContainsKey(type))
                                 {
                                     totalProduction[type] = 0;
@@ -97,11 +102,21 @@ namespace Code.Scripts.UI.Menus
                     }
                 }
             }
-
+        
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("<b>Total System Production</b>\n");
-
-            if (totalProduction.Count == 0)
+            
+            bool hasActiveProduction = false;
+            foreach (var kvp in totalProduction)
+            {
+                if (kvp.Value > 0)
+                {
+                    hasActiveProduction = true;
+                    break;
+                }
+            }
+        
+            if (!hasActiveProduction)
             {
                 sb.AppendLine("No production active.");
             }
@@ -115,7 +130,7 @@ namespace Code.Scripts.UI.Menus
                     }
                 }
             }
-
+        
             if (_totalProductionText != null)
                 _totalProductionText.text = sb.ToString();
         }
