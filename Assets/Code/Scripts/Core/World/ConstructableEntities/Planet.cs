@@ -105,6 +105,8 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             _spriteRenderer.sprite = data.sprite;
             Name = data.constructibleName;
             this.transform.localScale = Vector3.one * data.size;
+            
+            if(_animator == null) _animator = GetComponent<Animator>();
             _behaviourRunner = GetComponent<PlanetBehaviourRunner>();
             
             if (_behaviourRunner != null)
@@ -115,9 +117,16 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             if (_animator != null)
             {
                 _animator.Play("Construyendo");
-            
-                float animSpeed = 1f / TimeToBuild; 
-                _animator.speed = animSpeed;
+
+                if (TimeToBuild>0)
+                {
+                    float animSpeed = 1f / TimeToBuild; 
+                    _animator.speed = animSpeed;
+                }
+                else
+                {
+                    _animator.speed = 1f;
+                }
             }
             
             ResourcePerCycle = (int[])data.resourcePerCycle.Clone();
