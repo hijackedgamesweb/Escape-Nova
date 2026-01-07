@@ -1,5 +1,4 @@
 using System;
-using System;
 using System.Collections.Generic;
 using Code.Scripts.Camera;
 using Code.Scripts.Core.Entity.Civilization;
@@ -42,6 +41,17 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public event Action<Civilization> OnOwnerChanged;
         
         public bool IsDestroyed { get; private set; } = false;
+        public bool IsConquered 
+        {
+            get 
+            {
+                if (_behaviourRunner != null && _behaviourRunner.enabled && _behaviourRunner.PlanetGraph != null)
+                {
+                    return _behaviourRunner.PlanetGraph.IsCurrentState(_behaviourRunner.PlanetGraph.ConqueredState);
+                }
+                return false;
+            }
+        }
 
         PlanetStateManager _stateManager;
         private Dictionary<string, float> _improvementPercentages = new Dictionary<string, float>();
@@ -173,6 +183,8 @@ namespace Code.Scripts.Core.World.ConstructableEntities
 
         public int GetResourceProductionOfType(ResourceType type)
         {
+            if (IsConquered) return 0;
+
             for (int i = 0; i < ProducibleResources.Count; i++)
             {
                 if (ProducibleResources[i] == type)
@@ -180,7 +192,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                     return ResourcePerCycle[i];
                 }
             }
-
             return 0;
         }
 
@@ -202,6 +213,11 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public bool CanBeDestroyedByPlayer(out string reason)
         {
             reason = string.Empty;
+            if (Owner != null)
+            {
+                reason = $"Cannot destroy planet: Inhabited by {Owner.CivilizationData.Name}!";
+                return false;
+            }
 
             if (AssociatedAI != null && AssociatedAI._isAtWarWithPlayer)
             {
@@ -229,13 +245,12 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             return true;
         }
         
-        //FSM !! ! ! ! ! ! ! 
-        
         public void DestroyPlanet()
         {
             IsDestroyed = true;
             bool fsmActive = _behaviourRunner != null && _behaviourRunner.enabled;
             Debug.Log($"<color=cyan>[CHIVATO 1] DestroyPlanet llamado. IsDestroyed=TRUE. ¿FSM Encendida?: {fsmActive}</color>");
+            
             if (_behaviourRunner == null || !_behaviourRunner.enabled)
             {
                 Debug.Log($"[{Name}] Borrando durante construcción (sin animación de FSM).");
@@ -283,8 +298,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             EstablishContact(conqueror);
         }
         
-        // // // 
-
         private void ApplyExistingGlobalImprovements()
         {
             foreach (var improvement in _globalImprovements)

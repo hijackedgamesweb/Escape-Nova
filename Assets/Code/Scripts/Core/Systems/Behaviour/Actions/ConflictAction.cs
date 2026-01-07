@@ -13,12 +13,13 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         public ConflictAction(Planet planet,  string animName)
         {
             _planet = planet;
+            _animName = animName;
         }
 
         public override void Start()
         {
             Debug.Log($"<color=red>[{_planet.Name}] FSM: ¡GUERRA INICIADA contra {_planet.Aggressor?.CivilizationData.Name}!</color>");
-            var animator = _planet.GetComponent<Animator>();
+            var animator = _planet.GetComponentInChildren<Animator>();
             if (animator != null)
             {
                 animator.Play(_animName);

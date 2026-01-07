@@ -24,6 +24,12 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         {
             Debug.Log($"<color=red>[{_planet.Name}] FSM: Ejecutando DestroyedAction ({_animName})</color>");
             
+            var spriteRenderer = _planet.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.enabled = false;
+            }
+
             var animator = _planet.GetComponentInChildren<Animator>();
             if (animator != null)
             {

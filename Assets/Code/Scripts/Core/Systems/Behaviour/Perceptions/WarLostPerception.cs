@@ -10,8 +10,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Perceptions
 
         public override bool Check()
         {
-            // Si estamos en guerra y la vida bajó a 0
-            if (_planet.AssociatedAI != null && _planet.AssociatedAI.WarHealth <= 0)
+            if (_planet.AssociatedAI != null && _planet.AssociatedAI.PlayerSimulatedHealth <= 0)
             {
                 return true;
             }

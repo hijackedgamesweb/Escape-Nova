@@ -16,12 +16,18 @@ namespace Code.Scripts.Core.Managers
 {
     public class WarUIManager : MonoBehaviour
     {
+        [Header("War Result Panel")]
+        [SerializeField] private GameObject resultPanel;
+        [SerializeField] private TextMeshProUGUI resultTitleText;
+        [SerializeField] private TextMeshProUGUI resultDescriptionText;
+        [SerializeField] private Button closeResultButton;
+        
         [Header("Main Close Button")]
         [SerializeField] private Button closeWarWindowButton;
         
         [Header("Notification Panel (New)")]
         [SerializeField] private GameObject notificationPanel;
-        [SerializeField] private TextMeshProUGUI notificationText; // El texto del mensaje
+        [SerializeField] private TextMeshProUGUI notificationText;
         [SerializeField] private Button closeNotificationButton;
         
         [Header("Paneles Principales")]
@@ -343,17 +349,24 @@ namespace Code.Scripts.Core.Managers
         public void OnCloseNoAmmoPanel() { noAmmoPanel.SetActive(false); }
         public void OnCloseConsequences() { consequencePanel.SetActive(false); }
 
-        private void HandlePeaceSigned(Civilization civ)
+        private void HandlePeaceSigned(Civilization civ, WarResult result)
         {
-            if (_activeBehaviour != null && _activeBehaviour.CivilizationData == civ.CivilizationData)
+            CloseWarInterface();
+            if (resultPanel != null)
             {
-                Debug.Log($"[WAR UI] Victory/Peace with {civ.CivilizationData.Name}. Closing view.");
-                CloseWarInterface(); 
-            }
-            else if (_activeBehaviour == null)
-            {
-                ResetCooldownUI();
-                battlePanel.SetActive(false);
+                resultPanel.SetActive(true);
+                string civName = civ.CivilizationData.Name;
+                
+                if (result == WarResult.Victory)
+                {
+                    resultTitleText.text = "<color=green>VICTORY</color>";
+                    resultDescriptionText.text = $"Great news, Commander.\n\nThe conflict with the {civName} civilization has been resolved. They have ceased hostilities.\n\nPeace has been restored to the sector.";
+                }
+                else
+                {
+                    resultTitleText.text = "<color=red>DEFEAT</color>";
+                    resultDescriptionText.text = $"Critical alert!\n\nThe {civName} civilization has overwhelmed our defenses.\n\nThey have seized control of the planet. It will generate <b>0 resources</b> for us until we reclaim it.";
+                }
             }
         }
     }

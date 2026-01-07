@@ -10,7 +10,9 @@ namespace Code.Scripts.Core.Systems.Behaviour.Perceptions
 
         public override bool Check()
         {
-            if (_planet.AssociatedAI != null && !_planet.AssociatedAI._isAtWarWithPlayer)
+            if (_planet.AssociatedAI == null) return true;
+
+            if (_planet.AssociatedAI.WarHealth <= 0 || !_planet.AssociatedAI._isAtWarWithPlayer)
             {
                 return true;
             }

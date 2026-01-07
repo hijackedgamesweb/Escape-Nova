@@ -16,7 +16,7 @@ namespace Code.Scripts.UI.World
         [SerializeField] private Image orangeZone;         
         
         [Header("Settings")]
-        [SerializeField] private float rotationSpeed = 200f;
+        [SerializeField] private float rotationSpeed = 400f;
         
         private Action<SkillCheckResult> _onCompleteCallback;
         private bool _isRunning = false;
@@ -126,8 +126,8 @@ namespace Code.Scripts.UI.World
 
             SkillCheckResult result = SkillCheckResult.Miss;
 
-            float greenLimit = (greenZone != null) ? greenZone.fillAmount : 0.1f;
-            float orangeLimit = (orangeZone != null) ? orangeZone.fillAmount : 0.25f;
+            float greenLimit = (greenZone != null) ? greenZone.fillAmount : 0.05f;
+            float orangeLimit = (orangeZone != null) ? orangeZone.fillAmount : 0.15f;
 
             if (fillPos <= greenLimit)
             {

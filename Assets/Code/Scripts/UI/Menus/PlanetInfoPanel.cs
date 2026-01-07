@@ -80,7 +80,15 @@ namespace Code.Scripts.UI.Menus
                 {
                     _civilizationInfoText.gameObject.SetActive(true);
                     string civName = _currentPlanet.Owner.CivilizationData.Name;
-                    _civilizationInfoText.text = $"Occupied by: <color=red>{civName}</color>";
+                    
+                    if (_currentPlanet.IsConquered)
+                    {
+                        _civilizationInfoText.text = $"Status: <color=red>CONQUERED by {civName}</color>";
+                    }
+                    else
+                    {
+                        _civilizationInfoText.text = $"Occupied by: <color=green>{civName}</color>";
+                    }
                 }
                 else
                 {
@@ -90,18 +98,19 @@ namespace Code.Scripts.UI.Menus
             
             StringBuilder productionString = new StringBuilder("Production per cicle\n");
             
-            if (_currentPlanet.ProducibleResources != null && _currentPlanet.ResourcePerCycle != null)
+            if (_currentPlanet.IsConquered)
             {
-                // Iteramos solo sobre lo que el planeta tiene definido
+                productionString.AppendLine("<color=red>0 (Occupied)</color>");
+            }
+            else if (_currentPlanet.ProducibleResources != null && _currentPlanet.ResourcePerCycle != null)
+            {
                 for (int i = 0; i < _currentPlanet.ProducibleResources.Count; i++)
                 {
-                    // Aseguramos que no nos salimos del array de cantidades
                     if (i < _currentPlanet.ResourcePerCycle.Length)
                     {
                         ResourceType type = _currentPlanet.ProducibleResources[i];
                         int amount = _currentPlanet.ResourcePerCycle[i];
-
-                        // Si quisieramso ver los que no producen nada, habríua que quitar este if
+        
                         if (amount > 0)
                         {
                             productionString.AppendLine($"{type}: {amount}");
@@ -110,15 +119,12 @@ namespace Code.Scripts.UI.Menus
                 }
             }
             
-            // Si el planeta no tiene recursos configurados, mostramos un mensaje por defecto
-            if (productionString.Length <= "Production per cicle\n".Length) 
+            if (!_currentPlanet.IsConquered && productionString.Length <= "Production per cicle\n".Length) 
             {
                 productionString.AppendLine("None");
             }
-
+        
             _productionText.text = productionString.ToString();
-
-            
             foreach (Transform child in _satelliteListContainer)
             {
                 Destroy(child.gameObject);

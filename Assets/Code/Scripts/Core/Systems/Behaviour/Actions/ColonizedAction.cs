@@ -19,7 +19,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         public override void Start()
         {
             Debug.Log($"[{_planet.Name}] FSM: Estado COLONIZADO por {_planet.Owner?.CivilizationData.Name}");
-            var animator = _planet.GetComponent<Animator>();
+            var animator = _planet.GetComponentInChildren<Animator>();
             if (animator != null)
             {
                 animator.Play(_animName);
