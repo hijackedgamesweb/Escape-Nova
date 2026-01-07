@@ -24,6 +24,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
     {
         protected UtilitySystem UtilitySystem = new UtilitySystem();
         protected Entity.Civilization.Civilization _civilization;
+        public Entity.Civilization.CivilizationData CivilizationData => _civilization.CivilizationData;
         protected WorldContext _worldContext;
         protected CommandInvoker _invoker;
         
@@ -234,7 +235,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
             var actSurrender = new FunctionalAction(() => {}, () => { 
                 LogBattle($"<color=red>SURRENDER signal sent.</color>"); 
-                StopWar(); 
+                StopWar(WarResult.Victory); 
                 return Status.Success; 
             }, () => {});
         
@@ -257,7 +258,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actCheckHit = new FunctionalAction(() => {}, () => {
-                float hitChance = 0.25f;
+                float hitChance = 1f; //CAMBIAR AQUI QUE LO HE PUESTO EN 1 NENE
                 bool hit = UnityEngine.Random.value <= hitChance;
                 if(hit) LogBattle($"<color=orange>Impact confirmed!</color>");
                 else LogBattle($"<color=orange>Fire Strike Missed Target.</color>");
@@ -275,7 +276,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
             var actWin = new FunctionalAction(() => {}, () => {
                 LogBattle($"<color=red>[{civName}] VICTORY.</color>");
-                StopWar();
+                StopWar(WarResult.Defeat);
                 return Status.Success;
             }, () => {});
         
@@ -357,10 +358,10 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             _enemySimulatedHealth = 100;
         }
 
-        public void StopWar()
+        public void StopWar(WarResult result)
         {
             _isAtWarWithPlayer = false;
-            SystemEvents.TriggerPeaceSigned(_civilization);
+            SystemEvents.TriggerPeaceSigned(_civilization, result);
         }
 
         public void TakeDamage(int amount)

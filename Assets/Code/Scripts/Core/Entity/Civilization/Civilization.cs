@@ -21,6 +21,7 @@ namespace Code.Scripts.Core.Entity.Civilization
         private CommandInvoker _invoker;
         public IAIController AIController { get; private set; }
         public AIType AIControllerType;
+        public bool HasHomePlanetAssigned { get; private set; } = false;
         
         public Civilization(CommandInvoker invoker, CivilizationSO civilizationSO) : base(invoker, civilizationSO, null)
         {
@@ -29,6 +30,11 @@ namespace Code.Scripts.Core.Entity.Civilization
             SetCivilizationData(civilizationSO);
         }
 
+        public void AssignHomePlanet()
+        {
+            HasHomePlanetAssigned = true;
+        }
+        
         public Civilization() : base()
         {
             CivilizationData = new CivilizationData();
@@ -189,7 +195,8 @@ namespace Code.Scripts.Core.Entity.Civilization
                 ["CivilizationData"] = CivilizationData.CaptureState(),
                 ["CivilizationState"] = CivilizationState.CaptureState(),
                 ["StorageSystem"] = StorageSystem.CaptureState(),
-                ["AIController"] = (int)AIControllerType
+                ["AIController"] = (int)AIControllerType,
+                ["HasHomePlanetAssigned"] = HasHomePlanetAssigned
             };
             return obj;
         }
@@ -202,6 +209,10 @@ namespace Code.Scripts.Core.Entity.Civilization
             StorageSystem.RestoreState(obj["StorageSystem"]);
             AIControllerType = (AIType)obj["AIController"].ToObject<int>();
             AIController = AIControllerFactory.CreateAIController(AIControllerType, this, _invoker);
+            if (obj.ContainsKey("HasHomePlanetAssigned"))
+            {
+                HasHomePlanetAssigned = obj["HasHomePlanetAssigned"].ToObject<bool>();
+            }
         }
     }
 }

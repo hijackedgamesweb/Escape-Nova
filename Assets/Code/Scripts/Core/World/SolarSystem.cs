@@ -104,6 +104,11 @@ namespace Code.Scripts.Core.World
             Planets[orbit][positionInOrbit] = planet;
             ConstructionEvents.OnConstructibleCreated?.Invoke(data);
             ConstructionEvents.OnPlanetAdded?.Invoke(planet);
+            var civManager = ServiceLocator.GetService<CivilizationManager>();
+            if (civManager != null)
+            {
+                civManager.TryAssignPlanetToCivilization(planet);
+            }
         }
 
         public void AddSateliteToPlanet(int orbitIndex, int positionInOrbit, SateliteDataSO sateliteDataSo)
@@ -134,6 +139,13 @@ namespace Code.Scripts.Core.World
             }
 
             Planet planet = Planets[orbit][positionInOrbit];
+            
+            if (planet.Owner != null && !planet.IsDestroyed)
+            {
+                NotificationManager.Instance.CreateNotification($"Cannot destroy {planet.Name}: inhabited by {planet.Owner.CivilizationData.Name}!", NotificationType.Warning);
+                return; 
+            }
+
             string planetName = planet.Name;
             Destroy(planet.gameObject);
             Planets[orbit][positionInOrbit] = null;
@@ -232,7 +244,6 @@ namespace Code.Scripts.Core.World
                         continue;
                     }
 
-                    // → RECREAR EL PLANETA
                     Planet planet = planetFactory.CreatePlanet(
                         Vector3.zero,
                         planetData,
@@ -240,7 +251,6 @@ namespace Code.Scripts.Core.World
                         i, j
                     );
 
-                    // → Restaurar órbita
                     OrbitController orbitCtrl = planet.gameObject.AddComponent<OrbitController>();
                     orbitCtrl.Initialize(
                         planet,
@@ -251,7 +261,6 @@ namespace Code.Scripts.Core.World
                         i
                     );
 
-                    // → Restaurar estado completo del planeta
                     planet.RestoreState(planetObj);
 
                     Planets[i][j] = planet;

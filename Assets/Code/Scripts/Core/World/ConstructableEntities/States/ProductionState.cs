@@ -70,6 +70,11 @@ namespace Code.Scripts.Core.World.ConstructableEntities.States
 
         private void ProduceResources()
         {
+            if (_planetData == null || _planetData.IsConquered || _planetData.IsDestroyed) 
+            {
+                return;
+            }
+            
             if (_planetData.ProducibleResources == null || _planetData.ResourcePerCycle == null)
                 return;
 

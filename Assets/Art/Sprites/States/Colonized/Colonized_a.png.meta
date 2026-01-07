@@ -1,0 +1,1526 @@
+fileFormatVersion: 2
+guid: e83a72c135050124aae4f8b1b79bb2a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2879977271937895179
+    second: Colonized_a_0
+  - first:
+      213: 3087111261265860128
+    second: Colonized_a_1
+  - first:
+      213: 2882613604982994421
+    second: Colonized_a_2
+  - first:
+      213: -471854293892884737
+    second: Colonized_a_3
+  - first:
+      213: 5556398260130919335
+    second: Colonized_a_4
+  - first:
+      213: 3997661587244004472
+    second: Colonized_a_5
+  - first:
+      213: 4738390517148269441
+    second: Colonized_a_6
+  - first:
+      213: -2465435065422509217
+    second: Colonized_a_7
+  - first:
+      213: -6920971028743711873
+    second: Colonized_a_8
+  - first:
+      213: -4141492762488419888
+    second: Colonized_a_9
+  - first:
+      213: 4854352814242897274
+    second: Colonized_a_10
+  - first:
+      213: -4284495936372200017
+    second: Colonized_a_11
+  - first:
+      213: -7534252863131116149
+    second: Colonized_a_12
+  - first:
+      213: -8471314009318805545
+    second: Colonized_a_13
+  - first:
+      213: 4553870051401261056
+    second: Colonized_a_14
+  - first:
+      213: -648433079496573868
+    second: Colonized_a_15
+  - first:
+      213: -8017820817699409965
+    second: Colonized_a_16
+  - first:
+      213: 3698524276135343950
+    second: Colonized_a_17
+  - first:
+      213: -2047136973632443393
+    second: Colonized_a_18
+  - first:
+      213: 1782119982992636191
+    second: Colonized_a_19
+  - first:
+      213: -7575236391038370845
+    second: Colonized_a_20
+  - first:
+      213: 2412880117543983500
+    second: Colonized_a_21
+  - first:
+      213: -993313908194598011
+    second: Colonized_a_22
+  - first:
+      213: 1812777371360627979
+    second: Colonized_a_23
+  - first:
+      213: 5956881082594070035
+    second: Colonized_a_24
+  - first:
+      213: -1931459967636648711
+    second: Colonized_a_25
+  - first:
+      213: 1339652437900148098
+    second: Colonized_a_26
+  - first:
+      213: 4593231578836305699
+    second: Colonized_a_27
+  - first:
+      213: 4879850576131282575
+    second: Colonized_a_28
+  - first:
+      213: -7638222220634430282
+    second: Colonized_a_29
+  - first:
+      213: 2318572688609794660
+    second: Colonized_a_30
+  - first:
+      213: 1637134062357905873
+    second: Colonized_a_31
+  - first:
+      213: 6859226493440560962
+    second: Colonized_a_32
+  - first:
+      213: 8144336722466814711
+    second: Colonized_a_33
+  - first:
+      213: 8893081614522196348
+    second: Colonized_a_34
+  - first:
+      213: 3878151680397021440
+    second: Colonized_a_35
+  - first:
+      213: -5428808854983279989
+    second: Colonized_a_36
+  - first:
+      213: -1753086335658303110
+    second: Colonized_a_37
+  - first:
+      213: 4878217696246658266
+    second: Colonized_a_38
+  - first:
+      213: -1780272159638235951
+    second: Colonized_a_39
+  - first:
+      213: 5653256110702949582
+    second: Colonized_a_40
+  - first:
+      213: 7768391393010611895
+    second: Colonized_a_41
+  - first:
+      213: -7644670947044509277
+    second: Colonized_a_42
+  - first:
+      213: -3966857696992132218
+    second: Colonized_a_43
+  - first:
+      213: -6151539378339250093
+    second: Colonized_a_44
+  - first:
+      213: 6045656769542085661
+    second: Colonized_a_45
+  - first:
+      213: -8191145298459673339
+    second: Colonized_a_46
+  - first:
+      213: 2753878548594481563
+    second: Colonized_a_47
+  - first:
+      213: -6755877898345129063
+    second: Colonized_a_48
+  - first:
+      213: 3645529877766892137
+    second: Colonized_a_49
+  - first:
+      213: -1182322527921289641
+    second: Colonized_a_50
+  - first:
+      213: 2877200070419107728
+    second: Colonized_a_51
+  - first:
+      213: -4914872786180792554
+    second: Colonized_a_52
+  - first:
+      213: 6583754612117855131
+    second: Colonized_a_53
+  - first:
+      213: 6319398418571982031
+    second: Colonized_a_54
+  - first:
+      213: -9100743977846707696
+    second: Colonized_a_55
+  - first:
+      213: 9197201645398602344
+    second: Colonized_a_56
+  - first:
+      213: 2966659971594830702
+    second: Colonized_a_57
+  - first:
+      213: 2389108560715165274
+    second: Colonized_a_58
+  - first:
+      213: 5072297113939188349
+    second: Colonized_a_59
+  - first:
+      213: -1953394309047890320
+    second: Colonized_a_60
+  - first:
+      213: 2132934320076816521
+    second: Colonized_a_61
+  - first:
+      213: 2778234151758467846
+    second: Colonized_a_62
+  - first:
+      213: 4070424056378737521
+    second: Colonized_a_63
+  - first:
+      213: -6374859155638723265
+    second: Colonized_a_64
+  - first:
+      213: 8079146325326921180
+    second: Colonized_a_65
+  - first:
+      213: -2118087447755169991
+    second: Colonized_a_66
+  - first:
+      213: 75178448459917675
+    second: Colonized_a_67
+  - first:
+      213: -6135243548352654667
+    second: Colonized_a_68
+  - first:
+      213: 99597827284312777
+    second: Colonized_a_69
+  - first:
+      213: -5283989134047043783
+    second: Colonized_a_70
+  - first:
+      213: -940916005579955508
+    second: Colonized_a_71
+  - first:
+      213: -2483628236585922284
+    second: Colonized_a_72
+  - first:
+      213: -8655290081877919075
+    second: Colonized_a_73
+  - first:
+      213: 4669051122336554645
+    second: Colonized_a_74
+  - first:
+      213: -1379436655181669203
+    second: Colonized_a_75
+  - first:
+      213: 849228410679697038
+    second: Colonized_a_76
+  - first:
+      213: -7881560264272233139
+    second: Colonized_a_77
+  - first:
+      213: 5790834718274518055
+    second: Colonized_a_78
+  - first:
+      213: 3786512825196928425
+    second: Colonized_a_79
+  - first:
+      213: 6197146535330246708
+    second: Colonized_a_80
+  - first:
+      213: 6766512678547787973
+    second: Colonized_a_81
+  - first:
+      213: 1775375678739223130
+    second: Colonized_a_82
+  - first:
+      213: 1498044354771625366
+    second: Colonized_a_83
+  - first:
+      213: -5546961151208027844
+    second: Colonized_a_84
+  - first:
+      213: -1000235291379116244
+    second: Colonized_a_85
+  - first:
+      213: -8471322272726964424
+    second: Colonized_a_86
+  - first:
+      213: -947495258184891278
+    second: Colonized_a_87
+  - first:
+      213: -4271943424910057471
+    second: Colonized_a_88
+  - first:
+      213: 5506566459244436289
+    second: Colonized_a_89
+  - first:
+      213: -6980189080697666665
+    second: Colonized_a_90
+  - first:
+      213: -2827393062949146402
+    second: Colonized_a_91
+  - first:
+      213: 6905344276982777812
+    second: Colonized_a_92
+  - first:
+      213: 8897036064611591154
+    second: Colonized_a_93
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colonized_a_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b8e0fe11cb7f720800000000000000
+      internalID: 2879977271937895179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0261cddf55f97da20800000000000000
+      internalID: 3087111261265860128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_2
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f538bd0dc9110820800000000000000
+      internalID: 2882613604982994421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_3
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff695ca0503a379f0800000000000000
+      internalID: -471854293892884737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_4
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3b3bd47ca4c1d40800000000000000
+      internalID: 5556398260130919335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_5
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87437e7780c8a7730800000000000000
+      internalID: 3997661587244004472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_6
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb3bdf11522c140800000000000000
+      internalID: 4738390517148269441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_7
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b03b4ded309cdd0800000000000000
+      internalID: -2465435065422509217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_8
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7316faa485c3ff90800000000000000
+      internalID: -6920971028743711873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_9
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9c60c66467686c0800000000000000
+      internalID: -4141492762488419888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_10
+      rect:
+        serializedVersion: 2
+        x: 4490
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d9d534a202e5340800000000000000
+      internalID: 4854352814242897274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_11
+      rect:
+        serializedVersion: 2
+        x: 4939
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad2ee665a96a84c0800000000000000
+      internalID: -4284495936372200017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_12
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d991d60f4f07790800000000000000
+      internalID: -7534252863131116149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_13
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df23cd9ac8df6a80800000000000000
+      internalID: -8471314009318805545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_14
+      rect:
+        serializedVersion: 2
+        x: 6286
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000ef0f2fa8923f30800000000000000
+      internalID: 4553870051401261056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_15
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c7efbbc8d4007f0800000000000000
+      internalID: -648433079496573868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_16
+      rect:
+        serializedVersion: 2
+        x: 7184
+        y: 742
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df6b40527afab090800000000000000
+      internalID: -8017820817699409965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47b438cb3cc35330800000000000000
+      internalID: 3698524276135343950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_18
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbe118c4cb1793e0800000000000000
+      internalID: -2047136973632443393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_19
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19b665beac5bb810800000000000000
+      internalID: 1782119982992636191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_20
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebbb8e33aa5fd690800000000000000
+      internalID: -7575236391038370845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_21
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89dfc3dea54c7120800000000000000
+      internalID: 2412880117543983500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_22
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5832b97634a0732f0800000000000000
+      internalID: -993313908194598011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_23
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d01dc2a67482910800000000000000
+      internalID: 1812777371360627979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_24
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e8341a8c71ba250800000000000000
+      internalID: 5956881082594070035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_25
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc412b84631235e0800000000000000
+      internalID: -1931459967636648711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_26
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d36836bc6679210800000000000000
+      internalID: 1339652437900148098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_27
+      rect:
+        serializedVersion: 2
+        x: 4490
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32705a3f8cf6ebf30800000000000000
+      internalID: 4593231578836305699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_28
+      rect:
+        serializedVersion: 2
+        x: 4939
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f865a439e36b8b340800000000000000
+      internalID: 4879850576131282575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_29
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4e69ffb559ff590800000000000000
+      internalID: -7638222220634430282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_30
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a528273993d2020800000000000000
+      internalID: 2318572688609794660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_31
+      rect:
+        serializedVersion: 2
+        x: 6286
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1098c71c448b610800000000000000
+      internalID: 1637134062357905873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_32
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f097f672ed03f50800000000000000
+      internalID: 6859226493440560962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_33
+      rect:
+        serializedVersion: 2
+        x: 7184
+        y: 371
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fabdc9391f760170800000000000000
+      internalID: 8144336722466814711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7127206c929a6b70800000000000000
+      internalID: 8893081614522196348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_35
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001162fe766f1d530800000000000000
+      internalID: 3878151680397021440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_36
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8af9350c1ff8a4b0800000000000000
+      internalID: -5428808854983279989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_37
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71ee761449cba7e0800000000000000
+      internalID: -1753086335658303110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_38
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad47ec91629e2b340800000000000000
+      internalID: 4878217696246658266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_39
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4de3137e33b47e0800000000000000
+      internalID: -1780272159638235951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_40
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec471cefa76647e40800000000000000
+      internalID: 5653256110702949582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_41
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6799030dedecb60800000000000000
+      internalID: 7768391393010611895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_42
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9b9a0e64ca8e590800000000000000
+      internalID: -7644670947044509277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_43
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683824021f3e2f8c0800000000000000
+      internalID: -3966857696992132218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_44
+      rect:
+        serializedVersion: 2
+        x: 4490
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3500344178751aaa0800000000000000
+      internalID: -6151539378339250093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_45
+      rect:
+        serializedVersion: 2
+        x: 4939
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cdd76fccc76e350800000000000000
+      internalID: 6045656769542085661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_46
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d33b5efb4335e80800000000000000
+      internalID: -8191145298459673339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_47
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99da8303fdb73620800000000000000
+      internalID: 2753878548594481563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colonized_a_48
+      rect:
+        serializedVersion: 2
+        x: 6286
+        y: 0
+        width: 449
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bd93b78dc4e32a0800000000000000
+      internalID: -6755877898345129063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 68d60d44afbfcd34aaa3edaa37d8058c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colonized_a_0: 2879977271937895179
+      Colonized_a_1: 3087111261265860128
+      Colonized_a_10: 4854352814242897274
+      Colonized_a_11: -4284495936372200017
+      Colonized_a_12: -7534252863131116149
+      Colonized_a_13: -8471314009318805545
+      Colonized_a_14: 4553870051401261056
+      Colonized_a_15: -648433079496573868
+      Colonized_a_16: -8017820817699409965
+      Colonized_a_17: 3698524276135343950
+      Colonized_a_18: -2047136973632443393
+      Colonized_a_19: 1782119982992636191
+      Colonized_a_2: 2882613604982994421
+      Colonized_a_20: -7575236391038370845
+      Colonized_a_21: 2412880117543983500
+      Colonized_a_22: -993313908194598011
+      Colonized_a_23: 1812777371360627979
+      Colonized_a_24: 5956881082594070035
+      Colonized_a_25: -1931459967636648711
+      Colonized_a_26: 1339652437900148098
+      Colonized_a_27: 4593231578836305699
+      Colonized_a_28: 4879850576131282575
+      Colonized_a_29: -7638222220634430282
+      Colonized_a_3: -471854293892884737
+      Colonized_a_30: 2318572688609794660
+      Colonized_a_31: 1637134062357905873
+      Colonized_a_32: 6859226493440560962
+      Colonized_a_33: 8144336722466814711
+      Colonized_a_34: 8893081614522196348
+      Colonized_a_35: 3878151680397021440
+      Colonized_a_36: -5428808854983279989
+      Colonized_a_37: -1753086335658303110
+      Colonized_a_38: 4878217696246658266
+      Colonized_a_39: -1780272159638235951
+      Colonized_a_4: 5556398260130919335
+      Colonized_a_40: 5653256110702949582
+      Colonized_a_41: 7768391393010611895
+      Colonized_a_42: -7644670947044509277
+      Colonized_a_43: -3966857696992132218
+      Colonized_a_44: -6151539378339250093
+      Colonized_a_45: 6045656769542085661
+      Colonized_a_46: -8191145298459673339
+      Colonized_a_47: 2753878548594481563
+      Colonized_a_48: -6755877898345129063
+      Colonized_a_5: 3997661587244004472
+      Colonized_a_6: 4738390517148269441
+      Colonized_a_7: -2465435065422509217
+      Colonized_a_8: -6920971028743711873
+      Colonized_a_9: -4141492762488419888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

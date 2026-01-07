@@ -1,7 +1,7 @@
 using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
-using Code.Scripts.Core.World; // Necesario para acceder al Player
+using Code.Scripts.Core.World;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,25 +26,26 @@ namespace Code.Scripts.UI.World
         private void Awake()
         {
             SystemEvents.OnWarHealthUpdated += UpdateUI;
-            SystemEvents.OnWarDeclaredToPlayer += ShowPanel;
-            SystemEvents.OnPeaceSigned += HidePanel;
-        
-            if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void OnDestroy()
         {
             SystemEvents.OnWarHealthUpdated -= UpdateUI;
-            SystemEvents.OnWarDeclaredToPlayer -= ShowPanel;
-            SystemEvents.OnPeaceSigned -= HidePanel;
         }
 
         private void Update()
         {
-            if (panelContainer.activeSelf && playerAmmoText != null)
+            if ((panelContainer != null && panelContainer.activeSelf) || gameObject.activeInHierarchy)
             {
-                UpdatePlayerAmmoText();
+                if (playerAmmoText != null) UpdatePlayerAmmoText();
             }
+        }
+
+        public void SetupBattle(string enemyName, int currentEnemyHealth, int currentPlayerHealth)
+        {
+            if (enemyNameText != null) 
+                enemyNameText.text = enemyName;
+            UpdateUI(currentEnemyHealth, currentPlayerHealth);
         }
 
         private void UpdatePlayerAmmoText()
@@ -54,19 +55,6 @@ namespace Code.Scripts.UI.World
                 int ammo = WorldManager.Instance.Player.StorageSystem.GetItemCount("Fire Strike");
                 playerAmmoText.text = $"Fire Strikes: {ammo}";
             }
-        }
-
-        private void ShowPanel(Code.Scripts.Core.Entity.Civilization.Civilization civ)
-        {
-            if(panelContainer != null) panelContainer.SetActive(true);
-            if(enemyNameText != null) enemyNameText.text = civ.CivilizationData.Name;
-        
-            UpdateUI(100, 100);
-        }
-
-        private void HidePanel(Code.Scripts.Core.Entity.Civilization.Civilization civ)
-        {
-            if(panelContainer != null) panelContainer.SetActive(false);
         }
 
         private void UpdateUI(int enemyHealth, int playerHealth)

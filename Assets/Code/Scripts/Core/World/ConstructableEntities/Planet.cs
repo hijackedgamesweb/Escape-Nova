@@ -1,10 +1,13 @@
 using System;
-using System;
 using System.Collections.Generic;
 using Code.Scripts.Camera;
+using Code.Scripts.Core.Entity.Civilization;
+using Code.Scripts.Core.Events;
 using Code.Scripts.Core.Managers;
 using Code.Scripts.Core.Managers.Interfaces;
 using Code.Scripts.Core.SaveLoad.Interfaces;
+using Code.Scripts.Core.Systems.Behaviour;
+using Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour;
 using Code.Scripts.Core.Systems.Resources;
 using Code.Scripts.Core.World.ConstructableEntities.ScriptableObjects;
 using Code.Scripts.Core.World.ConstructableEntities.States;
@@ -30,6 +33,25 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public int OrbitIndex { get; set; }
         public int PlanetIndex { get; set; }
         public string Name { get; private set; }
+        
+        public Civilization Owner { get; private set; }
+        public Civilization Aggressor { get; private set; }
+        private PlanetBehaviourRunner _behaviourRunner;
+        public BaseBehaviour AssociatedAI { get; set; }
+        public event Action<Civilization> OnOwnerChanged;
+        
+        public bool IsDestroyed { get; private set; } = false;
+        public bool IsConquered 
+        {
+            get 
+            {
+                if (_behaviourRunner != null && _behaviourRunner.enabled && _behaviourRunner.PlanetGraph != null)
+                {
+                    return _behaviourRunner.PlanetGraph.IsCurrentState(_behaviourRunner.PlanetGraph.ConqueredState);
+                }
+                return false;
+            }
+        }
 
         PlanetStateManager _stateManager;
         private Dictionary<string, float> _improvementPercentages = new Dictionary<string, float>();
@@ -42,6 +64,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         private const float BASE_SATELLITE_DISTANCE = 0.6f;
         private const float SATELLITE_SPEED = 50f;
 
+        private Animator _animator;
         
         public event Action<float> OnConstructionProgress;
         public event Action OnConstructionCompleted;
@@ -49,6 +72,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            _animator = GetComponent<Animator>();
             OnGlobalImprovementAdded += HandleGlobalImprovementAdded;
         }
 
@@ -57,9 +81,15 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             ApplyExistingGlobalImprovements();
         }
 
+        private void OnEnable()
+        {
+            SystemEvents.OnWarDeclaredToPlayer += HandleWarDeclaredGlobal;
+        }
+        
         private void OnDestroy()
         {
             OnGlobalImprovementAdded -= HandleGlobalImprovementAdded;
+            SystemEvents.OnWarDeclaredToPlayer -= HandleWarDeclaredGlobal;
             _stateManager?.SetState(null);
         }
 
@@ -75,6 +105,20 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             _spriteRenderer.sprite = data.sprite;
             Name = data.constructibleName;
             this.transform.localScale = Vector3.one * data.size;
+            _behaviourRunner = GetComponent<PlanetBehaviourRunner>();
+            
+            if (_behaviourRunner != null)
+            {
+                _behaviourRunner.enabled = false;
+            }
+            
+            if (_animator != null)
+            {
+                _animator.Play("Construyendo");
+            
+                float animSpeed = 1f / TimeToBuild; 
+                _animator.speed = animSpeed;
+            }
             
             ResourcePerCycle = (int[])data.resourcePerCycle.Clone();
             _baseResourcePerCycle = (int[])data.resourcePerCycle.Clone();
@@ -122,15 +166,25 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         public void HandleBuildingProgress(float progress)
         {
             OnConstructionProgress?.Invoke(progress);
-            
+        
             if (progress >= 1f)
             {
                 OnConstructionCompleted?.Invoke();
+            
+                if (_animator != null) _animator.speed = 1f;
+            
+                if (_behaviourRunner != null)
+                {
+                    Debug.Log("_behaviourRunner es true");
+                    _behaviourRunner.enabled = true;
+                }
             }
         }
 
         public int GetResourceProductionOfType(ResourceType type)
         {
+            if (IsConquered) return 0;
+
             for (int i = 0; i < ProducibleResources.Count; i++)
             {
                 if (ProducibleResources[i] == type)
@@ -138,7 +192,6 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                     return ResourcePerCycle[i];
                 }
             }
-
             return 0;
         }
 
@@ -147,7 +200,104 @@ namespace Code.Scripts.Core.World.ConstructableEntities
         {
             OnConstructionCompleted?.Invoke();
         }
+        
+        private void HandleWarDeclaredGlobal(Civilization civThatDeclaredWar)
+        {
+            if (Owner != null && civThatDeclaredWar == Owner)
+            {
+                Debug.Log($"<color=red>[PLANET] {Name}: Mi dueño ({Owner.CivilizationData.Name}) entra en guerra con el JUGADOR.</color>");
+                DeclareWar(Owner); 
+            }
+        }
+        
+        public bool CanBeDestroyedByPlayer(out string reason)
+        {
+            reason = string.Empty;
+            if (Owner != null)
+            {
+                reason = $"Cannot destroy planet: Inhabited by {Owner.CivilizationData.Name}!";
+                return false;
+            }
 
+            if (AssociatedAI != null && AssociatedAI._isAtWarWithPlayer)
+            {
+                reason = "Cannot destroy planet: The civilization has declared WAR on you!";
+                return false;
+            }
+            if (_behaviourRunner == null || !_behaviourRunner.enabled || _behaviourRunner.PlanetGraph == null)
+            {
+                return true;
+            }
+
+            var fsm = _behaviourRunner.PlanetGraph;
+            if (fsm.IsCurrentState(fsm.ConflictState))
+            {
+                reason = "Cannot destroy planet during active WAR.";
+                return false;
+            }
+    
+            if (fsm.IsCurrentState(fsm.ConqueredState))
+            {
+                reason = "Cannot destroy a CONQUERED planet.";
+                return false;
+            }
+
+            return true;
+        }
+        
+        public void DestroyPlanet()
+        {
+            IsDestroyed = true;
+            bool fsmActive = _behaviourRunner != null && _behaviourRunner.enabled;
+            Debug.Log($"<color=cyan>[CHIVATO 1] DestroyPlanet llamado. IsDestroyed=TRUE. ¿FSM Encendida?: {fsmActive}</color>");
+            
+            if (_behaviourRunner == null || !_behaviourRunner.enabled)
+            {
+                Debug.Log($"[{Name}] Borrando durante construcción (sin animación de FSM).");
+                var solarSystem = ServiceLocator.GetService<SolarSystem>();
+                if (solarSystem != null)
+                {
+                    solarSystem.RemovePlanet(OrbitIndex, PlanetIndex);
+                }
+                return;
+            }
+        }
+        
+        public void EstablishContact(Civilization newOwner)
+        {
+            if (newOwner == null) 
+            {
+                Debug.LogWarning($"[{name}] Se intentó establecer contacto con una civilización NULL.");
+                return;
+            }
+
+            Owner = newOwner;
+            if (newOwner.AIController is BaseBehaviour ai)
+            {
+                AssociatedAI = ai;
+            }
+            else
+            {
+                AssociatedAI = null;
+            }
+
+            OnOwnerChanged?.Invoke(Owner);
+        }
+
+        public void DeclareWar(Civilization aggressor)
+        {
+            Aggressor = aggressor;
+        }
+        public void WinWar()
+        {
+            Aggressor = null;
+        }
+        public void LoseWar(Civilization conqueror)
+        {
+            Aggressor = null;
+            EstablishContact(conqueror);
+        }
+        
         private void ApplyExistingGlobalImprovements()
         {
             foreach (var improvement in _globalImprovements)
@@ -220,7 +370,23 @@ namespace Code.Scripts.Core.World.ConstructableEntities
             if(UnityEngine.Camera.main != null)
                 UnityEngine.Camera.main.GetComponent<CameraController2D>()?.SetTarget(this.transform);
             
-            PlanetInfoPanel.Instance.ShowPanel(this);
+            var runner = GetComponent<Code.Scripts.Core.Systems.Behaviour.PlanetBehaviourRunner>();
+
+            if (runner != null && runner.PlanetGraph != null)
+            {
+                if (runner.PlanetGraph.IsCurrentState(runner.PlanetGraph.ConflictState))
+                {
+                    var warManager = FindObjectOfType<WarUIManager>();
+                    if (warManager != null && AssociatedAI != null)
+                    {
+                        warManager.OpenBattlePanelForPlanet(this, AssociatedAI);
+                    }
+                }
+                else
+                {
+                    PlanetInfoPanel.Instance.ShowPanel(this);
+                }
+            }
         }
 
         public bool AddSatelite(string sateliteId)

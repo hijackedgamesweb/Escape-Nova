@@ -20,6 +20,7 @@ namespace Code.Scripts.UI.Menus
         [SerializeField] private TextMeshProUGUI _planetNameText;
         [SerializeField] private TextMeshProUGUI _productionText;
         [SerializeField] private Transform _satelliteListContainer;
+        [SerializeField] private TextMeshProUGUI _civilizationInfoText;
         [SerializeField] private GameObject _satelliteListItemPrefab;
         [SerializeField] private Button _deletePlanetButton;
         [SerializeField] private Button _closeButton;
@@ -73,21 +74,43 @@ namespace Code.Scripts.UI.Menus
             
             _planetNameText.text = _currentPlanet.Name;
             
+            if (_civilizationInfoText != null)
+            {
+                if (_currentPlanet.Owner != null)
+                {
+                    _civilizationInfoText.gameObject.SetActive(true);
+                    string civName = _currentPlanet.Owner.CivilizationData.Name;
+                    
+                    if (_currentPlanet.IsConquered)
+                    {
+                        _civilizationInfoText.text = $"Status: <color=red>CONQUERED by {civName}</color>";
+                    }
+                    else
+                    {
+                        _civilizationInfoText.text = $"Occupied by: <color=green>{civName}</color>";
+                    }
+                }
+                else
+                {
+                    _civilizationInfoText.gameObject.SetActive(false); 
+                }
+            }
             
             StringBuilder productionString = new StringBuilder("Production per cicle\n");
             
-            if (_currentPlanet.ProducibleResources != null && _currentPlanet.ResourcePerCycle != null)
+            if (_currentPlanet.IsConquered)
             {
-                // Iteramos solo sobre lo que el planeta tiene definido
+                productionString.AppendLine("<color=red>0 (Occupied)</color>");
+            }
+            else if (_currentPlanet.ProducibleResources != null && _currentPlanet.ResourcePerCycle != null)
+            {
                 for (int i = 0; i < _currentPlanet.ProducibleResources.Count; i++)
                 {
-                    // Aseguramos que no nos salimos del array de cantidades
                     if (i < _currentPlanet.ResourcePerCycle.Length)
                     {
                         ResourceType type = _currentPlanet.ProducibleResources[i];
                         int amount = _currentPlanet.ResourcePerCycle[i];
-
-                        // Si quisieramso ver los que no producen nada, habríua que quitar este if
+        
                         if (amount > 0)
                         {
                             productionString.AppendLine($"{type}: {amount}");
@@ -96,15 +119,12 @@ namespace Code.Scripts.UI.Menus
                 }
             }
             
-            // Si el planeta no tiene recursos configurados, mostramos un mensaje por defecto
-            if (productionString.Length <= "Production per cicle\n".Length) 
+            if (!_currentPlanet.IsConquered && productionString.Length <= "Production per cicle\n".Length) 
             {
                 productionString.AppendLine("None");
             }
-
+        
             _productionText.text = productionString.ToString();
-
-            
             foreach (Transform child in _satelliteListContainer)
             {
                 Destroy(child.gameObject);
@@ -147,13 +167,14 @@ namespace Code.Scripts.UI.Menus
         private void OnDeletePlanetClicked()
         {
             if (_currentPlanet == null) return;
-
-            SolarSystem solarSystem = ServiceLocator.GetService<SolarSystem>();
-            if (solarSystem != null)
+            if (!_currentPlanet.CanBeDestroyedByPlayer(out string reason))
             {
-                solarSystem.RemovePlanet(_currentPlanet.OrbitIndex, _currentPlanet.PlanetIndex);
+                NotificationManager.Instance.CreateNotification(reason, NotificationType.Error);
+                Debug.Log($"<color=yellow>[UI] Deleting try blocked: {reason}</color>");
+                return; 
             }
-            
+
+            _currentPlanet.DestroyPlanet();
             OnCloseButtonClicked();
         }
     }
