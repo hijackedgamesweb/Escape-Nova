@@ -258,7 +258,7 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
             }, () => {});
         
             var actCheckHit = new FunctionalAction(() => {}, () => {
-                float hitChance = 1f; //CAMBIAR AQUI QUE LO HE PUESTO EN 1 NENE
+                float hitChance = 0.25f;
                 bool hit = UnityEngine.Random.value <= hitChance;
                 if(hit) LogBattle($"<color=orange>Impact confirmed!</color>");
                 else LogBattle($"<color=orange>Fire Strike Missed Target.</color>");
@@ -407,6 +407,30 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         public void SetCommandInvoker(CommandInvoker invoker)
         {
             _invoker = invoker;
+        }
+        
+        public JObject CaptureWarState()
+        {
+            JObject state = new JObject();
+            state["IsAtWar"] = _isAtWarWithPlayer;
+            state["WarHealth"] = _warHealth;
+            state["PlayerSimulatedHealth"] = _enemySimulatedHealth;
+            return state;
+        }
+
+        public void RestoreWarState(JObject state)
+        {
+            if (state == null) return;
+
+            _isAtWarWithPlayer = state["IsAtWar"]?.ToObject<bool>() ?? false;
+            _warHealth = state["WarHealth"]?.ToObject<int>() ?? 100;
+            _enemySimulatedHealth = state["PlayerSimulatedHealth"]?.ToObject<int>() ?? 100;
+
+            if (_isAtWarWithPlayer)
+            {
+                _warTree.Start();
+                Debug.Log($"[BaseBehaviour] War restored. Health: {_warHealth}, PlayerHealth: {_enemySimulatedHealth}");
+            }
         }
     }
 }

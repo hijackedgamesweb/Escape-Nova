@@ -4,7 +4,7 @@
 - Active scene:
   - Name: PlanetPrefab
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Car, Door, Key, Pizza
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI
 - Active game object:

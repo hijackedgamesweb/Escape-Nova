@@ -194,7 +194,7 @@ namespace Code.Scripts.Core.Managers
                 
                 if (notificationText != null)
                 {
-                    notificationText.text = $"WAR DECLARED!\nThe {aggressor.CivilizationData.Name} civilization is attacking us.\nCheck your borders immediately.";
+                    notificationText.text = $"WAR DECLARED!\nThe {aggressor.CivilizationData.Name} civilization is attacking us.\nCheck the planet {planetName} immediately.";
                 }
             }
         }
@@ -367,6 +367,7 @@ namespace Code.Scripts.Core.Managers
                     resultTitleText.text = "<color=red>DEFEAT</color>";
                     resultDescriptionText.text = $"Critical alert!\n\nThe {civName} civilization has overwhelmed our defenses.\n\nThey have seized control of the planet. It will generate <b>0 resources</b> for us until we reclaim it.";
                 }
+                LayoutRebuilder.ForceRebuildLayoutImmediate(resultPanel.GetComponent<RectTransform>());
             }
         }
     }

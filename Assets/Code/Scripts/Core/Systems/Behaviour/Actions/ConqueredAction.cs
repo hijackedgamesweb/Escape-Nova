@@ -13,6 +13,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         public ConqueredAction(Planet planet, string animName)
         {
             _planet = planet;
+            _animName = animName;
         }
 
         public override void Start()

@@ -12,7 +12,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         private Planet _planet;
         private string _animName;
         private float _timer = 0f;
-        private float _animationLength = 5f;
+        private float _animationLength = 1f;
 
         public DestroyedAction(Planet planet, string animName)
         {
@@ -28,6 +28,11 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
             if (spriteRenderer != null)
             {
                 spriteRenderer.enabled = false;
+            }
+            var collider = _planet.GetComponent<Collider2D>();
+            if (collider != null)
+            {
+                collider.enabled = false;
             }
 
             var animator = _planet.GetComponentInChildren<Animator>();

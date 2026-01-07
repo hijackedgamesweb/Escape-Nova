@@ -41,7 +41,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59d1a253185729648bd0ab88e947ef87, type: 2}
   startingResourceAmounts: e803000096000000e8030000e8030000e8030000
   startingInventory: {fileID: 11400000, guid: 06f3f096ac23bc44fa2d93139e9396e2, type: 2}
-  preferredPlanet: {fileID: 11400000, guid: bdf329a21bd78a248a4f4a0d2c73a1a5, type: 2}
+  preferredPlanet: {fileID: 11400000, guid: 3e413902cac75bf43988d64a1bfffb45, type: 2}
   offrendItem: {fileID: 11400000, guid: 5d2a94a5bf7852346a7669e75421665e, type: 2}
   offrendAmount: 1
   tributeItem: {fileID: 11400000, guid: 485f61ce26e99484b8f1d0106fa9a107, type: 2}
