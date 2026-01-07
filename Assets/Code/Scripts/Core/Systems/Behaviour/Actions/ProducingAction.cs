@@ -13,6 +13,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
         public ProducingAction(Planet planet, string animName)
         {
             _planet = planet;
+            _animName = animName;
         }
 
         public override void Start()
@@ -22,6 +23,7 @@ namespace Code.Scripts.Core.Systems.Behaviour.Actions
             {
                 animator.Play(_animName);
             }
+
         }
 
         public override Status Update()

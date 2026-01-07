@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: de3b6216b329cda4da74541eadfb66c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9046012731556783602
+    second: Anim_Destroyed_0
+  - first:
+      213: 3236281287888255981
+    second: Anim_Destroyed_1
+  - first:
+      213: -6930371472948264243
+    second: Anim_Destroyed_2
+  - first:
+      213: 1925849364969155258
+    second: Anim_Destroyed_3
+  - first:
+      213: -3255445743830930988
+    second: Anim_Destroyed_4
+  - first:
+      213: 4399063938672394729
+    second: Anim_Destroyed_5
+  - first:
+      213: 1615543525347957222
+    second: Anim_Destroyed_6
+  - first:
+      213: -4728500853216552434
+    second: Anim_Destroyed_7
+  - first:
+      213: 335988455209351825
+    second: Anim_Destroyed_8
+  - first:
+      213: 4751220929867617821
+    second: Anim_Destroyed_9
+  - first:
+      213: -4220004099011912033
+    second: Anim_Destroyed_10
+  - first:
+      213: -3250016983278765083
+    second: Anim_Destroyed_11
+  - first:
+      213: -8884522242800190499
+    second: Anim_Destroyed_12
+  - first:
+      213: 5225437716796884026
+    second: Anim_Destroyed_13
+  - first:
+      213: -2012200625293560749
+    second: Anim_Destroyed_14
+  - first:
+      213: -5244993256551379973
+    second: Anim_Destroyed_15
+  - first:
+      213: -7785874027635190369
+    second: Anim_Destroyed_16
+  - first:
+      213: 1589944109874148529
+    second: Anim_Destroyed_17
+  - first:
+      213: -8679984838745217483
+    second: Anim_Destroyed_18
+  - first:
+      213: -2779067223064182987
+    second: Anim_Destroyed_19
+  - first:
+      213: -4343390548986778054
+    second: Anim_Destroyed_20
+  - first:
+      213: -4630440078147315754
+    second: Anim_Destroyed_21
+  - first:
+      213: -6502047645202514509
+    second: Anim_Destroyed_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Destroyed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a95e5395b167280800000000000000
+      internalID: -9046012731556783602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 393
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debb2dd4fa499ec20800000000000000
+      internalID: 3236281287888255981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 393
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc20b613ddf52df90800000000000000
+      internalID: -6930371472948264243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 393
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abae5e93bcdf9ba10800000000000000
+      internalID: 1925849364969155258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d96665185552d2d0800000000000000
+      internalID: -3255445743830930988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 198
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e18cc0585d9c0d30800000000000000
+      internalID: 4399063938672394729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 198
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e91c8bd6409b6610800000000000000
+      internalID: 1615543525347957222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_7
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 198
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a55e3d68df06eb0800000000000000
+      internalID: -4728500853216552434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ab26948bba9a400800000000000000
+      internalID: 335988455209351825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16192e334abfe140800000000000000
+      internalID: 4751220929867617821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Destroyed_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 3
+        width: 195
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ed3b761a88f65c0800000000000000
+      internalID: -4220004099011912033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9442726a109d68140ae801000e0c05ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Destroyed_0: -9046012731556783602
+      Anim_Destroyed_1: 3236281287888255981
+      Anim_Destroyed_10: -4220004099011912033
+      Anim_Destroyed_11: -3250016983278765083
+      Anim_Destroyed_2: -6930371472948264243
+      Anim_Destroyed_3: 1925849364969155258
+      Anim_Destroyed_4: -3255445743830930988
+      Anim_Destroyed_5: 4399063938672394729
+      Anim_Destroyed_6: 1615543525347957222
+      Anim_Destroyed_7: -4728500853216552434
+      Anim_Destroyed_8: 335988455209351825
+      Anim_Destroyed_9: 4751220929867617821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
