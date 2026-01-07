@@ -128,7 +128,7 @@ namespace Code.Scripts.Core.World.ConstructableEntities
                     _animator.speed = 1f;
                 }
             }
-            
+
             ResourcePerCycle = (int[])data.resourcePerCycle.Clone();
             _baseResourcePerCycle = (int[])data.resourcePerCycle.Clone();
             
