@@ -19,14 +19,14 @@ namespace Code.Scripts.Core.Managers
         }
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F1))
-            {
-                _storageSystem.AddResource(ResourceType.Batee, 10000000);
-                _storageSystem.AddResource(ResourceType.Paladium, 10000000);
-                _storageSystem.AddResource(ResourceType.Magmavite, 10000000);
-                _storageSystem.AddResource(ResourceType.Sandit, 10000000);
-                _storageSystem.AddResource(ResourceType.Frostice, 10000000);
-            }
+            //if (Input.GetKeyDown(KeyCode.F1))
+            //{
+            //    _storageSystem.AddResource(ResourceType.Batee, 10000000);
+            //    _storageSystem.AddResource(ResourceType.Paladium, 10000000);
+            //    _storageSystem.AddResource(ResourceType.Magmavite, 10000000);
+            //    _storageSystem.AddResource(ResourceType.Sandit, 10000000);
+            //    _storageSystem.AddResource(ResourceType.Frostice, 10000000);
+            //}
         }
         
     }

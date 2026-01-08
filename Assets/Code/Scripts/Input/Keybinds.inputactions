@@ -104,24 +104,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "AddResource",
-                    "type": "Button",
-                    "id": "4736b405-d8c0-4ef3-b743-decc7a285110",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "UnlockAll",
-                    "type": "Button",
-                    "id": "513f5273-697b-49f7-870e-a590da9adbda",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -243,28 +225,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "TimeSpeed3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "00e7deb1-18cc-4853-b4ab-2d0705f05970",
-                    "path": "<Keyboard>/f1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AddResource",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "84c7d3ab-d49a-4abb-800c-cf512ad25820",
-                    "path": "<Keyboard>/leftAlt",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UnlockAll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -118,10 +118,10 @@ namespace Code.Scripts.Core.Managers
             }
 
             
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                panelProposal.SetActive(true);
-            }
+            //if (Input.GetKeyDown(KeyCode.T))
+            //{
+            //    panelProposal.SetActive(true);
+            //}
 
             // --- AQUÍ ESTÁ EL CAMBIO ---
             if (_addResource != null && _addResource.WasPerformedThisFrame())
