@@ -11,46 +11,28 @@ namespace Code.Scripts.Core.Systems.Diplomacy.AI.Behaviour.USBehaviour
         
         protected override void InitializeUtilitySystem()
         {
-            base.InitializeUtilitySystem();
             
-            WeightedFusionFactor peaceFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["EnemyCurve"], _curveFactors["InterestCurve"], _curveFactors["FaithCurve"]);
-            peaceFusion.Weights = new float[]{ 0.2f, 0.1f, 0.7f };
+            //Beligerantes
+            WeightedFusionFactor enemyFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["EnemyCurve"], _curveFactors["DistrustCurve"]);
+            enemyFusion.Weights = new float[]{ 0.8f, 0.2f };
             
-            WeightedFusionFactor allianceFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["FaithCurve"]);
-            allianceFusion.Weights = new float[]{ 0.7f, 0.3f };
+            //Necesitados
+            WeightedFusionFactor neededFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["DependencyCurve"], _curveFactors["FaithCurve"]);
+            neededFusion.Weights = new float[]{ 0.6f, 0.4f };
             
-            WeightedFusionFactor disgustedFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["EnemyCurve"], _curveFactors["IndependencyCurve"], _curveFactors["IndifirentCurve"], _curveFactors["DistrustCurve"]);
-            disgustedFusion.Weights = new float[]{ 0.6f, 0.1f, 0.15f, 0.15f };
+            //Generosos
+            WeightedFusionFactor loveFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["IndependencyCurve"]);
+            loveFusion.Weights = new float[]{ 0.3f, 0.7f };
             
-            WeightedFusionFactor neededFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["DependencyCurve"], _curveFactors["FaithCurve"]);
-            neededFusion.Weights = new float[]{ 0.7f, 0.15f, 0.15f };
             
-            WeightedFusionFactor progressiveFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["InterestCurve"]);
-            progressiveFusion.Weights = new float[]{ 0.8f, 0.2f };
+            //Generosos
+            UtilitySystem.CreateAction(loveFusion, _actions["OfferGift"]);
             
-            WeightedFusionFactor commerceFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["DependencyCurve"], _curveFactors["InterestCurve"]);
-            commerceFusion.Weights = new float[]{ 0.4f, 0.6f };
+            //Beligerantes
+            UtilitySystem.CreateAction(enemyFusion, _actions["DeclareWar"]);
             
-            WeightedFusionFactor belligerentFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["EnemyCurve"], _curveFactors["InterestCurve"], _curveFactors["DistrustCurve"]);
-            belligerentFusion.Weights = new float[]{ 0.8f, 0.1f, 0.1f };
-            
-            WeightedFusionFactor negotiationFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["InterestCurve"], _curveFactors["FaithCurve"]);
-            negotiationFusion.Weights = new float[]{ 0.3f, 0.7f };
-            
-            WeightedFusionFactor generosityFusion = UtilitySystem.CreateFusion<WeightedFusionFactor>(_curveFactors["FriendshipCurve"], _curveFactors["InterestCurve"], _curveFactors["FaithCurve"]);
-            generosityFusion.Weights = new float[]{ 0.7f, 0.15f, 0.15f };
-            
-            UtilityAction runawayAction = UtilitySystem.CreateAction(disgustedFusion, _actions["SetDisgusted"]);
-            UtilityAction offerPeaceAction = UtilitySystem.CreateAction(peaceFusion, _actions["SetPeaceful"]);
-            UtilityAction declareWarAction = UtilitySystem.CreateAction(belligerentFusion, _actions["SetBelligerent"]);
-            UtilityAction proposeAllianceAction = UtilitySystem.CreateAction(allianceFusion, _actions["SetAlly"]);
-            UtilityAction seekHelpAction = UtilitySystem.CreateAction(neededFusion, _actions["SetNeeded"]);
-            UtilityAction increaseTradeAction = UtilitySystem.CreateAction(commerceFusion, _actions["SetCommerce"]);
-            UtilityAction proposeInvestigationAction = UtilitySystem.CreateAction(progressiveFusion, _actions["SetProgressive"]);
-            UtilityAction exchangeTreatyAction = UtilitySystem.CreateAction(negotiationFusion, _actions["SetNegotiation"]);
-            UtilityAction giveAidAction = UtilitySystem.CreateAction(generosityFusion, _actions["SetGenerous"]);
-
-            
+            //Necesitados
+            UtilitySystem.CreateAction(neededFusion, _actions["SeekHelp"]);
         }
     }
 }
