@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Nova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/QuickTradePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/UI/Windows/QuickTradePanel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +188,7 @@
       <workItem from="1767782508745" duration="9799000" />
       <workItem from="1767803696826" duration="719000" />
       <workItem from="1767830413832" duration="3451000" />
+      <workItem from="1767891754171" duration="1512000" />
     </task>
     <servers />
   </component>

@@ -125,16 +125,94 @@ namespace Code.Scripts.UI.Windows
         //TODO: Añadir cambios de estado en la civilizacion aqui
         private void DeclineTrade()
         {
+            var state = _currentCivilization.CivilizationState;
+            string civName = _currentCivilization.CivilizationData.Name;
+            //rechazamos el tradeo
             switch (tradeType)
             {
                 case QuickTradeType.Tribute:
                     Debug.Log("Tribute declined.");
+                    //General: -10 confianza, -5 dependencia.
+                    //Skulg: -5 confianza
+                    //Mippip/Halxi: -5 dependencia
+                    //Handoull/Akki: -5 interés
+                    switch (civName)
+                    {
+                        case "Skulg":
+                            state.TrustLevel -= 0.15f;
+                            state.DependencyLevel -= 0.05f;
+                            break;
+                        case "Mippip":
+                        case "Halxi":
+                            state.TrustLevel -= 0.10f;
+                            state.DependencyLevel -= 0.10f;
+                            break;
+                        case "Handoull":
+                        case "Akki":
+                            state.TrustLevel -= 0.10f;
+                            state.DependencyLevel -= 0.05f;
+                            state.InterestLevel -= 0.05f;
+                            break;
+                        default:
+                            state.TrustLevel -= 0.10f;
+                            state.DependencyLevel -= 0.05f;
+                            break;
+                    }
                     break;
                 case QuickTradeType.Offrend:
                     Debug.Log("Offrend declined.");
+                    //General: -10 Amistad
+                    //Skulg: -10 Amistad
+                    //Mippip/Halxi: -5 Confianza
+                    //Handoull/Akki: -5 Interés
+                    switch (civName)
+                    {
+                        case "Skulg":
+                            state.FriendlinessLevel -= 0.20f;
+                            break;
+                        case "Mippip":
+                        case "Halxi":
+                            state.FriendlinessLevel -= 0.10f;
+                            state.TrustLevel -= 0.05f;
+                            break;
+                        case "Handoull":
+                        case "Akki":
+                            state.FriendlinessLevel -= 0.10f;
+                            state.InterestLevel -= 0.05f;
+                            break;
+                        default:
+                            state.FriendlinessLevel -= 0.10f;
+                            break;
+                    }
                     break;
                 case QuickTradeType.Quest:
                     Debug.Log("Quest declined.");
+                    //General: -5 Amistad, -5 Dependencia
+                    //Mippip: -5 Dependencia
+                    //Akki: -5 Interes
+                    //Halxi/Mippip: -5 Confianza
+                    switch (civName)
+                    {
+                        case "Mippip":
+                            state.FriendlinessLevel -= 0.05f;
+                            state.DependencyLevel -= 0.10f;
+                            state.TrustLevel -= 0.05f;
+                            break;
+                        case "Akki":
+                            state.FriendlinessLevel -= 0.05f;
+                            state.DependencyLevel -= 0.05f;
+                            state.InterestLevel -= 0.05f;
+                            break;
+                        case "Halxi":
+                            state.FriendlinessLevel -= 0.05f;
+                            state.DependencyLevel -= 0.05f;
+                            state.TrustLevel -= 0.05f;
+                            break;
+                        default:
+                            state.FriendlinessLevel -= 0.05f;
+                            state.DependencyLevel -= 0.05f;
+                            break;
+                    }
                     break;
                 case QuickTradeType.Message:
                     Debug.Log($"Quest {_currentCivilization.CivilizationData.CivilizationQuest.Title} accepted.");
@@ -146,18 +224,101 @@ namespace Code.Scripts.UI.Windows
 
         private void AcceptTrade()
         {
+            var state = _currentCivilization.CivilizationState;
+            string civName = _currentCivilization.CivilizationData.Name;
+
             switch (tradeType)
             {
+                // JUGADOR ENTREGA TRIBUTO
                 case QuickTradeType.Tribute:
                     Debug.Log("Tribute accepted.");
+                    // General: +10 Confianza, +5 Dependencia
+                    // Extra Skulg: +5 Confianza
+                    // Extra Mippip/Halxi: +5 Dependencia
+                    // Extra Handoull/Akki: +5 Interés
+                    switch (civName)
+                    {
+                        case "Skulg":
+                            state.TrustLevel += 0.15f;
+                            state.DependencyLevel += 0.05f;
+                            break;
+                        case "Mippip":
+                        case "Halxi":
+                            state.TrustLevel += 0.10f;
+                            state.DependencyLevel += 0.10f;
+                            break;
+                        case "Handoull":
+                        case "Akki":
+                            state.TrustLevel += 0.10f;
+                            state.DependencyLevel += 0.05f;
+                            state.InterestLevel += 0.05f;
+                            break;
+                        default:
+                            state.TrustLevel += 0.10f;
+                            state.DependencyLevel += 0.05f;
+                            break;
+                    }
                     break;
+
+                // JUGADOR ACEPTA OFRENDA
                 case QuickTradeType.Offrend:
                     Debug.Log("Offrend accepted.");
+                    // General: +10 Amistad
+                    // Extra Mippip: +5 Amistad
+                    // Extra Handoull: +10 Interés
+                    // Extra Halxi/Akki: +5 Confianza
+                    switch (civName)
+                    {
+                        case "Mippip":
+                            state.FriendlinessLevel += 0.15f;
+                            break;
+                        case "Handoull":
+                            state.FriendlinessLevel += 0.10f;
+                            state.InterestLevel += 0.10f;
+                            break;
+                        case "Halxi":
+                        case "Akki":
+                            state.FriendlinessLevel += 0.10f;
+                            state.TrustLevel += 0.05f;
+                            break;
+                        default:
+                            state.FriendlinessLevel += 0.10f;
+                            break;
+                    }
                     break;
+
+                // JUGADOR ACEPTA PETICIÓN (QUEST)
                 case QuickTradeType.Quest:
                     Debug.Log($"Quest {_currentCivilization.CivilizationData.CivilizationQuest.Title} accepted.");
                     _questManager.StartSecondaryQuest(_currentCivilization.CivilizationData.CivilizationQuest);
+                    //General: +5 Amistad, +5 Dependencia
+                    //Mippip: +5 Dependencia
+                    //Akki: +5 Interes
+                    //Halxi/Mippip: +5 Confianza
+                    switch (civName)
+                    {
+                        case "Mippip":
+                            state.FriendlinessLevel += 0.05f;
+                            state.DependencyLevel += 0.10f;
+                            state.TrustLevel += 0.05f;
+                            break;
+                        case "Akki":
+                            state.FriendlinessLevel += 0.05f;
+                            state.DependencyLevel += 0.05f;
+                            state.InterestLevel += 0.05f;
+                            break;
+                        case "Halxi":
+                            state.FriendlinessLevel += 0.05f;
+                            state.DependencyLevel += 0.05f;
+                            state.TrustLevel += 0.05f;
+                            break;
+                        default:
+                            state.FriendlinessLevel += 0.05f;
+                            state.DependencyLevel += 0.05f;
+                            break;
+                    }
                     break;
+
                 case QuickTradeType.Message:
                     break;
             }
