@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91446f28-2a08-4fb7-a2a0-7287bbc476ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/RegularFont/ThaleahFat SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Civilizations/Akki.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Civilizations/Akki.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Civilizations/Halxi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Civilizations/Halxi.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Civilizations/Handoull.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Civilizations/Handoull.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/HalxiInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/HalxiInventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/HandoullInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/HandoullInventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/SkulgInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/ScriptableObjects/Civilizations/Inventory/SkulgInventory.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Civilizations/Skulg.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Civilizations/Skulg.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
